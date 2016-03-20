@@ -1,0 +1,92 @@
+\contentsline {chapter}{\numberline {1}Introduction}{2}{chapter.1}
+\contentsline {section}{\numberline {1.1}Thesis Statement}{3}{section.1.1}
+\contentsline {section}{\numberline {1.2}Overview of Thesis and Research Contributions}{3}{section.1.2}
+\contentsline {chapter}{\numberline {2}Computational Biology Background}{4}{chapter.2}
+\contentsline {section}{\numberline {2.1}Computational Biology}{4}{section.2.1}
+\contentsline {section}{\numberline {2.2}Mass spectrometry-based omics}{6}{section.2.2}
+\contentsline {section}{\numberline {2.3}Mass Spectrometry}{7}{section.2.3}
+\contentsline {subsection}{\numberline {2.3.1}Metabolomics}{8}{subsection.2.3.1}
+\contentsline {subsection}{\numberline {2.3.2}Proteomics and Glyomics}{9}{subsection.2.3.2}
+\contentsline {subsection}{\numberline {2.3.3}Fragmentation}{10}{subsection.2.3.3}
+\contentsline {section}{\numberline {2.4}Metabolomics Pipeline: From Raw Data to Biological Hypothesis}{11}{section.2.4}
+\contentsline {subsection}{\numberline {2.4.1}Peak Detection}{11}{subsection.2.4.1}
+\contentsline {subsection}{\numberline {2.4.2}Peak Alignment}{12}{subsection.2.4.2}
+\contentsline {subsection}{\numberline {2.4.3}Peak Identification}{15}{subsection.2.4.3}
+\contentsline {subsection}{\numberline {2.4.4}Analysis}{16}{subsection.2.4.4}
+\contentsline {section}{\numberline {2.5}Conclusion}{17}{section.2.5}
+\contentsline {chapter}{\numberline {3}Machine Learning Background}{19}{chapter.3}
+\contentsline {section}{\numberline {3.1}Probabilities}{19}{section.3.1}
+\contentsline {section}{\numberline {3.2}Mixture model clustering}{19}{section.3.2}
+\contentsline {section}{\numberline {3.3}Markov chain Monte Carlo methods}{21}{section.3.3}
+\contentsline {section}{\numberline {3.4}Dirichlet Process mixture model clustering}{21}{section.3.4}
+\contentsline {section}{\numberline {3.5}Hierarchical Dirichlet Process mixture model clustering}{22}{section.3.5}
+\contentsline {section}{\numberline {3.6}Latent Dirichet Allocation}{23}{section.3.6}
+\contentsline {chapter}{\numberline {4}Incorporating Clustering Information into Peak Alignment}{25}{chapter.4}
+\contentsline {section}{\numberline {4.1}Introduction}{25}{section.4.1}
+\contentsline {section}{\numberline {4.2}Clustering of related peaks}{26}{section.4.2}
+\contentsline {section}{\numberline {4.3}Direct Matching}{28}{section.4.3}
+\contentsline {subsection}{\numberline {4.3.1}Feature Similarity}{28}{subsection.4.3.1}
+\contentsline {subsection}{\numberline {4.3.2}Incorporating Related Peak Groups}{29}{subsection.4.3.2}
+\contentsline {subsection}{\numberline {4.3.3}Feature Matching}{30}{subsection.4.3.3}
+\contentsline {section}{\numberline {4.4}Evaluation Study}{31}{section.4.4}
+\contentsline {subsection}{\numberline {4.4.1}Construction of Ground Truth}{31}{subsection.4.4.1}
+\contentsline {subsection}{\numberline {4.4.2}Proteomic Datasets}{32}{subsection.4.4.2}
+\contentsline {subsection}{\numberline {4.4.3}Metabolomic Datasets}{33}{subsection.4.4.3}
+\contentsline {subsection}{\numberline {4.4.4}Glycomic Dataset}{34}{subsection.4.4.4}
+\contentsline {subsection}{\numberline {4.4.5}Experimental setup}{35}{subsection.4.4.5}
+\contentsline {subsection}{\numberline {4.4.6}Other Alignment Tools For Comparison}{37}{subsection.4.4.6}
+\contentsline {subsubsection}{MZmine2's Join Aligner}{37}{section*.25}
+\contentsline {subsubsection}{Simultaneous Multiple Alignment (SIMA)}{37}{section*.26}
+\contentsline {section}{\numberline {4.5}Results}{37}{section.4.5}
+\contentsline {subsection}{\numberline {4.5.1}Proteomics Experiments}{38}{subsection.4.5.1}
+\contentsline {subsection}{\numberline {4.5.2}Metabolomic and Glycomic Datasets}{40}{subsection.4.5.2}
+\contentsline {section}{\numberline {4.6}Discussion and Conclusion}{42}{section.4.6}
+\contentsline {chapter}{\numberline {5}Providing Confidence Values in Alignment Results}{45}{chapter.5}
+\contentsline {section}{\numberline {5.1}Introduction}{45}{section.5.1}
+\contentsline {section}{\numberline {5.2}Hierarchical Dirichlet Process Mixture Model for Alignment}{47}{section.5.2}
+\contentsline {subsection}{\numberline {5.2.1}Model Description}{47}{subsection.5.2.1}
+\contentsline {subsection}{\numberline {5.2.2}Inference}{51}{subsection.5.2.2}
+\contentsline {subsubsection}{Updating peak assignments}{52}{section*.38}
+\contentsline {subsubsection}{Updating instantiated variables}{53}{section*.39}
+\contentsline {subsection}{\numberline {5.2.3}Using the Inference Results}{54}{subsection.5.2.3}
+\contentsline {subsubsection}{Feature Matching}{54}{section*.40}
+\contentsline {subsubsection}{Isotopic Product and Metabolite Identity Annotations}{54}{section*.41}
+\contentsline {section}{\numberline {5.3}Evaluation Study}{55}{section.5.3}
+\contentsline {subsection}{\numberline {5.3.1}Evaluation Datasets}{55}{subsection.5.3.1}
+\contentsline {subsection}{\numberline {5.3.2}Performance Measures}{57}{subsection.5.3.2}
+\contentsline {subsection}{\numberline {5.3.3}Benchmarking Method}{58}{subsection.5.3.3}
+\contentsline {subsection}{\numberline {5.3.4}Parameter Optimisations}{58}{subsection.5.3.4}
+\contentsline {section}{\numberline {5.4}Results}{59}{section.5.4}
+\contentsline {subsection}{\numberline {5.4.1}Proteomic Results}{59}{subsection.5.4.1}
+\contentsline {subsection}{\numberline {5.4.2}Glycomic and Metabolomic Results}{60}{subsection.5.4.2}
+\contentsline {subsection}{\numberline {5.4.3}Running Time}{65}{subsection.5.4.3}
+\contentsline {section}{\numberline {5.5}Discussion and Conclusion}{65}{section.5.5}
+\contentsline {chapter}{\numberline {6}Precursor Clustering of Ionisation Product Peaks}{67}{chapter.6}
+\contentsline {section}{\numberline {6.1}Introduction}{67}{section.6.1}
+\contentsline {section}{\numberline {6.2}Related Work}{68}{section.6.2}
+\contentsline {section}{\numberline {6.3}Methods}{68}{section.6.3}
+\contentsline {subsection}{\numberline {6.3.1}PrecursorCluster: clustering of ionization product peaks}{69}{subsection.6.3.1}
+\contentsline {subsection}{\numberline {6.3.2}Cluster-Match: direct matching of ionization product clusters}{73}{subsection.6.3.2}
+\contentsline {subsection}{\numberline {6.3.3}Cluster-Cluster: across-run clustering of ionization product clusters}{74}{subsection.6.3.3}
+\contentsline {section}{\numberline {6.4}Evaluation Study}{77}{section.6.4}
+\contentsline {subsection}{\numberline {6.4.1}Evaluation Datasets}{77}{subsection.6.4.1}
+\contentsline {subsection}{\numberline {6.4.2}Performance Measures}{78}{subsection.6.4.2}
+\contentsline {subsection}{\numberline {6.4.3}Evaluation Procedure}{79}{subsection.6.4.3}
+\contentsline {subsection}{\numberline {6.4.4}Parameter Optimization}{80}{subsection.6.4.4}
+\contentsline {section}{\numberline {6.5}Results and Discussions}{80}{section.6.5}
+\contentsline {subsection}{\numberline {6.5.1}Improved peak alignment performance by using clustering information in Cluster-Match}{80}{subsection.6.5.1}
+\contentsline {subsection}{\numberline {6.5.2}Probabilistic matching results from Cluster-Cluster}{83}{subsection.6.5.2}
+\contentsline {subsection}{\numberline {6.5.3}Running time}{85}{subsection.6.5.3}
+\contentsline {section}{\numberline {6.6}Conclusion}{85}{section.6.6}
+\contentsline {chapter}{\numberline {7}Substructure Discovery in Tandem Mass Spectometry Data}{87}{chapter.7}
+\contentsline {section}{\numberline {7.1}Introduction}{87}{section.7.1}
+\contentsline {section}{\numberline {7.2}Latent Dirichlet Allocation for Substructure Discovery}{87}{section.7.2}
+\contentsline {section}{\numberline {7.3}Evaluation Study}{87}{section.7.3}
+\contentsline {section}{\numberline {7.4}Results}{87}{section.7.4}
+\contentsline {section}{\numberline {7.5}Discussion and Conclusion}{87}{section.7.5}
+\contentsline {chapter}{\numberline {8}Conclusion}{88}{chapter.8}
+\contentsline {section}{\numberline {8.1}Summary of Contributions}{88}{section.8.1}
+\contentsline {section}{\numberline {8.2}Future Work}{88}{section.8.2}
+\contentsline {section}{\numberline {8.3}Summary and Conclusions}{88}{section.8.3}
+\contentsline {chapter}{\numberline {A}An Appendix}{89}{appendix.A}
+\contentsline {chapter}{Bibliography}{90}{appendix.A}

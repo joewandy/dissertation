@@ -1,0 +1,94 @@
+This is BibTeX, Version 0.99d (TeX Live 2015)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: dissertation.aux
+The style file: IEEEtran.bst
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Database file #1: bibliography/dissertation.bib
+Warning--I didn't find a database entry for "Tsai2013a"
+Warning--I didn't find a database entry for "Lee2013"
+Warning--I didn't find a database entry for "Smith2004"
+Warning--I didn't find a database entry for "Smith2006"
+Warning--I didn't find a database entry for "Heinonen2012"
+Warning--I didn't find a database entry for "Teh2005"
+Warning--I didn't find a database entry for "Blei2003"
+Warning--I didn't find a database entry for "Scheltema2009"
+Warning--I didn't find a database entry for "["
+Warning--I didn't find a database entry for "Gusfield1989"
+Warning--I didn't find a database entry for "Kuhn1955"
+Warning--I didn't find a database entry for "Maximum2011"
+Warning--I didn't find a database entry for "Scheltema2011"
+Warning--I didn't find a database entry for "Rogers2012"
+Warning--I didn't find a database entry for "DeSouza2006"
+Warning--I didn't find a database entry for "Landan2009"
+Warning--I didn't find a database entry for "Thompson1994"
+Warning--I didn't find a database entry for "Notredame2000"
+Warning--I didn't find a database entry for "Penn2010"
+Warning--I didn't find a database entry for "Redelings2005"
+Warning--I didn't find a database entry for "Bradley2009"
+Warning--I didn't find a database entry for "Melamud2010"
+Warning--I didn't find a database entry for "Brodsky2010"
+Warning--I didn't find a database entry for "Jeong2012"
+Warning--I didn't find a database entry for "GhanatBari2014b"
+Warning--I didn't find a database entry for "Teh2006"
+Warning--I didn't find a database entry for "Manning2008"
+Warning--I didn't find a database entry for "Smith2013a"
+Warning--I didn't find a database entry for "Lovell2012"
+Warning--I didn't find a database entry for "Smith2015"
+Warning--I didn't find a database entry for "Wandy2015"
+Warning--I didn't find a database entry for "Rogers2011"
+-- IEEEtran.bst version 1.12 (2007/01/11) by Michael Shell.
+-- http://www.michaelshell.org/tex/ieeetran/bibtex/
+-- See the "IEEEtran_bst_HOWTO.pdf" manual for usage information.
+Warning--missing publisher in Hoffmann2007
+Warning--empty author in Pedrioli2004
+Warning--empty author in Podwojski2009
+Warning--empty author in Gieger2008
+Warning--empty author in Gibney2005
+
+Done.
+You've used 51 entries,
+            4024 wiz_defined-function locations,
+            1246 strings with 20191 characters,
+and the built_in function-call counts, 44007 in all, are:
+= -- 3842
+> -- 1059
+< -- 409
++ -- 573
+- -- 183
+* -- 2256
+:= -- 6817
+add.period$ -- 102
+call.type$ -- 51
+change.case$ -- 52
+chr.to.int$ -- 849
+cite$ -- 56
+duplicate$ -- 3099
+empty$ -- 3082
+format.name$ -- 224
+if$ -- 10046
+int.to.chr$ -- 0
+int.to.str$ -- 51
+missing$ -- 516
+newline$ -- 240
+num.names$ -- 49
+pop$ -- 994
+preamble$ -- 1
+purify$ -- 0
+quote$ -- 2
+skip$ -- 3453
+stack$ -- 0
+substring$ -- 2109
+swap$ -- 2796
+text.length$ -- 126
+text.prefix$ -- 0
+top$ -- 5
+type$ -- 51
+warning$ -- 5
+while$ -- 209
+width$ -- 53
+write$ -- 647
+(There were 37 warnings)
