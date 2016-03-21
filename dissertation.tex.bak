@@ -10,7 +10,7 @@
 % metabolomics background
 \input{"02-background/chapter_02.tex"}
 
-% -----------------------------------------------------------------------------
+% ----------------------------------------------------	-------------------------
 % ML background
 \input{"03-machine-learning/chapter_03.tex"}
 

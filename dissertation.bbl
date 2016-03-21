@@ -21,6 +21,17 @@
 \providecommand{\BIBdecl}{\relax}
 \BIBdecl
 
+\bibitem{Tsai2013a}
+T.-H. Tsai, M.~G. Tadesse, C.~{Di Poto}, L.~K. Pannell, Y.~Mechref, Y.~Wang,
+  and H.~W. Ressom, ``{Multi-profile Bayesian alignment model for LC-MS data
+  analysis with integration of internal standards.}'' \emph{Bioinformatics},
+  vol.~29, no.~21, pp. 2774--80, 2013.
+
+\bibitem{Lee2013}
+T.~S. Lee, Y.~S. Ho, H.~C. Yeo, J.~P.~Y. Lin, and D.-Y. Lee, ``{Precursor mass
+  prediction by clustering ionization products in LC-MS-based metabolomics},''
+  \emph{Metabolomics}, vol.~9, no.~6, pp. 1301--1310, apr 2013.
+
 \bibitem{Hoffmann2007}
 E.~de~Hoffmann and V.~Stroobant, \emph{{Mass spectrometry: Principles and
   applications}}, 3rd~ed., L.~{John Wiley {\&} Sons}, Ed., West Sussex,
@@ -390,5 +401,124 @@ D.~B. Kell, ``{Systems biology, metabolic modelling and metabolomics in drug
 C.~Rasmussen, ``{The infinite Gaussian mixture model},'' in \emph{Advances in
   Neural Information Processing Systems 12}.\hskip 1em plus 0.5em minus
   0.4em\relax MIT Press, 2000, pp. 554--560.
+
+\bibitem{Gusfield1989}
+D.~Gusfield and R.~Irving, \emph{{The stable marriage problem: structure and
+  algorithms}}, 1989.
+
+\bibitem{Kuhn1955}
+\BIBentryALTinterwordspacing
+H.~Kuhn, ``{The Hungarian method for the assignment problem},'' \emph{Naval
+  research logistics quarterly}, 1955. [Online]. Available:
+  \url{http://onlinelibrary.wiley.com/doi/10.1002/nav.3800020109/full}
+\BIBentrySTDinterwordspacing
+
+\bibitem{Maximum2011}
+\BIBentryALTinterwordspacing
+R.~Duan, S.~Pettie, and H.~Su, ``{Scaling algorithms for approximate and exact
+  maximum weight matching},'' \emph{arXiv preprint arXiv:1112.0790}, pp. 1--36,
+  2011. [Online]. Available: \url{http://arxiv.org/abs/1112.0790}
+\BIBentrySTDinterwordspacing
+
+\bibitem{Smith2013a}
+\BIBentryALTinterwordspacing
+R.~Smith, D.~Ventura, and J.~T. Prince, ``{Novel algorithms and the benefits of
+  comparative validation.}'' \emph{Bioinformatics (Oxford, England)}, vol.~29,
+  no.~12, pp. 1583--5, jun 2013. [Online]. Available:
+  \url{http://www.ncbi.nlm.nih.gov/pubmed/23589651}
+\BIBentrySTDinterwordspacing
+
+\bibitem{Scheltema2011}
+R.~a. Scheltema, A.~Jankevics, R.~C. Jansen, M.~a. Swertz, and R.~Breitling,
+  ``{PeakML/mzMatch: a file format, Java library, R library, and tool-chain for
+  mass spectrometry data analysis.}'' \emph{Analytical Chemistry}, vol.~83,
+  no.~7, pp. 2786--93, 2011.
+
+\bibitem{Rogers2012}
+S.~Rogers, R.~Daly, and R.~Breitling, ``{Mixture model clustering for peak
+  filtering in metabolomics},'' in \emph{Ninth International Workshop on
+  Computational Systems Biology, WCSB 2012, June 4-6, Ulm, Germany}, 2012,
+  p.~71.
+
+\bibitem{DeSouza2006}
+D.~P. {De Souza}, E.~C. Saunders, M.~J. McConville, and V.~a. Liki\'{c},
+  ``{Progressive peak clustering in GC-MS Metabolomic experiments applied to
+  Leishmania parasites.}'' \emph{Bioinformatics}, vol.~22, no.~11, pp. 1391--6,
+  Jun. 2006.
+
+\bibitem{Landan2009}
+G.~Landan and D.~Graur, ``{Characterization of pairwise and multiple sequence
+  alignment errors.}'' \emph{Gene}, vol. 441, no. 1-2, pp. 141--7, Jul. 2009.
+
+\bibitem{Thompson1994}
+J.~D. Thompson, D.~G. Higgins, and T.~J. Gibson, ``{CLUSTAL W: improving the
+  sensitivity of progressive multiple sequence alignment through sequence
+  weighting, position-specific gap penalties and weight matrix choice.}''
+  \emph{Nucleic Acids Res.}, vol.~22, no.~22, pp. 4673--80, Nov. 1994.
+
+\bibitem{Notredame2000}
+C.~Notredame, D.~G. Higgins, and J.~Heringa, ``{T-Coffee: A novel method for
+  fast and accurate multiple sequence alignment.}'' \emph{J. Mol. Biol.}, vol.
+  302, no.~1, pp. 205--17, Sep. 2000.
+
+\bibitem{Penn2010}
+O.~Penn, E.~Privman, G.~Landan, D.~Graur, and T.~Pupko, ``{An alignment
+  confidence score capturing robustness to guide tree uncertainty.}''
+  \emph{Mol. Biol. Evol.}, vol.~27, no.~8, pp. 1759--67, Aug. 2010.
+
+\bibitem{Redelings2005}
+B.~D. Redelings and M.~a. Suchard, ``{Joint Bayesian estimation of alignment
+  and phylogeny.}'' \emph{Syst. Biol.}, vol.~54, no.~3, pp. 401--18, Jun. 2005.
+
+\bibitem{Bradley2009}
+R.~K. Bradley, A.~Roberts, M.~Smoot, S.~Juvekar, J.~Do, C.~Dewey, I.~Holmes,
+  and L.~Pachter, ``{Fast statistical alignment.}'' \emph{PLoS Comput. Biol.},
+  vol.~5, no.~5, p. e1000392, May 2009.
+
+\bibitem{Melamud2010}
+\BIBentryALTinterwordspacing
+E.~Melamud, L.~Vastag, and J.~D. Rabinowitz, ``{Metabolomic analysis and
+  visualization engine for LC-MS data.}'' \emph{Analytical chemistry}, vol.~82,
+  no.~23, pp. 9818--26, dec 2010. [Online]. Available:
+  \url{http://www.ncbi.nlm.nih.gov/pubmed/21049934}
+\BIBentrySTDinterwordspacing
+
+\bibitem{Brodsky2010}
+\BIBentryALTinterwordspacing
+L.~Brodsky, A.~Moussaieff, N.~Shahaf, A.~Aharoni, and I.~Rogachev,
+  ``{Evaluation of peak picking quality in LC-MS metabolomics data.}''
+  \emph{Analytical chemistry}, vol.~82, no.~22, pp. 9177--87, nov 2010.
+  [Online]. Available: \url{http://www.ncbi.nlm.nih.gov/pubmed/20977194}
+\BIBentrySTDinterwordspacing
+
+\bibitem{Listgarten2004}
+J.~Listgarten, R.~M. Neal, S.~T. Roweis, and A.~Emili, ``Multiple alignment of
+  continuous time series,'' in \emph{Advances in neural information processing
+  systems}, 2004, pp. 817--824.
+
+\bibitem{Kong2009}
+X.~Kong and C.~Reilly, ``{A Bayesian approach to the alignment of mass
+  spectra.}'' \emph{Bioinformatics}, vol.~25, no.~24, pp. 3213--20, Dec. 2009.
+
+\bibitem{Fischer2006}
+B.~Fischer, J.~Grossmann, V.~Roth, W.~Gruissem, S.~Baginsky, and J.~M. Buhmann,
+  ``{Semi-supervised LC/MS alignment for differential proteomics.}''
+  \emph{Bioinformatics}, vol.~22, no.~14, pp. e132--40, Jul. 2006.
+
+\bibitem{Jeong2012}
+J.~Jeong, X.~Shi, X.~Zhang, S.~Kim, and C.~Shen, ``{Model-based peak alignment
+  of metabolomic profiling from comprehensive two-dimensional gas
+  chromatography mass spectrometry.}'' \emph{BMC Bioinformatics}, vol.~13,
+  no.~1, p.~27, Jan. 2012.
+
+\bibitem{GhanatBari2014b}
+M.~{Ghanat Bari}, X.~Ma, and J.~Zhang, ``{PeakLink: a new peptide peak linking
+  method in LC-MS/MS using wavelet and SVM.}'' \emph{Bioinformatics}, vol.~30,
+  no.~17, pp. 2464--70, Sep. 2014.
+
+\bibitem{Teh2006}
+Y.~W. Teh, M.~I. Jordan, M.~J. Beal, and D.~M. Blei, ``Hierarchical dirichlet
+  processes,'' \emph{Journal of the american statistical association}, vol.
+  101, no. 476, 2006.
 
 \end{thebibliography}

@@ -16,50 +16,53 @@
 \contentsline {section}{\numberline {2.5}Conclusion}{17}{section.2.5}
 \contentsline {chapter}{\numberline {3}Machine Learning Background}{19}{chapter.3}
 \contentsline {section}{\numberline {3.1}Probabilities}{19}{section.3.1}
-\contentsline {section}{\numberline {3.2}Mixture model clustering}{19}{section.3.2}
-\contentsline {section}{\numberline {3.3}Markov chain Monte Carlo methods}{21}{section.3.3}
+\contentsline {section}{\numberline {3.2}Markov chain Monte Carlo methods}{19}{section.3.2}
+\contentsline {section}{\numberline {3.3}Mixture model clustering}{19}{section.3.3}
 \contentsline {section}{\numberline {3.4}Dirichlet Process mixture model clustering}{21}{section.3.4}
 \contentsline {section}{\numberline {3.5}Hierarchical Dirichlet Process mixture model clustering}{22}{section.3.5}
 \contentsline {section}{\numberline {3.6}Latent Dirichet Allocation}{23}{section.3.6}
 \contentsline {chapter}{\numberline {4}Incorporating Clustering Information into Peak Alignment}{25}{chapter.4}
 \contentsline {section}{\numberline {4.1}Introduction}{25}{section.4.1}
-\contentsline {section}{\numberline {4.2}Clustering of related peaks}{26}{section.4.2}
-\contentsline {section}{\numberline {4.3}Direct Matching}{28}{section.4.3}
-\contentsline {subsection}{\numberline {4.3.1}Feature Similarity}{28}{subsection.4.3.1}
-\contentsline {subsection}{\numberline {4.3.2}Incorporating Related Peak Groups}{29}{subsection.4.3.2}
-\contentsline {subsection}{\numberline {4.3.3}Feature Matching}{30}{subsection.4.3.3}
-\contentsline {section}{\numberline {4.4}Evaluation Study}{31}{section.4.4}
-\contentsline {subsection}{\numberline {4.4.1}Construction of Ground Truth}{31}{subsection.4.4.1}
-\contentsline {subsection}{\numberline {4.4.2}Proteomic Datasets}{32}{subsection.4.4.2}
-\contentsline {subsection}{\numberline {4.4.3}Metabolomic Datasets}{33}{subsection.4.4.3}
-\contentsline {subsection}{\numberline {4.4.4}Glycomic Dataset}{34}{subsection.4.4.4}
-\contentsline {subsection}{\numberline {4.4.5}Experimental setup}{35}{subsection.4.4.5}
-\contentsline {subsection}{\numberline {4.4.6}Other Alignment Tools For Comparison}{37}{subsection.4.4.6}
-\contentsline {subsubsection}{MZmine2's Join Aligner}{37}{section*.25}
-\contentsline {subsubsection}{Simultaneous Multiple Alignment (SIMA)}{37}{section*.26}
-\contentsline {section}{\numberline {4.5}Results}{37}{section.4.5}
-\contentsline {subsection}{\numberline {4.5.1}Proteomics Experiments}{38}{subsection.4.5.1}
-\contentsline {subsection}{\numberline {4.5.2}Metabolomic and Glycomic Datasets}{40}{subsection.4.5.2}
-\contentsline {section}{\numberline {4.6}Discussion and Conclusion}{42}{section.4.6}
-\contentsline {chapter}{\numberline {5}Providing Confidence Values in Alignment Results}{45}{chapter.5}
-\contentsline {section}{\numberline {5.1}Introduction}{45}{section.5.1}
-\contentsline {section}{\numberline {5.2}Hierarchical Dirichlet Process Mixture Model for Alignment}{47}{section.5.2}
-\contentsline {subsection}{\numberline {5.2.1}Model Description}{47}{subsection.5.2.1}
-\contentsline {subsection}{\numberline {5.2.2}Inference}{51}{subsection.5.2.2}
-\contentsline {subsubsection}{Updating peak assignments}{52}{section*.38}
-\contentsline {subsubsection}{Updating instantiated variables}{53}{section*.39}
+\contentsline {section}{\numberline {4.2}Direct Matching}{26}{section.4.2}
+\contentsline {subsection}{\numberline {4.2.1}Feature Matching}{27}{subsection.4.2.1}
+\contentsline {subsection}{\numberline {4.2.2}Feature Similarity}{27}{subsection.4.2.2}
+\contentsline {section}{\numberline {4.3}Incorporating Related Peak Groups}{28}{section.4.3}
+\contentsline {subsection}{\numberline {4.3.1}Combining Scores}{28}{subsection.4.3.1}
+\contentsline {section}{\numberline {4.4}Greedy Clustering of Related Peaks}{29}{section.4.4}
+\contentsline {section}{\numberline {4.5}Mixture Model Clustering of Related Peaks}{29}{section.4.5}
+\contentsline {section}{\numberline {4.6}Evaluation Study}{31}{section.4.6}
+\contentsline {subsection}{\numberline {4.6.1}Proteomic Datasets}{32}{subsection.4.6.1}
+\contentsline {subsection}{\numberline {4.6.2}Metabolomic Datasets}{33}{subsection.4.6.2}
+\contentsline {subsection}{\numberline {4.6.3}Glycomic Dataset}{34}{subsection.4.6.3}
+\contentsline {subsection}{\numberline {4.6.4}Experimental setup}{34}{subsection.4.6.4}
+\contentsline {subsection}{\numberline {4.6.5}Other Alignment Tools For Comparison}{36}{subsection.4.6.5}
+\contentsline {subsection}{\numberline {4.6.6}Parameter Optimisation}{37}{subsection.4.6.6}
+\contentsline {section}{\numberline {4.7}Results and Discussions}{38}{section.4.7}
+\contentsline {subsection}{\numberline {4.7.1}Proteomics Experiments}{38}{subsection.4.7.1}
+\contentsline {subsubsection}{Single-fraction Experiment}{38}{section*.23}
+\contentsline {subsubsection}{Multiple-fractions Experiment}{38}{section*.27}
+\contentsline {subsection}{\numberline {4.7.2}Metabolomic and Glycomic Datasets}{41}{subsection.4.7.2}
+\contentsline {subsection}{\numberline {4.7.3}Running Time}{43}{subsection.4.7.3}
+\contentsline {section}{\numberline {4.8}Conclusion}{44}{section.4.8}
+\contentsline {chapter}{\numberline {5}Providing Confidence Values in Alignment Results}{46}{chapter.5}
+\contentsline {section}{\numberline {5.1}Introduction}{46}{section.5.1}
+\contentsline {section}{\numberline {5.2}Hierarchical Dirichlet Process Mixture Model for Alignment}{48}{section.5.2}
+\contentsline {subsection}{\numberline {5.2.1}Model Description}{48}{subsection.5.2.1}
+\contentsline {subsection}{\numberline {5.2.2}Inference}{52}{subsection.5.2.2}
+\contentsline {subsubsection}{Updating peak assignments}{52}{section*.36}
+\contentsline {subsubsection}{Updating instantiated variables}{54}{section*.37}
 \contentsline {subsection}{\numberline {5.2.3}Using the Inference Results}{54}{subsection.5.2.3}
-\contentsline {subsubsection}{Feature Matching}{54}{section*.40}
-\contentsline {subsubsection}{Isotopic Product and Metabolite Identity Annotations}{54}{section*.41}
-\contentsline {section}{\numberline {5.3}Evaluation Study}{55}{section.5.3}
-\contentsline {subsection}{\numberline {5.3.1}Evaluation Datasets}{55}{subsection.5.3.1}
+\contentsline {subsubsection}{Feature Matching}{54}{section*.38}
+\contentsline {subsubsection}{Isotopic Product and Metabolite Identity Annotations}{55}{section*.39}
+\contentsline {section}{\numberline {5.3}Evaluation Study}{57}{section.5.3}
+\contentsline {subsection}{\numberline {5.3.1}Evaluation Datasets}{57}{subsection.5.3.1}
 \contentsline {subsection}{\numberline {5.3.2}Performance Measures}{57}{subsection.5.3.2}
 \contentsline {subsection}{\numberline {5.3.3}Benchmarking Method}{58}{subsection.5.3.3}
-\contentsline {subsection}{\numberline {5.3.4}Parameter Optimisations}{58}{subsection.5.3.4}
-\contentsline {section}{\numberline {5.4}Results}{59}{section.5.4}
-\contentsline {subsection}{\numberline {5.4.1}Proteomic Results}{59}{subsection.5.4.1}
-\contentsline {subsection}{\numberline {5.4.2}Glycomic and Metabolomic Results}{60}{subsection.5.4.2}
-\contentsline {subsection}{\numberline {5.4.3}Running Time}{65}{subsection.5.4.3}
+\contentsline {subsection}{\numberline {5.3.4}Parameter Optimisations}{59}{subsection.5.3.4}
+\contentsline {section}{\numberline {5.4}Results}{60}{section.5.4}
+\contentsline {subsection}{\numberline {5.4.1}Proteomic (P1) Results}{60}{subsection.5.4.1}
+\contentsline {subsection}{\numberline {5.4.2}Glycomic and Metabolomic Results}{61}{subsection.5.4.2}
+\contentsline {subsection}{\numberline {5.4.3}Running Time}{63}{subsection.5.4.3}
 \contentsline {section}{\numberline {5.5}Discussion and Conclusion}{65}{section.5.5}
 \contentsline {chapter}{\numberline {6}Precursor Clustering of Ionisation Product Peaks}{67}{chapter.6}
 \contentsline {section}{\numberline {6.1}Introduction}{67}{section.6.1}
