@@ -1,4 +1,4 @@
-This is BibTeX, Version 0.99d (TeX Live 2015)
+This is BibTeX, Version 0.99d (TeX Live 2015/Debian)
 Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: dissertation.aux
 The style file: IEEEtran.bst
@@ -13,11 +13,10 @@ Warning--I didn't find a database entry for "Smith2006"
 Warning--I didn't find a database entry for "Heinonen2012"
 Warning--I didn't find a database entry for "Teh2005"
 Warning--I didn't find a database entry for "Blei2003"
-Warning--I didn't find a database entry for "Lovell2012"
 Warning--I didn't find a database entry for "Smith2015"
-Warning--I didn't find a database entry for "Wandy2015"
 Warning--I didn't find a database entry for "Rogers2011"
-Warning--I didn't find a database entry for "["
+Warning--I didn't find a database entry for "Wandy2015"
+Warning--I didn't find a database entry for "Lovell2012"
 -- IEEEtran.bst version 1.12 (2007/01/11) by Michael Shell.
 -- http://www.michaelshell.org/tex/ieeetran/bibtex/
 -- See the "IEEEtran_bst_HOWTO.pdf" manual for usage information.
@@ -31,7 +30,7 @@ Warning--missing publisher in Gusfield1989
 Done.
 You've used 74 entries,
             4024 wiz_defined-function locations,
-            1340 strings with 24205 characters,
+            1339 strings with 24204 characters,
 and the built_in function-call counts, 63924 in all, are:
 = -- 5556
 > -- 1562
@@ -70,4 +69,4 @@ warning$ -- 6
 while$ -- 303
 width$ -- 76
 write$ -- 901
-(There were 16 warnings)
+(There were 15 warnings)
