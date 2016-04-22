@@ -160,6 +160,7 @@
 \newlabel{background-hdp-clustering}{{3.5}{22}{Hierarchical Dirichlet Process mixture model clustering}{section.3.5}{}}
 \@writefile{toc}{\contentsline {section}{\numberline {3.5}Hierarchical Dirichlet Process mixture model clustering}{22}{section.3.5}}
 \citation{Blei2003}
+\newlabel{background-lda}{{3.6}{23}{Latent Dirichet Allocation}{section.3.6}{}}
 \@writefile{toc}{\contentsline {section}{\numberline {3.6}Latent Dirichet Allocation}{23}{section.3.6}}
 \citation{Smith2015}
 \@writefile{toc}{\contentsline {chapter}{\numberline {4}Incorporating Clustering Information into Peak Alignment}{25}{chapter.4}}
@@ -499,21 +500,44 @@
 \@writefile{lot}{\addvspace {10\p@ }}
 \newlabel{c:background}{{7}{94}{Substructure Discovery in Tandem Mass Spectometry Data}{chapter.7}{}}
 \@writefile{toc}{\contentsline {section}{\numberline {7.1}Introduction}{94}{section.7.1}}
-\@writefile{toc}{\contentsline {section}{\numberline {7.2}Latent Dirichlet Allocation for Substructure Discovery}{94}{section.7.2}}
-\@writefile{toc}{\contentsline {section}{\numberline {7.3}Evaluation Study}{94}{section.7.3}}
-\@writefile{toc}{\contentsline {section}{\numberline {7.4}Results}{94}{section.7.4}}
-\@writefile{toc}{\contentsline {section}{\numberline {7.5}Discussion and Conclusion}{94}{section.7.5}}
-\@writefile{toc}{\contentsline {chapter}{\numberline {8}Conclusion}{95}{chapter.8}}
+\@writefile{toc}{\contentsline {section}{\numberline {7.2}A Workflow for Substructure Discoveries and Annotations}{96}{section.7.2}}
+\@writefile{lof}{\contentsline {figure}{\numberline {7.1}{\ignorespaces Figure 1: Analogy between LDA for text-mining and MS2LDA. In this example, we can see that traditional LDA has extracted topics that can be interpreted as ‘football related’, ‘business-related’ and ‘environment related’. Each document is a combination of different topics. In a similar manner, MS2LDA extracts different sets of concurring mass fragments or losses (Mass2Motifs) from the fragmentation spectra of precursor ions that can be interpreted as ‘Asparagine-related’, ‘Hexose-related’ and ‘Adenine-related’. Each fragmentation spectra is made up of one or more Mass2Motifs.}}{96}{figure.7.1}}
+\newlabel{fig:text2frags}{{7.1}{96}{Figure 1: Analogy between LDA for text-mining and MS2LDA. In this example, we can see that traditional LDA has extracted topics that can be interpreted as ‘football related’, ‘business-related’ and ‘environment related’. Each document is a combination of different topics. In a similar manner, MS2LDA extracts different sets of concurring mass fragments or losses (Mass2Motifs) from the fragmentation spectra of precursor ions that can be interpreted as ‘Asparagine-related’, ‘Hexose-related’ and ‘Adenine-related’. Each fragmentation spectra is made up of one or more Mass2Motifs}{figure.7.1}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {7.2}{\ignorespaces Schematic overview of the MS2LDA workflow..}}{97}{figure.7.2}}
+\newlabel{fig:m2lda-workflow}{{7.2}{97}{Schematic overview of the MS2LDA workflow.}{figure.7.2}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {7.2.1}Data Conversion}{97}{subsection.7.2.1}}
+\@writefile{toc}{\contentsline {subsubsection}{Peak Detection \& Data Filtering}{97}{section*.21}}
+\@writefile{toc}{\contentsline {subsubsection}{LDA Feature Extraction}{98}{section*.22}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {7.2.2}Mass2Motif Discovery}{98}{subsection.7.2.2}}
+\@writefile{toc}{\contentsline {subsubsection}{LDA Inference}{98}{section*.23}}
+\@writefile{toc}{\contentsline {subsubsection}{Candidate Elemental Formula Assignment}{99}{section*.24}}
+\@writefile{toc}{\contentsline {subsubsection}{MS2LDAVis Visualisation}{100}{section*.25}}
+\@writefile{toc}{\contentsline {section}{\numberline {7.3}Evaluation Study}{101}{section.7.3}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {7.3.1}Evaluation Datasets}{101}{subsection.7.3.1}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {7.3.2}Model Comparison}{103}{subsection.7.3.2}}
+\@writefile{toc}{\contentsline {section}{\numberline {7.4}Results \& Discussion}{104}{section.7.4}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {7.4.1}Model Comparison Results}{104}{subsection.7.4.1}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {7.4.2}Biological Findings}{104}{subsection.7.4.2}}
+\@writefile{toc}{\contentsline {subsubsection}{Automatic, unsupervised, chemical substructure discovery}{106}{section*.26}}
+\@writefile{toc}{\contentsline {subsubsection}{Matched standards used for validation are well explained by structurally annotated Mass2Motifs}{107}{section*.27}}
+\@writefile{toc}{\contentsline {subsubsection}{Mass2Motifs can aid in de novo metabolite annotation}{108}{section*.28}}
+\@writefile{toc}{\contentsline {subsubsection}{Differential Expression of Mass2Motifs reveals biochemical changes across samples}{109}{section*.29}}
+\@writefile{toc}{\contentsline {section}{\numberline {7.5}Substructure Discoveries across Many Samples}{111}{section.7.5}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {7.5.1}Extension to the LDA model}{111}{subsection.7.5.1}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {7.5.2}Evaluation Datasets}{111}{subsection.7.5.2}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {7.5.3}Results \& Discussion}{111}{subsection.7.5.3}}
+\@writefile{toc}{\contentsline {section}{\numberline {7.6}Conclusion}{111}{section.7.6}}
+\@writefile{toc}{\contentsline {chapter}{\numberline {8}Conclusion}{112}{chapter.8}}
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
-\newlabel{c:background}{{8}{95}{Conclusion}{chapter.8}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {8.1}Summary of Contributions}{95}{section.8.1}}
-\@writefile{toc}{\contentsline {section}{\numberline {8.2}Future Work}{95}{section.8.2}}
-\@writefile{toc}{\contentsline {section}{\numberline {8.3}Summary and Conclusions}{95}{section.8.3}}
-\@writefile{toc}{\contentsline {chapter}{\numberline {A}An Appendix}{96}{appendix.A}}
+\newlabel{c:background}{{8}{112}{Conclusion}{chapter.8}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {8.1}Summary of Contributions}{112}{section.8.1}}
+\@writefile{toc}{\contentsline {section}{\numberline {8.2}Future Work}{112}{section.8.2}}
+\@writefile{toc}{\contentsline {section}{\numberline {8.3}Summary and Conclusions}{112}{section.8.3}}
+\@writefile{toc}{\contentsline {chapter}{\numberline {A}An Appendix}{113}{appendix.A}}
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
-\newlabel{a:appendix}{{A}{96}{An Appendix}{appendix.A}{}}
+\newlabel{a:appendix}{{A}{113}{An Appendix}{appendix.A}{}}
 \bibstyle{IEEEtran}
 \bibdata{bibliography/dissertation}
 \bibcite{Tsai2013a}{1}
@@ -525,7 +549,7 @@
 \bibcite{Smith2014}{7}
 \bibcite{Castillo2011}{8}
 \bibcite{Manuscript2013}{9}
-\@writefile{toc}{\contentsline {chapter}{Bibliography}{97}{appendix.A}}
+\@writefile{toc}{\contentsline {chapter}{Bibliography}{114}{appendix.A}}
 \bibcite{Gika2014}{10}
 \bibcite{metzker2010sequencing}{11}
 \bibcite{mann2003proteomic}{12}

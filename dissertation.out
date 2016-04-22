@@ -78,13 +78,23 @@
 \BOOKMARK [1][-]{section.6.5}{Discussion and Conclusion}{chapter.6}% 78
 \BOOKMARK [0][-]{chapter.7}{Substructure Discovery in Tandem Mass Spectometry Data}{}% 79
 \BOOKMARK [1][-]{section.7.1}{Introduction}{chapter.7}% 80
-\BOOKMARK [1][-]{section.7.2}{Latent Dirichlet Allocation for Substructure Discovery}{chapter.7}% 81
-\BOOKMARK [1][-]{section.7.3}{Evaluation Study}{chapter.7}% 82
-\BOOKMARK [1][-]{section.7.4}{Results}{chapter.7}% 83
-\BOOKMARK [1][-]{section.7.5}{Discussion and Conclusion}{chapter.7}% 84
-\BOOKMARK [0][-]{chapter.8}{Conclusion}{}% 85
-\BOOKMARK [1][-]{section.8.1}{Summary of Contributions}{chapter.8}% 86
-\BOOKMARK [1][-]{section.8.2}{Future Work}{chapter.8}% 87
-\BOOKMARK [1][-]{section.8.3}{Summary and Conclusions}{chapter.8}% 88
-\BOOKMARK [0][-]{appendix.A}{An Appendix}{}% 89
-\BOOKMARK [0][-]{appendix.A}{Bibliography}{}% 90
+\BOOKMARK [1][-]{section.7.2}{A Workflow for Substructure Discoveries and Annotations}{chapter.7}% 81
+\BOOKMARK [2][-]{subsection.7.2.1}{Data Conversion}{section.7.2}% 82
+\BOOKMARK [2][-]{subsection.7.2.2}{Mass2Motif Discovery}{section.7.2}% 83
+\BOOKMARK [1][-]{section.7.3}{Evaluation Study}{chapter.7}% 84
+\BOOKMARK [2][-]{subsection.7.3.1}{Evaluation Datasets}{section.7.3}% 85
+\BOOKMARK [2][-]{subsection.7.3.2}{Model Comparison}{section.7.3}% 86
+\BOOKMARK [1][-]{section.7.4}{Results \046 Discussion}{chapter.7}% 87
+\BOOKMARK [2][-]{subsection.7.4.1}{Model Comparison Results}{section.7.4}% 88
+\BOOKMARK [2][-]{subsection.7.4.2}{Biological Findings}{section.7.4}% 89
+\BOOKMARK [1][-]{section.7.5}{Substructure Discoveries across Many Samples}{chapter.7}% 90
+\BOOKMARK [2][-]{subsection.7.5.1}{Extension to the LDA model}{section.7.5}% 91
+\BOOKMARK [2][-]{subsection.7.5.2}{Evaluation Datasets}{section.7.5}% 92
+\BOOKMARK [2][-]{subsection.7.5.3}{Results \046 Discussion}{section.7.5}% 93
+\BOOKMARK [1][-]{section.7.6}{Conclusion}{chapter.7}% 94
+\BOOKMARK [0][-]{chapter.8}{Conclusion}{}% 95
+\BOOKMARK [1][-]{section.8.1}{Summary of Contributions}{chapter.8}% 96
+\BOOKMARK [1][-]{section.8.2}{Future Work}{chapter.8}% 97
+\BOOKMARK [1][-]{section.8.3}{Summary and Conclusions}{chapter.8}% 98
+\BOOKMARK [0][-]{appendix.A}{An Appendix}{}% 99
+\BOOKMARK [0][-]{appendix.A}{Bibliography}{}% 100

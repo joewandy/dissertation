@@ -84,13 +84,32 @@
 \contentsline {section}{\numberline {6.5}Discussion and Conclusion}{92}{section.6.5}
 \contentsline {chapter}{\numberline {7}Substructure Discovery in Tandem Mass Spectometry Data}{94}{chapter.7}
 \contentsline {section}{\numberline {7.1}Introduction}{94}{section.7.1}
-\contentsline {section}{\numberline {7.2}Latent Dirichlet Allocation for Substructure Discovery}{94}{section.7.2}
-\contentsline {section}{\numberline {7.3}Evaluation Study}{94}{section.7.3}
-\contentsline {section}{\numberline {7.4}Results}{94}{section.7.4}
-\contentsline {section}{\numberline {7.5}Discussion and Conclusion}{94}{section.7.5}
-\contentsline {chapter}{\numberline {8}Conclusion}{95}{chapter.8}
-\contentsline {section}{\numberline {8.1}Summary of Contributions}{95}{section.8.1}
-\contentsline {section}{\numberline {8.2}Future Work}{95}{section.8.2}
-\contentsline {section}{\numberline {8.3}Summary and Conclusions}{95}{section.8.3}
-\contentsline {chapter}{\numberline {A}An Appendix}{96}{appendix.A}
-\contentsline {chapter}{Bibliography}{97}{appendix.A}
+\contentsline {section}{\numberline {7.2}A Workflow for Substructure Discoveries and Annotations}{96}{section.7.2}
+\contentsline {subsection}{\numberline {7.2.1}Data Conversion}{97}{subsection.7.2.1}
+\contentsline {subsubsection}{Peak Detection \& Data Filtering}{97}{section*.21}
+\contentsline {subsubsection}{LDA Feature Extraction}{98}{section*.22}
+\contentsline {subsection}{\numberline {7.2.2}Mass2Motif Discovery}{98}{subsection.7.2.2}
+\contentsline {subsubsection}{LDA Inference}{98}{section*.23}
+\contentsline {subsubsection}{Candidate Elemental Formula Assignment}{99}{section*.24}
+\contentsline {subsubsection}{MS2LDAVis Visualisation}{100}{section*.25}
+\contentsline {section}{\numberline {7.3}Evaluation Study}{101}{section.7.3}
+\contentsline {subsection}{\numberline {7.3.1}Evaluation Datasets}{101}{subsection.7.3.1}
+\contentsline {subsection}{\numberline {7.3.2}Model Comparison}{103}{subsection.7.3.2}
+\contentsline {section}{\numberline {7.4}Results \& Discussion}{104}{section.7.4}
+\contentsline {subsection}{\numberline {7.4.1}Model Comparison Results}{104}{subsection.7.4.1}
+\contentsline {subsection}{\numberline {7.4.2}Biological Findings}{104}{subsection.7.4.2}
+\contentsline {subsubsection}{Automatic, unsupervised, chemical substructure discovery}{106}{section*.26}
+\contentsline {subsubsection}{Matched standards used for validation are well explained by structurally annotated Mass2Motifs}{107}{section*.27}
+\contentsline {subsubsection}{Mass2Motifs can aid in de novo metabolite annotation}{108}{section*.28}
+\contentsline {subsubsection}{Differential Expression of Mass2Motifs reveals biochemical changes across samples}{109}{section*.29}
+\contentsline {section}{\numberline {7.5}Substructure Discoveries across Many Samples}{111}{section.7.5}
+\contentsline {subsection}{\numberline {7.5.1}Extension to the LDA model}{111}{subsection.7.5.1}
+\contentsline {subsection}{\numberline {7.5.2}Evaluation Datasets}{111}{subsection.7.5.2}
+\contentsline {subsection}{\numberline {7.5.3}Results \& Discussion}{111}{subsection.7.5.3}
+\contentsline {section}{\numberline {7.6}Conclusion}{111}{section.7.6}
+\contentsline {chapter}{\numberline {8}Conclusion}{112}{chapter.8}
+\contentsline {section}{\numberline {8.1}Summary of Contributions}{112}{section.8.1}
+\contentsline {section}{\numberline {8.2}Future Work}{112}{section.8.2}
+\contentsline {section}{\numberline {8.3}Summary and Conclusions}{112}{section.8.3}
+\contentsline {chapter}{\numberline {A}An Appendix}{113}{appendix.A}
+\contentsline {chapter}{Bibliography}{114}{appendix.A}
