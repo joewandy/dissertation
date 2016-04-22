@@ -3,7 +3,7 @@
 
 \section{Introduction}
 
-None of the alignment tools surveyed in Section~\ref{sub:alignment-tools} take into account the structural dependencies between related peaks produced by the same metabolite when solving the correspondence problem. Such information could potentially be used to improve the alignment process since a set of related peaks in one run should generally be aligned to another set of related peaks in the other run. As described in Section~\ref{sub:related-peaks}, related peaks are defined to be all those peaks that appear in a run due to the presence of one compound (peptide/metabolite) in the sample being analysed. Examples of related peaks are isotope peaks, multiple adduct and deduct peaks, and fragment peaks, elaborated further in Section~\ref{sub:related-peaks}. Such peaks should co-elute from the column and have similar chromatographic shapes and RT values. The related peak information can come from any peak grouping methods, of which clustering via RT is one instance, but one key assumption is that groups of co-eluting peaks corresponding to the same metabolite are generally preserved across runs. 
+According to \cite{Smith2015}, the objective function used for alignment can be improved by operating on the groupings of related IP peaks rather than at individual peak level alone. However, one of the alignment tools surveyed in Section~\ref{sub:alignment-tools} take into account this structural dependencies between related peaks produced by the same metabolite when solving the correspondence problem. Such information could potentially be used to improve the alignment process since a set of related peaks in one run should generally be aligned to another set of related peaks in the other run. As described in Section~\ref{sub:related-peaks}, related peaks are defined to be all those peaks that appear in a run due to the presence of one compound (peptide/metabolite) in the sample being analysed. Examples of related peaks are isotope peaks, multiple adduct and deduct peaks, and fragment peaks, elaborated further in Section~\ref{sub:related-peaks}. Such peaks should co-elute from the column and have similar chromatographic shapes and RT values. The related peak information can come from any peak grouping methods, of which clustering via RT is one instance, but one key assumption is that groups of co-eluting peaks corresponding to the same metabolite are generally preserved across runs. 
 
 In this chapter, we propose clustering the related peaks sharing similar RT values together, and using the information from the clustering process to modify the similarity score matrix used for the alignment (matching) of peaks across runs. This idea is illustrated in Figure~\ref{fig:computingweight} and further introduced in Sections~\ref{sub:direct-matching} and ~\ref{sub:incorporating-grouping}. As shown in Figure~\ref{fig:computingweight}, initial weights are computed between pairs of peaks in the two runs that are within m/z and RT tolerances (e.g. $W_{AE}$ and $W_{AJ}$). When related peak information is added, the similarity between peaks $A$ and $E$ is increased due to peak $A$ being related to another peak ($B$) that is similar to a peak ($G$) related to $E$. On the other hand, the similarity between $A$ and $J$ is not increased as $J$ does not have any related peaks that could potentially be matched to peaks related to $A$. In other words, we are proposing using the structural dependencies present between peaks in each run to modify the similarity scores and improve alignment performance: the more peaks related to $A$ that could be matched to peaks related to $E$, the more likely it becomes that $A$ should be matched to $E$. 
 
@@ -92,7 +92,7 @@ p(\mathbf{y}_{n}|\boldsymbol{z}_{nk^{*}}=1...) & = & \mathcal{N}(\mathbf{y}_{n}|
 where $\lambda_{k^{*}}=(\tau_{0}^{-1}+\sigma^{-1})^{-1}$.
 In a step of the Gibbs sampling procedure, we perform the assignment of peak $n$ to cluster $k$, creating new cluster $k^{*}$ if necessary. Using the posterior summaries across all samples drawn $S^{*}=\frac{1}{R}\sum_{r=1}^{R}s{}_{r}$, where $s{}_{r}$ is the $r$-th posterior sample collected after a suitable burn-in period and $R$ is the total number of samples taken (excluding burn-in samples), we can obtain the marginal posterior of the probability of two features (peaks) to be in the same cluster $k$ averaged across all samples. These probabilities comprise the elements of $\mathbf{C}^A$ and $\mathbf{C}^B$ (i.e.\ the $ij$-th element of $\mathbf{C}^A$ is the proportion of samples from run A in which peaks $i$ and $j$ were in the same cluster), which can be used in eq. \ref{eq:L-multiply}.
 
-\section{Evaluation Study\ref{sub:evaluation-study}}
+\section{Evaluation Study\label{sub:evaluation-study}}
 
 Performance evaluation of alignment methods is difficult due to the lack of gold standard and evaluation criteria for benchmarking \cite{Castillo2011,Smith2013a}. Relatively few works, such as \cite{Lange2008}, exists that provide a comprehensive ground truth for evaluation. In fact, despite the numerous alignment methods that exist, most methods remain unevaluated, evaluated against a small number of alternatives or evaluated based on highly subjective criteria \cite{Smith2013}. In particular, evaluation of alignment quality through manual visual inspection of superimposed profile images and some selected chromatograms is problematic and is not a systematic approach towards performance evaluation. While straightforward, the visual inspection of alignment quality is tedious and do not work for evaluation of a large number of aligned peaksets produced by the alignment of a large number of samples. It is also often subjective and might suffer from dissimilar interpretations across different experiments and datasets. 
 
@@ -273,7 +273,7 @@ For the Metabolomic and Glygomic experiments, 30 pairs of run were randomly extr
 
 Both P1 and P2 data consist of multiple fractions. In the first experiment, we investigate the best possible performance by using the same fraction as training and testing sets. As described in Section~\ref{sub:parameters-optimisation}, on each training set (a fraction), we optimised the m/z and RT window parameters for alignments. The m/z parameters are in parts per million, normally notated 'ppm' and the range of m/z parameters used were $\{1.0,1.1,...,2.0\}$ and RT $\{5,10,...,300\}$ seconds. Parameters that control the grouping and influence of the cluster similarity score for our MWG and MWM methods were also optimised. The ratio parameter $\alpha$ was set to $\{0.1,0.2,...,1\}$ for both MWG and MWM. The grouping tolerance $g_{tol}$ was set to $\{1,2,...,10\}$ seconds for greedy clustering, while the same hyperparameters were used for clustering of all fractions in case of mixture-model clustering (further details on parameter range selections are in Section~\ref{sub:parameters-optimisation}). 
 
-The results are shown in Tables~\ref{tab:Detailed-Result--P1} and \ref{tab:Detailed-Result--P2}. We see that approximate maximum weighted matching (MW) alone performs competitively to other tools. On the P1 data (Table~\ref{tab:Detailed-Result--P1}), incorporating grouping information (MWG, MWM) improves F$_{1}$ score performance over MW. MWG outperforms MWM, which may be due to the fact that the greedy approach is easier to optimise. For the P2 data (Table~\ref{tab:Detailed-Result--P2}), which contains features with significantly higher RT drift across runs, again we find that MW is competitive and clustering information (MWG) improves performance for all fractions. The results here show the potential of our proposed approach: any peak grouping results expressed in a suitable matrix format can be incorporated into our method, and used as additional information during the matching stage. Figure~\ref{fig:single-fraction-results} shows how the benefit of incorporating clustering information is realised during matching: it allows the matching methods to explore regimes in the solution space having higher precision and recall values. On some training fractions, both methods that incorporate clustering information show significant increases in the best possible F$_1$ score. For dataset P1 fraction 000, this is an 11\%-improvement for MWG and a 7.5\%-improvement for MWM. For dataset P2 fraction 100, this is a 51\%-improvement for MWG and 25\%-improvement for MWM. Smaller improvements can be observed from other fractions in the Proteomic datasets too.
+The results are shown in Tables~\ref{tab:Detailed-Result--P1} and \ref{tab:Detailed-Result--P2}. We see that approximate maximum weighted matching (MW) alone performs competitively to other tools. On the P1 data (Table~\ref{tab:Detailed-Result--P1}), incorporating grouping information (MWG, MWM) improves F$_{1}$ score performance over MW. MWG outperforms MWM, which may be due to the fact that the greedy approach is easier to optimise. For the P2 data (Table~\ref{tab:Detailed-Result--P2}), which contains features with significantly higher RT drift across runs, again we find that MW is competitive and clustering information (MWG) improves performance for all fractions. The results here show the potential of our proposed approach: any peak grouping results expressed in a suitable matrix format can be incorporated into our method, and used as additional information during the matching stage. Figures~\ref{fig:single-fraction-results-P1} and ~\ref{fig:single-fraction-results-P2} show how the benefit of incorporating clustering information is realised during matching: it allows the matching methods to explore regimes in the solution space having higher precision and recall values. On some training fractions, both methods that incorporate clustering information show significant increases in the best possible F$_1$ score. For dataset P1 fraction 000, this is an 11\%-improvement for MWG and a 7.5\%-improvement for MWM. For dataset P2 fraction 100, this is a 51\%-improvement for MWG and 25\%-improvement for MWM. Smaller improvements can be observed from other fractions in the Proteomic datasets too.
 
 \begin{table}[!htbp]
 \begin{centering}
@@ -325,25 +325,53 @@ The results are shown in Tables~\ref{tab:Detailed-Result--P1} and \ref{tab:Detai
 \caption{\label{tab:Detailed-Result--P2}F$_1$ scores for the single-fraction experiment results on the P2 dataset. The tool with the highest F$_1$ score for each fraction is highlighted in bold. The results for `All' show the average F$_1$ scores of individual fractions.}
 \end{table}
 
+%\begin{figure}[!htbp]
+%\centering
+%   \begin{subfigure}{0.24\linewidth} \centering
+%     \includegraphics[scale=0.2]{04-matching/figures/figure_2a.eps}
+%     \caption{P1 Fraction 000}\label{fig:figA}
+%   \end{subfigure}
+%   \begin{subfigure}{0.24\linewidth} \centering
+%     \includegraphics[scale=0.2]{04-matching/figures/figure_2b.eps}
+%     \caption{P1 Fraction 100}\label{fig:figB}
+%   \end{subfigure}
+%   \begin{subfigure}{0.24\linewidth} \centering
+%     \includegraphics[scale=0.2]{04-matching/figures/figure_2c.eps}
+%     \caption{P2 Fraction 000}\label{fig:figC}
+%   \end{subfigure}
+%   \begin{subfigure}{0.24\linewidth} \centering
+%     \includegraphics[scale=0.2]{04-matching/figures/figure_2d.eps}
+%     \caption{P2 Fraction 100}\label{fig:figD}
+%   \end{subfigure}
+%\caption{Precision and recall training performance for all parameters (m/z, RT tolerance, $\alpha$ and $g_{tol}$) varied in the experiment for the fractions containing the most (Fig. 2a \& 2c) and least (Fig. 2b \& 2d) number of features in the P1 and P2 datasets. \textbf{REDRAW IN MATPLOTLIB}} \label{fig:single-fraction-results}
+%\end{figure}
+
 \begin{figure}[!htbp]
 \centering
-   \begin{subfigure}{0.24\linewidth} \centering
-     \includegraphics[scale=0.2]{04-matching/figures/figure_2a.eps}
-     \caption{P1 Fraction 000}\label{fig:figA}
-   \end{subfigure}
-   \begin{subfigure}{0.24\linewidth} \centering
-     \includegraphics[scale=0.2]{04-matching/figures/figure_2b.eps}
-     \caption{P1 Fraction 100}\label{fig:figB}
-   \end{subfigure}
-   \begin{subfigure}{0.24\linewidth} \centering
-     \includegraphics[scale=0.2]{04-matching/figures/figure_2c.eps}
-     \caption{P2 Fraction 000}\label{fig:figC}
-   \end{subfigure}
-   \begin{subfigure}{0.24\linewidth} \centering
-     \includegraphics[scale=0.2]{04-matching/figures/figure_2d.eps}
-     \caption{P2 Fraction 100}\label{fig:figD}
-   \end{subfigure}
-\caption{Precision and recall training performance for all parameters (m/z, RT tolerance, $\alpha$ and $g_{tol}$) varied in the experiment for the fractions containing the most (Fig. 2a \& 2c) and least (Fig. 2b \& 2d) number of features in the P1 and P2 datasets. \textbf{REDRAW IN MATPLOTLIB}} \label{fig:single-fraction-results}
+\subfloat[P1 Fraction 000]{%
+	\includegraphics[clip,width=1.0\columnwidth]{04-matching/figures/P1_000_new.pdf}%
+	\label{fig:figA}
+}
+\
+\subfloat[P1 Fraction 100]{%
+	\includegraphics[clip,width=1.0\columnwidth]{04-matching/figures/P1_100_new.pdf}%
+	\label{fig:figB}
+}
+\caption{Precision and recall training performance for all parameters (m/z, RT tolerance, $\alpha$ and $g_{tol}$) varied in the experiment for the fractions containing the most (a) and the least (b) number of features in the P1 dataset.} \label{fig:single-fraction-results-P1}
+\end{figure}
+
+\begin{figure}[!htbp]
+\centering
+\subfloat[P2 Fraction 000]{%
+	\includegraphics[clip,width=1.0\columnwidth]{04-matching/figures/P2_000_new.pdf}%
+	\label{fig:figC}
+}
+\
+\subfloat[P2 Fraction 100]{%
+	\includegraphics[clip,width=1.0\columnwidth]{04-matching/figures/P2_100_new.pdf}%
+	\label{fig:figD}
+}
+\caption{Precision and recall training performance for all parameters (m/z, RT tolerance, $\alpha$ and $g_{tol}$) varied in the experiment for the fractions containing the most (a) and the least (b) number of features in the P2 dataset.} \label{fig:single-fraction-results-P2}
 \end{figure}
 
 \subsubsection{Multiple-fractions Experiment}
@@ -443,26 +471,26 @@ greedy clustering with retention time (MWG(RT)) and peak shape correlations
 
 \subsection{Running Time}
 
-Computational times of the proposed methods are primarily affected by the number of features in the runs being aligned and to some extent, the thresholding parameters used during similarity score computation and feature matching. Table \ref{tab:Running-Time-P1} reports the measured running time for each proposed method using the parameters that give the best training performance). For each fraction being aligned, the running times were measured three times on a standard laptop with Intel Core i5 CPU running at 2.5 GHz, and the average value reported for matching only (MW), matching incorporating greedy clustering (MWG) and matching incorporating mixture model clustering (MWM). The time complexity of the mixture-model clustering step in MWM is $O(N)$ where $N$ is the number of features in the run being clustered. We took 2000 posterior samples, discarding the first 1000 samples during the burn-in period. The number of samples were chosen to ensure convergence to the stationary distribution during inference procedure. 
+Computational times of the proposed methods are primarily affected by the number of features in the runs being aligned and to some extent, the thresholding parameters used during similarity score computation and feature matching. Table \ref{tab:Running-Time-P1} reports the measured running time for each proposed method using the parameters that give the best training performance). For each fraction being aligned, the running times were measured three times on a standard laptop with Intel Core i5 CPU running at 2.5 GHz, and the average value reported for matching only (MW), matching incorporating greedy clustering (MWG) and matching incorporating mixture model clustering (MWM). The time complexity of the mixture-model clustering step in MWM is $O(N)$ where $N$ is the number of features in the run being clustered. We took 2000 posterior samples, discarding the first 1000 samples during the burn-in period. The number of samples were chosen to ensure convergence to the stationary distribution during inference. 
 
 \begin{table}[!htbp]
 \noindent \begin{centering}
-\begin{tabular}{|c|c|c|c|}
+\begin{tabular}{|c|c|c|c|c|}
 \hline 
-\textbf{Fraction} & \textbf{MW} & \textbf{MWG} & \textbf{MWM}\tabularnewline
+\textbf{Fraction} & \textbf{Total Features} & \textbf{MW} & \textbf{MWG} & \textbf{MWM}\tabularnewline
 \hline 
 \hline 
-000 & 9 & 12 & 2700\tabularnewline
+000 & 10606 & 9 & 12 & 2700\tabularnewline
 \hline 
-020 & 1 & 2 & 524\tabularnewline
+020 & 2135 & 1 & 2 & 524\tabularnewline
 \hline 
-040 & 2 & 2 & 540\tabularnewline
+040 & 2188 & 2 & 2 & 540\tabularnewline
 \hline 
-060 & 2 & 3 & 825\tabularnewline
+060 & 3342 & 2 & 3 & 825\tabularnewline
 \hline 
-080 & 2 & 2 & 505\tabularnewline
+080 & 2086 & 2 & 2 & 505\tabularnewline
 \hline 
-100 & 1 & 2 & 321\tabularnewline
+100 & 1326 & 1 & 2 & 321\tabularnewline
 \hline 
 \end{tabular}
 \par\end{centering}

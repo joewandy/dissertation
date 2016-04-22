@@ -319,41 +319,44 @@
 \acronymused{RT}
 \citation{Voss2011a}
 \citation{Tsai2013a}
-\citation{Daly2014}
-\citation{Kuhl2012}
 \@writefile{toc}{\contentsline {chapter}{\numberline {5}Precursor Clustering of Ionisation Product Peaks}{47}{chapter.5}}
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
 \newlabel{c:background}{{5}{47}{Precursor Clustering of Ionisation Product Peaks}{chapter.5}{}}
 \@writefile{toc}{\contentsline {section}{\numberline {5.1}Introduction}{47}{section.5.1}}
+\citation{Smith2015}
+\citation{Daly2014}
+\citation{Kuhl2012}
+\citation{}
+\citation{}
 \@writefile{toc}{\contentsline {section}{\numberline {5.2}Related Work}{48}{section.5.2}}
-\@writefile{toc}{\contentsline {section}{\numberline {5.3}Methods}{48}{section.5.3}}
+\@writefile{tdo}{\contentsline {todo}{\color@fb@x {}{black}{}{orange}{\leavevmode {\color  {orange}o}}\ Need more related work about matching of groups}{48}{section*.17}}
+\pgfsyspdfmark {pgfid10}{21893615}{35439334}
+\@writefile{tdo}{\contentsline {todo}{\color@fb@x {}{black}{}{orange}{\leavevmode {\color  {orange}o}}\ Need more related work about IP clustering}{48}{section*.18}}
+\pgfsyspdfmark {pgfid11}{21893615}{30862174}
+\@writefile{tdo}{\contentsline {todo}{\color@fb@x {}{black}{}{orange}{\leavevmode {\color  {orange}o}}\ Need more related work about probabilistic matching}{48}{section*.19}}
+\pgfsyspdfmark {pgfid12}{21893615}{9775024}
+\@writefile{toc}{\contentsline {section}{\numberline {5.3}Methods}{49}{section.5.3}}
 \newlabel{sub:ip-clustering}{{5.3.1}{49}{PrecursorCluster: clustering of ionization product peaks}{subsection.5.3.1}{}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {5.3.1}PrecursorCluster: clustering of ionization product peaks}{49}{subsection.5.3.1}}
 \@writefile{lof}{\contentsline {figure}{\numberline {5.1}{\ignorespaces  An illustration of the proposed methods. The results from inference on the PrecursorCluster model are the set of peaks and their assignments to IP clusters through any of the predefined list of transformation (Fig.\nobreakspace  {}\ref  {fig:01}A). As a starting point, each observed peak feature generates a candidate IP cluster, having the cluster's mass computed through the M+H transformation of the observed peak's m/z value. In Fig.\nobreakspace  {}\ref  {fig:01}A, this results Peak 1 generating the candidate cluster with mass $q_a$ Peak 4 generating the candidate cluster with mass $q_b$ (other candidate IP clusters produced by Peak 2, 3 and 5 are not shown in the figure). As a result from inference, Peak 1 and Peak 2 are clustered to $q_a$ through the transformation types M+H and M+Na respectively with probability 1.0. Peak 3 has a valid transformation path to $q_a$, but it is not allowed to join that cluster since its intensity is greater than the intensity of the precursor peak. Peak 4 can either form a cluster with $q_a$ through the 2M+H transformation (with probability 0.62) or, through the M+H transformation on itself, form its own candidate IP cluster having the precursor mass $q_b$ (with probability 0.38.) The latter allows for Peak 5 to join that cluster too through the M+NH4 transformation with probability 0.43. For alignment, the final clustering result is established by taking the assignment that has the highest probability for each peak feature. Alignment of IP clusters can be performed by matching IP clusters according to their posterior precursor mass and RT values across runs (Fig.\nobreakspace  {}\ref  {fig:01}B) or by further clustering them into top-level clusters in a second-stage clustering process (Fig.\nobreakspace  {}\ref  {fig:01}C). The matching of peak features of IP clusters into the same top-level cluster is constructed by matching peak features that have the same transformation types together. These are shown as the gray dotted lines in Figures\nobreakspace  {}\ref  {fig:01}B \& C.}}{50}{figure.5.1}}
 \newlabel{fig:01}{{5.1}{50}{An illustration of the proposed methods. The results from inference on the PrecursorCluster model are the set of peaks and their assignments to IP clusters through any of the predefined list of transformation (Fig.~\ref {fig:01}A). As a starting point, each observed peak feature generates a candidate IP cluster, having the cluster's mass computed through the M+H transformation of the observed peak's m/z value. In Fig.~\ref {fig:01}A, this results Peak 1 generating the candidate cluster with mass $q_a$ Peak 4 generating the candidate cluster with mass $q_b$ (other candidate IP clusters produced by Peak 2, 3 and 5 are not shown in the figure). As a result from inference, Peak 1 and Peak 2 are clustered to $q_a$ through the transformation types M+H and M+Na respectively with probability 1.0. Peak 3 has a valid transformation path to $q_a$, but it is not allowed to join that cluster since its intensity is greater than the intensity of the precursor peak. Peak 4 can either form a cluster with $q_a$ through the 2M+H transformation (with probability 0.62) or, through the M+H transformation on itself, form its own candidate IP cluster having the precursor mass $q_b$ (with probability 0.38.) The latter allows for Peak 5 to join that cluster too through the M+NH4 transformation with probability 0.43. For alignment, the final clustering result is established by taking the assignment that has the highest probability for each peak feature. Alignment of IP clusters can be performed by matching IP clusters according to their posterior precursor mass and RT values across runs (Fig.~\ref {fig:01}B) or by further clustering them into top-level clusters in a second-stage clustering process (Fig.~\ref {fig:01}C). The matching of peak features of IP clusters into the same top-level cluster is constructed by matching peak features that have the same transformation types together. These are shown as the gray dotted lines in Figures~\ref {fig:01}B \& C}{figure.5.1}{}}
 \citation{Rogers2011}
+\@writefile{tdo}{\contentsline {todo}{\color@fb@x {}{black}{}{orange}{\leavevmode {\color  {orange}o}}\ Add Gibbs sampling details for PrecursorCluster}{53}{section*.20}}
+\pgfsyspdfmark {pgfid13}{21893615}{28599783}
 \newlabel{sub:cluster-match}{{5.3.2}{53}{Cluster-Match: direct matching of ionization product clusters}{subsection.5.3.2}{}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {5.3.2}Cluster-Match: direct matching of ionization product clusters}{53}{subsection.5.3.2}}
-\citation{Wandy2015}
 \citation{Maximum2011}
-\citation{Wandy2015}
 \citation{Voss2011a}
 \citation{Pluskal2010}
 \citation{Smith2013}
-\newlabel{sub:cluster-cluster}{{5.3.3}{54}{Cluster-Cluster: across-run clustering of ionization product clusters}{subsection.5.3.3}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {5.3.3}Cluster-Cluster: across-run clustering of ionization product clusters}{54}{subsection.5.3.3}}
-\citation{Rasmussen2000}
-\citation{Wandy2015}
-\@writefile{toc}{\contentsline {section}{\numberline {5.4}Evaluation Study}{57}{section.5.4}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {5.4.1}Evaluation Datasets}{57}{subsection.5.4.1}}
-\citation{Wandy2015}
-\citation{Wandy2015}
+\newlabel{sub:cluster-cluster}{{5.3.3}{55}{Cluster-Cluster: across-run clustering of ionization product clusters}{subsection.5.3.3}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.3.3}Cluster-Cluster: across-run clustering of ionization product clusters}{55}{subsection.5.3.3}}
+\@writefile{tdo}{\contentsline {todo}{\color@fb@x {}{black}{}{orange}{\leavevmode {\color  {orange}o}}\ Add Gibbs sampling details for Cluster-Cluster}{57}{section*.21}}
+\pgfsyspdfmark {pgfid14}{21893615}{12638438}
+\@writefile{toc}{\contentsline {section}{\numberline {5.4}Evaluation Study}{58}{section.5.4}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.4.1}Evaluation Datasets}{58}{subsection.5.4.1}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {5.4.2}Performance Measures}{58}{subsection.5.4.2}}
-\citation{Wandy2015}
-\citation{Pluskal2010}
-\citation{Voss2011a}
-\citation{Wandy2015}
 \newlabel{sub:evaluation_procedure}{{5.4.3}{59}{Evaluation Procedure}{subsection.5.4.3}{}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {5.4.3}Evaluation Procedure}{59}{subsection.5.4.3}}
 \citation{Wandy2015}
@@ -362,29 +365,28 @@
 \@writefile{lot}{\contentsline {table}{\numberline {5.1}{\ignorespaces List of common adduct transformations in positive mode used for the precursor clustering of the Standard and Beer runs.}}{61}{table.5.1}}
 \newlabel{Tab:transformation}{{5.1}{61}{List of common adduct transformations in positive mode used for the precursor clustering of the Standard and Beer runs}{table.5.1}{}}
 \@writefile{toc}{\contentsline {section}{\numberline {5.5}Results and Discussions}{61}{section.5.5}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {5.5.1}Ionization product clustering using PrecursorCluster}{61}{subsection.5.5.1}}
-\@writefile{lof}{\contentsline {figure}{\numberline {5.2}{\ignorespaces  Ionization product cluster sizes for all runs in the Standard and Beer datasets.}}{62}{figure.5.2}}
-\newlabel{fig:cluster-counts}{{5.2}{62}{Ionization product cluster sizes for all runs in the Standard and Beer datasets}{figure.5.2}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {5.3}{\ignorespaces  The counts of transformation types in each Standard run (A) and the probabilities of transformation types across all Standard runs (B).}}{63}{figure.5.3}}
-\newlabel{fig:trans-standards}{{5.3}{63}{The counts of transformation types in each Standard run (A) and the probabilities of transformation types across all Standard runs (B)}{figure.5.3}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {5.4}{\ignorespaces  The counts of transformation types in each Beer run (A) and the probabilities of transformation types across all Beer runs (B).}}{64}{figure.5.4}}
-\newlabel{fig:trans-beer}{{5.4}{64}{The counts of transformation types in each Beer run (A) and the probabilities of transformation types across all Beer runs (B)}{figure.5.4}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {5.5.2}Improved peak alignment performance by using clustering information in Cluster-Match}{65}{subsection.5.5.2}}
-\@writefile{lof}{\contentsline {figure}{\numberline {5.5}{\ignorespaces  All the training results obtained by varying the m/z and RT window parameters from the alignment of the entire 30 sets of pairwise Standard runs (top row) and the 3 Beer runs (bottom row). For MWG, the grouping parameter $t$ and score contribution $\alpha $ were also varied, while for Cluster-Match, the same set parameters of first-stage clustering was used for all input files.}}{66}{figure.5.5}}
-\newlabel{fig:02}{{5.5}{66}{All the training results obtained by varying the m/z and RT window parameters from the alignment of the entire 30 sets of pairwise Standard runs (top row) and the 3 Beer runs (bottom row). For MWG, the grouping parameter $t$ and score contribution $\alpha $ were also varied, while for Cluster-Match, the same set parameters of first-stage clustering was used for all input files}{figure.5.5}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {5.6}{\ignorespaces  The best training and testing $F_1$-scores obtained from the alignment of 30 sets of pairwise Standard runs.}}{67}{figure.5.6}}
-\newlabel{fig:03}{{5.6}{67}{The best training and testing $F_1$-scores obtained from the alignment of 30 sets of pairwise Standard runs}{figure.5.6}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {5.5.3}Probabilistic matching results from Cluster-Cluster}{67}{subsection.5.5.3}}
-\@writefile{lof}{\contentsline {figure}{\numberline {5.7}{\ignorespaces  PR curves obtained from running Cluster-Cluster on one of the sets of 4 randomly selected Standard runs (left) and the 3 Beer runs (right). Green dots are performance points obtained from running Cluster-Match at varying m/z and RT tolerance parameters on the same datasets, with their distributions of the points plotted along the marginals. The same first-stage clustering results were used as input to both Cluster-Match and Cluster-Cluster.}}{68}{figure.5.7}}
-\newlabel{fig:pr-curve}{{5.7}{68}{PR curves obtained from running Cluster-Cluster on one of the sets of 4 randomly selected Standard runs (left) and the 3 Beer runs (right). Green dots are performance points obtained from running Cluster-Match at varying m/z and RT tolerance parameters on the same datasets, with their distributions of the points plotted along the marginals. The same first-stage clustering results were used as input to both Cluster-Match and Cluster-Cluster}{figure.5.7}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {5.5.4}Running time}{69}{subsection.5.5.4}}
-\@writefile{lof}{\contentsline {figure}{\numberline {5.8}{\ignorespaces  Different IP clusters (2, 15, 24, 9), found in a set of four different Standard runs, which have been putatively identified as corresponding to Melatonin and whose member peaks should therefore be aligned according to the ground truth. Within each run, the first-stage ionization product clustering (PrecursorCluster) gives us the initial assignment of peaks to an IP cluster according to their m/z, RT values and possible transformation types. Here, member peaks are assigned to an IP cluster according to their maximum \textit  {a posteriori} probabilities. In the Figure, the posterior transformation type of a peak and its corresponding probability are annotated as a labelled arrow and the bracketed number beside. Across runs, the second-stage clustering (Cluster-Cluster) brings similar IP clusters together, producing an alignment result. The probability of the four peaks $[M+H]^+$ peaks in the Figure to be matched together into a single aligned peakset is 0.87 when the adduct fingerprint term is used and 0.45 without. }}{70}{figure.5.8}}
-\newlabel{fig:06}{{5.8}{70}{Different IP clusters (2, 15, 24, 9), found in a set of four different Standard runs, which have been putatively identified as corresponding to Melatonin and whose member peaks should therefore be aligned according to the ground truth. Within each run, the first-stage ionization product clustering (PrecursorCluster) gives us the initial assignment of peaks to an IP cluster according to their m/z, RT values and possible transformation types. Here, member peaks are assigned to an IP cluster according to their maximum \textit {a posteriori} probabilities. In the Figure, the posterior transformation type of a peak and its corresponding probability are annotated as a labelled arrow and the bracketed number beside. Across runs, the second-stage clustering (Cluster-Cluster) brings similar IP clusters together, producing an alignment result. The probability of the four peaks $[M+H]^+$ peaks in the Figure to be matched together into a single aligned peakset is 0.87 when the adduct fingerprint term is used and 0.45 without}{figure.5.8}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.5.1}Ionization product clustering using PrecursorCluster}{62}{subsection.5.5.1}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.2}{\ignorespaces  Ionization product cluster sizes for all runs in the Standard and Beer datasets. For any given size, the number of clusters are generally more consistent in the Beer runs compared to the Standard runs, which shows greater variability due to the differences in the number of peak features per run.}}{63}{figure.5.2}}
+\newlabel{fig:cluster-counts}{{5.2}{63}{Ionization product cluster sizes for all runs in the Standard and Beer datasets. For any given size, the number of clusters are generally more consistent in the Beer runs compared to the Standard runs, which shows greater variability due to the differences in the number of peak features per run}{figure.5.2}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.5.2}Improved peak alignment performance by using clustering information in Cluster-Match}{64}{subsection.5.5.2}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.3}{\ignorespaces  \textbf  {(A)} Barcharts showing the counts of transformation types in each Standard run. We see that the top two most-occurring transformation types are M+Na and M+ACN+H. \textbf  {(B)} Boxplots with confidence interval showing the probabilities of transformation types across all Standard runs. With the exception of M+2ACN+H, we observe high confidence in the assignment of peaks into an IP cluster through any of the listed transformation types.}}{65}{figure.5.3}}
+\newlabel{fig:trans-standards}{{5.3}{65}{\textbf {(A)} Barcharts showing the counts of transformation types in each Standard run. We see that the top two most-occurring transformation types are M+Na and M+ACN+H. \textbf {(B)} Boxplots with confidence interval showing the probabilities of transformation types across all Standard runs. With the exception of M+2ACN+H, we observe high confidence in the assignment of peaks into an IP cluster through any of the listed transformation types}{figure.5.3}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.4}{\ignorespaces  \textbf  {(A)} Barcharts showing the counts of transformation types in each Beer run. We see that the top three most-occurring transformation types are M+Na, M+NH4 and M+CH3OH+H. \textbf  {(B)} Boxplots with confidence interval showing the probabilities of transformation types across all Beer runs. With the exception of M+ACN+H and M+ACN+Na, we observe high confidence in the assignment of peaks into an IP cluster through any of the listed transformation types.}}{66}{figure.5.4}}
+\newlabel{fig:trans-beer}{{5.4}{66}{\textbf {(A)} Barcharts showing the counts of transformation types in each Beer run. We see that the top three most-occurring transformation types are M+Na, M+NH4 and M+CH3OH+H. \textbf {(B)} Boxplots with confidence interval showing the probabilities of transformation types across all Beer runs. With the exception of M+ACN+H and M+ACN+Na, we observe high confidence in the assignment of peaks into an IP cluster through any of the listed transformation types}{figure.5.4}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.5}{\ignorespaces  Boxplots with confidence interval showing the probabilities of transformation types across all Standard runs when both the adduct transformation types (Table\nobreakspace  {}\ref  {Tab:transformation}) and the C$_{13}$-isotope transformation type are used. The increase in assignment uncertainties compared to Figure\nobreakspace  {}\ref  {fig:trans-beer}B makes it difficult to establish consistent MAP-assignment of peak features into the same IP clusters across runs. }}{67}{figure.5.5}}
+\newlabel{fig:more-uncertainty}{{5.5}{67}{Boxplots with confidence interval showing the probabilities of transformation types across all Standard runs when both the adduct transformation types (Table~\ref {Tab:transformation}) and the C$_{13}$-isotope transformation type are used. The increase in assignment uncertainties compared to Figure~\ref {fig:trans-beer}B makes it difficult to establish consistent MAP-assignment of peak features into the same IP clusters across runs}{figure.5.5}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.6}{\ignorespaces  All the training results obtained by varying the m/z and RT window parameters from the alignment of the entire 30 sets of pairwise Standard runs (top row) and the 3 Beer runs (bottom row). For MWG, the grouping parameter $t$ and score contribution $\alpha $ were also varied, while for Cluster-Match, the same set parameters of first-stage clustering was used for all input files.}}{68}{figure.5.6}}
+\newlabel{fig:training-results}{{5.6}{68}{All the training results obtained by varying the m/z and RT window parameters from the alignment of the entire 30 sets of pairwise Standard runs (top row) and the 3 Beer runs (bottom row). For MWG, the grouping parameter $t$ and score contribution $\alpha $ were also varied, while for Cluster-Match, the same set parameters of first-stage clustering was used for all input files}{figure.5.6}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.7}{\ignorespaces  The best training and testing $F_1$-scores obtained from the alignment of 30 sets of Standard runs.}}{69}{figure.5.7}}
+\newlabel{fig:pairwise-training-testing}{{5.7}{69}{The best training and testing $F_1$-scores obtained from the alignment of 30 sets of Standard runs}{figure.5.7}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.5.3}Probabilistic matching results from Cluster-Cluster}{69}{subsection.5.5.3}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.8}{\ignorespaces  PR curves obtained from running Cluster-Cluster on one of the sets of 4 randomly selected Standard runs (left) and the 3 Beer runs (right). Green dots are performance points obtained from running Cluster-Match at varying m/z and RT tolerance parameters on the same datasets, with their distributions of the points plotted along the marginals. The same first-stage clustering results were used as input to both Cluster-Match and Cluster-Cluster.}}{70}{figure.5.8}}
+\newlabel{fig:pr-curve}{{5.8}{70}{PR curves obtained from running Cluster-Cluster on one of the sets of 4 randomly selected Standard runs (left) and the 3 Beer runs (right). Green dots are performance points obtained from running Cluster-Match at varying m/z and RT tolerance parameters on the same datasets, with their distributions of the points plotted along the marginals. The same first-stage clustering results were used as input to both Cluster-Match and Cluster-Cluster}{figure.5.8}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.9}{\ignorespaces  Different IP clusters (2, 15, 24, 9), found in a set of four different Standard runs, which have been putatively identified as corresponding to Melatonin and whose member peaks should therefore be aligned according to the ground truth. Within each run, the first-stage ionization product clustering (PrecursorCluster) gives us the initial assignment of peaks to an IP cluster according to their m/z, RT values and possible transformation types. Here, member peaks are assigned to an IP cluster according to their maximum \textit  {a posteriori} probabilities. In the Figure, the posterior transformation type of a peak and its corresponding probability are annotated as a labelled arrow and the bracketed number beside. Across runs, the second-stage clustering (Cluster-Cluster) brings similar IP clusters together, producing an alignment result. The probability of the four peaks $[M+H]^+$ peaks in the Figure to be matched together into a single aligned peakset is 0.87 when the adduct fingerprint term is used and 0.45 without. }}{72}{figure.5.9}}
+\newlabel{fig:06}{{5.9}{72}{Different IP clusters (2, 15, 24, 9), found in a set of four different Standard runs, which have been putatively identified as corresponding to Melatonin and whose member peaks should therefore be aligned according to the ground truth. Within each run, the first-stage ionization product clustering (PrecursorCluster) gives us the initial assignment of peaks to an IP cluster according to their m/z, RT values and possible transformation types. Here, member peaks are assigned to an IP cluster according to their maximum \textit {a posteriori} probabilities. In the Figure, the posterior transformation type of a peak and its corresponding probability are annotated as a labelled arrow and the bracketed number beside. Across runs, the second-stage clustering (Cluster-Cluster) brings similar IP clusters together, producing an alignment result. The probability of the four peaks $[M+H]^+$ peaks in the Figure to be matched together into a single aligned peakset is 0.87 when the adduct fingerprint term is used and 0.45 without}{figure.5.9}{}}
 \citation{Daly2014}
-\citation{Landan2009}
-\citation{Notredame2000}
-\citation{Penn2010}
-\@writefile{toc}{\contentsline {section}{\numberline {5.6}Conclusion}{71}{section.5.6}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.5.4}Running time}{73}{subsection.5.5.4}}
+\@writefile{toc}{\contentsline {section}{\numberline {5.6}Conclusion}{73}{section.5.6}}
 \citation{DeSouza2006}
 \citation{DeSouza2006}
 \citation{DeSouza2006}
@@ -395,11 +397,11 @@
 \citation{Penn2010}
 \citation{Redelings2005}
 \citation{Bradley2009}
-\@writefile{toc}{\contentsline {chapter}{\numberline {6}Hierarchical Clustering of LC-MS Peaks}{73}{chapter.6}}
+\@writefile{toc}{\contentsline {chapter}{\numberline {6}Hierarchical Clustering of LC-MS Peaks}{75}{chapter.6}}
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
-\newlabel{c:hdp}{{6}{73}{Hierarchical Clustering of LC-MS Peaks}{chapter.6}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {6.1}Introduction}{73}{section.6.1}}
+\newlabel{c:hdp}{{6}{75}{Hierarchical Clustering of LC-MS Peaks}{chapter.6}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {6.1}Introduction}{75}{section.6.1}}
 \citation{Melamud2010}
 \citation{Brodsky2010}
 \citation{Listgarten2004}
@@ -413,25 +415,25 @@
 \citation{GhanatBari2014b}
 \citation{GhanatBari2014b}
 \citation{Teh2006}
-\@writefile{toc}{\contentsline {section}{\numberline {6.2}Hierarchical Dirichlet Process Mixture Model for Alignment}{75}{section.6.2}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {6.2.1}Model Description}{75}{subsection.6.2.1}}
-\@writefile{lof}{\contentsline {figure}{\numberline {6.1}{\ignorespaces An illustrative example of how the proposed model in HDP-Align simultaneously \textbf  {(1)} performs the clustering of related peak features into within-run local clusters by their RT values, \textbf  {(2)} assigns the peak features to global \ac {RT} clusters shared across runs, and \textbf  {(3)} separates peak features into mass clusters, which correspond to aligned peaksets.}}{76}{figure.6.1}}
+\@writefile{toc}{\contentsline {section}{\numberline {6.2}Hierarchical Dirichlet Process Mixture Model for Alignment}{77}{section.6.2}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.2.1}Model Description}{77}{subsection.6.2.1}}
+\@writefile{lof}{\contentsline {figure}{\numberline {6.1}{\ignorespaces An illustrative example of how the proposed model in HDP-Align simultaneously \textbf  {(1)} performs the clustering of related peak features into within-run local clusters by their RT values, \textbf  {(2)} assigns the peak features to global \ac {RT} clusters shared across runs, and \textbf  {(3)} separates peak features into mass clusters, which correspond to aligned peaksets.}}{78}{figure.6.1}}
 \acronymused{RT}
-\newlabel{fig-hdp-cartoon}{{6.1}{76}{An illustrative example of how the proposed model in HDP-Align simultaneously \textbf {(1)} performs the clustering of related peak features into within-run local clusters by their RT values, \textbf {(2)} assigns the peak features to global \ac {RT} clusters shared across runs, and \textbf {(3)} separates peak features into mass clusters, which correspond to aligned peaksets}{figure.6.1}{}}
-\newlabel{eq:draw_ti}{{6.6}{77}{Model Description}{equation.6.2.6}{}}
-\newlabel{eq:draw_tik}{{6.7}{78}{Model Description}{equation.6.2.7}{}}
-\newlabel{eq:peakdist}{{6.8}{78}{Model Description}{equation.6.2.8}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {6.2.2}Inference}{79}{subsection.6.2.2}}
-\@writefile{toc}{\contentsline {subsubsection}{Updating peak assignments}{79}{section*.17}}
-\newlabel{eq:table_likelihood}{{6.13}{79}{Updating peak assignments}{section*.17}{}}
-\newlabel{eq:likelihood-existing-cluster}{{6.14}{79}{Updating peak assignments}{Item.1}{}}
-\newlabel{eq:mass_cluster_marg}{{6.15}{80}{Updating peak assignments}{Item.1}{}}
-\newlabel{eq:global_cluster_marg}{{6.18}{80}{Updating peak assignments}{Item.2}{}}
-\newlabel{eq:existing_global_factors}{{6.19}{80}{Updating peak assignments}{Item.2}{}}
-\@writefile{toc}{\contentsline {subsubsection}{Updating instantiated variables}{81}{section*.18}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {6.2.3}Using the Inference Results}{81}{subsection.6.2.3}}
-\@writefile{toc}{\contentsline {subsubsection}{Feature Matching}{81}{section*.19}}
-\newlabel{subsub:feature-matching}{{6.2.3}{81}{Feature Matching}{section*.19}{}}
+\newlabel{fig-hdp-cartoon}{{6.1}{78}{An illustrative example of how the proposed model in HDP-Align simultaneously \textbf {(1)} performs the clustering of related peak features into within-run local clusters by their RT values, \textbf {(2)} assigns the peak features to global \ac {RT} clusters shared across runs, and \textbf {(3)} separates peak features into mass clusters, which correspond to aligned peaksets}{figure.6.1}{}}
+\newlabel{eq:draw_ti}{{6.6}{79}{Model Description}{equation.6.2.6}{}}
+\newlabel{eq:draw_tik}{{6.7}{80}{Model Description}{equation.6.2.7}{}}
+\newlabel{eq:peakdist}{{6.8}{80}{Model Description}{equation.6.2.8}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.2.2}Inference}{81}{subsection.6.2.2}}
+\@writefile{toc}{\contentsline {subsubsection}{Updating peak assignments}{81}{section*.22}}
+\newlabel{eq:table_likelihood}{{6.13}{81}{Updating peak assignments}{section*.22}{}}
+\newlabel{eq:likelihood-existing-cluster}{{6.14}{81}{Updating peak assignments}{Item.1}{}}
+\newlabel{eq:mass_cluster_marg}{{6.15}{82}{Updating peak assignments}{Item.1}{}}
+\newlabel{eq:global_cluster_marg}{{6.18}{82}{Updating peak assignments}{Item.2}{}}
+\newlabel{eq:existing_global_factors}{{6.19}{82}{Updating peak assignments}{Item.2}{}}
+\@writefile{toc}{\contentsline {subsubsection}{Updating instantiated variables}{83}{section*.23}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.2.3}Using the Inference Results}{83}{subsection.6.2.3}}
+\@writefile{toc}{\contentsline {subsubsection}{Feature Matching}{83}{section*.24}}
+\newlabel{subsub:feature-matching}{{6.2.3}{83}{Feature Matching}{section*.24}{}}
 \citation{Lee2013}
 \citation{Lee2013}
 \citation{Lee2013}
@@ -440,104 +442,104 @@
 \citation{Lee2013}
 \citation{Lange2008}
 \citation{Tsai2013a}
-\@writefile{toc}{\contentsline {subsubsection}{Isotopic Product and Metabolite Identity Annotations}{82}{section*.20}}
-\newlabel{subsub:isotopic-product-annotations}{{6.2.3}{82}{Isotopic Product and Metabolite Identity Annotations}{section*.20}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {6.2}{\ignorespaces Comparisons on the workflow to assign putative annotations on isotopic products and metabolites described in \cite  {Lee2013} and in HDP-Align.}}{83}{figure.6.2}}
-\newlabel{fig-workflow}{{6.2}{83}{Comparisons on the workflow to assign putative annotations on isotopic products and metabolites described in \cite {Lee2013} and in HDP-Align}{figure.6.2}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {6.3}Evaluation Study}{84}{section.6.3}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {6.3.1}Evaluation Datasets}{84}{subsection.6.3.1}}
-\newlabel{sub:Evaluation-datasets}{{6.3.1}{84}{Evaluation Datasets}{subsection.6.3.1}{}}
+\@writefile{toc}{\contentsline {subsubsection}{Isotopic Product and Metabolite Identity Annotations}{84}{section*.25}}
+\newlabel{subsub:isotopic-product-annotations}{{6.2.3}{84}{Isotopic Product and Metabolite Identity Annotations}{section*.25}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {6.2}{\ignorespaces Comparisons on the workflow to assign putative annotations on isotopic products and metabolites described in \cite  {Lee2013} and in HDP-Align.}}{85}{figure.6.2}}
+\newlabel{fig-workflow}{{6.2}{85}{Comparisons on the workflow to assign putative annotations on isotopic products and metabolites described in \cite {Lee2013} and in HDP-Align}{figure.6.2}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {6.3}Evaluation Study}{86}{section.6.3}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.3.1}Evaluation Datasets}{86}{subsection.6.3.1}}
+\newlabel{sub:Evaluation-datasets}{{6.3.1}{86}{Evaluation Datasets}{subsection.6.3.1}{}}
 \acronymused{RT}
-\@writefile{lot}{\contentsline {table}{\numberline {6.1}{\ignorespaces Total number of runs and features of the selected evaluation datasets. }}{84}{table.6.1}}
-\newlabel{tab:hdp-datasets}{{6.1}{84}{Total number of runs and features of the selected evaluation datasets}{table.6.1}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {6.3.2}Performance Measures}{84}{subsection.6.3.2}}
-\newlabel{sub:Performance-Measures}{{6.3.2}{84}{Performance Measures}{subsection.6.3.2}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {6.1}{\ignorespaces Total number of runs and features of the selected evaluation datasets. }}{86}{table.6.1}}
+\newlabel{tab:hdp-datasets}{{6.1}{86}{Total number of runs and features of the selected evaluation datasets}{table.6.1}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.3.2}Performance Measures}{86}{subsection.6.3.2}}
+\newlabel{sub:Performance-Measures}{{6.3.2}{86}{Performance Measures}{subsection.6.3.2}{}}
 \citation{Voss2011a}
 \citation{Pluskal2010}
-\@writefile{toc}{\contentsline {subsection}{\numberline {6.3.3}Benchmarking Method}{85}{subsection.6.3.3}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.3.3}Benchmarking Method}{87}{subsection.6.3.3}}
 \acronymused{RT}
 \citation{Lange2008}
 \citation{Tsai2013a}
-\@writefile{toc}{\contentsline {subsection}{\numberline {6.3.4}Parameter Optimisations}{86}{subsection.6.3.4}}
-\newlabel{sub:parameter-optimisations}{{6.3.4}{86}{Parameter Optimisations}{subsection.6.3.4}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.3.4}Parameter Optimisations}{88}{subsection.6.3.4}}
+\newlabel{sub:parameter-optimisations}{{6.3.4}{88}{Parameter Optimisations}{subsection.6.3.4}{}}
 \acronymused{RT}
 \acronymused{RT}
-\@writefile{lot}{\contentsline {table}{\numberline {6.2}{\ignorespaces Parameters used for HDP-Align}}{86}{table.6.2}}
-\newlabel{tab:hdp-parameters-hdpalign}{{6.2}{86}{Parameters used for HDP-Align}{table.6.2}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {6.2}{\ignorespaces Parameters used for HDP-Align}}{88}{table.6.2}}
+\newlabel{tab:hdp-parameters-hdpalign}{{6.2}{88}{Parameters used for HDP-Align}{table.6.2}{}}
 \citation{Lange2008}
-\@writefile{lot}{\contentsline {table}{\numberline {6.3}{\ignorespaces Parameters used for the benchmark methods (SIMA, Join).}}{87}{table.6.3}}
-\newlabel{tab:hdp-parameters-benchmark}{{6.3}{87}{Parameters used for the benchmark methods (SIMA, Join)}{table.6.3}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {6.4}Results}{87}{section.6.4}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {6.4.1}Proteomic (P1) Results}{87}{subsection.6.4.1}}
-\newlabel{sub:proteomic-results}{{6.4.1}{87}{Proteomic (P1) Results}{subsection.6.4.1}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {6.3}{\ignorespaces Parameters used for the benchmark methods (SIMA, Join).}}{89}{table.6.3}}
+\newlabel{tab:hdp-parameters-benchmark}{{6.3}{89}{Parameters used for the benchmark methods (SIMA, Join)}{table.6.3}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {6.4}Results}{89}{section.6.4}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.4.1}Proteomic (P1) Results}{89}{subsection.6.4.1}}
+\newlabel{sub:proteomic-results}{{6.4.1}{89}{Proteomic (P1) Results}{subsection.6.4.1}{}}
 \acronymused{RT}
 \acronymused{RT}
 \citation{Lee2013}
-\@writefile{lof}{\contentsline {figure}{\numberline {6.3}{\ignorespaces Precision-recall values on the different fractions of the Proteomic (P1) dataset.}}{88}{figure.6.3}}
-\newlabel{fig:proteomic_results}{{6.3}{88}{Precision-recall values on the different fractions of the Proteomic (P1) dataset}{figure.6.3}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {6.4.2}Glycomic and Metabolomic Results}{88}{subsection.6.4.2}}
-\newlabel{sub:glycomic-metabolomic-results}{{6.4.2}{88}{Glycomic and Metabolomic Results}{subsection.6.4.2}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {6.3}{\ignorespaces Precision-recall values on the different fractions of the Proteomic (P1) dataset.}}{90}{figure.6.3}}
+\newlabel{fig:proteomic_results}{{6.3}{90}{Precision-recall values on the different fractions of the Proteomic (P1) dataset}{figure.6.3}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.4.2}Glycomic and Metabolomic Results}{90}{subsection.6.4.2}}
+\newlabel{sub:glycomic-metabolomic-results}{{6.4.2}{90}{Glycomic and Metabolomic Results}{subsection.6.4.2}{}}
 \acronymused{RT}
 \acronymused{RT}
 \acronymused{RT}
-\@writefile{lof}{\contentsline {figure}{\numberline {6.4}{\ignorespaces Precision-recall values on the alignment of 10 runs from the Glycomic dataset when $q$ (the strictness of performance evaluation as described in Section\nobreakspace  {}\ref  {sub:Performance-Measures}) is gradually increased.}}{89}{figure.6.4}}
-\newlabel{fig:glycomic_results}{{6.4}{89}{Precision-recall values on the alignment of 10 runs from the Glycomic dataset when $q$ (the strictness of performance evaluation as described in Section~\ref {sub:Performance-Measures}) is gradually increased}{figure.6.4}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {6.5}{\ignorespaces Precision-recall values on the alignment of 6 runs from the Metabolomic dataset. The parameter values $(T_{m/z}, T_{rt})$ that produce the best and worst performance in SIMA are also annotated in the Figure (red boxes).}}{90}{figure.6.5}}
-\newlabel{fig:metabolomic_results_alignment}{{6.5}{90}{Precision-recall values on the alignment of 6 runs from the Metabolomic dataset. The parameter values $(T_{m/z}, T_{rt})$ that produce the best and worst performance in SIMA are also annotated in the Figure (red boxes)}{figure.6.5}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {6.4.3}Running Time}{90}{subsection.6.4.3}}
-\newlabel{sub:running-time}{{6.4.3}{90}{Running Time}{subsection.6.4.3}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {6.6}{\ignorespaces Example analysis that can be performed on the clustering objects inferred in a Gibbs sample from HDP-Align. The outer black oval denotes a global RT cluster (generally corresponding to a metabolite compound), while the smaller dotted ovals within denote mass clusters (labelled as mass cluster $A,B,C,D,E,F$). Peak features are denoted by the filled circle, with the fill colour indicating the originating run of a peak. Green colours denote additional analysis steps that can be performed on the mass cluster objects. \textbf  {REDRAW TO LOOK NICER?}}}{91}{figure.6.6}}
-\newlabel{fig:metabolomic_results_annotations}{{6.6}{91}{Example analysis that can be performed on the clustering objects inferred in a Gibbs sample from HDP-Align. The outer black oval denotes a global RT cluster (generally corresponding to a metabolite compound), while the smaller dotted ovals within denote mass clusters (labelled as mass cluster $A,B,C,D,E,F$). Peak features are denoted by the filled circle, with the fill colour indicating the originating run of a peak. Green colours denote additional analysis steps that can be performed on the mass cluster objects. \textbf {REDRAW TO LOOK NICER?}}{figure.6.6}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {6.4}{\ignorespaces Precision-recall values on the alignment of 10 runs from the Glycomic dataset when $q$ (the strictness of performance evaluation as described in Section\nobreakspace  {}\ref  {sub:Performance-Measures}) is gradually increased.}}{91}{figure.6.4}}
+\newlabel{fig:glycomic_results}{{6.4}{91}{Precision-recall values on the alignment of 10 runs from the Glycomic dataset when $q$ (the strictness of performance evaluation as described in Section~\ref {sub:Performance-Measures}) is gradually increased}{figure.6.4}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {6.5}{\ignorespaces Precision-recall values on the alignment of 6 runs from the Metabolomic dataset. The parameter values $(T_{m/z}, T_{rt})$ that produce the best and worst performance in SIMA are also annotated in the Figure (red boxes).}}{92}{figure.6.5}}
+\newlabel{fig:metabolomic_results_alignment}{{6.5}{92}{Precision-recall values on the alignment of 6 runs from the Metabolomic dataset. The parameter values $(T_{m/z}, T_{rt})$ that produce the best and worst performance in SIMA are also annotated in the Figure (red boxes)}{figure.6.5}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.4.3}Running Time}{92}{subsection.6.4.3}}
+\newlabel{sub:running-time}{{6.4.3}{92}{Running Time}{subsection.6.4.3}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {6.6}{\ignorespaces Example analysis that can be performed on the clustering objects inferred in a Gibbs sample from HDP-Align. The outer black oval denotes a global RT cluster (generally corresponding to a metabolite compound), while the smaller dotted ovals within denote mass clusters (labelled as mass cluster $A,B,C,D,E,F$). Peak features are denoted by the filled circle, with the fill colour indicating the originating run of a peak. Green colours denote additional analysis steps that can be performed on the mass cluster objects. \textbf  {REDRAW TO LOOK NICER?}}}{93}{figure.6.6}}
+\newlabel{fig:metabolomic_results_annotations}{{6.6}{93}{Example analysis that can be performed on the clustering objects inferred in a Gibbs sample from HDP-Align. The outer black oval denotes a global RT cluster (generally corresponding to a metabolite compound), while the smaller dotted ovals within denote mass clusters (labelled as mass cluster $A,B,C,D,E,F$). Peak features are denoted by the filled circle, with the fill colour indicating the originating run of a peak. Green colours denote additional analysis steps that can be performed on the mass cluster objects. \textbf {REDRAW TO LOOK NICER?}}{figure.6.6}{}}
 \citation{Smith2013}
 \citation{Smith2013a}
 \citation{Kuhl2012}
 \citation{Lovell2012}
-\@writefile{toc}{\contentsline {section}{\numberline {6.5}Discussion and Conclusion}{92}{section.6.5}}
-\newlabel{sec:conc}{{6.5}{92}{Discussion and Conclusion}{section.6.5}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {6.5}Discussion and Conclusion}{94}{section.6.5}}
+\newlabel{sec:conc}{{6.5}{94}{Discussion and Conclusion}{section.6.5}{}}
 \citation{Daly2014}
-\@writefile{toc}{\contentsline {chapter}{\numberline {7}Substructure Discovery in Tandem Mass Spectometry Data}{94}{chapter.7}}
+\@writefile{toc}{\contentsline {chapter}{\numberline {7}Substructure Discovery in Tandem Mass Spectometry Data}{96}{chapter.7}}
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
-\newlabel{c:background}{{7}{94}{Substructure Discovery in Tandem Mass Spectometry Data}{chapter.7}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {7.1}Introduction}{94}{section.7.1}}
-\@writefile{toc}{\contentsline {section}{\numberline {7.2}A Workflow for Substructure Discoveries and Annotations}{96}{section.7.2}}
-\@writefile{lof}{\contentsline {figure}{\numberline {7.1}{\ignorespaces Figure 1: Analogy between LDA for text-mining and MS2LDA. In this example, we can see that traditional LDA has extracted topics that can be interpreted as ‘football related’, ‘business-related’ and ‘environment related’. Each document is a combination of different topics. In a similar manner, MS2LDA extracts different sets of concurring mass fragments or losses (Mass2Motifs) from the fragmentation spectra of precursor ions that can be interpreted as ‘Asparagine-related’, ‘Hexose-related’ and ‘Adenine-related’. Each fragmentation spectra is made up of one or more Mass2Motifs.}}{96}{figure.7.1}}
-\newlabel{fig:text2frags}{{7.1}{96}{Figure 1: Analogy between LDA for text-mining and MS2LDA. In this example, we can see that traditional LDA has extracted topics that can be interpreted as ‘football related’, ‘business-related’ and ‘environment related’. Each document is a combination of different topics. In a similar manner, MS2LDA extracts different sets of concurring mass fragments or losses (Mass2Motifs) from the fragmentation spectra of precursor ions that can be interpreted as ‘Asparagine-related’, ‘Hexose-related’ and ‘Adenine-related’. Each fragmentation spectra is made up of one or more Mass2Motifs}{figure.7.1}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {7.2}{\ignorespaces Schematic overview of the MS2LDA workflow..}}{97}{figure.7.2}}
-\newlabel{fig:m2lda-workflow}{{7.2}{97}{Schematic overview of the MS2LDA workflow.}{figure.7.2}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {7.2.1}Data Conversion}{97}{subsection.7.2.1}}
-\@writefile{toc}{\contentsline {subsubsection}{Peak Detection \& Data Filtering}{97}{section*.21}}
-\@writefile{toc}{\contentsline {subsubsection}{LDA Feature Extraction}{98}{section*.22}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {7.2.2}Mass2Motif Discovery}{98}{subsection.7.2.2}}
-\@writefile{toc}{\contentsline {subsubsection}{LDA Inference}{98}{section*.23}}
-\@writefile{toc}{\contentsline {subsubsection}{Candidate Elemental Formula Assignment}{99}{section*.24}}
-\@writefile{toc}{\contentsline {subsubsection}{MS2LDAVis Visualisation}{100}{section*.25}}
-\@writefile{toc}{\contentsline {section}{\numberline {7.3}Evaluation Study}{101}{section.7.3}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {7.3.1}Evaluation Datasets}{101}{subsection.7.3.1}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {7.3.2}Model Comparison}{103}{subsection.7.3.2}}
-\@writefile{toc}{\contentsline {section}{\numberline {7.4}Results \& Discussion}{104}{section.7.4}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {7.4.1}Model Comparison Results}{104}{subsection.7.4.1}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {7.4.2}Biological Findings}{104}{subsection.7.4.2}}
-\@writefile{toc}{\contentsline {subsubsection}{Automatic, unsupervised, chemical substructure discovery}{106}{section*.26}}
-\@writefile{toc}{\contentsline {subsubsection}{Matched standards used for validation are well explained by structurally annotated Mass2Motifs}{107}{section*.27}}
-\@writefile{toc}{\contentsline {subsubsection}{Mass2Motifs can aid in de novo metabolite annotation}{108}{section*.28}}
-\@writefile{toc}{\contentsline {subsubsection}{Differential Expression of Mass2Motifs reveals biochemical changes across samples}{109}{section*.29}}
-\@writefile{toc}{\contentsline {section}{\numberline {7.5}Substructure Discoveries across Many Samples}{111}{section.7.5}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {7.5.1}Extension to the LDA model}{111}{subsection.7.5.1}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {7.5.2}Evaluation Datasets}{111}{subsection.7.5.2}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {7.5.3}Results \& Discussion}{111}{subsection.7.5.3}}
-\@writefile{toc}{\contentsline {section}{\numberline {7.6}Conclusion}{111}{section.7.6}}
-\@writefile{toc}{\contentsline {chapter}{\numberline {8}Conclusion}{112}{chapter.8}}
+\newlabel{c:background}{{7}{96}{Substructure Discovery in Tandem Mass Spectometry Data}{chapter.7}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {7.1}Introduction}{96}{section.7.1}}
+\@writefile{toc}{\contentsline {section}{\numberline {7.2}A Workflow for Substructure Discoveries and Annotations}{98}{section.7.2}}
+\@writefile{lof}{\contentsline {figure}{\numberline {7.1}{\ignorespaces Figure 1: Analogy between LDA for text-mining and MS2LDA. In this example, we can see that traditional LDA has extracted topics that can be interpreted as ‘football related’, ‘business-related’ and ‘environment related’. Each document is a combination of different topics. In a similar manner, MS2LDA extracts different sets of concurring mass fragments or losses (Mass2Motifs) from the fragmentation spectra of precursor ions that can be interpreted as ‘Asparagine-related’, ‘Hexose-related’ and ‘Adenine-related’. Each fragmentation spectra is made up of one or more Mass2Motifs.}}{98}{figure.7.1}}
+\newlabel{fig:text2frags}{{7.1}{98}{Figure 1: Analogy between LDA for text-mining and MS2LDA. In this example, we can see that traditional LDA has extracted topics that can be interpreted as ‘football related’, ‘business-related’ and ‘environment related’. Each document is a combination of different topics. In a similar manner, MS2LDA extracts different sets of concurring mass fragments or losses (Mass2Motifs) from the fragmentation spectra of precursor ions that can be interpreted as ‘Asparagine-related’, ‘Hexose-related’ and ‘Adenine-related’. Each fragmentation spectra is made up of one or more Mass2Motifs}{figure.7.1}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {7.2}{\ignorespaces Schematic overview of the MS2LDA workflow..}}{99}{figure.7.2}}
+\newlabel{fig:m2lda-workflow}{{7.2}{99}{Schematic overview of the MS2LDA workflow.}{figure.7.2}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {7.2.1}Data Conversion}{99}{subsection.7.2.1}}
+\@writefile{toc}{\contentsline {subsubsection}{Peak Detection \& Data Filtering}{99}{section*.26}}
+\@writefile{toc}{\contentsline {subsubsection}{LDA Feature Extraction}{100}{section*.27}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {7.2.2}Mass2Motif Discovery}{100}{subsection.7.2.2}}
+\@writefile{toc}{\contentsline {subsubsection}{LDA Inference}{100}{section*.28}}
+\@writefile{toc}{\contentsline {subsubsection}{Candidate Elemental Formula Assignment}{101}{section*.29}}
+\@writefile{toc}{\contentsline {subsubsection}{MS2LDAVis Visualisation}{102}{section*.30}}
+\@writefile{toc}{\contentsline {section}{\numberline {7.3}Evaluation Study}{103}{section.7.3}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {7.3.1}Evaluation Datasets}{103}{subsection.7.3.1}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {7.3.2}Model Comparison}{105}{subsection.7.3.2}}
+\@writefile{toc}{\contentsline {section}{\numberline {7.4}Results \& Discussion}{106}{section.7.4}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {7.4.1}Model Comparison Results}{106}{subsection.7.4.1}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {7.4.2}Biological Findings}{106}{subsection.7.4.2}}
+\@writefile{toc}{\contentsline {subsubsection}{Automatic, unsupervised, chemical substructure discovery}{108}{section*.31}}
+\@writefile{toc}{\contentsline {subsubsection}{Matched standards used for validation are well explained by structurally annotated Mass2Motifs}{109}{section*.32}}
+\@writefile{toc}{\contentsline {subsubsection}{Mass2Motifs can aid in de novo metabolite annotation}{110}{section*.33}}
+\@writefile{toc}{\contentsline {subsubsection}{Differential Expression of Mass2Motifs reveals biochemical changes across samples}{111}{section*.34}}
+\@writefile{toc}{\contentsline {section}{\numberline {7.5}Substructure Discoveries across Many Samples}{113}{section.7.5}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {7.5.1}Extension to the LDA model}{113}{subsection.7.5.1}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {7.5.2}Evaluation Datasets}{113}{subsection.7.5.2}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {7.5.3}Results \& Discussion}{113}{subsection.7.5.3}}
+\@writefile{toc}{\contentsline {section}{\numberline {7.6}Conclusion}{113}{section.7.6}}
+\@writefile{toc}{\contentsline {chapter}{\numberline {8}Conclusion}{114}{chapter.8}}
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
-\newlabel{c:background}{{8}{112}{Conclusion}{chapter.8}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {8.1}Summary of Contributions}{112}{section.8.1}}
-\@writefile{toc}{\contentsline {section}{\numberline {8.2}Future Work}{112}{section.8.2}}
-\@writefile{toc}{\contentsline {section}{\numberline {8.3}Summary and Conclusions}{112}{section.8.3}}
-\@writefile{toc}{\contentsline {chapter}{\numberline {A}An Appendix}{113}{appendix.A}}
+\newlabel{c:background}{{8}{114}{Conclusion}{chapter.8}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {8.1}Summary of Contributions}{114}{section.8.1}}
+\@writefile{toc}{\contentsline {section}{\numberline {8.2}Future Work}{114}{section.8.2}}
+\@writefile{toc}{\contentsline {section}{\numberline {8.3}Summary and Conclusions}{114}{section.8.3}}
+\@writefile{toc}{\contentsline {chapter}{\numberline {A}An Appendix}{115}{appendix.A}}
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
-\newlabel{a:appendix}{{A}{113}{An Appendix}{appendix.A}{}}
+\newlabel{a:appendix}{{A}{115}{An Appendix}{appendix.A}{}}
 \bibstyle{IEEEtran}
 \bibdata{bibliography/dissertation}
 \bibcite{Tsai2013a}{1}
@@ -549,7 +551,7 @@
 \bibcite{Smith2014}{7}
 \bibcite{Castillo2011}{8}
 \bibcite{Manuscript2013}{9}
-\@writefile{toc}{\contentsline {chapter}{Bibliography}{114}{appendix.A}}
+\@writefile{toc}{\contentsline {chapter}{Bibliography}{116}{appendix.A}}
 \bibcite{Gika2014}{10}
 \bibcite{metzker2010sequencing}{11}
 \bibcite{mann2003proteomic}{12}
@@ -600,11 +602,11 @@
 \bibcite{Smith2013a}{57}
 \bibcite{Scheltema2011}{58}
 \bibcite{Rogers2012}{59}
-\bibcite{Landan2009}{60}
-\bibcite{Notredame2000}{61}
-\bibcite{Penn2010}{62}
-\bibcite{DeSouza2006}{63}
-\bibcite{Thompson1994}{64}
+\bibcite{DeSouza2006}{60}
+\bibcite{Landan2009}{61}
+\bibcite{Thompson1994}{62}
+\bibcite{Notredame2000}{63}
+\bibcite{Penn2010}{64}
 \bibcite{Redelings2005}{65}
 \bibcite{Bradley2009}{66}
 \bibcite{Melamud2010}{67}

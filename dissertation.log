@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2016.3.1)  11 APR 2016 20:38
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2016.3.1)  22 APR 2016 14:45
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1201,7 +1201,7 @@ stination with the same identifier (name{page.}) has been already used, duplica
 te ignored
 <to be read again> 
                    \relax 
-l.95 ...e {7.3}Evaluation Study}{101}{section.7.3}
+l.95 ...e {7.3}Evaluation Study}{103}{section.7.3}
                                                    [6])
 \tf@toc=\write8
 \openout8 = `dissertation.toc'.
@@ -1233,71 +1233,76 @@ l.10 ...tures in the P1 dataset.}}{39}{figure.4.2}
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.21 ...ndard and Beer datasets.}}{62}{figure.5.2}
+l.21 ...f peak features per run.}}{63}{figure.5.2}
                                                    [10]pdfTeX warning (ext4): d
 estination with the same identifier (name{page.}) has been already used, duplic
 ate ignored
 <to be read again> 
                    \relax 
-l.27 ... used and 0.45 without. }}{70}{figure.5.8}
-                                                   [11]
+l.24 ...P clusters across runs. }}{67}{figure.5.5}
+                                                   [11]pdfTeX warning (ext4): d
+estination with the same identifier (name{page.}) has been already used, duplic
+ate ignored
+<to be read again> 
+                   \relax 
+l.30 ...ond to aligned peaksets.}}{78}{figure.6.1}
+                                                   [12]
 Package acronym Info: Label `acro:RT' newly defined as it shall be overridden
-although it is yet undefined on input line 29.
+although it is yet undefined on input line 30.
 
-Overfull \hbox (1.89848pt too wide) in paragraph at lines 32--32
+Overfull \hbox (1.89848pt too wide) in paragraph at lines 33--33
  [][] [][]\OT1/ptm/m/n/12 Precision-recall val-ues on the align-ment of 10 runs
  from the Gly-comic dataset 
  []
 
 
-Overfull \hbox (4.55109pt too wide) in paragraph at lines 32--32
+Overfull \hbox (4.55109pt too wide) in paragraph at lines 33--33
  \OT1/ptm/m/n/12 when $\OML/cmm/m/it/12 q$ \OT1/ptm/m/n/12 (the strict-ness of 
 per-for-mance eval-u-a-tion as de-scribed in Sec-tion []6.3.2[]) 
  []
 
+Missing character: There is no â in font ptmr7t!
+Missing character: There is no € in font ptmr7t!
+Missing character: There is no ˜ in font ptmr7t!
+Missing character: There is no â in font ptmr7t!
+Missing character: There is no € in font ptmr7t!
+Missing character: There is no ™ in font ptmr7t!
+Missing character: There is no â in font ptmr7t!
+Missing character: There is no € in font ptmr7t!
+Missing character: There is no ˜ in font ptmr7t!
+Missing character: There is no â in font ptmr7t!
+Missing character: There is no € in font ptmr7t!
+Missing character: There is no ™ in font ptmr7t!
+Missing character: There is no â in font ptmr7t!
+Missing character: There is no € in font ptmr7t!
+Missing character: There is no ˜ in font ptmr7t!
+Missing character: There is no â in font ptmr7t!
+Missing character: There is no € in font ptmr7t!
+Missing character: There is no ™ in font ptmr7t!
+Missing character: There is no â in font ptmr7t!
+Missing character: There is no € in font ptmr7t!
+Missing character: There is no ˜ in font ptmr7t!
+Missing character: There is no â in font ptmr7t!
+Missing character: There is no € in font ptmr7t!
+Missing character: There is no ™ in font ptmr7t!
+Missing character: There is no â in font ptmr7t!
+Missing character: There is no € in font ptmr7t!
+Missing character: There is no ˜ in font ptmr7t!
+Missing character: There is no â in font ptmr7t!
+Missing character: There is no € in font ptmr7t!
+Missing character: There is no ™ in font ptmr7t!
+Missing character: There is no â in font ptmr7t!
+Missing character: There is no € in font ptmr7t!
+Missing character: There is no ˜ in font ptmr7t!
+Missing character: There is no â in font ptmr7t!
+Missing character: There is no € in font ptmr7t!
+Missing character: There is no ™ in font ptmr7t!
 pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
 een already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.36 ...one or more Mass2Motifs.}}{96}{figure.7.1}
-                                                   [12]
-Missing character: There is no â in font ptmr7t!
-Missing character: There is no € in font ptmr7t!
-Missing character: There is no ˜ in font ptmr7t!
-Missing character: There is no â in font ptmr7t!
-Missing character: There is no € in font ptmr7t!
-Missing character: There is no ™ in font ptmr7t!
-Missing character: There is no â in font ptmr7t!
-Missing character: There is no € in font ptmr7t!
-Missing character: There is no ˜ in font ptmr7t!
-Missing character: There is no â in font ptmr7t!
-Missing character: There is no € in font ptmr7t!
-Missing character: There is no ™ in font ptmr7t!
-Missing character: There is no â in font ptmr7t!
-Missing character: There is no € in font ptmr7t!
-Missing character: There is no ˜ in font ptmr7t!
-Missing character: There is no â in font ptmr7t!
-Missing character: There is no € in font ptmr7t!
-Missing character: There is no ™ in font ptmr7t!
-Missing character: There is no â in font ptmr7t!
-Missing character: There is no € in font ptmr7t!
-Missing character: There is no ˜ in font ptmr7t!
-Missing character: There is no â in font ptmr7t!
-Missing character: There is no € in font ptmr7t!
-Missing character: There is no ™ in font ptmr7t!
-Missing character: There is no â in font ptmr7t!
-Missing character: There is no € in font ptmr7t!
-Missing character: There is no ˜ in font ptmr7t!
-Missing character: There is no â in font ptmr7t!
-Missing character: There is no € in font ptmr7t!
-Missing character: There is no ™ in font ptmr7t!
-Missing character: There is no â in font ptmr7t!
-Missing character: There is no € in font ptmr7t!
-Missing character: There is no ˜ in font ptmr7t!
-Missing character: There is no â in font ptmr7t!
-Missing character: There is no € in font ptmr7t!
-Missing character: There is no ™ in font ptmr7t!
-)
+l.38 ...of the MS2LDA workflow..}}{99}{figure.7.2}
+                                                   [13])
 \tf@lof=\write10
 \openout10 = `dissertation.lof'.
 
@@ -1306,7 +1311,7 @@ een already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.155 \newpage
-               [13]) (./dissertation.tdo)
+               [14]) (./dissertation.tdo)
 \tf@tdo=\write11
 \openout11 = `dissertation.tdo'.
 
@@ -1335,7 +1340,7 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <14.4> not available
 LaTeX Font Info:    Font shape `OT1/phv/bx/n' in size <14.4> not available
 (Font)              Font shape `OT1/phv/b/n' tried instead on input line 41.
  [7] [8]
-<02-background/figures/Fig-1.jpg, id=850, 605.26125pt x 207.77625pt>
+<02-background/figures/Fig-1.jpg, id=884, 605.26125pt x 207.77625pt>
 File: 02-background/figures/Fig-1.jpg Graphic file (type jpg)
 
 <use 02-background/figures/Fig-1.jpg>
@@ -1343,7 +1348,7 @@ Package pdftex.def Info: 02-background/figures/Fig-1.jpg used on input line 50.
 
 (pdftex.def)             Requested size: 352.8155pt x 121.11584pt.
 
-<02-background/figures/report_0001.png, id=851, 1215.54124pt x 493.845pt>
+<02-background/figures/report_0001.png, id=885, 1215.54124pt x 493.845pt>
 File: 02-background/figures/report_0001.png Graphic file (type png)
 
 <use 02-background/figures/report_0001.png>
@@ -1355,7 +1360,7 @@ g>]
 
 LaTeX Warning: Citation `Smith2004' on page 10 undefined on input line 69.
 
-[10] <02-background/figures/Drawing1.png, id=864, 700.86844pt x 308.65312pt>
+[10] <02-background/figures/Drawing1.png, id=899, 700.86844pt x 308.65312pt>
 File: 02-background/figures/Drawing1.png Graphic file (type png)
 
 <use 02-background/figures/Drawing1.png>
@@ -1420,7 +1425,7 @@ _1-eps-converted-to.pdf 04-matching/figures/figure_1.eps>
 (epstopdf)             \includegraphics on input line 11.
 Package epstopdf Info: Output file is already uptodate.
 
-<04-matching/figures/figure_1-eps-converted-to.pdf, id=1047, 733.74126pt x 218.
+<04-matching/figures/figure_1-eps-converted-to.pdf, id=1081, 733.74126pt x 218.
 8175pt>
 File: 04-matching/figures/figure_1-eps-converted-to.pdf Graphic file (type pdf)
 
@@ -1466,7 +1471,7 @@ sy/m/n/12 g$\OT1/ptm/m/n/12 .
 
 LaTeX Font Info:    Font shape `OT1/phv/bx/n' in size <12> not available
 (Font)              Font shape `OT1/phv/b/n' tried instead on input line 272.
-[37] <04-matching/figures/P1_000_new.pdf, id=1210, 1445.4pt x 361.35pt>
+[37] <04-matching/figures/P1_000_new.pdf, id=1244, 1445.4pt x 361.35pt>
 File: 04-matching/figures/P1_000_new.pdf Graphic file (type pdf)
 
 <use 04-matching/figures/P1_000_new.pdf>
@@ -1474,7 +1479,7 @@ Package pdftex.def Info: 04-matching/figures/P1_000_new.pdf used on input line
 354.
 (pdftex.def)             Requested size: 441.01772pt x 110.25294pt.
 
-<04-matching/figures/P1_100_new.pdf, id=1212, 1445.4pt x 361.35pt>
+<04-matching/figures/P1_100_new.pdf, id=1246, 1445.4pt x 361.35pt>
 File: 04-matching/figures/P1_100_new.pdf Graphic file (type pdf)
 
 <use 04-matching/figures/P1_100_new.pdf>
@@ -1491,7 +1496,7 @@ Overfull \hbox (3.0pt too wide) in paragraph at lines 354--360
  [][] 
  []
 
-<04-matching/figures/P2_000_new.pdf, id=1214, 1445.4pt x 361.35pt>
+<04-matching/figures/P2_000_new.pdf, id=1248, 1445.4pt x 361.35pt>
 File: 04-matching/figures/P2_000_new.pdf Graphic file (type pdf)
 
 <use 04-matching/figures/P2_000_new.pdf>
@@ -1499,7 +1504,7 @@ Package pdftex.def Info: 04-matching/figures/P2_000_new.pdf used on input line
 368.
 (pdftex.def)             Requested size: 441.01772pt x 110.25294pt.
 
-<04-matching/figures/P2_100_new.pdf, id=1216, 1445.4pt x 361.35pt>
+<04-matching/figures/P2_100_new.pdf, id=1250, 1445.4pt x 361.35pt>
 File: 04-matching/figures/P2_100_new.pdf Graphic file (type pdf)
 
 <use 04-matching/figures/P2_100_new.pdf>
@@ -1531,7 +1536,7 @@ _3-eps-converted-to.pdf 04-matching/figures/figure_3.eps>
 (epstopdf)             \includegraphics on input line 451.
 Package epstopdf Info: Output file is already uptodate.
 
-<04-matching/figures/figure_3-eps-converted-to.pdf, id=1371, 463.7325pt x 366.3
+<04-matching/figures/figure_3-eps-converted-to.pdf, id=1405, 463.7325pt x 366.3
 6874pt>
 File: 04-matching/figures/figure_3-eps-converted-to.pdf Graphic file (type pdf)
 
@@ -1551,7 +1556,7 @@ _4-eps-converted-to.pdf 04-matching/figures/figure_4.eps>
 (epstopdf)             \includegraphics on input line 456.
 Package epstopdf Info: Output file is already uptodate.
 
-<04-matching/figures/figure_4-eps-converted-to.pdf, id=1372, 463.7325pt x 366.3
+<04-matching/figures/figure_4-eps-converted-to.pdf, id=1406, 463.7325pt x 366.3
 6874pt>
 File: 04-matching/figures/figure_4-eps-converted-to.pdf Graphic file (type pdf)
 
@@ -1571,7 +1576,7 @@ igure_3-eps-converted-to.pdf 04-matching/figures/supp_figure_3.eps>
 (epstopdf)             \includegraphics on input line 464.
 Package epstopdf Info: Output file is already uptodate.
 
-<04-matching/figures/supp_figure_3-eps-converted-to.pdf, id=1374, 469.755pt x 3
+<04-matching/figures/supp_figure_3-eps-converted-to.pdf, id=1408, 469.755pt x 3
 56.33125pt>
 File: 04-matching/figures/supp_figure_3-eps-converted-to.pdf Graphic file (type
  pdf)
@@ -1589,154 +1594,166 @@ although it is yet undefined on input line 505.
 Chapter 5.
 [47
 
-] [48]
-<05-precursor-cluster/figures/fig1.pdf, id=1438, 1195.46625pt x 1517.67pt>
+]
+
+LaTeX Warning: Citation `Smith2015' on page 48 undefined on input line 15.
+
+
+LaTeX Warning: Citation `' on page 48 undefined on input line 21.
+
+
+LaTeX Warning: Citation `' on page 48 undefined on input line 21.
+
+[48]
+<05-precursor-cluster/figures/fig1.pdf, id=1474, 1195.46625pt x 1517.67pt>
 File: 05-precursor-cluster/figures/fig1.pdf Graphic file (type pdf)
 
 <use 05-precursor-cluster/figures/fig1.pdf>
 Package pdftex.def Info: 05-precursor-cluster/figures/fig1.pdf used on input li
-ne 24.
-(pdftex.def)             Requested size: 441.01772pt x 559.88492pt.
+ne 31.
+(pdftex.def)             Requested size: 220.50885pt x 279.93088pt.
+ [49] [50 <./05-precursor-cluster/figures/fig1.pdf>] [51] [52]
 
+LaTeX Warning: Citation `Rogers2011' on page 53 undefined on input line 67.
 
-LaTeX Warning: Float too large for page by 185.58076pt on input line 26.
+[53] [54] [55] [56] [57]
+Missing character: There is no Î in font ptmr7t!
+Missing character: There is no ¼ in font ptmr7t!
+ [58] [59]
 
-[49] [50 <./05-precursor-cluster/figures/fig1.pdf>] [51]
-
-LaTeX Warning: Citation `Rogers2011' on page 52 undefined on input line 59.
-
-[52] [53]
-
-LaTeX Warning: Citation `Wandy2015' on page 54 undefined on input line 69.
-
-
-LaTeX Warning: Citation `Wandy2015' on page 54 undefined on input line 69.
-
-[54] [55] [56]
-
-LaTeX Warning: Citation `Wandy2015' on page 57 undefined on input line 118.
-
-[57]
-
-LaTeX Warning: Citation `Wandy2015' on page 58 undefined on input line 127.
-
-
-LaTeX Warning: Citation `Wandy2015' on page 58 undefined on input line 129.
-
-[58]
-
-LaTeX Warning: Citation `Wandy2015' on page 59 undefined on input line 145.
-
-
-LaTeX Warning: Citation `Wandy2015' on page 59 undefined on input line 147.
-
-[59]
-
-LaTeX Warning: Citation `Wandy2015' on page 60 undefined on input line 155.
+LaTeX Warning: Citation `Wandy2015' on page 60 undefined on input line 161.
 
 [60]
 
-LaTeX Warning: Reference `Tab:cluster-counts' on page 61 undefined on input lin
-e 173.
+LaTeX Warning: Reference `sub:precursor-cluster-results' on page 61 undefined o
+n input line 177.
 
 
-LaTeX Warning: Reference `Tab:cluster-counts' on page 61 undefined on input lin
-e 173.
+LaTeX Warning: Reference `sub:cluster-match-results' on page 61 undefined on in
+put line 179.
 
 
-<05-precursor-cluster/figures/counts_cluster.pdf, id=1599, 867.24pt x 867.24pt>
+LaTeX Warning: Reference `sub:cluster-cluster-results' on page 61 undefined on 
+input line 179.
+
+[61]
+
+LaTeX Warning: Reference `Tab:cluster-counts' on page 62 undefined on input lin
+e 185.
+
+
+<05-precursor-cluster/figures/counts_cluster.pdf, id=1646, 867.24pt x 867.24pt>
 File: 05-precursor-cluster/figures/counts_cluster.pdf Graphic file (type pdf)
 <use 05-precursor-cluster/figures/counts_cluster.pdf>
 Package pdftex.def Info: 05-precursor-cluster/figures/counts_cluster.pdf used o
-n input line 177.
+n input line 189.
 (pdftex.def)             Requested size: 441.01772pt x 441.01619pt.
- [61] [62 <./05-precursor-cluster/figures/counts_cluster.pdf>]
-<05-precursor-cluster/figures/trans_Standard.pdf, id=1622, 1445.4pt x 1445.4pt>
+ [62] [63 <./05-precursor-cluster/figures/counts_cluster.pdf>]
+<05-precursor-cluster/figures/trans_Standard.pdf, id=1670, 1445.4pt x 1445.4pt>
 File: 05-precursor-cluster/figures/trans_Standard.pdf Graphic file (type pdf)
 <use 05-precursor-cluster/figures/trans_Standard.pdf>
 Package pdftex.def Info: 05-precursor-cluster/figures/trans_Standard.pdf used o
-n input line 224.
+n input line 238.
 (pdftex.def)             Requested size: 441.01772pt x 441.01178pt.
 
-<05-precursor-cluster/figures/trans_Beer.pdf, id=1623, 1445.4pt x 1445.4pt>
+<05-precursor-cluster/figures/trans_Beer.pdf, id=1671, 1445.4pt x 1445.4pt>
 File: 05-precursor-cluster/figures/trans_Beer.pdf Graphic file (type pdf)
 
 <use 05-precursor-cluster/figures/trans_Beer.pdf>
 Package pdftex.def Info: 05-precursor-cluster/figures/trans_Beer.pdf used on in
-put line 230.
+put line 244.
 (pdftex.def)             Requested size: 441.01772pt x 441.01178pt.
- [63 <./05-precursor-cluster/figures/trans_Standard.pdf>] [64 <./05-precursor-c
-luster/figures/trans_Beer.pdf>] <05-precursor-cluster/figures/fig2.pdf, id=1648
-, 1300.86pt x 867.24pt>
+
+
+LaTeX Warning: Reference `sub:cluster-match-results' on page 64 undefined on in
+put line 248.
+
+
+LaTeX Warning: Reference `sub:cluster-cluster-results' on page 64 undefined on 
+input line 248.
+
+
+<05-precursor-cluster/figures/prob_trans_Beer_2.pdf, id=1673, 1445.4pt x 722.7p
+t>
+File: 05-precursor-cluster/figures/prob_trans_Beer_2.pdf Graphic file (type pdf
+)
+ <use 05-precursor-cluster/figures/prob_trans_Beer_2.pdf>
+Package pdftex.def Info: 05-precursor-cluster/figures/prob_trans_Beer_2.pdf use
+d on input line 252.
+(pdftex.def)             Requested size: 441.01772pt x 220.50587pt.
+ [64] [65 <./05-precursor-cluster/figures/trans_Standard.pdf>] [66 <./05-precur
+sor-cluster/figures/trans_Beer.pdf>]
+<05-precursor-cluster/figures/fig2.pdf, id=1706, 1300.86pt x 867.24pt>
 File: 05-precursor-cluster/figures/fig2.pdf Graphic file (type pdf)
 
 <use 05-precursor-cluster/figures/fig2.pdf>
 Package pdftex.def Info: 05-precursor-cluster/figures/fig2.pdf used on input li
-ne 243.
+ne 264.
 (pdftex.def)             Requested size: 441.01772pt x 294.01079pt.
- [65] [66 <./05-precursor-cluster/figures/fig2.pdf>]
-<05-precursor-cluster/figures/fig3.pdf, id=1669, 1156.32pt x 397.485pt>
+ [67 <./05-precursor-cluster/figures/prob_trans_Beer_2.pdf>] [68 <./05-precurso
+r-cluster/figures/fig2.pdf>]
+<05-precursor-cluster/figures/fig3.pdf, id=1782, 1156.32pt x 397.485pt>
 File: 05-precursor-cluster/figures/fig3.pdf Graphic file (type pdf)
 
 <use 05-precursor-cluster/figures/fig3.pdf>
 Package pdftex.def Info: 05-precursor-cluster/figures/fig3.pdf used on input li
-ne 250.
+ne 271.
 (pdftex.def)             Requested size: 441.01772pt x 151.5978pt.
- [67 <./05-precursor-cluster/figures/fig3.pdf>]
-<05-precursor-cluster/figures/fig4.pdf, id=1682, 867.24pt x 433.62pt>
+ [69 <./05-precursor-cluster/figures/fig3.pdf>]
+<05-precursor-cluster/figures/fig4.pdf, id=1796, 867.24pt x 433.62pt>
 File: 05-precursor-cluster/figures/fig4.pdf Graphic file (type pdf)
 
 <use 05-precursor-cluster/figures/fig4.pdf>
 Package pdftex.def Info: 05-precursor-cluster/figures/fig4.pdf used on input li
-ne 262.
+ne 285.
 (pdftex.def)             Requested size: 441.01772pt x 220.50809pt.
 
 
-LaTeX Warning: Reference `Tab:standard-results' on page 68 undefined on input l
-ine 266.
+LaTeX Warning: Reference `Tab:standard-results' on page 70 undefined on input l
+ine 289.
 
 
-LaTeX Warning: Reference `Tab:beer-results' on page 68 undefined on input line 
-266.
+LaTeX Warning: Reference `Tab:beer-results' on page 70 undefined on input line 
+289.
 
 
-LaTeX Warning: Reference `Tab:standard-results' on page 68 undefined on input l
-ine 266.
+LaTeX Warning: Reference `Tab:standard-results' on page 70 undefined on input l
+ine 289.
 
 
-LaTeX Warning: Reference `Tab:beer-results' on page 68 undefined on input line 
-266.
+LaTeX Warning: Reference `Tab:beer-results' on page 70 undefined on input line 
+289.
 
 
-LaTeX Warning: Reference `Tab:standard-results' on page 68 undefined on input l
-ine 266.
+LaTeX Warning: Reference `Tab:standard-results' on page 70 undefined on input l
+ine 289.
 
 
-LaTeX Warning: Reference `Tab:beer-results' on page 68 undefined on input line 
-266.
+LaTeX Warning: Reference `Tab:beer-results' on page 70 undefined on input line 
+289.
 
-[68 <./05-precursor-cluster/figures/fig4.pdf>]
+[70 <./05-precursor-cluster/figures/fig4.pdf>]
 
-LaTeX Warning: Reference `Tab:standard-results' on page 69 undefined on input l
-ine 321.
+LaTeX Warning: Reference `Tab:standard-results' on page 71 undefined on input l
+ine 344.
 
 
-LaTeX Warning: Reference `Tab:beer-results' on page 69 undefined on input line 
-321.
+LaTeX Warning: Reference `Tab:beer-results' on page 71 undefined on input line 
+344.
 
-<05-precursor-cluster/figures/melatonin.pdf, id=1694, 1734.48pt x 1445.4pt>
+<05-precursor-cluster/figures/melatonin.pdf, id=1810, 1734.48pt x 1445.4pt>
 File: 05-precursor-cluster/figures/melatonin.pdf Graphic file (type pdf)
 
 <use 05-precursor-cluster/figures/melatonin.pdf>
 Package pdftex.def Info: 05-precursor-cluster/figures/melatonin.pdf used on inp
-ut line 325.
+ut line 348.
 (pdftex.def)             Requested size: 441.01772pt x 367.50246pt.
- [69] [70 <./05-precursor-cluster/figures/melatonin.pdf>] [71]) (./06-hdp/chapt
-er_06.tex [72]
+ [71] [72 <./05-precursor-cluster/figures/melatonin.pdf>] [73]) (./06-hdp/chapt
+er_06.tex [74]
 Chapter 6.
-[73
+[75
 
-] [74]
+] [76]
 Package epstopdf Info: Source file: <06-hdp/figures/figure_1.eps>
 (epstopdf)                    date: 2016-04-10 00:18:35
 (epstopdf)                    size: 892652 bytes
@@ -1749,13 +1766,13 @@ s-converted-to.pdf 06-hdp/figures/figure_1.eps>
 (epstopdf)             \includegraphics on input line 17.
 Package epstopdf Info: Output file is already uptodate.
 
-<06-hdp/figures/figure_1-eps-converted-to.pdf, id=1845, 598.235pt x 845.1575pt>
+<06-hdp/figures/figure_1-eps-converted-to.pdf, id=1958, 598.235pt x 845.1575pt>
 File: 06-hdp/figures/figure_1-eps-converted-to.pdf Graphic file (type pdf)
 <use 06-hdp/figures/figure_1-eps-converted-to.pdf>
 Package pdftex.def Info: 06-hdp/figures/figure_1-eps-converted-to.pdf used on i
 nput line 17.
 (pdftex.def)             Requested size: 308.71104pt x 436.13145pt.
- [75] [76 <./06-hdp/figures/figure_1-eps-converted-to.pdf>] [77] [78]
+ [77] [78 <./06-hdp/figures/figure_1-eps-converted-to.pdf>] [79] [80]
 Overfull \hbox (1.12929pt too wide) in paragraph at lines 99--99
  $\OML/cmm/m/it/12 p\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 y[]\OMS/cmsy/m/n/12 j[][]
  \OT1/cmr/m/n/12 = 1\OML/cmm/m/it/12 ; [][] \OT1/cmr/m/n/12 = 1\OML/cmm/m/it/12
@@ -1764,7 +1781,7 @@ Overfull \hbox (1.12929pt too wide) in paragraph at lines 99--99
 /n/12 ) 
  []
 
-[79] [80] [81]
+[81] [82] [83]
 Package epstopdf Info: Source file: <06-hdp/figures/figure_3.eps>
 (epstopdf)                    date: 2016-04-10 00:18:35
 (epstopdf)                    size: 175647 bytes
@@ -1777,7 +1794,7 @@ s-converted-to.pdf 06-hdp/figures/figure_3.eps>
 (epstopdf)             \includegraphics on input line 168.
 Package epstopdf Info: Output file is already uptodate.
 
-<06-hdp/figures/figure_3-eps-converted-to.pdf, id=1912, 548.0475pt x 664.4825pt
+<06-hdp/figures/figure_3-eps-converted-to.pdf, id=2024, 548.0475pt x 664.4825pt
 >
 File: 06-hdp/figures/figure_3-eps-converted-to.pdf Graphic file (type pdf)
  <use 06-hdp/figures/figure_3-eps-converted-to.pdf>
@@ -1786,14 +1803,14 @@ nput line 168.
 (pdftex.def)             Requested size: 308.71104pt x 374.30786pt.
 
 
-LaTeX Warning: Reference `glycomic-dataset' on page 82 undefined on input line 
+LaTeX Warning: Reference `glycomic-dataset' on page 84 undefined on input line 
 177.
 
 
-LaTeX Warning: Reference `metabolomic-dataset' on page 82 undefined on input li
+LaTeX Warning: Reference `metabolomic-dataset' on page 84 undefined on input li
 ne 177.
 
-[82] [83 <./06-hdp/figures/figure_3-eps-converted-to.pdf>] [84] [85] [86]
+[84] [85 <./06-hdp/figures/figure_3-eps-converted-to.pdf>] [86] [87] [88]
 Package epstopdf Info: Source file: <06-hdp/figures/figure_4.eps>
 (epstopdf)                    date: 2016-04-10 00:18:35
 (epstopdf)                    size: 1226355 bytes
@@ -1806,14 +1823,14 @@ s-converted-to.pdf 06-hdp/figures/figure_4.eps>
 (epstopdf)             \includegraphics on input line 308.
 Package epstopdf Info: Output file is already uptodate.
 
-<06-hdp/figures/figure_4-eps-converted-to.pdf, id=1962, 578.16pt x 433.62pt>
+<06-hdp/figures/figure_4-eps-converted-to.pdf, id=2075, 578.16pt x 433.62pt>
 File: 06-hdp/figures/figure_4-eps-converted-to.pdf Graphic file (type pdf)
 
 <use 06-hdp/figures/figure_4-eps-converted-to.pdf>
 Package pdftex.def Info: 06-hdp/figures/figure_4-eps-converted-to.pdf used on i
 nput line 308.
 (pdftex.def)             Requested size: 308.71104pt x 231.53117pt.
- [87] [88 <./06-hdp/figures/figure_4-eps-converted-to.pdf>]
+ [89] [90 <./06-hdp/figures/figure_4-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <06-hdp/figures/figure_5.eps>
 (epstopdf)                    date: 2016-04-10 00:18:35
 (epstopdf)                    size: 598849 bytes
@@ -1826,7 +1843,7 @@ s-converted-to.pdf 06-hdp/figures/figure_5.eps>
 (epstopdf)             \includegraphics on input line 322.
 Package epstopdf Info: Output file is already uptodate.
 
-<06-hdp/figures/figure_5-eps-converted-to.pdf, id=1985, 578.16pt x 433.62pt>
+<06-hdp/figures/figure_5-eps-converted-to.pdf, id=2098, 578.16pt x 433.62pt>
 File: 06-hdp/figures/figure_5-eps-converted-to.pdf Graphic file (type pdf)
 
 <use 06-hdp/figures/figure_5-eps-converted-to.pdf>
@@ -1845,7 +1862,7 @@ s-converted-to.pdf 06-hdp/figures/figure_6.eps>
 (epstopdf)             \includegraphics on input line 327.
 Package epstopdf Info: Output file is already uptodate.
 
-<06-hdp/figures/figure_6-eps-converted-to.pdf, id=1988, 578.16pt x 433.62pt>
+<06-hdp/figures/figure_6-eps-converted-to.pdf, id=2101, 578.16pt x 433.62pt>
 File: 06-hdp/figures/figure_6-eps-converted-to.pdf Graphic file (type pdf)
 
 <use 06-hdp/figures/figure_6-eps-converted-to.pdf>
@@ -1864,22 +1881,22 @@ s-converted-to.pdf 06-hdp/figures/figure_7.eps>
 (epstopdf)             \includegraphics on input line 332.
 Package epstopdf Info: Output file is already uptodate.
 
-<06-hdp/figures/figure_7-eps-converted-to.pdf, id=1989, 688.5725pt x 723.70375p
+<06-hdp/figures/figure_7-eps-converted-to.pdf, id=2102, 688.5725pt x 723.70375p
 t>
 File: 06-hdp/figures/figure_7-eps-converted-to.pdf Graphic file (type pdf)
  <use 06-hdp/figures/figure_7-eps-converted-to.pdf>
 Package pdftex.def Info: 06-hdp/figures/figure_7-eps-converted-to.pdf used on i
 nput line 332.
 (pdftex.def)             Requested size: 308.71104pt x 324.46pt.
- [89 <./06-hdp/figures/figure_5-eps-converted-to.pdf>] [90 <./06-hdp/figures/fi
-gure_6-eps-converted-to.pdf>] [91 <./06-hdp/figures/figure_7-eps-converted-to.p
+ [91 <./06-hdp/figures/figure_5-eps-converted-to.pdf>] [92 <./06-hdp/figures/fi
+gure_6-eps-converted-to.pdf>] [93 <./06-hdp/figures/figure_7-eps-converted-to.p
 df>]
 
-LaTeX Warning: Citation `Lovell2012' on page 92 undefined on input line 349.
+LaTeX Warning: Citation `Lovell2012' on page 94 undefined on input line 349.
 
-[92]) (./07-lda/chapter_07.tex [93]
+[94]) (./07-lda/chapter_07.tex [95]
 Chapter 7.
-[94
+[96
 
 ]
 Missing character: There is no â in font ptmr7t!
@@ -1894,7 +1911,7 @@ Missing character: There is no ˜ in font ptmr7t!
 Missing character: There is no â in font ptmr7t!
 Missing character: There is no € in font ptmr7t!
 Missing character: There is no ™ in font ptmr7t!
- [95] <07-lda/figures/text2frags.pdf, id=2035, 923.45pt x 669.50125pt>
+ [97] <07-lda/figures/text2frags.pdf, id=2146, 923.45pt x 669.50125pt>
 File: 07-lda/figures/text2frags.pdf Graphic file (type pdf)
 
 <use 07-lda/figures/text2frags.pdf>
@@ -1973,13 +1990,13 @@ Missing character: There is no â in font ptmr7t!
 Missing character: There is no € in font ptmr7t!
 Missing character: There is no ™ in font ptmr7t!
 
-<07-lda/figures/ms2lda.pdf, id=2037, 722.7pt x 505.89pt>
+<07-lda/figures/ms2lda.pdf, id=2148, 722.7pt x 505.89pt>
 File: 07-lda/figures/ms2lda.pdf Graphic file (type pdf)
 
 <use 07-lda/figures/ms2lda.pdf>
 Package pdftex.def Info: 07-lda/figures/ms2lda.pdf used on input line 28.
 (pdftex.def)             Requested size: 308.71104pt x 216.10039pt.
- [96 <./07-lda/figures/text2frags.pdf>] [97 <./07-lda/figures/ms2lda.pdf>]
+ [98 <./07-lda/figures/text2frags.pdf>] [99 <./07-lda/figures/ms2lda.pdf>]
 Missing character: There is no â in font ptmr7t!
 Missing character: There is no € in font ptmr7t!
 Missing character: There is no ˜ in font ptmr7t!
@@ -2007,7 +2024,7 @@ Missing character: There is no “ in font ptmr7t!
 Missing character: There is no â in font ptmr7t!
 Missing character: There is no € in font ptmr7t!
 Missing character: There is no ¢ in font ptmr7t!
- [98] [99]
+ [100] [101]
 Missing character: There is no Î in font ptmr7t!
 Missing character: There is no ¸ in font ptmr7t!
 Missing character: There is no Ï in font ptmr7t!
@@ -2026,7 +2043,7 @@ Missing character: There is no € in font ptmr7t!
 Missing character: There is no ™ in font ptmr7t!
 Missing character: There is no Ï in font ptmr7t!
 Missing character: There is no † in font ptmr7t!
- [100]
+ [102]
 Missing character: There is no â in font ptmr7t!
 Missing character: There is no € in font ptmr7t!
 Missing character: There is no ˜ in font ptmr7t!
@@ -2069,7 +2086,7 @@ Overfull \hbox (205.7867pt too wide) in paragraph at lines 79--80
 (a Golden Bit-ter Ale) (https://www.blacksheepbrewery.com/beers/15/black-
  []
 
-[101]
+[103]
 Missing character: There is no Ë in font ptmr7t!
 Missing character: There is no š in font ptmr7t!
 Missing character: There is no Â in font ptmr7t!
@@ -2081,7 +2098,7 @@ Missing character: There is no š in font ptmr7t!
 Missing character: There is no â in font ptmr7t!
 Missing character: There is no ‰ in font ptmr7t!
 Missing character: There is no ¥ in font ptmr7t!
- [102]
+ [104]
 Missing character: There is no Î in font ptmr7t!
 Missing character: There is no ± in font ptmr7t!
 Missing character: There is no Î in font ptmr7t!
@@ -2090,7 +2107,7 @@ Missing character: There is no Î in font ptmr7t!
 Missing character: There is no ± in font ptmr7t!
 Missing character: There is no Î in font ptmr7t!
 Missing character: There is no ² in font ptmr7t!
- [103]
+ [105]
 Missing character: There is no â in font ptmr7t!
 Missing character: There is no € in font ptmr7t!
 Missing character: There is no “ in font ptmr7t!
@@ -2109,7 +2126,7 @@ Overfull \hbox (7.24895pt too wide) in paragraph at lines 112--113
 be seen in the MS2LDAVis Mass2Motif
  []
 
-[104]
+[106]
 Missing character: There is no â in font ptmr7t!
 Missing character: There is no € in font ptmr7t!
 Missing character: There is no ˜ in font ptmr7t!
@@ -2122,26 +2139,6 @@ Missing character: There is no ˜ in font ptmr7t!
 Missing character: There is no â in font ptmr7t!
 Missing character: There is no € in font ptmr7t!
 Missing character: There is no ™ in font ptmr7t!
-Missing character: There is no â in font ptmr7t!
-Missing character: There is no € in font ptmr7t!
-Missing character: There is no “ in font ptmr7t!
-Missing character: There is no â in font ptmr7t!
-Missing character: There is no € in font ptmr7t!
-Missing character: There is no “ in font ptmr7t!
- [105]
-Missing character: There is no â in font ptmr7t!
-Missing character: There is no € in font ptmr7t!
-Missing character: There is no “ in font ptmr7t!
-Missing character: There is no â in font ptmr7t!
-Missing character: There is no € in font ptmr7t!
-Missing character: There is no “ in font ptmr7t!
- [106]
-Missing character: There is no â in font ptmr7t!
-Missing character: There is no € in font ptmr7t!
-Missing character: There is no “ in font ptmr7t!
-Missing character: There is no â in font ptmr7t!
-Missing character: There is no € in font ptmr7t!
-Missing character: There is no “ in font ptmr7t!
 Missing character: There is no â in font ptmr7t!
 Missing character: There is no € in font ptmr7t!
 Missing character: There is no “ in font ptmr7t!
@@ -2152,7 +2149,27 @@ Missing character: There is no “ in font ptmr7t!
 Missing character: There is no â in font ptmr7t!
 Missing character: There is no € in font ptmr7t!
 Missing character: There is no “ in font ptmr7t!
+Missing character: There is no â in font ptmr7t!
+Missing character: There is no € in font ptmr7t!
+Missing character: There is no “ in font ptmr7t!
  [108]
+Missing character: There is no â in font ptmr7t!
+Missing character: There is no € in font ptmr7t!
+Missing character: There is no “ in font ptmr7t!
+Missing character: There is no â in font ptmr7t!
+Missing character: There is no € in font ptmr7t!
+Missing character: There is no “ in font ptmr7t!
+Missing character: There is no â in font ptmr7t!
+Missing character: There is no € in font ptmr7t!
+Missing character: There is no “ in font ptmr7t!
+Missing character: There is no â in font ptmr7t!
+Missing character: There is no € in font ptmr7t!
+Missing character: There is no “ in font ptmr7t!
+ [109]
+Missing character: There is no â in font ptmr7t!
+Missing character: There is no € in font ptmr7t!
+Missing character: There is no “ in font ptmr7t!
+ [110]
 Missing character: There is no â in font ptmr7t!
 Missing character: There is no € in font ptmr7t!
 Missing character: There is no “ in font ptmr7t!
@@ -2162,29 +2179,29 @@ Overfull \hbox (10.04591pt too wide) in paragraph at lines 151--152
 ing to a shared Mass2Motif.
  []
 
-[109]
+[111]
 Missing character: There is no â in font ptmr7t!
 Missing character: There is no € in font ptmr7t!
 Missing character: There is no “ in font ptmr7t!
 Missing character: There is no â in font ptmr7t!
 Missing character: There is no € in font ptmr7t!
 Missing character: There is no “ in font ptmr7t!
- [110]) (./08-conclusion/chapter_08.tex [111]
+ [112]) (./08-conclusion/chapter_08.tex [113]
 Chapter 8.
-) (./AA-appendix/appendix.tex [112
+) (./AA-appendix/appendix.tex [114
 
 ]
 Appendix A.
-) [113
+) [115
 
-] (./footer.tex (./dissertation.bbl [114
+] (./footer.tex (./dissertation.bbl [116
 
 ]
 Missing character: There is no â in font ptmr7t!
 Missing character: There is no € in font ptmr7t!
 Missing character: There is no ” in font ptmr7t!
- [115] [116] [117] [118]
-[119] [120]) [121]
+ [117] [118] [119] [120]
+[121] [122]) [123]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 7.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 7.
  (./dissertation.aux)
@@ -2202,10 +2219,10 @@ LaTeX Warning: There were multiply-defined labels.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 7.
  ) ) 
 Here is how much of TeX's memory you used:
- 28517 strings out of 493089
- 556213 string characters out of 6134843
- 665471 words of memory out of 5000000
- 30983 multiletter control sequences out of 15000+600000
+ 28541 strings out of 493089
+ 556881 string characters out of 6134843
+ 670530 words of memory out of 5000000
+ 30998 multiletter control sequences out of 15000+600000
  51303 words of font info for 94 fonts, out of 8000000 for 9000
  1145 hyphenation exceptions out of 8191
  64i,21n,92p,10429b,708s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -2232,10 +2249,10 @@ mf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/local/texlive/2015/texmf-dist
 e1/urw/times/utmbi8a.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/urw/ti
 mes/utmr8a.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/urw/times/utmr8a
 .pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on dissertation.pdf (135 pages, 11778886 bytes).
+Output written on dissertation.pdf (138 pages, 11815661 bytes).
 PDF statistics:
- 2448 PDF objects out of 2487 (max. 8388607)
- 2003 compressed objects within 21 object streams
- 420 named destinations out of 1000 (max. 500000)
- 972 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 2561 PDF objects out of 2984 (max. 8388607)
+ 2058 compressed objects within 21 object streams
+ 428 named destinations out of 1000 (max. 500000)
+ 977 words of extra memory for PDF output out of 10000 (max. 10000000)
 

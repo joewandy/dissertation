@@ -440,9 +440,21 @@ S.~Rogers, R.~Daly, and R.~Breitling, ``{Mixture model clustering for peak
   Computational Systems Biology, WCSB 2012, June 4-6, Ulm, Germany}, 2012,
   p.~71.
 
+\bibitem{DeSouza2006}
+D.~P. {De Souza}, E.~C. Saunders, M.~J. McConville, and V.~a. Liki\'{c},
+  ``{Progressive peak clustering in GC-MS Metabolomic experiments applied to
+  Leishmania parasites.}'' \emph{Bioinformatics}, vol.~22, no.~11, pp. 1391--6,
+  Jun. 2006.
+
 \bibitem{Landan2009}
 G.~Landan and D.~Graur, ``{Characterization of pairwise and multiple sequence
   alignment errors.}'' \emph{Gene}, vol. 441, no. 1-2, pp. 141--7, Jul. 2009.
+
+\bibitem{Thompson1994}
+J.~D. Thompson, D.~G. Higgins, and T.~J. Gibson, ``{CLUSTAL W: improving the
+  sensitivity of progressive multiple sequence alignment through sequence
+  weighting, position-specific gap penalties and weight matrix choice.}''
+  \emph{Nucleic Acids Res.}, vol.~22, no.~22, pp. 4673--80, Nov. 1994.
 
 \bibitem{Notredame2000}
 C.~Notredame, D.~G. Higgins, and J.~Heringa, ``{T-Coffee: A novel method for
@@ -453,18 +465,6 @@ C.~Notredame, D.~G. Higgins, and J.~Heringa, ``{T-Coffee: A novel method for
 O.~Penn, E.~Privman, G.~Landan, D.~Graur, and T.~Pupko, ``{An alignment
   confidence score capturing robustness to guide tree uncertainty.}''
   \emph{Mol. Biol. Evol.}, vol.~27, no.~8, pp. 1759--67, Aug. 2010.
-
-\bibitem{DeSouza2006}
-D.~P. {De Souza}, E.~C. Saunders, M.~J. McConville, and V.~a. Liki\'{c},
-  ``{Progressive peak clustering in GC-MS Metabolomic experiments applied to
-  Leishmania parasites.}'' \emph{Bioinformatics}, vol.~22, no.~11, pp. 1391--6,
-  Jun. 2006.
-
-\bibitem{Thompson1994}
-J.~D. Thompson, D.~G. Higgins, and T.~J. Gibson, ``{CLUSTAL W: improving the
-  sensitivity of progressive multiple sequence alignment through sequence
-  weighting, position-specific gap penalties and weight matrix choice.}''
-  \emph{Nucleic Acids Res.}, vol.~22, no.~22, pp. 4673--80, Nov. 1994.
 
 \bibitem{Redelings2005}
 B.~D. Redelings and M.~a. Suchard, ``{Joint Bayesian estimation of alignment
