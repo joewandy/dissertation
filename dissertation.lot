@@ -12,11 +12,11 @@
 \contentsline {table}{\numberline {4.8}{\ignorespaces Multiple-fractions experiment results for the P2 dataset. For each training fraction, the reported testing performance is the average of individual F$_1$ scores from the testing fractions. The top-performing method (highest F$_1$ score) is highlighted in bold.}}{41}{table.4.8}
 \contentsline {table}{\numberline {4.9}{\ignorespaces Example measured execution time in seconds on fractions of the P1 dataset}}{45}{table.4.9}
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {5.1}{\ignorespaces List of common adduct transformations in positive mode used for the precursor clustering of the Standard and Beer runs.}}{61}{table.5.1}
+\contentsline {table}{\numberline {5.1}{\ignorespaces List of common adduct transformations in positive mode used for the precursor clustering of the Standard and Beer runs.}}{62}{table.5.1}
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {6.1}{\ignorespaces Total number of runs and features of the selected evaluation datasets. }}{86}{table.6.1}
-\contentsline {table}{\numberline {6.2}{\ignorespaces Parameters used for HDP-Align}}{88}{table.6.2}
-\contentsline {table}{\numberline {6.3}{\ignorespaces Parameters used for the benchmark methods (SIMA, Join).}}{89}{table.6.3}
+\contentsline {table}{\numberline {6.1}{\ignorespaces Total number of runs and features of the selected evaluation datasets. }}{84}{table.6.1}
+\contentsline {table}{\numberline {6.2}{\ignorespaces Parameters used for HDP-Align}}{86}{table.6.2}
+\contentsline {table}{\numberline {6.3}{\ignorespaces Parameters used for the benchmark methods (SIMA, Join).}}{87}{table.6.3}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }

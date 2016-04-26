@@ -45,56 +45,59 @@
 \BOOKMARK [0][-]{chapter.5}{Precursor Clustering of Ionisation Product Peaks}{}% 45
 \BOOKMARK [1][-]{section.5.1}{Introduction}{chapter.5}% 46
 \BOOKMARK [1][-]{section.5.2}{Related Work}{chapter.5}% 47
-\BOOKMARK [1][-]{section.5.3}{Methods}{chapter.5}% 48
-\BOOKMARK [2][-]{subsection.5.3.1}{PrecursorCluster: clustering of ionization product peaks}{section.5.3}% 49
-\BOOKMARK [2][-]{subsection.5.3.2}{Cluster-Match: direct matching of ionization product clusters}{section.5.3}% 50
-\BOOKMARK [2][-]{subsection.5.3.3}{Cluster-Cluster: across-run clustering of ionization product clusters}{section.5.3}% 51
-\BOOKMARK [1][-]{section.5.4}{Evaluation Study}{chapter.5}% 52
-\BOOKMARK [2][-]{subsection.5.4.1}{Evaluation Datasets}{section.5.4}% 53
-\BOOKMARK [2][-]{subsection.5.4.2}{Performance Measures}{section.5.4}% 54
-\BOOKMARK [2][-]{subsection.5.4.3}{Evaluation Procedure}{section.5.4}% 55
-\BOOKMARK [2][-]{subsection.5.4.4}{Parameter Optimization}{section.5.4}% 56
-\BOOKMARK [1][-]{section.5.5}{Results and Discussions}{chapter.5}% 57
-\BOOKMARK [2][-]{subsection.5.5.1}{Ionization product clustering using PrecursorCluster}{section.5.5}% 58
-\BOOKMARK [2][-]{subsection.5.5.2}{Improved peak alignment performance by using clustering information in Cluster-Match}{section.5.5}% 59
-\BOOKMARK [2][-]{subsection.5.5.3}{Probabilistic matching results from Cluster-Cluster}{section.5.5}% 60
-\BOOKMARK [2][-]{subsection.5.5.4}{Running time}{section.5.5}% 61
-\BOOKMARK [1][-]{section.5.6}{Conclusion}{chapter.5}% 62
-\BOOKMARK [0][-]{chapter.6}{Hierarchical Clustering of LC-MS Peaks}{}% 63
-\BOOKMARK [1][-]{section.6.1}{Introduction}{chapter.6}% 64
-\BOOKMARK [1][-]{section.6.2}{Hierarchical Dirichlet Process Mixture Model for Alignment}{chapter.6}% 65
-\BOOKMARK [2][-]{subsection.6.2.1}{Model Description}{section.6.2}% 66
-\BOOKMARK [2][-]{subsection.6.2.2}{Inference}{section.6.2}% 67
-\BOOKMARK [2][-]{subsection.6.2.3}{Using the Inference Results}{section.6.2}% 68
-\BOOKMARK [1][-]{section.6.3}{Evaluation Study}{chapter.6}% 69
-\BOOKMARK [2][-]{subsection.6.3.1}{Evaluation Datasets}{section.6.3}% 70
-\BOOKMARK [2][-]{subsection.6.3.2}{Performance Measures}{section.6.3}% 71
-\BOOKMARK [2][-]{subsection.6.3.3}{Benchmarking Method}{section.6.3}% 72
-\BOOKMARK [2][-]{subsection.6.3.4}{Parameter Optimisations}{section.6.3}% 73
-\BOOKMARK [1][-]{section.6.4}{Results}{chapter.6}% 74
-\BOOKMARK [2][-]{subsection.6.4.1}{Proteomic \(P1\) Results}{section.6.4}% 75
-\BOOKMARK [2][-]{subsection.6.4.2}{Glycomic and Metabolomic Results}{section.6.4}% 76
-\BOOKMARK [2][-]{subsection.6.4.3}{Running Time}{section.6.4}% 77
-\BOOKMARK [1][-]{section.6.5}{Discussion and Conclusion}{chapter.6}% 78
-\BOOKMARK [0][-]{chapter.7}{Substructure Discovery in Tandem Mass Spectometry Data}{}% 79
-\BOOKMARK [1][-]{section.7.1}{Introduction}{chapter.7}% 80
-\BOOKMARK [1][-]{section.7.2}{A Workflow for Substructure Discoveries and Annotations}{chapter.7}% 81
-\BOOKMARK [2][-]{subsection.7.2.1}{Data Conversion}{section.7.2}% 82
-\BOOKMARK [2][-]{subsection.7.2.2}{Mass2Motif Discovery}{section.7.2}% 83
-\BOOKMARK [1][-]{section.7.3}{Evaluation Study}{chapter.7}% 84
-\BOOKMARK [2][-]{subsection.7.3.1}{Evaluation Datasets}{section.7.3}% 85
-\BOOKMARK [2][-]{subsection.7.3.2}{Model Comparison}{section.7.3}% 86
-\BOOKMARK [1][-]{section.7.4}{Results \046 Discussion}{chapter.7}% 87
-\BOOKMARK [2][-]{subsection.7.4.1}{Model Comparison Results}{section.7.4}% 88
-\BOOKMARK [2][-]{subsection.7.4.2}{Biological Findings}{section.7.4}% 89
-\BOOKMARK [1][-]{section.7.5}{Substructure Discoveries across Many Samples}{chapter.7}% 90
-\BOOKMARK [2][-]{subsection.7.5.1}{Extension to the LDA model}{section.7.5}% 91
-\BOOKMARK [2][-]{subsection.7.5.2}{Evaluation Datasets}{section.7.5}% 92
-\BOOKMARK [2][-]{subsection.7.5.3}{Results \046 Discussion}{section.7.5}% 93
-\BOOKMARK [1][-]{section.7.6}{Conclusion}{chapter.7}% 94
-\BOOKMARK [0][-]{chapter.8}{Conclusion}{}% 95
-\BOOKMARK [1][-]{section.8.1}{Summary of Contributions}{chapter.8}% 96
-\BOOKMARK [1][-]{section.8.2}{Future Work}{chapter.8}% 97
-\BOOKMARK [1][-]{section.8.3}{Summary and Conclusions}{chapter.8}% 98
-\BOOKMARK [0][-]{appendix.A}{An Appendix}{}% 99
-\BOOKMARK [0][-]{appendix.A}{Bibliography}{}% 100
+\BOOKMARK [2][-]{subsection.5.2.1}{Matching of Peak Groups}{section.5.2}% 48
+\BOOKMARK [2][-]{subsection.5.2.2}{Probabilistic Matching of Peak Features}{section.5.2}% 49
+\BOOKMARK [1][-]{section.5.3}{Methods}{chapter.5}% 50
+\BOOKMARK [2][-]{subsection.5.3.1}{PrecursorCluster: clustering of ionization product peaks}{section.5.3}% 51
+\BOOKMARK [2][-]{subsection.5.3.2}{Cluster-Match: direct matching of ionization product clusters}{section.5.3}% 52
+\BOOKMARK [2][-]{subsection.5.3.3}{Cluster-Cluster: across-run clustering of ionization product clusters}{section.5.3}% 53
+\BOOKMARK [1][-]{section.5.4}{Evaluation Study}{chapter.5}% 54
+\BOOKMARK [2][-]{subsection.5.4.1}{Evaluation Datasets}{section.5.4}% 55
+\BOOKMARK [2][-]{subsection.5.4.2}{Performance Measures}{section.5.4}% 56
+\BOOKMARK [2][-]{subsection.5.4.3}{Evaluation Procedure}{section.5.4}% 57
+\BOOKMARK [2][-]{subsection.5.4.4}{Parameter Optimization}{section.5.4}% 58
+\BOOKMARK [1][-]{section.5.5}{Results and Discussions}{chapter.5}% 59
+\BOOKMARK [2][-]{subsection.5.5.1}{Ionization product clustering using PrecursorCluster}{section.5.5}% 60
+\BOOKMARK [2][-]{subsection.5.5.2}{Improved peak alignment performance by using clustering information in Cluster-Match}{section.5.5}% 61
+\BOOKMARK [2][-]{subsection.5.5.3}{Probabilistic matching results from Cluster-Cluster}{section.5.5}% 62
+\BOOKMARK [2][-]{subsection.5.5.4}{Running time}{section.5.5}% 63
+\BOOKMARK [1][-]{section.5.6}{Conclusion}{chapter.5}% 64
+\BOOKMARK [0][-]{chapter.6}{Hierarchical Clustering of LC-MS Peaks}{}% 65
+\BOOKMARK [1][-]{section.6.1}{Introduction}{chapter.6}% 66
+\BOOKMARK [1][-]{section.6.2}{Related Work}{chapter.6}% 67
+\BOOKMARK [1][-]{section.6.3}{Hierarchical Dirichlet Process Mixture Model for Alignment}{chapter.6}% 68
+\BOOKMARK [2][-]{subsection.6.3.1}{Model Description}{section.6.3}% 69
+\BOOKMARK [2][-]{subsection.6.3.2}{Inference}{section.6.3}% 70
+\BOOKMARK [2][-]{subsection.6.3.3}{Using the Inference Results}{section.6.3}% 71
+\BOOKMARK [1][-]{section.6.4}{Evaluation Study}{chapter.6}% 72
+\BOOKMARK [2][-]{subsection.6.4.1}{Evaluation Datasets}{section.6.4}% 73
+\BOOKMARK [2][-]{subsection.6.4.2}{Performance Measures}{section.6.4}% 74
+\BOOKMARK [2][-]{subsection.6.4.3}{Benchmarking Method}{section.6.4}% 75
+\BOOKMARK [2][-]{subsection.6.4.4}{Parameter Optimisations}{section.6.4}% 76
+\BOOKMARK [1][-]{section.6.5}{Results}{chapter.6}% 77
+\BOOKMARK [2][-]{subsection.6.5.1}{Proteomic \(P1\) Results}{section.6.5}% 78
+\BOOKMARK [2][-]{subsection.6.5.2}{Glycomic and Metabolomic Results}{section.6.5}% 79
+\BOOKMARK [2][-]{subsection.6.5.3}{Running Time}{section.6.5}% 80
+\BOOKMARK [1][-]{section.6.6}{Discussion and Conclusion}{chapter.6}% 81
+\BOOKMARK [0][-]{chapter.7}{Substructure Discovery in Tandem Mass Spectometry Data}{}% 82
+\BOOKMARK [1][-]{section.7.1}{Introduction}{chapter.7}% 83
+\BOOKMARK [1][-]{section.7.2}{A Workflow for Substructure Discoveries and Annotations}{chapter.7}% 84
+\BOOKMARK [2][-]{subsection.7.2.1}{Data Conversion}{section.7.2}% 85
+\BOOKMARK [2][-]{subsection.7.2.2}{Mass2Motif Discovery}{section.7.2}% 86
+\BOOKMARK [1][-]{section.7.3}{Evaluation Study}{chapter.7}% 87
+\BOOKMARK [2][-]{subsection.7.3.1}{Evaluation Datasets}{section.7.3}% 88
+\BOOKMARK [2][-]{subsection.7.3.2}{Model Comparison}{section.7.3}% 89
+\BOOKMARK [1][-]{section.7.4}{Results \046 Discussion}{chapter.7}% 90
+\BOOKMARK [2][-]{subsection.7.4.1}{Model Comparison Results}{section.7.4}% 91
+\BOOKMARK [2][-]{subsection.7.4.2}{Biological Findings}{section.7.4}% 92
+\BOOKMARK [1][-]{section.7.5}{Substructure Discoveries across Many Samples}{chapter.7}% 93
+\BOOKMARK [2][-]{subsection.7.5.1}{Extension to the LDA model}{section.7.5}% 94
+\BOOKMARK [2][-]{subsection.7.5.2}{Evaluation Datasets}{section.7.5}% 95
+\BOOKMARK [2][-]{subsection.7.5.3}{Results \046 Discussion}{section.7.5}% 96
+\BOOKMARK [1][-]{section.7.6}{Conclusion}{chapter.7}% 97
+\BOOKMARK [0][-]{chapter.8}{Conclusion}{}% 98
+\BOOKMARK [1][-]{section.8.1}{Summary of Contributions}{chapter.8}% 99
+\BOOKMARK [1][-]{section.8.2}{Future Work}{chapter.8}% 100
+\BOOKMARK [1][-]{section.8.3}{Summary and Conclusions}{chapter.8}% 101
+\BOOKMARK [0][-]{appendix.A}{An Appendix}{}% 102
+\BOOKMARK [0][-]{appendix.A}{Bibliography}{}% 103

@@ -440,11 +440,21 @@ S.~Rogers, R.~Daly, and R.~Breitling, ``{Mixture model clustering for peak
   Computational Systems Biology, WCSB 2012, June 4-6, Ulm, Germany}, 2012,
   p.~71.
 
-\bibitem{DeSouza2006}
-D.~P. {De Souza}, E.~C. Saunders, M.~J. McConville, and V.~a. Liki\'{c},
-  ``{Progressive peak clustering in GC-MS Metabolomic experiments applied to
-  Leishmania parasites.}'' \emph{Bioinformatics}, vol.~22, no.~11, pp. 1391--6,
-  Jun. 2006.
+\bibitem{Melamud2010}
+\BIBentryALTinterwordspacing
+E.~Melamud, L.~Vastag, and J.~D. Rabinowitz, ``{Metabolomic analysis and
+  visualization engine for LC-MS data.}'' \emph{Analytical chemistry}, vol.~82,
+  no.~23, pp. 9818--26, dec 2010. [Online]. Available:
+  \url{http://www.ncbi.nlm.nih.gov/pubmed/21049934}
+\BIBentrySTDinterwordspacing
+
+\bibitem{Brodsky2010}
+\BIBentryALTinterwordspacing
+L.~Brodsky, A.~Moussaieff, N.~Shahaf, A.~Aharoni, and I.~Rogachev,
+  ``{Evaluation of peak picking quality in LC-MS metabolomics data.}''
+  \emph{Analytical chemistry}, vol.~82, no.~22, pp. 9177--87, nov 2010.
+  [Online]. Available: \url{http://www.ncbi.nlm.nih.gov/pubmed/20977194}
+\BIBentrySTDinterwordspacing
 
 \bibitem{Landan2009}
 G.~Landan and D.~Graur, ``{Characterization of pairwise and multiple sequence
@@ -475,22 +485,6 @@ R.~K. Bradley, A.~Roberts, M.~Smoot, S.~Juvekar, J.~Do, C.~Dewey, I.~Holmes,
   and L.~Pachter, ``{Fast statistical alignment.}'' \emph{PLoS Comput. Biol.},
   vol.~5, no.~5, p. e1000392, May 2009.
 
-\bibitem{Melamud2010}
-\BIBentryALTinterwordspacing
-E.~Melamud, L.~Vastag, and J.~D. Rabinowitz, ``{Metabolomic analysis and
-  visualization engine for LC-MS data.}'' \emph{Analytical chemistry}, vol.~82,
-  no.~23, pp. 9818--26, dec 2010. [Online]. Available:
-  \url{http://www.ncbi.nlm.nih.gov/pubmed/21049934}
-\BIBentrySTDinterwordspacing
-
-\bibitem{Brodsky2010}
-\BIBentryALTinterwordspacing
-L.~Brodsky, A.~Moussaieff, N.~Shahaf, A.~Aharoni, and I.~Rogachev,
-  ``{Evaluation of peak picking quality in LC-MS metabolomics data.}''
-  \emph{Analytical chemistry}, vol.~82, no.~22, pp. 9177--87, nov 2010.
-  [Online]. Available: \url{http://www.ncbi.nlm.nih.gov/pubmed/20977194}
-\BIBentrySTDinterwordspacing
-
 \bibitem{Listgarten2004}
 J.~Listgarten, R.~M. Neal, S.~T. Roweis, and A.~Emili, ``Multiple alignment of
   continuous time series,'' in \emph{Advances in neural information processing
@@ -515,6 +509,12 @@ J.~Jeong, X.~Shi, X.~Zhang, S.~Kim, and C.~Shen, ``{Model-based peak alignment
 M.~{Ghanat Bari}, X.~Ma, and J.~Zhang, ``{PeakLink: a new peptide peak linking
   method in LC-MS/MS using wavelet and SVM.}'' \emph{Bioinformatics}, vol.~30,
   no.~17, pp. 2464--70, Sep. 2014.
+
+\bibitem{DeSouza2006}
+D.~P. {De Souza}, E.~C. Saunders, M.~J. McConville, and V.~a. Liki\'{c},
+  ``{Progressive peak clustering in GC-MS Metabolomic experiments applied to
+  Leishmania parasites.}'' \emph{Bioinformatics}, vol.~22, no.~11, pp. 1391--6,
+  Jun. 2006.
 
 \bibitem{Teh2006}
 Y.~W. Teh, M.~I. Jordan, M.~J. Beal, and D.~M. Blei, ``Hierarchical dirichlet
