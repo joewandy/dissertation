@@ -435,6 +435,51 @@ volume = {25},
 year = {2009}
 }
 
+@article{Kind2007,
+abstract = {Structure elucidation of unknown small molecules by mass spectrometry is a challenge despite advances in instrumentation. The first crucial step is to obtain correct elemental compositions. In order to automatically constrain the thousands of possible candidate structures, rules need to be developed to select the most likely and chemically correct molecular formulas.},
+author = {Kind, Tobias and Fiehn, Oliver},
+doi = {10.1186/1471-2105-8-105},
+file = {:Users/joewandy/Library/Application Support/Mendeley Desktop/Downloaded/Kind, Fiehn - 2007 - Seven Golden Rules for heuristic filtering of molecular formulas obtained by accurate mass spectrometry.pdf:pdf},
+issn = {1471-2105},
+journal = {BMC bioinformatics},
+keywords = {Algorithms,Biopolymers,Biopolymers: chemistry,Chemical,Computer Simulation,Mass Spectrometry,Mass Spectrometry: methods,Models,Organic Chemicals,Organic Chemicals: chemistry},
+mendeley-groups = {Metabolomics - Identification},
+month = {jan},
+pages = {105},
+pmid = {17389044},
+title = {{Seven Golden Rules for heuristic filtering of molecular formulas obtained by accurate mass spectrometry.}},
+url = {http://www.pubmedcentral.nih.gov/articlerender.fcgi?artid=1851972{\&}tool=pmcentrez{\&}rendertype=abstract},
+volume = {8},
+year = {2007}
+}
+
+@article{Sievert2014,
+author = {Sievert, Carson and Shirley, Kenneth},
+file = {:Users/joewandy/Library/Application Support/Mendeley Desktop/Downloaded/Sievert, Shirley - 2014 - LDAvis A method for visualizing and interpreting topics.pdf:pdf},
+journal = {Proceedings of the Workshop on Interactive Language Learning, Visualization, and Interfaces},
+pages = {63--70},
+title = {{LDAvis: A method for visualizing and interpreting topics}},
+url = {http://www.aclweb.org/anthology/W/W14/W14-3110},
+year = {2014}
+}
+
+@article{Bocker2007,
+author = {Bocker, Sebastian and Liptak, Zsuzsanna},
+doi = {10.1007/s00453-007-0162-8},
+file = {:Users/joewandy/Library/Application Support/Mendeley Desktop/Downloaded/Bocker, Liptak - 2007 - A Fast and Simple Algorithm for the Money Changing Problem.pdf:pdf},
+issn = {0178-4617},
+journal = {Algorithmica},
+keywords = {1,a 1,a k,a k be positive,as a non-negative linear,can m be written,com-,e,frobenius number,given a query integer,i,integer decomposition,integers,introduction,is m decomposable over,let a 1,m,mass spectrometry,money changing problem,pomers,weighted strings},
+mendeley-groups = {Metabolomics - Identification,Metabolomics - SIRIUS},
+month = {jul},
+number = {4},
+pages = {413--432},
+title = {{A Fast and Simple Algorithm for the Money Changing Problem}},
+url = {http://www.springerlink.com/index/10.1007/s00453-007-0162-8},
+volume = {48},
+year = {2007}
+}
+
 @article{Chawade2015,
 author = {Chawade, Aakash and Sandin, Marianne and Teleman, Johan and Malmstr{\"{o}}m, Johan and Levander, Fredrik},
 doi = {10.1021/pr500665j},
@@ -1109,4 +1154,178 @@ year = {2014}
   volume={101},
   number={476},
   year={2006}
+}
+
+@article{Sweeney2014,
+author = {Sweeney, Daniel L.},
+doi = {10.5702/massspectrometry.S0035},
+file = {:Users/joewandy/Desktop/3{\_}S0035.pdf:pdf},
+issn = {2187-137X},
+journal = {Mass Spectrometry},
+keywords = {identi cation,mass spectrometry,molecular structure,partitioning,systematic bond-},
+mendeley-groups = {Metabolomics - Fragmentation},
+number = {Special{\_}Issue{\_}2},
+pages = {S0035--S0035},
+title = {{A Data Structure for Rapid Mass Spectral Searching}},
+url = {http://jlc.jst.go.jp/DN/JST.JSTAGE/massspectrometry/S0035?lang=en{\&}from=CrossRef{\&}type=abstract},
+volume = {3},
+year = {2014}
+}
+
+@article{Scott1994,
+author = {Scott, Donald R},
+file = {:Users/joewandy/Desktop/1-s2.0-0169743994000107-main.pdf:pdf},
+mendeley-groups = {Metabolomics - Fragmentation},
+pages = {351--364},
+title = {{Pattern recognition/ expert system for identification of toxic compounds from low resolution mass spectra *}},
+volume = {23},
+year = {1994}
+}
+
+@article{Duhrkop2015,
+author = {D{\"{u}}hrkop, Kai and Shen, Huibin and Meusel, Marvin and Rousu, Juho and B{\"{o}}cker, Sebastian},
+doi = {10.1073/pnas.1509788112},
+file = {:Users/joewandy/Library/Application Support/Mendeley Desktop/Downloaded/D{\"{u}}hrkop et al. - 2015 - Searching molecular structure databases with tandem mass spectra using CSIFingerID.pdf:pdf},
+issn = {0027-8424},
+journal = {Proceedings of the National Academy of Sciences},
+mendeley-groups = {Metabolomics - LDA/Metabolomics - LDA Pathway Analysis,Metabolomics - Identification},
+pages = {201509788},
+title = {{Searching molecular structure databases with tandem mass spectra using CSI:FingerID}},
+url = {http://www.pnas.org/lookup/doi/10.1073/pnas.1509788112},
+year = {2015}
+}
+
+@article{Smith2006,
+abstract = {Metabolite profiling in biomarker discovery, enzyme substrate assignment, drug activity/specificity determination, and basic metabolic research requires new data preprocessing approaches to correlate specific metabolites to their biological origin. Here we introduce an LC/MS-based data analysis approach, XCMS, which incorporates novel nonlinear retention time alignment, matched filtration, peak detection, and peak matching. Without using internal standards, the method dynamically identifies hundreds of endogenous metabolites for use as standards, calculating a nonlinear retention time correction profile for each sample. Following retention time correction, the relative metabolite ion intensities are directly compared to identify changes in specific endogenous metabolites, such as potential biomarkers. The software is demonstrated using data sets from a previously reported enzyme knockout study and a large-scale study of plasma samples. XCMS is freely available under an open-source license at http://metlin.scripps.edu/download/.},
+author = {Smith, Colin a and Want, Elizabeth J and O'Maille, Grace and Abagyan, Ruben and Siuzdak, Gary},
+doi = {10.1021/ac051437y},
+file = {:Users/joewandy/Library/Application Support/Mendeley Desktop/Downloaded/Smith et al. - 2006 - XCMS processing mass spectrometry data for metabolite profiling using nonlinear peak alignment, matching, and iden.pdf:pdf},
+issn = {0003-2700},
+journal = {Analytical chemistry},
+keywords = {Algorithms,Amidohydrolases,Amidohydrolases: analysis,Animals,Chromatography,Humans,Knockout,Liquid,Liquid: methods,Mass Spectrometry,Mass Spectrometry: methods,Mice,Nonlinear Dynamics,Sensitivity and Specificity,Time Factors},
+mendeley-groups = {Metabolomics - Identification,Metabolomics - Alignment,Metabolomics - Tools},
+month = {feb},
+number = {3},
+pages = {779--87},
+pmid = {16448051},
+title = {{XCMS: processing mass spectrometry data for metabolite profiling using nonlinear peak alignment, matching, and identification.}},
+url = {http://www.ncbi.nlm.nih.gov/pubmed/16448051},
+volume = {78},
+year = {2006}
+}
+
+@article{Stravs2013,
+abstract = {High accuracy, high resolution tandem mass spectrometry (MS/MS) is becoming more common in analytical applications, yet databases of these spectra remain limited. Databases require good quality spectra with sufficient compound information, but processing, calibration, noise reduction and retrieval of compound information are time-consuming tasks that prevent many contributions. We present a comprehensive workflow for the automatic processing of MS/MS using formula annotation for recalibration and cleanup to generate high quality spectra of standard compounds for upload to MassBank (www.massbank.jp). Compound information is retrieved via Internet services. Reference standards of 70 pesticides were measured at various collision energies on an LTQ-Orbitrap XL to develop and evaluate the workflow. A total of 944 resulting spectra are now available on MassBank. Evidence of nitrogen adduct formation during MS/MS fragmentation processes was found, highlighting the benefits high accuracy MS/MS offers for spectral interpretation. A database of recalibrated, cleaned-up spectra resulted in the most correct spectra ranked in first place, regardless of whether the search spectra were recalibrated or not, whereas the average rank of the correct molecular formula was improved from 2.55 (uncalibrated) to 1.53 when using recalibrated MS/MS data. The workflow is available as an R package RMassBank capable of generating MassBank records from raw MS and MS/MS data and can be adjusted to process data acquired with different settings and instruments. This workflow is a vital step towards addressing the need for more high quality, high accuracy MS/MS spectra in spectral databases and provides important information for spectral interpretation.},
+author = {Stravs, Michael a. and Schymanski, Emma L. and Singer, Heinz P. and Hollender, Juliane},
+doi = {10.1002/jms.3131},
+file = {:Users/joewandy/Library/Application Support/Mendeley Desktop/Downloaded/Stravs et al. - 2013 - Automatic recalibration and processing of tandem mass spectra using formula annotation.pdf:pdf},
+isbn = {1096-9888},
+issn = {10765174},
+journal = {Journal of Mass Spectrometry},
+keywords = {Orbitrap,mass spectra libraries,mass spectrometry,molecular formula,recalibration},
+number = {1},
+pages = {89--99},
+pmid = {23303751},
+title = {{Automatic recalibration and processing of tandem mass spectra using formula annotation}},
+volume = {48},
+year = {2013}
+}
+
+@article{VanderHooft2013,
+abstract = {Identification of metabolites is a major challenge in biological studies and relies in principle on mass spectrometry (MS) and nuclear magnetic resonance (NMR) methods. The increased sensitivity and stability of both NMR and MS systems have made dereplication of complex biological samples feasible. Metabolic databases can be of help in the identification process. Nonetheless, there is still a lack of adequate spectral databases that contain high quality spectra, but new developments in this area will assist in the (semi-)automated identification process in the near future. Here, we discuss new developments for the structural elucidation of low abundant metabolites present in complex sample matrices. We describe how a recently developed combination of high resolution MS multistage fragmentation (MSn) and high resolution one dimensional (1D)-proton (1H)-NMR of liquid chromatography coupled to solid phase extraction (LC-SPE) purified metabolites can circumvent the need for isolating extensive amounts of the compounds of interest to elucidate their structures. The LC-MS-SPE-NMR hardware configuration in conjunction with high quality databases facilitates complete structural elucidation of metabolites even at sub-microgram levels of compound in crude extracts. However, progress is still required to optimally exploit the power of an integrated MS and NMR approach. Especially, there is a need to improve and expand both MSn and NMR spectral databases. Adequate and user-friendly software is required to assist in candidate selection based on the comparison of acquired MS and NMR spectral information with reference data. It is foreseen that these focal points will contribute to a better transfer and exploitation of structural information gained from diverse analytical platforms. {\textcopyright} 2013 Springer Science+Business Media New York.},
+author = {van der Hooft, Justin J J and de Vos, Ric C H and Ridder, Lars and Vervoort, Jacques and Bino, Raoul J.},
+doi = {10.1007/s11306-013-0519-8},
+file = {:Users/joewandy/Desktop/art{\%}3A10.1007{\%}2Fs11306-013-0519-8.pdf:pdf},
+isbn = {1573-3882},
+issn = {15733882},
+journal = {Metabolomics},
+keywords = {Automation,MS fragmentation,MSn,Metabolite annotation,Metabolite identification,NMR,SPE-NMR,Structure elucidation},
+number = {5},
+pages = {1009--1018},
+title = {{Structural elucidation of low abundant metabolites in complex sample matrices}},
+volume = {9},
+year = {2013}
+}
+
+@article{ma2014ms2analyzer,
+  title={MS2Analyzer: A software for small molecule substructure annotations from accurate tandem mass spectra},
+  author={Ma, Yan and Kind, Tobias and Yang, Dawei and Leon, Carlos and Fiehn, Oliver},
+  journal={Analytical chemistry},
+  volume={86},
+  number={21},
+  pages={10724--10731},
+  year={2014},
+  publisher={ACS Publications}
+}
+
+@article{yang2013molecular,
+  title={Molecular networking as a dereplication strategy},
+  author={Yang, Jane Y and Sanchez, Laura M and Rath, Christopher M and Liu, Xueting and Boudreau, Paul D and Bruns, Nicole and Glukhov, Evgenia and Wodtke, Anne and de Felicio, Rafael and Fenner, Amanda and others},
+  journal={Journal of natural products},
+  volume={76},
+  number={9},
+  pages={1686--1699},
+  year={2013},
+  publisher={ACS Publications}
+}
+
+@article{van2016urinary,
+  title={Urinary antihypertensive drug metabolite screening using molecular networking coupled to high-resolution mass spectrometry fragmentation},
+  author={Van Der Hooft, Justin JJ and Padmanabhan, Sandosh and Burgess, Karl EV and Barrett, Michael P},
+  journal={Metabolomics},
+  year={2016},
+  publisher={Springer-Verlag}
+}
+
+@inproceedings{chen2010probabilistic,
+  title={Probabilistic topic modeling for genomic data interpretation},
+  author={Chen, Xin and Hu, Xiaohua and Shen, Xiajiong and Rosen, Gail},
+  booktitle={Bioinformatics and Biomedicine (BIBM), 2010 IEEE International Conference on},
+  pages={149--152},
+  year={2010},
+  organization={IEEE}
+}
+
+@article{zhang2015exploiting,
+  title={Exploiting topic modeling to boost metagenomic reads binning},
+  author={Zhang, Ruichang and Cheng, Zhanzhan and Guan, Jihong and Zhou, Shuigeng},
+  journal={BMC bioinformatics},
+  volume={16},
+  number={Suppl 5},
+  pages={S2},
+  year={2015},
+  publisher={BioMed Central}
+}
+
+@article{rogers2005latent,
+  title={The latent process decomposition of cDNA microarray data sets},
+  author={Rogers, Simon and Girolami, Mark and Campbell, Colin and Breitling, Rainer},
+  journal={IEEE/ACM Transactions on Computational Biology and Bioinformatics (TCBB)},
+  volume={2},
+  number={2},
+  pages={143--156},
+  year={2005},
+  publisher={IEEE Computer Society Press}
+}
+
+@article{tarca2013comparison,
+  title={A comparison of gene set analysis methods in terms of sensitivity, prioritization and specificity},
+  author={Tarca, Adi L and Bhatti, Gaurav and Romero, Roberto},
+  journal={PloS one},
+  volume={8},
+  number={11},
+  pages={e79217},
+  year={2013},
+  publisher={Public Library of Science}
+}
+
+@article{tomfohr2005pathway,
+  title={Pathway level analysis of gene expression using singular value decomposition},
+  author={Tomfohr, John and Lu, Jun and Kepler, Thomas B},
+  journal={BMC bioinformatics},
+  volume={6},
+  number={1},
+  pages={1},
+  year={2005},
+  publisher={BioMed Central}
 }

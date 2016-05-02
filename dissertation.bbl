@@ -236,6 +236,15 @@ H.~Lin, L.~He, and B.~Ma, ``{A Combinatorial Approach to the Peptide Feature
   \url{http://www.ncbi.nlm.nih.gov/pubmed/23665772}
 \BIBentrySTDinterwordspacing
 
+\bibitem{Smith2006}
+\BIBentryALTinterwordspacing
+C.~a. Smith, E.~J. Want, G.~O'Maille, R.~Abagyan, and G.~Siuzdak, ``{XCMS:
+  processing mass spectrometry data for metabolite profiling using nonlinear
+  peak alignment, matching, and identification.}'' \emph{Analytical chemistry},
+  vol.~78, no.~3, pp. 779--87, feb 2006. [Online]. Available:
+  \url{http://www.ncbi.nlm.nih.gov/pubmed/16448051}
+\BIBentrySTDinterwordspacing
+
 \bibitem{Podwojski2009}
 \BIBentryALTinterwordspacing
 ``{Retention time alignment algorithms for LC/MS data must consider non-linear
@@ -520,5 +529,114 @@ D.~P. {De Souza}, E.~C. Saunders, M.~J. McConville, and V.~a. Liki\'{c},
 Y.~W. Teh, M.~I. Jordan, M.~J. Beal, and D.~M. Blei, ``Hierarchical dirichlet
   processes,'' \emph{Journal of the american statistical association}, vol.
   101, no. 476, 2006.
+
+\bibitem{VanderHooft2013}
+J.~J.~J. van~der Hooft, R.~C.~H. de~Vos, L.~Ridder, J.~Vervoort, and R.~J.
+  Bino, ``{Structural elucidation of low abundant metabolites in complex sample
+  matrices},'' \emph{Metabolomics}, vol.~9, no.~5, pp. 1009--1018, 2013.
+
+\bibitem{Sweeney2014}
+\BIBentryALTinterwordspacing
+D.~L. Sweeney, ``{A Data Structure for Rapid Mass Spectral Searching},''
+  \emph{Mass Spectrometry}, vol.~3, no. Special{\_}Issue{\_}2, pp.
+  S0035--S0035, 2014. [Online]. Available:
+  \url{http://jlc.jst.go.jp/DN/JST.JSTAGE/massspectrometry/S0035?lang=en{\&}from=CrossRef{\&}type=abstract}
+\BIBentrySTDinterwordspacing
+
+\bibitem{Scott1994}
+D.~R. Scott, ``{Pattern recognition/ expert system for identification of toxic
+  compounds from low resolution mass spectra *},'' vol.~23, pp. 351--364, 1994.
+
+\bibitem{Duhrkop2015}
+\BIBentryALTinterwordspacing
+K.~D{\"{u}}hrkop, H.~Shen, M.~Meusel, J.~Rousu, and S.~B{\"{o}}cker,
+  ``{Searching molecular structure databases with tandem mass spectra using
+  CSI:FingerID},'' \emph{Proceedings of the National Academy of Sciences}, p.
+  201509788, 2015. [Online]. Available:
+  \url{http://www.pnas.org/lookup/doi/10.1073/pnas.1509788112}
+\BIBentrySTDinterwordspacing
+
+\bibitem{yang2013molecular}
+J.~Y. Yang, L.~M. Sanchez, C.~M. Rath, X.~Liu, P.~D. Boudreau, N.~Bruns,
+  E.~Glukhov, A.~Wodtke, R.~de~Felicio, A.~Fenner \emph{et~al.}, ``Molecular
+  networking as a dereplication strategy,'' \emph{Journal of natural products},
+  vol.~76, no.~9, pp. 1686--1699, 2013.
+
+\bibitem{van2016urinary}
+J.~J. Van Der~Hooft, S.~Padmanabhan, K.~E. Burgess, and M.~P. Barrett,
+  ``Urinary antihypertensive drug metabolite screening using molecular
+  networking coupled to high-resolution mass spectrometry fragmentation,''
+  \emph{Metabolomics}, 2016.
+
+\bibitem{ma2014ms2analyzer}
+Y.~Ma, T.~Kind, D.~Yang, C.~Leon, and O.~Fiehn, ``Ms2analyzer: A software for
+  small molecule substructure annotations from accurate tandem mass spectra,''
+  \emph{Analytical chemistry}, vol.~86, no.~21, pp. 10\,724--10\,731, 2014.
+
+\bibitem{chen2010probabilistic}
+X.~Chen, X.~Hu, X.~Shen, and G.~Rosen, ``Probabilistic topic modeling for
+  genomic data interpretation,'' in \emph{Bioinformatics and Biomedicine
+  (BIBM), 2010 IEEE International Conference on}.\hskip 1em plus 0.5em minus
+  0.4em\relax IEEE, 2010, pp. 149--152.
+
+\bibitem{zhang2015exploiting}
+R.~Zhang, Z.~Cheng, J.~Guan, and S.~Zhou, ``Exploiting topic modeling to boost
+  metagenomic reads binning,'' \emph{BMC bioinformatics}, vol.~16, no. Suppl 5,
+  p.~S2, 2015.
+
+\bibitem{rogers2005latent}
+S.~Rogers, M.~Girolami, C.~Campbell, and R.~Breitling, ``The latent process
+  decomposition of cdna microarray data sets,'' \emph{IEEE/ACM Transactions on
+  Computational Biology and Bioinformatics (TCBB)}, vol.~2, no.~2, pp.
+  143--156, 2005.
+
+\bibitem{Stravs2013}
+M.~a. Stravs, E.~L. Schymanski, H.~P. Singer, and J.~Hollender, ``{Automatic
+  recalibration and processing of tandem mass spectra using formula
+  annotation},'' \emph{Journal of Mass Spectrometry}, vol.~48, no.~1, pp.
+  89--99, 2013.
+
+\bibitem{Bocker2009}
+\BIBentryALTinterwordspacing
+S.~B{\"{o}}cker, M.~C. Letzel, Z.~Lipt{\'{a}}k, and A.~Pervukhin, ``{SIRIUS:
+  decomposing isotope patterns for metabolite identification.}''
+  \emph{Bioinformatics (Oxford, England)}, vol.~25, no.~2, pp. 218--24, jan
+  2009. [Online]. Available:
+  \url{http://www.pubmedcentral.nih.gov/articlerender.fcgi?artid=2639009{\&}tool=pmcentrez{\&}rendertype=abstract}
+\BIBentrySTDinterwordspacing
+
+\bibitem{Bocker2007}
+\BIBentryALTinterwordspacing
+S.~Bocker and Z.~Liptak, ``{A Fast and Simple Algorithm for the Money Changing
+  Problem},'' \emph{Algorithmica}, vol.~48, no.~4, pp. 413--432, jul 2007.
+  [Online]. Available:
+  \url{http://www.springerlink.com/index/10.1007/s00453-007-0162-8}
+\BIBentrySTDinterwordspacing
+
+\bibitem{Kind2007}
+\BIBentryALTinterwordspacing
+T.~Kind and O.~Fiehn, ``{Seven Golden Rules for heuristic filtering of
+  molecular formulas obtained by accurate mass spectrometry.}'' \emph{BMC
+  bioinformatics}, vol.~8, p. 105, jan 2007. [Online]. Available:
+  \url{http://www.pubmedcentral.nih.gov/articlerender.fcgi?artid=1851972{\&}tool=pmcentrez{\&}rendertype=abstract}
+\BIBentrySTDinterwordspacing
+
+\bibitem{Sievert2014}
+\BIBentryALTinterwordspacing
+C.~Sievert and K.~Shirley, ``{LDAvis: A method for visualizing and interpreting
+  topics},'' \emph{Proceedings of the Workshop on Interactive Language
+  Learning, Visualization, and Interfaces}, pp. 63--70, 2014. [Online].
+  Available: \url{http://www.aclweb.org/anthology/W/W14/W14-3110}
+\BIBentrySTDinterwordspacing
+
+\bibitem{tomfohr2005pathway}
+J.~Tomfohr, J.~Lu, and T.~B. Kepler, ``Pathway level analysis of gene
+  expression using singular value decomposition,'' \emph{BMC bioinformatics},
+  vol.~6, no.~1, p.~1, 2005.
+
+\bibitem{tarca2013comparison}
+A.~L. Tarca, G.~Bhatti, and R.~Romero, ``A comparison of gene set analysis
+  methods in terms of sensitivity, prioritization and specificity,'' \emph{PloS
+  one}, vol.~8, no.~11, p. e79217, 2013.
 
 \end{thebibliography}

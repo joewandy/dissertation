@@ -81,20 +81,20 @@
 \BOOKMARK [1][-]{section.6.6}{Discussion and Conclusion}{chapter.6}% 81
 \BOOKMARK [0][-]{chapter.7}{Substructure Discovery in Tandem Mass Spectometry Data}{}% 82
 \BOOKMARK [1][-]{section.7.1}{Introduction}{chapter.7}% 83
-\BOOKMARK [1][-]{section.7.2}{A Workflow for Substructure Discoveries and Annotations}{chapter.7}% 84
-\BOOKMARK [2][-]{subsection.7.2.1}{Data Conversion}{section.7.2}% 85
-\BOOKMARK [2][-]{subsection.7.2.2}{Mass2Motif Discovery}{section.7.2}% 86
-\BOOKMARK [1][-]{section.7.3}{Evaluation Study}{chapter.7}% 87
-\BOOKMARK [2][-]{subsection.7.3.1}{Evaluation Datasets}{section.7.3}% 88
-\BOOKMARK [2][-]{subsection.7.3.2}{Model Comparison}{section.7.3}% 89
-\BOOKMARK [1][-]{section.7.4}{Results \046 Discussion}{chapter.7}% 90
-\BOOKMARK [2][-]{subsection.7.4.1}{Model Comparison Results}{section.7.4}% 91
-\BOOKMARK [2][-]{subsection.7.4.2}{Biological Findings}{section.7.4}% 92
-\BOOKMARK [1][-]{section.7.5}{Substructure Discoveries across Many Samples}{chapter.7}% 93
-\BOOKMARK [2][-]{subsection.7.5.1}{Extension to the LDA model}{section.7.5}% 94
-\BOOKMARK [2][-]{subsection.7.5.2}{Evaluation Datasets}{section.7.5}% 95
-\BOOKMARK [2][-]{subsection.7.5.3}{Results \046 Discussion}{section.7.5}% 96
-\BOOKMARK [1][-]{section.7.6}{Conclusion}{chapter.7}% 97
+\BOOKMARK [1][-]{section.7.2}{Related Work}{chapter.7}% 84
+\BOOKMARK [1][-]{section.7.3}{A Workflow for Substructure Discoveries and Annotations}{chapter.7}% 85
+\BOOKMARK [2][-]{subsection.7.3.1}{Data Conversion}{section.7.3}% 86
+\BOOKMARK [2][-]{subsection.7.3.2}{Mass2Motif Discovery}{section.7.3}% 87
+\BOOKMARK [1][-]{section.7.4}{Evaluation Study}{chapter.7}% 88
+\BOOKMARK [2][-]{subsection.7.4.1}{Evaluation Datasets}{section.7.4}% 89
+\BOOKMARK [2][-]{subsection.7.4.2}{Evaluation Method}{section.7.4}% 90
+\BOOKMARK [1][-]{section.7.5}{Results \046 Discussions}{chapter.7}% 91
+\BOOKMARK [2][-]{subsection.7.5.1}{Model Comparison Results}{section.7.5}% 92
+\BOOKMARK [2][-]{subsection.7.5.2}{Biological Findings}{section.7.5}% 93
+\BOOKMARK [1][-]{section.7.6}{Substructure Discoveries across Many Samples}{chapter.7}% 94
+\BOOKMARK [2][-]{subsection.7.6.1}{Extension to the LDA model}{section.7.6}% 95
+\BOOKMARK [2][-]{subsection.7.6.2}{Results \046 Discussion}{section.7.6}% 96
+\BOOKMARK [1][-]{section.7.7}{Conclusion}{chapter.7}% 97
 \BOOKMARK [0][-]{chapter.8}{Conclusion}{}% 98
 \BOOKMARK [1][-]{section.8.1}{Summary of Contributions}{chapter.8}% 99
 \BOOKMARK [1][-]{section.8.2}{Future Work}{chapter.8}% 100

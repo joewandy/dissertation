@@ -75,6 +75,7 @@
 \newlabel{fig:LC-MS-data}{{2.3}{9}{The resulting raw data (ion chromatograms) produced from an LC-MS experiment. We can view the data as a 3D profile (left) and as a 2D profile seen from the top (right). A slice of the data on the m/z axis is the mass spectrum. Each mass spectrum is produced by a scan of the mass spectrometer. A collection of mass spectra is produced over the whole range of retention time. A point in the raw data is thus characterised by its intensity value on the m/z and retention time axes}{figure.2.3}{}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {2.3.2}Proteomics and Glyomics}{9}{subsection.2.3.2}}
 \citation{Smith2004}
+\newlabel{sub:fragmentation-background}{{2.3.3}{10}{Fragmentation}{subsection.2.3.3}{}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {2.3.3}Fragmentation}{10}{subsection.2.3.3}}
 \citation{Pedrioli2004}
 \citation{Zhang2009}
@@ -122,7 +123,7 @@
 \citation{Pluskal2010}
 \citation{Kuhl2012}
 \citation{Daly2014}
-\newlabel{sub:identification}{{2.4.3}{15}{Peak Identification}{subsection.2.4.3}{}}
+\newlabel{sub:identification-background}{{2.4.3}{15}{Peak Identification}{subsection.2.4.3}{}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {2.4.3}Peak Identification}{15}{subsection.2.4.3}}
 \citation{Hufsky2014}
 \citation{Smith2005}
@@ -493,53 +494,108 @@
 \newlabel{fig:metabolomic_results_annotations}{{6.6}{91}{Example analysis that can be performed on the clustering objects inferred in a Gibbs sample from HDP-Align. The outer black oval denotes a global RT cluster (generally corresponding to a metabolite compound), while the smaller dotted ovals within denote mass clusters (labelled as mass cluster $A,B,C,D,E,F$). Peak features are denoted by the filled circle, with the fill colour indicating the originating run of a peak. Green colours denote additional analysis steps that can be performed on the mass cluster objects. \textbf {REDRAW TO LOOK NICER?}}{figure.6.6}{}}
 \citation{Lovell2012}
 \citation{Daly2014}
+\citation{VanderHooft2013}
+\citation{Kind2006}
 \@writefile{toc}{\contentsline {chapter}{\numberline {7}Substructure Discovery in Tandem Mass Spectometry Data}{93}{chapter.7}}
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
 \newlabel{c:background}{{7}{93}{Substructure Discovery in Tandem Mass Spectometry Data}{chapter.7}{}}
 \@writefile{toc}{\contentsline {section}{\numberline {7.1}Introduction}{93}{section.7.1}}
-\@writefile{toc}{\contentsline {section}{\numberline {7.2}A Workflow for Substructure Discoveries and Annotations}{95}{section.7.2}}
-\@writefile{lof}{\contentsline {figure}{\numberline {7.1}{\ignorespaces Figure 1: Analogy between LDA for text-mining and MS2LDA. In this example, we can see that traditional LDA has extracted topics that can be interpreted as ‘football related’, ‘business-related’ and ‘environment related’. Each document is a combination of different topics. In a similar manner, MS2LDA extracts different sets of concurring mass fragments or losses (Mass2Motifs) from the fragmentation spectra of precursor ions that can be interpreted as ‘Asparagine-related’, ‘Hexose-related’ and ‘Adenine-related’. Each fragmentation spectra is made up of one or more Mass2Motifs.}}{95}{figure.7.1}}
-\newlabel{fig:text2frags}{{7.1}{95}{Figure 1: Analogy between LDA for text-mining and MS2LDA. In this example, we can see that traditional LDA has extracted topics that can be interpreted as ‘football related’, ‘business-related’ and ‘environment related’. Each document is a combination of different topics. In a similar manner, MS2LDA extracts different sets of concurring mass fragments or losses (Mass2Motifs) from the fragmentation spectra of precursor ions that can be interpreted as ‘Asparagine-related’, ‘Hexose-related’ and ‘Adenine-related’. Each fragmentation spectra is made up of one or more Mass2Motifs}{figure.7.1}{}}
+\citation{Sweeney2014}
+\citation{Scott1994}
+\citation{Hummel2010}
+\citation{Duhrkop2015}
+\citation{yang2013molecular}
+\citation{van2016urinary}
+\citation{ma2014ms2analyzer}
+\@writefile{toc}{\contentsline {section}{\numberline {7.2}Related Work}{94}{section.7.2}}
+\citation{chen2010probabilistic}
+\citation{zhang2015exploiting}
+\citation{rogers2005latent}
+\citation{Smith2006}
+\citation{Stravs2013}
+\@writefile{toc}{\contentsline {section}{\numberline {7.3}A Workflow for Substructure Discoveries and Annotations}{95}{section.7.3}}
+\newlabel{sub:data-conversion}{{7.3.1}{95}{Data Conversion}{subsection.7.3.1}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {7.3.1}Data Conversion}{95}{subsection.7.3.1}}
+\@writefile{toc}{\contentsline {subsubsection}{Peak Detection \& Data Filtering}{95}{section*.24}}
+\@writefile{lof}{\contentsline {figure}{\numberline {7.1}{\ignorespaces Figure 1: Analogy between LDA for text-mining and MS2LDA. In this example, we can see that traditional LDA has extracted topics that can be interpreted as ‘football related’, ‘business-related’ and ‘environment related’. Each document is a combination of different topics. In a similar manner, MS2LDA extracts different sets of concurring mass fragments or losses (Mass2Motifs) from the fragmentation spectra of precursor ions that can be interpreted as ‘Asparagine-related’, ‘Hexose-related’ and ‘Adenine-related’. Each fragmentation spectra is made up of one or more Mass2Motifs.}}{96}{figure.7.1}}
+\newlabel{fig:text2frags}{{7.1}{96}{Figure 1: Analogy between LDA for text-mining and MS2LDA. In this example, we can see that traditional LDA has extracted topics that can be interpreted as ‘football related’, ‘business-related’ and ‘environment related’. Each document is a combination of different topics. In a similar manner, MS2LDA extracts different sets of concurring mass fragments or losses (Mass2Motifs) from the fragmentation spectra of precursor ions that can be interpreted as ‘Asparagine-related’, ‘Hexose-related’ and ‘Adenine-related’. Each fragmentation spectra is made up of one or more Mass2Motifs}{figure.7.1}{}}
 \@writefile{lof}{\contentsline {figure}{\numberline {7.2}{\ignorespaces Schematic overview of the MS2LDA workflow..}}{96}{figure.7.2}}
 \newlabel{fig:m2lda-workflow}{{7.2}{96}{Schematic overview of the MS2LDA workflow.}{figure.7.2}{}}
-\newlabel{sub:data-conversion}{{7.2.1}{96}{Data Conversion}{subsection.7.2.1}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {7.2.1}Data Conversion}{96}{subsection.7.2.1}}
-\@writefile{toc}{\contentsline {subsubsection}{Peak Detection \& Data Filtering}{96}{section*.24}}
 \@writefile{toc}{\contentsline {subsubsection}{LDA Feature Extraction}{97}{section*.25}}
-\newlabel{sub:topic-discovery}{{7.2.2}{97}{Mass2Motif Discovery}{subsection.7.2.2}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {7.2.2}Mass2Motif Discovery}{97}{subsection.7.2.2}}
-\@writefile{toc}{\contentsline {subsubsection}{LDA Inference}{97}{section*.26}}
-\@writefile{lof}{\contentsline {figure}{\numberline {7.3}{\ignorespaces The data-frame extracted from fragmentation data: a matrix of XCMS-picked MS1 peaks (columns) and binned mass fragment (and neutral loss) features with normalized (0 – 100 scale) intensities.}}{98}{figure.7.3}}
-\newlabel{fig:m2lda-workflow}{{7.3}{98}{The data-frame extracted from fragmentation data: a matrix of XCMS-picked MS1 peaks (columns) and binned mass fragment (and neutral loss) features with normalized (0 – 100 scale) intensities}{figure.7.3}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {7.3}{\ignorespaces The data-frame extracted from fragmentation data: a matrix of XCMS-picked MS1 peaks (columns) and binned mass fragment (and neutral loss) features with normalized (0 – 100 scale) intensities.}}{97}{figure.7.3}}
+\newlabel{fig:m2lda-matrix}{{7.3}{97}{The data-frame extracted from fragmentation data: a matrix of XCMS-picked MS1 peaks (columns) and binned mass fragment (and neutral loss) features with normalized (0 – 100 scale) intensities}{figure.7.3}{}}
+\citation{Bocker2009}
+\citation{Bocker2007}
+\newlabel{sub:topic-discovery}{{7.3.2}{98}{Mass2Motif Discovery}{subsection.7.3.2}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {7.3.2}Mass2Motif Discovery}{98}{subsection.7.3.2}}
+\@writefile{toc}{\contentsline {subsubsection}{LDA Inference}{98}{section*.26}}
 \@writefile{toc}{\contentsline {subsubsection}{Candidate Elemental Formula Assignment}{98}{section*.27}}
+\citation{Kind2007}
+\citation{Sievert2014}
 \@writefile{toc}{\contentsline {subsubsection}{MS2LDAVis Visualisation}{99}{section*.28}}
-\@writefile{toc}{\contentsline {section}{\numberline {7.3}Evaluation Study}{101}{section.7.3}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {7.3.1}Evaluation Datasets}{101}{subsection.7.3.1}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {7.3.2}Model Comparison}{102}{subsection.7.3.2}}
-\@writefile{toc}{\contentsline {section}{\numberline {7.4}Results \& Discussion}{103}{section.7.4}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {7.4.1}Model Comparison Results}{103}{subsection.7.4.1}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {7.4.2}Biological Findings}{103}{subsection.7.4.2}}
-\@writefile{toc}{\contentsline {subsubsection}{Automatic, unsupervised, chemical substructure discovery}{105}{section*.29}}
-\@writefile{toc}{\contentsline {subsubsection}{Matched standards used for validation are well explained by structurally annotated Mass2Motifs}{106}{section*.30}}
-\@writefile{toc}{\contentsline {subsubsection}{Mass2Motifs can aid in de novo metabolite annotation}{108}{section*.31}}
-\@writefile{toc}{\contentsline {subsubsection}{Differential Expression of Mass2Motifs reveals biochemical changes across samples}{109}{section*.32}}
-\@writefile{toc}{\contentsline {section}{\numberline {7.5}Substructure Discoveries across Many Samples}{110}{section.7.5}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {7.5.1}Extension to the LDA model}{110}{subsection.7.5.1}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {7.5.2}Evaluation Datasets}{110}{subsection.7.5.2}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {7.5.3}Results \& Discussion}{110}{subsection.7.5.3}}
-\@writefile{toc}{\contentsline {section}{\numberline {7.6}Conclusion}{110}{section.7.6}}
-\@writefile{toc}{\contentsline {chapter}{\numberline {8}Conclusion}{111}{chapter.8}}
+\@writefile{lof}{\contentsline {figure}{\numberline {7.4}{\ignorespaces Screenshot of MS2LDAVis. See text for explanations of the different panels.}}{100}{figure.7.4}}
+\newlabel{fig:m2ldavis-main}{{7.4}{100}{Screenshot of MS2LDAVis. See text for explanations of the different panels}{figure.7.4}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {7.4}Evaluation Study}{101}{section.7.4}}
+\newlabel{sub:ms2lda-datasets}{{7.4.1}{101}{Evaluation Datasets}{subsection.7.4.1}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {7.4.1}Evaluation Datasets}{101}{subsection.7.4.1}}
+\@writefile{lof}{\contentsline {figure}{\numberline {7.5}{\ignorespaces MS2LDAVis network graph of beer3 extract positive ionization mode file where a number of Mass2Motifs were selectively colored before loading the network visualization. Mass2Motifs circles are proportional to their degree (number of connections), whereas small blue squares represent fragmented MS1 peaks.}}{102}{figure.7.5}}
+\newlabel{fig:m2ldavis-popup}{{7.5}{102}{MS2LDAVis network graph of beer3 extract positive ionization mode file where a number of Mass2Motifs were selectively colored before loading the network visualization. Mass2Motifs circles are proportional to their degree (number of connections), whereas small blue squares represent fragmented MS1 peaks}{figure.7.5}{}}
+\citation{Creek2011}
+\citation{Smith2006}
+\citation{Scheltema2011}
+\@writefile{toc}{\contentsline {subsection}{\numberline {7.4.2}Evaluation Method}{103}{subsection.7.4.2}}
+\@writefile{toc}{\contentsline {subsubsection}{MS2LDA Analysis}{103}{section*.29}}
+\@writefile{toc}{\contentsline {subsubsection}{Model Comparison}{104}{section*.30}}
+\citation{horai2010massbank}
+\@writefile{toc}{\contentsline {subsubsection}{Molecular Networking Analysis}{105}{section*.31}}
+\@writefile{toc}{\contentsline {subsubsection}{Matching Against Spectral Libraries}{105}{section*.32}}
+\citation{Smith2006}
+\citation{Scheltema2011}
+\citation{tomfohr2005pathway}
+\@writefile{toc}{\contentsline {subsubsection}{Differential Analysis of Mass2Motifs}{106}{section*.33}}
+\@writefile{toc}{\contentsline {section}{\numberline {7.5}Results \& Discussions}{106}{section.7.5}}
+\newlabel{sub:lda-model-comparison}{{7.5.1}{107}{Model Comparison Results}{subsection.7.5.1}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {7.5.1}Model Comparison Results}{107}{subsection.7.5.1}}
+\@writefile{lof}{\contentsline {figure}{\numberline {7.6}{\ignorespaces Results of model comparisons of LDA and multinomial mixture model on the beer3 positive ionization mode dataset. The lower perplexity values for $K>100$ demonstrates that LDA provides a better model fit on the held-out data when compared to the mixture model.}}{107}{figure.7.6}}
+\newlabel{fig:m2lda-perplexity}{{7.6}{107}{Results of model comparisons of LDA and multinomial mixture model on the beer3 positive ionization mode dataset. The lower perplexity values for $K>100$ demonstrates that LDA provides a better model fit on the held-out data when compared to the mixture model}{figure.7.6}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {7.1}{\ignorespaces Mass2Motif coverage of MS1 peaks by percentage of MS1 peaks that can be explained by at least one structurally annotated Mass2Motif for the files acquired in positive ionization mode.}}{108}{table.7.1}}
+\newlabel{tab:ms2lda-coverage}{{7.1}{108}{Mass2Motif coverage of MS1 peaks by percentage of MS1 peaks that can be explained by at least one structurally annotated Mass2Motif for the files acquired in positive ionization mode}{table.7.1}{}}
+\newlabel{sub:lda-biological-findings}{{7.5.2}{108}{Biological Findings}{subsection.7.5.2}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {7.5.2}Biological Findings}{108}{subsection.7.5.2}}
+\@writefile{toc}{\contentsline {subsubsection}{Automatic, Unsupervised, Chemical Substructure Discovery}{108}{section*.34}}
+\citation{ma2014ms2analyzer}
+\@writefile{lof}{\contentsline {figure}{\numberline {7.7}{\ignorespaces Three spectra, from the beer3 positive ionization mode file, each of which includes Mass2Motif 19, annotated as the plant derived ferulic acid substructure. A-C highlight mass fragments and neutral losses (arrows originating at the precursor ions) included in Mass2Motif 19 (fragments not explained by Mass2Motif 19 are light grey). The histogram in D shows how common each fragment / loss is in the 11 instances of motif 19 found in the dataset. The abundant fragments with an m/z of 177.0545, 145.0284, 117.0332, and 89.0386 Da are most consistently present. It is of note that the neutral loss of 176.1086 and the protonated fragment of 177.0575 both relate to the complete ferulic acid substructure.}}{109}{figure.7.7}}
+\newlabel{fig:m2lda-ferulic-acid}{{7.7}{109}{Three spectra, from the beer3 positive ionization mode file, each of which includes Mass2Motif 19, annotated as the plant derived ferulic acid substructure. A-C highlight mass fragments and neutral losses (arrows originating at the precursor ions) included in Mass2Motif 19 (fragments not explained by Mass2Motif 19 are light grey). The histogram in D shows how common each fragment / loss is in the 11 instances of motif 19 found in the dataset. The abundant fragments with an m/z of 177.0545, 145.0284, 117.0332, and 89.0386 Da are most consistently present. It is of note that the neutral loss of 176.1086 and the protonated fragment of 177.0575 both relate to the complete ferulic acid substructure}{figure.7.7}{}}
+\@writefile{toc}{\contentsline {subsubsection}{Structurally Annotated Mass2Motifs Validated in Authentic Standards}{109}{section*.35}}
+\newlabel{sub:ms2lda-identification}{{7.5.2}{110}{Mass2Motifs Aid de-novo Metabolite Annotation}{section*.36}{}}
+\@writefile{toc}{\contentsline {subsubsection}{Mass2Motifs Aid de-novo Metabolite Annotation}{110}{section*.36}}
+\@writefile{lot}{\contentsline {table}{\numberline {7.2}{\ignorespaces Annotations of the Mass2Motifs associated to the fragmentation spectra of the standard peaks shown in Figure 3 of the paper. The degree of a Mass2Motif indicates the number of MS2 fragmentation spectra in the beer3 positive ionization mode data having fragment or loss features that can be explained by the Mass2Motif (at the specified thresholding level). }}{111}{table.7.2}}
+\newlabel{tab:ms2lda-standards}{{7.2}{111}{Annotations of the Mass2Motifs associated to the fragmentation spectra of the standard peaks shown in Figure 3 of the paper. The degree of a Mass2Motif indicates the number of MS2 fragmentation spectra in the beer3 positive ionization mode data having fragment or loss features that can be explained by the Mass2Motif (at the specified thresholding level)}{table.7.2}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {7.8}{\ignorespaces Mass2Motif spectra of identified metabolites A) L-histidine, B) L-phenylalanine, C) L-tryptophan, and D) adenosine. Characterized motifs (see Table\nobreakspace  {}\ref  {tab:ms2lda-standards}) are indicated by color.}}{112}{figure.7.8}}
+\newlabel{fig:m2lda-standards}{{7.8}{112}{Mass2Motif spectra of identified metabolites A) L-histidine, B) L-phenylalanine, C) L-tryptophan, and D) adenosine. Characterized motifs (see Table~\ref {tab:ms2lda-standards}) are indicated by color}{figure.7.8}{}}
+\citation{tarca2013comparison}
+\citation{tomfohr2005pathway}
+\@writefile{lof}{\contentsline {figure}{\numberline {7.9}{\ignorespaces Mass2Motifs 19 and 58 were found to be representative of ferulic acid and ethylphenol, respectively. 11 and 42 MS1 features in the beer3 data set were explained by those two Mass2Motifs, respectively. Of those, one was explained by both Mass2Motifs, aiding in its annotation as feruloyltyramine (314.1386 m/z; [C18H20NO4]+). On the right of the plot, we show the clusters containing these three MS1 features created using the molecular networking tool (15) (top: ferulic acid, bottom: tyramine (ethylphenol)). The coloring of the nodes is dependent on their presence across the different beer extracts and the node size is proportional to the number of unique beer extracts the node fragmentation spectra are found in. The compound containing both Mass2Motifs is forced into the ethylphenol cluster, losing its relationship with ferulic acid.}}{113}{figure.7.9}}
+\newlabel{fig:m2lda-combined-m2m}{{7.9}{113}{Mass2Motifs 19 and 58 were found to be representative of ferulic acid and ethylphenol, respectively. 11 and 42 MS1 features in the beer3 data set were explained by those two Mass2Motifs, respectively. Of those, one was explained by both Mass2Motifs, aiding in its annotation as feruloyltyramine (314.1386 m/z; [C18H20NO4]+). On the right of the plot, we show the clusters containing these three MS1 features created using the molecular networking tool (15) (top: ferulic acid, bottom: tyramine (ethylphenol)). The coloring of the nodes is dependent on their presence across the different beer extracts and the node size is proportional to the number of unique beer extracts the node fragmentation spectra are found in. The compound containing both Mass2Motifs is forced into the ethylphenol cluster, losing its relationship with ferulic acid}{figure.7.9}{}}
+\@writefile{toc}{\contentsline {subsubsection}{Differential Expression of Mass2Motifs Reveals Biochemical Changes Across Samples}{113}{section*.37}}
+\@writefile{lof}{\contentsline {figure}{\numberline {7.10}{\ignorespaces Log fold change heat-maps for the A) guanine and B) pentose loss Mass2Motifs. Each row is an annotated MS1 peak and columns represent samples. Bold names could be matched to a reference compound.}}{114}{figure.7.10}}
+\newlabel{fig:m2lda-heatmaps}{{7.10}{114}{Log fold change heat-maps for the A) guanine and B) pentose loss Mass2Motifs. Each row is an annotated MS1 peak and columns represent samples. Bold names could be matched to a reference compound}{figure.7.10}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {7.6}Substructure Discoveries across Many Samples}{114}{section.7.6}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {7.6.1}Extension to the LDA model}{115}{subsection.7.6.1}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {7.6.2}Results \& Discussion}{115}{subsection.7.6.2}}
+\@writefile{toc}{\contentsline {section}{\numberline {7.7}Conclusion}{115}{section.7.7}}
+\@writefile{toc}{\contentsline {chapter}{\numberline {8}Conclusion}{116}{chapter.8}}
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
-\newlabel{c:background}{{8}{111}{Conclusion}{chapter.8}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {8.1}Summary of Contributions}{111}{section.8.1}}
-\@writefile{toc}{\contentsline {section}{\numberline {8.2}Future Work}{111}{section.8.2}}
-\@writefile{toc}{\contentsline {section}{\numberline {8.3}Summary and Conclusions}{111}{section.8.3}}
-\@writefile{toc}{\contentsline {chapter}{\numberline {A}An Appendix}{112}{appendix.A}}
+\newlabel{c:background}{{8}{116}{Conclusion}{chapter.8}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {8.1}Summary of Contributions}{116}{section.8.1}}
+\@writefile{toc}{\contentsline {section}{\numberline {8.2}Future Work}{116}{section.8.2}}
+\@writefile{toc}{\contentsline {section}{\numberline {8.3}Summary and Conclusions}{116}{section.8.3}}
+\@writefile{toc}{\contentsline {chapter}{\numberline {A}An Appendix}{117}{appendix.A}}
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
-\newlabel{a:appendix}{{A}{112}{An Appendix}{appendix.A}{}}
+\newlabel{a:appendix}{{A}{117}{An Appendix}{appendix.A}{}}
 \bibstyle{IEEEtran}
 \bibdata{bibliography/dissertation}
 \bibcite{Tsai2013a}{1}
@@ -551,7 +607,7 @@
 \bibcite{Smith2014}{7}
 \bibcite{Castillo2011}{8}
 \bibcite{Manuscript2013}{9}
-\@writefile{toc}{\contentsline {chapter}{Bibliography}{113}{appendix.A}}
+\@writefile{toc}{\contentsline {chapter}{Bibliography}{118}{appendix.A}}
 \bibcite{Gika2014}{10}
 \bibcite{metzker2010sequencing}{11}
 \bibcite{mann2003proteomic}{12}
@@ -573,47 +629,65 @@
 \bibcite{Duran2003}{28}
 \bibcite{Wang2013}{29}
 \bibcite{Lin2013}{30}
-\bibcite{Podwojski2009}{31}
-\bibcite{DeVos2007a}{32}
-\bibcite{Creek2011}{33}
-\bibcite{Chawade2015}{34}
-\bibcite{Dunn2012}{35}
-\bibcite{Kind2006}{36}
-\bibcite{Kuhl2012}{37}
-\bibcite{Daly2014}{38}
-\bibcite{Hufsky2014}{39}
-\bibcite{Smith2005}{40}
-\bibcite{pence2010chemspider}{41}
-\bibcite{horai2010massbank}{42}
-\bibcite{wang2009pubchem}{43}
-\bibcite{Varmuza1996}{44}
-\bibcite{Hummel2010}{45}
-\bibcite{Xia2010}{46}
-\bibcite{Krumsiek2011a}{47}
-\bibcite{Krumsiek2012}{48}
-\bibcite{Gieger2008}{49}
-\bibcite{mamas2011role}{50}
-\bibcite{Gibney2005}{51}
-\bibcite{Kell2006}{52}
-\bibcite{Rasmussen2000}{53}
-\bibcite{Gusfield1989}{54}
-\bibcite{Kuhn1955}{55}
-\bibcite{Maximum2011}{56}
-\bibcite{Smith2013a}{57}
-\bibcite{Scheltema2011}{58}
-\bibcite{Rogers2012}{59}
-\bibcite{Melamud2010}{60}
-\bibcite{Brodsky2010}{61}
-\bibcite{Landan2009}{62}
-\bibcite{Thompson1994}{63}
-\bibcite{Notredame2000}{64}
-\bibcite{Penn2010}{65}
-\bibcite{Redelings2005}{66}
-\bibcite{Bradley2009}{67}
-\bibcite{Listgarten2004}{68}
-\bibcite{Kong2009}{69}
-\bibcite{Fischer2006}{70}
-\bibcite{Jeong2012}{71}
-\bibcite{GhanatBari2014b}{72}
-\bibcite{DeSouza2006}{73}
-\bibcite{Teh2006}{74}
+\bibcite{Smith2006}{31}
+\bibcite{Podwojski2009}{32}
+\bibcite{DeVos2007a}{33}
+\bibcite{Creek2011}{34}
+\bibcite{Chawade2015}{35}
+\bibcite{Dunn2012}{36}
+\bibcite{Kind2006}{37}
+\bibcite{Kuhl2012}{38}
+\bibcite{Daly2014}{39}
+\bibcite{Hufsky2014}{40}
+\bibcite{Smith2005}{41}
+\bibcite{pence2010chemspider}{42}
+\bibcite{horai2010massbank}{43}
+\bibcite{wang2009pubchem}{44}
+\bibcite{Varmuza1996}{45}
+\bibcite{Hummel2010}{46}
+\bibcite{Xia2010}{47}
+\bibcite{Krumsiek2011a}{48}
+\bibcite{Krumsiek2012}{49}
+\bibcite{Gieger2008}{50}
+\bibcite{mamas2011role}{51}
+\bibcite{Gibney2005}{52}
+\bibcite{Kell2006}{53}
+\bibcite{Rasmussen2000}{54}
+\bibcite{Gusfield1989}{55}
+\bibcite{Kuhn1955}{56}
+\bibcite{Maximum2011}{57}
+\bibcite{Smith2013a}{58}
+\bibcite{Scheltema2011}{59}
+\bibcite{Rogers2012}{60}
+\bibcite{Melamud2010}{61}
+\bibcite{Brodsky2010}{62}
+\bibcite{Landan2009}{63}
+\bibcite{Thompson1994}{64}
+\bibcite{Notredame2000}{65}
+\bibcite{Penn2010}{66}
+\bibcite{Redelings2005}{67}
+\bibcite{Bradley2009}{68}
+\bibcite{Listgarten2004}{69}
+\bibcite{Kong2009}{70}
+\bibcite{Fischer2006}{71}
+\bibcite{Jeong2012}{72}
+\bibcite{GhanatBari2014b}{73}
+\bibcite{DeSouza2006}{74}
+\bibcite{Teh2006}{75}
+\bibcite{VanderHooft2013}{76}
+\bibcite{Sweeney2014}{77}
+\bibcite{Scott1994}{78}
+\bibcite{Duhrkop2015}{79}
+\bibcite{yang2013molecular}{80}
+\bibcite{van2016urinary}{81}
+\bibcite{ma2014ms2analyzer}{82}
+\bibcite{chen2010probabilistic}{83}
+\bibcite{zhang2015exploiting}{84}
+\bibcite{rogers2005latent}{85}
+\bibcite{Stravs2013}{86}
+\bibcite{Bocker2009}{87}
+\bibcite{Bocker2007}{88}
+\bibcite{Kind2007}{89}
+\bibcite{Sievert2014}{90}
+\bibcite{tomfohr2005pathway}{91}
+\bibcite{tarca2013comparison}{92}

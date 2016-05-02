@@ -9,7 +9,6 @@ Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Database file #1: bibliography/dissertation.bib
 Warning--I didn't find a database entry for "Smith2004"
-Warning--I didn't find a database entry for "Smith2006"
 Warning--I didn't find a database entry for "Heinonen2012"
 Warning--I didn't find a database entry for "Teh2005"
 Warning--I didn't find a database entry for "Blei2003"
@@ -26,47 +25,48 @@ Warning--empty author in Podwojski2009
 Warning--empty author in Gieger2008
 Warning--empty author in Gibney2005
 Warning--missing publisher in Gusfield1989
+Warning--empty journal in Scott1994
 
 Done.
-You've used 74 entries,
+You've used 92 entries,
             4024 wiz_defined-function locations,
-            1339 strings with 24204 characters,
-and the built_in function-call counts, 63924 in all, are:
-= -- 5556
-> -- 1562
-< -- 594
-+ -- 843
-- -- 271
-* -- 3235
-:= -- 9782
-add.period$ -- 147
-call.type$ -- 74
-change.case$ -- 74
-chr.to.int$ -- 1236
-cite$ -- 80
-duplicate$ -- 4523
-empty$ -- 4520
-format.name$ -- 334
-if$ -- 14648
+            1444 strings with 28403 characters,
+and the built_in function-call counts, 79632 in all, are:
+= -- 6918
+> -- 1955
+< -- 739
++ -- 1061
+- -- 346
+* -- 4020
+:= -- 12152
+add.period$ -- 184
+call.type$ -- 92
+change.case$ -- 92
+chr.to.int$ -- 1542
+cite$ -- 99
+duplicate$ -- 5638
+empty$ -- 5626
+format.name$ -- 419
+if$ -- 18261
 int.to.chr$ -- 0
-int.to.str$ -- 74
-missing$ -- 756
-newline$ -- 319
-num.names$ -- 72
-pop$ -- 1472
+int.to.str$ -- 92
+missing$ -- 942
+newline$ -- 387
+num.names$ -- 90
+pop$ -- 1852
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 2
-skip$ -- 5033
+skip$ -- 6263
 stack$ -- 0
-substring$ -- 3085
-swap$ -- 4084
-text.length$ -- 182
+substring$ -- 3877
+swap$ -- 5077
+text.length$ -- 225
 text.prefix$ -- 0
 top$ -- 5
-type$ -- 74
-warning$ -- 6
-while$ -- 303
-width$ -- 76
-write$ -- 901
+type$ -- 92
+warning$ -- 7
+while$ -- 374
+width$ -- 94
+write$ -- 1108
 (There were 15 warnings)
