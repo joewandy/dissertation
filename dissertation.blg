@@ -12,9 +12,6 @@ Warning--I didn't find a database entry for "Smith2004"
 Warning--I didn't find a database entry for "Heinonen2012"
 Warning--I didn't find a database entry for "Teh2005"
 Warning--I didn't find a database entry for "Blei2003"
-Warning--I didn't find a database entry for "Smith2015"
-Warning--I didn't find a database entry for "Rogers2011"
-Warning--I didn't find a database entry for "Wandy2015"
 Warning--I didn't find a database entry for "Lovell2012"
 -- IEEEtran.bst version 1.12 (2007/01/11) by Michael Shell.
 -- http://www.michaelshell.org/tex/ieeetran/bibtex/
@@ -28,45 +25,45 @@ Warning--missing publisher in Gusfield1989
 Warning--empty journal in Scott1994
 
 Done.
-You've used 92 entries,
+You've used 94 entries,
             4024 wiz_defined-function locations,
-            1444 strings with 28403 characters,
-and the built_in function-call counts, 79632 in all, are:
-= -- 6918
-> -- 1955
-< -- 739
-+ -- 1061
-- -- 346
-* -- 4020
-:= -- 12152
-add.period$ -- 184
-call.type$ -- 92
-change.case$ -- 92
-chr.to.int$ -- 1542
-cite$ -- 99
-duplicate$ -- 5638
-empty$ -- 5626
-format.name$ -- 419
-if$ -- 18261
+            1450 strings with 28804 characters,
+and the built_in function-call counts, 81281 in all, are:
+= -- 7060
+> -- 1999
+< -- 753
++ -- 1085
+- -- 354
+* -- 4103
+:= -- 12405
+add.period$ -- 188
+call.type$ -- 94
+change.case$ -- 94
+chr.to.int$ -- 1572
+cite$ -- 101
+duplicate$ -- 5756
+empty$ -- 5742
+format.name$ -- 429
+if$ -- 18639
 int.to.chr$ -- 0
-int.to.str$ -- 92
-missing$ -- 942
-newline$ -- 387
-num.names$ -- 90
-pop$ -- 1852
+int.to.str$ -- 94
+missing$ -- 962
+newline$ -- 395
+num.names$ -- 92
+pop$ -- 1896
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 2
-skip$ -- 6263
+skip$ -- 6391
 stack$ -- 0
-substring$ -- 3877
-swap$ -- 5077
-text.length$ -- 225
+substring$ -- 3953
+swap$ -- 5178
+text.length$ -- 229
 text.prefix$ -- 0
 top$ -- 5
-type$ -- 92
+type$ -- 94
 warning$ -- 7
-while$ -- 374
-width$ -- 94
-write$ -- 1108
-(There were 15 warnings)
+while$ -- 381
+width$ -- 96
+write$ -- 1131
+(There were 12 warnings)

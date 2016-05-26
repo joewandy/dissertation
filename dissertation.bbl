@@ -411,6 +411,15 @@ C.~Rasmussen, ``{The infinite Gaussian mixture model},'' in \emph{Advances in
   Neural Information Processing Systems 12}.\hskip 1em plus 0.5em minus
   0.4em\relax MIT Press, 2000, pp. 554--560.
 
+\bibitem{Smith2015}
+\BIBentryALTinterwordspacing
+R.~Smith, J.~T. Prince, and D.~Ventura, ``{A coherent mathematical
+  characterization of isotope trace extraction , isotopic envelope extraction ,
+  and LC-MS correspondence},'' \emph{BMC Bioinformatics}, vol.~16, no. Suppl 7,
+  p.~S1, 2015. [Online]. Available:
+  \url{http://www.biomedcentral.com/1471-2105/16/S7/S1}
+\BIBentrySTDinterwordspacing
+
 \bibitem{Gusfield1989}
 D.~Gusfield and R.~Irving, \emph{{The stable marriage problem: structure and
   algorithms}}, 1989.
@@ -518,6 +527,11 @@ J.~Jeong, X.~Shi, X.~Zhang, S.~Kim, and C.~Shen, ``{Model-based peak alignment
 M.~{Ghanat Bari}, X.~Ma, and J.~Zhang, ``{PeakLink: a new peptide peak linking
   method in LC-MS/MS using wavelet and SVM.}'' \emph{Bioinformatics}, vol.~30,
   no.~17, pp. 2464--70, Sep. 2014.
+
+\bibitem{Sandin2013}
+M.~Sandin, A.~Ali, K.~Hansson, O.~M{\aa}nsson, and E.~Andreasson, ``{An
+  Adaptive Alignment Algorithm for Quality-controlled Label-free LC-MS},''
+  \emph{Mol Cell Proteomics}, pp. 1407--1420, 2013.
 
 \bibitem{DeSouza2006}
 D.~P. {De Souza}, E.~C. Saunders, M.~J. McConville, and V.~a. Liki\'{c},

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2016.3.1)  2 MAY 2016 23:20
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2016.3.1)  26 MAY 2016 02:08
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -639,6 +639,25 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 )
 \Hy@SectionHShift=\skip61
 )
+(/usr/local/texlive/2015/texmf-dist/tex/latex/tools/tabularx.sty
+Package: tabularx 2014/10/28 v2.10 `tabularx' package (DPC)
+
+(/usr/local/texlive/2015/texmf-dist/tex/latex/tools/array.sty
+Package: array 2014/10/28 v2.4c Tabular extension package (FMi)
+\col@sep=\dimen166
+\extrarowheight=\dimen167
+\NC@list=\toks37
+\extratabsurround=\skip62
+\backup@length=\skip63
+)
+\TX@col@width=\dimen168
+\TX@old@table=\dimen169
+\TX@old@col=\dimen170
+\TX@target=\dimen171
+\TX@delta=\dimen172
+\TX@cols=\count143
+\TX@ftn=\toks38
+)
 (/usr/local/texlive/2015/texmf-dist/tex/latex/breqn/breqn.sty
 (/usr/local/texlive/2015/texmf-dist/tex/latex/l3kernel/expl3.sty
 Package: expl3 2015/03/01 v5547 L3 programming layer (loader) 
@@ -653,37 +672,37 @@ L3 Module: l3tl 2015/01/27 v5500 L3 Token lists
 L3 Module: l3str 2015/03/01 v5545 L3 Strings
 L3 Module: l3seq 2014/08/23 v5354 L3 Sequences and stacks
 L3 Module: l3int 2015/02/21 v5529 L3 Integers
-\c_max_int=\count143
-\l_tmpa_int=\count144
-\l_tmpb_int=\count145
-\g_tmpa_int=\count146
-\g_tmpb_int=\count147
+\c_max_int=\count144
+\l_tmpa_int=\count145
+\l_tmpb_int=\count146
+\g_tmpa_int=\count147
+\g_tmpb_int=\count148
 L3 Module: l3quark 2014/08/23 v5354 L3 Quarks
 L3 Module: l3prg 2014/08/23 v5354 L3 Control structures
-\g__prg_map_int=\count148
+\g__prg_map_int=\count149
 L3 Module: l3clist 2014/08/23 v5354 L3 Comma separated lists
 L3 Module: l3token 2014/09/15 v5422 L3 Experimental token manipulation
 L3 Module: l3prop 2014/08/23 v5354 L3 Property lists
 L3 Module: l3msg 2015/02/26 v5537 L3 Messages
 L3 Module: l3file 2014/08/24 v5369 L3 File and I/O operations
-\l_iow_line_count_int=\count149
-\l__iow_target_count_int=\count150
-\l__iow_current_line_int=\count151
-\l__iow_current_word_int=\count152
-\l__iow_current_indentation_int=\count153
+\l_iow_line_count_int=\count150
+\l__iow_target_count_int=\count151
+\l__iow_current_line_int=\count152
+\l__iow_current_word_int=\count153
+\l__iow_current_indentation_int=\count154
 L3 Module: l3skip 2014/08/23 v5354 L3 Dimensions and skips
-\c_zero_dim=\dimen166
-\c_max_dim=\dimen167
-\l_tmpa_dim=\dimen168
-\l_tmpb_dim=\dimen169
-\g_tmpa_dim=\dimen170
-\g_tmpb_dim=\dimen171
-\c_zero_skip=\skip62
-\c_max_skip=\skip63
-\l_tmpa_skip=\skip64
-\l_tmpb_skip=\skip65
-\g_tmpa_skip=\skip66
-\g_tmpb_skip=\skip67
+\c_zero_dim=\dimen173
+\c_max_dim=\dimen174
+\l_tmpa_dim=\dimen175
+\l_tmpb_dim=\dimen176
+\g_tmpa_dim=\dimen177
+\g_tmpb_dim=\dimen178
+\c_zero_skip=\skip64
+\c_max_skip=\skip65
+\l_tmpa_skip=\skip66
+\l_tmpb_skip=\skip67
+\g_tmpa_skip=\skip68
+\g_tmpb_skip=\skip69
 \c_zero_muskip=\muskip12
 \c_max_muskip=\muskip13
 \l_tmpa_muskip=\muskip14
@@ -691,18 +710,18 @@ L3 Module: l3skip 2014/08/23 v5354 L3 Dimensions and skips
 \g_tmpa_muskip=\muskip16
 \g_tmpb_muskip=\muskip17
 L3 Module: l3keys 2015/01/27 v5500 L3 Key-value interfaces
-\g__keyval_level_int=\count154
-\l_keys_choice_int=\count155
+\g__keyval_level_int=\count155
+\l_keys_choice_int=\count156
 L3 Module: l3fp 2014/08/22 v5336 L3 Floating points
-\c__fp_leading_shift_int=\count156
-\c__fp_middle_shift_int=\count157
-\c__fp_trailing_shift_int=\count158
-\c__fp_big_leading_shift_int=\count159
-\c__fp_big_middle_shift_int=\count160
-\c__fp_big_trailing_shift_int=\count161
-\c__fp_Bigg_leading_shift_int=\count162
-\c__fp_Bigg_middle_shift_int=\count163
-\c__fp_Bigg_trailing_shift_int=\count164
+\c__fp_leading_shift_int=\count157
+\c__fp_middle_shift_int=\count158
+\c__fp_trailing_shift_int=\count159
+\c__fp_big_leading_shift_int=\count160
+\c__fp_big_middle_shift_int=\count161
+\c__fp_big_trailing_shift_int=\count162
+\c__fp_Bigg_leading_shift_int=\count163
+\c__fp_Bigg_middle_shift_int=\count164
+\c__fp_Bigg_trailing_shift_int=\count165
 L3 Module: l3box 2014/08/23 v5354 L3 Experimental boxes
 \c_empty_box=\box43
 \l_tmpa_box=\box44
@@ -711,13 +730,13 @@ L3 Module: l3box 2014/08/23 v5354 L3 Experimental boxes
 \g_tmpb_box=\box47
 L3 Module: l3coffins 2014/08/23 v5354 L3 Coffin code layer
 \l__coffin_internal_box=\box48
-\l__coffin_internal_dim=\dimen172
-\l__coffin_offset_x_dim=\dimen173
-\l__coffin_offset_y_dim=\dimen174
-\l__coffin_x_dim=\dimen175
-\l__coffin_y_dim=\dimen176
-\l__coffin_x_prime_dim=\dimen177
-\l__coffin_y_prime_dim=\dimen178
+\l__coffin_internal_dim=\dimen179
+\l__coffin_offset_x_dim=\dimen180
+\l__coffin_offset_y_dim=\dimen181
+\l__coffin_x_dim=\dimen182
+\l__coffin_y_dim=\dimen183
+\l__coffin_x_prime_dim=\dimen184
+\l__coffin_y_prime_dim=\dimen185
 \c_empty_coffin=\box49
 \l__coffin_aligned_coffin=\box50
 \l__coffin_aligned_internal_coffin=\box51
@@ -726,34 +745,34 @@ L3 Module: l3coffins 2014/08/23 v5354 L3 Coffin code layer
 \l__coffin_display_coffin=\box54
 \l__coffin_display_coord_coffin=\box55
 \l__coffin_display_pole_coffin=\box56
-\l__coffin_display_offset_dim=\dimen179
-\l__coffin_display_x_dim=\dimen180
-\l__coffin_display_y_dim=\dimen181
+\l__coffin_display_offset_dim=\dimen186
+\l__coffin_display_x_dim=\dimen187
+\l__coffin_display_y_dim=\dimen188
 L3 Module: l3color 2014/08/23 v5354 L3 Experimental color support
 L3 Module: l3candidates 2015/03/01 v5544 L3 Experimental additions to l3kernel
-\l__box_top_dim=\dimen182
-\l__box_bottom_dim=\dimen183
-\l__box_left_dim=\dimen184
-\l__box_right_dim=\dimen185
-\l__box_top_new_dim=\dimen186
-\l__box_bottom_new_dim=\dimen187
-\l__box_left_new_dim=\dimen188
-\l__box_right_new_dim=\dimen189
+\l__box_top_dim=\dimen189
+\l__box_bottom_dim=\dimen190
+\l__box_left_dim=\dimen191
+\l__box_right_dim=\dimen192
+\l__box_top_new_dim=\dimen193
+\l__box_bottom_new_dim=\dimen194
+\l__box_left_new_dim=\dimen195
+\l__box_right_new_dim=\dimen196
 \l__box_internal_box=\box57
-\l__coffin_bounding_shift_dim=\dimen190
-\l__coffin_left_corner_dim=\dimen191
-\l__coffin_right_corner_dim=\dimen192
-\l__coffin_bottom_corner_dim=\dimen193
-\l__coffin_top_corner_dim=\dimen194
-\l__coffin_scaled_total_height_dim=\dimen195
-\l__coffin_scaled_width_dim=\dimen196
+\l__coffin_bounding_shift_dim=\dimen197
+\l__coffin_left_corner_dim=\dimen198
+\l__coffin_right_corner_dim=\dimen199
+\l__coffin_bottom_corner_dim=\dimen200
+\l__coffin_top_corner_dim=\dimen201
+\l__coffin_scaled_total_height_dim=\dimen202
+\l__coffin_scaled_width_dim=\dimen203
 )
 (/usr/local/texlive/2015/texmf-dist/tex/latex/l3kernel/l3unicode-data.def
 File: l3unicode-data.def 2015/03/01 v5544 L3 Unicode data
 )
 (/usr/local/texlive/2015/texmf-dist/tex/latex/l3kernel/l3pdfmode.def
 File: l3pdfmode.def 2015/03/01 v5544 L3 Experimental driver: PDF mode
-\l__driver_color_stack_int=\count165
+\l__driver_color_stack_int=\count166
 ))
 Package: breqn 2012/05/10 v0.98b Breaking equations
 
@@ -796,67 +815,67 @@ LaTeX Info: Redefining \scriptstyle on input line 86.
 LaTeX Info: Redefining \scriptscriptstyle on input line 88.
 LaTeX Info: Redefining \genfrac on input line 122.
 ))
-\inf@bad=\count166
-\maxint=\count167
-\listwidth=\dimen197
-\eqnumsep=\dimen198
-\eqmargin=\dimen199
-\eqlinespacing=\skip68
-\eqlineskip=\skip69
-\eqlineskiplimit=\dimen200
+\inf@bad=\count167
+\maxint=\count168
+\listwidth=\dimen204
+\eqnumsep=\dimen205
+\eqmargin=\dimen206
+\eqlinespacing=\skip70
+\eqlineskip=\skip71
+\eqlineskiplimit=\dimen207
 \eqbinoffset=\muskip18
 \eqdelimoffset=\muskip19
-\eqindentstep=\dimen201
-\eqstyle=\toks37
-\eqbreakdepth=\count168
-\eqinterlinepenalty=\count169
-\intereqpenalty=\count170
-\intereqskip=\skip70
-\prerelpenalty=\count171
-\prebinoppenalty=\count172
+\eqindentstep=\dimen208
+\eqstyle=\toks39
+\eqbreakdepth=\count169
+\eqinterlinepenalty=\count170
+\intereqpenalty=\count171
+\intereqskip=\skip72
+\prerelpenalty=\count172
+\prebinoppenalty=\count173
 \Dmedmuskip=\muskip20
 \Dthickmuskip=\muskip21
-\eqleftskip=\skip71
-\eqrightskip=\skip72
-\eq@vspan=\skip73
+\eqleftskip=\skip73
+\eqrightskip=\skip74
+\eq@vspan=\skip75
 \eq@binoffset=\muskip22
 \EQ@box=\box58
 \EQ@copy=\box59
 \EQ@numbox=\box60
-\eq@wdNum=\dimen202
+\eq@wdNum=\dimen209
 \GRP@numbox=\box61
-\grp@wdNum=\dimen203
-\eq@lines=\count173
-\eq@curline=\count174
-\eq@badness=\count175
-\EQ@vims=\count176
-\eq@dp=\dimen204
-\eq@wdL=\dimen205
-\eq@wdT=\dimen206
-\eq@wdMin=\dimen207
-\grp@wdL=\dimen208
-\grp@wdR=\dimen209
-\grp@wdT=\dimen210
-\eq@wdRmax=\dimen211
-\eq@firstht=\dimen212
-\eq@wdCond=\dimen213
-\eq@indentstep=\dimen214
-\eq@linewidth=\dimen215
-\grp@linewidth=\dimen216
-\eq@hshift=\dimen217
-\eq@given@sidespace=\dimen218
-\mathindent=\dimen219
-\eq@final@linecount=\count177
-\eq@wdR=\dimen220
-\EQ@continue=\toks38
-\lr@level=\count178
-\GRP@queue=\toks39
+\grp@wdNum=\dimen210
+\eq@lines=\count174
+\eq@curline=\count175
+\eq@badness=\count176
+\EQ@vims=\count177
+\eq@dp=\dimen211
+\eq@wdL=\dimen212
+\eq@wdT=\dimen213
+\eq@wdMin=\dimen214
+\grp@wdL=\dimen215
+\grp@wdR=\dimen216
+\grp@wdT=\dimen217
+\eq@wdRmax=\dimen218
+\eq@firstht=\dimen219
+\eq@wdCond=\dimen220
+\eq@indentstep=\dimen221
+\eq@linewidth=\dimen222
+\grp@linewidth=\dimen223
+\eq@hshift=\dimen224
+\eq@given@sidespace=\dimen225
+\mathindent=\dimen226
+\eq@final@linecount=\count178
+\eq@wdR=\dimen227
+\EQ@continue=\toks40
+\lr@level=\count179
+\GRP@queue=\toks41
 \GRP@box=\box62
 \GRP@wholebox=\box63
-\darraycolsep=\skip74
-\cur@row=\count179
-\cur@col=\count180
-\conditionsep=\skip75
+\darraycolsep=\skip76
+\cur@row=\count180
+\cur@col=\count181
+\conditionsep=\skip77
 )
 (./tikzlibrarybayesnet.code.tex
 (/usr/local/texlive/2015/texmf-dist/tex/generic/pgf/frontendlayer/tikz/librarie
@@ -944,33 +963,33 @@ File: tikzlibraryarrows.code.tex 2008/01/09 v3.0.0 (rcs-revision 1.1)
 (/usr/local/texlive/2015/texmf-dist/tex/generic/pgf/libraries/pgflibraryarrows.
 code.tex
 File: pgflibraryarrows.code.tex 2013/09/23 v3.0.0 (rcs-revision 1.16)
-\arrowsize=\dimen221
+\arrowsize=\dimen228
 )))
 (/usr/local/texlive/2015/texmf-dist/tex/latex/changebar/changebar.sty
 Package: changebar 2005/09/18 v3.5c Indicate changes with marginal bars
-\cb@nextpoint=\count181
-\cb@topleft=\count182
-\cb@topright=\count183
-\cb@botleft=\count184
-\cb@botright=\count185
-\cb@cnta=\count186
-\cb@cntb=\count187
-\cb@dima=\dimen222
-\cb@curbarwd=\dimen223
-\cb@page=\count188
-\cb@pagecount=\count189
-\cb@odd@left=\dimen224
-\cb@odd@right=\dimen225
-\cb@even@left=\dimen226
-\cb@even@right=\dimen227
+\cb@nextpoint=\count182
+\cb@topleft=\count183
+\cb@topright=\count184
+\cb@botleft=\count185
+\cb@botright=\count186
+\cb@cnta=\count187
+\cb@cntb=\count188
+\cb@dima=\dimen229
+\cb@curbarwd=\dimen230
+\cb@page=\count189
+\cb@pagecount=\count190
+\cb@odd@left=\dimen231
+\cb@odd@right=\dimen232
+\cb@even@left=\dimen233
+\cb@even@right=\dimen256
 \cb@writexy=\write4
 \cb@readxy=\read2
 \openout4 = `dissertation.cb2'.
 
-\changebarwidth=\skip76
-\deletebarwidth=\skip77
-\changebarsep=\skip78
-\c@changebargrey=\count190
+\changebarwidth=\skip78
+\deletebarwidth=\skip79
+\changebarsep=\skip80
+\c@changebargrey=\count191
 \cb@write=\write5
 \cb@read=\read3
 \openout5 = `dissertation.cb'.
@@ -978,18 +997,18 @@ Package: changebar 2005/09/18 v3.5c Indicate changes with marginal bars
 )
 (/usr/local/texlive/2015/texmf-dist/tex/latex/soul/soul.sty
 Package: soul 2003/11/17 v2.4 letterspacing/underlining (mf)
-\SOUL@word=\toks40
-\SOUL@lasttoken=\toks41
-\SOUL@cmds=\toks42
-\SOUL@buffer=\toks43
-\SOUL@token=\toks44
-\SOUL@spaceskip=\skip79
-\SOUL@ttwidth=\dimen228
-\SOUL@uldp=\dimen229
-\SOUL@ulht=\dimen230
+\SOUL@word=\toks42
+\SOUL@lasttoken=\toks43
+\SOUL@cmds=\toks44
+\SOUL@buffer=\toks45
+\SOUL@token=\toks46
+\SOUL@spaceskip=\skip81
+\SOUL@ttwidth=\dimen257
+\SOUL@uldp=\dimen258
+\SOUL@ulht=\dimen259
 )
 (/usr/local/texlive/2015/texmf-dist/tex/latex/multirow/multirow.sty
-\bigstrutjot=\dimen231
+\bigstrutjot=\dimen260
 )
 (/usr/local/texlive/2015/texmf-dist/tex/latex/acronym/acronym.sty
 Package: acronym 2015/03/21 v1.41 Support for acronyms (Tobias Oetiker)
@@ -1000,12 +1019,12 @@ Package: suffix 2006/07/15 1.5a Variant command support
 (/usr/local/texlive/2015/texmf-dist/tex/generic/xstring/xstring.sty
 (/usr/local/texlive/2015/texmf-dist/tex/generic/xstring/xstring.tex
 \@xs@message=\write6
-\integerpart=\count191
-\decimalpart=\count192
+\integerpart=\count192
+\decimalpart=\count193
 )
 Package: xstring 2013/10/13  v1.7c  String manipulations (C Tellechea)
 )
-\AC@clearlist=\toks45
+\AC@clearlist=\toks47
 )
 (/usr/local/texlive/2015/texmf-dist/tex/latex/subfig/subfig.sty
 Package: subfig 2005/06/28 ver: 1.3 subfig package
@@ -1013,31 +1032,31 @@ Package: subfig 2005/06/28 ver: 1.3 subfig package
 (/usr/local/texlive/2015/texmf-dist/tex/latex/caption/caption3.sty
 Package: caption3 2013/05/02 v1.6-88 caption3 kernel (AR)
 Package caption3 Info: TeX engine: e-TeX on input line 57.
-\captionmargin=\dimen232
-\captionmargin@=\dimen233
-\captionwidth=\dimen256
-\caption@tempdima=\dimen257
-\caption@indent=\dimen258
-\caption@parindent=\dimen259
-\caption@hangindent=\dimen260
+\captionmargin=\dimen261
+\captionmargin@=\dimen262
+\captionwidth=\dimen263
+\caption@tempdima=\dimen264
+\caption@indent=\dimen265
+\caption@parindent=\dimen266
+\caption@hangindent=\dimen267
 )
-\c@KVtest=\count193
-\sf@farskip=\skip80
-\sf@captopadj=\dimen261
-\sf@capskip=\skip81
-\sf@nearskip=\skip82
-\c@subfigure=\count194
-\c@subfigure@save=\count195
-\c@lofdepth=\count196
-\c@subtable=\count197
-\c@subtable@save=\count198
-\c@lotdepth=\count199
-\sf@top=\skip83
-\sf@bottom=\skip84
+\c@KVtest=\count194
+\sf@farskip=\skip82
+\sf@captopadj=\dimen268
+\sf@capskip=\skip83
+\sf@nearskip=\skip84
+\c@subfigure=\count195
+\c@subfigure@save=\count196
+\c@lofdepth=\count197
+\c@subtable=\count198
+\c@subtable@save=\count199
+\c@lotdepth=\count200
+\sf@top=\skip85
+\sf@bottom=\skip86
 )
 
 Package Fancyhdr Warning: \fancyhead's `E' option without twoside option is use
-less on input line 75.
+less on input line 76.
 
 (./dissertation.aux
 
@@ -1058,38 +1077,38 @@ LaTeX Warning: Label `c:background' multiply defined.
 )
 \openout1 = `dissertation.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 103.
-LaTeX Font Info:    ... okay on input line 103.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 103.
-LaTeX Font Info:    ... okay on input line 103.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 103.
-LaTeX Font Info:    ... okay on input line 103.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 103.
-LaTeX Font Info:    ... okay on input line 103.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 103.
-LaTeX Font Info:    ... okay on input line 103.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 103.
-LaTeX Font Info:    ... okay on input line 103.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 103.
-LaTeX Font Info:    ... okay on input line 103.
-LaTeX Font Info:    Try loading font information for OT1+ptm on input line 103.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 104.
+LaTeX Font Info:    ... okay on input line 104.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 104.
+LaTeX Font Info:    ... okay on input line 104.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 104.
+LaTeX Font Info:    ... okay on input line 104.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 104.
+LaTeX Font Info:    ... okay on input line 104.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 104.
+LaTeX Font Info:    ... okay on input line 104.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 104.
+LaTeX Font Info:    ... okay on input line 104.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 104.
+LaTeX Font Info:    ... okay on input line 104.
+LaTeX Font Info:    Try loading font information for OT1+ptm on input line 104.
 
  (/usr/local/texlive/2015/texmf-dist/tex/latex/psnfss/ot1ptm.fd
 File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
 )
 (/usr/local/texlive/2015/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count200
-\scratchdimen=\dimen262
+\scratchcounter=\count201
+\scratchdimen=\dimen269
 \scratchbox=\box84
-\nofMPsegments=\count201
-\nofMParguments=\count202
-\everyMPshowfont=\toks46
-\MPscratchCnt=\count203
-\MPscratchDim=\dimen263
-\MPnumerator=\count204
-\makeMPintoPDFobject=\count205
-\everyMPtoPDFconversion=\toks47
+\nofMPsegments=\count202
+\nofMParguments=\count203
+\everyMPshowfont=\toks48
+\MPscratchCnt=\count204
+\MPscratchDim=\dimen270
+\MPnumerator=\count205
+\makeMPintoPDFobject=\count206
+\everyMPtoPDFconversion=\toks49
 ) (/usr/local/texlive/2015/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
 
@@ -1107,7 +1126,7 @@ e
 ))
 ABD: EveryShipout initializing macros
 \AtBeginShipoutBox=\box85
-Package hyperref Info: Link coloring OFF on input line 103.
+Package hyperref Info: Link coloring OFF on input line 104.
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
@@ -1115,11 +1134,11 @@ Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
 (/usr/local/texlive/2015/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
-\c@section@level=\count206
+\c@section@level=\count207
 )
-LaTeX Info: Redefining \ref on input line 103.
-LaTeX Info: Redefining \pageref on input line 103.
-LaTeX Info: Redefining \nameref on input line 103.
+LaTeX Info: Redefining \ref on input line 104.
+LaTeX Info: Redefining \pageref on input line 104.
+LaTeX Info: Redefining \nameref on input line 104.
 
 (./dissertation.out) (./dissertation.out)
 \@outlinefile=\write7
@@ -1128,16 +1147,16 @@ LaTeX Info: Redefining \nameref on input line 103.
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: subfig package v1.3 is loaded.
 Package caption Info: End \AtBeginDocument code.
-LaTeX Font Info:    Try loading font information for OMS+ptm on input line 113.
+LaTeX Font Info:    Try loading font information for OMS+ptm on input line 114.
 
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/psnfss/omsptm.fd
 File: omsptm.fd 
 )
 LaTeX Font Info:    Font shape `OMS/ptm/m/sc' in size <10.95> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 113.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 114.
 LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <10.95> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 113.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 114.
  [1
 
 
@@ -1149,28 +1168,28 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.119 \newpage
+l.120 \newpage
                [1] (./acknowledgements.tex)pdfTeX warning (ext4): destination w
 ith the same identifier (name{page.}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.123 \newpage
+l.124 \newpage
                [2]pdfTeX warning (ext4): destination with the same identifier (
 name{page.}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.155 \tableofcontents
+l.156 \tableofcontents
                        [3]
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <24.88> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 155.
-LaTeX Font Info:    Try loading font information for OT1+phv on input line 155.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 156.
+LaTeX Font Info:    Try loading font information for OT1+phv on input line 156.
 
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/psnfss/ot1phv.fd
 File: ot1phv.fd 2001/06/04 scalable font definitions for OT1/phv.
 )
 LaTeX Font Info:    Font shape `OT1/phv/bx/n' in size <24.88> not available
-(Font)              Font shape `OT1/phv/b/n' tried instead on input line 155.
+(Font)              Font shape `OT1/phv/b/n' tried instead on input line 156.
 
 (./dissertation.toc
 LaTeX Font Info:    Try loading font information for U+msa on input line 2.
@@ -1193,13 +1212,13 @@ l.24 ...mation into Peak Alignment}{25}{chapter.4}
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.58 ...erformance Measures}{59}{subsection.5.4.2}
+l.60 ...ameter Optimization}{60}{subsection.5.4.4}
                                                    [5]pdfTeX warning (ext4): de
 stination with the same identifier (name{page.}) has been already used, duplica
 te ignored
 <to be read again> 
                    \relax 
-l.90 ...erline {7.2}Related Work}{94}{section.7.2}
+l.95 ...ass2Motif Discovery}{95}{subsection.7.3.2}
                                                    [6])
 \tf@toc=\write8
 \openout8 = `dissertation.toc'.
@@ -1208,16 +1227,16 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
 een already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.156 \listoftables
+l.157 \listoftables
                     [7] (./dissertation.lotpdfTeX warning (ext4): destination w
 ith the same identifier (name{page.}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.22 ...ed thresholding level). }}{111}{table.7.2}
+l.17 ... second-stage clustering.}}{69}{table.5.3}
                                                    [8
 
 ]
-Overfull \hbox (6.74765pt too wide) in paragraph at lines 22--22
+Overfull \hbox (6.74765pt too wide) in paragraph at lines 24--24
  \OT1/ptm/m/n/12 the stan-dard peaks shown in Fig-ure 3 of the pa-per. The de-g
 ree of a Mass2Motif 
  []
@@ -1230,7 +1249,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
 een already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.157 \listoffigures
+l.158 \listoffigures
                      [9] (./dissertation.lofpdfTeX warning (ext4): destination 
 with the same identifier (name{page.}) has been already used, duplicate ignored
 
@@ -1243,30 +1262,24 @@ l.10 ...tures in the P1 dataset.}}{39}{figure.4.2}
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.21 ...f peak features per run.}}{64}{figure.5.2}
+l.21 ... type should be aligned.}}{62}{figure.5.2}
                                                    [11]pdfTeX warning (ext4): d
 estination with the same identifier (name{page.}) has been already used, duplic
 ate ignored
 <to be read again> 
                    \relax 
-l.24 ...P clusters across runs. }}{66}{figure.5.5}
-                                                   [12]pdfTeX warning (ext4): d
-estination with the same identifier (name{page.}) has been already used, duplic
-ate ignored
-<to be read again> 
-                   \relax 
-l.30 ...ond to aligned peaksets.}}{75}{figure.6.1}
-                                                   [13]
+l.28 ...ond to aligned peaksets.}}{72}{figure.6.1}
+                                                   [12]
 Package acronym Info: Label `acro:RT' newly defined as it shall be overridden
-although it is yet undefined on input line 30.
+although it is yet undefined on input line 28.
 
-Overfull \hbox (1.89848pt too wide) in paragraph at lines 33--33
+Overfull \hbox (1.89848pt too wide) in paragraph at lines 31--31
  [][] [][]\OT1/ptm/m/n/12 Precision-recall val-ues on the align-ment of 10 runs
  from the Gly-comic dataset 
  []
 
 
-Overfull \hbox (4.55109pt too wide) in paragraph at lines 33--33
+Overfull \hbox (4.55109pt too wide) in paragraph at lines 31--31
  \OT1/ptm/m/n/12 when $\OML/cmm/m/it/12 q$ \OT1/ptm/m/n/12 (the strict-ness of 
 per-for-mance eval-u-a-tion as de-scribed in Sec-tion []6.4.2[]) 
  []
@@ -1311,19 +1324,19 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
 een already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.38 ...of the MS2LDA workflow..}}{96}{figure.7.2}
-                                                   [14]
+l.37 ... 100 scale) intensities.}}{94}{figure.7.3}
+                                                   [13]
 Missing character: There is no ‚ in font ptmr7t!
 Missing character: There is no Ä in font ptmr7t!
 Missing character: There is no ì in font ptmr7t!
 
-Overfull \hbox (1.7187pt too wide) in paragraph at lines 39--39
+Overfull \hbox (1.7187pt too wide) in paragraph at lines 37--37
  [][] [][]\OT1/ptm/m/n/12 The data-frame ex-tracted from frag-men-ta-tion data:
  a ma-trix of XCMS-picked 
  []
 
 
-Overfull \hbox (18.6726pt too wide) in paragraph at lines 44--44
+Overfull \hbox (18.6726pt too wide) in paragraph at lines 42--42
  [][] [][]\OT1/ptm/m/n/12 Mass2Motif spec-tra of iden-ti-fied metabo-lites A) L
 -histidine, B) L-phenylalanine, 
  []
@@ -1332,9 +1345,9 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
 een already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.46 ... a reference compound.}}{114}{figure.7.10}
-                                                   [15]
-Overfull \hbox (14.80965pt too wide) in paragraph at lines 46--46
+l.44 ... a reference compound.}}{111}{figure.7.10}
+                                                   [14]
+Overfull \hbox (14.80965pt too wide) in paragraph at lines 44--44
  [][] [][]\OT1/ptm/m/n/12 Log fold change heat-maps for the A) gua-nine and B) 
 pen-tose loss Mass2Motifs. 
  []
@@ -1347,8 +1360,8 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
 een already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.160 \newpage
-               [16]) (./dissertation.tdo)
+l.161 \newpage
+               [15]) (./dissertation.tdo)
 \tf@tdo=\write11
 \openout11 = `dissertation.tdo'.
 
@@ -1377,7 +1390,7 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <14.4> not available
 LaTeX Font Info:    Font shape `OT1/phv/bx/n' in size <14.4> not available
 (Font)              Font shape `OT1/phv/b/n' tried instead on input line 41.
  [7] [8]
-<02-background/figures/Fig-1.jpg, id=963, 605.26125pt x 207.77625pt>
+<02-background/figures/Fig-1.jpg, id=920, 605.26125pt x 207.77625pt>
 File: 02-background/figures/Fig-1.jpg Graphic file (type jpg)
 
 <use 02-background/figures/Fig-1.jpg>
@@ -1385,7 +1398,7 @@ Package pdftex.def Info: 02-background/figures/Fig-1.jpg used on input line 50.
 
 (pdftex.def)             Requested size: 352.8155pt x 121.11584pt.
 
-<02-background/figures/report_0001.png, id=964, 1215.54124pt x 493.845pt>
+<02-background/figures/report_0001.png, id=921, 1215.54124pt x 493.845pt>
 File: 02-background/figures/report_0001.png Graphic file (type png)
 
 <use 02-background/figures/report_0001.png>
@@ -1401,7 +1414,7 @@ LaTeX Warning: Citation `Smith2004' on page 10 undefined on input line 69.
 LaTeX Warning: Reference `sub:identification' on page 10 undefined on input lin
 e 69.
 
-[10] <02-background/figures/Drawing1.png, id=976, 700.86844pt x 308.65312pt>
+[10] <02-background/figures/Drawing1.png, id=934, 700.86844pt x 308.65312pt>
 File: 02-background/figures/Drawing1.png Graphic file (type png)
 
 <use 02-background/figures/Drawing1.png>
@@ -1444,9 +1457,6 @@ LaTeX Warning: Reference `fig-platediagram' on page 23 undefined on input line
 
 ) [23] (./04-matching/chapter_04.tex [24]
 Chapter 4.
-
-LaTeX Warning: Citation `Smith2015' on page 25 undefined on input line 6.
-
 [25
 
 ]
@@ -1462,7 +1472,7 @@ _1-eps-converted-to.pdf 04-matching/figures/figure_1.eps>
 (epstopdf)             \includegraphics on input line 11.
 Package epstopdf Info: Output file is already uptodate.
 
-<04-matching/figures/figure_1-eps-converted-to.pdf, id=1159, 733.74126pt x 218.
+<04-matching/figures/figure_1-eps-converted-to.pdf, id=1119, 733.74126pt x 218.
 8175pt>
 File: 04-matching/figures/figure_1-eps-converted-to.pdf Graphic file (type pdf)
 
@@ -1508,7 +1518,7 @@ sy/m/n/12 g$\OT1/ptm/m/n/12 .
 
 LaTeX Font Info:    Font shape `OT1/phv/bx/n' in size <12> not available
 (Font)              Font shape `OT1/phv/b/n' tried instead on input line 272.
-[37] <04-matching/figures/P1_000_new.pdf, id=1323, 1445.4pt x 361.35pt>
+[37] <04-matching/figures/P1_000_new.pdf, id=1282, 1445.4pt x 361.35pt>
 File: 04-matching/figures/P1_000_new.pdf Graphic file (type pdf)
 
 <use 04-matching/figures/P1_000_new.pdf>
@@ -1516,7 +1526,7 @@ Package pdftex.def Info: 04-matching/figures/P1_000_new.pdf used on input line
 354.
 (pdftex.def)             Requested size: 441.01772pt x 110.25294pt.
 
-<04-matching/figures/P1_100_new.pdf, id=1325, 1445.4pt x 361.35pt>
+<04-matching/figures/P1_100_new.pdf, id=1284, 1445.4pt x 361.35pt>
 File: 04-matching/figures/P1_100_new.pdf Graphic file (type pdf)
 
 <use 04-matching/figures/P1_100_new.pdf>
@@ -1533,7 +1543,7 @@ Overfull \hbox (3.0pt too wide) in paragraph at lines 354--360
  [][] 
  []
 
-<04-matching/figures/P2_000_new.pdf, id=1327, 1445.4pt x 361.35pt>
+<04-matching/figures/P2_000_new.pdf, id=1286, 1445.4pt x 361.35pt>
 File: 04-matching/figures/P2_000_new.pdf Graphic file (type pdf)
 
 <use 04-matching/figures/P2_000_new.pdf>
@@ -1541,7 +1551,7 @@ Package pdftex.def Info: 04-matching/figures/P2_000_new.pdf used on input line
 368.
 (pdftex.def)             Requested size: 441.01772pt x 110.25294pt.
 
-<04-matching/figures/P2_100_new.pdf, id=1329, 1445.4pt x 361.35pt>
+<04-matching/figures/P2_100_new.pdf, id=1288, 1445.4pt x 361.35pt>
 File: 04-matching/figures/P2_100_new.pdf Graphic file (type pdf)
 
 <use 04-matching/figures/P2_100_new.pdf>
@@ -1573,7 +1583,7 @@ _3-eps-converted-to.pdf 04-matching/figures/figure_3.eps>
 (epstopdf)             \includegraphics on input line 451.
 Package epstopdf Info: Output file is already uptodate.
 
-<04-matching/figures/figure_3-eps-converted-to.pdf, id=1483, 463.7325pt x 366.3
+<04-matching/figures/figure_3-eps-converted-to.pdf, id=1443, 463.7325pt x 366.3
 6874pt>
 File: 04-matching/figures/figure_3-eps-converted-to.pdf Graphic file (type pdf)
 
@@ -1593,7 +1603,7 @@ _4-eps-converted-to.pdf 04-matching/figures/figure_4.eps>
 (epstopdf)             \includegraphics on input line 456.
 Package epstopdf Info: Output file is already uptodate.
 
-<04-matching/figures/figure_4-eps-converted-to.pdf, id=1484, 463.7325pt x 366.3
+<04-matching/figures/figure_4-eps-converted-to.pdf, id=1444, 463.7325pt x 366.3
 6874pt>
 File: 04-matching/figures/figure_4-eps-converted-to.pdf Graphic file (type pdf)
 
@@ -1613,7 +1623,7 @@ igure_3-eps-converted-to.pdf 04-matching/figures/supp_figure_3.eps>
 (epstopdf)             \includegraphics on input line 464.
 Package epstopdf Info: Output file is already uptodate.
 
-<04-matching/figures/supp_figure_3-eps-converted-to.pdf, id=1486, 469.755pt x 3
+<04-matching/figures/supp_figure_3-eps-converted-to.pdf, id=1446, 469.755pt x 3
 56.33125pt>
 File: 04-matching/figures/supp_figure_3-eps-converted-to.pdf Graphic file (type
  pdf)
@@ -1631,160 +1641,92 @@ although it is yet undefined on input line 505.
 Chapter 5.
 [47
 
-]
-
-LaTeX Warning: Citation `Smith2015' on page 48 undefined on input line 17.
-
-[48] [49]
-<05-precursor-cluster/figures/fig1.pdf, id=1589, 1195.46625pt x 1517.67pt>
+] [48] [49]
+<05-precursor-cluster/figures/fig1.pdf, id=1550, 1195.46625pt x 1517.67pt>
 File: 05-precursor-cluster/figures/fig1.pdf Graphic file (type pdf)
 
 <use 05-precursor-cluster/figures/fig1.pdf>
 Package pdftex.def Info: 05-precursor-cluster/figures/fig1.pdf used on input li
-ne 35.
+ne 28.
 (pdftex.def)             Requested size: 330.76328pt x 419.91948pt.
+ [50] [51 <./05-precursor-cluster/figures/fig1.pdf>] [52] [53] [54] [55] [56] [
+57] [58] [59] [60] [61]
+Package epstopdf Info: Source file: <05-precursor-cluster/figures/l_cysteate.ep
+s>
+(epstopdf)                    date: 2016-05-11 23:33:42
+(epstopdf)                    size: 89804 bytes
+(epstopdf)             Output file: <05-precursor-cluster/figures/l_cysteate-ep
+s-converted-to.pdf>
+(epstopdf)                    date: 2016-05-16 22:31:32
+(epstopdf)                    size: 40387 bytes
+(epstopdf)             Command: <repstopdf --outfile=05-precursor-cluster/figur
+es/l_cysteate-eps-converted-to.pdf 05-precursor-cluster/figures/l_cysteate.eps>
 
+(epstopdf)             \includegraphics on input line 203.
+Package epstopdf Info: Output file is already uptodate.
 
-LaTeX Warning: Float too large for page by 45.61533pt on input line 37.
+<05-precursor-cluster/figures/l_cysteate-eps-converted-to.pdf, id=1745, 1495.58
+75pt x 1350.04375pt>
+File: 05-precursor-cluster/figures/l_cysteate-eps-converted-to.pdf Graphic file
+ (type pdf)
 
-[50] [51 <./05-precursor-cluster/figures/fig1.pdf>] [52] [53]
-
-LaTeX Warning: Citation `Rogers2011' on page 54 undefined on input line 71.
-
-[54] [55] [56] [57] [58]
-Missing character: There is no Œ in font ptmr7t!
-Missing character: There is no º in font ptmr7t!
- [59] [60]
-
-LaTeX Warning: Citation `Wandy2015' on page 61 undefined on input line 165.
-
-[61]
-
-LaTeX Warning: Reference `sub:precursor-cluster-results' on page 62 undefined o
-n input line 181.
-
-
-LaTeX Warning: Reference `sub:cluster-match-results' on page 62 undefined on in
-put line 183.
-
-
-LaTeX Warning: Reference `sub:cluster-cluster-results' on page 62 undefined on 
-input line 183.
-
-[62]
-
-LaTeX Warning: Reference `Tab:cluster-counts' on page 63 undefined on input lin
-e 189.
-
-
-<05-precursor-cluster/figures/counts_cluster.pdf, id=1763, 867.24pt x 867.24pt>
+<use 05-precursor-cluster/figures/l_cysteate-eps-converted-to.pdf>
+Package pdftex.def Info: 05-precursor-cluster/figures/l_cysteate-eps-converted-
+to.pdf used on input line 203.
+(pdftex.def)             Requested size: 264.61331pt x 238.8568pt.
+ [62 <./05-precursor-cluster/figures/l_cysteate-eps-converted-to.pdf>]
+<05-precursor-cluster/figures/counts_cluster.pdf, id=1830, 867.24pt x 867.24pt>
 File: 05-precursor-cluster/figures/counts_cluster.pdf Graphic file (type pdf)
 <use 05-precursor-cluster/figures/counts_cluster.pdf>
 Package pdftex.def Info: 05-precursor-cluster/figures/counts_cluster.pdf used o
-n input line 193.
+n input line 250.
 (pdftex.def)             Requested size: 220.50885pt x 220.50148pt.
  [63]
-<05-precursor-cluster/figures/trans_Standard.pdf, id=1777, 1445.4pt x 1445.4pt>
-File: 05-precursor-cluster/figures/trans_Standard.pdf Graphic file (type pdf)
-<use 05-precursor-cluster/figures/trans_Standard.pdf>
-Package pdftex.def Info: 05-precursor-cluster/figures/trans_Standard.pdf used o
-n input line 242.
-(pdftex.def)             Requested size: 220.50885pt x 220.50589pt.
-
-<05-precursor-cluster/figures/trans_Beer.pdf, id=1778, 1445.4pt x 1445.4pt>
-File: 05-precursor-cluster/figures/trans_Beer.pdf Graphic file (type pdf)
-
-<use 05-precursor-cluster/figures/trans_Beer.pdf>
-Package pdftex.def Info: 05-precursor-cluster/figures/trans_Beer.pdf used on in
-put line 248.
-(pdftex.def)             Requested size: 220.50885pt x 220.50589pt.
-
-
-LaTeX Warning: Reference `sub:cluster-match-results' on page 64 undefined on in
-put line 252.
-
-
-LaTeX Warning: Reference `sub:cluster-cluster-results' on page 64 undefined on 
-input line 252.
-
-[64 <./05-precursor-cluster/figures/counts_cluster.pdf>] [65 <./05-precursor-cl
-uster/figures/trans_Standard.pdf> <./05-precursor-cluster/figures/trans_Beer.pd
-f>]
-<05-precursor-cluster/figures/prob_trans_Beer_2.pdf, id=1806, 1445.4pt x 722.7p
-t>
-File: 05-precursor-cluster/figures/prob_trans_Beer_2.pdf Graphic file (type pdf
-)
- <use 05-precursor-cluster/figures/prob_trans_Beer_2.pdf>
-Package pdftex.def Info: 05-precursor-cluster/figures/prob_trans_Beer_2.pdf use
-d on input line 256.
-(pdftex.def)             Requested size: 220.50885pt x 110.25293pt.
- [66 <./05-precursor-cluster/figures/prob_trans_Beer_2.pdf>]
-<05-precursor-cluster/figures/fig2.pdf, id=1876, 1300.86pt x 867.24pt>
+<05-precursor-cluster/figures/transformation_counts.pdf, id=1839, 1445.4pt x 13
+73.13pt>
+File: 05-precursor-cluster/figures/transformation_counts.pdf Graphic file (type
+ pdf)
+ <use 05-precursor-cluster/figures/transformation_counts.pdf>
+Package pdftex.def Info: 05-precursor-cluster/figures/transformation_counts.pdf
+ used on input line 258.
+(pdftex.def)             Requested size: 220.50885pt x 209.48059pt.
+ [64 <./05-precursor-cluster/figures/counts_cluster.pdf>]
+<05-precursor-cluster/figures/fig2.pdf, id=1853, 1300.86pt x 867.24pt>
 File: 05-precursor-cluster/figures/fig2.pdf Graphic file (type pdf)
 
 <use 05-precursor-cluster/figures/fig2.pdf>
 Package pdftex.def Info: 05-precursor-cluster/figures/fig2.pdf used on input li
-ne 268.
+ne 270.
 (pdftex.def)             Requested size: 441.01772pt x 294.01079pt.
- [67 <./05-precursor-cluster/figures/fig2.pdf>]
-<05-precursor-cluster/figures/fig3.pdf, id=1889, 1156.32pt x 397.485pt>
+ [65 <./05-precursor-cluster/figures/transformation_counts.pdf>] [66 <./05-prec
+ursor-cluster/figures/fig2.pdf>]
+<05-precursor-cluster/figures/fig3.pdf, id=1888, 1156.32pt x 397.485pt>
 File: 05-precursor-cluster/figures/fig3.pdf Graphic file (type pdf)
 
 <use 05-precursor-cluster/figures/fig3.pdf>
 Package pdftex.def Info: 05-precursor-cluster/figures/fig3.pdf used on input li
-ne 275.
+ne 277.
 (pdftex.def)             Requested size: 330.76328pt x 113.69682pt.
- [68 <./05-precursor-cluster/figures/fig3.pdf>]
-<05-precursor-cluster/figures/fig4.pdf, id=1905, 867.24pt x 433.62pt>
+
+<05-precursor-cluster/figures/fig4.pdf, id=1892, 867.24pt x 433.62pt>
 File: 05-precursor-cluster/figures/fig4.pdf Graphic file (type pdf)
 
 <use 05-precursor-cluster/figures/fig4.pdf>
 Package pdftex.def Info: 05-precursor-cluster/figures/fig4.pdf used on input li
-ne 289.
+ne 287.
 (pdftex.def)             Requested size: 441.01772pt x 220.50809pt.
+ [67 <./05-precursor-cluster/figures/fig3.pdf>] [68 <./05-precursor-cluster/fig
+ures/fig4.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 331--331
+[]|\OT1/ptm/m/n/12 CC (with-
+ []
 
 
-LaTeX Warning: Reference `Tab:standard-results' on page 69 undefined on input l
-ine 293.
+Underfull \hbox (badness 4872) in paragraph at lines 331--331
+\OT1/ptm/m/n/12 out adduct
+ []
 
-
-LaTeX Warning: Reference `Tab:beer-results' on page 69 undefined on input line 
-293.
-
-
-LaTeX Warning: Reference `Tab:standard-results' on page 69 undefined on input l
-ine 293.
-
-
-LaTeX Warning: Reference `Tab:beer-results' on page 69 undefined on input line 
-293.
-
-
-LaTeX Warning: Reference `Tab:standard-results' on page 69 undefined on input l
-ine 293.
-
-
-LaTeX Warning: Reference `Tab:beer-results' on page 69 undefined on input line 
-293.
-
-[69 <./05-precursor-cluster/figures/fig4.pdf>]
-
-LaTeX Warning: Reference `Tab:standard-results' on page 70 undefined on input l
-ine 348.
-
-
-LaTeX Warning: Reference `Tab:beer-results' on page 70 undefined on input line 
-348.
-
-<05-precursor-cluster/figures/melatonin.pdf, id=1918, 1734.48pt x 1445.4pt>
-File: 05-precursor-cluster/figures/melatonin.pdf Graphic file (type pdf)
-
-<use 05-precursor-cluster/figures/melatonin.pdf>
-Package pdftex.def Info: 05-precursor-cluster/figures/melatonin.pdf used on inp
-ut line 352.
-(pdftex.def)             Requested size: 330.76328pt x 275.62132pt.
- [70] [71 <./05-precursor-cluster/figures/melatonin.pdf>]) [72] (./06-hdp/chapt
-er_06.tex [73]
+[69]) (./06-hdp/chapter_06.tex [70]
 Chapter 6.
 Package epstopdf Info: Source file: <06-hdp/figures/figure_1.eps>
 (epstopdf)                    date: 2016-04-10 00:18:35
@@ -1798,15 +1740,15 @@ s-converted-to.pdf 06-hdp/figures/figure_1.eps>
 (epstopdf)             \includegraphics on input line 11.
 Package epstopdf Info: Output file is already uptodate.
 
-<06-hdp/figures/figure_1-eps-converted-to.pdf, id=2022, 598.235pt x 845.1575pt>
+<06-hdp/figures/figure_1-eps-converted-to.pdf, id=1931, 598.235pt x 845.1575pt>
 File: 06-hdp/figures/figure_1-eps-converted-to.pdf Graphic file (type pdf)
 <use 06-hdp/figures/figure_1-eps-converted-to.pdf>
 Package pdftex.def Info: 06-hdp/figures/figure_1-eps-converted-to.pdf used on i
 nput line 11.
 (pdftex.def)             Requested size: 220.50885pt x 311.52983pt.
- [74
+ [71
 
-] [75 <./06-hdp/figures/figure_1-eps-converted-to.pdf>] [76] [77] [78]
+] [72 <./06-hdp/figures/figure_1-eps-converted-to.pdf>] [73] [74] [75]
 Overfull \hbox (1.12929pt too wide) in paragraph at lines 97--97
  $\OML/cmm/m/it/12 p\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 y[]\OMS/cmsy/m/n/12 j[][]
  \OT1/cmr/m/n/12 = 1\OML/cmm/m/it/12 ; [][] \OT1/cmr/m/n/12 = 1\OML/cmm/m/it/12
@@ -1815,7 +1757,7 @@ Overfull \hbox (1.12929pt too wide) in paragraph at lines 97--97
 /n/12 ) 
  []
 
-[79] [80] [81]
+[76] [77] [78]
 Package epstopdf Info: Source file: <06-hdp/figures/figure_3.eps>
 (epstopdf)                    date: 2016-04-10 00:18:35
 (epstopdf)                    size: 175647 bytes
@@ -1828,7 +1770,7 @@ s-converted-to.pdf 06-hdp/figures/figure_3.eps>
 (epstopdf)             \includegraphics on input line 166.
 Package epstopdf Info: Output file is already uptodate.
 
-<06-hdp/figures/figure_3-eps-converted-to.pdf, id=2099, 548.0475pt x 664.4825pt
+<06-hdp/figures/figure_3-eps-converted-to.pdf, id=2006, 548.0475pt x 664.4825pt
 >
 File: 06-hdp/figures/figure_3-eps-converted-to.pdf Graphic file (type pdf)
  <use 06-hdp/figures/figure_3-eps-converted-to.pdf>
@@ -1837,14 +1779,14 @@ nput line 166.
 (pdftex.def)             Requested size: 308.71104pt x 374.30786pt.
 
 
-LaTeX Warning: Reference `glycomic-dataset' on page 82 undefined on input line 
+LaTeX Warning: Reference `glycomic-dataset' on page 79 undefined on input line 
 175.
 
 
-LaTeX Warning: Reference `metabolomic-dataset' on page 82 undefined on input li
+LaTeX Warning: Reference `metabolomic-dataset' on page 79 undefined on input li
 ne 175.
 
-[82] [83 <./06-hdp/figures/figure_3-eps-converted-to.pdf>] [84] [85] [86]
+[79] [80 <./06-hdp/figures/figure_3-eps-converted-to.pdf>] [81] [82] [83]
 Package epstopdf Info: Source file: <06-hdp/figures/figure_4.eps>
 (epstopdf)                    date: 2016-04-10 00:18:35
 (epstopdf)                    size: 1226355 bytes
@@ -1857,14 +1799,14 @@ s-converted-to.pdf 06-hdp/figures/figure_4.eps>
 (epstopdf)             \includegraphics on input line 306.
 Package epstopdf Info: Output file is already uptodate.
 
-<06-hdp/figures/figure_4-eps-converted-to.pdf, id=2148, 578.16pt x 433.62pt>
+<06-hdp/figures/figure_4-eps-converted-to.pdf, id=2056, 578.16pt x 433.62pt>
 File: 06-hdp/figures/figure_4-eps-converted-to.pdf Graphic file (type pdf)
 
 <use 06-hdp/figures/figure_4-eps-converted-to.pdf>
 Package pdftex.def Info: 06-hdp/figures/figure_4-eps-converted-to.pdf used on i
 nput line 306.
 (pdftex.def)             Requested size: 308.71104pt x 231.53117pt.
- [87] [88 <./06-hdp/figures/figure_4-eps-converted-to.pdf>]
+ [84] [85 <./06-hdp/figures/figure_4-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <06-hdp/figures/figure_5.eps>
 (epstopdf)                    date: 2016-04-10 00:18:35
 (epstopdf)                    size: 598849 bytes
@@ -1877,7 +1819,7 @@ s-converted-to.pdf 06-hdp/figures/figure_5.eps>
 (epstopdf)             \includegraphics on input line 320.
 Package epstopdf Info: Output file is already uptodate.
 
-<06-hdp/figures/figure_5-eps-converted-to.pdf, id=2171, 578.16pt x 433.62pt>
+<06-hdp/figures/figure_5-eps-converted-to.pdf, id=2079, 578.16pt x 433.62pt>
 File: 06-hdp/figures/figure_5-eps-converted-to.pdf Graphic file (type pdf)
 
 <use 06-hdp/figures/figure_5-eps-converted-to.pdf>
@@ -1896,7 +1838,7 @@ s-converted-to.pdf 06-hdp/figures/figure_6.eps>
 (epstopdf)             \includegraphics on input line 325.
 Package epstopdf Info: Output file is already uptodate.
 
-<06-hdp/figures/figure_6-eps-converted-to.pdf, id=2174, 578.16pt x 433.62pt>
+<06-hdp/figures/figure_6-eps-converted-to.pdf, id=2082, 578.16pt x 433.62pt>
 File: 06-hdp/figures/figure_6-eps-converted-to.pdf Graphic file (type pdf)
 
 <use 06-hdp/figures/figure_6-eps-converted-to.pdf>
@@ -1915,22 +1857,22 @@ s-converted-to.pdf 06-hdp/figures/figure_7.eps>
 (epstopdf)             \includegraphics on input line 330.
 Package epstopdf Info: Output file is already uptodate.
 
-<06-hdp/figures/figure_7-eps-converted-to.pdf, id=2175, 688.5725pt x 723.70375p
+<06-hdp/figures/figure_7-eps-converted-to.pdf, id=2083, 688.5725pt x 723.70375p
 t>
 File: 06-hdp/figures/figure_7-eps-converted-to.pdf Graphic file (type pdf)
  <use 06-hdp/figures/figure_7-eps-converted-to.pdf>
 Package pdftex.def Info: 06-hdp/figures/figure_7-eps-converted-to.pdf used on i
 nput line 330.
 (pdftex.def)             Requested size: 308.71104pt x 324.46pt.
- [89 <./06-hdp/figures/figure_5-eps-converted-to.pdf>] [90 <./06-hdp/figures/fi
-gure_6-eps-converted-to.pdf>] [91 <./06-hdp/figures/figure_7-eps-converted-to.p
+ [86 <./06-hdp/figures/figure_5-eps-converted-to.pdf>] [87 <./06-hdp/figures/fi
+gure_6-eps-converted-to.pdf>] [88 <./06-hdp/figures/figure_7-eps-converted-to.p
 df>]
 
-LaTeX Warning: Citation `Lovell2012' on page 92 undefined on input line 347.
+LaTeX Warning: Citation `Lovell2012' on page 89 undefined on input line 347.
 
-) (./07-lda/chapter_07.tex [92]
+) (./07-lda/chapter_07.tex [89]
 Chapter 7.
-[93
+[90
 
 ]
 Missing character: There is no ‚ in font ptmr7t!
@@ -1939,7 +1881,7 @@ Missing character: There is no ú in font ptmr7t!
 Missing character: There is no ‚ in font ptmr7t!
 Missing character: There is no Ä in font ptmr7t!
 Missing character: There is no ù in font ptmr7t!
- [94]
+ [91]
 Missing character: There is no ‚ in font ptmr7t!
 Missing character: There is no Ä in font ptmr7t!
 Missing character: There is no ì in font ptmr7t!
@@ -1949,7 +1891,7 @@ Missing character: There is no ò in font ptmr7t!
 Missing character: There is no ‚ in font ptmr7t!
 Missing character: There is no Ä in font ptmr7t!
 Missing character: There is no ô in font ptmr7t!
- <07-lda/figures/text2frags.pdf, id=2237, 923.45pt x 669.50125pt>
+ <07-lda/figures/text2frags.pdf, id=2145, 923.45pt x 669.50125pt>
 File: 07-lda/figures/text2frags.pdf Graphic file (type pdf)
 
 <use 07-lda/figures/text2frags.pdf>
@@ -2028,13 +1970,13 @@ Missing character: There is no ‚ in font ptmr7t!
 Missing character: There is no Ä in font ptmr7t!
 Missing character: There is no ô in font ptmr7t!
 
-<07-lda/figures/ms2lda.pdf, id=2241, 722.7pt x 505.89pt>
+<07-lda/figures/ms2lda.pdf, id=2149, 722.7pt x 505.89pt>
 File: 07-lda/figures/ms2lda.pdf Graphic file (type pdf)
 
 <use 07-lda/figures/ms2lda.pdf>
 Package pdftex.def Info: 07-lda/figures/ms2lda.pdf used on input line 34.
 (pdftex.def)             Requested size: 352.8155pt x 246.96967pt.
- [95] [96 <./07-lda/figures/text2frags.pdf> <./07-lda/figures/ms2lda.pdf>]
+ [92] [93 <./07-lda/figures/text2frags.pdf> <./07-lda/figures/ms2lda.pdf>]
 Missing character: There is no ‚ in font ptmr7t!
 Missing character: There is no Ä in font ptmr7t!
 Missing character: There is no ò in font ptmr7t!
@@ -2048,7 +1990,7 @@ Missing character: There is no ‚ in font ptmr7t!
 Missing character: There is no Ä in font ptmr7t!
 Missing character: There is no ô in font ptmr7t!
 
-<07-lda/figures/matrix.png, id=2333, 885.3075pt x 498.86375pt>
+<07-lda/figures/matrix.png, id=2241, 885.3075pt x 498.86375pt>
 File: 07-lda/figures/matrix.png Graphic file (type png)
 
 <use 07-lda/figures/matrix.png>
@@ -2063,11 +2005,11 @@ Missing character: There is no ì in font ptmr7t!
 Missing character: There is no ‚ in font ptmr7t!
 Missing character: There is no Ä in font ptmr7t!
 Missing character: There is no ì in font ptmr7t!
- [97 <./07-lda/figures/matrix.png>]
+ [94 <./07-lda/figures/matrix.png>]
 
-LaTeX Warning: Reference `ms2lda-main' on page 98 undefined on input line 69.
+LaTeX Warning: Reference `ms2lda-main' on page 95 undefined on input line 69.
 
-[98] [99] <07-lda/figures/ms2ldavis.png, id=2363, 452.892pt x 314.1336pt>
+[95] [96] <07-lda/figures/ms2ldavis.png, id=2271, 452.892pt x 314.1336pt>
 File: 07-lda/figures/ms2ldavis.png Graphic file (type png)
 
 <use 07-lda/figures/ms2ldavis.png>
@@ -2087,7 +2029,7 @@ Missing character: There is no Ä in font ptmr7t!
 Missing character: There is no ô in font ptmr7t!
 Missing character: There is no œ in font ptmr7t!
 Missing character: There is no Ü in font ptmr7t!
- [100 <./07-lda/figures/ms2ldavis.png>]
+ [97 <./07-lda/figures/ms2ldavis.png>]
 Missing character: There is no ‚ in font ptmr7t!
 Missing character: There is no Ä in font ptmr7t!
 Missing character: There is no ò in font ptmr7t!
@@ -2095,7 +2037,7 @@ Missing character: There is no ‚ in font ptmr7t!
 Missing character: There is no Ä in font ptmr7t!
 Missing character: There is no ô in font ptmr7t!
 
-<07-lda/figures/popup.png, id=2370, 432.1746pt x 435.0654pt>
+<07-lda/figures/popup.png, id=2278, 432.1746pt x 435.0654pt>
 File: 07-lda/figures/popup.png Graphic file (type png)
 
 <use 07-lda/figures/popup.png>
@@ -2133,30 +2075,30 @@ Missing character: There is no ¬ in font ptmr7t!
 Missing character: There is no µ in font ptmr7t!
 Missing character: There is no À in font ptmr7t!
 Missing character: There is no ö in font ptmr7t!
-[101] [102 <./07-lda/figures/popup.png>]
+[98] [99 <./07-lda/figures/popup.png>]
 Missing character: There is no ‚ in font ptmr7t!
 Missing character: There is no â in font ptmr7t!
 Missing character: There is no • in font ptmr7t!
- [103]
+ [100]
 Missing character: There is no ‚ in font ptmr7t!
 Missing character: There is no Ä in font ptmr7t!
 Missing character: There is no ô in font ptmr7t!
 Missing character: There is no ‚ in font ptmr7t!
 Missing character: There is no Ä in font ptmr7t!
 Missing character: There is no ô in font ptmr7t!
- [104]
+ [101]
 Overfull \hbox (8.1379pt too wide) in paragraph at lines 135--136
 \OT1/ptm/m/n/12 Bank [[]]. To do this, we cre-ate a script that per-forms spec-
 tral match-ing us-ing the mspepsearch
  []
 
-[105] [106] <07-lda/figures/perplexity.png, id=2415, 722.7pt x 722.7pt>
+[102] [103] <07-lda/figures/perplexity.png, id=2323, 722.7pt x 722.7pt>
 File: 07-lda/figures/perplexity.png Graphic file (type png)
 
 <use 07-lda/figures/perplexity.png>
 Package pdftex.def Info: 07-lda/figures/perplexity.png used on input line 154.
 (pdftex.def)             Requested size: 220.50885pt x 220.50587pt.
- [107 <./07-lda/figures/perplexity.png>]
+ [104 <./07-lda/figures/perplexity.png>]
 Missing character: There is no ‚ in font ptmr7t!
 Missing character: There is no Ä in font ptmr7t!
 Missing character: There is no ì in font ptmr7t!
@@ -2166,18 +2108,18 @@ Overfull \hbox (19.32153pt too wide) in paragraph at lines 190--191
 c acid, ri-bose and N-acetylputrescine.
  []
 
-[108] <07-lda/figures/ferulic_acid.pdf, id=2435, 2887.78876pt x 1644.1425pt>
+[105] <07-lda/figures/ferulic_acid.pdf, id=2343, 2887.78876pt x 1644.1425pt>
 File: 07-lda/figures/ferulic_acid.pdf Graphic file (type pdf)
 
 <use 07-lda/figures/ferulic_acid.pdf>
 Package pdftex.def Info: 07-lda/figures/ferulic_acid.pdf used on input line 195
 .
 (pdftex.def)             Requested size: 441.01772pt x 251.07632pt.
- [109 <./07-lda/figures/ferulic_acid.pdf>]
+ [106 <./07-lda/figures/ferulic_acid.pdf>]
 Missing character: There is no ‚ in font ptmr7t!
 Missing character: There is no Ä in font ptmr7t!
 Missing character: There is no ì in font ptmr7t!
-<07-lda/figures/standards.pdf, id=2480, 2715.14375pt x 1626.075pt>
+<07-lda/figures/standards.pdf, id=2389, 2715.14375pt x 1626.075pt>
 File: 07-lda/figures/standards.pdf Graphic file (type pdf)
 
 <use 07-lda/figures/standards.pdf>
@@ -2185,12 +2127,12 @@ Package pdftex.def Info: 07-lda/figures/standards.pdf used on input line 208.
 (pdftex.def)             Requested size: 441.01772pt x 264.1224pt.
 
 Underfull \hbox (badness 10000) in paragraph at lines 218--219
-[]\OT1/ptm/m/n/12 Elemental
+[]|\OT1/ptm/m/n/12 Elemental
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 221--221
-[]\OT1/ptm/m/n/12 [phenylalanine-
+[]|\OT1/ptm/m/n/12 [phenylalanine-
  []
 
 
@@ -2200,7 +2142,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 221--221
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 221--221
-[]\OT1/ptm/m/n/12 fragment[]120.0808,
+[]|\OT1/ptm/m/n/12 fragment[]120.0808,
  []
 
 
@@ -2210,12 +2152,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 221--221
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 221--222
-[]\OT1/ptm/m/n/12 C8H10N,
+[]|\OT1/ptm/m/n/12 C8H10N,
  []
 
 
 Underfull \hbox (badness 3179) in paragraph at lines 223--223
-[]\OT1/ptm/m/n/12 [ribose (pen-tose, C5-
+[]|\OT1/ptm/m/n/12 [ribose (pen-tose, C5-
  []
 
 
@@ -2225,12 +2167,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 223--223
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 225--225
-[]\OT1/ptm/m/n/12 [tryptophan-NH3]-
+[]|\OT1/ptm/m/n/12 [tryptophan-NH3]-
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 225--229
-[]\OT1/ptm/m/n/12 fragment[]118.0654,
+[]|\OT1/ptm/m/n/12 fragment[]118.0654,
  []
 
 
@@ -2250,7 +2192,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 225--229
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 229--233
-[]\OT1/ptm/m/n/12 C8H8N,
+[]|\OT1/ptm/m/n/12 C8H8N,
  []
 
 
@@ -2270,7 +2212,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 229--233
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 234--237
-[]\OT1/ptm/m/n/12 loss[]59.0370, frag-
+[]|\OT1/ptm/m/n/12 loss[]59.0370, frag-
  []
 
 
@@ -2285,7 +2227,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 234--237
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 237--240
-[]\OT1/ptm/m/n/12 C2H5NO,
+[]|\OT1/ptm/m/n/12 C2H5NO,
  []
 
 
@@ -2300,17 +2242,17 @@ Underfull \hbox (badness 10000) in paragraph at lines 237--240
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 243--244
-[]\OT1/ptm/m/n/12 fragment[]136.0629,
+[]|\OT1/ptm/m/n/12 fragment[]136.0629,
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 244--246
-[]\OT1/ptm/m/n/12 C5H6N5,
+[]|\OT1/ptm/m/n/12 C5H6N5,
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 247--250
-[]\OT1/ptm/m/n/12 fragment[]110.0718,
+[]|\OT1/ptm/m/n/12 fragment[]110.0718,
  []
 
 
@@ -2325,7 +2267,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 247--250
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 250--254
-[]\OT1/ptm/m/n/12 C5H8N3,
+[]|\OT1/ptm/m/n/12 C5H8N3,
  []
 
 
@@ -2344,49 +2286,49 @@ Underfull \hbox (badness 3679) in paragraph at lines 255--256
  []
 
 
-Overfull \hbox (10.86716pt too wide) in paragraph at lines 216--259
+Overfull \hbox (13.26712pt too wide) in paragraph at lines 216--259
  [][] 
  []
 
-[110] [111]
-<07-lda/figures/combinedm2m.pdf, id=2497, 4490.98236pt x 2357.47646pt>
+[107] [108]
+<07-lda/figures/combinedm2m.pdf, id=2405, 4490.98236pt x 2357.47646pt>
 File: 07-lda/figures/combinedm2m.pdf Graphic file (type pdf)
 
 <use 07-lda/figures/combinedm2m.pdf>
 Package pdftex.def Info: 07-lda/figures/combinedm2m.pdf used on input line 279.
 
 (pdftex.def)             Requested size: 441.01772pt x 231.48077pt.
- [112 <./07-lda/figures/standards.pdf>]
-[113 <./07-lda/figures/combinedm2m.pdf>]
-<07-lda/figures/heatmaps.png, id=2736, 1806.5091pt x 866.9991pt>
+ [109 <./07-lda/figures/standards.pdf>]
+[110 <./07-lda/figures/combinedm2m.pdf>]
+<07-lda/figures/heatmaps.png, id=2643, 1806.5091pt x 866.9991pt>
 File: 07-lda/figures/heatmaps.png Graphic file (type png)
 
 <use 07-lda/figures/heatmaps.png>
 Package pdftex.def Info: 07-lda/figures/heatmaps.png used on input line 288.
 (pdftex.def)             Requested size: 441.01772pt x 211.65594pt.
-) (./08-conclusion/chapter_08.tex [114 <./07-lda/figures/heatmaps.png>] [115]
+) (./08-conclusion/chapter_08.tex [111 <./07-lda/figures/heatmaps.png>] [112]
 Chapter 8.
-) (./AA-appendix/appendix.tex [116
+) (./AA-appendix/appendix.tex [113
 
 ]
 Appendix A.
-) [117
+) [114
 
-] (./footer.tex (./dissertation.bbl [118
+] (./footer.tex (./dissertation.bbl [115
 
 ]
 Missing character: There is no ‚ in font ptmr7t!
 Missing character: There is no Ä in font ptmr7t!
 Missing character: There is no î in font ptmr7t!
- [119] [120] [121] [122]
-[123] [124] [125] [126]) [127]
+ [116] [117] [118] [119]
+[120] [121] [122] [123]) [124]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 7.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 7.
  (./dissertation.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 7.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 7.
 Package rerunfilecheck Info: File `dissertation.out' has not changed.
-(rerunfilecheck)             Checksum: A9C1E3F816D0CC827D8EEBDB94976A22;7637.
+(rerunfilecheck)             Checksum: 5D4A668CC52FAC277A2CC148A080967C;7430.
 
 
 LaTeX Warning: There were undefined references.
@@ -2397,41 +2339,43 @@ LaTeX Warning: There were multiply-defined labels.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 7.
  ) ) 
 Here is how much of TeX's memory you used:
- 28693 strings out of 493089
- 559992 string characters out of 6134843
- 682251 words of memory out of 5000000
- 31105 multiletter control sequences out of 15000+600000
+ 28801 strings out of 493089
+ 561295 string characters out of 6134843
+ 675213 words of memory out of 5000000
+ 31211 multiletter control sequences out of 15000+600000
  51303 words of font info for 94 fonts, out of 8000000 for 9000
  1145 hyphenation exceptions out of 8191
  64i,21n,92p,10429b,708s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2015/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local
 /texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/
-texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/t
-exlive/2015/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex8.pfb></usr/loca
-l/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local
-/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/
-texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/local/te
-xlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texl
-ive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texliv
-e/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmib10.pfb></usr/local/texliv
-e/2015/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmmib8.pfb></usr/local/te
-xlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texl
-ive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texliv
-e/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2
-015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2015
-/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/local/texlive/2015/t
-exmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2015/te
-xmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive/2015/texm
-f-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2015/texmf-
-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/local/texlive/2015/texmf-dist/fo
-nts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/
-urw/times/utmbi8a.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/urw/times
-/utmr8a.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/urw/times/utmr8a.pf
-b></usr/local/texlive/2015/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on dissertation.pdf (144 pages, 16182156 bytes).
+texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb></usr/local/te
+xlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/tex
+live/2015/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex8.pfb></usr/local/
+texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/t
+exlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/te
+xlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/local/texl
+ive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texliv
+e/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/
+2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmib10.pfb></usr/local/texlive/
+2015/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmmib8.pfb></usr/local/texl
+ive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texliv
+e/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/
+2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/201
+5/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2015/t
+exmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2015/texm
+f-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/local/texlive/2015/texmf-
+dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2015/texmf-d
+ist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive/2015/texmf-dis
+t/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2015/texmf-dist/
+fonts/type1/urw/helvetic/uhvb8a.pfb></usr/local/texlive/2015/texmf-dist/fonts/t
+ype1/urw/times/utmb8a.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/urw/t
+imes/utmbi8a.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/urw/times/utmr
+8a.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></u
+sr/local/texlive/2015/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
+Output written on dissertation.pdf (140 pages, 9326245 bytes).
 PDF statistics:
- 3033 PDF objects out of 3580 (max. 8388607)
- 2414 compressed objects within 25 object streams
- 466 named destinations out of 1000 (max. 500000)
- 1041 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 2948 PDF objects out of 2984 (max. 8388607)
+ 2391 compressed objects within 24 object streams
+ 465 named destinations out of 1000 (max. 500000)
+ 1015 words of extra memory for PDF output out of 10000 (max. 10000000)
 

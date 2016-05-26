@@ -12,13 +12,15 @@
 \contentsline {table}{\numberline {4.8}{\ignorespaces Multiple-fractions experiment results for the P2 dataset. For each training fraction, the reported testing performance is the average of individual F$_1$ scores from the testing fractions. The top-performing method (highest F$_1$ score) is highlighted in bold.}}{41}{table.4.8}
 \contentsline {table}{\numberline {4.9}{\ignorespaces Example measured execution time in seconds on fractions of the P1 dataset}}{45}{table.4.9}
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {5.1}{\ignorespaces List of common adduct transformations in positive mode used for the precursor clustering of the Standard and Beer runs.}}{62}{table.5.1}
+\contentsline {table}{\numberline {5.1}{\ignorespaces List of common adduct transformations in positive mode used for the precursor clustering of the Standard and Beer runs.}}{59}{table.5.1}
+\contentsline {table}{\numberline {5.2}{\ignorespaces The number of peak features and the counts of singleton and non-singleton IP clusters in each run of the Standard and Beer datasets. A singleton cluster is defined to be an IP cluster having only one member peak after MAP assignments, while a non-singleton IP cluster has more than one member peaks. The last column in the Table shows the counts of non-singleton IP clusters and also the percentage of non-singleton IP clusters from the total IP clusters in that run. }}{63}{table.5.2}
+\contentsline {table}{\numberline {5.3}{\ignorespaces Precision, recall and $F_{1}$ values from Cluster-Cluster for randomly selected sets of 2, 3 and 4 Standard runs (averaged) and the Beer runs for various $l$ and thresholding levels $th=\{0.30, 0.60, 0.90\}$. Best results from Cluster-Match and the result of running Cluster-Cluster without the adduct fingerprint term are shown for comparison. Note that for Cluster-Cluster, the results come from using one set of potentially sub-optimal parameters for the second-stage clustering.}}{69}{table.5.3}
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {6.1}{\ignorespaces Total number of runs and features of the selected evaluation datasets. }}{84}{table.6.1}
-\contentsline {table}{\numberline {6.2}{\ignorespaces Parameters used for HDP-Align}}{86}{table.6.2}
-\contentsline {table}{\numberline {6.3}{\ignorespaces Parameters used for the benchmark methods (SIMA, Join).}}{87}{table.6.3}
+\contentsline {table}{\numberline {6.1}{\ignorespaces Total number of runs and features of the selected evaluation datasets. }}{81}{table.6.1}
+\contentsline {table}{\numberline {6.2}{\ignorespaces Parameters used for HDP-Align}}{83}{table.6.2}
+\contentsline {table}{\numberline {6.3}{\ignorespaces Parameters used for the benchmark methods (SIMA, Join).}}{84}{table.6.3}
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {7.1}{\ignorespaces Mass2Motif coverage of MS1 peaks by percentage of MS1 peaks that can be explained by at least one structurally annotated Mass2Motif for the files acquired in positive ionization mode.}}{108}{table.7.1}
-\contentsline {table}{\numberline {7.2}{\ignorespaces Annotations of the Mass2Motifs associated to the fragmentation spectra of the standard peaks shown in Figure 3 of the paper. The degree of a Mass2Motif indicates the number of MS2 fragmentation spectra in the beer3 positive ionization mode data having fragment or loss features that can be explained by the Mass2Motif (at the specified thresholding level). }}{111}{table.7.2}
+\contentsline {table}{\numberline {7.1}{\ignorespaces Mass2Motif coverage of MS1 peaks by percentage of MS1 peaks that can be explained by at least one structurally annotated Mass2Motif for the files acquired in positive ionization mode.}}{105}{table.7.1}
+\contentsline {table}{\numberline {7.2}{\ignorespaces Annotations of the Mass2Motifs associated to the fragmentation spectra of the standard peaks shown in Figure 3 of the paper. The degree of a Mass2Motif indicates the number of MS2 fragmentation spectra in the beer3 positive ionization mode data having fragment or loss features that can be explained by the Mass2Motif (at the specified thresholding level). }}{108}{table.7.2}
 \addvspace {10\p@ }
 \addvspace {10\p@ }

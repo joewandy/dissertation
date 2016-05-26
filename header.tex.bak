@@ -14,6 +14,7 @@
 \usepackage{amssymb}
 \usepackage[colorinlistoftodos]{todonotes}
 \usepackage{hyperref}
+\usepackage{tabularx} % in the preamble
 
 \usepackage{amsmath}
 \usepackage{breqn} 			% line break long equations
