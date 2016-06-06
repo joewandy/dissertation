@@ -85,17 +85,19 @@
 \BOOKMARK [2][-]{subsection.7.3.2}{Mass2Motif Discovery}{section.7.3}% 85
 \BOOKMARK [1][-]{section.7.4}{Evaluation Study}{chapter.7}% 86
 \BOOKMARK [2][-]{subsection.7.4.1}{Evaluation Datasets}{section.7.4}% 87
-\BOOKMARK [2][-]{subsection.7.4.2}{Evaluation Method}{section.7.4}% 88
-\BOOKMARK [1][-]{section.7.5}{Results \046 Discussions}{chapter.7}% 89
-\BOOKMARK [2][-]{subsection.7.5.1}{Model Comparison Results}{section.7.5}% 90
-\BOOKMARK [2][-]{subsection.7.5.2}{Biological Findings}{section.7.5}% 91
-\BOOKMARK [1][-]{section.7.6}{Substructure Discoveries across Many Samples}{chapter.7}% 92
-\BOOKMARK [2][-]{subsection.7.6.1}{Extension to the LDA model}{section.7.6}% 93
-\BOOKMARK [2][-]{subsection.7.6.2}{Results \046 Discussion}{section.7.6}% 94
-\BOOKMARK [1][-]{section.7.7}{Conclusion}{chapter.7}% 95
-\BOOKMARK [0][-]{chapter.8}{Conclusion}{}% 96
-\BOOKMARK [1][-]{section.8.1}{Summary of Contributions}{chapter.8}% 97
-\BOOKMARK [1][-]{section.8.2}{Future Work}{chapter.8}% 98
-\BOOKMARK [1][-]{section.8.3}{Summary and Conclusions}{chapter.8}% 99
-\BOOKMARK [0][-]{appendix.A}{An Appendix}{}% 100
-\BOOKMARK [0][-]{appendix.A}{Bibliography}{}% 101
+\BOOKMARK [2][-]{subsection.7.4.2}{MS2LDA Analysis}{section.7.4}% 88
+\BOOKMARK [2][-]{subsection.7.4.3}{Molecular Networking Analysis}{section.7.4}% 89
+\BOOKMARK [2][-]{subsection.7.4.4}{Differential Analysis of Mass2Motifs}{section.7.4}% 90
+\BOOKMARK [1][-]{section.7.5}{Results \046 Discussions}{chapter.7}% 91
+\BOOKMARK [2][-]{subsection.7.5.1}{Model Comparison Results}{section.7.5}% 92
+\BOOKMARK [2][-]{subsection.7.5.2}{Biological Findings}{section.7.5}% 93
+\BOOKMARK [1][-]{section.7.6}{Substructure Discoveries Across Many Fragmentation Files}{chapter.7}% 94
+\BOOKMARK [2][-]{subsection.7.6.1}{Multi-file LDA Model}{section.7.6}% 95
+\BOOKMARK [2][-]{subsection.7.6.2}{Results \046 Discussion}{section.7.6}% 96
+\BOOKMARK [1][-]{section.7.7}{Conclusion}{chapter.7}% 97
+\BOOKMARK [0][-]{chapter.8}{Conclusion}{}% 98
+\BOOKMARK [1][-]{section.8.1}{Summary of Contributions}{chapter.8}% 99
+\BOOKMARK [1][-]{section.8.2}{Future Work}{chapter.8}% 100
+\BOOKMARK [1][-]{section.8.3}{Summary and Conclusions}{chapter.8}% 101
+\BOOKMARK [0][-]{appendix.A}{An Appendix}{}% 102
+\BOOKMARK [0][-]{appendix.A}{Bibliography}{}% 103

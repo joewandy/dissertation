@@ -98,25 +98,21 @@
 \contentsline {subsubsection}{MS2LDAVis Visualisation}{96}{section*.27}
 \contentsline {section}{\numberline {7.4}Evaluation Study}{98}{section.7.4}
 \contentsline {subsection}{\numberline {7.4.1}Evaluation Datasets}{98}{subsection.7.4.1}
-\contentsline {subsection}{\numberline {7.4.2}Evaluation Method}{99}{subsection.7.4.2}
-\contentsline {subsubsection}{MS2LDA Analysis}{99}{section*.28}
-\contentsline {subsubsection}{Model Comparison}{100}{section*.29}
-\contentsline {subsubsection}{Molecular Networking Analysis}{101}{section*.30}
-\contentsline {subsubsection}{Differential Analysis of Mass2Motifs}{101}{section*.31}
-\contentsline {section}{\numberline {7.5}Results \& Discussions}{102}{section.7.5}
-\contentsline {subsection}{\numberline {7.5.1}Model Comparison Results}{102}{subsection.7.5.1}
-\contentsline {subsection}{\numberline {7.5.2}Biological Findings}{103}{subsection.7.5.2}
-\contentsline {subsubsection}{Automatic, Unsupervised, Chemical Substructure Discovery}{104}{section*.32}
-\contentsline {subsubsection}{Structurally Annotated Mass2Motifs Validated in Authentic Standards}{106}{section*.33}
-\contentsline {subsubsection}{Mass2Motifs Aid de-novo Metabolite Annotation}{106}{section*.34}
-\contentsline {subsubsection}{Differential Expression of Mass2Motifs Reveals Biochemical Changes Across Samples}{109}{section*.35}
-\contentsline {section}{\numberline {7.6}Substructure Discoveries across Many Samples}{110}{section.7.6}
-\contentsline {subsection}{\numberline {7.6.1}Extension to the LDA model}{111}{subsection.7.6.1}
+\contentsline {subsection}{\numberline {7.4.2}MS2LDA Analysis}{99}{subsection.7.4.2}
+\contentsline {subsection}{\numberline {7.4.3}Molecular Networking Analysis}{100}{subsection.7.4.3}
+\contentsline {subsection}{\numberline {7.4.4}Differential Analysis of Mass2Motifs}{100}{subsection.7.4.4}
+\contentsline {section}{\numberline {7.5}Results \& Discussions}{101}{section.7.5}
+\contentsline {subsection}{\numberline {7.5.1}Model Comparison Results}{101}{subsection.7.5.1}
+\contentsline {subsection}{\numberline {7.5.2}Biological Findings}{102}{subsection.7.5.2}
+\contentsline {subsubsection}{Validation of Mass2Motifs Against Reference Standard Molecules}{104}{section*.28}
+\contentsline {subsubsection}{Differential Analysis of Mass2Motifs}{106}{section*.29}
+\contentsline {section}{\numberline {7.6}Substructure Discoveries Across Many Fragmentation Files}{108}{section.7.6}
+\contentsline {subsection}{\numberline {7.6.1}Multi-file LDA Model}{109}{subsection.7.6.1}
 \contentsline {subsection}{\numberline {7.6.2}Results \& Discussion}{111}{subsection.7.6.2}
 \contentsline {section}{\numberline {7.7}Conclusion}{111}{section.7.7}
-\contentsline {chapter}{\numberline {8}Conclusion}{112}{chapter.8}
-\contentsline {section}{\numberline {8.1}Summary of Contributions}{112}{section.8.1}
-\contentsline {section}{\numberline {8.2}Future Work}{112}{section.8.2}
-\contentsline {section}{\numberline {8.3}Summary and Conclusions}{112}{section.8.3}
-\contentsline {chapter}{\numberline {A}An Appendix}{113}{appendix.A}
-\contentsline {chapter}{Bibliography}{114}{appendix.A}
+\contentsline {chapter}{\numberline {8}Conclusion}{114}{chapter.8}
+\contentsline {section}{\numberline {8.1}Summary of Contributions}{114}{section.8.1}
+\contentsline {section}{\numberline {8.2}Future Work}{114}{section.8.2}
+\contentsline {section}{\numberline {8.3}Summary and Conclusions}{114}{section.8.3}
+\contentsline {chapter}{\numberline {A}An Appendix}{115}{appendix.A}
+\contentsline {chapter}{Bibliography}{116}{appendix.A}

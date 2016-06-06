@@ -124,7 +124,7 @@ The entire likelihood function of eq. \ref{eq:second-stage-likelihood} ensures t
 
 \subsubsection{Gibbs Sampling for Cluster-Cluster\label{sub:cluster-cluster-gibbs}}
 
-Analytical inference is not tractable here, so we use a collapsed Gibbs sampling scheme for inference of Cluster-Cluster. The conditional probability of $p(\boldsymbol{\bar{z}}_{jki}=1,...)$ of IP cluster $k$ in file $j$ to be placed in an existing top-level cluster $i$ (or $i^{*}$ if a new top-level cluster is to be created), is given by:
+Analytical inference is not tractable here, so we use a collapsed Gibbs sampling scheme for inference of Cluster-Cluster. The conditional probability of $P(\boldsymbol{\bar{z}}_{jki}=1\vert...)$ of IP cluster $k$ in file $j$ to be placed in an existing top-level cluster $i$ (or $i^{*}$ if a new top-level cluster is to be created), is given by:
 \begin{equation}
 P(\boldsymbol{\bar{z}}_{jki}=1|\boldsymbol{c}_{jk},\ldots)\propto\begin{cases}
 \begin{array}{c}
