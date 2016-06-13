@@ -103,7 +103,7 @@
 \contentsline {subsubsection}{Validation to Reference Standard Molecules}{104}{section*.26}
 \contentsline {subsubsection}{Comparison to Spectral Clustering}{105}{section*.27}
 \contentsline {subsubsection}{Differential Analysis of Mass2Motifs}{109}{section*.28}
-\contentsline {section}{\numberline {7.7}Substructure Discoveries Across Many Fragmentation Files}{111}{section.7.7}
+\contentsline {section}{\numberline {7.7}Substructure Discoveries Across Many Fragmentation Files}{110}{section.7.7}
 \contentsline {subsection}{\numberline {7.7.1}Multi-file LDA Model}{111}{subsection.7.7.1}
 \contentsline {subsection}{\numberline {7.7.2}Results \& Discussion}{113}{subsection.7.7.2}
 \contentsline {section}{\numberline {7.8}Conclusion}{115}{section.7.8}
