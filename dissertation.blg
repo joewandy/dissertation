@@ -9,7 +9,6 @@ Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Database file #1: bibliography/dissertation.bib
 Warning--I didn't find a database entry for "Smith2004"
-Warning--I didn't find a database entry for "Heinonen2012"
 Warning--I didn't find a database entry for "Teh2005"
 Warning--I didn't find a database entry for "Blei2003"
 Warning--I didn't find a database entry for "Lovell2012"
@@ -25,45 +24,45 @@ Warning--missing publisher in Gusfield1989
 Warning--empty journal in Scott1994
 
 Done.
-You've used 96 entries,
+You've used 98 entries,
             4024 wiz_defined-function locations,
-            1463 strings with 29214 characters,
-and the built_in function-call counts, 83264 in all, are:
-= -- 7220
-> -- 2045
-< -- 776
-+ -- 1113
-- -- 360
-* -- 4195
-:= -- 12671
-add.period$ -- 193
-call.type$ -- 96
-change.case$ -- 96
-chr.to.int$ -- 1632
-cite$ -- 103
-duplicate$ -- 5888
-empty$ -- 5898
-format.name$ -- 437
-if$ -- 19108
+            1477 strings with 29697 characters,
+and the built_in function-call counts, 84913 in all, are:
+= -- 7370
+> -- 2088
+< -- 787
++ -- 1133
+- -- 369
+* -- 4279
+:= -- 12942
+add.period$ -- 197
+call.type$ -- 98
+change.case$ -- 98
+chr.to.int$ -- 1650
+cite$ -- 105
+duplicate$ -- 6010
+empty$ -- 6010
+format.name$ -- 448
+if$ -- 19483
 int.to.chr$ -- 0
-int.to.str$ -- 96
-missing$ -- 981
-newline$ -- 401
-num.names$ -- 94
-pop$ -- 1941
+int.to.str$ -- 98
+missing$ -- 1003
+newline$ -- 411
+num.names$ -- 96
+pop$ -- 1987
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 2
-skip$ -- 6546
+skip$ -- 6677
 stack$ -- 0
-substring$ -- 4095
-swap$ -- 5297
-text.length$ -- 232
+substring$ -- 4149
+swap$ -- 5400
+text.length$ -- 237
 text.prefix$ -- 0
 top$ -- 5
-type$ -- 96
+type$ -- 98
 warning$ -- 7
-while$ -- 391
-width$ -- 98
-write$ -- 1150
-(There were 12 warnings)
+while$ -- 398
+width$ -- 100
+write$ -- 1177
+(There were 11 warnings)
