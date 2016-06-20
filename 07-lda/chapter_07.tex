@@ -35,7 +35,7 @@ JvdH then performed molecular networking analysis on the same dataset, which was
 
 \section{A Workflow for Substructure Discoveries and Annotations\label{sub:ms2lda-workflow}}
 
-Substructure discovery through the MS2LDA workflow consists of two stages: i) the data conversion stage, which prepares the acquired fragmentation data into suitable input format for the workflow, followed by ii) the Mass2Motif discovery stage, which performs topic modelling via LDA to discover mass fragmental patterns, assigns potential candidate elemental formulae to MS1 and MS2 peaks, and visualises the Mass2Motifs in an interactive environment. The complete workflow is illustrated in Figure~\ref{fig:m2lda-workflow}. The key insight of MS2LDA lies in emphasising the parallel between text and mass spectrometry fragmentation data (Figure~\ref{fig:text2frags}). As a text analysis pipeline relying on LDA to decompose documents into topics based on frequently co-occurring words, so MS2LDA decomposes fragmentation spectra into their constituent building blocks of frequently co-occurring fragments and neutral losses (referred to as ‘Mass2Motifs’). 
+Substructure discovery through the MS2LDA workflow consists of two stages: i) the data conversion stage, which prepares the acquired fragmentation data into suitable input format for the workflow, followed by ii) the Mass2Motif discovery stage, which performs topic modelling via LDA to discover mass fragmental patterns, assigns potential candidate elemental formulae to MS1 and MS2 peaks, and visualises the Mass2Motifs in an interactive environment. The key insight of MS2LDA lies in emphasising the parallel between text and mass spectrometry fragmentation data (Figure~\ref{fig:text2frags}A-B). As a text analysis pipeline relying on LDA to decompose documents into topics based on frequently co-occurring words, so MS2LDA decomposes fragmentation spectra into their constituent building blocks of frequently co-occurring fragments and neutral losses (referred to as ‘Mass2Motifs’). The complete workflow is illustrated in Figure~\ref{fig:text2frags}C. 
 
 \begin{figure}[!htbp]
 \centering\includegraphics[width=1.0\linewidth]{07-lda/figures/text2frags_new.pdf}
@@ -43,8 +43,6 @@ Substructure discovery through the MS2LDA workflow consists of two stages: i) th
 \end{figure}
 
 Acquired fragmentation data cannot readily be used for the purpose of pattern searching via LDA and has to be converted into a suitable format. As input, the MS2LDA workflow accepts the combination of a single full-scan file for the MS1 peaks and a separate fragmentation file for the MS2 peaks. The data conversion process starts with the detection of MS1 peak in the input .mzXML file obtained from full-scan mode spectra using the CentWave algorithm from the XCMS library \cite{Smith2006}. This constitutes information on the parent (MS1) level. Fragmentation data, in the form of .mzML file obtained from tandem MS mode, are processed using an R script based on the RMassBank package \cite{Stravs2013}. 
-
-\textbf{A bit more details on the preprocessing, including the linking and filtering step}
 
 A linking step is required to match the most intense MS2 spectrum in a scan to a parent MS1 peak. Matching is performed via a greedy search within a specified retention time tolerance window, selecting the top few most intense peaks for the matching. This simulates the generative process that produces the spectral data in data-dependant experiments. A filtering step, based on RT and intensity, is applied to remove noisy peaks. Any MS1 peak not having paired MS2 peaks is also discarded for further processing. The aim of the filtering step is to exclude identical fragmentation spectra produced by low-intensity MS1 peaks that were fragmented multiple times, potentially forming spurious and uninformative Mass2Motifs on their own. 
 
@@ -71,7 +69,7 @@ A collapsed Gibbs sampling scheme is implemented in Python for inference (detail
 
 \subsubsection{MS2LDAVis}
 
-\textbf{(the visualiser was all your idea!…it doesn’t get much mention in the chapter actually…).}
+% \textbf{(the visualiser was all your idea!…it doesn’t get much mention in the chapter actually…).}
 
 Given its hypothesis-generating nature, the analysis of Mass2Motifs to characterise and examine their correspondence to actual biochemical substructures is an iterative and exploratory process. This is made possible through the MS2LDAVis module, an interactive web-based visualisation build upon the combination of the Javascript and the D3 library (http://d3js.org). MS2LDAVis is extended from the Python port of the topic modelling visualisation interface LDAVis \cite{Sievert2014} used in the text domain, but our adaptation MS2LDAVis introduces fragmentation-specific views.
 

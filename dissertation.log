@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2016.3.1)  20 JUN 2016 02:31
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2016.3.1)  20 JUN 2016 02:43
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1835,17 +1835,14 @@ Missing character: There is no ” in font ptmb7t!
 [89
 
 ] [90] [91] [92]
-
-LaTeX Warning: Reference `fig:m2lda-workflow' on page 93 undefined on input lin
-e 38.
-
 Missing character: There is no â in font ptmr7t!
 Missing character: There is no € in font ptmr7t!
 Missing character: There is no ˜ in font ptmr7t!
 Missing character: There is no â in font ptmr7t!
 Missing character: There is no € in font ptmr7t!
 Missing character: There is no ™ in font ptmr7t!
-<07-lda/figures/text2frags_new.pdf, id=2167, 1407.2575pt x 1508.63625pt>
+
+<07-lda/figures/text2frags_new.pdf, id=2168, 1407.2575pt x 1508.63625pt>
 File: 07-lda/figures/text2frags_new.pdf Graphic file (type pdf)
 
 <use 07-lda/figures/text2frags_new.pdf>
@@ -1853,11 +1850,11 @@ Package pdftex.def Info: 07-lda/figures/text2frags_new.pdf used on input line 4
 1.
 (pdftex.def)             Requested size: 441.01772pt x 472.78284pt.
  [93] [94 <./07-lda/figures/text2frags_new.pdf>] <07-lda/figures/matrix.png, id
-=2263, 885.3075pt x 498.86375pt>
+=2264, 885.3075pt x 498.86375pt>
 File: 07-lda/figures/matrix.png Graphic file (type png)
 
 <use 07-lda/figures/matrix.png>
-Package pdftex.def Info: 07-lda/figures/matrix.png used on input line 54.
+Package pdftex.def Info: 07-lda/figures/matrix.png used on input line 52.
 (pdftex.def)             Requested size: 352.8155pt x 198.8112pt.
 Missing character: There is no â in font ptmr7t!
 Missing character: There is no € in font ptmr7t!
@@ -1866,21 +1863,11 @@ Missing character: There is no â in font ptmr7t!
 Missing character: There is no € in font ptmr7t!
 Missing character: There is no “ in font ptmr7t!
  [95] [96 <./07-lda/figures/matrix.png>]
-Missing character: There is no â in font ptmb7t!
-Missing character: There is no € in font ptmb7t!
-Missing character: There is no ¦ in font ptmb7t!
-Missing character: There is no â in font ptmb7t!
-Missing character: There is no € in font ptmb7t!
-Missing character: There is no ™ in font ptmb7t!
-Missing character: There is no â in font ptmb7t!
-Missing character: There is no € in font ptmb7t!
-Missing character: There is no ¦ in font ptmb7t!
-
-<07-lda/figures/figure_s3.pdf, id=2282, 1725.44624pt x 1084.05pt>
+<07-lda/figures/figure_s3.pdf, id=2283, 1725.44624pt x 1084.05pt>
 File: 07-lda/figures/figure_s3.pdf Graphic file (type pdf)
 
 <use 07-lda/figures/figure_s3.pdf>
-Package pdftex.def Info: 07-lda/figures/figure_s3.pdf used on input line 79.
+Package pdftex.def Info: 07-lda/figures/figure_s3.pdf used on input line 77.
 (pdftex.def)             Requested size: 441.01772pt x 277.06593pt.
  [97 <./07-lda/figures/figure_s3.pdf>]
 Missing character: There is no â in font ptmr7t!
@@ -1904,7 +1891,7 @@ Missing character: There is no ™ in font ptmr7t!
 
 [98] [99]
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10.95> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 106.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 104.
 Missing character: There is no â in font ptmr7t!
 Missing character: There is no € in font ptmr7t!
 Missing character: There is no ™ in font ptmr7t!
@@ -1915,331 +1902,331 @@ Missing character: There is no â in font ptmr7t!
 Missing character: There is no € in font ptmr7t!
 Missing character: There is no ™ in font ptmr7t!
 
-Overfull \hbox (12.27913pt too wide) in paragraph at lines 104--112
+Overfull \hbox (12.27913pt too wide) in paragraph at lines 102--110
  [][] 
  []
 
-[100] [101] [102] <07-lda/figures/perplexity.png, id=2388, 722.7pt x 722.7pt>
+[100] [101] [102] <07-lda/figures/perplexity.png, id=2389, 722.7pt x 722.7pt>
 File: 07-lda/figures/perplexity.png Graphic file (type png)
 
 <use 07-lda/figures/perplexity.png>
-Package pdftex.def Info: 07-lda/figures/perplexity.png used on input line 151.
+Package pdftex.def Info: 07-lda/figures/perplexity.png used on input line 149.
 (pdftex.def)             Requested size: 220.50885pt x 220.50587pt.
  [103 <./07-lda/figures/perplexity.png>]
 Missing character: There is no â in font ptmr7t!
 Missing character: There is no ‰ in font ptmr7t!
 Missing character: There is no ¥ in font ptmr7t!
 
-Overfull \hbox (7.59862pt too wide) in paragraph at lines 185--186
+Overfull \hbox (7.59862pt too wide) in paragraph at lines 183--184
 []\OT1/ptm/m/n/12 As an ex-am-ple of the bio-chem-i-cal in-sights that can be o
 b-tained by an ex-pert from MS2LDAVis,
  []
 
-[104] <07-lda/figures/figure3.pdf, id=2407, 3976.8575pt x 1958.31625pt>
+[104] <07-lda/figures/figure3.pdf, id=2408, 3976.8575pt x 1958.31625pt>
 File: 07-lda/figures/figure3.pdf Graphic file (type pdf)
 
 <use 07-lda/figures/figure3.pdf>
-Package pdftex.def Info: 07-lda/figures/figure3.pdf used on input line 190.
+Package pdftex.def Info: 07-lda/figures/figure3.pdf used on input line 188.
 (pdftex.def)             Requested size: 352.8155pt x 173.73082pt.
  [105] [106 <./07-lda/figures/figure3.pdf>]
-<07-lda/figures/standards.pdf, id=2460, 2715.14375pt x 1626.075pt>
+<07-lda/figures/standards.pdf, id=2461, 2715.14375pt x 1626.075pt>
 File: 07-lda/figures/standards.pdf Graphic file (type pdf)
 
 <use 07-lda/figures/standards.pdf>
-Package pdftex.def Info: 07-lda/figures/standards.pdf used on input line 201.
+Package pdftex.def Info: 07-lda/figures/standards.pdf used on input line 199.
 (pdftex.def)             Requested size: 352.8155pt x 211.29793pt.
 
-Underfull \hbox (badness 3792) in paragraph at lines 212--213
+Underfull \hbox (badness 3792) in paragraph at lines 210--211
 []|\OT1/ptm/m/n/10.95 Elemental For-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 215--215
+Underfull \hbox (badness 10000) in paragraph at lines 213--213
 []|\OT1/ptm/m/n/10.95 [phenylalanine-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 215--215
+Underfull \hbox (badness 10000) in paragraph at lines 213--213
 \OT1/ptm/m/n/10.95 CHOOH]-based sub-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 215--215
+Underfull \hbox (badness 10000) in paragraph at lines 213--213
 []|\OT1/ptm/m/n/10.95 fragment[]120.0808,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 215--215
+Underfull \hbox (badness 10000) in paragraph at lines 213--213
 \OT1/ptm/m/n/10.95 frag-ment[]103.0546,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 217--217
+Underfull \hbox (badness 10000) in paragraph at lines 215--215
 []|\OT1/ptm/m/n/10.95 [ribose (pen-tose, C5-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 217--217
+Underfull \hbox (badness 10000) in paragraph at lines 215--215
 \OT1/ptm/m/n/10.95 sugar)-H2O]-related
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 219--219
+Underfull \hbox (badness 10000) in paragraph at lines 217--217
 []|\OT1/ptm/m/n/10.95 [tryptophan-NH3]-related
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 219--223
+Underfull \hbox (badness 10000) in paragraph at lines 217--221
 []|\OT1/ptm/m/n/10.95 fragment[]118.0654,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 219--223
+Underfull \hbox (badness 10000) in paragraph at lines 217--221
 \OT1/ptm/m/n/10.95 frag-ment[]117.0571,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 219--223
+Underfull \hbox (badness 10000) in paragraph at lines 217--221
 \OT1/ptm/m/n/10.95 frag-ment[]91.0541,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 219--223
+Underfull \hbox (badness 10000) in paragraph at lines 217--221
 \OT1/ptm/m/n/10.95 frag-ment[]130.0645,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 229--229
+Underfull \hbox (badness 10000) in paragraph at lines 227--227
 []|\OT1/ptm/m/n/10.95 N-acetylputrescine sub-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 229--232
+Underfull \hbox (badness 10000) in paragraph at lines 227--230
 \OT1/ptm/m/n/10.95 fragment[]114.0912,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 229--232
+Underfull \hbox (badness 10000) in paragraph at lines 227--230
 \OT1/ptm/m/n/10.95 frag-ment[]72.0447,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 232--235
+Underfull \hbox (badness 10000) in paragraph at lines 230--233
 []|\OT1/ptm/m/n/10.95 C2H5NO,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 232--235
+Underfull \hbox (badness 10000) in paragraph at lines 230--233
 \OT1/ptm/m/n/10.95 C6H12NO,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 232--235
+Underfull \hbox (badness 10000) in paragraph at lines 230--233
 \OT1/ptm/m/n/10.95 C3H6NO,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 238--239
+Underfull \hbox (badness 10000) in paragraph at lines 236--237
 []|\OT1/ptm/m/n/10.95 fragment[]136.0629,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 239--241
+Underfull \hbox (badness 10000) in paragraph at lines 237--239
 []|\OT1/ptm/m/n/10.95 C5H6N5,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 242--245
+Underfull \hbox (badness 10000) in paragraph at lines 240--243
 []|\OT1/ptm/m/n/10.95 fragment[]110.0718,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 242--245
+Underfull \hbox (badness 10000) in paragraph at lines 240--243
 \OT1/ptm/m/n/10.95 frag-ment[]156.0769,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 242--245
+Underfull \hbox (badness 10000) in paragraph at lines 240--243
 \OT1/ptm/m/n/10.95 frag-ment[]93.0450,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 245--249
+Underfull \hbox (badness 10000) in paragraph at lines 243--247
 []|\OT1/ptm/m/n/10.95 C5H8N3,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 245--249
+Underfull \hbox (badness 10000) in paragraph at lines 243--247
 \OT1/ptm/m/n/10.95 C6H10N3O2,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 245--249
+Underfull \hbox (badness 10000) in paragraph at lines 243--247
 \OT1/ptm/m/n/10.95 C5H5N2,
  []
 
 
-Underfull \hbox (badness 2799) in paragraph at lines 250--251
+Underfull \hbox (badness 2799) in paragraph at lines 248--249
 []|\OT1/ptm/m/n/10.95 combined loss of H2O
  []
 
 [107 <./07-lda/figures/standards.pdf>] [108]
-<07-lda/figures/combinedm2m.pdf, id=2500, 2806.86435pt x 2357.47646pt>
+<07-lda/figures/combinedm2m.pdf, id=2501, 2806.86435pt x 2357.47646pt>
 File: 07-lda/figures/combinedm2m.pdf Graphic file (type pdf)
 
 <use 07-lda/figures/combinedm2m.pdf>
-Package pdftex.def Info: 07-lda/figures/combinedm2m.pdf used on input line 269.
+Package pdftex.def Info: 07-lda/figures/combinedm2m.pdf used on input line 267.
 
 (pdftex.def)             Requested size: 441.01772pt x 370.40521pt.
 
-<07-lda/figures/figure10.pdf, id=2503, 1108.14pt x 771.88374pt>
+<07-lda/figures/figure10.pdf, id=2504, 1108.14pt x 771.88374pt>
 File: 07-lda/figures/figure10.pdf Graphic file (type pdf)
 
 <use 07-lda/figures/figure10.pdf>
-Package pdftex.def Info: 07-lda/figures/figure10.pdf used on input line 276.
+Package pdftex.def Info: 07-lda/figures/figure10.pdf used on input line 274.
 (pdftex.def)             Requested size: 264.61331pt x 184.31364pt.
 
-Overfull \hbox (10.04591pt too wide) in paragraph at lines 282--283
+Overfull \hbox (10.04591pt too wide) in paragraph at lines 280--281
 \OT1/ptm/m/n/12 We have shown that MS2LDA analysis can group molecules ac-cord-
 ing to a shared Mass2Motif.
  []
 
 [109] [110 <./07-lda/figures/combinedm2m.pdf>] [111 <./07-lda/figures/figure10.
-pdf>] <07-lda/figures/heatmaps.png, id=2720, 1806.5091pt x 866.9991pt>
+pdf>] <07-lda/figures/heatmaps.png, id=2721, 1806.5091pt x 866.9991pt>
 File: 07-lda/figures/heatmaps.png Graphic file (type png)
 
 <use 07-lda/figures/heatmaps.png>
-Package pdftex.def Info: 07-lda/figures/heatmaps.png used on input line 289.
+Package pdftex.def Info: 07-lda/figures/heatmaps.png used on input line 287.
 (pdftex.def)             Requested size: 441.01772pt x 211.65594pt.
  [112 <./07-lda/figures/heatmaps.png>]
 [113] [114]
-Underfull \hbox (badness 10000) in paragraph at lines 361--361
+Underfull \hbox (badness 10000) in paragraph at lines 359--359
 []|\OT1/ptm/m/n/10.95 Top Fea-tures Above
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 362--362
+Underfull \hbox (badness 10000) in paragraph at lines 360--360
 []|\OT1/ptm/b/n/10.95 fragment[]177.05478\OT1/ptm/m/n/10.95 ,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 362--362
+Underfull \hbox (badness 10000) in paragraph at lines 360--360
 \OT1/ptm/b/n/10.95 frag-ment[]89.03865\OT1/ptm/m/n/10.95 ,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 362--362
+Underfull \hbox (badness 10000) in paragraph at lines 360--360
 \OT1/ptm/b/n/10.95 frag-ment[]145.02844\OT1/ptm/m/n/10.95 ,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 362--362
+Underfull \hbox (badness 10000) in paragraph at lines 360--360
 \OT1/ptm/b/n/10.95 frag-ment[]117.03319\OT1/ptm/m/n/10.95 ,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 362--362
+Underfull \hbox (badness 10000) in paragraph at lines 360--360
 \OT1/ptm/m/n/10.95 fragment[]163.03887,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 362--362
+Underfull \hbox (badness 10000) in paragraph at lines 360--360
 \OT1/ptm/b/n/10.95 frag-ment[]149.05998\OT1/ptm/m/n/10.95 ,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 363--363
+Underfull \hbox (badness 10000) in paragraph at lines 361--361
 []|\OT1/ptm/b/n/10.95 fragment[]110.07161\OT1/ptm/m/n/10.95 ,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 363--363
+Underfull \hbox (badness 10000) in paragraph at lines 361--361
 \OT1/ptm/b/n/10.95 frag-ment[]156.07687\OT1/ptm/m/n/10.95 ,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 363--363
+Underfull \hbox (badness 10000) in paragraph at lines 361--361
 \OT1/ptm/m/n/10.95 frag-ment[]83.06041,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 363--363
+Underfull \hbox (badness 10000) in paragraph at lines 361--361
 \OT1/ptm/b/n/10.95 frag-ment[]93.04511\OT1/ptm/m/n/10.95 ,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 363--363
+Underfull \hbox (badness 10000) in paragraph at lines 361--361
 \OT1/ptm/m/n/10.95 frag-ment[]82.05246,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 363--363
+Underfull \hbox (badness 10000) in paragraph at lines 361--361
 \OT1/ptm/m/n/10.95 frag-ment[]209.10558,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 363--363
+Underfull \hbox (badness 10000) in paragraph at lines 361--361
 \OT1/ptm/b/n/10.95 frag-ment[]95.06057\OT1/ptm/m/n/10.95 ,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 363--363
+Underfull \hbox (badness 10000) in paragraph at lines 361--361
 \OT1/ptm/m/n/10.95 loss[]167.08663,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 363--363
+Underfull \hbox (badness 10000) in paragraph at lines 361--361
 \OT1/ptm/m/n/10.95 frag-ment[]81.04494,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 364--364
+Underfull \hbox (badness 10000) in paragraph at lines 362--362
 []|\OT1/ptm/b/n/10.95 fragment[]86.09653\OT1/ptm/m/n/10.95 ,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 364--364
+Underfull \hbox (badness 10000) in paragraph at lines 362--362
 \OT1/ptm/b/n/10.95 frag-ment[]132.10165\OT1/ptm/m/n/10.95 ,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 364--364
+Underfull \hbox (badness 10000) in paragraph at lines 362--362
 \OT1/ptm/m/n/10.95 frag-ment[]69.07013,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 364--364
+Underfull \hbox (badness 10000) in paragraph at lines 362--362
 \OT1/ptm/m/n/10.95 frag-ment[]332.112,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 366--366
+Underfull \hbox (badness 10000) in paragraph at lines 364--364
 []|\OT1/ptm/b/n/10.95 fragment[]136.06231\OT1/ptm/m/n/10.95 ,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 366--366
+Underfull \hbox (badness 10000) in paragraph at lines 364--364
 \OT1/ptm/m/n/10.95 loss[]162.03459,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 366--366
+Underfull \hbox (badness 10000) in paragraph at lines 364--364
 \OT1/ptm/b/n/10.95 frag-ment[]119.0354\OT1/ptm/m/n/10.95 ,
  []
 
-<07-lda/figures/multifile.pdf, id=2760, 1446.40375pt x 984.67876pt>
+<07-lda/figures/multifile.pdf, id=2761, 1446.40375pt x 984.67876pt>
 File: 07-lda/figures/multifile.pdf Graphic file (type pdf)
 
 <use 07-lda/figures/multifile.pdf>
-Package pdftex.def Info: 07-lda/figures/multifile.pdf used on input line 375.
+Package pdftex.def Info: 07-lda/figures/multifile.pdf used on input line 373.
 (pdftex.def)             Requested size: 441.01772pt x 300.22891pt.
 
-<07-lda/figures/multifile_alpha.pdf, id=2763, 1734.48pt x 433.62pt>
+<07-lda/figures/multifile_alpha.pdf, id=2764, 1734.48pt x 433.62pt>
 File: 07-lda/figures/multifile_alpha.pdf Graphic file (type pdf)
 
 <use 07-lda/figures/multifile_alpha.pdf>
 Package pdftex.def Info: 07-lda/figures/multifile_alpha.pdf used on input line 
-382.
+380.
 (pdftex.def)             Requested size: 441.01772pt x 110.25073pt.
  [115] [116] [117 <./07-lda/figures/multifile.pdf> <./07-lda/figures/multifile_
 alpha.pdf>]) [118]
@@ -2276,10 +2263,10 @@ LaTeX Warning: There were multiply-defined labels.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 7.
  ) ) 
 Here is how much of TeX's memory you used:
- 28868 strings out of 493089
- 562586 string characters out of 6134843
+ 28867 strings out of 493089
+ 562566 string characters out of 6134843
  675869 words of memory out of 5000000
- 31251 multiletter control sequences out of 15000+600000
+ 31250 multiletter control sequences out of 15000+600000
  54833 words of font info for 103 fonts, out of 8000000 for 9000
  1145 hyphenation exceptions out of 8191
  64i,21n,92p,10429b,708s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -2309,10 +2296,10 @@ ype1/urw/times/utmb8a.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/urw/t
 imes/utmbi8a.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/urw/times/utmr
 8a.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></u
 sr/local/texlive/2015/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on dissertation.pdf (147 pages, 11046059 bytes).
+Output written on dissertation.pdf (147 pages, 11045567 bytes).
 PDF statistics:
- 3153 PDF objects out of 3580 (max. 8388607)
- 2548 compressed objects within 26 object streams
+ 3154 PDF objects out of 3580 (max. 8388607)
+ 2549 compressed objects within 26 object streams
  488 named destinations out of 1000 (max. 500000)
  1020 words of extra memory for PDF output out of 10000 (max. 10000000)
 
