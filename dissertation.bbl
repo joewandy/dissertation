@@ -506,12 +506,12 @@ T.~Kind and O.~Fiehn, ``{Seven Golden Rules for heuristic filtering of
   \url{http://www.pubmedcentral.nih.gov/articlerender.fcgi?artid=1851972{\&}tool=pmcentrez{\&}rendertype=abstract}
 \BIBentrySTDinterwordspacing
 
-\bibitem{Hufsky2014}
+\bibitem{DaSilva2015}
 \BIBentryALTinterwordspacing
-F.~Hufsky, K.~Scheubert, and S.~B{\"{o}}cker, ``{Computational mass
-  spectrometry for small-molecule fragmentation},'' \emph{TrAC - Trends in
-  Analytical Chemistry}, vol.~53, pp. 41--48, 2014. [Online]. Available:
-  \url{http://dx.doi.org/10.1016/j.trac.2013.09.008}
+R.~R. da~Silva, P.~C. Dorrestein, and R.~A. Quinn, ``{Illuminating the dark
+  matter in metabolomics},'' \emph{Proceedings of the National Academy of
+  Sciences}, vol. 112, no.~41, p. 201516878, 2015. [Online]. Available:
+  \url{http://www.pnas.org/content/early/2015/09/30/1516878112.extract}
 \BIBentrySTDinterwordspacing
 
 \bibitem{Smith2005}
@@ -534,12 +534,12 @@ H.~Horai, M.~Arita, S.~Kanaya, Y.~Nihei, T.~Ikeda, K.~Suwa, Y.~Ojima,
   repository for sharing mass spectral data for life sciences,'' \emph{Journal
   of mass spectrometry}, vol.~45, no.~7, pp. 703--714, 2010.
 
-\bibitem{DaSilva2015}
+\bibitem{Hufsky2014}
 \BIBentryALTinterwordspacing
-R.~R. da~Silva, P.~C. Dorrestein, and R.~A. Quinn, ``{Illuminating the dark
-  matter in metabolomics},'' \emph{Proceedings of the National Academy of
-  Sciences}, vol. 112, no.~41, p. 201516878, 2015. [Online]. Available:
-  \url{http://www.pnas.org/content/early/2015/09/30/1516878112.extract}
+F.~Hufsky, K.~Scheubert, and S.~B{\"{o}}cker, ``{Computational mass
+  spectrometry for small-molecule fragmentation},'' \emph{TrAC - Trends in
+  Analytical Chemistry}, vol.~53, pp. 41--48, 2014. [Online]. Available:
+  \url{http://dx.doi.org/10.1016/j.trac.2013.09.008}
 \BIBentrySTDinterwordspacing
 
 \bibitem{Varmuza1996}
@@ -676,6 +676,13 @@ J.~Tomfohr, J.~Lu, and T.~B. Kepler, ``Pathway level analysis of gene
 A.~L. Tarca, G.~Bhatti, and R.~Romero, ``A comparison of gene set analysis
   methods in terms of sensitivity, prioritization and specificity,'' \emph{PloS
   one}, vol.~8, no.~11, p. e79217, 2013.
+
+\bibitem{Minka2003}
+\BIBentryALTinterwordspacing
+T.~P. Minka, ``{Estimating a Dirichlet distribution},'' \emph{Annals of
+  Physics}, vol. 2000, no.~8, pp. 1--13, 2003. [Online]. Available:
+  \url{http://research.microsoft.com/en-us/um/people/minka/papers/dirichlet/minka-dirichlet.pdf}
+\BIBentrySTDinterwordspacing
 
 \bibitem{griffiths2004hierarchical}
 D.~Griffiths and M.~Tenenbaum, ``Hierarchical topic models and the nested

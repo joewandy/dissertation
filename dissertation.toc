@@ -87,29 +87,30 @@
 \contentsline {section}{\numberline {6.6}Discussion and Conclusion}{86}{section.6.6}
 \contentsline {chapter}{\numberline {7}Substructure Discovery in Tandem Mass Spectometry Data}{89}{chapter.7}
 \contentsline {section}{\numberline {7.1}Introduction}{89}{section.7.1}
-\contentsline {section}{\numberline {7.2}Related Work}{91}{section.7.2}
-\contentsline {section}{\numberline {7.3}Statement of Original Work}{92}{section.7.3}
-\contentsline {section}{\numberline {7.4}A Workflow for Substructure Discoveries and Annotations}{92}{section.7.4}
-\contentsline {section}{\numberline {7.5}Evaluation Study}{98}{section.7.5}
-\contentsline {subsection}{\numberline {7.5.1}Evaluation Dataset}{98}{subsection.7.5.1}
-\contentsline {subsection}{\numberline {7.5.2}Model Comparison}{99}{subsection.7.5.2}
-\contentsline {subsection}{\numberline {7.5.3}Biochemical Analysis}{100}{subsection.7.5.3}
-\contentsline {subsubsection}{Validation to Reference Standard Molecules}{100}{section*.23}
-\contentsline {subsubsection}{Comparison to Spectral Clustering}{100}{section*.24}
-\contentsline {subsubsection}{Differential Analysis of Mass2Motifs}{101}{section*.25}
-\contentsline {section}{\numberline {7.6}Results \& Discussions}{101}{section.7.6}
-\contentsline {subsection}{\numberline {7.6.1}Model Comparison}{101}{subsection.7.6.1}
-\contentsline {subsection}{\numberline {7.6.2}Biochemical Analysis }{102}{subsection.7.6.2}
-\contentsline {subsubsection}{Validation to Reference Standard Molecules}{104}{section*.26}
-\contentsline {subsubsection}{Comparison to Spectral Clustering}{105}{section*.27}
-\contentsline {subsubsection}{Differential Analysis of Mass2Motifs}{109}{section*.28}
-\contentsline {section}{\numberline {7.7}Substructure Discoveries Across Many Fragmentation Files}{110}{section.7.7}
-\contentsline {subsection}{\numberline {7.7.1}Multi-file LDA Model}{111}{subsection.7.7.1}
-\contentsline {subsection}{\numberline {7.7.2}Results \& Discussion}{113}{subsection.7.7.2}
-\contentsline {section}{\numberline {7.8}Conclusion}{115}{section.7.8}
-\contentsline {chapter}{\numberline {8}Conclusion}{117}{chapter.8}
-\contentsline {section}{\numberline {8.1}Summary of Contributions}{117}{section.8.1}
-\contentsline {section}{\numberline {8.2}Future Work}{117}{section.8.2}
-\contentsline {section}{\numberline {8.3}Summary and Conclusions}{117}{section.8.3}
-\contentsline {chapter}{\numberline {A}An Appendix}{118}{appendix.A}
-\contentsline {chapter}{Bibliography}{119}{appendix.A}
+\contentsline {section}{\numberline {7.2}Related Work}{92}{section.7.2}
+\contentsline {section}{\numberline {7.3}Statement of Original Work}{93}{section.7.3}
+\contentsline {section}{\numberline {7.4}A Workflow for Substructure Discoveries and Annotations}{93}{section.7.4}
+\contentsline {subsubsection}{MS2LDAVis}{97}{section*.23}
+\contentsline {section}{\numberline {7.5}Evaluation Study}{99}{section.7.5}
+\contentsline {subsection}{\numberline {7.5.1}Evaluation Dataset}{99}{subsection.7.5.1}
+\contentsline {subsection}{\numberline {7.5.2}Model Comparison}{100}{subsection.7.5.2}
+\contentsline {subsection}{\numberline {7.5.3}Biochemical Analysis}{101}{subsection.7.5.3}
+\contentsline {subsubsection}{Validation to Reference Standard Molecules}{101}{section*.24}
+\contentsline {subsubsection}{Comparison to Spectral Clustering}{101}{section*.25}
+\contentsline {subsubsection}{Differential Analysis of Mass2Motifs}{102}{section*.26}
+\contentsline {section}{\numberline {7.6}Results \& Discussions}{103}{section.7.6}
+\contentsline {subsection}{\numberline {7.6.1}Model Comparison}{103}{subsection.7.6.1}
+\contentsline {subsection}{\numberline {7.6.2}Biochemical Analysis }{104}{subsection.7.6.2}
+\contentsline {subsubsection}{Validation to Reference Standard Molecules}{106}{section*.27}
+\contentsline {subsubsection}{Comparison to Spectral Clustering}{107}{section*.28}
+\contentsline {subsubsection}{Differential Analysis of Mass2Motifs}{109}{section*.29}
+\contentsline {section}{\numberline {7.7}Substructure Discoveries Across Many Fragmentation Files}{112}{section.7.7}
+\contentsline {subsection}{\numberline {7.7.1}Multi-file LDA Model}{113}{subsection.7.7.1}
+\contentsline {subsection}{\numberline {7.7.2}Results \& Discussion}{115}{subsection.7.7.2}
+\contentsline {section}{\numberline {7.8}Conclusion}{118}{section.7.8}
+\contentsline {chapter}{\numberline {8}Conclusion}{120}{chapter.8}
+\contentsline {section}{\numberline {8.1}Summary of Contributions}{120}{section.8.1}
+\contentsline {section}{\numberline {8.2}Future Work}{120}{section.8.2}
+\contentsline {section}{\numberline {8.3}Summary and Conclusions}{120}{section.8.3}
+\contentsline {chapter}{\numberline {A}An Appendix}{121}{appendix.A}
+\contentsline {chapter}{Bibliography}{122}{appendix.A}
