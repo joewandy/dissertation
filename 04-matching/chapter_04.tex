@@ -3,18 +3,21 @@
 
 \section{Introduction}
 
+\textbf{Intro doesn't motivate the problem well}
+
 According to \cite{Smith2015}, the objective function used for alignment can be improved by operating on the groupings of related IP peaks rather than at individual peak level alone. However, one of the alignment tools surveyed in Section~\ref{sub:alignment-tools} take into account this structural dependencies between related peaks produced by the same metabolite when solving the correspondence problem. Such information could potentially be used to improve the alignment process since a set of related peaks in one run should generally be aligned to another set of related peaks in the other run. As described in Section~\ref{sub:related-peaks}, related peaks are defined to be all those peaks that appear in a run due to the presence of one compound (peptide/metabolite) in the sample being analysed. Examples of related peaks are isotope peaks, multiple adduct and deduct peaks, and fragment peaks, elaborated further in Section~\ref{sub:related-peaks}. Such peaks should co-elute from the column and have similar chromatographic shapes and RT values. The related peak information can come from any peak grouping methods, of which clustering via RT is one instance, but one key assumption is that groups of co-eluting peaks corresponding to the same metabolite are generally preserved across runs. 
 
-In this chapter, we propose clustering the related peaks sharing similar RT values together, and using the information from the clustering process to modify the similarity score matrix used for the alignment (matching) of peaks across runs. This idea is illustrated in Figure~\ref{fig:computingweight} and further introduced in Sections~\ref{sub:direct-matching} and ~\ref{sub:incorporating-grouping}. As shown in Figure~\ref{fig:computingweight}, initial weights are computed between pairs of peaks in the two runs that are within m/z and RT tolerances (e.g. $W_{AE}$ and $W_{AJ}$). When related peak information is added, the similarity between peaks $A$ and $E$ is increased due to peak $A$ being related to another peak ($B$) that is similar to a peak ($G$) related to $E$. On the other hand, the similarity between $A$ and $J$ is not increased as $J$ does not have any related peaks that could potentially be matched to peaks related to $A$. In other words, we are proposing using the structural dependencies present between peaks in each run to modify the similarity scores and improve alignment performance: the more peaks related to $A$ that could be matched to peaks related to $E$, the more likely it becomes that $A$ should be matched to $E$. 
+In this chapter, we propose clustering the related peaks sharing similar RT values together, and using the information from the clustering process to modify the similarity score matrix used for the alignment (matching) of peaks across runs. 
 
-\begin{figure*}[!htbp]
-\centering\includegraphics[width=1\linewidth]{04-matching/figures/figure_1.eps}
-\centering\caption{\label{fig:computingweight} Illustrative example of the incorporation of grouping information into the similarity score. Each node in the figure is a peak feature, and dotted ovals represent groups of related peaks, e.g. isotopes, fragments, etc. Initially weights (e.g. $W_{AE}$) are computed for pairs of peaks (one from each run) with m/z and RT within pre-defined thresholds. These weights are converted into an overall score by incorporating grouping information. For example, peak pairs $(A,E)$ and $(B,G)$ are both within the threshold. Because $A$ and $B$ are in the same group, and $E$ and $G$ are in the same group, the weights between pairs $(A,E)$ and $(B,G)$ are upweighted. Peak $J$ is not related to any peaks that could be matched with $A$'s related peaks and the similarity between $A$ and $J$ is therefore downweighted (because $\alpha\leq 1$). The same applies to similarities between pairs $(C,H)$ and $(D,I)$.}
-\end{figure*}
+\section{Related Work}
+
+Talk about direct matching ...
+
+Talk about clustering ...
 
 \subsection*{Statement of Original Work}
 
-The idea of constructing alignment via approximate maximum weighted matching was proposed by the author. Simon Rogers conceived the idea of using the clustering information of related peaks to modify the similarity matrix used for matching. Code implementation and performance evaluation was carried out by the author. 
+The work discussed in this chapter has been published as \cite{wandy2015incorporating}. The author proposed the idea of constructing alignment via direct matching, incorporated clustering information into alignment and evaluated the performance of the methods. 
 
 \section{Direct Matching\label{sub:direct-matching}}
 
@@ -39,6 +42,13 @@ W(\boldsymbol{p}_{i},\boldsymbol{p}_{j})=1-\frac{D(\boldsymbol{p}_{i},\boldsymbo
 where $D_{max}$ is the maximum computed distance between peaks in the two runs being aligned. Collectively, we call the $N_A\times N_B$ matrix of similarity scores between all peaks in run A and B to be $\boldsymbol{W}$. 
 
 \section{Incorporating Related Peak Groups\label{sub:incorporating-grouping}}
+
+This idea is illustrated in Figure~\ref{fig:computingweight} and further introduced in Sections~\ref{sub:direct-matching} and ~\ref{sub:incorporating-grouping}. As shown in Figure~\ref{fig:computingweight}, initial weights are computed between pairs of peaks in the two runs that are within m/z and RT tolerances (e.g. $W_{AE}$ and $W_{AJ}$). When related peak information is added, the similarity between peaks $A$ and $E$ is increased due to peak $A$ being related to another peak ($B$) that is similar to a peak ($G$) related to $E$. On the other hand, the similarity between $A$ and $J$ is not increased as $J$ does not have any related peaks that could potentially be matched to peaks related to $A$. In other words, we are proposing using the structural dependencies present between peaks in each run to modify the similarity scores and improve alignment performance: the more peaks related to $A$ that could be matched to peaks related to $E$, the more likely it becomes that $A$ should be matched to $E$. 
+
+\begin{figure*}[!htbp]
+\centering\includegraphics[width=1\linewidth]{04-matching/figures/figure_1.eps}
+\centering\caption{\label{fig:computingweight} Illustrative example of the incorporation of grouping information into the similarity score. Each node in the figure is a peak feature, and dotted ovals represent groups of related peaks, e.g. isotopes, fragments, etc. Initially weights (e.g. $W_{AE}$) are computed for pairs of peaks (one from each run) with m/z and RT within pre-defined thresholds. These weights are converted into an overall score by incorporating grouping information. For example, peak pairs $(A,E)$ and $(B,G)$ are both within the threshold. Because $A$ and $B$ are in the same group, and $E$ and $G$ are in the same group, the weights between pairs $(A,E)$ and $(B,G)$ are upweighted. Peak $J$ is not related to any peaks that could be matched with $A$'s related peaks and the similarity between $A$ and $J$ is therefore downweighted (because $\alpha\leq 1$). The same applies to similarities between pairs $(C,H)$ and $(D,I)$.}
+\end{figure*}
 
 \subsection{Combining Scores}
 
@@ -507,3 +517,5 @@ Note that our method relies on grouping of related peaks, and this introduces ad
 It would be interesting to investigate in greater detail any performance improvements that can be obtained from using other peak grouping methods, such as \cite{Rogers2012} that uses a mixture model of peak shape correlations or \cite{Daly2014} that considers the dependencies between adduct and isotopic peaks when clustering. Exploring alternative approximate matching algorithms (such as the scaling algorithm in \cite{Maximum2011}, which provides a $(1-\epsilon)$ approximation of the maximum weighted matching in optimal linear time for any $\epsilon$) and evaluating the benefits of incorporating different clustering approaches into our proposed alignment method are avenues for future work. Finally, the different alignment methods evaluated in this chapter also suffer from variable behaviours depending on the order of the runs being aligned \cite{Smith2014}. This is particularly true in the case of alignment of multiple runs (typical in large-scale LC-MS studies), where the final alignment results are often constructed through merging of intermediate alignments of pairwise runs. Different alignment methods may employ a different merging approach, for example, Join merges the intermediate results towards a reference run while SIMA allows the possibility of using a greedy hierarchical merging scheme. Systematic evaluation on how the chosen merging scheme may influence alignment performance is beyond the scope of this chapter and is an item for future work.
 
 The related-peak based similarity score that underpins our approach could be applied to many other direct matching approaches, e.g. SIMA: \cite{Voss2011a} and similar ideas could also be incorporated into recently developed methods that take into account the presence of internal standards \cite{Tsai2013a}. The evaluation datasets and pipeline developed over the course of our experiments in this chapter serves as the foundation for performance evaluations in subsequent chapters that follow.
+
+\textbf{Conclusion should lead to the next chapter}
