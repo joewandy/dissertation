@@ -128,13 +128,11 @@ J.~Zhang, E.~Gonzalez, T.~Hestilow, W.~Haskins, and Y.~Huang, ``{Review of peak
   \url{http://www.pubmedcentral.nih.gov/articlerender.fcgi?artid=2766790{\&}tool=pmcentrez{\&}rendertype=abstract}
 \BIBentrySTDinterwordspacing
 
-\bibitem{Keller2008}
-\BIBentryALTinterwordspacing
-B.~O. Keller, J.~Sui, A.~B. Young, and R.~M. Whittal, ``{Interferences and
-  contaminants encountered in modern mass spectrometry.}'' \emph{Analytica
-  chimica acta}, vol. 627, no.~1, pp. 71--81, oct 2008. [Online]. Available:
-  \url{http://www.ncbi.nlm.nih.gov/pubmed/18790129}
-\BIBentrySTDinterwordspacing
+\bibitem{podwojski2009retention}
+K.~Podwojski, A.~Fritsch, D.~C. Chamrad, W.~Paul, B.~Sitek, P.~Mutzel,
+  C.~Stephan, H.~E. Meyer, W.~Urfer, K.~Ickstadt \emph{et~al.}, ``Retention
+  time alignment algorithms for lc/ms data must consider nonlinear shifts,''
+  \emph{Bioinformatics}, p. btp052, 2009.
 
 \bibitem{Smith2013}
 R.~Smith, D.~Ventura, and J.~T. Prince, ``{{\{}LC{\}}-{\{}MS{\}} alignment in
@@ -245,33 +243,21 @@ C.~a. Smith, E.~J. Want, G.~O'Maille, R.~Abagyan, and G.~Siuzdak, ``{XCMS:
   \url{http://www.ncbi.nlm.nih.gov/pubmed/16448051}
 \BIBentrySTDinterwordspacing
 
-\bibitem{Podwojski2009}
+\bibitem{Keller2008}
 \BIBentryALTinterwordspacing
-``{Retention time alignment algorithms for LC/MS data must consider non-linear
-  shifts.}'' \emph{Bioinformatics (Oxford, England)}, vol.~25, no.~6, pp.
-  758--64, mar 2009. [Online]. Available:
-  \url{http://www.ncbi.nlm.nih.gov/pubmed/19176558}
+B.~O. Keller, J.~Sui, A.~B. Young, and R.~M. Whittal, ``{Interferences and
+  contaminants encountered in modern mass spectrometry.}'' \emph{Analytica
+  chimica acta}, vol. 627, no.~1, pp. 71--81, oct 2008. [Online]. Available:
+  \url{http://www.ncbi.nlm.nih.gov/pubmed/18790129}
 \BIBentrySTDinterwordspacing
 
-\bibitem{DeVos2007a}
-R.~C.~H. {De Vos}, S.~Moco, A.~Lommen, J.~J.~B. Keurentjes, R.~J. Bino, and
-  R.~D. Hall, ``{Untargeted large-scale plant metabolomics using liquid
-  chromatography coupled to mass spectrometry.}'' \emph{Nat. Protoc.}, vol.~2,
-  no.~4, pp. 778--791, jan 2007.
-
-\bibitem{Creek2011}
-D.~J. Creek, A.~Jankevics, R.~Breitling, D.~G. Watson, M.~P. Barrett, and
-  K.~E.~V. Burgess, ``{Toward global metabolomics analysis with hydrophilic
-  interaction liquid chromatography--mass spectrometry: improved metabolite
-  identification by retention time prediction},'' \emph{Analytical Chemistry},
-  vol.~83, no.~22, pp. 8703--8710, 2011.
-
-\bibitem{Chawade2015}
+\bibitem{Kuhl2012}
 \BIBentryALTinterwordspacing
-A.~Chawade, M.~Sandin, J.~Teleman, J.~Malmstr{\"{o}}m, and F.~Levander, ``{Data
-  processing has major impact on the outcome of quantitative label-free LC-MS
-  analysis.}'' \emph{Journal of proteome research}, vol.~14, no.~2, pp.
-  676--87, 2015. [Online]. Available: \url{http://dx.doi.org/10.1021/pr500665j}
+C.~Kuhl, R.~Tautenhahn, C.~B{\"{o}}ttcher, T.~R. Larson, and S.~Neumann,
+  ``{CAMERA: an integrated strategy for compound spectra extraction and
+  annotation of liquid chromatography/mass spectrometry data sets.}''
+  \emph{Analytical chemistry}, vol.~84, no.~1, pp. 283--9, jan 2012. [Online].
+  Available: \url{http://www.ncbi.nlm.nih.gov/pubmed/22111785}
 \BIBentrySTDinterwordspacing
 
 \bibitem{dunn2011procedures}
@@ -296,15 +282,6 @@ T.~Kind and O.~Fiehn, ``{Metabolomic database annotations via query of
   ppm.}'' \emph{BMC bioinformatics}, vol.~7, p. 234, jan 2006. [Online].
   Available:
   \url{http://www.pubmedcentral.nih.gov/articlerender.fcgi?artid=1464138{\&}tool=pmcentrez{\&}rendertype=abstract}
-\BIBentrySTDinterwordspacing
-
-\bibitem{Kuhl2012}
-\BIBentryALTinterwordspacing
-C.~Kuhl, R.~Tautenhahn, C.~B{\"{o}}ttcher, T.~R. Larson, and S.~Neumann,
-  ``{CAMERA: an integrated strategy for compound spectra extraction and
-  annotation of liquid chromatography/mass spectrometry data sets.}''
-  \emph{Analytical chemistry}, vol.~84, no.~1, pp. 283--9, jan 2012. [Online].
-  Available: \url{http://www.ncbi.nlm.nih.gov/pubmed/22111785}
 \BIBentrySTDinterwordspacing
 
 \bibitem{Daly2014}
@@ -347,6 +324,19 @@ J.~Krumsiek, K.~Suhre, A.~M. Evans, M.~W. Mitchell, R.~P. Mohney, M.~V.
   \url{http://www.pubmedcentral.nih.gov/articlerender.fcgi?artid=2581785{\&}tool=pmcentrez{\&}rendertype=abstract}
 \BIBentrySTDinterwordspacing
 
+\bibitem{DeVos2007a}
+R.~C.~H. {De Vos}, S.~Moco, A.~Lommen, J.~J.~B. Keurentjes, R.~J. Bino, and
+  R.~D. Hall, ``{Untargeted large-scale plant metabolomics using liquid
+  chromatography coupled to mass spectrometry.}'' \emph{Nat. Protoc.}, vol.~2,
+  no.~4, pp. 778--791, jan 2007.
+
+\bibitem{Creek2011}
+D.~J. Creek, A.~Jankevics, R.~Breitling, D.~G. Watson, M.~P. Barrett, and
+  K.~E.~V. Burgess, ``{Toward global metabolomics analysis with hydrophilic
+  interaction liquid chromatography--mass spectrometry: improved metabolite
+  identification by retention time prediction},'' \emph{Analytical Chemistry},
+  vol.~83, no.~22, pp. 8703--8710, 2011.
+
 \bibitem{mamas2011role}
 M.~Mamas, W.~B. Dunn, L.~Neyses, and R.~Goodacre, ``The role of metabolites and
   metabolomics in clinically applicable biomarkers of disease,'' \emph{Archives
@@ -372,6 +362,14 @@ C.~Rasmussen, ``{The infinite Gaussian mixture model},'' in \emph{Advances in
   Neural Information Processing Systems 12}.\hskip 1em plus 0.5em minus
   0.4em\relax MIT Press, 2000, pp. 554--560.
 
+\bibitem{Podwojski2009}
+\BIBentryALTinterwordspacing
+``{Retention time alignment algorithms for LC/MS data must consider non-linear
+  shifts.}'' \emph{Bioinformatics (Oxford, England)}, vol.~25, no.~6, pp.
+  758--64, mar 2009. [Online]. Available:
+  \url{http://www.ncbi.nlm.nih.gov/pubmed/19176558}
+\BIBentrySTDinterwordspacing
+
 \bibitem{Smith2015}
 \BIBentryALTinterwordspacing
 R.~Smith, J.~T. Prince, and D.~Ventura, ``{A coherent mathematical
@@ -380,6 +378,25 @@ R.~Smith, J.~T. Prince, and D.~Ventura, ``{A coherent mathematical
   p.~S1, 2015. [Online]. Available:
   \url{http://www.biomedcentral.com/1471-2105/16/S7/S1}
 \BIBentrySTDinterwordspacing
+
+\bibitem{DeSouza2006}
+D.~P. {De Souza}, E.~C. Saunders, M.~J. McConville, and V.~a. Liki\'{c},
+  ``{Progressive peak clustering in GC-MS Metabolomic experiments applied to
+  Leishmania parasites.}'' \emph{Bioinformatics}, vol.~22, no.~11, pp. 1391--6,
+  Jun. 2006.
+
+\bibitem{DeGroot2008}
+\BIBentryALTinterwordspacing
+J.~C.~W. de~Groot, M.~W. E.~J. Fiers, R.~C. H.~J. van Ham, and A.~H.~P.
+  America, ``{Post alignment clustering procedure for comparative quantitative
+  proteomics LC-MS data.}'' \emph{Proteomics}, vol.~8, no.~1, pp. 32--6, jan
+  2008. [Online]. Available: \url{http://www.ncbi.nlm.nih.gov/pubmed/18095361}
+\BIBentrySTDinterwordspacing
+
+\bibitem{wandy2015incorporating}
+J.~Wandy, R.~Daly, R.~Breitling, and S.~Rogers, ``Incorporating peak grouping
+  information for alignment of multiple liquid chromatography-mass spectrometry
+  datasets,'' \emph{Bioinformatics}, vol.~31, no.~12, pp. 1999--2006, 2015.
 
 \bibitem{Gusfield1989}
 D.~Gusfield and R.~Irving, \emph{{The stable marriage problem: structure and
@@ -493,12 +510,6 @@ M.~{Ghanat Bari}, X.~Ma, and J.~Zhang, ``{PeakLink: a new peptide peak linking
 M.~Sandin, A.~Ali, K.~Hansson, O.~M{\aa}nsson, and E.~Andreasson, ``{An
   Adaptive Alignment Algorithm for Quality-controlled Label-free LC-MS},''
   \emph{Mol Cell Proteomics}, pp. 1407--1420, 2013.
-
-\bibitem{DeSouza2006}
-D.~P. {De Souza}, E.~C. Saunders, M.~J. McConville, and V.~a. Liki\'{c},
-  ``{Progressive peak clustering in GC-MS Metabolomic experiments applied to
-  Leishmania parasites.}'' \emph{Bioinformatics}, vol.~22, no.~11, pp. 1391--6,
-  Jun. 2006.
 
 \bibitem{Teh2006}
 Y.~W. Teh, M.~I. Jordan, M.~J. Beal, and D.~M. Blei, ``Hierarchical dirichlet

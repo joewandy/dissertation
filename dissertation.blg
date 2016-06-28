@@ -17,52 +17,52 @@ Warning--I didn't find a database entry for "Lovell2012"
 -- See the "IEEEtran_bst_HOWTO.pdf" manual for usage information.
 Warning--missing publisher in Hoffmann2007
 Warning--empty author in Pedrioli2004
-Warning--empty author in Podwojski2009
 Warning--empty author in Gieger2008
 Warning--empty author in Gibney2005
+Warning--empty author in Podwojski2009
 Warning--missing publisher in Gusfield1989
 Warning--empty journal in Scott1994
 
 Done.
-You've used 101 entries,
+You've used 103 entries,
             4024 wiz_defined-function locations,
-            1491 strings with 30543 characters,
-and the built_in function-call counts, 87865 in all, are:
-= -- 7606
-> -- 2184
-< -- 817
-+ -- 1186
-- -- 387
-* -- 4424
-:= -- 13364
-add.period$ -- 203
-call.type$ -- 101
-change.case$ -- 101
-chr.to.int$ -- 1719
-cite$ -- 108
-duplicate$ -- 6211
-empty$ -- 6215
-format.name$ -- 468
-if$ -- 20165
+            1500 strings with 31058 characters,
+and the built_in function-call counts, 89673 in all, are:
+= -- 7753
+> -- 2249
+< -- 829
++ -- 1220
+- -- 401
+* -- 4510
+:= -- 13619
+add.period$ -- 207
+call.type$ -- 103
+change.case$ -- 103
+chr.to.int$ -- 1743
+cite$ -- 110
+duplicate$ -- 6347
+empty$ -- 6343
+format.name$ -- 484
+if$ -- 20587
 int.to.chr$ -- 0
-int.to.str$ -- 101
-missing$ -- 1040
-newline$ -- 420
-num.names$ -- 99
-pop$ -- 2068
+int.to.str$ -- 103
+missing$ -- 1066
+newline$ -- 426
+num.names$ -- 101
+pop$ -- 2129
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 2
-skip$ -- 6898
+skip$ -- 7038
 stack$ -- 0
-substring$ -- 4312
-swap$ -- 5583
-text.length$ -- 244
+substring$ -- 4382
+swap$ -- 5700
+text.length$ -- 248
 text.prefix$ -- 0
 top$ -- 5
-type$ -- 101
+type$ -- 103
 warning$ -- 7
-while$ -- 413
-width$ -- 104
-write$ -- 1208
+while$ -- 420
+width$ -- 106
+write$ -- 1228
 (There were 11 warnings)
