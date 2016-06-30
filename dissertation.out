@@ -28,8 +28,8 @@
 \BOOKMARK [1][-]{section.4.3}{A Direct Matching Method That Incorporates Clustering Information}{chapter.4}% 28
 \BOOKMARK [2][-]{subsection.4.3.1}{Feature Similarity}{section.4.3}% 29
 \BOOKMARK [2][-]{subsection.4.3.2}{Combining Related Peak Information}{section.4.3}% 30
-\BOOKMARK [2][-]{subsection.4.3.3}{Greedy Clustering of Related Peaks}{section.4.3}% 31
-\BOOKMARK [2][-]{subsection.4.3.4}{Mixture Model Clustering of Related Peaks}{section.4.3}% 32
+\BOOKMARK [2][-]{subsection.4.3.3}{Greedy Clustering of IP peaks}{section.4.3}% 31
+\BOOKMARK [2][-]{subsection.4.3.4}{Mixture Model Clustering of IP peaks}{section.4.3}% 32
 \BOOKMARK [1][-]{section.4.4}{Evaluation Study}{chapter.4}% 33
 \BOOKMARK [2][-]{subsection.4.4.1}{Proteomic Datasets}{section.4.4}% 34
 \BOOKMARK [2][-]{subsection.4.4.2}{Metabolomic Datasets}{section.4.4}% 35

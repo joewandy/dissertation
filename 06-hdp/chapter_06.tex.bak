@@ -14,7 +14,13 @@ Similar to the Cluster-Cluster model introduced in Section~\ref{sub:cluster-matc
 
 \section{Related Work}
 
-The goal of establishing the matching of peaks across multiple runs at once can be viewed as a clustering problem, where a set of peaks can be grouped (by their m/z, RT and other suitable features) into local clusters within each run (representing all of the peaks from an individual compound), which are further grouped into global clusters shared across runs. A preliminary form of this idea has been explored in \cite{DeSouza2006}, where hierarchical clustering is performed on the total ion chromatogram data to group peaks into within-run local clusters, which are further grouped into across-run super clusters. The highly accurate mass information available from modern LC-MS platforms is not used in \cite{DeSouza2006}, although it is highlighted as a possible future work. The choice of using a hierarchical clustering method in \cite{DeSouza2006} also requires choosing various user-defined parameters, such as determining a suitable cut-off for the dendogram produced, deciding on a suitable linkage method and defining an appropriate distance measure between groups of peaks.
+
+
+The goal of establishing the matching of peaks across multiple runs at once can be viewed as a clustering problem, where a set of peaks can be grouped (by their m/z, RT and other suitable features) into local clusters within each run (representing all of the peaks from an individual compound), which are further grouped into global clusters shared across runs. 
+
+Hierarchical clustering is also used for matching in \cite{DeSouza2006}. Peaks from the entire dataset are pooled and processed through a hierarchical clustering scheme. After The method in \cite{DeSouza2006} is applied to a pooled set of peaks from the entire dataset, although it can be applied to individual run as well. 
+
+A preliminary form of this idea is explored in \cite{DeSouza2006}, where hierarchical clustering is performed to group peaks into within-run local clusters, which are further grouped into across-run super clusters. The highly accurate mass information available from modern LC-MS platforms is not used in \cite{DeSouza2006} for clustering, although it is highlighted as a possible future work. The choice of using a hierarchical clustering method in \cite{DeSouza2006} also requires choosing various user-defined parameters, such as determining a suitable cut-off for the dendogram produced, deciding on a suitable linkage method and defining an appropriate distance measure between groups of peaks. The method was applied to GC-MS data with lmore reproducible retention time ..
 
 \section{Hierarchical Dirichlet Process Mixture Model for Alignment}
 
