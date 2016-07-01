@@ -14,6 +14,61 @@ volume = {9},
 year = {2013}
 }
 
+@article{Wang2012,
+abstract = {The hierarchical Dirichlet process (HDP) has become an important Bayesian nonparametric model for grouped data, such as document collections. The HDP is used to construct a flexible mixed-membership model where the number of components is determined by the data. As for most Bayesian nonparametric models, exact posterior inference is intractable — practitioners use Markov chain Monte Carlo (MCMC) or variational inference. Inspired by the split-merge MCMC algorithm for the Dirichlet process (DP) mixture model, we describe a novel split-merge MCMC sampling algorithm for posterior inference in the HDP. We study its properties on both synthetic data and text corpora. We find that split-merge MCMC for the HDP can provide significant improvements over traditional Gibbs sampling, and we give some understanding of the data properties that give rise to larger improvements.},
+archivePrefix = {arXiv},
+arxivId = {arXiv:1201.1657v1},
+author = {Wang, Chong and Blei, David M.},
+eprint = {arXiv:1201.1657v1},
+file = {:Users/joewandy/Documents/Mendeley Desktop/Wang, Blei/CoRR/Wang, Blei - 2012 - A Split-Merge MCMC Algorithm for the Hierarchical Dirichlet Process.pdf:pdf},
+isbn = {1609258177},
+issn = {1609258177},
+journal = {CoRR},
+keywords = {hierarchical dirichlet process,markov chain monte carlo,split and merge},
+mendeley-groups = {Metabolomics - Alignment},
+pages = {1--10},
+title = {{A Split-Merge MCMC Algorithm for the Hierarchical Dirichlet Process}},
+year = {2012}
+}
+
+@article{Perera2011,
+author = {Perera, Venura and {Torres Zabala}, Marta and Florance, Hannah and Smirnoff, Nicholas and Grant, Murray and Yang, Zheng Rong},
+doi = {10.1007/s11306-011-0389-x},
+file = {:Users/joewandy/Documents/Mendeley Desktop/Perera et al/Metabolomics/Perera et al. - 2011 - Aligning extracted LC-MS peak lists via density maximization.pdf:pdf},
+issn = {1573-3882},
+journal = {Metabolomics},
+keywords = {algorithm,density maximization {\'{a}},feature-based,global-merge,lc-ms,liquid chromatography-mass spectrometry,{\'{a}} feature alignment {\'{a}}},
+mendeley-groups = {Metabolomics - Alignment},
+mendeley-tags = {algorithm,feature-based,global-merge},
+month = {dec},
+number = {S1},
+pages = {175--185},
+title = {{Aligning extracted LC-MS peak lists via density maximization}},
+url = {http://www.springerlink.com/index/10.1007/s11306-011-0389-x},
+volume = {8},
+year = {2011}
+}
+
+@article{Tibshirani2004,
+abstract = {MOTIVATION: Early cancer detection has always been a major research focus in solid tumor oncology. Early tumor detection can theoretically result in lower stage tumors, more treatable diseases and ultimately higher cure rates with less treatment-related morbidities. Protein mass spectrometry is a potentially powerful tool for early cancer detection. We propose a novel method for sample classification from protein mass spectrometry data. When applied to spectra from both diseased and healthy patients, the 'peak probability contrast' technique provides a list of all common peaks among the spectra, their statistical significance and their relative importance in discriminating between the two groups. We illustrate the method on matrix-assisted laser desorption and ionization mass spectrometry data from a study of ovarian cancers. RESULTS: Compared to other statistical approaches for class prediction, the peak probability contrast method performs as well or better than several methods that require the full spectra, rather than just labelled peaks. It is also much more interpretable biologically. The peak probability contrast method is a potentially useful tool for sample classification from protein mass spectrometry data.},
+author = {Tibshirani, Robert and Hastie, Trevor and Narasimhan, Balasubramanian and Soltys, Scott and Shi, Gongyi and Koong, Albert and Le, Quynh-Thu},
+doi = {10.1093/bioinformatics/bth357},
+file = {:Users/joewandy/Documents/Mendeley Desktop/Tibshirani et al/Bioinformatics (Oxford, England)/Tibshirani et al. - 2004 - Sample classification from protein mass spectrometry, by 'peak probability contrasts'.pdf:pdf},
+issn = {1367-4803},
+journal = {Bioinformatics (Oxford, England)},
+keywords = {Algorithms,Artificial Intelligence,Biological,Biological: blood,Biological: classification,Cluster Analysis,Computer-Assisted,Computer-Assisted: methods,Diagnosis,Electrospray Ionization,Electrospray Ionization: metho,Female,Humans,Mass,Matrix-Assisted Laser Desorpti,Models,Neoplasm Proteins,Neoplasm Proteins: blood,Neoplasm Proteins: classification,Ovarian Neoplasms,Ovarian Neoplasms: blood,Ovarian Neoplasms: classification,Ovarian Neoplasms: diagnosis,Reproducibility of Results,Sensitivity and Specificity,Spectrometry,Statistical,Tumor Markers,algorithm,clustering,feature-based},
+mendeley-groups = {Metabolomics - Alignment},
+mendeley-tags = {algorithm,clustering,feature-based},
+month = {nov},
+number = {17},
+pages = {3034--44},
+pmid = {15226172},
+title = {{Sample classification from protein mass spectrometry, by 'peak probability contrasts'.}},
+url = {http://www.ncbi.nlm.nih.gov/pubmed/15226172},
+volume = {20},
+year = {2004}
+}
+
 @article{DeGroot2008,
 abstract = {Comparative LC-MS is a powerful method for detailed quantitative comparison of complex protein mixtures. Dedicated software is required for detection, matching, and alignment of peaks in multiple LC-MS datasets. However, retention time shifts, saturation effects, limitations of experimental accuracy, and possible occurrence of split peaks make it difficult for software to perfectly match all chromatograms. We describe a procedure to assess the above problems and show that dataset quality can be enhanced with the aid of cluster analysis.},
 author = {de Groot, Joost C W and Fiers, Mark W E J and van Ham, Roeland C H J and America, Antoine H P},

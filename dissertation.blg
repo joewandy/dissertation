@@ -11,7 +11,6 @@ Database file #1: bibliography/dissertation.bib
 Warning--I didn't find a database entry for "Smith2004"
 Warning--I didn't find a database entry for "Teh2005"
 Warning--I didn't find a database entry for "Blei2003"
-Warning--I didn't find a database entry for "Lovell2012"
 -- IEEEtran.bst version 1.12 (2007/01/11) by Michael Shell.
 -- http://www.michaelshell.org/tex/ieeetran/bibtex/
 -- See the "IEEEtran_bst_HOWTO.pdf" manual for usage information.
@@ -24,45 +23,45 @@ Warning--missing publisher in Gusfield1989
 Warning--empty journal in Scott1994
 
 Done.
-You've used 99 entries,
+You've used 102 entries,
             4024 wiz_defined-function locations,
-            1476 strings with 30316 characters,
-and the built_in function-call counts, 85849 in all, are:
-= -- 7430
-> -- 2152
-< -- 790
-+ -- 1168
-- -- 385
-* -- 4321
-:= -- 13063
-add.period$ -- 199
-call.type$ -- 99
-change.case$ -- 99
-chr.to.int$ -- 1656
-cite$ -- 106
-duplicate$ -- 6083
-empty$ -- 6064
-format.name$ -- 464
-if$ -- 19699
+            1493 strings with 31001 characters,
+and the built_in function-call counts, 88735 in all, are:
+= -- 7673
+> -- 2236
+< -- 818
++ -- 1213
+- -- 400
+* -- 4470
+:= -- 13497
+add.period$ -- 205
+call.type$ -- 102
+change.case$ -- 102
+chr.to.int$ -- 1719
+cite$ -- 109
+duplicate$ -- 6278
+empty$ -- 6261
+format.name$ -- 482
+if$ -- 20359
 int.to.chr$ -- 0
-int.to.str$ -- 99
-missing$ -- 1022
-newline$ -- 412
-num.names$ -- 97
-pop$ -- 2040
+int.to.str$ -- 102
+missing$ -- 1056
+newline$ -- 425
+num.names$ -- 100
+pop$ -- 2110
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 2
-skip$ -- 6740
+skip$ -- 6958
 stack$ -- 0
-substring$ -- 4170
-swap$ -- 5455
-text.length$ -- 238
+substring$ -- 4321
+swap$ -- 5637
+text.length$ -- 245
 text.prefix$ -- 0
 top$ -- 5
-type$ -- 99
+type$ -- 102
 warning$ -- 7
-while$ -- 400
-width$ -- 101
-write$ -- 1183
-(There were 11 warnings)
+while$ -- 415
+width$ -- 105
+write$ -- 1220
+(There were 10 warnings)

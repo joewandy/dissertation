@@ -66,51 +66,47 @@
 \contentsline {section}{\numberline {5.6}Conclusions}{69}{section.5.6}
 \contentsline {chapter}{\numberline {6}Hierarchical Clustering of LC-MS Peaks}{72}{chapter.6}
 \contentsline {section}{\numberline {6.1}Introduction}{72}{section.6.1}
-\contentsline {section}{\numberline {6.2}Related Work}{74}{section.6.2}
+\contentsline {section}{\numberline {6.2}Related Work}{73}{section.6.2}
 \contentsline {section}{\numberline {6.3}Hierarchical Dirichlet Process Mixture Model for Alignment}{74}{section.6.3}
-\contentsline {subsection}{\numberline {6.3.1}Model Description}{74}{subsection.6.3.1}
-\contentsline {subsection}{\numberline {6.3.2}Inference}{76}{subsection.6.3.2}
-\contentsline {subsubsection}{Updating peak assignments}{77}{section*.19}
-\contentsline {subsubsection}{Updating instantiated variables}{78}{section*.20}
-\contentsline {subsection}{\numberline {6.3.3}Using the Inference Results}{79}{subsection.6.3.3}
-\contentsline {subsubsection}{Feature Matching}{79}{section*.21}
-\contentsline {subsubsection}{Isotopic Product and Metabolite Identity Annotations}{79}{section*.22}
-\contentsline {section}{\numberline {6.4}Evaluation Study}{80}{section.6.4}
-\contentsline {subsection}{\numberline {6.4.1}Evaluation Datasets}{80}{subsection.6.4.1}
-\contentsline {subsection}{\numberline {6.4.2}Performance Measures}{82}{subsection.6.4.2}
-\contentsline {subsection}{\numberline {6.4.3}Benchmarking Method}{83}{subsection.6.4.3}
-\contentsline {subsection}{\numberline {6.4.4}Parameter Optimisations}{83}{subsection.6.4.4}
-\contentsline {section}{\numberline {6.5}Results}{84}{section.6.5}
-\contentsline {subsection}{\numberline {6.5.1}Proteomic (P1) Results}{85}{subsection.6.5.1}
-\contentsline {subsection}{\numberline {6.5.2}Glycomic and Metabolomic Results}{85}{subsection.6.5.2}
-\contentsline {subsection}{\numberline {6.5.3}Running Time}{87}{subsection.6.5.3}
-\contentsline {section}{\numberline {6.6}Discussion and Conclusion}{88}{section.6.6}
-\contentsline {chapter}{\numberline {7}Substructure Discovery in Tandem Mass Spectometry Data}{91}{chapter.7}
-\contentsline {section}{\numberline {7.1}Introduction}{91}{section.7.1}
-\contentsline {section}{\numberline {7.2}Related Work}{93}{section.7.2}
-\contentsline {section}{\numberline {7.3}Statement of Original Work}{94}{section.7.3}
-\contentsline {section}{\numberline {7.4}A Workflow for Substructure Discoveries and Annotations}{95}{section.7.4}
-\contentsline {subsubsection}{MS2LDAVis}{98}{section*.23}
-\contentsline {section}{\numberline {7.5}Evaluation Study}{101}{section.7.5}
-\contentsline {subsection}{\numberline {7.5.1}Evaluation Dataset}{101}{subsection.7.5.1}
-\contentsline {subsection}{\numberline {7.5.2}Model Comparison}{101}{subsection.7.5.2}
-\contentsline {subsection}{\numberline {7.5.3}Biochemical Analysis}{102}{subsection.7.5.3}
-\contentsline {subsubsection}{Validation to Reference Standard Molecules}{102}{section*.24}
-\contentsline {subsubsection}{Comparison to Spectral Clustering}{103}{section*.25}
-\contentsline {subsubsection}{Differential Analysis of Mass2Motifs}{103}{section*.26}
-\contentsline {section}{\numberline {7.6}Results \& Discussions}{104}{section.7.6}
-\contentsline {subsection}{\numberline {7.6.1}Model Comparison}{104}{subsection.7.6.1}
-\contentsline {subsection}{\numberline {7.6.2}Biochemical Analysis }{105}{subsection.7.6.2}
-\contentsline {subsubsection}{Validation to Reference Standard Molecules}{107}{section*.27}
-\contentsline {subsubsection}{Comparison to Spectral Clustering}{110}{section*.28}
-\contentsline {subsubsection}{Differential Analysis of Mass2Motifs}{112}{section*.29}
-\contentsline {section}{\numberline {7.7}Substructure Discoveries Across Many Fragmentation Files}{114}{section.7.7}
-\contentsline {subsection}{\numberline {7.7.1}Multi-file LDA Model}{114}{subsection.7.7.1}
-\contentsline {subsection}{\numberline {7.7.2}Results \& Discussion}{116}{subsection.7.7.2}
-\contentsline {section}{\numberline {7.8}Conclusion}{119}{section.7.8}
-\contentsline {chapter}{\numberline {8}Conclusion}{121}{chapter.8}
-\contentsline {section}{\numberline {8.1}Summary of Contributions}{121}{section.8.1}
-\contentsline {section}{\numberline {8.2}Future Work}{121}{section.8.2}
-\contentsline {section}{\numberline {8.3}Summary and Conclusions}{121}{section.8.3}
-\contentsline {chapter}{\numberline {A}An Appendix}{122}{appendix.A}
-\contentsline {chapter}{Bibliography}{123}{appendix.A}
+\contentsline {section}{\numberline {6.4}Inference}{77}{section.6.4}
+\contentsline {subsection}{\numberline {6.4.1}Updating peak assignments}{77}{subsection.6.4.1}
+\contentsline {subsection}{\numberline {6.4.2}Updating instantiated variables}{79}{subsection.6.4.2}
+\contentsline {subsection}{\numberline {6.4.3}Using the Inference Results}{79}{subsection.6.4.3}
+\contentsline {subsection}{\numberline {6.4.4}Isotopic Product and Metabolite Identity Annotations}{80}{subsection.6.4.4}
+\contentsline {section}{\numberline {6.5}Evaluation Study}{81}{section.6.5}
+\contentsline {subsection}{\numberline {6.5.1}Evaluation Datasets}{81}{subsection.6.5.1}
+\contentsline {subsection}{\numberline {6.5.2}Baseline Methods for Evaluation}{82}{subsection.6.5.2}
+\contentsline {subsection}{\numberline {6.5.3}Parameter Optimisations}{83}{subsection.6.5.3}
+\contentsline {section}{\numberline {6.6}Results and Discussions}{84}{section.6.6}
+\contentsline {subsection}{\numberline {6.6.1}Proteomic (P1) Results}{84}{subsection.6.6.1}
+\contentsline {subsection}{\numberline {6.6.2}Glycomic and Metabolomic Results}{86}{subsection.6.6.2}
+\contentsline {section}{\numberline {6.7}Conclusion}{90}{section.6.7}
+\contentsline {chapter}{\numberline {7}Substructure Discovery in Tandem Mass Spectometry Data}{92}{chapter.7}
+\contentsline {section}{\numberline {7.1}Introduction}{92}{section.7.1}
+\contentsline {section}{\numberline {7.2}Related Work}{94}{section.7.2}
+\contentsline {section}{\numberline {7.3}Statement of Original Work}{95}{section.7.3}
+\contentsline {section}{\numberline {7.4}A Workflow for Substructure Discoveries and Annotations}{96}{section.7.4}
+\contentsline {subsubsection}{MS2LDAVis}{99}{section*.19}
+\contentsline {section}{\numberline {7.5}Evaluation Study}{102}{section.7.5}
+\contentsline {subsection}{\numberline {7.5.1}Evaluation Dataset}{102}{subsection.7.5.1}
+\contentsline {subsection}{\numberline {7.5.2}Model Comparison}{102}{subsection.7.5.2}
+\contentsline {subsection}{\numberline {7.5.3}Biochemical Analysis}{103}{subsection.7.5.3}
+\contentsline {subsubsection}{Validation to Reference Standard Molecules}{103}{section*.20}
+\contentsline {subsubsection}{Comparison to Spectral Clustering}{104}{section*.21}
+\contentsline {subsubsection}{Differential Analysis of Mass2Motifs}{104}{section*.22}
+\contentsline {section}{\numberline {7.6}Results \& Discussions}{105}{section.7.6}
+\contentsline {subsection}{\numberline {7.6.1}Model Comparison}{105}{subsection.7.6.1}
+\contentsline {subsection}{\numberline {7.6.2}Biochemical Analysis }{106}{subsection.7.6.2}
+\contentsline {subsubsection}{Validation to Reference Standard Molecules}{108}{section*.23}
+\contentsline {subsubsection}{Comparison to Spectral Clustering}{111}{section*.24}
+\contentsline {subsubsection}{Differential Analysis of Mass2Motifs}{113}{section*.25}
+\contentsline {section}{\numberline {7.7}Substructure Discoveries Across Many Fragmentation Files}{115}{section.7.7}
+\contentsline {subsection}{\numberline {7.7.1}Multi-file LDA Model}{115}{subsection.7.7.1}
+\contentsline {subsection}{\numberline {7.7.2}Results \& Discussion}{117}{subsection.7.7.2}
+\contentsline {section}{\numberline {7.8}Conclusion}{120}{section.7.8}
+\contentsline {chapter}{\numberline {8}Conclusion}{122}{chapter.8}
+\contentsline {section}{\numberline {8.1}Summary of Contributions}{122}{section.8.1}
+\contentsline {section}{\numberline {8.2}Future Work}{122}{section.8.2}
+\contentsline {section}{\numberline {8.3}Summary and Conclusions}{122}{section.8.3}
+\contentsline {chapter}{\numberline {A}An Appendix}{123}{appendix.A}
+\contentsline {chapter}{Bibliography}{124}{appendix.A}
