@@ -3,110 +3,110 @@
 \contentsline {section}{\numberline {1.2}Overview of Thesis and Research Contributions}{3}{section.1.2}
 \contentsline {chapter}{\numberline {2}Computational Biology}{4}{chapter.2}
 \contentsline {section}{\numberline {2.1}Computational Biology}{4}{section.2.1}
-\contentsline {section}{\numberline {2.2}Mass spectrometry-based omics}{6}{section.2.2}
-\contentsline {section}{\numberline {2.3}Mass Spectrometry}{7}{section.2.3}
-\contentsline {subsection}{\numberline {2.3.1}Metabolomics}{8}{subsection.2.3.1}
-\contentsline {subsection}{\numberline {2.3.2}Proteomics and Glyomics}{10}{subsection.2.3.2}
-\contentsline {subsection}{\numberline {2.3.3}Fragmentation}{10}{subsection.2.3.3}
-\contentsline {section}{\numberline {2.4}Metabolomics Pipeline: From Raw Data to Biological Hypothesis}{11}{section.2.4}
-\contentsline {subsection}{\numberline {2.4.1}Peak Detection}{12}{subsection.2.4.1}
-\contentsline {subsection}{\numberline {2.4.2}Peak Alignment}{12}{subsection.2.4.2}
-\contentsline {subsection}{\numberline {2.4.3}Peak Grouping}{14}{subsection.2.4.3}
-\contentsline {subsection}{\numberline {2.4.4}Peak Identification}{15}{subsection.2.4.4}
-\contentsline {subsection}{\numberline {2.4.5}Analysis}{16}{subsection.2.4.5}
-\contentsline {section}{\numberline {2.5}Conclusion}{17}{section.2.5}
-\contentsline {chapter}{\numberline {3}Machine Learning Background}{18}{chapter.3}
-\contentsline {section}{\numberline {3.1}Probabilities}{18}{section.3.1}
-\contentsline {section}{\numberline {3.2}Markov chain Monte Carlo methods}{18}{section.3.2}
-\contentsline {section}{\numberline {3.3}Mixture model clustering}{18}{section.3.3}
-\contentsline {section}{\numberline {3.4}Dirichlet Process mixture model clustering}{20}{section.3.4}
-\contentsline {section}{\numberline {3.5}Hierarchical Dirichlet Process mixture model clustering}{21}{section.3.5}
-\contentsline {section}{\numberline {3.6}Latent Dirichet Allocation}{22}{section.3.6}
-\contentsline {chapter}{\numberline {4}Incorporating Clustering Information into Peak Alignment}{24}{chapter.4}
-\contentsline {section}{\numberline {4.1}Introduction}{24}{section.4.1}
-\contentsline {section}{\numberline {4.2}Related Work}{25}{section.4.2}
-\contentsline {section}{\numberline {4.3}A Direct Matching Method That Incorporates Clustering Information}{26}{section.4.3}
-\contentsline {subsection}{\numberline {4.3.1}Feature Similarity}{27}{subsection.4.3.1}
-\contentsline {subsection}{\numberline {4.3.2}Combining Related Peak Information}{27}{subsection.4.3.2}
-\contentsline {subsection}{\numberline {4.3.3}Greedy Clustering of IP peaks}{28}{subsection.4.3.3}
-\contentsline {subsection}{\numberline {4.3.4}Mixture Model Clustering of IP peaks}{29}{subsection.4.3.4}
-\contentsline {section}{\numberline {4.4}Evaluation Study}{30}{section.4.4}
-\contentsline {subsection}{\numberline {4.4.1}Proteomic Datasets}{31}{subsection.4.4.1}
-\contentsline {subsection}{\numberline {4.4.2}Metabolomic Datasets}{32}{subsection.4.4.2}
-\contentsline {subsection}{\numberline {4.4.3}Glycomic Dataset}{33}{subsection.4.4.3}
-\contentsline {subsection}{\numberline {4.4.4}Experimental setup}{33}{subsection.4.4.4}
-\contentsline {subsection}{\numberline {4.4.5}Other Alignment Tools For Comparison}{35}{subsection.4.4.5}
-\contentsline {subsection}{\numberline {4.4.6}Parameter Optimisation}{36}{subsection.4.4.6}
-\contentsline {section}{\numberline {4.5}Results and Discussions}{37}{section.4.5}
-\contentsline {subsection}{\numberline {4.5.1}Proteomics Experiments}{37}{subsection.4.5.1}
-\contentsline {subsubsection}{Single-fraction Experiment}{37}{section*.13}
-\contentsline {subsubsection}{Multiple-fractions Experiment}{38}{section*.14}
-\contentsline {subsection}{\numberline {4.5.2}Metabolomic and Glycomic Datasets}{41}{subsection.4.5.2}
-\contentsline {subsection}{\numberline {4.5.3}Running Time}{43}{subsection.4.5.3}
-\contentsline {section}{\numberline {4.6}Conclusion}{44}{section.4.6}
-\contentsline {chapter}{\numberline {5}Precursor Clustering of Ionisation Product Peaks}{46}{chapter.5}
-\contentsline {section}{\numberline {5.1}Introduction}{46}{section.5.1}
-\contentsline {section}{\numberline {5.2}Related Work}{47}{section.5.2}
-\contentsline {section}{\numberline {5.3}Methods}{49}{section.5.3}
-\contentsline {subsection}{\numberline {5.3.1}PrecursorCluster: clustering of ionization product peaks}{50}{subsection.5.3.1}
-\contentsline {subsubsection}{Gibbs Sampling for PrecursorCluster}{53}{section*.17}
-\contentsline {subsection}{\numberline {5.3.2}Cluster-Match: direct matching of ionization product clusters}{53}{subsection.5.3.2}
-\contentsline {subsection}{\numberline {5.3.3}Cluster-Cluster: across-run clustering of ionization product clusters}{54}{subsection.5.3.3}
-\contentsline {subsubsection}{Gibbs Sampling for Cluster-Cluster}{57}{section*.18}
-\contentsline {section}{\numberline {5.4}Evaluation Study}{58}{section.5.4}
-\contentsline {subsection}{\numberline {5.4.1}Evaluation Datasets}{58}{subsection.5.4.1}
-\contentsline {subsection}{\numberline {5.4.2}Performance Measures}{58}{subsection.5.4.2}
-\contentsline {subsection}{\numberline {5.4.3}Evaluation Procedure}{59}{subsection.5.4.3}
-\contentsline {subsection}{\numberline {5.4.4}Parameter Optimization}{60}{subsection.5.4.4}
-\contentsline {section}{\numberline {5.5}Results and Discussions}{61}{section.5.5}
-\contentsline {subsection}{\numberline {5.5.1}Ionization Product Clustering from PrecursorCluster}{62}{subsection.5.5.1}
-\contentsline {subsection}{\numberline {5.5.2}Improved Alignment Performance from Cluster-Match}{65}{subsection.5.5.2}
-\contentsline {subsection}{\numberline {5.5.3}Probabilistic Matching Results from Cluster-Cluster}{67}{subsection.5.5.3}
-\contentsline {subsection}{\numberline {5.5.4}Running time}{68}{subsection.5.5.4}
-\contentsline {section}{\numberline {5.6}Conclusions}{69}{section.5.6}
-\contentsline {chapter}{\numberline {6}Hierarchical Clustering of LC-MS Peaks}{72}{chapter.6}
-\contentsline {section}{\numberline {6.1}Introduction}{72}{section.6.1}
-\contentsline {section}{\numberline {6.2}Related Work}{73}{section.6.2}
-\contentsline {section}{\numberline {6.3}Hierarchical Dirichlet Process Mixture Model for Alignment}{74}{section.6.3}
-\contentsline {section}{\numberline {6.4}Inference}{77}{section.6.4}
-\contentsline {subsection}{\numberline {6.4.1}Updating peak assignments}{77}{subsection.6.4.1}
-\contentsline {subsection}{\numberline {6.4.2}Updating instantiated variables}{79}{subsection.6.4.2}
-\contentsline {subsection}{\numberline {6.4.3}Using the Inference Results}{79}{subsection.6.4.3}
-\contentsline {subsection}{\numberline {6.4.4}Isotopic Product and Metabolite Identity Annotations}{80}{subsection.6.4.4}
-\contentsline {section}{\numberline {6.5}Evaluation Study}{81}{section.6.5}
-\contentsline {subsection}{\numberline {6.5.1}Evaluation Datasets}{81}{subsection.6.5.1}
-\contentsline {subsection}{\numberline {6.5.2}Baseline Methods for Evaluation}{82}{subsection.6.5.2}
-\contentsline {subsection}{\numberline {6.5.3}Parameter Optimisations}{83}{subsection.6.5.3}
-\contentsline {section}{\numberline {6.6}Results and Discussions}{84}{section.6.6}
-\contentsline {subsection}{\numberline {6.6.1}Proteomic (P1) Results}{84}{subsection.6.6.1}
-\contentsline {subsection}{\numberline {6.6.2}Glycomic and Metabolomic Results}{86}{subsection.6.6.2}
-\contentsline {section}{\numberline {6.7}Conclusion}{90}{section.6.7}
-\contentsline {chapter}{\numberline {7}Substructure Discovery in Tandem Mass Spectometry Data}{92}{chapter.7}
-\contentsline {section}{\numberline {7.1}Introduction}{92}{section.7.1}
-\contentsline {section}{\numberline {7.2}Related Work}{94}{section.7.2}
-\contentsline {section}{\numberline {7.3}Statement of Original Work}{95}{section.7.3}
-\contentsline {section}{\numberline {7.4}A Workflow for Substructure Discoveries and Annotations}{96}{section.7.4}
-\contentsline {subsubsection}{MS2LDAVis}{99}{section*.19}
-\contentsline {section}{\numberline {7.5}Evaluation Study}{102}{section.7.5}
-\contentsline {subsection}{\numberline {7.5.1}Evaluation Dataset}{102}{subsection.7.5.1}
-\contentsline {subsection}{\numberline {7.5.2}Model Comparison}{102}{subsection.7.5.2}
-\contentsline {subsection}{\numberline {7.5.3}Biochemical Analysis}{103}{subsection.7.5.3}
-\contentsline {subsubsection}{Validation to Reference Standard Molecules}{103}{section*.20}
-\contentsline {subsubsection}{Comparison to Spectral Clustering}{104}{section*.21}
-\contentsline {subsubsection}{Differential Analysis of Mass2Motifs}{104}{section*.22}
-\contentsline {section}{\numberline {7.6}Results \& Discussions}{105}{section.7.6}
-\contentsline {subsection}{\numberline {7.6.1}Model Comparison}{105}{subsection.7.6.1}
-\contentsline {subsection}{\numberline {7.6.2}Biochemical Analysis }{106}{subsection.7.6.2}
-\contentsline {subsubsection}{Validation to Reference Standard Molecules}{108}{section*.23}
-\contentsline {subsubsection}{Comparison to Spectral Clustering}{111}{section*.24}
-\contentsline {subsubsection}{Differential Analysis of Mass2Motifs}{113}{section*.25}
-\contentsline {section}{\numberline {7.7}Substructure Discoveries Across Many Fragmentation Files}{115}{section.7.7}
-\contentsline {subsection}{\numberline {7.7.1}Multi-file LDA Model}{115}{subsection.7.7.1}
-\contentsline {subsection}{\numberline {7.7.2}Results \& Discussion}{117}{subsection.7.7.2}
-\contentsline {section}{\numberline {7.8}Conclusion}{120}{section.7.8}
-\contentsline {chapter}{\numberline {8}Conclusion}{122}{chapter.8}
-\contentsline {section}{\numberline {8.1}Summary of Contributions}{122}{section.8.1}
-\contentsline {section}{\numberline {8.2}Future Work}{122}{section.8.2}
-\contentsline {section}{\numberline {8.3}Summary and Conclusions}{122}{section.8.3}
-\contentsline {chapter}{\numberline {A}An Appendix}{123}{appendix.A}
-\contentsline {chapter}{Bibliography}{124}{appendix.A}
+\contentsline {section}{\numberline {2.2}Measurement Technologies}{7}{section.2.2}
+\contentsline {section}{\numberline {2.3}LC-MS Analysis in Metabolomics}{10}{section.2.3}
+\contentsline {subsection}{\numberline {2.3.1}Raw Data Importing \& Peak Detection}{12}{subsection.2.3.1}
+\contentsline {subsection}{\numberline {2.3.2}Peak Alignment}{13}{subsection.2.3.2}
+\contentsline {subsubsection}{Warping-based Alignment Methods}{14}{section*.6}
+\contentsline {subsubsection}{Direct-matching Alignment Methods}{17}{section*.7}
+\contentsline {subsection}{\numberline {2.3.3}Gap Filling \& Noise Filtering}{18}{subsection.2.3.3}
+\contentsline {subsection}{\numberline {2.3.4}Peak Grouping}{18}{subsection.2.3.4}
+\contentsline {subsection}{\numberline {2.3.5}Peak Identification}{19}{subsection.2.3.5}
+\contentsline {subsection}{\numberline {2.3.6}Analysis}{20}{subsection.2.3.6}
+\contentsline {subsection}{\numberline {2.3.7}Mass Spectrometry Analysis in Proteomics}{21}{subsection.2.3.7}
+\contentsline {section}{\numberline {2.4}Conclusion}{22}{section.2.4}
+\contentsline {chapter}{\numberline {3}Machine Learning Background}{25}{chapter.3}
+\contentsline {section}{\numberline {3.1}Probabilities}{25}{section.3.1}
+\contentsline {section}{\numberline {3.2}Markov chain Monte Carlo methods}{25}{section.3.2}
+\contentsline {section}{\numberline {3.3}Mixture model clustering}{25}{section.3.3}
+\contentsline {section}{\numberline {3.4}Dirichlet Process mixture model clustering}{27}{section.3.4}
+\contentsline {section}{\numberline {3.5}Hierarchical Dirichlet Process mixture model clustering}{28}{section.3.5}
+\contentsline {section}{\numberline {3.6}Latent Dirichet Allocation}{29}{section.3.6}
+\contentsline {chapter}{\numberline {4}Incorporating Clustering Information into Peak Alignment}{31}{chapter.4}
+\contentsline {section}{\numberline {4.1}Introduction}{31}{section.4.1}
+\contentsline {section}{\numberline {4.2}Related Work}{32}{section.4.2}
+\contentsline {section}{\numberline {4.3}A Direct Matching Method That Incorporates Clustering Information}{33}{section.4.3}
+\contentsline {subsection}{\numberline {4.3.1}Feature Similarity}{34}{subsection.4.3.1}
+\contentsline {subsection}{\numberline {4.3.2}Combining Related Peak Information}{34}{subsection.4.3.2}
+\contentsline {subsection}{\numberline {4.3.3}Greedy Clustering of IP peaks}{35}{subsection.4.3.3}
+\contentsline {subsection}{\numberline {4.3.4}Mixture Model Clustering of IP peaks}{36}{subsection.4.3.4}
+\contentsline {section}{\numberline {4.4}Evaluation Study}{37}{section.4.4}
+\contentsline {subsection}{\numberline {4.4.1}Proteomic Datasets}{38}{subsection.4.4.1}
+\contentsline {subsection}{\numberline {4.4.2}Metabolomic Datasets}{39}{subsection.4.4.2}
+\contentsline {subsection}{\numberline {4.4.3}Glycomic Dataset}{40}{subsection.4.4.3}
+\contentsline {subsection}{\numberline {4.4.4}Experimental setup}{40}{subsection.4.4.4}
+\contentsline {subsection}{\numberline {4.4.5}Other Alignment Tools For Comparison}{42}{subsection.4.4.5}
+\contentsline {subsection}{\numberline {4.4.6}Parameter Optimisation}{43}{subsection.4.4.6}
+\contentsline {section}{\numberline {4.5}Results and Discussions}{44}{section.4.5}
+\contentsline {subsection}{\numberline {4.5.1}Proteomics Experiments}{44}{subsection.4.5.1}
+\contentsline {subsubsection}{Single-fraction Experiment}{44}{section*.11}
+\contentsline {subsubsection}{Multiple-fractions Experiment}{45}{section*.12}
+\contentsline {subsection}{\numberline {4.5.2}Metabolomic and Glycomic Datasets}{48}{subsection.4.5.2}
+\contentsline {subsection}{\numberline {4.5.3}Running Time}{50}{subsection.4.5.3}
+\contentsline {section}{\numberline {4.6}Conclusion}{51}{section.4.6}
+\contentsline {chapter}{\numberline {5}Precursor Clustering of Ionisation Product Peaks}{53}{chapter.5}
+\contentsline {section}{\numberline {5.1}Introduction}{53}{section.5.1}
+\contentsline {section}{\numberline {5.2}Related Work}{54}{section.5.2}
+\contentsline {section}{\numberline {5.3}Methods}{56}{section.5.3}
+\contentsline {subsection}{\numberline {5.3.1}PrecursorCluster: clustering of ionization product peaks}{57}{subsection.5.3.1}
+\contentsline {subsubsection}{Gibbs Sampling for PrecursorCluster}{60}{section*.15}
+\contentsline {subsection}{\numberline {5.3.2}Cluster-Match: direct matching of ionization product clusters}{60}{subsection.5.3.2}
+\contentsline {subsection}{\numberline {5.3.3}Cluster-Cluster: across-run clustering of ionization product clusters}{61}{subsection.5.3.3}
+\contentsline {subsubsection}{Gibbs Sampling for Cluster-Cluster}{64}{section*.16}
+\contentsline {section}{\numberline {5.4}Evaluation Study}{65}{section.5.4}
+\contentsline {subsection}{\numberline {5.4.1}Evaluation Datasets}{65}{subsection.5.4.1}
+\contentsline {subsection}{\numberline {5.4.2}Performance Measures}{65}{subsection.5.4.2}
+\contentsline {subsection}{\numberline {5.4.3}Evaluation Procedure}{66}{subsection.5.4.3}
+\contentsline {subsection}{\numberline {5.4.4}Parameter Optimization}{67}{subsection.5.4.4}
+\contentsline {section}{\numberline {5.5}Results and Discussions}{68}{section.5.5}
+\contentsline {subsection}{\numberline {5.5.1}Ionization Product Clustering from PrecursorCluster}{69}{subsection.5.5.1}
+\contentsline {subsection}{\numberline {5.5.2}Improved Alignment Performance from Cluster-Match}{72}{subsection.5.5.2}
+\contentsline {subsection}{\numberline {5.5.3}Probabilistic Matching Results from Cluster-Cluster}{74}{subsection.5.5.3}
+\contentsline {subsection}{\numberline {5.5.4}Running time}{75}{subsection.5.5.4}
+\contentsline {section}{\numberline {5.6}Conclusions}{76}{section.5.6}
+\contentsline {chapter}{\numberline {6}Hierarchical Clustering of LC-MS Peaks}{79}{chapter.6}
+\contentsline {section}{\numberline {6.1}Introduction}{79}{section.6.1}
+\contentsline {section}{\numberline {6.2}Related Work}{80}{section.6.2}
+\contentsline {section}{\numberline {6.3}Hierarchical Dirichlet Process Mixture Model for Alignment}{81}{section.6.3}
+\contentsline {section}{\numberline {6.4}Inference}{84}{section.6.4}
+\contentsline {subsection}{\numberline {6.4.1}Updating peak assignments}{84}{subsection.6.4.1}
+\contentsline {subsection}{\numberline {6.4.2}Updating instantiated variables}{86}{subsection.6.4.2}
+\contentsline {subsection}{\numberline {6.4.3}Using the Inference Results}{86}{subsection.6.4.3}
+\contentsline {subsection}{\numberline {6.4.4}Isotopic Product and Metabolite Identity Annotations}{87}{subsection.6.4.4}
+\contentsline {section}{\numberline {6.5}Evaluation Study}{88}{section.6.5}
+\contentsline {subsection}{\numberline {6.5.1}Evaluation Datasets}{88}{subsection.6.5.1}
+\contentsline {subsection}{\numberline {6.5.2}Baseline Methods for Evaluation}{89}{subsection.6.5.2}
+\contentsline {subsection}{\numberline {6.5.3}Parameter Optimisations}{90}{subsection.6.5.3}
+\contentsline {section}{\numberline {6.6}Results and Discussions}{91}{section.6.6}
+\contentsline {subsection}{\numberline {6.6.1}Proteomic (P1) Results}{91}{subsection.6.6.1}
+\contentsline {subsection}{\numberline {6.6.2}Glycomic and Metabolomic Results}{93}{subsection.6.6.2}
+\contentsline {section}{\numberline {6.7}Conclusion}{97}{section.6.7}
+\contentsline {chapter}{\numberline {7}Substructure Discovery in Tandem Mass Spectometry Data}{99}{chapter.7}
+\contentsline {section}{\numberline {7.1}Introduction}{99}{section.7.1}
+\contentsline {section}{\numberline {7.2}Related Work}{101}{section.7.2}
+\contentsline {section}{\numberline {7.3}Statement of Original Work}{102}{section.7.3}
+\contentsline {section}{\numberline {7.4}A Workflow for Substructure Discoveries and Annotations}{103}{section.7.4}
+\contentsline {subsubsection}{MS2LDAVis}{106}{section*.17}
+\contentsline {section}{\numberline {7.5}Evaluation Study}{109}{section.7.5}
+\contentsline {subsection}{\numberline {7.5.1}Evaluation Dataset}{109}{subsection.7.5.1}
+\contentsline {subsection}{\numberline {7.5.2}Model Comparison}{109}{subsection.7.5.2}
+\contentsline {subsection}{\numberline {7.5.3}Biochemical Analysis}{110}{subsection.7.5.3}
+\contentsline {subsubsection}{Validation to Reference Standard Molecules}{110}{section*.18}
+\contentsline {subsubsection}{Comparison to Spectral Clustering}{111}{section*.19}
+\contentsline {subsubsection}{Differential Analysis of Mass2Motifs}{111}{section*.20}
+\contentsline {section}{\numberline {7.6}Results \& Discussions}{112}{section.7.6}
+\contentsline {subsection}{\numberline {7.6.1}Model Comparison}{112}{subsection.7.6.1}
+\contentsline {subsection}{\numberline {7.6.2}Biochemical Analysis }{113}{subsection.7.6.2}
+\contentsline {subsubsection}{Validation to Reference Standard Molecules}{115}{section*.21}
+\contentsline {subsubsection}{Comparison to Spectral Clustering}{118}{section*.22}
+\contentsline {subsubsection}{Differential Analysis of Mass2Motifs}{120}{section*.23}
+\contentsline {section}{\numberline {7.7}Substructure Discoveries Across Many Fragmentation Files}{122}{section.7.7}
+\contentsline {subsection}{\numberline {7.7.1}Multi-file LDA Model}{122}{subsection.7.7.1}
+\contentsline {subsection}{\numberline {7.7.2}Results \& Discussion}{124}{subsection.7.7.2}
+\contentsline {section}{\numberline {7.8}Conclusion}{127}{section.7.8}
+\contentsline {chapter}{\numberline {8}Conclusion}{129}{chapter.8}
+\contentsline {section}{\numberline {8.1}Summary of Contributions}{129}{section.8.1}
+\contentsline {section}{\numberline {8.2}Future Work}{129}{section.8.2}
+\contentsline {section}{\numberline {8.3}Summary and Conclusions}{129}{section.8.3}
+\contentsline {chapter}{\numberline {A}An Appendix}{130}{appendix.A}
+\contentsline {chapter}{Bibliography}{131}{appendix.A}

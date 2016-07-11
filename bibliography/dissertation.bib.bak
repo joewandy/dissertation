@@ -1,3 +1,237 @@
+@article{Listgarten2005,
+annote = {More specific optimization strategies are based on addi-
+tional model assumptions.For example, the generative model of Listgarten et al. [46] is optimized using the Baum-Welch al- gorithm, which is a specific version of the EM algorithm [61] forHMMmodels. Petritis et al. [23] use a genetic algorithm to explore the search space for aligning multiple images. Such a procedure does not guarantee to find the optimal solution, and only a small part of the search space is actually explored. However, algorithms that guarantee to find a global optimum are often infeasible for complex search spaces.},
+author = {Listgarten, Jennifer and Neal, RM and Roweis, ST and Emili, Andrew},
+file = {:Users/joewandy/Documents/Mendeley Desktop/Listgarten et al/Advances in neural information processing systems/Listgarten et al. - 2005 - Multiple alignment of continuous time series.pdf:pdf},
+journal = {Advances in neural information processing systems},
+keywords = {algorithm,profile-based},
+mendeley-groups = {Metabolomics - Alignment},
+mendeley-tags = {algorithm,profile-based},
+title = {{Multiple alignment of continuous time series}},
+year = {2005}
+}
+
+@article{Lange2007,
+abstract = {Liquid chromatography coupled to mass spectrometry (LC-MS) and combined with tandem mass spectrometry (LC-MS/MS) have become a prominent tool for the analysis of complex proteomic samples. An important step in a typical workflow is the combination of results from multiple LC-MS experiments to improve confidence in the obtained measurements or to compare results from different samples. To do so, a suitable mapping or alignment between the data sets needs to be estimated. The alignment has to correct for variations in mass and elution time which are present in all mass spectrometry experiments.},
+annote = {Lange et al. [58] align images using affine linear transformations on the whole LC-MS image, thus including alignment of the m/z axis. As this class of transformations is defined by only two parameters, these can be found by tabulating likely parameter combinations from small subsets of data; parameters that occur most frequently are assumed to be correct. In a second stage, features known to correspond to each other (e.g. pairs of MS/MS identifications) are used to refine the parameters. Similar to Mueller et al. [56], the method is extended to allow alignment of multiple images by progressively aligning images to a reference.},
+author = {Lange, Eva and Gr{\"{o}}pl, Clemens and Schulz-Trieglaff, Ole and Leinenbach, Andreas and Huber, Christian and Reinert, Knut},
+doi = {10.1093/bioinformatics/btm209},
+file = {:Users/joewandy/Documents/Mendeley Desktop/Lange et al/Bioinformatics (Oxford, England)/Lange et al. - 2007 - A geometric approach for the alignment of liquid chromatography-mass spectrometry data.pdf:pdf},
+issn = {1367-4811},
+journal = {Bioinformatics (Oxford, England)},
+keywords = {Algorithms,Amino Acid Sequence,Chromatography,Liquid,Liquid: methods,Mass Spectrometry,Mass Spectrometry: methods,Peptide Mapping,Peptide Mapping: methods,Protein,Protein: methods,Proteome,Proteome: chemistry,Sequence Alignment,Sequence Alignment: methods,Sequence Analysis,algorithm,clustering,feature-based,profile-based,rtdrift,warping},
+mendeley-groups = {Metabolomics - Alignment},
+mendeley-tags = {algorithm,clustering,feature-based,profile-based,rtdrift,warping},
+month = {jul},
+number = {13},
+pages = {i273--81},
+pmid = {17646306},
+title = {{A geometric approach for the alignment of liquid chromatography-mass spectrometry data.}},
+url = {http://www.ncbi.nlm.nih.gov/pubmed/17646306},
+volume = {23},
+year = {2007}
+}
+
+@article{Panopoulos2012,
+abstract = {Metabolism is vital to every aspect of cell function, yet the metabolome of induced pluripotent stem cells (iPSCs) remains largely unexplored. Here we report, using an untargeted metabolomics approach, that human iPSCs share a pluripotent metabolomic signature with embryonic stem cells (ESCs) that is distinct from their parental cells, and that is characterized by changes in metabolites involved in cellular respiration. Examination of cellular bioenergetics corroborated with our metabolomic analysis, and demonstrated that somatic cells convert from an oxidative state to a glycolytic state in pluripotency. Interestingly, the bioenergetics of various somatic cells correlated with their reprogramming efficiencies. We further identified metabolites that differ between iPSCs and ESCs, which revealed novel metabolic pathways that play a critical role in regulating somatic cell reprogramming. Our findings are the first to globally analyze the metabolome of iPSCs, and provide mechanistic insight into a new layer of regulation involved in inducing pluripotency, and in evaluating iPSC and ESC equivalence.},
+author = {Panopoulos, Athanasia D and Yanes, Oscar and Ruiz, Sergio and Kida, Yasuyuki S and Diep, Dinh and Tautenhahn, Ralf and Herrer{\'{i}}as, A{\'{i}}da and Batchelder, Erika M and Plongthongkum, Nongluk and Lutz, Margaret and Berggren, W Travis and Zhang, Kun and Evans, Ronald M and Siuzdak, Gary and Belmonte, Juan Carlos Izpisua},
+doi = {10.1038/cr.2011.177},
+file = {:Users/joewandy/Documents/Mendeley Desktop/Panopoulos et al/Cell Research/Panopoulos et al. - 2012 - The metabolome of induced pluripotent stem cells reveals metabolic changes occurring in somatic cell reprogra.pdf:pdf},
+isbn = {1748-7838 (Electronic)$\backslash$r1001-0602 (Linking)},
+issn = {1001-0602},
+journal = {Cell Research},
+keywords = {10,1038,177,2011,cell research advance online,cr,doi,ips cells,metabolism,metabolome,publication 8 november 2011,reprogramming,stem cells},
+mendeley-groups = {Metabolomics - Review Papers},
+number = {1},
+pages = {168--177},
+pmid = {22064701},
+publisher = {Nature Publishing Group},
+title = {{The metabolome of induced pluripotent stem cells reveals metabolic changes occurring in somatic cell reprogramming}},
+url = {http://dx.doi.org/10.1038/cr.2011.177},
+volume = {22},
+year = {2012}
+}
+
+@article{martens2011mzml,
+  title={mzML—a community standard for mass spectrometry data},
+  author={Martens, Lennart and Chambers, Matthew and Sturm, Marc and Kessner, Darren and Levander, Fredrik and Shofstahl, Jim and Tang, Wilfred H and R{\"o}mpp, Andreas and Neumann, Steffen and Pizarro, Angel D and others},
+  journal={Molecular \& Cellular Proteomics},
+  volume={10},
+  number={1},
+  pages={R110--000133},
+  year={2011},
+  publisher={ASBMB}
+}
+
+@article{Hirai2004,
+abstract = {Plant metabolism is a complex set of processes that produce a wide diversity of foods, woods, and medicines. With the genome sequences of Arabidopsis and rice in hands, postgenomics studies integrating all "omics" sciences can depict precise pictures of a whole-cellular process. Here, we present, to our knowledge, the first report of investigation for gene-to-metabolite networks regulating sulfur and nitrogen nutrition and secondary metabolism in Arabidopsis, with integration of metabolomics and transcriptomics. Transcriptome and metabolome analyses were carried out, respectively, with DNA macroarray and several chemical analytical methods, including ultra high-resolution Fourier transform-ion cyclotron MS. Mathematical analyses, including principal component analysis and batch-learning self-organizing map analysis of transcriptome and metabolome data suggested the presence of general responses to sulfur and nitrogen deficiencies. In addition, specific responses to either sulfur or nitrogen deficiency were observed in several metabolic pathways: in particular, the genes and metabolites involved in glucosinolate metabolism were shown to be coordinately modulated. Understanding such gene-to-metabolite networks in primary and secondary metabolism through integration of transcriptomics and metabolomics can lead to identification of gene function and subsequent improvement of production of useful compounds in plants.},
+author = {Hirai, Masami Yokota and Yano, Mitsuru and Goodenowe, Dayan B and Kanaya, Shigehiko and Kimura, Tomoko and Awazuhara, Motoko and Arita, Masanori and Fujiwara, Toru and Saito, Kazuki},
+doi = {10.1073/pnas.0403218101},
+file = {:Users/joewandy/Documents/Mendeley Desktop/Hirai et al/Proceedings of the National Academy of Sciences of the United States of America/Hirai et al. - 2004 - Integration of transcriptomics and metabolomics for understanding of global responses to nutritional stresses in A.pdf:pdf},
+isbn = {0403218101},
+issn = {0027-8424},
+journal = {Proceedings of the National Academy of Sciences of the United States of America},
+keywords = {Arabidopsis,Arabidopsis: genetics,Arabidopsis: metabolism,Computational Biology,Glucosinolates,Glucosinolates: metabolism,Nitrogen,Nitrogen: metabolism,Sulfur,Sulfur: metabolism,Transcription, Genetic},
+mendeley-groups = {Metabolomics - Review Papers},
+number = {27},
+pages = {10205--10},
+pmid = {15199185},
+title = {{Integration of transcriptomics and metabolomics for understanding of global responses to nutritional stresses in Arabidopsis thaliana.}},
+url = {/pmc/articles/PMC454188/?report=abstract},
+volume = {101},
+year = {2004}
+}
+
+@article{Cao2015,
+abstract = {Liquid chromatography coupled to mass spectrometry (LCMS) is widely used in metabolomics due to its sensitivity, reproducibility, speed and versatility. Metabolites are detected as peaks which are characterised by mass-over-charge ratio (m/z) and retention time (rt), and one of the most critical but also the most challenging tasks in metabolomics is to annotate the large number of peaks detected in biological samples. Accurate m/z measurements enable the prediction of molecular formulae which provide clues to the chemical identity of peaks, but often a number of metabolites have identical molecular formulae. Chromatographic behaviour, reflecting the physicochemical properties of metabolites, should also provide structural information. However, the variation in rt between analytical runs, and the complicating factors underlying the observed time shifts, make the use of such information for peak annotation a non-trivial task. To this end, we conducted Quantitative Structure–Retention Relationship (QSRR) modelling between the calculated molecular descriptors (MDs) and the experimental retention times (rts) of 93 authentic compounds analysed using hydrophilic interaction liquid chromatography (HILIC) coupled to high resolution MS. A predictive QSRR model based on Random Forests algorithm outperformed a Multiple Linear Regression based model, and achieved a high correlation between predicted rts and experimental rts (Pearson's correlation coefficient = 0.97), with mean and median absolute error of 0.52 min and 0.34 min (corresponding to 5.1 and 3.2 {\%} error), respectively. We demonstrate that rt prediction with the precision achieved enables the systematic utilisation of rts for annotating unknown peaks detected in a metabolomics study. The application of the QSRR model with the strategy we outlined enhanced the peak annotation process by reducing the number of false positives resulting from database queries by matching accurate mass alone, and enriching the reference library. The predicted rts were validated using either authentic compounds or ion fragmentation patterns.},
+author = {Cao, Mingshu and Fraser, Karl and Huege, Jan and Featonby, Tom and Rasmussen, Susanne and Jones, Chris},
+doi = {10.1007/s11306-014-0727-x},
+file = {:Users/joewandy/Documents/Mendeley Desktop/Cao et al/Metabolomics/Cao et al. - 2015 - Predicting retention time in hydrophilic interaction liquid chromatography mass spectrometry and its use for peak an.pdf:pdf},
+issn = {15733890},
+journal = {Metabolomics},
+keywords = {LCMS,Lolium perenne,Metabolite identification,Metabolomics,Peak annotation,QSRR},
+mendeley-groups = {Metabolomics - RT Prediction},
+number = {3},
+pages = {696--706},
+pmid = {25972771},
+publisher = {Springer US},
+title = {{Predicting retention time in hydrophilic interaction liquid chromatography mass spectrometry and its use for peak annotation in metabolomics}},
+url = {http://dx.doi.org/10.1007/s11306-014-0727-x},
+volume = {11},
+year = {2015}
+}
+
+@article{Pan2007,
+abstract = {The rapidly expanding field of metabolomics has been $\backslash$ndriven in recent years by advances in the analytical $\backslash$nmethods of high-resolution nuclear magnetic resonance $\backslash$n(NMR) spectroscopy and mass spectrometry (MS), and $\backslash$ntheir combination with multivariate statistics [1, 2]. $\backslash$nWidespread application of metabolomics has been $\backslash$nachieved in the areas of system biology, drug discovery, $\backslash$npharmaceutical research, early disease detection, toxicol- $\backslash$nogy, food and nutrition science and others [3–6]. The $\backslash$npotential scientific payoff is also driving the development $\backslash$nof new methodologies that promise to fuel a further $\backslash$nexpansion of the field. In addition, because of the $\backslash$ncomplementary analytical features of NMR and MS, $\backslash$nopportunities for leveraging both methods are being $\backslash$nconsidered which will create more comprehensive meta- $\backslash$nbolic profiling. While only a few studies to date have $\backslash$ncombined both analytical techniques with statistical anal- $\backslash$nysis [7], this approach has exciting potential for the field.},
+author = {Pan, Zhengzheng and Raftery, Daniel},
+doi = {10.1007/s00216-006-0687-8},
+file = {:Users/joewandy/Documents/Mendeley Desktop/Pan, Raftery/Analytical and Bioanalytical Chemistry/Pan, Raftery - 2007 - Comparing and combining NMR spectroscopy and mass spectrometry in metabolomics.pdf:pdf},
+isbn = {1618-2642},
+issn = {16182642},
+journal = {Analytical and Bioanalytical Chemistry},
+mendeley-groups = {Metabolomics - Review Papers},
+number = {2},
+pages = {525--527},
+pmid = {16955259},
+title = {{Comparing and combining NMR spectroscopy and mass spectrometry in metabolomics}},
+volume = {387},
+year = {2007}
+}
+
+@article{Sturm2008,
+abstract = {Mass spectrometry is an essential analytical technique for high-throughput analysis in proteomics and metabolomics. The development of new separation techniques, precise mass analyzers and experimental protocols is a very active field of research. This leads to more complex experimental setups yielding ever increasing amounts of data. Consequently, analysis of the data is currently often the bottleneck for experimental studies. Although software tools for many data analysis tasks are available today, they are often hard to combine with each other or not flexible enough to allow for rapid prototyping of a new analysis workflow.},
+author = {Sturm, Marc and Bertsch, Andreas and Gr{\"{o}}pl, Clemens and Hildebrandt, Andreas and Hussong, Rene and Lange, Eva and Pfeifer, Nico and Schulz-Trieglaff, Ole and Zerck, Alexandra and Reinert, Knut and Kohlbacher, Oliver},
+doi = {10.1186/1471-2105-9-163},
+file = {:Users/joewandy/Documents/Mendeley Desktop/Sturm et al/BMC bioinformatics/Sturm et al. - 2008 - OpenMS - an open-source software framework for mass spectrometry.pdf:pdf},
+issn = {1471-2105},
+journal = {BMC bioinformatics},
+keywords = {Algorithms,Mass Spectrometry,Mass Spectrometry: methods,Programming Languages,Software},
+mendeley-groups = {Metabolomics - Alignment},
+month = {jan},
+pages = {163},
+pmid = {18366760},
+title = {{OpenMS - an open-source software framework for mass spectrometry.}},
+volume = {9},
+year = {2008}
+}
+
+@article{Mueller2007,
+abstract = {Label-free quantification of high mass resolution LC-MS data has emerged as a promising technology for proteome analysis. Computational methods are required for the accurate extraction of peptide signals from LC-MS data and the tracking of these features across the measurements of different samples. We present here an open source software tool, SuperHirn, that comprises a set of modules to process LC-MS data acquired on a high resolution mass spectrometer. The program includes newly developed functionalities to analyze LC-MS data such as feature extraction and quantification, LC-MS similarity analysis, LC-MS alignment of multiple datasets, and intensity normalization. These program routines extract profiles of measured features and comprise tools for clustering and classification analysis of the profiles. SuperHirn was applied in an MS1-based profiling approach to a benchmark LC-MS dataset of complex protein mixtures with defined concentration changes. We show that the program automatically detects profiling trends in an unsupervised manner and is able to associate proteins to their correct theoretical dilution profile.},
+author = {Mueller, Lukas N. and Rinner, Oliver and Schmidt, Alexander and Letarte, Simon and Bodenmiller, Bernd and Brusniak, Mi Youn and Vitek, Olga and Aebersold, Ruedi and M{\"{u}}ller, Markus},
+doi = {10.1002/pmic.200700057},
+file = {:Users/joewandy/Documents/Mendeley Desktop/Mueller et al/Proteomics/Mueller et al. - 2007 - SuperHirn - A novel tool for high resolution LC-MS-based peptideprotein profiling.pdf:pdf},
+isbn = {1615-9861},
+issn = {16159853},
+journal = {Proteomics},
+keywords = {LC-MS,Label-free quantification,Protein profiling,Quantitative proteomics},
+mendeley-groups = {Metabolomics - Picking},
+number = {19},
+pages = {3470--3480},
+pmid = {17726677},
+title = {{SuperHirn - A novel tool for high resolution LC-MS-based peptide/protein profiling}},
+volume = {7},
+year = {2007}
+}
+
+@article{cottret2010metexplore,
+  title={MetExplore: a web server to link metabolomic experiments and genome-scale metabolic networks},
+  author={Cottret, Ludovic and Wildridge, David and Vinson, Florence and Barrett, Michael P and Charles, Hubert and Sagot, Marie-France and Jourdan, Fabien},
+  journal={Nucleic acids research},
+  volume={38},
+  number={suppl 2},
+  pages={W132--W137},
+  year={2010},
+  publisher={Oxford Univ Press}
+}
+
+@article{caspi2008metacyc,
+  title={The MetaCyc Database of metabolic pathways and enzymes and the BioCyc collection of Pathway/Genome Databases},
+  author={Caspi, Ron and Foerster, Hartmut and Fulcher, Carol A and Kaipa, Pallavi and Krummenacker, Markus and Latendresse, Mario and Paley, Suzanne and Rhee, Seung Y and Shearer, Alexander G and Tissier, Christophe and others},
+  journal={Nucleic acids research},
+  volume={36},
+  number={suppl 1},
+  pages={D623--D631},
+  year={2008},
+  publisher={Oxford Univ Press}
+}
+
+@article{Kanehisa2010,
+abstract = {Most human diseases are complex multi-factorial diseases resulting from the combination of various genetic and environmental factors. In the KEGG database resource (http://www.genome.jp/kegg/), diseases are viewed as perturbed states of the molecular system, and drugs as perturbants to the molecular system. Disease information is computerized in two forms: pathway maps and gene/molecule lists. The KEGG PATHWAY database contains pathway maps for the molecular systems in both normal and perturbed states. In the KEGG DISEASE database, each disease is represented by a list of known disease genes, any known environmental factors at the molecular level, diagnostic markers and therapeutic drugs, which may reflect the underlying molecular system. The KEGG DRUG database contains chemical structures and/or chemical components of all drugs in Japan, including crude drugs and TCM (Traditional Chinese Medicine) formulas, and drugs in the USA and Europe. This database also captures knowledge about two types of molecular networks: the interaction network with target molecules, metabolizing enzymes, other drugs, etc. and the chemical structure transformation network in the history of drug development. The new disease/drug information resource named KEGG MEDICUS can be used as a reference knowledge base for computational analysis of molecular networks, especially, by integrating large-scale experimental datasets.},
+author = {Kanehisa, Minoru and Goto, Susumu and Furumichi, Miho and Tanabe, Mao and Hirakawa, Mika},
+doi = {10.1093/nar/gkp896},
+file = {:Users/joewandy/Documents/Mendeley Desktop/Kanehisa et al/Nucleic acids research/Kanehisa et al. - 2010 - KEGG for representation and analysis of molecular networks involving diseases and drugs.pdf:pdf},
+issn = {1362-4962},
+journal = {Nucleic acids research},
+keywords = {Algorithms,Computational Biology,Computational Biology: methods,Computational Biology: trends,Databases, Genetic,Databases, Nucleic Acid,Databases, Protein,Genome, Human,Humans,Information Storage and Retrieval,Information Storage and Retrieval: methods,Internet,Ligands,Pharmaceutical Preparations,Pharmaceutical Preparations: chemistry,Protein Interaction Mapping,Protein Structure, Tertiary,Software,Systems Biology},
+mendeley-groups = {Metabolomics - Identification},
+month = {jan},
+number = {Database issue},
+pages = {D355--60},
+pmid = {19880382},
+title = {{KEGG for representation and analysis of molecular networks involving diseases and drugs.}},
+url = {http://www.pubmedcentral.nih.gov/articlerender.fcgi?artid=2808910{\&}tool=pmcentrez{\&}rendertype=abstract},
+volume = {38},
+year = {2010}
+}
+
+@article{Tautenhahn2008,
+abstract = {Liquid chromatography coupled to mass spectrometry (LC/MS) is an important analytical technology for e.g. metabolomics experiments. Determining the boundaries, centres and intensities of the two-dimensional signals in the LC/MS raw data is called feature detection. For the subsequent analysis of complex samples such as plant extracts, which may contain hundreds of compounds, corresponding to thousands of features -- a reliable feature detection is mandatory.},
+author = {Tautenhahn, Ralf and B{\"{o}}ttcher, Christoph and Neumann, Steffen},
+doi = {10.1186/1471-2105-9-504},
+file = {:Users/joewandy/Documents/Mendeley Desktop/Tautenhahn, B{\"{o}}ttcher, Neumann/BMC bioinformatics/Tautenhahn, B{\"{o}}ttcher, Neumann - 2008 - Highly sensitive feature detection for high resolution LCMS.pdf:pdf},
+issn = {1471-2105},
+journal = {BMC bioinformatics},
+keywords = {Algorithms,Chromatography, Liquid,Chromatography, Liquid: methods,Mass Spectrometry,Mass Spectrometry: methods,Proteome,Proteome: analysis,Sensitivity and Specificity,Sequence Analysis, Protein,Sequence Analysis, Protein: methods},
+mendeley-groups = {Metabolomics - Picking},
+month = {jan},
+pages = {504},
+pmid = {19040729},
+title = {{Highly sensitive feature detection for high resolution LC/MS.}},
+url = {http://www.pubmedcentral.nih.gov/articlerender.fcgi?artid=2639432{\&}tool=pmcentrez{\&}rendertype=abstract},
+volume = {9},
+year = {2008}
+}
+
+
+@article{Alonso2015,
+abstract = {Metabolomics comprises the methods and techniques that are used to measure the small molecule composition of biofluids and tissues, and is actually one of the most rapidly evolving research fields. The determination of the metabolomic profile - the metabolome - has multiple applications in many biological sciences, including the developing of new diagnostic tools in medicine. Recent technological advances in nuclear magnetic resonance and mass spectrometry are significantly improving our capacity to obtain more data from each biological sample. Consequently, there is a need for fast and accurate statistical and bioinformatic tools that can deal with the complexity and volume of the data generated in metabolomic studies. In this review, we provide an update of the most commonly used analytical methods in metabolomics, starting from raw data processing and ending with pathway analysis and biomarker identification. Finally, the integration of metabolomic profiles with molecular data from other high-throughput biotechnologies is also reviewed.},
+author = {Alonso, Arnald and Marsal, Sara and Juli{\`{a}}, Antonio},
+doi = {10.3389/fbioe.2015.00023},
+file = {:Users/joewandy/Documents/Mendeley Desktop/Alonso, Marsal, Juli{\`{a}}/Frontiers in bioengineering and biotechnology/Alonso, Marsal, Juli{\`{a}} - 2015 - Analytical methods in untargeted metabolomics state of the art in 2015.pdf:pdf},
+isbn = {2296-4185},
+issn = {2296-4185},
+journal = {Frontiers in bioengineering and biotechnology},
+keywords = {analysis,data,integration,mass spectrometry,metabolomics,metabolomics, nuclear magnetic resonance, mass spe,nuclear magnetic resonance,pathway analysis,spectral processing,untargeted},
+mendeley-groups = {Metabolomics - NMR,Metabolomics - Review Papers},
+number = {March},
+pages = {23},
+pmid = {25798438},
+title = {{Analytical methods in untargeted metabolomics: state of the art in 2015.}},
+url = {http://www.pubmedcentral.nih.gov/articlerender.fcgi?artid=4350445{\&}tool=pmcentrez{\&}rendertype=abstract},
+volume = {3},
+year = {2015}
+}
+
 @article{Lee2013,
 author = {Lee, Terk Shuen and Ho, Ying Swan and Yeo, Hock Chuan and Lin, Joyce Pei Yu and Lee, Dong-Yup},
 doi = {10.1007/s11306-013-0539-4},
@@ -13,6 +247,25 @@ title = {{Precursor mass prediction by clustering ionization products in LC-MS-b
 volume = {9},
 year = {2013}
 }
+
+@article{Fiehn2002,
+abstract = {Metabolites are the end products of cellular regulatory processes, and their levels can be regarded as the ultimate response of biological systems to genetic or environmental changes. In parallel to the terms 'transcriptome' and proteome', the set of metabolites synthesized by a biological system constitute its 'metabolome'. Yet, unlike other functional genomics approaches, the unbiased simultaneous identification and quantification of plant metabolomes has been largely neglected. Until recently, most analyses were restricted to profiling selected classes of compounds, or to fingerprinting metabolic changes without sufficient analytical resolution to determine metabolite levels and identities individually. As a prerequisite for metabolomic analysis, careful consideration of the methods employed for tissue extraction, sample preparation, data acquisition, and data mining must be taken. In this review, the differences among metabolite target analysis, metabolite profiling, and metabolic fingerprinting are clarified, and terms are defined. Current approaches are examined, and potential applications are summarized with a special emphasis on data mining and mathematical modelling of metabolism.},
+author = {Fiehn, Oliver},
+doi = {10.1023/A:1013713905833},
+file = {:Users/joewandy/Documents/Mendeley Desktop/Fiehn/Plant Molecular Biology/Fiehn - 2002 - Metabolomics - The link between genotypes and phenotypes.pdf:pdf},
+isbn = {978-94-010-3903-1},
+issn = {01674412},
+journal = {Plant Molecular Biology},
+keywords = {Functional genomics,Mass spectrometry,Metabolism,Metabolite profiling},
+mendeley-groups = {Metabolomics - Review Papers},
+number = {1-2},
+pages = {155--171},
+pmid = {11860207},
+title = {{Metabolomics - The link between genotypes and phenotypes}},
+volume = {48},
+year = {2002}
+}
+
 
 @article{Wang2012,
 abstract = {The hierarchical Dirichlet process (HDP) has become an important Bayesian nonparametric model for grouped data, such as document collections. The HDP is used to construct a flexible mixed-membership model where the number of components is determined by the data. As for most Bayesian nonparametric models, exact posterior inference is intractable — practitioners use Markov chain Monte Carlo (MCMC) or variational inference. Inspired by the split-merge MCMC algorithm for the Dirichlet process (DP) mixture model, we describe a novel split-merge MCMC sampling algorithm for posterior inference in the HDP. We study its properties on both synthetic data and text corpora. We find that split-merge MCMC for the HDP can provide significant improvements over traditional Gibbs sampling, and we give some understanding of the data properties that give rise to larger improvements.},
@@ -332,6 +585,34 @@ title = {{Algorithms and tools for the preprocessing of LC-MS metabolomics data}
 url = {http://linkinghub.elsevier.com/retrieve/pii/S0169743911000608},
 volume = {108},
 year = {2011}
+}
+
+@article{Scheltema2009a,
+author = {Scheltema, RA and Decuypere, S and Dujardin, JC},
+file = {:Users/joewandy/Documents/Mendeley Desktop/Scheltema, Decuypere, Dujardin/Bioanalysis/Scheltema, Decuypere, Dujardin - 2009 - Simple data-reduction method for high-resolution LC-MS data in metabolomics.pdf:pdf},
+journal = {Bioanalysis},
+mendeley-groups = {Metabolomics - Alignment},
+title = {{Simple data-reduction method for high-resolution LC-MS data in metabolomics}},
+url = {http://www.future-science.com/doi/abs/10.4155/bio.09.146},
+year = {2009}
+}
+
+@article{Snider2007,
+abstract = {This paper presents a new method for efficiently calculating the exact masses in an isotopic distribution using a dynamic programming approach. The resulting program, isoDalton, can generate extremely high isotopic resolutions as demonstrated by a FWHM resolution of 2 x 10(11). This resolution allows very fine mass structures in isotopic distributions to be seen, even for large molecules. Since the number of exact masses grows exponentially with molecular size, only the most probable exact masses are kept, the number of which is user specified.},
+author = {Snider, Ross K},
+doi = {10.1016/j.jasms.2007.05.016},
+file = {:Users/joewandy/Documents/Mendeley Desktop/Snider/Journal of the American Society for Mass Spectrometry/Snider - 2007 - Efficient calculation of exact mass isotopic distributions.pdf:pdf},
+issn = {1044-0305},
+journal = {Journal of the American Society for Mass Spectrometry},
+keywords = {Algorithms,Chemical,Mass Spectrometry,Mass Spectrometry: methods,Models,Molecular Weight},
+mendeley-groups = {Metabolomics - Simulator},
+month = {aug},
+number = {8},
+pages = {1511--5},
+pmid = {17583532},
+title = {{Efficient calculation of exact mass isotopic distributions.}},
+volume = {18},
+year = {2007}
 }
 
 @article{Keller2008,
@@ -711,6 +992,24 @@ volume = {14},
 year = {2015}
 }
 
+@article{Megger2013,
+abstract = {Nowadays, proteomic studies no longer focus only onidentifyingasmany proteins as possible in a given sample, but aiming for an accurate quantification of them. Especially in clinical proteomics, the investigation of variable protein expression profiles can yield useful information on pathological pathways or biomarkers and drug targets related to a particular disease. Over the time, many quantitative proteomic approaches have been established allowing researchers in the field of proteomics to refer to a comprehensive toolbox of different methodologies. In this review we will give an overview of different methods of quantitative proteomics with focus on label-free proteomics and its use in clinical proteomics. {\textcopyright} 2013 Elsevier B.V. All rights reserved.},
+author = {Megger, Dominik A. and Bracht, Thilo and Meyer, Helmut E. and Sitek, Barbara},
+doi = {10.1016/j.bbapap.2013.04.001},
+file = {:Users/joewandy/Documents/Mendeley Desktop/Megger et al/Biochimica et Biophysica Acta - Proteins and Proteomics/Megger et al. - 2013 - Label-free quantification in clinical proteomics.pdf:pdf},
+isbn = {0006-3002 (Print)$\backslash$r0006-3002 (Linking)},
+issn = {15709639},
+journal = {Biochimica et Biophysica Acta - Proteins and Proteomics},
+keywords = {Clinical proteomics,Disease biomarker,Label-free proteomics,Quantitative proteomics},
+mendeley-groups = {Metabolomics - Review Papers,Proteomics - Review Paper},
+number = {8},
+pages = {1581--1590},
+pmid = {23567906},
+title = {{Label-free quantification in clinical proteomics}},
+volume = {1834},
+year = {2013}
+}
+
 @article{Sandin2014,
 author = {Sandin, Marianne and Teleman, Johan and Malmstr{\"{o}}m, Johan and Levander, Fredrik},
 doi = {10.1016/j.bbapap.2013.03.026},
@@ -727,22 +1026,6 @@ title = {{Data processing methods and quality control strategies for label-free 
 url = {http://www.sciencedirect.com/science/article/pii/S1570963913001398},
 volume = {1844},
 year = {2014}
-}
-
-@article{Megger2013,
-author = {Megger, Dominik A. and Bracht, Thilo and Meyer, Helmut E. and Sitek, Barbara},
-doi = {10.1016/j.bbapap.2013.04.001},
-isbn = {0006-3002 (Print)$\backslash$r0006-3002 (Linking)},
-issn = {15709639},
-journal = {Biochimica et Biophysica Acta - Proteins and Proteomics},
-keywords = {Clinical proteomics,Disease biomarker,Label-free proteomics,Quantitative proteomics},
-mendeley-groups = {Metabolomics - Review Papers,Proteomics - Review Paper},
-number = {8},
-pages = {1581--1590},
-pmid = {23567906},
-title = {{Label-free quantification in clinical proteomics}},
-volume = {1834},
-year = {2013}
 }
 
 @article{Aebersold2003,
@@ -795,6 +1078,44 @@ volume = {76},
 year = {2004}
 }
 
+@article{VanNederkassel2006,
+abstract = {In this paper the performance of three alignment algorithms, correlation optimized warping, parametric time warping and semi-parametric time warping, is compared on real chromatograms. Among these, parametric time warping is the simplest and fastest; generally less than 1s is required to align two chromatograms. It does not require the optimization of input parameters and allows the alignment of peak shifts in only one direction, or non-complex peak shifts in both directions. With correlation optimized warping and semi-parametric time warping complex peak shifts in both directions can be corrected but at the expense of the optimization of two input parameters. Semi-parametric time warping requires the selection of the proper number of B-splines in the warping function and, if necessary, the optimization of the penalty parameter. Often the default values can be used to obtain aligned signals. The optimization of the input parameters for correlation optimized warping (section length, slack) is not easy and time-consuming. Moreover, dependent on the input parameters, the computation time of the correlation optimized warping algorithm can be twice as long as for semi-parametric time warping for which computation times up to 23 s are required. However, the performance of both algorithms is equally good considering the improvement of the precision of the peak retention times and correlation coefficients between the chromatograms, after alignment. For the data aligned in this study, the average retention time precision and the lowest correlation before warping were 14 and 0.17, and were improved to three and 0.83, and six and 0.87 after warping, with correlation optimized warping and semi-parametric time warping, respectively.},
+author = {van Nederkassel, a M and Daszykowski, M and Eilers, P H C and Heyden, Y Vander},
+doi = {10.1016/j.chroma.2006.03.114},
+file = {:Users/joewandy/Documents/Mendeley Desktop/van Nederkassel et al/Journal of chromatography. A/van Nederkassel et al. - 2006 - A comparison of three algorithms for chromatograms alignment.pdf:pdf},
+issn = {0021-9673},
+journal = {Journal of chromatography. A},
+keywords = {Algorithms,Chromatography, High Pressure Liquid,Chromatography, High Pressure Liquid: methods,Tea,Tea: chemistry},
+mendeley-groups = {Metabolomics - Alignment},
+month = {jun},
+number = {2},
+pages = {199--210},
+pmid = {16643929},
+title = {{A comparison of three algorithms for chromatograms alignment.}},
+url = {http://www.ncbi.nlm.nih.gov/pubmed/16643929},
+volume = {1118},
+year = {2006}
+}
+
+@article{Windig2007,
+abstract = {Component detection algorithm (CODA) is a method to quickly extract the high-quality mass chromatograms from complex liquid chromatography/electrospray ionization mass spectrometry (LC/MS) data sets, saving operators hours of analysis time. It appeared, however, that mass chromatograms with a limited baseline problem were ignored. This paper describes several methods to increase the tolerance for mass chromatograms with a baseline.},
+author = {Windig, W and Smith, W F},
+doi = {10.1016/j.chroma.2007.03.081},
+file = {:Users/joewandy/Documents/Mendeley Desktop/Windig, Smith/Journal of chromatography. A/Windig, Smith - 2007 - Chemometric analysis of complex hyphenated data. Improvements of the component detection algorithm.pdf:pdf},
+issn = {0021-9673},
+journal = {Journal of chromatography. A},
+keywords = {Algorithms,Chromatography, Liquid,Chromatography, Liquid: methods,Spectrometry, Mass, Electrospray Ionization,Spectrometry, Mass, Electrospray Ionization: metho},
+mendeley-groups = {Metabolomics - Alignment},
+month = {jul},
+number = {1-2},
+pages = {251--7},
+pmid = {17418223},
+title = {{Chemometric analysis of complex hyphenated data. Improvements of the component detection algorithm.}},
+url = {http://www.ncbi.nlm.nih.gov/pubmed/17418223},
+volume = {1158},
+year = {2007}
+}
+
 @article{Christin2008,
 author = {Christin, Christin and Smilde, Age K and Hoefsloot, Huub C J and Suits, Frank and Bischoff, Rainer and Horvatovich, Peter L},
 doi = {10.1021/ac800920h},
@@ -810,6 +1131,17 @@ title = {{Optimized time alignment algorithm for LC-MS data: correlation optimiz
 url = {http://www.ncbi.nlm.nih.gov/pubmed/18715018},
 volume = {80},
 year = {2008}
+}
+
+@article{Fischler1981,
+author = {Fischler, Martin A. and Bolles, Robert C.},
+file = {:Users/joewandy/Documents/Mendeley Desktop/Fischler, Bolles/Communications of the ACM/Fischler, Bolles - 1981 - Random Sample Consensus A Paradigm for Model Fitting with Applications to Image Analysis and Automated Cartog.pdf:pdf},
+journal = {Communications of the ACM},
+mendeley-groups = {Metabolomics - Alignment},
+pages = {381--395},
+title = {{Random Sample Consensus : A Paradigm for Model Fitting with Applications to Image Analysis and Automated Cartography}},
+volume = {24},
+year = {1981}
 }
 
 @article{Pluskal2010,
@@ -1134,6 +1466,14 @@ volume = {29},
 year = {2013}
 }
 
+@inproceedings{Rogers2012,
+author = {Rogers, Simon and Daly, R{\'{o}}n{\'{a}}n and Breitling, Rainer},
+booktitle = {Ninth International Workshop on Computational Systems Biology, WCSB 2012, June 4-6, Ulm, Germany},
+pages = {71},
+title = {{Mixture model clustering for peak filtering in metabolomics}},
+year = {2012}
+}
+
 @article{Scheltema2011,
 abstract = {The recent proliferation of high-resolution mass spectrometers has generated a wealth of new data analysis methods. However, flexible integration of these methods into configurations best suited to the research question is hampered by heterogeneous file formats and monolithic software development. The mzXML, mzData, and mzML file formats have enabled uniform access to unprocessed raw data. In this paper we present our efforts to produce an equally simple and powerful format, PeakML, to uniformly exchange processed intermediary and result data. To demonstrate the versatility of PeakML, we have developed an open source Java toolkit for processing, filtering, and annotating mass spectra in a customizable pipeline (mzMatch), as well as a user-friendly data visualization environment (PeakML Viewer). The PeakML format in particular enables the flexible exchange of processed data between software created by different groups or companies, as we illustrate by providing a PeakML-based integration of the widely used XCMS package with mzMatch data processing tools. As an added advantage, downstream analysis can benefit from direct access to the full mass trace information underlying summarized mass spectrometry results, providing the user with the means to rapidly verify results. The PeakML/mzMatch software is freely available at http://mzmatch.sourceforge.net, with documentation, tutorials, and a community forum.},
 author = {Scheltema, Richard a and Jankevics, Andris and Jansen, Ritsert C and Swertz, Morris a and Breitling, Rainer},
@@ -1146,14 +1486,6 @@ pages = {2786--93},
 title = {{PeakML/mzMatch: a file format, Java library, R library, and tool-chain for mass spectrometry data analysis.}},
 volume = {83},
 year = {2011}
-}
-
-@inproceedings{Rogers2012,
-author = {Rogers, Simon and Daly, R{\'{o}}n{\'{a}}n and Breitling, Rainer},
-booktitle = {Ninth International Workshop on Computational Systems Biology, WCSB 2012, June 4-6, Ulm, Germany},
-pages = {71},
-title = {{Mixture model clustering for peak filtering in metabolomics}},
-year = {2012}
 }
 
 @article{griffiths2004hierarchical,

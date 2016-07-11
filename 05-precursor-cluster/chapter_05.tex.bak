@@ -23,7 +23,7 @@ Despite the clear benefits of alignment uncertainty quantification in the sequen
 
 \subsection*{Statement of Original Work}
 
-The work from this chapter has been submitted for review in \textit{Bioinformatics}. The author proposed and implemented the idea of clustering IP peaks by their transformations, and also the matching of the resulting IP clusters to construct alignment. The author also performed the evaluation of performance of the proposed approach against the baseline methods. 
+The work from this chapter has been submitted for review to \textit{Bioinformatics}. The author proposed and implemented the idea of clustering IP peaks by their transformations, and also the matching of the resulting IP clusters to construct alignment. The author also performed the evaluation of performance of the proposed approach against the baseline methods. 
 
 \section{Methods}
 
