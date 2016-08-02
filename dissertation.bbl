@@ -438,10 +438,70 @@ A.~Chawade, M.~Sandin, J.~Teleman, J.~Malmstr{\"{o}}m, and F.~Levander, ``{Data
   \url{http://www.ncbi.nlm.nih.gov/pubmed/19176558}
 \BIBentrySTDinterwordspacing
 
+\bibitem{rogers2015first}
+S.~Rogers and M.~Girolami, \emph{A first course in machine learning}.\hskip 1em
+  plus 0.5em minus 0.4em\relax CRC Press, 2015.
+
+\bibitem{gelman2014bayesian}
+A.~Gelman, J.~B. Carlin, H.~S. Stern, and D.~B. Rubin, \emph{Bayesian data
+  analysis}.\hskip 1em plus 0.5em minus 0.4em\relax Chapman \& Hall/CRC Boca
+  Raton, FL, USA, 2014, vol.~2.
+
+\bibitem{murphy2012machine}
+K.~P. Murphy, \emph{Machine learning: a probabilistic perspective}.\hskip 1em
+  plus 0.5em minus 0.4em\relax MIT press, 2012.
+
+\bibitem{Daly2014}
+R.~Daly, S.~Rogers, J.~Wandy, A.~Jankevics, K.~E.~V. Burgess, and R.~Breitling,
+  ``{MetAssign: probabilistic annotation of metabolites from LC-MS data using a
+  Bayesian clustering approach.}'' \emph{Bioinformatics (Oxford, England)},
+  vol.~30, no.~19, pp. 2764--2771, jun 2014.
+
 \bibitem{Rasmussen2000}
 C.~Rasmussen, ``{The infinite Gaussian mixture model},'' in \emph{Advances in
   Neural Information Processing Systems 12}.\hskip 1em plus 0.5em minus
   0.4em\relax MIT Press, 2000, pp. 554--560.
+
+\bibitem{hjort2010bayesian}
+N.~L. Hjort, C.~Holmes, P.~M{\"u}ller, and S.~G. Walker, \emph{Bayesian
+  nonparametrics}.\hskip 1em plus 0.5em minus 0.4em\relax Cambridge University
+  Press, 2010, vol.~28.
+
+\bibitem{ferguson1973bayesian}
+T.~S. Ferguson, ``A bayesian analysis of some nonparametric problems,''
+  \emph{The annals of statistics}, pp. 209--230, 1973.
+
+\bibitem{teh2011dirichlet}
+Y.~W. Teh, ``Dirichlet process,'' in \emph{Encyclopedia of machine
+  learning}.\hskip 1em plus 0.5em minus 0.4em\relax Springer, 2011, pp.
+  280--287.
+
+\bibitem{ishwaran2011gibbs}
+H.~Ishwaran and L.~F. James, ``Gibbs sampling methods for stick-breaking
+  priors,'' \emph{Journal of the American Statistical Association}, 2011.
+
+\bibitem{frigyik2010introduction}
+B.~A. Frigyik, A.~Kapila, and M.~R. Gupta, ``Introduction to the dirichlet
+  distribution and related processes. department of electrical engineering,
+  university of washignton,'' UWEETR-2010-0006, Tech. Rep., 2010.
+
+\bibitem{aldous1985exchangeability}
+D.~J. Aldous, ``Exchangeability and related topics,'' in \emph{{\'E}cole
+  d'{\'E}t{\'e} de Probabilit{\'e}s de Saint-Flour XIII—1983}.\hskip 1em plus
+  0.5em minus 0.4em\relax Springer, 1985, pp. 1--198.
+
+\bibitem{teh2005hierarchical}
+Y.~W. Teh, M.~I. Jordan, M.~J. Beal, and D.~M. Blei, ``Hierarchical dirichlet
+  processes,'' 2005.
+
+\bibitem{teh2012hierarchical}
+------, ``Hierarchical dirichlet processes,'' \emph{Journal of the american
+  statistical association}, 2012.
+
+\bibitem{kim2006hierarchical}
+S.~Kim and P.~Smyth, ``Hierarchical dirichlet processes with random effects,''
+  in \emph{Advances in Neural Information Processing Systems}, 2006, pp.
+  697--704.
 
 \bibitem{Smith2013}
 R.~Smith, D.~Ventura, and J.~T. Prince, ``{{\{}LC{\}}-{\{}MS{\}} alignment in
@@ -478,12 +538,6 @@ R.~Smith, D.~Ventura, and J.~T. Prince, ``{Novel algorithms and the benefits of
   no.~12, pp. 1583--5, jun 2013. [Online]. Available:
   \url{http://www.ncbi.nlm.nih.gov/pubmed/23589651}
 \BIBentrySTDinterwordspacing
-
-\bibitem{Daly2014}
-R.~Daly, S.~Rogers, J.~Wandy, A.~Jankevics, K.~E.~V. Burgess, and R.~Breitling,
-  ``{MetAssign: probabilistic annotation of metabolites from LC-MS data using a
-  Bayesian clustering approach.}'' \emph{Bioinformatics (Oxford, England)},
-  vol.~30, no.~19, pp. 2764--2771, jun 2014.
 
 \bibitem{Smith2015}
 \BIBentryALTinterwordspacing
@@ -569,11 +623,6 @@ D.~P. {De Souza}, E.~C. Saunders, M.~J. McConville, and V.~a. Liki\'{c},
   ``{Progressive peak clustering in GC-MS Metabolomic experiments applied to
   Leishmania parasites.}'' \emph{Bioinformatics}, vol.~22, no.~11, pp. 1391--6,
   Jun. 2006.
-
-\bibitem{Teh2006}
-Y.~W. Teh, M.~I. Jordan, M.~J. Beal, and D.~M. Blei, ``Hierarchical dirichlet
-  processes,'' \emph{Journal of the american statistical association}, vol.
-  101, no. 476, 2006.
 
 \bibitem{Perera2011}
 \BIBentryALTinterwordspacing
