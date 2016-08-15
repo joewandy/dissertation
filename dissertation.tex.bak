@@ -1,7 +1,5 @@
 \input{"header.tex"}
 
-\listoftodos
-
 % -----------------------------------------------------------------------------
 % Introduction and research problem
 \input{"01-introduction/chapter_01.tex"}
@@ -35,9 +33,9 @@
 \input{"08-conclusion/chapter_08.tex"}
 
 % -----------------------------------------------------------------------------
-\appendix
+% \appendix
 
-\input{"AA-appendix/appendix.tex"}
+% \input{"AA-appendix/appendix.tex"}
 
 % -----------------------------------------------------------------------------
 \newpage

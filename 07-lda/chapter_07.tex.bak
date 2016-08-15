@@ -59,12 +59,12 @@ Discretisation is performed via a greedy binning process. To group continuous m/
 In the context of fragmentation data, the standard LDA model as applied to substructure discovery is described next. The observation on the $n$-th fragment or loss feature in the $d$-th fragmentation spectra ($w_{dn}$) is conditioned on the assignment of feature $w_{dn}$ to the $k$-th Mass2Motif multinomial distribution. This corresponds to the topic distribution over words in the original LDA model. This assignment is denoted by the indicator variable $z_{dn}$, so $z_{dn}=k$ if feature $w_{dn}$ is assigned to a $k$-th Mass2Motif. The $k$-th multinomial distribution that a feature is assigned to is characterised by the parameter vector $\boldsymbol{\phi}_{z_{dn}}$, with $\boldsymbol{\phi}_{z_{dn}}$ drawn from a prior Dirichlet distribution with a symmetric parameter $\beta$. 
 \begin{align}
 w_{dn} \vert \boldsymbol{\phi}_{z_{dn}} &\sim Multinomial(\boldsymbol{\phi}_{z_{dn}}) \\
-\boldsymbol{\phi}_{k} \vert \beta &\sim Dirichlet(\beta)
+\boldsymbol{\phi}_{k} \vert \beta &\sim Dir(\beta)
 \end{align}
 The probability of seeing certain Mass2Motifs for each $d$-th fragmentation spectra is drawn from a multinomial distribution with a parameter vector $\boldsymbol{\theta}_{d}$, corresponding to the topic decomposition of a document in the original LDA model. This parameter vector $\boldsymbol{\theta}_{d}$ is in turn drawn from a prior Dirichlet distribution having a symmetric parameter $\alpha$. 
 \begin{align}
 z_{dn} \vert \boldsymbol{\theta}_{d} &\sim Multinomial(\boldsymbol{\theta}_{d}) \\
-\boldsymbol{\theta}_{d} \vert \alpha &\sim Dirichlet(\alpha)
+\boldsymbol{\theta}_{d} \vert \alpha &\sim Dir(\alpha)
 \end{align}
 A collapsed Gibbs sampling scheme is implemented in Python for inference (details in Section~\ref{background-lda}). The output from inference is a set of Mass2Motifs and assignments of Mass2Motifs to each MS1 peak. 
 
@@ -116,11 +116,11 @@ Beer4          & A bottle of `Black Sheep Ale’ brewed by Black Sheep Brewery. 
 
 We performed model selection via a 4-folds cross validation approach on one of the data file (Beer3 positive ionization mode). For each test fold being held out in the Beer3 data file, an estimate of the model evidence is computed after training the model on the remaining training folds in the file. The number of Mass2Motifs was also selected in this manner from cross-validation. 
 
-A crucial difference between LDA and the multinomial mixture-model (clustering) lies in the modelling assumption that a document is a mixture of one or more topics (LDA) as opposed to each document having exactly one topic (clustering). To validate one of our key assumptions of Mass2Motifs represent biological building blocks (i.e. fragmentation spectrum contains more than one Mass2Motifs), we compared the LDA model to a multinomial mixture model that can also be used for the clustering of fragmentation spectra. A comparison of LDA to a multinomial mixture model was performed by the author to assess and validate model fit, evaluated based on perplexity on the held-out data. Perplexity measures how well a probability distribution or probability model predicts a sample and is defined as:
+A crucial difference between LDA and the multinomial mixture-model (clustering) lies in the modelling assumption that a document is a mixture of one or more topics (LDA) as opposed to each document having exactly one topic (clustering). To validate one of our key assumptions of Mass2Motifs represent biological building blocks (i.e. fragmentation spectrum contains more than one Mass2Motifs), we compared the LDA model to a multinomial mixture model that can also be used for the clustering of fragmentation spectra. A comparison of LDA to a multinomial mixture model was performed by the author to assess and validate model fit, evaluated based on perplexity on the held-out data. Perplexity measures how well a probability distribution or probability model predicts a sample. First we define some notations. Let $\boldsymbol{w}_d$ denotes the $d$-th spectra, comprised of the entire set of fragment and loss features in that spectra. During cross-validation, spectra are divided into training and testing folds. We denote the set of spectra in the testing fold as $\boldsymbol{W}_t=\{\boldsymbol{w}_1, \boldsymbol{w}_2, ..., \boldsymbol{w}_d\}$. The perplexity of $\boldsymbol{W}_t$ is given by:
 \begin{align*}
-perplexity(W)=exp\left(\frac{\sum_{d}log(P(w_{d})}{\sum_{d}N_d}\right)
+perplexity(\boldsymbol{W}_t)=exp\left(\frac{\sum_{d}log(P(\boldsymbol{w}_{d})}{\sum_{d}N_d}\right)
 \end{align*}
-where $perplexity(W)$ is the perplexity on the whole held-out test collection, $P(w_d)$ is the marginal probability of a testing spectra $d$ (integrating over all the parameters of the model), approximated via an importance sampling method \cite{wallach2009evaluation} and $N_d$ is the number of features in each testing spectra $d$. Following \cite{Griffiths2004}, the hyper-parameters were set to $\alpha=K/50$ and $\beta=0.1$ during cross-validation. For mixture model clustering, a non-informative Dirichlet prior ($\alpha=K/50$, where $K$ is now the number of clusters) is set on the proportions of the mixture components and another Dirichlet prior ($\beta=0.1$) is set on cluster-specific word distributions. The Gibbs sampler for LDA and multinomial mixture model is run for 1000 samples, discarding the first 500 for burn-in. The last sample is used computing the posterior estimates. Minimal differences were found when inferred model parameters were averaged over samples in comparison to using the last sample.
+Here, $P(\boldsymbol{w}_d)$ is the marginal probability of a testing spectra $\boldsymbol{w}_d$ after integrating over all the parameters of the model. This is approximated via an importance sampling method in \cite{wallach2009evaluation}. $N_d$ is the number of features in each testing spectra $\boldsymbol{w}_d$. Following \cite{Griffiths2004}, the hyper-parameters were set to $\alpha=K/50$ and $\beta=0.1$ during cross-validation. For mixture model clustering, a non-informative Dirichlet prior ($\alpha=K/50$, where $K$ is now the number of clusters) is set on the proportions of the mixture components and another Dirichlet prior ($\beta=0.1$) is set on cluster-specific word distributions. The Gibbs sampler for LDA and multinomial mixture model is run for 1000 samples, discarding the first 500 for burn-in. The last sample is used computing the posterior estimates. Minimal differences were found when the inferred model parameters were averaged over samples in comparison to simply using the last sample.
 
 \subsection{Biochemical Analysis}
 
@@ -295,56 +295,59 @@ Manual inspection of the results revealed that many Mass2Motifs, related to the 
 
 \subsection{Multi-file LDA Model}
 
-Metabolomics dataset consist of fragmentation spectra in multiple input files, where each file is generated from measurements of a technical or biological replicate. In this manner, Mass2Motif distributions over fragment and loss features are shared across files, but within each file, fragmentation spectra have their own file-specific probabilities of observing certain Mass2Motifs. When only a single input file is provided, the multi-file LDA model reduces to the standard LDA model. 
+Metabolomics dataset consist of fragmentation spectra in multiple input files, where each file is generated from measurements of a technical or biological replicate. Here we introduce an extension of the standard LDA model that allows for Mass2Motifs, the distributions over fragment and loss features, to be shared across files. Within each file, fragmentation spectra have their own file-specific probabilities of observing certain Mass2Motifs. When only a single input file is provided, the proposed extended model reduces to the standard LDA model. The conditional dependences of this model, which we call the multi-file LDA model, is shown in Figure~\ref{fig:lda-multifile-lda-diagram} and described below.
 
-In the proposed multi-file LDA model, the observation on the $n$-th fragment or loss feature in the $d$-th fragmentation spectra in file $f$ ($w_{dn}^f$) is conditioned on the assignment of feature $w_{dn}^f$ to some $k$-th global Mass2Motif multinomial distribution that is shared across files. This assignment is denoted by the indicator variable $\boldsymbol{z}_{dn}^f$, so $\boldsymbol{z}_{dn}^f=k$ if feature $n$ from fragmentation spectra $d$ in file $f$ is assigned to the $k$-th Mass2Motif. The probability of seeing certain Mass2Motifs for each $d$-th fragmentation spectra in file $f$ is then drawn from a multinomial distribution with a parameter vector $\boldsymbol{\theta}_{d}^f$. This parameter vector $\boldsymbol{\theta}_{d}^f$ is in turn drawn from a prior Dirichlet distribution having the parameter vector $\boldsymbol{\alpha}^f$. 
+\begin{figure}[tbh!]
+\noindent \begin{centering}
+\includegraphics[width=0.5\textwidth]{07-lda/figures/multifile_lda.pdf}
+\par\end{centering}
+\caption{\label{fig:lda-multifile-lda-diagram}Graphical model of the multi-file LDA model. The addition to the standard LDA model is the plate on $F$ that denotes an index over the files, $f=1,...,F$. Circles denotes random variables, while the shaded node denotes the observed word value.}
+\end{figure}
+
+We follow the notations used for the standard LDA model in Section~\ref{sub:ms2lda-workflow}, but expand them slightly to index the different files. $w_{dn}^f$ refers to the $n$-th fragment or loss feature in the $d$-th fragmentation spectra in file $f$. Each $w_{dn}^f$ is assigned to the $k$-th Mass2Motif, a multinomial distribution over the entire vocabulary of fragment and loss features, through the indicator variable $z_{dn}^f$, so $z_{dn}^f=k$ if feature $n$ from fragmentation spectra $d$ in file $f$ is assigned to the $k$-th Mass2Motif. The probability of seeing certain Mass2Motifs for each $d$-th fragmentation spectra in file $f$ is then drawn from a multinomial distribution with a parameter vector $\boldsymbol{\theta}_{d}^f$. This parameter vector $\boldsymbol{\theta}_{d}^f$ is in turn drawn from a prior Dirichlet distribution having the parameter vector $\boldsymbol{\alpha}^f$. Note that unlike the standard LDA model, each file now has its own prior Dirichlet distribution parameterised by $\boldsymbol{\alpha}^f$ and all documents in the same file has their document-to-topic distributions drawn from the same prior Dirichlet specific to the file.
 \begin{align}
-\boldsymbol{z}_{dn}^f \vert \boldsymbol{\theta}_{d}^f &\sim Multinomial(\boldsymbol{\theta}_{d}^f) \label{eq:dir-multi-1a}\\
-\boldsymbol{\theta}_{d}^f \vert \boldsymbol{\alpha}^f &\sim Dirichlet(\boldsymbol{\alpha}^f) \label{eq:dir-multi-1b}
+z_{dn}^f \vert \boldsymbol{\theta}_{d}^f &\sim Multinomial(\boldsymbol{\theta}_{d}^f) \label{eq:dir-multi-1a}\\
+\boldsymbol{\theta}_{d}^f \vert \boldsymbol{\alpha}^f &\sim Dir(\boldsymbol{\alpha}^f) \label{eq:dir-multi-1b}
 \end{align}
-As in the case of standard LDA, the $k$-th multinomial distribution for a Mass2Motif is characterised by the parameter vector $\boldsymbol{\phi}_{\boldsymbol{z}_{dn}^f}$, with $\boldsymbol{\phi}_{\boldsymbol{z}_{dn}^f}$ drawn from a prior Dirichlet distribution having the parameter vector $\boldsymbol{\beta}$. 
+As in the case of standard LDA, the $k$-th multinomial distribution for a Mass2Motif is still characterised by the parameter vector $\boldsymbol{\phi}_{\boldsymbol{z}_{dn}^f}$, with $\boldsymbol{\phi}_{\boldsymbol{z}_{dn}^f}$ drawn from a prior Dirichlet distribution that is global to all files, parameterised by the vector $\boldsymbol{\beta}$. 
 \begin{align}
-\boldsymbol{w}_{dn}^f \vert \boldsymbol{\phi}_{\boldsymbol{z}_{dn}^f} &\sim Multinomial(\boldsymbol{\phi}_{\boldsymbol{z}_{dn}^f}) \label{eq:dir-multi-2a} \\
-\boldsymbol{\phi}_{k} \vert \boldsymbol{\beta} &\sim Dirichlet(\boldsymbol{\beta}) \label{eq:dir-multi-2b}
+{w}_{dn}^f \vert \boldsymbol{\phi}_{\boldsymbol{z}_{dn}^f} &\sim Multinomial(\boldsymbol{\phi}_{\boldsymbol{z}_{dn}^f}) \label{eq:dir-multi-2a} \\
+\boldsymbol{\phi}_{k} \vert \boldsymbol{\beta} &\sim Dir(\boldsymbol{\beta}) \label{eq:dir-multi-2b}
 \end{align}
 
-Inference in the multi-file LDA model is again performed via a collapsed Gibbs sampling scheme. The conditional probability of $P(\boldsymbol{z}_{dn}^f=k \vert \boldsymbol{w}_{dn}^f, ...)$ of the assignment of feature $n$ in spectra $d$ file $f$ to Mass2Motif $k$ is given by eq. (\ref{eq:multifile-lda-gibbs}).
+Inference in the multi-file LDA model is again performed via a collapsed Gibbs sampling scheme. The conditional probability of $P({z}_{dn}^f=k \vert {w}_{dn}^f, ...)$ of the assignment of feature $n$ in spectra $d$ file $f$ to Mass2Motif $k$ is given by eq. (\ref{eq:multifile-lda-gibbs}).
 \begin{equation}
-P(\boldsymbol{z}_{dn}^f=k \vert \boldsymbol{w}_{dn}^f, ...) \propto P(\boldsymbol{w}_{dn}^f \vert \boldsymbol{z}_{dn}^f=k, ...) P(\boldsymbol{z}_{dn}^f=k \vert ...)
+P({z}_{dn}^f=k \vert {w}_{dn}^f, ...) \propto P({w}_{dn}^f \vert {z}_{dn}^f=k, ...) P({z}_{dn}^f=k \vert ...)
 \label{eq:multifile-lda-gibbs}
 \end{equation}
-where $...$ denotes any other parameters being conditioned upon but not explicitly listed. Similar to the derivation of standard LDA, we can marginalise over all $\boldsymbol{\phi}_k$ parameters in the likelihood term, $P(\boldsymbol{w}_{dn}^f \vert \boldsymbol{z}_{dn}^f=k, ...)$ of eq. (\ref{eq:multifile-lda-gibbs}), to obtain:
+where $...$ denotes any other parameters being conditioned upon but not explicitly listed. Similar to the derivation of standard LDA, we can marginalise over all $\boldsymbol{\phi}_k$ parameters in the likelihood term, $P(\boldsymbol{w}_{dn}^f \vert {z}_{dn}^f=k, ...)$ of eq. (\ref{eq:multifile-lda-gibbs}), to obtain:
 \begin{equation}
-P(\boldsymbol{w}_{dn}^f \vert \boldsymbol{z}_{dn}^f=k, ...) \propto \frac{\sum_{f} c_{kn}^f + \boldsymbol{\beta}_n}{\sum_{n}\sum_{f} c_{kn}^f + \boldsymbol{\beta}_n}
+P({w}_{dn}^f \vert {z}_{dn}^f=k, ...) \propto \frac{\sum_{f} c_{kn}^f + {\beta}_n}{\sum_{n}\sum_{f} c_{kn}^f + {\beta}_n}
 \label{eq:multifile-lda-gibbs-likelihood}
 \end{equation}
-where $\sum_{f} c_{kn}^f$ is the total number of the $n$-th feature from all files currently assigned to Mass2Motif $k$ (this count excludes the current feature being sampled in the current iteration of Gibbs sampler). For the prior term $P(\boldsymbol{z}_{dn}^f=k \vert ...)$, marginalising over all $\boldsymbol{\theta}_{d}^f$ parameters produces as in the standard LDA:
+where $\sum_{f} c_{kn}^f$ is the total number of the $n$-th feature from all files currently assigned to Mass2Motif $k$ (this count excludes the current feature being sampled in the current iteration of Gibbs sampler). For the prior term $P({z}_{dn}^f=k \vert ...)$, marginalising over all $\boldsymbol{\theta}_{d}^f$ parameters produces as in the standard LDA:
 \begin{equation}
-P(\boldsymbol{z}_{dn}^f=k \vert ...) \propto  c_{dk}^f + \boldsymbol{\alpha}^f_k
+P({z}_{dn}^f=k \vert ...) \propto  c_{dk}^f + {\alpha}^f_k
 \label{eq:multifile-lda-gibbs-prior}
 \end{equation}
 with $c_{dk}^f$ the number of features from document $n$ in file $f$ currently assigned to Mass2Motif $k$, excluding the current feature being sampled. 
 Putting the prior and likelihood terms together, the following predictive distribution is obtained for the assignment of feature $n$ from document $d$ file $f$ to Mass2Motif $k$:
 \begin{equation}
-P(\boldsymbol{z}_{dn}^f=k \vert \boldsymbol{w}_{dn}^f, ...) \propto (c_{dk}^f + \boldsymbol{\alpha}^f_k) \cdot \frac{\sum_{f} c_{kn}^f + \boldsymbol{\beta}_n}{\sum_{n}\sum_{f} c_{kn}^f + \boldsymbol{\beta}_n}
+P({z}_{dn}^f=k \vert {w}_{dn}^f, ...) \propto (c_{dk}^f + {\alpha}^f_k) \cdot \frac{\sum_{f} c_{kn}^f + {\beta}_n}{\sum_{n}\sum_{f} c_{kn}^f + {\beta}_n}
 \label{eq:multifile-lda-gibbs-combined}
 \end{equation}
 
-In each iteration of the Gibbs sampling, the information on the current feature $n$ in spectra $d$ file $f$ being sampled is removed. Reassignment of the feature to a Mass2Motif is then performed by sampling $\boldsymbol{z}_{dn}^f$ from the distribution specified by eq. (\ref{eq:multifile-lda-gibbs-combined}). Given $\boldsymbol{z}$, the predictive distribution for the $d$-th spectrum over the Mass2Motifs, $\boldsymbol{\theta}_{d}^f$, is obtained from the expectation of the Dirichlet-Multinomial distribution defined in eqs. (\ref{eq:dir-multi-1a})-(\ref{eq:dir-multi-1b}):
+In each iteration of the Gibbs sampling, the information on the current feature $n$ in spectra $d$ file $f$ being sampled is removed. Reassignment of the feature to a Mass2Motif is then performed by sampling ${z}_{dn}^f$ from the distribution specified by eq. (\ref{eq:multifile-lda-gibbs-combined}). Given $\boldsymbol{z}$, the predictive distribution for the $d$-th spectrum over the Mass2Motifs, $\boldsymbol{\theta}_{d}^f$, is obtained from the expectation of the Dirichlet-Multinomial distribution defined in eqs. (\ref{eq:dir-multi-1a})-(\ref{eq:dir-multi-1b}):
 \begin{align}
-\boldsymbol{\hat{\theta}}_{dk}^f = \frac{c_{dk}^f+\boldsymbol{\alpha}^f_k}{\sum_{k} c_{dk}^f+\boldsymbol{\alpha}^f_k}
+{\theta}_{dk}^f = \frac{c_{dk}^f+{\alpha}^f_k}{\sum_{k} c_{dk}^f+{\alpha}^f_k}
 \end{align}
 where $c_{dk}^f$ is the count of features from spectra $d$ in file $f$ assigned to Mass2Motif $k$. 
 
-For each spectra, the multinomial count vector $\textbf{c}_d^f$, of features from the spectra that are assigned to the different Mass2Motifs, is a sample from the Dirichlet-Multinomial distribution defined in eqs. (\ref{eq:dir-multi-1a})-(\ref{eq:dir-multi-1b}). Given all the $\textbf{c}_1^f,\textbf{c}_2^f, ... \textbf{c}_D^f$ vectors in the file, the parameter $\boldsymbol{\alpha}^f$ of the Dirichlet-Multinomial distribution of spectra-to-Mass2Motifs in file $f$ can be estimated by maximizing the log likelihood $log\prod_{d=1}^{D}  p(\boldsymbol{c}_{d}^f \vert \boldsymbol{\alpha}^f)$. An iterative procedure to approximate this is described in \cite{Minka2003}. The lower bound on the log likelihood of the multinomial data given $\boldsymbol{\alpha}^f$ is obtained from the iterative update:
-\begin{equation}
-\boldsymbol{\alpha}^f_k=\boldsymbol{\alpha}^f_k \frac{\sum_{d} \Psi(c_{dk}^f + \boldsymbol{\alpha}_k^f)-\Psi(\boldsymbol{\alpha}_k^f)}{\Psi(c_{d}^f + \sum_{k} \boldsymbol{\alpha}_k^f)-\Psi(\sum_{k} \boldsymbol{\alpha}_k^f)}
-\end{equation}
-where $\Psi(x)=\frac{\Gamma^{'}(x)}{\Gamma(x)}$ is the digamma function.
+For each spectra, the multinomial count vector $\textbf{c}_d^f$, of features from the spectra that are assigned to the different Mass2Motifs, is a sample from the Dirichlet-Multinomial distribution defined in eqs. (\ref{eq:dir-multi-1a})-(\ref{eq:dir-multi-1b}). Given all the $\textbf{c}_1^f,\textbf{c}_2^f, ... \textbf{c}_D^f$ vectors in the file, the parameter $\boldsymbol{\alpha}^f$ of the Dirichlet-Multinomial distribution of spectra-to-Mass2Motifs in file $f$ can be estimated by maximizing the log likelihood, $log\prod_{d=1}^{D}  p(\boldsymbol{c}_{d}^f \vert \boldsymbol{\alpha}^f)$. An iterative procedure to approximate this is described in \cite{Minka2003}.
 
-In a similar manner, for each $k$-th Mass2Motif, the predictive distribution over features, $\boldsymbol{\phi}_k$, can be obtained as the expectation of the Dirichlet-Multinomial distribution defined in eqs. (\ref{eq:dir-multi-2a})-(\ref{eq:dir-multi-2b}):
+In a similar manner to standard LDA, each $k$-th Mass2Motif, the predictive distribution over features, $\boldsymbol{\phi}_k$, can be obtained as the expectation of the Dirichlet-Multinomial distribution defined in eqs. (\ref{eq:dir-multi-2a})-(\ref{eq:dir-multi-2b}):
 \begin{align}
-\boldsymbol{\hat{\phi}}_{kn} = \frac{c_{kn}+\boldsymbol{\beta}_n}{\sum_{n} c_{kn}+\boldsymbol{\beta}_n}
+{\phi}_{kn} = \frac{c_{kn}+{\beta}_n}{\sum_{n} c_{kn}+{\beta}_n}
 \end{align}
 where $c_{kn}$ is the count of the $n$-feature from all files that are assigned to Mass2Motif $k$. 
 

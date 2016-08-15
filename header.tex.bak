@@ -108,7 +108,7 @@
 
 \title{Probabilistic Methods for Liquid Chromatography Mass Spectrometry Data Pre-processing}
 \author{Joe Wandy}
-\date{March 2016}
+\date{August 2016}
 
 \maketitle
 
@@ -121,9 +121,9 @@
 \input{"acknowledgements.tex"} 
 %\addcontentsline{toc}{chapter}{Acknowledgments}
 
-\newpage
-\vspace*{1.75in}
-\begin{flushright} Dedication. (Is what you need.)\end{flushright}
+% \newpage
+% \vspace*{1.75in}
+% \begin{flushright} Dedication. (Is what you need.)\end{flushright}
 
 
 %\pagenumbering{roman}

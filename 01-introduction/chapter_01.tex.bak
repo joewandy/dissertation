@@ -1,86 +1,54 @@
 \chapter{Introduction}
 \label{c:intro}
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-aliquip ex ea commodo consequat. Duis aute irure dolor in
-reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-culpa qui officia deserunt mollit anim id est laborum.
+Liquid chromatography combined with mass spectrometry (LC-MS) has emerged as one of the most popular methods of measurements in the untargeted study of proteins (proteomics) and metabolites (metabolomics). Proteins and metabolites serve as crucial building blocks in the body and play a vital role in the cellular maintenance of any organism. Metabolomics in particular is regarded as the -omics that is the closest to the phenotype: changes to the physical traits of an organism is often expressed in the metabolome. Understanding and characterising the proteome and metabolome provide important insights into the working of any biological system.
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-aliquip ex ea commodo consequat. Duis aute irure dolor in
-reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-culpa qui officia deserunt mollit anim id est laborum.
+Before the raw LC-MS data can be used for further analysis, it has to be processed in a data pre-processing pipeline. This starts from the initial step of peak detection, where the observed peaks having m/z, retention time (RT) and intensity values are extracted from the raw data. The two important steps that follow after peak detection are the alignment and identification steps. In most studies, multiple samples are obtained and measured (producing biological replicates) or alternatively a sample is run through the LC-MS instruments multiple times (producing technical replicates). Alignment refers to the matching of these peaks across multiple LC-MS runs. In identification, we seek to associate the information on which compounds generate the observed peaks. Fragmentation data, where parent peaks are processed through a second-stage mass spectrometry, provides an additional information as to the identity of a compound in the form of patterns of fragment peaks that are characteristic to the compound.
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-aliquip ex ea commodo consequat. Duis aute irure dolor in
-reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-culpa qui officia deserunt mollit anim id est laborum.
+In many cases, LC-MS data pre-processing is challenging. The lack of knowledge in the complete composition of compounds in a sample means that we do not know for certain which compounds are present in the sample. Compounds ionise differently during mass spectrometry, while a single compound can produce multiple observed peaks, making data interpretation difficult as there is no one-to-one correspondence between the observed peaks and the compounds that generate them. While the m/z information of a peak is generally preserved across runs, retention time drift means the observed RT values can vary among peaks produced on different instruments or even peaks produced on the same instrument but measured at a different time period. This makes alignment difficult. Identification using fragmentation data is also hampered by the limited coverage of spectral databases to compare the observed fragmentation pattern against. 
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-aliquip ex ea commodo consequat. Duis aute irure dolor in
-reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-culpa qui officia deserunt mollit anim id est laborum.
+However, peaks generated from the same underlying compound are not independent. They are structurally related in a chemical manner e.g. through being the ionisaton product peaks of the same compound. We reason that this structural dependencies can be used to improve alignment. In a similar manner, fragmentation spectra, which provides the characteristic fingerprints of compounds, also contains structural information where a subset of fragment peaks may correspond to a shared chemical substructure in a class of compounds. In this thesis, we show that through generative modelling, the structural dependencies of these peaks can be revealed and exploited to improve or enhance the alignment and identification steps. Moreover through generative modelling, alignment uncertainties can also be quantified, allowing the user to control the level of uncertainty they desire from matched peaksets.
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-aliquip ex ea commodo consequat. Duis aute irure dolor in
-reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-culpa qui officia deserunt mollit anim id est laborum.
+\section{Thesis Statement\label{sub:thesis-statement}}
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-aliquip ex ea commodo consequat. Duis aute irure dolor in
-reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-culpa qui officia deserunt mollit anim id est laborum.
+Untargeted liquid chromatography mass spectrometry data pre-processing is a challenging task that is often subjected to errors and inaccuracies. Much of this can be attributed to the complexity of the LC-MS data itself and also to the lack of knowledge as to which compounds are present in the sample. However, the structural dependencies in the observed peak data means that through generative modelling, we can explain the relationships between peaks, allowing us to produce groups of related peaks that can be used to improve or enhance the alignment and identification steps of LC-MS data pre-processing.
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-aliquip ex ea commodo consequat. Duis aute irure dolor in
-reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-culpa qui officia deserunt mollit anim id est laborum.
+\section{List of Contributing Papers}
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-aliquip ex ea commodo consequat. Duis aute irure dolor in
-reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-culpa qui officia deserunt mollit anim id est laborum.
+The work described in this thesis has led to the following publication:
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-aliquip ex ea commodo consequat. Duis aute irure dolor in
-reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-culpa qui officia deserunt mollit anim id est laborum.
+\begin{enumerate}
+\item Wandy, J., Daly, R., Breitling, R., Rogers, S. (2015). "Incorporating peak grouping information for alignment of multiple liquid chromatography-mass spectrometry datasets". \textit{Bioinformatics}, 31(12), 1999-2006.
+\end{enumerate}
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-aliquip ex ea commodo consequat. Duis aute irure dolor in
-reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-culpa qui officia deserunt mollit anim id est laborum.
+Additionally the following manuscripts are still under review:
 
-\section{Thesis Statement}
+\begin{enumerate}
+\item Wandy, J., van der Hooft, J. J., Rogers, S. (2016). "Ionization Product Clustering to Improve Peak Alignment in LC-MS-based Metabolomics" submitted to \textit{Bioinformatics}.
+\item van der Hooft, J. J., Wandy, J., Barrett, M., Burgess, K. V., Rogers, S. (2016). "Topic Modeling for Untargeted Substructure Exploration in Metabolomics" submitted to \textit{Proceedings of the National Academy of Sciences} (PNAS).
+\end{enumerate}
+
+Chapter~\ref{c:matching} of this thesis is based on the first published paper, Chapters~\ref{c:precursor-clustering} and \ref{c:lda} are based on the two manuscripts that are under review.
 
 \section{Overview of Thesis and Research Contributions}
+
+The contributions of this thesis are:
+
+\begin{itemize}
+\item A method that combines direct-matching and related peak grouping information to improve alignment.
+\item A generative model that groups related peaks in the same LC-MS run by their ionisation product (IP) relationships, producing IP clusters. This is described alongside methods that use the resulting IP clusters to produce a better alignment.
+\item A generative model that groups related peaks in the same and across LC-MS runs in a flexible manner. From this model, we can extract alignment and furthermore, it allows for the probabilities of matching of certain peaksets to be quantified.
+\item A study to the application of topic modelling to model substructures in fragmentation data. 
+\end{itemize}
+
+The remainder of this thesis is structured as follows:
+
+\begin{itemize}
+\item \textbf{Chapter~\ref{c:background}} discusses the background literature that this thesis is built upon. In particular, the chapter explains the nature of the LC-MS data and the necessary pre-processing steps before the data can be used for further analysis, including the challenges faced in the data pre-processing steps.
+\item \textbf{Chapter~\ref{c:ml-background}} introduces probabilistic modelling, with a particular focus on the construction of mixture models and other related generative models that are used in the rest of the thesis.
+\item \textbf{Chapter~\ref{c:matching}} presents an approach that combines matching and clustering information to produce a better alignment result.
+\item \textbf{Chapter~\ref{c:precursor-clustering}} presents a generative model that performs the clustering of ionisation product peaks into IP clusters, and introduces ways these IP clusters can be used to produce a better alignment result.
+\item \textbf{Chapter~\ref{c:hdp}} introduces a hierarchical mixture model that can be used to perform the clustering of related ionisation product peaks across multiple runs, allowing for the uncertainties in the matching of peaks to be extracted from the model.
+\item \textbf{Chapter~\ref{c:lda}} presents the application of topic modelling to capture the structural dependencies of peaks in fragmentation data. It also introduces a visualisation module that can be used to aid in the analysis of the result from the model. 
+\item \textbf{Chapter~\ref{c:conclusion}} presents a summary of the work and contributions. It also highlight the avenues for future research based on the work done so far, and finally it concludes this thesis. 
+\end{itemize}
