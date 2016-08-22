@@ -13,7 +13,7 @@ In this chapter, we propose clustering IP peaks that share similar RT values tog
 
 \begin{figure*}[!htbp]
 \centering\includegraphics[width=1\linewidth]{04-matching/figures/figure_1.eps}
-\centering\caption{\label{fig:computingweight} Illustrative example of the incorporation of grouping information into the similarity score. Each node in the figure is a peak feature, and dotted ovals represent groups of IP peaks, e.g. isotopes, fragments, etc. Initially weights (e.g. $W_{AE}$) are computed for pairs of peaks (one from each run) with m/z and RT within pre-defined thresholds. These weights are converted into an overall score by incorporating grouping information. For example, peak pairs $(A,E)$ and $(B,G)$ are both within the threshold. Because $A$ and $B$ are in the same group, and $E$ and $G$ are in the same group, the weights between pairs $(A,E)$ and $(B,G)$ are upweighted. Peak $J$ is not related to any peaks that could be matched with $A$'s IP peaks and the similarity between $A$ and $J$ is therefore downweighted (because $\alpha\leq 1$). The same applies to similarities between pairs $(C,H)$ and $(D,I)$.}
+\centering\caption[Illustrative example of the incorporation of grouping information into the similarity score.]{\label{fig:computingweight} Illustrative example of the incorporation of grouping information into the similarity score. Each node in the figure is a peak feature, and dotted ovals represent groups of IP peaks, e.g. isotopes, fragments, etc. Initially weights (e.g. $W_{AE}$) are computed for pairs of peaks (one from each run) with m/z and RT within pre-defined thresholds. These weights are converted into an overall score by incorporating grouping information. For example, peak pairs $(A,E)$ and $(B,G)$ are both within the threshold. Because $A$ and $B$ are in the same group, and $E$ and $G$ are in the same group, the weights between pairs $(A,E)$ and $(B,G)$ are upweighted. Peak $J$ is not related to any peaks that could be matched with $A$'s IP peaks and the similarity between $A$ and $J$ is therefore downweighted (because $\alpha\leq 1$). The same applies to similarities between pairs $(C,H)$ and $(D,I)$.}
 \end{figure*}
 
 As shown in Figure~\ref{fig:computingweight}, initial weights are computed between pairs of peaks in the two runs that are within m/z and RT tolerances (e.g. $W_{AE}$ and $W_{AJ}$). When related peak information is added, the similarity between peaks $A$ and $E$ is increased due to peak $A$ being related to another peak ($B$) that is similar to a peak ($G$) related to $E$. On the other hand, the similarity between $A$ and $J$ is not increased as $J$ does not have any IP peaks that could potentially be matched to peaks related to $A$. In other words, we are proposing using the structural dependencies present between peaks in each run to modify the similarity scores and improve alignment performance: the more peaks related to $A$ that could be matched to peaks related to $E$, the more likely it becomes that $A$ should be matched to $E$.
@@ -304,7 +304,7 @@ The results are shown in Tables~\ref{tab:Detailed-Result--P1} and \ref{tab:Detai
 \hline 
 \end{tabular}
 \par\end{centering}
-\caption{\label{tab:Detailed-Result--P1}F$_1$ scores for the single-fraction experiment results on the P1 dataset. The tool with the highest F$_1$ score for each fraction is highlighted in bold. The results for `All' show the average F$_1$ scores of individual fractions.}
+\caption[F$_1$ scores for the single-fraction experiment results on the P1 dataset.]{\label{tab:Detailed-Result--P1}F$_1$ scores for the single-fraction experiment results on the P1 dataset. The tool with the highest F$_1$ score for each fraction is highlighted in bold. The results for `All' show the average F$_1$ scores of individual fractions.}
 \end{table}
 
 \begin{table}[!htbp]
@@ -328,7 +328,7 @@ The results are shown in Tables~\ref{tab:Detailed-Result--P1} and \ref{tab:Detai
 \hline 
 \end{tabular}
 \par\end{centering}
-\caption{\label{tab:Detailed-Result--P2}F$_1$ scores for the single-fraction experiment results on the P2 dataset. The tool with the highest F$_1$ score for each fraction is highlighted in bold. The results for `All' show the average F$_1$ scores of individual fractions.}
+\caption[F$_1$ scores for the single-fraction experiment results on the P2 dataset.]{\label{tab:Detailed-Result--P2}F$_1$ scores for the single-fraction experiment results on the P2 dataset. The tool with the highest F$_1$ score for each fraction is highlighted in bold. The results for `All' show the average F$_1$ scores of individual fractions.}
 \end{table}
 
 %\begin{figure}[!htbp]
@@ -409,7 +409,8 @@ Tables~\ref{tab:within-P1} and \ref{tab:within-P2} show the F$_{1}$ score across
 \hline 
 \end{tabular}
 \par\end{centering}
-\caption{\label{tab:within-P1}Multiple-fractions experiment results for the
+\caption[Multiple-fractions experiment results for the
+P1 dataset.]{\label{tab:within-P1}Multiple-fractions experiment results for the
 P1 dataset. For each training fraction, the reported testing performance is the average of individual F$_1$ scores from the testing fractions. The top-performing method (highest F$_1$ score) is highlighted in bold.}
 \end{table}
 
@@ -434,7 +435,8 @@ P1 dataset. For each training fraction, the reported testing performance is the 
 \hline 
 \end{tabular}
 \par\end{centering}
-\caption{\label{tab:within-P2}Multiple-fractions experiment results for the
+\caption[Multiple-fractions experiment results for the
+P2 dataset.]{\label{tab:within-P2}Multiple-fractions experiment results for the
 P2 dataset. For each training fraction, the reported testing performance is the average of individual F$_1$ scores from the testing fractions. The top-performing method (highest F$_1$ score) is highlighted in bold.}
 \end{table}
 

@@ -11,7 +11,7 @@ However, peaks generated from the same underlying compound are not independent. 
 
 \section{Thesis Statement\label{sub:thesis-statement}}
 
-Untargeted liquid chromatography mass spectrometry data pre-processing is a challenging task that is often subjected to errors and inaccuracies. Much of this can be attributed to the complexity of the LC-MS data itself and also to the lack of knowledge as to which compounds are present in the sample. However, the structural dependencies in the observed peak data means that through generative modelling, we can explain the relationships between peaks, allowing us to produce groups of related peaks that can be used to improve or enhance the alignment and identification steps of LC-MS data pre-processing.
+Untargeted liquid chromatography mass spectrometry data pre-processing is a challenging task that is often subject to errors and inaccuracies. Much of this can be attributed to the complexity of the LC-MS data itself and also to the lack of knowledge as to which compounds are present in the sample. However, the structural dependencies in the observed peak data means that through generative modelling, we can explain the relationships between peaks, allowing us to produce groups of related peaks that can be used to improve or enhance the alignment and identification steps of LC-MS data pre-processing.
 
 \section{List of Contributing Papers}
 
@@ -28,7 +28,11 @@ Additionally the following manuscripts are still under review:
 \item van der Hooft, J. J., Wandy, J., Barrett, M., Burgess, K. V., Rogers, S. (2016). "Topic Modeling for Untargeted Substructure Exploration in Metabolomics" submitted to \textit{Proceedings of the National Academy of Sciences} (PNAS).
 \end{enumerate}
 
-Chapter~\ref{c:matching} of this thesis is based on the first published paper, Chapters~\ref{c:precursor-clustering} and \ref{c:lda} are based on the two manuscripts that are under review.
+Chapter~\ref{c:matching} of this thesis is based on the first published paper, Chapters~\ref{c:precursor-clustering} and \ref{c:lda} are based on the two manuscripts that are under review. Finally, the author also contributed to the following work but it is not a part of this thesis:
+
+\begin{enumerate}
+\item Daly, R., Rogers, S., Wandy, J., Jankevics, A., Burgess, K. E., Breitling, R. (2014). MetAssign: probabilistic annotation of metabolites from LC–MS data using a Bayesian clustering approach. \textit{Bioinformatics}, 30(19), 2764-2771.
+\end{enumerate}
 
 \section{Overview of Thesis and Research Contributions}
 
@@ -36,9 +40,9 @@ The contributions of this thesis are:
 
 \begin{itemize}
 \item A method that combines direct-matching and related peak grouping information to improve alignment.
-\item A generative model that groups related peaks in the same LC-MS run by their ionisation product (IP) relationships, producing IP clusters. This is described alongside methods that use the resulting IP clusters to produce a better alignment.
-\item A generative model that groups related peaks in the same and across LC-MS runs in a flexible manner. From this model, we can extract alignment and furthermore, it allows for the probabilities of matching of certain peaksets to be quantified.
-\item A study to the application of topic modelling to model substructures in fragmentation data. 
+\item A generative model (\textbf{PrecursorCluster}) that groups related peaks in the same LC-MS run by their ionisation product (IP) relationships, producing IP clusters. This is described alongside methods that use the resulting IP clusters to produce a better alignment.
+\item A generative model (\textbf{HDP-Align}) that groups related peaks in the same and across LC-MS runs in a flexible manner. From this model, we can extract alignment and furthermore, it allows for the probabilities of matching of certain peaksets to be quantified.
+\item A generative model (\textbf{MS2LDA}) that groups related fragmentation features in tandem mass spectrometry data. From this model, we can extract patterns of fragmentation features that potentially correspond to substructures shared by metabolites. A visualisation module is also created to assist in the exploration of the results.
 \end{itemize}
 
 The remainder of this thesis is structured as follows:
@@ -47,8 +51,8 @@ The remainder of this thesis is structured as follows:
 \item \textbf{Chapter~\ref{c:background}} discusses the background literature that this thesis is built upon. In particular, the chapter explains the nature of the LC-MS data and the necessary pre-processing steps before the data can be used for further analysis, including the challenges faced in the data pre-processing steps.
 \item \textbf{Chapter~\ref{c:ml-background}} introduces probabilistic modelling, with a particular focus on the construction of mixture models and other related generative models that are used in the rest of the thesis.
 \item \textbf{Chapter~\ref{c:matching}} presents an approach that combines matching and clustering information to produce a better alignment result.
-\item \textbf{Chapter~\ref{c:precursor-clustering}} presents a generative model that performs the clustering of ionisation product peaks into IP clusters, and introduces ways these IP clusters can be used to produce a better alignment result.
-\item \textbf{Chapter~\ref{c:hdp}} introduces a hierarchical mixture model that can be used to perform the clustering of related ionisation product peaks across multiple runs, allowing for the uncertainties in the matching of peaks to be extracted from the model.
-\item \textbf{Chapter~\ref{c:lda}} presents the application of topic modelling to capture the structural dependencies of peaks in fragmentation data. It also introduces a visualisation module that can be used to aid in the analysis of the result from the model. 
+\item \textbf{Chapter~\ref{c:precursor-clustering}} presents the PrecursorCluster model to the grouping of ionisation product peaks into IP clusters. This chapter also introduces ways these IP clusters can be used to produce a better alignment result.
+\item \textbf{Chapter~\ref{c:hdp}} presents the HDP-Align model to perform the clustering of related ionisation product peaks within and across multiple runs. 
+\item \textbf{Chapter~\ref{c:lda}} presents the MS2LDA model to capture the structural dependencies of peaks in fragmentation data. It also introduces a visualisation module to aid in the analysis of the results from the model. 
 \item \textbf{Chapter~\ref{c:conclusion}} presents a summary of the work and contributions. It also highlight the avenues for future research based on the work done so far, and finally it concludes this thesis. 
 \end{itemize}

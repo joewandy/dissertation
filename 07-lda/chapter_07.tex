@@ -28,11 +28,11 @@ Latent Dirichlet Allocation has not been applied to metabolomics or mass spectro
 
 \section{Statement of Original Work}
 
-The work discussed in this chapter has been submitted to the \textit{Proceedings of the National Academy of Sciences} and is under review. Justin van der Hooft (JvdH) performed the measurements of the Beer samples through mass spectometry, generating the set of fragmentation data that can be used for topic modelling. The author contributed to the design and development of the MS2LDA workflow. This includes the development and optimisation of the feature extraction process, the implementation and testing of inference via LDA and also model validation against multinomial mixture model. 
+The work discussed in this chapter, of which the author is a joint first author, has been submitted to the \textit{Proceedings of the National Academy of Sciences} and is under review. Justin van der Hooft (JvdH) performed the measurements of the Beer samples through mass spectometry, generating the set of fragmentation data that can be used for topic modelling. The author contributed to the design and development of the MS2LDA workflow. This includes the development and optimisation of the feature extraction process, the implementation and testing of inference via LDA and also model validation against multinomial mixture model. 
 
-JvdH then analysed the results from MS2LDA for biochemical significance. To assist JvdH in his analysis, the author proposed and developed the visualisation module, MS2LDAVis. To improve the visualisation module, the author integrated elemental formula annotation functionalities. This includes writing a wrapper in MS2LDA to call SIRIUS \cite{Bocker2009}, a Java-based elemental formula annotator. Cristina Mihailescu (CM) implemented another Python-based elemental formula annotator, which was also customised and integrated into MS2LDA by the author. 
+JvdH then analysed the results from MS2LDA for biochemical significance. Throughout the analysis, the author and JvdH worked closely together. To assist JvdH in his analysis, the author proposed and developed the visualisation module, MS2LDAVis. To improve the visualisation module, the author integrated elemental formula annotation functionalities. This includes writing a wrapper in MS2LDA to call SIRIUS \cite{Bocker2009}, a Java-based elemental formula annotator. Cristina Mihailescu (CM), an Msc student, implemented another Python-based elemental formula annotator, which was also customised and integrated into MS2LDA by the author. 
 
-JvdH then performed molecular networking analysis on the same dataset, which was used for comparison to MS2LDA results. The author performed the identification of metabolites through matching to reference standard compounds and also the differential analysis of Mass2Motifs, and JvdH validated the results. 
+JvdH then performed molecular networking analysis on the same dataset, which was used for comparison to MS2LDA results. The author performed the identification of metabolites through matching to reference standard compounds and also the differential analysis of Mass2Motifs, and with JvdH validated the results. 
 
 \section{A Workflow for Substructure Discoveries and Annotations\label{sub:ms2lda-workflow}}
 
@@ -40,7 +40,7 @@ Substructure discovery through the MS2LDA workflow consists of two stages: i) th
 
 \begin{figure}[!htbp]
 \centering\includegraphics[width=1.0\linewidth]{07-lda/figures/text2frags_new.pdf}
-\centering\caption{\textbf{A.} LDA applied to text decomposes a document into its topic distributions (e.g. football, business and enrivonment topics). \textbf{B.} Similarly, MS2LDA decomposes a fragmentation spectrum into its topics (Mass2Motifs) that can be characterised as asparagine, hexose and adenine related. Each fragmentation spectra comprise of one or more Mass2Motifs. \textbf{C.} Schematic overview of the MS2LDA workflow.\label{fig:text2frags}}
+\centering\caption[A comparison between classical LDA for text and MS2LDA for fragmentation spectra.]{\textbf{A.} LDA applied to text decomposes a document into its topic distributions (e.g. football, business and enrivonment topics). \textbf{B.} Similarly, MS2LDA decomposes a fragmentation spectrum into its topics (Mass2Motifs) that can be characterised as asparagine, hexose and adenine related. Each fragmentation spectra comprise of one or more Mass2Motifs. \textbf{C.} Schematic overview of the MS2LDA workflow.\label{fig:text2frags}}
 \end{figure}
 
 Acquired fragmentation data cannot readily be used for the purpose of pattern searching via LDA and has to be converted into a suitable format. As input, the MS2LDA workflow accepts the combination of a single full-scan file for the MS1 peaks and a separate fragmentation file for the MS2 peaks. The data conversion process starts with the detection of MS1 peak in the input .mzXML file obtained from full-scan mode spectra using the CentWave algorithm from the XCMS library \cite{Smith2006}. This constitutes information on the parent (MS1) level. Fragmentation data, in the form of .mzML file obtained from tandem MS mode, are processed using an R script based on the RMassBank package \cite{Stravs2013}. 
@@ -50,8 +50,8 @@ A linking step is required to match the most intense MS2 spectrum in a scan to a
 Following the bag-of-words assumption, LDA does not consider word orders but instead take into account only the number of times word co-occur in a document. The next step is transforming spectral data into a bag-of-word count matrix (illustrated in Figure~\ref{fig:m2lda-matrix}), with entries in the matrix the co-occurrences of discrete MS2 features (`words') in the fragmentation spectra linked to a parent MS1 peak (`document'). From each fragmentation spectra, two types of features can be extracted: fragment features and loss features. Fragment features are the discretised m/z values of MS2 peaks, while loss features are formed by discretising neutral losses. A neutral loss, defined as the mass differences between a precursor MS1 peak and each of the child MS2 peaks in the spectrum, corresponds to the removal of a specific neutral fragment from the molecular ion. 
 
 \begin{figure}[!htbp]
-\centering\includegraphics[width=0.8\linewidth]{07-lda/figures/matrix.png}
-\centering\caption{The matrix of co-occurrences of fragment and loss features (rows) in each fragmentation spectrum linked to a parent MS1 peak (columns). Entries of the matrix are the counts of the feature from the normalized (0 – 100 scale) intensities.\label{fig:m2lda-matrix}}
+\centering\includegraphics[width=0.8\linewidth]{07-lda/figures/matrix.pdf}
+\centering\caption[The matrix of co-occurrences of fragment and loss features (rows) in each fragmentation spectrum linked to a parent MS1 peak (columns). ]{The matrix of co-occurrences of fragment and loss features (rows) in each fragmentation spectrum linked to a parent MS1 peak (columns). Entries of the matrix are the counts of the feature from the normalized (0 – 100 scale) intensities.\label{fig:m2lda-matrix}}
 \end{figure}
 
 Discretisation is performed via a greedy binning process. To group continuous m/z values and create fragment features, a priority queue is used that efficiently maintains the ordering of m/z values of peaks upon insertion. Successive items are popped from the priority queue in ascending order, forming a group of contiguous features --- until the next encountered item has an m/z value larger by a predefined tolerance in parts-per-million from the average values of the group, in which case a new group is created. The average m/z values of a group, rounded to 5 decimal places, becomes the discrete representation of fragment peaks in their originating spectra. The count of a fragment feature in a spectrum is computed by dividing the MS2 peak's intensity value to the largest intensity in the spectrum and multiplying by an scaling factor of 100 (equivalent to the discretisation resolution). In this manner, MS2 peaks with larger intensity values are represented more often in the spectra. Neutral loss features are discretised and computed in a manner similar to fragment features. The resulting matrices for fragment and loss features are concatenated and used as input to LDA. % Another possible informative feature considered but yet unused in MS2LDA is the pairwise differences between all MS2 peaks in a spectrum, which represent the potential substructures broken off from the original compound during fragmentation.
@@ -108,7 +108,7 @@ Beer2          & A bottle of `Jaw Glyde Ale’ brewed by JAW Brew. \\ \hline
 Beer3          & A bottle of `Seven Giraffes Extraordinary Ale’ brewed by William Bros. Brewery Company. \\ \hline
 Beer4          & A bottle of `Black Sheep Ale’ brewed by Black Sheep Brewery. \\ \hline
 \end{tabular}
-\caption{Beer samples used for evaluation dataset.}
+\caption{A list of the Beer samples used for evaluation.}
 \label{tab:beer-sample-details}
 \end{table}
 
@@ -148,7 +148,7 @@ Figure~\ref{fig:m2lda-perplexity} shows the perplexity for the two models on one
 
 \begin{figure}[!htbp]
 \centering\includegraphics[width=0.5\linewidth]{07-lda/figures/perplexity.png}
-\centering\caption{Results of model comparisons of LDA and multinomial mixture model on the Beer3 data. The lower perplexity values for $K>100$ demonstrates that LDA provides a better model fit on the held-out data when compared to the mixture model.\label{fig:m2lda-perplexity}}
+\centering\caption[Results of model comparisons of LDA and multinomial mixture model on the Beer3 data.]{Results of model comparisons of LDA and multinomial mixture model on the Beer3 data. The lower perplexity values for $K>100$ demonstrates that LDA provides a better model fit on the held-out data when compared to the mixture model.\label{fig:m2lda-perplexity}}
 \end{figure}
 
 \subsection{Biochemical Analysis \label{sub:lda-biological-findings}}
@@ -187,7 +187,7 @@ In a comparison to metabolite identification via spectral library matching using
 
 \begin{figure}[!htbp]
 \centering\includegraphics[width=0.8\linewidth]{07-lda/figures/figure3.pdf}
-\centering\caption{Three spectra, from the beer3 positive ionization mode file, each of which includes Mass2Motif 19, annotated as the plant derived ferulic acid substructure. A-C highlight mass fragments and neutral losses (arrows originating at the precursor ions) included in Mass2Motif 19 (fragments not explained by Mass2Motif 19 are light grey). Ferulic acid substructure is illustrated at the top of D, while the boxplot in D shows how common each fragment or loss features (representative of the substructure) are found in the 11 spectra explained by Mass2Motif 19 found in the dataset. Features highlighted in bold are consistently present in Mass2Motifs inferred across the four beer samples.\label{fig:m2lda-ferulic-acid}}
+\centering\caption[Three spectra, from the beer3 positive ionization mode file, each of which includes Mass2Motif 19, annotated as the plant derived ferulic acid substructure.]{Three spectra, from the beer3 positive ionization mode file, each of which includes Mass2Motif 19, annotated as the plant derived ferulic acid substructure. A-C highlight mass fragments and neutral losses (arrows originating at the precursor ions) included in Mass2Motif 19 (fragments not explained by Mass2Motif 19 are light grey). Ferulic acid substructure is illustrated at the top of D, while the boxplot in D shows how common each fragment or loss features (representative of the substructure) are found in the 11 spectra explained by Mass2Motif 19 found in the dataset. Features highlighted in bold are consistently present in Mass2Motifs inferred across the four beer samples.\label{fig:m2lda-ferulic-acid}}
 \end{figure}
 
 \subsubsection{Validation to Reference Standard Molecules}
@@ -251,7 +251,8 @@ acid group (COOH).  & 90 & loss\_46.0053  & CH2O2 \tabularnewline
 \hline 
 \end{tabular}
 \par\end{centering}
-\caption{Annotations of the Mass2Motifs associated to the fragmentation spectra
+\caption[Annotations of the Mass2Motifs associated to the fragmentation spectra
+of the peaks generated by the standard molecules shown in Figure~\ref{fig:m2lda-standards}.]{Annotations of the Mass2Motifs associated to the fragmentation spectra
 of the peaks generated by the standard molecules shown in Figure~\ref{fig:m2lda-standards}. The degree of
 a Mass2Motif indicates the number of MS2 fragmentation spectra in
 Beer3 positive ionization mode data having the fragment or loss features
@@ -266,14 +267,14 @@ Similarly in MS2LDA, a fragmentation spectrum can now be described by one or mor
 
 \begin{figure}[!htbp]
 \centering\includegraphics[width=1.0\linewidth]{07-lda/figures/combinedm2m.pdf}
-\centering\caption{Mass2Motifs 19 and 58 were found to be representative of ferulic acid and ethylphenol, respectively. 11 fragmentation spectra can be explained by M2M_19, while 42 spectra can be explained by M2M_58. However, one spectra (shown as a gray node in the Figure) can be explained by both Mass2Motifs, but this is not possible in spectral clustering.\label{fig:m2lda-combined-m2m}}
+\centering\caption[Mass2Motifs 19 and 58 were found to be representative of ferulic acid and ethylphenol, respectively. ]{Mass2Motifs 19 and 58 were found to be representative of ferulic acid and ethylphenol, respectively. 11 fragmentation spectra can be explained by M2M{\_}19, while 42 spectra can be explained by M2M{\_}58. However, one spectra (shown as a gray node in the Figure) can be explained by both Mass2Motifs, but this is not possible in spectral clustering.\label{fig:m2lda-combined-m2m}}
 \end{figure}
 
-The same spectral clustering result is also reproduced in Figure~\ref{fig:m2lda-cosine-clustering} where a matrix of cosine similarities of the spectra, placed in the ferulic acid based cluster and the ethylphenol based cluster (from Molecular Networking). Two distinct groups of spectra, based on their cosine similarities, can be seen --- corresponding to each cluster. Members of each cluster can also be explained by a single Mass2Motif (the ferulic acid cluster by M2M_19, and the ethylphenol cluster by M2M 58). However, one spectrum (the last row in Figure~\ref{fig:m2lda-cosine-clustering}) can also be jointly explained by the two Mass2Motifs. In cosine clustering, this spectrum would have to go into one cluster or the other based on its cosine similarity and valuable information is lost. Since a compound consists of multiple substructures, allowing each spectra to be explained by multiple Mass2Motifs naturally results in a greater potential of producing a more comprehensive characterisations of the substructures of a compound. 
+The same spectral clustering result is also reproduced in Figure~\ref{fig:m2lda-cosine-clustering} where a matrix of cosine similarities of the spectra, placed in the ferulic acid based cluster and the ethylphenol based cluster (from Molecular Networking). Two distinct groups of spectra, based on their cosine similarities, can be seen --- corresponding to each cluster. Members of each cluster can also be explained by a single Mass2Motif (the ferulic acid cluster by M2M{\_}19, and the ethylphenol cluster by M2M 58). However, one spectrum (the last row in Figure~\ref{fig:m2lda-cosine-clustering}) can also be jointly explained by the two Mass2Motifs. In cosine clustering, this spectrum would have to go into one cluster or the other based on its cosine similarity and valuable information is lost. Since a compound consists of multiple substructures, allowing each spectra to be explained by multiple Mass2Motifs naturally results in a greater potential of producing a more comprehensive characterisations of the substructures of a compound. 
 
 \begin{figure}[!htbp]
 \centering\includegraphics[width=0.6\linewidth]{07-lda/figures/figure10.pdf}
-\centering\caption{Cosine clustering results of spectra drawn from the ferulic acid based cluster and the ethylphenol based cluster (similar to M2M_19 and M2M_58). The last row represents a fragmentation spectrum that contains both substructures, but in the clustering approach, the spectra will be placed into one of the clusters based on its cosine similarity. In LDA, this spectrum can be explained by Mass2Motifs that characterise both substructures.\label{fig:m2lda-cosine-clustering}}
+\centering\caption[Cosine clustering results of spectra drawn from the ferulic acid based cluster and the ethylphenol based cluster (similar to M2M{\_}19 and M2M{\_}58). ]{Cosine clustering results of spectra drawn from the ferulic acid based cluster and the ethylphenol based cluster (similar to M2M{\_}19 and M2M{\_}58). The last row represents a fragmentation spectrum that contains both substructures, but in the clustering approach, the spectra will be placed into one of the clusters based on its cosine similarity. In LDA, this spectrum can be explained by Mass2Motifs that characterise both substructures.\label{fig:m2lda-cosine-clustering}}
 \end{figure}
 
 \subsubsection{Differential Analysis of Mass2Motifs}
@@ -286,22 +287,24 @@ Using PLAGE \cite{tomfohr2005pathway}, we assessed the DE of each Mass2Motif bas
 
 \begin{figure}[!htbp]
 \centering\includegraphics[width=1.0\linewidth]{07-lda/figures/heatmaps.png}
-\centering\caption{Log fold change heat-maps for the A) guanine and B) pentose loss Mass2Motifs. Each row is an annotated parent MS1 peak and columns represent different beer extracts. Bold names for parent MS1 peaks could confidently be matched to reference compounds, while italic names are for those that are annotated at a lower degree of confidence. \label{fig:m2lda-heatmaps}}
+\centering\caption[Log fold change heat-maps for the A) guanine and B) pentose loss Mass2Motifs. ]{Log fold change heat-maps for the A) guanine and B) pentose loss Mass2Motifs. Each row is an annotated parent MS1 peak and columns represent different beer extracts. Bold names for parent MS1 peaks could confidently be matched to reference compounds, while italic names are for those that are annotated at a lower degree of confidence. \label{fig:m2lda-heatmaps}}
 \end{figure}
 
 \section{Substructure Discoveries Across Many Fragmentation Files}
 
-Manual inspection of the results revealed that many Mass2Motifs, related to the same substructures, are consistently present in two or more beers. This is despite each sample being processed independently through MS2LDA. For example, the hexose-related Mass2Motifs are present in all positive ionization mode beer files with degrees from 58 to more than 100 in each beer. The results suggest that we can jointly model the presence or absence of Mass2Motifs across many input files at once, eliminating the necessary but tedious matching of Mass2Motifs across files if they were to be inferred independently for each input file.
+Metabolomics dataset consist of fragmentation spectra in multiple input files, where each file is generated from measurements of a technical or biological replicate. Manual inspection of the results revealed that many Mass2Motifs, related to the same substructures, are consistently present in two or more beers. This is despite each file being processed independently through MS2LDA. For example, the hexose-related Mass2Motifs are present in all positive ionization mode beer files with degrees from 58 - 100 in each beer. Other larger Mass2Motifs, such as histidine, ferulic acid, etc., are also found across the beer files. The results suggest that we can jointly model the presence or absence of Mass2Motifs across many input files at once. 
+
+While our initial motivation for modelling Mass2Motifs across files is to eliminate the tedious matching of Mass2Motifs from one file to another, modelling the presence of Mass2-Motifs across multiple files also opens interesting avenues for research. For instance, from such a model, spectra from different files but explained by the same Mass2Motifs can be rapidly flagged for validations to obtain their substructure characterisation. The posterior probability of observing a Mass2Motif in each file can also be compared, providing an estimate as to the presence or absence of certain substructures in each file. This information might be useful for further analysis. In \cite{van2016urinary}, substructure analysis (through Molecular Networking) is applied in a clinical setting to discover patterns of fragment peaks, which correspond to substructures shared by drug metabolites. The results from \cite{van2016urinary} revealed that substructure information help in the identification of many drug metabolites. As discussed before, Molecular Networking groups related spectra by their cosine similarities, and the manual validation to extract key fragment peaks that explain \emph{why} certain spectra are grouped together is time-consuming. This is a limitation not shared by our proposed model (that jointly models Mass2Motifs across mutiple files) if we were to apply the model to this kind of dataset.
 
 \subsection{Multi-file LDA Model}
 
-Metabolomics dataset consist of fragmentation spectra in multiple input files, where each file is generated from measurements of a technical or biological replicate. Here we introduce an extension of the standard LDA model that allows for Mass2Motifs, the distributions over fragment and loss features, to be shared across files. Within each file, fragmentation spectra have their own file-specific probabilities of observing certain Mass2Motifs. When only a single input file is provided, the proposed extended model reduces to the standard LDA model. The conditional dependences of this model, which we call the multi-file LDA model, is shown in Figure~\ref{fig:lda-multifile-lda-diagram} and described below.
+Here we introduce an extension of the standard LDA model that allows for Mass2Motifs, the distributions over fragment and loss features, to be shared across files. Within each file, fragmentation spectra have their own file-specific probabilities of observing certain Mass2Motifs. When only a single input file is provided, the proposed extended model reduces to the standard LDA model. The conditional dependences of this model, which we call the multi-file LDA model, is shown in Figure~\ref{fig:lda-multifile-lda-diagram} and described below.
 
 \begin{figure}[tbh!]
 \noindent \begin{centering}
 \includegraphics[width=0.5\textwidth]{07-lda/figures/multifile_lda.pdf}
 \par\end{centering}
-\caption{\label{fig:lda-multifile-lda-diagram}Graphical model of the multi-file LDA model. The addition to the standard LDA model is the plate on $F$ that denotes an index over the files, $f=1,...,F$. Circles denotes random variables, while the shaded node denotes the observed word value.}
+\caption[Graphical model of the multi-file LDA model.]{\label{fig:lda-multifile-lda-diagram}Graphical model of the multi-file LDA model. The addition to the standard LDA model is the plate on $F$ that denotes an index over the files, $f=1,...,F$. Circles denotes random variables, while the shaded node denotes the observed word value.}
 \end{figure}
 
 We follow the notations used for the standard LDA model in Section~\ref{sub:ms2lda-workflow}, but expand them slightly to index the different files. $w_{dn}^f$ refers to the $n$-th fragment or loss feature in the $d$-th fragmentation spectra in file $f$. Each $w_{dn}^f$ is assigned to the $k$-th Mass2Motif, a multinomial distribution over the entire vocabulary of fragment and loss features, through the indicator variable $z_{dn}^f$, so $z_{dn}^f=k$ if feature $n$ from fragmentation spectra $d$ in file $f$ is assigned to the $k$-th Mass2Motif. The probability of seeing certain Mass2Motifs for each $d$-th fragmentation spectra in file $f$ is then drawn from a multinomial distribution with a parameter vector $\boldsymbol{\theta}_{d}^f$. This parameter vector $\boldsymbol{\theta}_{d}^f$ is in turn drawn from a prior Dirichlet distribution having the parameter vector $\boldsymbol{\alpha}^f$. Note that unlike the standard LDA model, each file now has its own prior Dirichlet distribution parameterised by $\boldsymbol{\alpha}^f$ and all documents in the same file has their document-to-topic distributions drawn from the same prior Dirichlet specific to the file.
@@ -367,7 +370,7 @@ M2M\_115          & Leucine substructure      & \textbf{fragment\_86.09653}, \te
 M2M\_95           & Water loss substructure   & \textbf{loss\_18.01031}, \newline fragment\_314.0859, \newline fragment\_296.07259                                                                                                              \\ \hline
 M2M\_232          & Asparagine substructure   & \textbf{fragment\_136.06231}, loss\_162.03459, \textbf{fragment\_119.0354}, loss\_162.00534, \newline fragment\_137.04623 \\ \hline
 \end{tabular}
-\caption{Five global Mass2Motifs inferred from multi-file LDA. For each Mass2Motif, the top features above threshold are listed. Features characterised as key to the substructure from the previous individual LDA analyses are shown in bold.}
+\caption[Five global Mass2Motifs inferred from multi-file LDA.]{Five global Mass2Motifs inferred from multi-file LDA. For each Mass2Motif, the top features above threshold are listed. Features characterised as key to the substructure from the previous individual LDA analyses are shown in bold.}
 \label{tab:multifile-results}
 \end{table}
 
@@ -375,7 +378,7 @@ Information from all files now contribute to the inference of global Mass2Motifs
 
 \begin{figure}[!htbp]
 \centering\includegraphics[width=1.0\linewidth]{07-lda/figures/multifile.pdf}
-\centering\caption{Fragmentation spectra from different Beer extracts found by multi-file LDA to contain the same Mass2Motif (M2M_17) characterised as the ferulic acid substructure.\label{fig:multifile-lda}}
+\centering\caption{Fragmentation spectra from different Beer extracts found by multi-file LDA to contain the same Mass2Motif 17 characterised as the ferulic acid substructure.\label{fig:multifile-lda}}
 \end{figure}
 
 From each posterior sample, we can also obtain the updated $\boldsymbol{\alpha}^f$ for the different Mass2Motif across all files. As $\boldsymbol{\alpha}^f$ is the asymmetric parameter that serves as the pseudo-count in the Dirichlet-Multinomial distribution of spectra-to-Mass2Motifs, a high value of $\boldsymbol{\alpha}^f_k$ for a particular $k$ means that a specific Mass2Motif is more likely for each spectra in file $f$. Figure~\ref{fig:multifile-lda-alpha} shows the plot of posterior alpha values for the Mass2Motifs characterised as the ferulic acid, histidine and leucine substructures. Inspections of the comparisons in Figure~\ref{fig:multifile-lda-alpha} may lead to interesting biological hypothesis that explains e.g. why the ferulic acid substructure is more likely for the spectra in the third beer file compared to the others.

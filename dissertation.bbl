@@ -22,125 +22,99 @@
 \BIBdecl
 
 \bibitem{Tsai2013a}
-T.-H. Tsai, M.~G. Tadesse, C.~{Di Poto}, L.~K. Pannell, Y.~Mechref, Y.~Wang,
-  and H.~W. Ressom, ``{Multi-profile Bayesian alignment model for LC-MS data
-  analysis with integration of internal standards.}'' \emph{Bioinformatics},
-  vol.~29, no.~21, pp. 2774--80, 2013.
+T.-H. Tsai, M.~G. Tadesse, C.~Di~Poto, L.~K. Pannell, Y.~Mechref, Y.~Wang, and
+  H.~W. Ressom, ``Multi-profile bayesian alignment model for {LC}-{MS} data
+  analysis with integration of internal standards,'' \emph{Bioinformatics},
+  vol.~29, no.~21, pp. 2774--2780, 2013.
 
 \bibitem{Lee2013}
-T.~S. Lee, Y.~S. Ho, H.~C. Yeo, J.~P.~Y. Lin, and D.-Y. Lee, ``{Precursor mass
-  prediction by clustering ionization products in LC-MS-based metabolomics},''
-  \emph{Metabolomics}, vol.~9, no.~6, pp. 1301--1310, apr 2013.
+T.~S. Lee, Y.~S. Ho, H.~C. Yeo, J.~P.~Y. Lin, and D.-Y. Lee, ``Precursor mass
+  prediction by clustering ionization products in {LC}-{MS}-based
+  metabolomics,'' \emph{Metabolomics}, vol.~9, no.~6, pp. 1301--1310, 2013.
 
 \bibitem{mann2003proteomic}
 M.~Mann and O.~N. Jensen, ``Proteomic analysis of post-translational
-  modifications,'' \emph{Nature biotechnology}, vol.~21, no.~3, pp. 255--261,
+  modifications,'' \emph{Nature Biotechnology}, vol.~21, no.~3, pp. 255--261,
   2003.
 
 \bibitem{Panopoulos2012}
-\BIBentryALTinterwordspacing
 A.~D. Panopoulos, O.~Yanes, S.~Ruiz, Y.~S. Kida, D.~Diep, R.~Tautenhahn,
-  A.~Herrer{\'{i}}as, E.~M. Batchelder, N.~Plongthongkum, M.~Lutz, W.~T.
-  Berggren, K.~Zhang, R.~M. Evans, G.~Siuzdak, and J.~C.~I. Belmonte, ``{The
-  metabolome of induced pluripotent stem cells reveals metabolic changes
-  occurring in somatic cell reprogramming},'' \emph{Cell Research}, vol.~22,
-  no.~1, pp. 168--177, 2012. [Online]. Available:
-  \url{http://dx.doi.org/10.1038/cr.2011.177}
-\BIBentrySTDinterwordspacing
+  A.~Herrer{\'\i}as, E.~M. Batchelder, N.~Plongthongkum, M.~Lutz \emph{et~al.},
+  ``The metabolome of induced pluripotent stem cells reveals metabolic changes
+  occurring in somatic cell reprogramming,'' \emph{Cell Research}, vol.~22,
+  no.~1, pp. 168--177, 2012.
 
 \bibitem{Hirai2004}
-\BIBentryALTinterwordspacing
 M.~Y. Hirai, M.~Yano, D.~B. Goodenowe, S.~Kanaya, T.~Kimura, M.~Awazuhara,
   M.~Arita, T.~Fujiwara, and K.~Saito, ``{Integration of transcriptomics and
   metabolomics for understanding of global responses to nutritional stresses in
-  Arabidopsis thaliana.}'' \emph{Proceedings of the National Academy of
-  Sciences of the United States of America}, vol. 101, no.~27, pp. 10\,205--10,
-  2004. [Online]. Available: \url{/pmc/articles/PMC454188/?report=abstract}
-\BIBentrySTDinterwordspacing
+  Arabidopsis thaliana},'' \emph{Proceedings of the National academy of
+  Sciences of the United States of America}, vol. 101, no.~27, pp.
+  10\,205--10\,210, 2004.
 
 \bibitem{Fiehn2002}
-O.~Fiehn, ``{Metabolomics - The link between genotypes and phenotypes},''
+O.~Fiehn, ``Metabolomics--the link between genotypes and phenotypes,''
   \emph{Plant Molecular Biology}, vol.~48, no. 1-2, pp. 155--171, 2002.
 
 \bibitem{metzker2010sequencing}
 M.~L. Metzker, ``Sequencing technologies—the next generation,'' \emph{Nature
-  reviews genetics}, vol.~11, no.~1, pp. 31--46, 2010.
+  Reviews Genetics}, vol.~11, no.~1, pp. 31--46, 2010.
 
 \bibitem{Alonso2015}
-\BIBentryALTinterwordspacing
-A.~Alonso, S.~Marsal, and A.~Juli{\`{a}}, ``{Analytical methods in untargeted
-  metabolomics: state of the art in 2015.}'' \emph{Frontiers in bioengineering
-  and biotechnology}, vol.~3, no. March, p.~23, 2015. [Online]. Available:
-  \url{http://www.pubmedcentral.nih.gov/articlerender.fcgi?artid=4350445{\&}tool=pmcentrez{\&}rendertype=abstract}
-\BIBentrySTDinterwordspacing
+A.~Alonso, S.~Marsal, and A.~Juli{\`a}, ``Analytical methods in untargeted
+  metabolomics: state of the art in 2015,'' \emph{Frontiers in Bioengineering
+  and Biotechnology}, vol.~3, p.~23, 2015.
 
 \bibitem{Pan2007}
 Z.~Pan and D.~Raftery, ``{Comparing and combining NMR spectroscopy and mass
-  spectrometry in metabolomics},'' \emph{Analytical and Bioanalytical
-  Chemistry}, vol. 387, no.~2, pp. 525--527, 2007.
+  spectrometry in metabolomics},'' \emph{Analytical and bioanalytical
+  chemistry}, vol. 387, no.~2, pp. 525--527, 2007.
 
 \bibitem{Smith2014}
-\BIBentryALTinterwordspacing
-R.~Smith, A.~D. Mathis, D.~Ventura, and J.~T. Prince, ``{Proteomics,
-  lipidomics, metabolomics: a mass spectrometry tutorial from a computer
-  scientist's point of view},'' \emph{BMC Bioinformatics}, vol.~15, no. Suppl
-  7, p.~S9, 2014. [Online]. Available:
-  \url{http://www.biomedcentral.com/1471-2105/15/S7/S9}
-\BIBentrySTDinterwordspacing
+R.~Smith, A.~D. Mathis, D.~Ventura, and J.~T. Prince, ``Proteomics, lipidomics,
+  metabolomics: a mass spectrometry tutorial from a computer scientist's point
+  of view,'' \emph{BMC Bioinformatics}, vol.~15, no.~7, p.~1, 2014.
 
 \bibitem{Cao2015}
-\BIBentryALTinterwordspacing
 M.~Cao, K.~Fraser, J.~Huege, T.~Featonby, S.~Rasmussen, and C.~Jones,
-  ``{Predicting retention time in hydrophilic interaction liquid chromatography
-  mass spectrometry and its use for peak annotation in metabolomics},''
-  \emph{Metabolomics}, vol.~11, no.~3, pp. 696--706, 2015. [Online]. Available:
-  \url{http://dx.doi.org/10.1007/s11306-014-0727-x}
-\BIBentrySTDinterwordspacing
+  ``Predicting retention time in hydrophilic interaction liquid chromatography
+  mass spectrometry and its use for peak annotation in metabolomics,''
+  \emph{Metabolomics}, vol.~11, no.~3, pp. 696--706, 2015.
 
 \bibitem{Pedrioli2004}
-\BIBentryALTinterwordspacing
-``{A common open representation of mass spectrometry data and its application
-  to proteomics research.}'' \emph{Nature biotechnology}, vol.~22, no.~11, pp.
-  1459--66, nov 2004. [Online]. Available:
-  \url{http://www.ncbi.nlm.nih.gov/pubmed/15529173}
-\BIBentrySTDinterwordspacing
+P.~G. Pedrioli, J.~K. Eng, R.~Hubley, M.~Vogelzang, E.~W. Deutsch, B.~Raught,
+  B.~Pratt, E.~Nilsson, R.~H. Angeletti, R.~Apweiler \emph{et~al.}, ``A common
+  open representation of mass spectrometry data and its application to
+  proteomics research,'' \emph{Nature Biotechnology}, vol.~22, no.~11, pp.
+  1459--1466, 2004.
 
 \bibitem{martens2011mzml}
 L.~Martens, M.~Chambers, M.~Sturm, D.~Kessner, F.~Levander, J.~Shofstahl, W.~H.
-  Tang, A.~R{\"o}mpp, S.~Neumann, A.~D. Pizarro \emph{et~al.}, ``mzml—a
+  Tang, A.~R{\"o}mpp, S.~Neumann, A.~D. Pizarro \emph{et~al.}, ``mz{ML} -- a
   community standard for mass spectrometry data,'' \emph{Molecular \& Cellular
   Proteomics}, vol.~10, no.~1, pp. R110--000\,133, 2011.
 
 \bibitem{Tautenhahn2008}
-\BIBentryALTinterwordspacing
-R.~Tautenhahn, C.~B{\"{o}}ttcher, and S.~Neumann, ``{Highly sensitive feature
-  detection for high resolution LC/MS.}'' \emph{BMC bioinformatics}, vol.~9, p.
-  504, jan 2008. [Online]. Available:
-  \url{http://www.pubmedcentral.nih.gov/articlerender.fcgi?artid=2639432{\&}tool=pmcentrez{\&}rendertype=abstract}
-\BIBentrySTDinterwordspacing
+R.~Tautenhahn, C.~B{\"o}ttcher, and S.~Neumann, ``Highly sensitive feature
+  detection for high resolution {LC}/{MS},'' \emph{BMC Bioinformatics}, vol.~9,
+  no.~1, p.~1, 2008.
 
 \bibitem{Pluskal2010}
-T.~Pluskal, S.~Castillo, A.~Villar-Briones, and M.~Oresic, ``{MZmine 2: modular
-  framework for processing, visualizing, and analyzing mass spectrometry-based
-  molecular profile data.}'' \emph{BMC bioinformatics}, vol.~11, no.~1, p. 395,
-  jan 2010.
+T.~Pluskal, S.~Castillo, A.~Villar-Briones, and M.~Ore{\v{s}}i{\v{c}}, ``Mzmine
+  2: modular framework for processing, visualizing, and analyzing mass
+  spectrometry-based molecular profile data,'' \emph{BMC Bioinformatics},
+  vol.~11, no.~1, p.~1, 2010.
 
 \bibitem{Katajamaa2007}
-\BIBentryALTinterwordspacing
-M.~Katajamaa and M.~Oresic, ``{Data processing for mass spectrometry-based
-  metabolomics.}'' \emph{Journal of chromatography. A}, vol. 1158, no. 1-2, pp.
-  318--28, jul 2007. [Online]. Available:
-  \url{http://www.ncbi.nlm.nih.gov/pubmed/17466315}
-\BIBentrySTDinterwordspacing
+M.~Katajamaa and M.~Ore{\v{s}}i{\v{c}}, ``Data processing for mass
+  spectrometry-based metabolomics,'' \emph{Journal of Chromatography A}, vol.
+  1158, no.~1, pp. 318--328, 2007.
 
 \bibitem{Castillo2011}
-\BIBentryALTinterwordspacing
 S.~Castillo, P.~Gopalacharyulu, L.~Yetukuri, and M.~Ore{\v{s}}i{\v{c}},
-  ``{Algorithms and tools for the preprocessing of LC-MS metabolomics data},''
-  \emph{Chemometrics and Intelligent Laboratory Systems}, vol. 108, no.~1, pp.
-  23--32, aug 2011. [Online]. Available:
-  \url{http://linkinghub.elsevier.com/retrieve/pii/S0169743911000608}
-\BIBentrySTDinterwordspacing
+  ``Algorithms and tools for the preprocessing of {LC}-{MS} metabolomics
+  data,'' \emph{Chemometrics and Intelligent Laboratory Systems}, vol. 108,
+  no.~1, pp. 23--32, 2011.
 
 \bibitem{chokkathukalam2014stable}
 A.~Chokkathukalam, D.-H. Kim, M.~P. Barrett, R.~Breitling, and D.~J. Creek,
@@ -155,71 +129,49 @@ K.~Podwojski, A.~Fritsch, D.~C. Chamrad, W.~Paul, B.~Sitek, P.~Mutzel,
   \emph{Bioinformatics}, p. btp052, 2009.
 
 \bibitem{Sakoe1978}
-\BIBentryALTinterwordspacing
-H.~Sakoe and S.~Chiba, ``{Dynamic programming algorithm optimization for spoken
-  word recognition},'' \emph{IEEE Transactions on Acoustics, Speech, and Signal
-  Processing}, vol.~26, no.~1, pp. 43--49, feb 1978. [Online]. Available:
-  \url{http://ieeexplore.ieee.org/lpdocs/epic03/wrapper.htm?arnumber=1163055}
-\BIBentrySTDinterwordspacing
+H.~Sakoe and S.~Chiba, ``Dynamic programming algorithm optimization for spoken
+  word recognition,'' \emph{IEEE transactions on acoustics, speech, and signal
+  processing}, vol.~26, no.~1, pp. 43--49, 1978.
 
 \bibitem{Nielsen1998}
-\BIBentryALTinterwordspacing
-N.-P.~V. Nielsen, J.~M. Carstensen, and J.~Smedsgaard, ``{Aligning of single
-  and multiple wavelength chromatographic profiles for chemometric data
-  analysis using correlation optimised warping},'' \emph{Journal of
-  Chromatography A}, vol. 805, no. 1-2, pp. 17--35, may 1998. [Online].
-  Available:
-  \url{http://linkinghub.elsevier.com/retrieve/pii/S0021967398000211}
-\BIBentrySTDinterwordspacing
+N.-P.~V. Nielsen, J.~M. Carstensen, and J.~Smedsgaard, ``Aligning of single and
+  multiple wavelength chromatographic profiles for chemometric data analysis
+  using correlation optimised warping,'' \emph{Journal of Chromatography A},
+  vol. 805, no.~1, pp. 17--35, 1998.
 
 \bibitem{Christin2008}
-\BIBentryALTinterwordspacing
-C.~Christin, A.~K. Smilde, H.~C.~J. Hoefsloot, F.~Suits, R.~Bischoff, and P.~L.
-  Horvatovich, ``{Optimized time alignment algorithm for LC-MS data:
+C.~Christin, A.~K. Smilde, H.~C. Hoefsloot, F.~Suits, R.~Bischoff, and P.~L.
+  Horvatovich, ``Optimized time alignment algorithm for lc- ms data:
   correlation optimized warping using component detection algorithm-selected
-  mass chromatograms.}'' \emph{Analytical chemistry}, vol.~80, no.~18, pp.
-  7012--21, sep 2008. [Online]. Available:
-  \url{http://www.ncbi.nlm.nih.gov/pubmed/18715018}
-\BIBentrySTDinterwordspacing
+  mass chromatograms,'' \emph{Analytical Chemistry}, vol.~80, no.~18, pp.
+  7012--7021, 2008.
 
 \bibitem{Windig2007}
-\BIBentryALTinterwordspacing
 W.~Windig and W.~F. Smith, ``{Chemometric analysis of complex hyphenated data.
   Improvements of the component detection algorithm.}'' \emph{Journal of
-  chromatography. A}, vol. 1158, no. 1-2, pp. 251--7, jul 2007. [Online].
-  Available: \url{http://www.ncbi.nlm.nih.gov/pubmed/17418223}
-\BIBentrySTDinterwordspacing
+  Chromatography A}, vol. 1158, no. 1-2, pp. 251--7, 2007.
 
 \bibitem{VanNederkassel2006}
-\BIBentryALTinterwordspacing
 a.~M. van Nederkassel, M.~Daszykowski, P.~H.~C. Eilers, and Y.~V. Heyden, ``{A
   comparison of three algorithms for chromatograms alignment.}'' \emph{Journal
-  of chromatography. A}, vol. 1118, no.~2, pp. 199--210, jun 2006. [Online].
-  Available: \url{http://www.ncbi.nlm.nih.gov/pubmed/16643929}
-\BIBentrySTDinterwordspacing
+  of Chromatography A}, vol. 1118, no.~2, pp. 199--210, 2006.
 
 \bibitem{Listgarten2005}
-J.~Listgarten, R.~Neal, S.~Roweis, and A.~Emili, ``{Multiple alignment of
-  continuous time series},'' \emph{Advances in neural information processing
-  systems}, 2005.
+J.~Listgarten, R.~M. Neal, S.~T. Roweis, and A.~Emili, ``Multiple alignment of
+  continuous time series,'' in \emph{Advances in Neural Information Processing
+  Systems}, 2004, pp. 817--824.
 
 \bibitem{Smith2006}
-\BIBentryALTinterwordspacing
 C.~a. Smith, E.~J. Want, G.~O'Maille, R.~Abagyan, and G.~Siuzdak, ``{XCMS:
   processing mass spectrometry data for metabolite profiling using nonlinear
-  peak alignment, matching, and identification.}'' \emph{Analytical chemistry},
-  vol.~78, no.~3, pp. 779--87, feb 2006. [Online]. Available:
-  \url{http://www.ncbi.nlm.nih.gov/pubmed/16448051}
-\BIBentrySTDinterwordspacing
+  peak alignment, matching, and identification.}'' \emph{Analytical Chemistry},
+  vol.~78, no.~3, pp. 779--87, 2006.
 
 \bibitem{Lange2007}
-\BIBentryALTinterwordspacing
-E.~Lange, C.~Gr{\"{o}}pl, O.~Schulz-Trieglaff, A.~Leinenbach, C.~Huber, and
-  K.~Reinert, ``{A geometric approach for the alignment of liquid
-  chromatography-mass spectrometry data.}'' \emph{Bioinformatics (Oxford,
-  England)}, vol.~23, no.~13, pp. i273--81, jul 2007. [Online]. Available:
-  \url{http://www.ncbi.nlm.nih.gov/pubmed/17646306}
-\BIBentrySTDinterwordspacing
+E.~Lange, C.~Gr{\"o}pl, O.~Schulz-Trieglaff, A.~Leinenbach, C.~Huber, and
+  K.~Reinert, ``A geometric approach for the alignment of liquid
+  chromatography—mass spectrometry data,'' \emph{Bioinformatics}, vol.~23,
+  no.~13, pp. i273--i281, 2007.
 
 \bibitem{Fischler1981}
 M.~A. Fischler and R.~C. Bolles, ``{Random Sample Consensus : A Paradigm for
@@ -233,74 +185,50 @@ E.~Lange, R.~Tautenhahn, S.~Neumann, and C.~Gr{\"{o}}pl, ``{Critical assessment
   measurements},'' \emph{BMC Bioinformatics}, vol.~9, p. 375, 2008.
 
 \bibitem{Hoffmann2012a}
-\BIBentryALTinterwordspacing
 N.~Hoffmann, M.~Keck, and H.~Neuweger, ``{Combining peak-and chromatogram-based
   retention time alignment algorithms for multiple chromatography-mass
-  spectrometry datasets},'' \emph{BMC bioinformatics}, vol.~13, p. 214, 2012.
-  [Online]. Available: \url{http://www.biomedcentral.com/1471-2105/13/214/}
-\BIBentrySTDinterwordspacing
+  spectrometry datasets},'' \emph{BMC Bioinformatics}, vol.~13, p. 214, 2012.
 
 \bibitem{Ballardini2011}
-\BIBentryALTinterwordspacing
 R.~Ballardini, M.~Benevento, and G.~Arrigoni, ``{MassUntangler: A novel
   alignment tool for label-free liquid chromatography-mass spectrometry
-  proteomic data},'' \emph{{\ldots} of Chromatography A}, vol. 1218, no.~49,
-  pp. 8859--68, dec 2011. [Online]. Available:
-  \url{http://www.ncbi.nlm.nih.gov/pubmed/21783198
-  http://www.sciencedirect.com/science/article/pii/S0021967311008776}
-\BIBentrySTDinterwordspacing
+  proteomic data},'' \emph{Journal of Chromatography A}, vol. 1218, no.~49, pp.
+  8859--68, 2011.
 
 \bibitem{Voss2011a}
 B.~Voss, M.~Hanselmann, B.~Y. Renard, M.~S. Lindner, U.~K{\"{o}}the,
   M.~Kirchner, and F.~a. Hamprecht, ``{SIMA: simultaneous multiple alignment of
-  LC/MS peak lists.}'' \emph{Bioinformatics (Oxford, England)}, vol.~27, no.~7,
-  pp. 987--93, apr 2011.
+  LC/MS peak lists.}'' \emph{Bioinformatics}, vol.~27, no.~7, pp. 987--93,
+  2011.
 
 \bibitem{Duran2003}
-\BIBentryALTinterwordspacing
 a.~L. Duran, J.~Yang, L.~Wang, and L.~W. Sumner, ``{Metabolomics spectral
   formatting, alignment and conversion tools (MSFACTs)},''
-  \emph{Bioinformatics}, vol.~19, no.~17, pp. 2283--2293, nov 2003. [Online].
-  Available:
-  \url{http://bioinformatics.oxfordjournals.org/cgi/doi/10.1093/bioinformatics/btg315}
-\BIBentrySTDinterwordspacing
+  \emph{Bioinformatics}, vol.~19, no.~17, pp. 2283--2293, 2003.
 
 \bibitem{Wang2013}
-\BIBentryALTinterwordspacing
 J.~Wang and H.~Lam, ``{Graph-based peak alignment algorithms for multiple
-  liquid chromatography-mass spectrometry datasets.}'' \emph{Bioinformatics
-  (Oxford, England)}, vol.~29, no.~19, pp. 2469--2476, aug 2013. [Online].
-  Available: \url{http://www.ncbi.nlm.nih.gov/pubmed/23904508}
-\BIBentrySTDinterwordspacing
+  liquid chromatography-mass spectrometry datasets.}'' \emph{Bioinformatics},
+  vol.~29, no.~19, pp. 2469--2476, 2013.
 
 \bibitem{Lin2013}
-\BIBentryALTinterwordspacing
 H.~Lin, L.~He, and B.~Ma, ``{A Combinatorial Approach to the Peptide Feature
-  Matching Problem for Label-Free Quantification.}'' \emph{Bioinformatics
-  (Oxford, England)}, pp. 1--7, may 2013. [Online]. Available:
-  \url{http://www.ncbi.nlm.nih.gov/pubmed/23665772}
-\BIBentrySTDinterwordspacing
+  Matching Problem for Label-Free Quantification.}'' \emph{Bioinformatics}, pp.
+  1--7, 2013.
 
 \bibitem{Snider2007}
 R.~K. Snider, ``{Efficient calculation of exact mass isotopic distributions.}''
   \emph{Journal of the American Society for Mass Spectrometry}, vol.~18, no.~8,
-  pp. 1511--5, aug 2007.
+  pp. 1511--5, 2007.
 
 \bibitem{Keller2008}
-\BIBentryALTinterwordspacing
 B.~O. Keller, J.~Sui, A.~B. Young, and R.~M. Whittal, ``{Interferences and
   contaminants encountered in modern mass spectrometry.}'' \emph{Analytica
-  chimica acta}, vol. 627, no.~1, pp. 71--81, oct 2008. [Online]. Available:
-  \url{http://www.ncbi.nlm.nih.gov/pubmed/18790129}
-\BIBentrySTDinterwordspacing
+  chimica acta}, vol. 627, no.~1, pp. 71--81, 2008.
 
 \bibitem{Scheltema2009a}
-\BIBentryALTinterwordspacing
 R.~Scheltema, S.~Decuypere, and J.~Dujardin, ``{Simple data-reduction method
   for high-resolution LC-MS data in metabolomics},'' \emph{Bioanalysis}, 2009.
-  [Online]. Available:
-  \url{http://www.future-science.com/doi/abs/10.4155/bio.09.146}
-\BIBentrySTDinterwordspacing
 
 \bibitem{Scheltema2011}
 R.~a. Scheltema, A.~Jankevics, R.~C. Jansen, M.~a. Swertz, and R.~Breitling,
@@ -315,47 +243,31 @@ S.~Rogers, R.~Daly, and R.~Breitling, ``{Mixture model clustering for peak
   p.~71.
 
 \bibitem{Kuhl2012}
-\BIBentryALTinterwordspacing
 C.~Kuhl, R.~Tautenhahn, C.~B{\"{o}}ttcher, T.~R. Larson, and S.~Neumann,
   ``{CAMERA: an integrated strategy for compound spectra extraction and
   annotation of liquid chromatography/mass spectrometry data sets.}''
-  \emph{Analytical chemistry}, vol.~84, no.~1, pp. 283--9, jan 2012. [Online].
-  Available: \url{http://www.ncbi.nlm.nih.gov/pubmed/22111785}
-\BIBentrySTDinterwordspacing
+  \emph{Analytical Chemistry}, vol.~84, no.~1, pp. 283--9, 2012.
 
 \bibitem{Sumner2007}
 L.~W. Sumner, A.~Amberg, D.~Barrett, M.~H. Beale, R.~Beger, C.~A. Daykin,
-  T.~W.~M. Fan, O.~Fiehn, R.~Goodacre, J.~L. Griffin, T.~Hankemeier, N.~Hardy,
-  J.~Harnly, R.~Higashi, J.~Kopka, A.~N. Lane, J.~C. Lindon, P.~Marriott, A.~W.
-  Nicholls, M.~D. Reily, J.~J. Thaden, and M.~R. Viant, ``{Proposed minimum
-  reporting standards for chemical analysis: Chemical Analysis Working Group
-  (CAWG) Metabolomics Standards Initiative (MSI)},'' \emph{Metabolomics},
+  T.~W.-M. Fan, O.~Fiehn, R.~Goodacre, J.~L. Griffin \emph{et~al.}, ``Proposed
+  minimum reporting standards for chemical analysis,'' \emph{Metabolomics},
   vol.~3, no.~3, pp. 211--221, 2007.
 
 \bibitem{Kind2006}
-\BIBentryALTinterwordspacing
 T.~Kind and O.~Fiehn, ``{Metabolomic database annotations via query of
   elemental compositions: mass accuracy is insufficient even at less than 1
-  ppm.}'' \emph{BMC bioinformatics}, vol.~7, p. 234, jan 2006. [Online].
-  Available:
-  \url{http://www.pubmedcentral.nih.gov/articlerender.fcgi?artid=1464138{\&}tool=pmcentrez{\&}rendertype=abstract}
-\BIBentrySTDinterwordspacing
+  ppm.}'' \emph{BMC Bioinformatics}, vol.~7, p. 234, 2006.
 
 \bibitem{Dunn2012}
-\BIBentryALTinterwordspacing
 W.~Dunn, A.~Erban, R.~Weber, and D.~Creek, ``{Mass appeal: metabolite
   identification in mass spectrometry-focused untargeted metabolomics},''
-  \emph{Metabolomics}, 2012. [Online]. Available:
-  \url{http://www.springerlink.com/index/0718581530254PG6.pdf}
-\BIBentrySTDinterwordspacing
+  \emph{Metabolomics}, 2012.
 
 \bibitem{DaSilva2015}
-\BIBentryALTinterwordspacing
 R.~R. da~Silva, P.~C. Dorrestein, and R.~A. Quinn, ``{Illuminating the dark
   matter in metabolomics},'' \emph{Proceedings of the National Academy of
-  Sciences}, vol. 112, no.~41, p. 201516878, 2015. [Online]. Available:
-  \url{http://www.pnas.org/content/early/2015/09/30/1516878112.extract}
-\BIBentrySTDinterwordspacing
+  Sciences}, vol. 112, no.~41, p. 201516878, 2015.
 
 \bibitem{Creek2011}
 D.~J. Creek, A.~Jankevics, R.~Breitling, D.~G. Watson, M.~P. Barrett, and
@@ -377,16 +289,13 @@ S.~Rogers, R.~a. Scheltema, M.~Girolami, and R.~Breitling, ``{Probabilistic
 \bibitem{Daly2014}
 R.~Daly, S.~Rogers, J.~Wandy, A.~Jankevics, K.~E.~V. Burgess, and R.~Breitling,
   ``{MetAssign: probabilistic annotation of metabolites from LC-MS data using a
-  Bayesian clustering approach.}'' \emph{Bioinformatics (Oxford, England)},
-  vol.~30, no.~19, pp. 2764--2771, jun 2014.
+  Bayesian clustering approach.}'' \emph{Bioinformatics}, vol.~30, no.~19, pp.
+  2764--2771, 2014.
 
 \bibitem{Hufsky2014}
-\BIBentryALTinterwordspacing
 F.~Hufsky, K.~Scheubert, and S.~B{\"{o}}cker, ``{Computational mass
   spectrometry for small-molecule fragmentation},'' \emph{TrAC - Trends in
-  Analytical Chemistry}, vol.~53, pp. 41--48, 2014. [Online]. Available:
-  \url{http://dx.doi.org/10.1016/j.trac.2013.09.008}
-\BIBentrySTDinterwordspacing
+  Analytical Chemistry}, vol.~53, pp. 41--48, 2014.
 
 \bibitem{kotera2012kegg}
 M.~Kotera, M.~Hirakawa, T.~Tokimatsu, S.~Goto, and M.~Kanehisa, ``The kegg
@@ -398,7 +307,7 @@ M.~Kotera, M.~Hirakawa, T.~Tokimatsu, S.~Goto, and M.~Kanehisa, ``The kegg
 H.~Horai, M.~Arita, S.~Kanaya, Y.~Nihei, T.~Ikeda, K.~Suwa, Y.~Ojima,
   K.~Tanaka, S.~Tanaka, K.~Aoshima \emph{et~al.}, ``Massbank: a public
   repository for sharing mass spectral data for life sciences,'' \emph{Journal
-  of mass spectrometry}, vol.~45, no.~7, pp. 703--714, 2010.
+  of Mass Spectrometry}, vol.~45, no.~7, pp. 703--714, 2010.
 
 \bibitem{pence2010chemspider}
 H.~E. Pence and A.~Williams, ``Chemspider: an online chemical information
@@ -406,44 +315,32 @@ H.~E. Pence and A.~Williams, ``Chemspider: an online chemical information
   1123--1124, 2010.
 
 \bibitem{Xia2010}
-\BIBentryALTinterwordspacing
 J.~Xia and D.~S. Wishart, ``{MetPA: a web-based metabolomics tool for pathway
-  analysis and visualization.}'' \emph{Bioinformatics (Oxford, England)},
-  vol.~26, no.~18, pp. 2342--4, sep 2010. [Online]. Available:
-  \url{http://www.ncbi.nlm.nih.gov/pubmed/20628077}
-\BIBentrySTDinterwordspacing
+  analysis and visualization.}'' \emph{Bioinformatics}, vol.~26, no.~18, pp.
+  2342--4, 2010.
 
 \bibitem{Krumsiek2011a}
-\BIBentryALTinterwordspacing
-J.~Krumsiek, K.~Suhre, and T.~Illig, ``{Gaussian graphical modeling
-  reconstructs pathway reactions from high-throughput metabolomics data},''
-  \emph{BMC systems {\ldots}}, 2011. [Online]. Available:
-  \url{http://www.biomedcentral.com/1752-0509/5/21/}
-\BIBentrySTDinterwordspacing
+J.~Krumsiek, K.~Suhre, T.~Illig, J.~Adamski, and F.~J. Theis, ``Gaussian
+  graphical modeling reconstructs pathway reactions from high-throughput
+  metabolomics data,'' \emph{BMC systems biology}, vol.~5, no.~1, p.~1, 2011.
 
 \bibitem{Krumsiek2012}
-\BIBentryALTinterwordspacing
 J.~Krumsiek, K.~Suhre, A.~M. Evans, M.~W. Mitchell, R.~P. Mohney, M.~V.
   Milburn, B.~W{\"{a}}gele, W.~R{\"{o}}misch-Margl, T.~Illig, J.~Adamski,
   C.~Gieger, F.~J. Theis, and G.~Kastenm{\"{u}}ller, ``{Mining the unknown: a
   systems approach to metabolite identification combining genetic and metabolic
-  information.}'' \emph{PLoS genetics}, vol.~8, no.~10, p. e1003005, oct 2012.
-  [Online]. Available: \url{http://www.ncbi.nlm.nih.gov/pubmed/23093944}
-\BIBentrySTDinterwordspacing
+  information.}'' \emph{PLoS Genetics}, vol.~8, no.~10, p. e1003005, 2012.
 
 \bibitem{Gieger2008}
-\BIBentryALTinterwordspacing
 ``{Genetics meets metabolomics: a genome-wide association study of metabolite
-  profiles in human serum.}'' \emph{PLoS genetics}, vol.~4, no.~11, p.
-  e1000282, nov 2008. [Online]. Available:
-  \url{http://www.pubmedcentral.nih.gov/articlerender.fcgi?artid=2581785{\&}tool=pmcentrez{\&}rendertype=abstract}
-\BIBentrySTDinterwordspacing
+  profiles in human serum.}'' \emph{PLoS Genetics}, vol.~4, no.~11, p.
+  e1000282, 2008.
 
 \bibitem{DeVos2007a}
 R.~C.~H. {De Vos}, S.~Moco, A.~Lommen, J.~J.~B. Keurentjes, R.~J. Bino, and
   R.~D. Hall, ``{Untargeted large-scale plant metabolomics using liquid
-  chromatography coupled to mass spectrometry.}'' \emph{Nat. Protoc.}, vol.~2,
-  no.~4, pp. 778--791, jan 2007.
+  chromatography coupled to mass spectrometry.}'' \emph{Nature Protocols},
+  vol.~2, no.~4, pp. 778--791, 2007.
 
 \bibitem{mamas2011role}
 M.~Mamas, W.~B. Dunn, L.~Neyses, and R.~Goodacre, ``The role of metabolites and
@@ -451,66 +348,48 @@ M.~Mamas, W.~B. Dunn, L.~Neyses, and R.~Goodacre, ``The role of metabolites and
   of toxicology}, vol.~85, no.~1, pp. 5--17, 2011.
 
 \bibitem{Gibney2005}
-\BIBentryALTinterwordspacing
 ``{Metabolomics in human nutrition: opportunities and challenges.}'' \emph{The
-  American journal of clinical nutrition}, vol.~82, no.~3, pp. 497--503, sep
-  2005. [Online]. Available: \url{http://www.ncbi.nlm.nih.gov/pubmed/16155259}
-\BIBentrySTDinterwordspacing
+  American Journal of Clinical Nutrition}, vol.~82, no.~3, pp. 497--503, 2005.
 
 \bibitem{Kell2006}
-\BIBentryALTinterwordspacing
 D.~B. Kell, ``{Systems biology, metabolic modelling and metabolomics in drug
   discovery and development.}'' \emph{Drug discovery today}, vol.~11, no.
-  23-24, pp. 1085--92, dec 2006. [Online]. Available:
-  \url{http://www.ncbi.nlm.nih.gov/pubmed/17129827}
-\BIBentrySTDinterwordspacing
+  23-24, pp. 1085--92, 2006.
 
 \bibitem{Kanehisa2010}
-\BIBentryALTinterwordspacing
-M.~Kanehisa, S.~Goto, M.~Furumichi, M.~Tanabe, and M.~Hirakawa, ``{KEGG for
+M.~Kanehisa, S.~Goto, M.~Furumichi, M.~Tanabe, and M.~Hirakawa, ``Kegg for
   representation and analysis of molecular networks involving diseases and
-  drugs.}'' \emph{Nucleic acids research}, vol.~38, no. Database issue, pp.
-  D355--60, jan 2010. [Online]. Available:
-  \url{http://www.pubmedcentral.nih.gov/articlerender.fcgi?artid=2808910{\&}tool=pmcentrez{\&}rendertype=abstract}
-\BIBentrySTDinterwordspacing
+  drugs,'' \emph{Nucleic Acids Research}, vol.~38, no. suppl 1, pp. D355--D360,
+  2010.
 
 \bibitem{caspi2008metacyc}
 R.~Caspi, H.~Foerster, C.~A. Fulcher, P.~Kaipa, M.~Krummenacker,
   M.~Latendresse, S.~Paley, S.~Y. Rhee, A.~G. Shearer, C.~Tissier
-  \emph{et~al.}, ``The metacyc database of metabolic pathways and enzymes and
-  the biocyc collection of pathway/genome databases,'' \emph{Nucleic acids
-  research}, vol.~36, no. suppl 1, pp. D623--D631, 2008.
+  \emph{et~al.}, ``{The MetaCyc Database of metabolic pathways and enzymes and
+  the BioCyc collection of Pathway/Genome Databases},'' \emph{Nucleic Acids
+  Research}, vol.~36, no. suppl 1, pp. D623--D631, 2008.
 
 \bibitem{cottret2010metexplore}
 L.~Cottret, D.~Wildridge, F.~Vinson, M.~P. Barrett, H.~Charles, M.-F. Sagot,
   and F.~Jourdan, ``Metexplore: a web server to link metabolomic experiments
-  and genome-scale metabolic networks,'' \emph{Nucleic acids research},
+  and genome-scale metabolic networks,'' \emph{Nucleic Acids Research},
   vol.~38, no. suppl 2, pp. W132--W137, 2010.
 
 \bibitem{Sandin2014}
-\BIBentryALTinterwordspacing
 M.~Sandin, J.~Teleman, J.~Malmstr{\"{o}}m, and F.~Levander, ``{Data processing
   methods and quality control strategies for label-free LC-MS protein
   quantification.}'' \emph{Biochimica et biophysica acta}, vol. 1844, no. 1 Pt
-  A, pp. 29--41, 2014. [Online]. Available:
-  \url{http://www.sciencedirect.com/science/article/pii/S1570963913001398}
-\BIBentrySTDinterwordspacing
+  A, pp. 29--41, 2014.
 
 \bibitem{Chawade2015}
-\BIBentryALTinterwordspacing
 A.~Chawade, M.~Sandin, J.~Teleman, J.~Malmstr{\"{o}}m, and F.~Levander, ``{Data
   processing has major impact on the outcome of quantitative label-free LC-MS
-  analysis.}'' \emph{Journal of proteome research}, vol.~14, no.~2, pp.
-  676--87, 2015. [Online]. Available: \url{http://dx.doi.org/10.1021/pr500665j}
-\BIBentrySTDinterwordspacing
+  analysis.}'' \emph{Journal of Proteome Research}, vol.~14, no.~2, pp.
+  676--87, 2015.
 
 \bibitem{Podwojski2009}
-\BIBentryALTinterwordspacing
 ``{Retention time alignment algorithms for LC/MS data must consider non-linear
-  shifts.}'' \emph{Bioinformatics (Oxford, England)}, vol.~25, no.~6, pp.
-  758--64, mar 2009. [Online]. Available:
-  \url{http://www.ncbi.nlm.nih.gov/pubmed/19176558}
-\BIBentrySTDinterwordspacing
+  shifts.}'' \emph{Bioinformatics}, vol.~25, no.~6, pp. 758--64, 2009.
 
 \bibitem{Hoffmann2007}
 E.~de~Hoffmann and V.~Stroobant, \emph{{Mass spectrometry: Principles and
@@ -533,34 +412,26 @@ D.~A. Megger, T.~Bracht, H.~E. Meyer, and B.~Sitek, ``{Label-free
   - Proteins and Proteomics}, vol. 1834, no.~8, pp. 1581--1590, 2013.
 
 \bibitem{xu2005survey}
-R.~Xu and D.~Wunsch, ``Survey of clustering algorithms,'' \emph{IEEE
+R.~Xu and D.~Wunsch, ``{Survey of Clustering Algorithms},'' \emph{IEEE
   Transactions on neural networks}, vol.~16, no.~3, pp. 645--678, 2005.
 
 \bibitem{Jain2010}
-\BIBentryALTinterwordspacing
-A.~K. Jain, ``{Data clustering: 50 years beyond K-means},'' \emph{Pattern
-  Recognition Letters}, vol.~31, no.~8, pp. 651--666, 2010. [Online].
-  Available: \url{http://dx.doi.org/10.1016/j.patrec.2009.09.011}
-\BIBentrySTDinterwordspacing
+A.~K. Jain, ``Data clustering: 50 years beyond k-means,'' \emph{Pattern
+  recognition letters}, vol.~31, no.~8, pp. 651--666, 2010.
 
 \bibitem{DeSouza2006}
 D.~P. {De Souza}, E.~C. Saunders, M.~J. McConville, and V.~a. Liki\'{c},
   ``{Progressive peak clustering in GC-MS Metabolomic experiments applied to
   Leishmania parasites.}'' \emph{Bioinformatics}, vol.~22, no.~11, pp. 1391--6,
-  Jun. 2006.
+  2006.
 
 \bibitem{Frank2007}
 A.~M. Frank, ``{Clustering Millions of Tandem Mass Spectra},'' \emph{Journal of
   Proteome Research}, vol.~7, pp. 113--122, 2007.
 
 \bibitem{Silva2014}
-\BIBentryALTinterwordspacing
-R.~R. Silva, F.~Jourdan, D.~M. Salvanha, F.~Letisse, E.~L. Jamin,
-  S.~Guidetti-Gonzalez, C.~a. Labate, and R.~Z.~N. V{\^{e}}ncio, ``{ProbMetab:
-  an R package for Bayesian probabilistic annotation of LC-MS-based
-  metabolomics.}'' \emph{Bioinformatics (Oxford, England)}, pp. 1--2, feb 2014.
-  [Online]. Available: \url{http://www.ncbi.nlm.nih.gov/pubmed/24443383}
-\BIBentrySTDinterwordspacing
+``{ProbMetab: an R package for Bayesian probabilistic annotation of LC-MS-based
+  metabolomics.}'' \emph{Bioinformatics}, pp. 1--2, 2014.
 
 \bibitem{Allen2014}
 F.~Allen, R.~Greiner, and D.~Wishart, ``{Competitive fragmentation modeling of
@@ -568,30 +439,21 @@ F.~Allen, R.~Greiner, and D.~Wishart, ``{Competitive fragmentation modeling of
   \emph{Metabolomics}, vol.~11, no.~1, pp. 98--110, 2014.
 
 \bibitem{Allen2016}
-\BIBentryALTinterwordspacing
 F.~Allen, A.~Pon, R.~Greiner, and D.~S. Wishart, ``{Computational prediction of
   electron ionization mass spectra to assist in GC-MS compound
   identification},'' \emph{Analytical Chemistry}, p. acs.analchem.6b01622,
-  2016. [Online]. Available:
-  \url{http://pubs.acs.org/doi/abs/10.1021/acs.analchem.6b01622}
-\BIBentrySTDinterwordspacing
+  2016.
 
 \bibitem{Heinonen2012a}
-\BIBentryALTinterwordspacing
 M.~Heinonen, H.~Shen, N.~Zamboni, and J.~Rousu, ``{Metabolite identification
   and molecular fingerprint prediction via machine learning},''
-  \emph{cs.helsinki.fi}, pp. 1--8, 2012. [Online]. Available:
-  \url{http://www.cs.helsinki.fi/u/mqheinon/mlsb{\_}paper{\_}2012{\_}preprint.pdf}
-\BIBentrySTDinterwordspacing
+  \emph{cs.helsinki.fi}, pp. 1--8, 2012.
 
 \bibitem{Duhrkop2015}
-\BIBentryALTinterwordspacing
 K.~D{\"{u}}hrkop, H.~Shen, M.~Meusel, J.~Rousu, and S.~B{\"{o}}cker,
   ``{Searching molecular structure databases with tandem mass spectra using
   CSI:FingerID},'' \emph{Proceedings of the National Academy of Sciences}, p.
-  201509788, 2015. [Online]. Available:
-  \url{http://www.pnas.org/lookup/doi/10.1073/pnas.1509788112}
-\BIBentrySTDinterwordspacing
+  201509788, 2015.
 
 \bibitem{Rasmussen2000}
 C.~Rasmussen, ``{The infinite Gaussian mixture model},'' in \emph{Advances in
@@ -599,49 +461,40 @@ C.~Rasmussen, ``{The infinite Gaussian mixture model},'' in \emph{Advances in
   0.4em\relax MIT Press, 2000, pp. 554--560.
 
 \bibitem{gelman2014bayesian}
-A.~Gelman, J.~B. Carlin, H.~S. Stern, and D.~B. Rubin, \emph{Bayesian data
-  analysis}.\hskip 1em plus 0.5em minus 0.4em\relax Chapman \& Hall/CRC Boca
+A.~Gelman, J.~B. Carlin, H.~S. Stern, and D.~B. Rubin, \emph{{Bayesian Data
+  Analysis}}.\hskip 1em plus 0.5em minus 0.4em\relax Chapman \& Hall/CRC Boca
   Raton, FL, USA, 2014, vol.~2.
 
 \bibitem{murphy2012machine}
-K.~P. Murphy, \emph{Machine learning: a probabilistic perspective}.\hskip 1em
+K.~P. Murphy, \emph{{Machine Learning: a Probabilistic Perspective}}.\hskip 1em
   plus 0.5em minus 0.4em\relax MIT press, 2012.
 
 \bibitem{hjort2010bayesian}
-N.~L. Hjort, C.~Holmes, P.~M{\"u}ller, and S.~G. Walker, \emph{Bayesian
-  nonparametrics}.\hskip 1em plus 0.5em minus 0.4em\relax Cambridge University
+N.~L. Hjort, C.~Holmes, P.~M{\"u}ller, and S.~G. Walker, \emph{{Bayesian
+  Nonparametrics}}.\hskip 1em plus 0.5em minus 0.4em\relax Cambridge University
   Press, 2010, vol.~28.
 
 \bibitem{ferguson1973bayesian}
-T.~S. Ferguson, ``A bayesian analysis of some nonparametric problems,''
-  \emph{The annals of statistics}, pp. 209--230, 1973.
+T.~S. Ferguson, ``{A Bayesian Analysis of Some Nonparametric Problems},''
+  \emph{The Annals of Statistics}, pp. 209--230, 1973.
 
 \bibitem{teh2011dirichlet}
-Y.~W. Teh, ``Dirichlet process,'' in \emph{Encyclopedia of machine
-  learning}.\hskip 1em plus 0.5em minus 0.4em\relax Springer, 2011, pp.
+Y.~W. Teh, ``{Dirichlet Process},'' in \emph{Encyclopedia of Machine
+  Learning}.\hskip 1em plus 0.5em minus 0.4em\relax Springer, 2011, pp.
   280--287.
 
 \bibitem{ishwaran2011gibbs}
 H.~Ishwaran and L.~F. James, ``Gibbs sampling methods for stick-breaking
   priors,'' \emph{Journal of the American Statistical Association}, 2011.
 
-\bibitem{frigyik2010introduction}
-B.~A. Frigyik, A.~Kapila, and M.~R. Gupta, ``Introduction to the dirichlet
-  distribution and related processes. department of electrical engineering,
-  university of washignton,'' UWEETR-2010-0006, Tech. Rep., 2010.
-
 \bibitem{aldous1985exchangeability}
 D.~J. Aldous, ``Exchangeability and related topics,'' in \emph{{\'E}cole
   d'{\'E}t{\'e} de Probabilit{\'e}s de Saint-Flour XIII—1983}.\hskip 1em plus
   0.5em minus 0.4em\relax Springer, 1985, pp. 1--198.
 
-\bibitem{teh2005hierarchical}
-Y.~W. Teh, M.~I. Jordan, M.~J. Beal, and D.~M. Blei, ``Hierarchical dirichlet
-  processes,'' 2005.
-
 \bibitem{teh2012hierarchical}
-------, ``Hierarchical dirichlet processes,'' \emph{Journal of the american
-  statistical association}, 2012.
+Y.~W. Teh, M.~I. Jordan, M.~J. Beal, and D.~M. Blei, ``Hierarchical dirichlet
+  processes,'' 2012.
 
 \bibitem{kim2006hierarchical}
 S.~Kim and P.~Smyth, ``Hierarchical dirichlet processes with random effects,''
@@ -649,8 +502,8 @@ S.~Kim and P.~Smyth, ``Hierarchical dirichlet processes with random effects,''
   697--704.
 
 \bibitem{Blei2003}
-D.~M. Blei, A.~Y. Ng, and M.~I. Jordan, ``Latent dirichlet allocation,''
-  \emph{Journal of machine Learning research}, vol.~3, no. Jan, pp. 993--1022,
+D.~M. Blei, A.~Y. Ng, and M.~I. Jordan, ``Latent {D}irichlet {A}llocation,''
+  \emph{Journal of Machine Learning research}, vol.~3, no. Jan, pp. 993--1022,
   2003.
 
 \bibitem{rogers2005latent}
@@ -660,8 +513,8 @@ S.~Rogers, M.~Girolami, C.~Campbell, and R.~Breitling, ``The latent process
   143--156, 2005.
 
 \bibitem{weinshall2013lda}
-D.~Weinshall, G.~Levi, and D.~Hanukaev, ``Lda topic model with soft assignment
-  of descriptors to words.'' in \emph{ICML (3)}, 2013, pp. 711--719.
+D.~Weinshall, G.~Levi, and D.~Hanukaev, ``{LDA Topic Model with Soft Assignment
+  of Descriptors to Words},'' in \emph{ICML (3)}, 2013, pp. 711--719.
 
 \bibitem{das2015gaussian}
 R.~Das, M.~Zaheer, and C.~Dyer, ``Gaussian lda for topic models with word
@@ -669,9 +522,12 @@ R.~Das, M.~Zaheer, and C.~Dyer, ``Gaussian lda for topic models with word
   Association for Computational Linguistics}, 2015.
 
 \bibitem{carpenter2010integrating}
-B.~Carpenter, ``Integrating out multinomial parameters in latent dirichlet
-  allocation and naive bayes for collapsed gibbs sampling,'' \emph{Rapport
-  Technique}, vol.~4, p. 464, 2010.
+\BIBentryALTinterwordspacing
+B.~Carpenter, ``{Integrating out multinomial parameters in Latent Dirichlet
+  Allocation and Naive Bayes for collapsed Gibbs sampling},'' Tech. Rep., 2010.
+  [Online]. Available:
+  \url{https://lingpipe.files.wordpress.com/2010/07/lda3.pdf}
+\BIBentrySTDinterwordspacing
 
 \bibitem{Smith2013}
 R.~Smith, D.~Ventura, and J.~T. Prince, ``{{\{}LC{\}}-{\{}MS{\}} alignment in
@@ -688,147 +544,115 @@ D.~Gusfield and R.~Irving, \emph{{The stable marriage problem: structure and
   algorithms}}, 1989.
 
 \bibitem{Kuhn1955}
-\BIBentryALTinterwordspacing
 H.~Kuhn, ``{The Hungarian method for the assignment problem},'' \emph{Naval
-  research logistics quarterly}, 1955. [Online]. Available:
-  \url{http://onlinelibrary.wiley.com/doi/10.1002/nav.3800020109/full}
-\BIBentrySTDinterwordspacing
+  research logistics quarterly}, 1955.
 
 \bibitem{Maximum2011}
-\BIBentryALTinterwordspacing
 R.~Duan, S.~Pettie, and H.~Su, ``{Scaling algorithms for approximate and exact
   maximum weight matching},'' \emph{arXiv preprint arXiv:1112.0790}, pp. 1--36,
-  2011. [Online]. Available: \url{http://arxiv.org/abs/1112.0790}
-\BIBentrySTDinterwordspacing
+  2011.
 
 \bibitem{Smith2013a}
-\BIBentryALTinterwordspacing
 R.~Smith, D.~Ventura, and J.~T. Prince, ``{Novel algorithms and the benefits of
-  comparative validation.}'' \emph{Bioinformatics (Oxford, England)}, vol.~29,
-  no.~12, pp. 1583--5, jun 2013. [Online]. Available:
-  \url{http://www.ncbi.nlm.nih.gov/pubmed/23589651}
-\BIBentrySTDinterwordspacing
+  comparative validation.}'' \emph{Bioinformatics}, vol.~29, no.~12, pp.
+  1583--5, 2013.
 
 \bibitem{Smith2015}
-\BIBentryALTinterwordspacing
 R.~Smith, J.~T. Prince, and D.~Ventura, ``{A coherent mathematical
   characterization of isotope trace extraction , isotopic envelope extraction ,
-  and LC-MS correspondence},'' \emph{BMC Bioinformatics}, vol.~16, no. Suppl 7,
-  p.~S1, 2015. [Online]. Available:
-  \url{http://www.biomedcentral.com/1471-2105/16/S7/S1}
-\BIBentrySTDinterwordspacing
+  and {LC}-{MS} correspondence},'' \emph{BMC Bioinformatics}, vol.~16, no.
+  Suppl 7, p.~S1, 2015.
 
 \bibitem{Melamud2010}
-\BIBentryALTinterwordspacing
 E.~Melamud, L.~Vastag, and J.~D. Rabinowitz, ``{Metabolomic analysis and
-  visualization engine for LC-MS data.}'' \emph{Analytical chemistry}, vol.~82,
-  no.~23, pp. 9818--26, dec 2010. [Online]. Available:
-  \url{http://www.ncbi.nlm.nih.gov/pubmed/21049934}
-\BIBentrySTDinterwordspacing
+  visualization engine for {LC}-{MS} data.}'' \emph{Analytical Chemistry},
+  vol.~82, no.~23, pp. 9818--26, 2010.
 
 \bibitem{Brodsky2010}
-\BIBentryALTinterwordspacing
 L.~Brodsky, A.~Moussaieff, N.~Shahaf, A.~Aharoni, and I.~Rogachev,
-  ``{Evaluation of peak picking quality in LC-MS metabolomics data.}''
-  \emph{Analytical chemistry}, vol.~82, no.~22, pp. 9177--87, nov 2010.
-  [Online]. Available: \url{http://www.ncbi.nlm.nih.gov/pubmed/20977194}
-\BIBentrySTDinterwordspacing
+  ``{Evaluation of peak picking quality in {LC}-{MS} metabolomics data.}''
+  \emph{Analytical Chemistry}, vol.~82, no.~22, pp. 9177--87, 2010.
 
 \bibitem{Landan2009}
 G.~Landan and D.~Graur, ``{Characterization of pairwise and multiple sequence
-  alignment errors.}'' \emph{Gene}, vol. 441, no. 1-2, pp. 141--7, Jul. 2009.
+  alignment errors.}'' \emph{Gene}, vol. 441, no. 1-2, pp. 141--7, 2009.
 
 \bibitem{Thompson1994}
 J.~D. Thompson, D.~G. Higgins, and T.~J. Gibson, ``{CLUSTAL W: improving the
   sensitivity of progressive multiple sequence alignment through sequence
   weighting, position-specific gap penalties and weight matrix choice.}''
-  \emph{Nucleic Acids Res.}, vol.~22, no.~22, pp. 4673--80, Nov. 1994.
+  \emph{Nucleic Acids Res.}, vol.~22, no.~22, pp. 4673--80, 1994.
 
 \bibitem{Notredame2000}
 C.~Notredame, D.~G. Higgins, and J.~Heringa, ``{T-Coffee: A novel method for
   fast and accurate multiple sequence alignment.}'' \emph{J. Mol. Biol.}, vol.
-  302, no.~1, pp. 205--17, Sep. 2000.
+  302, no.~1, pp. 205--17, 2000.
 
 \bibitem{Penn2010}
 O.~Penn, E.~Privman, G.~Landan, D.~Graur, and T.~Pupko, ``{An alignment
   confidence score capturing robustness to guide tree uncertainty.}''
-  \emph{Mol. Biol. Evol.}, vol.~27, no.~8, pp. 1759--67, Aug. 2010.
+  \emph{Mol. Biol. Evol.}, vol.~27, no.~8, pp. 1759--67, 2010.
 
 \bibitem{Redelings2005}
 B.~D. Redelings and M.~a. Suchard, ``{Joint Bayesian estimation of alignment
-  and phylogeny.}'' \emph{Syst. Biol.}, vol.~54, no.~3, pp. 401--18, Jun. 2005.
+  and phylogeny.}'' \emph{Syst. Biol.}, vol.~54, no.~3, pp. 401--18, 2005.
 
 \bibitem{Bradley2009}
 R.~K. Bradley, A.~Roberts, M.~Smoot, S.~Juvekar, J.~Do, C.~Dewey, I.~Holmes,
   and L.~Pachter, ``{Fast statistical alignment.}'' \emph{PLoS Comput. Biol.},
-  vol.~5, no.~5, p. e1000392, May 2009.
+  vol.~5, no.~5, p. e1000392, 2009.
 
 \bibitem{Jeong2012}
 J.~Jeong, X.~Shi, X.~Zhang, S.~Kim, and C.~Shen, ``{Model-based peak alignment
   of metabolomic profiling from comprehensive two-dimensional gas
   chromatography mass spectrometry.}'' \emph{BMC Bioinformatics}, vol.~13,
-  no.~1, p.~27, Jan. 2012.
+  no.~1, p.~27, 2012.
 
 \bibitem{GhanatBari2014b}
 M.~{Ghanat Bari}, X.~Ma, and J.~Zhang, ``{PeakLink: a new peptide peak linking
-  method in LC-MS/MS using wavelet and SVM.}'' \emph{Bioinformatics}, vol.~30,
-  no.~17, pp. 2464--70, Sep. 2014.
+  method in {LC}-{MS}/MS using wavelet and SVM.}'' \emph{Bioinformatics},
+  vol.~30, no.~17, pp. 2464--70, 2014.
 
 \bibitem{Sandin2013}
 M.~Sandin, A.~Ali, K.~Hansson, O.~M{\aa}nsson, and E.~Andreasson, ``{An
-  Adaptive Alignment Algorithm for Quality-controlled Label-free LC-MS},''
+  Adaptive Alignment Algorithm for Quality-controlled Label-free {LC}-{MS}},''
   \emph{Mol Cell Proteomics}, pp. 1407--1420, 2013.
 
 \bibitem{Tibshirani2004}
-\BIBentryALTinterwordspacing
 R.~Tibshirani, T.~Hastie, B.~Narasimhan, S.~Soltys, G.~Shi, A.~Koong, and Q.-T.
-  Le, ``{Sample classification from protein mass spectrometry, by 'peak
-  probability contrasts'.}'' \emph{Bioinformatics (Oxford, England)}, vol.~20,
-  no.~17, pp. 3034--44, nov 2004. [Online]. Available:
-  \url{http://www.ncbi.nlm.nih.gov/pubmed/15226172}
-\BIBentrySTDinterwordspacing
+  Le, ``Sample classification from protein mass spectrometry, by ‘peak
+  probability contrasts’,'' \emph{Bioinformatics}, vol.~20, no.~17, pp.
+  3034--3044, 2004.
 
 \bibitem{Perera2011}
-\BIBentryALTinterwordspacing
-V.~Perera, M.~{Torres Zabala}, H.~Florance, N.~Smirnoff, M.~Grant, and Z.~R.
-  Yang, ``{Aligning extracted LC-MS peak lists via density maximization},''
-  \emph{Metabolomics}, vol.~8, no.~S1, pp. 175--185, dec 2011. [Online].
-  Available: \url{http://www.springerlink.com/index/10.1007/s11306-011-0389-x}
-\BIBentrySTDinterwordspacing
+V.~Perera, M.~D.~T. Zabala, H.~Florance, N.~Smirnoff, M.~Grant, and Z.~R. Yang,
+  ``Aligning extracted lc-ms peak lists via density maximization,''
+  \emph{Metabolomics}, vol.~8, no.~1, pp. 175--185, 2012.
 
 \bibitem{Wang2012}
-C.~Wang and D.~M. Blei, ``{A Split-Merge MCMC Algorithm for the Hierarchical
-  Dirichlet Process},'' \emph{CoRR}, pp. 1--10, 2012.
+C.~Wang and D.~M. Blei, ``A split-merge mcmc algorithm for the hierarchical
+  dirichlet process,'' \emph{arXiv preprint arXiv:1201.1657}, 2012.
 
 \bibitem{bolton2008pubchem}
 E.~E. Bolton, Y.~Wang, P.~A. Thiessen, and S.~H. Bryant, ``Pubchem: integrated
-  platform of small molecules and biological activities,'' \emph{Annual reports
-  in computational chemistry}, vol.~4, pp. 217--241, 2008.
+  platform of small molecules and biological activities,'' \emph{Annual Reports
+  in Computational Chemistry}, vol.~4, pp. 217--241, 2008.
 
 \bibitem{Kind2007}
-\BIBentryALTinterwordspacing
 T.~Kind and O.~Fiehn, ``{Seven Golden Rules for heuristic filtering of
   molecular formulas obtained by accurate mass spectrometry.}'' \emph{BMC
-  bioinformatics}, vol.~8, p. 105, jan 2007. [Online]. Available:
-  \url{http://www.pubmedcentral.nih.gov/articlerender.fcgi?artid=1851972{\&}tool=pmcentrez{\&}rendertype=abstract}
-\BIBentrySTDinterwordspacing
+  Bioinformatics}, vol.~8, p. 105, 2007.
 
 \bibitem{Smith2005}
-\BIBentryALTinterwordspacing
 C.~a. Smith, G.~O'Maille, E.~J. Want, C.~Qin, S.~a. Trauger, T.~R. Brandon,
   D.~E. Custodio, R.~Abagyan, and G.~Siuzdak, ``{METLIN: a metabolite mass
   spectral database.}'' \emph{Therapeutic drug monitoring}, vol.~27, no.~6, pp.
-  747--51, dec 2005. [Online]. Available:
-  \url{http://www.ncbi.nlm.nih.gov/pubmed/16404815}
-\BIBentrySTDinterwordspacing
+  747--51, 2005.
 
 \bibitem{Varmuza1996}
-\BIBentryALTinterwordspacing
 K.~Varmuza and W.~Werther, ``{Mass Spectral Classifiers for Supporting
   Systematic Structure Elucidation},'' \emph{Journal of Chemical Information
-  and Modeling}, vol.~36, no.~2, pp. 323--333, 1996. [Online]. Available:
-  \url{http://pubs.acs.org/cgi-bin/doilookup/?10.1021/ci9501406}
-\BIBentrySTDinterwordspacing
+  and Modeling}, vol.~36, no.~2, pp. 323--333, 1996.
 
 \bibitem{Hummel2010}
 J.~Hummel, N.~Strehmel, J.~Selbig, D.~Walther, and J.~Kopka, ``{Decision tree
@@ -838,7 +662,7 @@ J.~Hummel, N.~Strehmel, J.~Selbig, D.~Walther, and J.~Kopka, ``{Decision tree
 \bibitem{yang2013molecular}
 J.~Y. Yang, L.~M. Sanchez, C.~M. Rath, X.~Liu, P.~D. Boudreau, N.~Bruns,
   E.~Glukhov, A.~Wodtke, R.~de~Felicio, A.~Fenner \emph{et~al.}, ``Molecular
-  networking as a dereplication strategy,'' \emph{Journal of natural products},
+  networking as a dereplication strategy,'' \emph{Journal of Natural Products},
   vol.~76, no.~9, pp. 1686--1699, 2013.
 
 \bibitem{nguyen2013ms}
@@ -857,15 +681,12 @@ J.~J. Van Der~Hooft, S.~Padmanabhan, K.~E. Burgess, and M.~P. Barrett,
 \bibitem{ma2014ms2analyzer}
 Y.~Ma, T.~Kind, D.~Yang, C.~Leon, and O.~Fiehn, ``Ms2analyzer: A software for
   small molecule substructure annotations from accurate tandem mass spectra,''
-  \emph{Analytical chemistry}, vol.~86, no.~21, pp. 10\,724--10\,731, 2014.
+  \emph{Analytical Chemistry}, vol.~86, no.~21, pp. 10\,724--10\,731, 2014.
 
 \bibitem{Sweeney2014}
-\BIBentryALTinterwordspacing
 D.~L. Sweeney, ``{A Data Structure for Rapid Mass Spectral Searching},''
   \emph{Mass Spectrometry}, vol.~3, no. Special{\_}Issue{\_}2, pp.
-  S0035--S0035, 2014. [Online]. Available:
-  \url{http://jlc.jst.go.jp/DN/JST.JSTAGE/massspectrometry/S0035?lang=en{\&}from=CrossRef{\&}type=abstract}
-\BIBentrySTDinterwordspacing
+  S0035--S0035, 2014.
 
 \bibitem{Scott1994}
 D.~R. Scott, ``{Pattern recognition/ expert system for identification of toxic
@@ -879,17 +700,13 @@ X.~Chen, X.~Hu, X.~Shen, and G.~Rosen, ``Probabilistic topic modeling for
 
 \bibitem{zhang2015exploiting}
 R.~Zhang, Z.~Cheng, J.~Guan, and S.~Zhou, ``Exploiting topic modeling to boost
-  metagenomic reads binning,'' \emph{BMC bioinformatics}, vol.~16, no. Suppl 5,
+  metagenomic reads binning,'' \emph{BMC Bioinformatics}, vol.~16, no. Suppl 5,
   p.~S2, 2015.
 
 \bibitem{Bocker2009}
-\BIBentryALTinterwordspacing
 S.~B{\"{o}}cker, M.~C. Letzel, Z.~Lipt{\'{a}}k, and A.~Pervukhin, ``{SIRIUS:
   decomposing isotope patterns for metabolite identification.}''
-  \emph{Bioinformatics (Oxford, England)}, vol.~25, no.~2, pp. 218--24, jan
-  2009. [Online]. Available:
-  \url{http://www.pubmedcentral.nih.gov/articlerender.fcgi?artid=2639009{\&}tool=pmcentrez{\&}rendertype=abstract}
-\BIBentrySTDinterwordspacing
+  \emph{Bioinformatics}, vol.~25, no.~2, pp. 218--24, 2009.
 
 \bibitem{Stravs2013}
 M.~a. Stravs, E.~L. Schymanski, H.~P. Singer, and J.~Hollender, ``{Automatic
@@ -898,20 +715,13 @@ M.~a. Stravs, E.~L. Schymanski, H.~P. Singer, and J.~Hollender, ``{Automatic
   89--99, 2013.
 
 \bibitem{Sievert2014}
-\BIBentryALTinterwordspacing
 C.~Sievert and K.~Shirley, ``{LDAvis: A method for visualizing and interpreting
   topics},'' \emph{Proceedings of the Workshop on Interactive Language
-  Learning, Visualization, and Interfaces}, pp. 63--70, 2014. [Online].
-  Available: \url{http://www.aclweb.org/anthology/W/W14/W14-3110}
-\BIBentrySTDinterwordspacing
+  Learning, Visualization, and Interfaces}, pp. 63--70, 2014.
 
 \bibitem{Bocker2007}
-\BIBentryALTinterwordspacing
 S.~Bocker and Z.~Liptak, ``{A Fast and Simple Algorithm for the Money Changing
-  Problem},'' \emph{Algorithmica}, vol.~48, no.~4, pp. 413--432, jul 2007.
-  [Online]. Available:
-  \url{http://www.springerlink.com/index/10.1007/s00453-007-0162-8}
-\BIBentrySTDinterwordspacing
+  Problem},'' \emph{Algorithmica}, vol.~48, no.~4, pp. 413--432, 2007.
 
 \bibitem{wallach2009evaluation}
 H.~M. Wallach, I.~Murray, R.~Salakhutdinov, and D.~Mimno, ``Evaluation methods
@@ -926,7 +736,7 @@ T.~L. Griffiths and M.~Steyvers, ``{Finding scientific topics.}''
 
 \bibitem{tomfohr2005pathway}
 J.~Tomfohr, J.~Lu, and T.~B. Kepler, ``Pathway level analysis of gene
-  expression using singular value decomposition,'' \emph{BMC bioinformatics},
+  expression using singular value decomposition,'' \emph{BMC Bioinformatics},
   vol.~6, no.~1, p.~1, 2005.
 
 \bibitem{tarca2013comparison}
@@ -935,20 +745,17 @@ A.~L. Tarca, G.~Bhatti, and R.~Romero, ``A comparison of gene set analysis
   one}, vol.~8, no.~11, p. e79217, 2013.
 
 \bibitem{Minka2003}
-\BIBentryALTinterwordspacing
 T.~P. Minka, ``{Estimating a Dirichlet distribution},'' \emph{Annals of
-  Physics}, vol. 2000, no.~8, pp. 1--13, 2003. [Online]. Available:
-  \url{http://research.microsoft.com/en-us/um/people/minka/papers/dirichlet/minka-dirichlet.pdf}
-\BIBentrySTDinterwordspacing
+  Physics}, vol. 2000, no.~8, pp. 1--13, 2003.
 
 \bibitem{griffiths2004hierarchical}
 D.~Griffiths and M.~Tenenbaum, ``Hierarchical topic models and the nested
-  chinese restaurant process,'' \emph{Advances in neural information processing
-  systems}, vol.~16, p.~17, 2004.
+  chinese restaurant process,'' \emph{Advances in Neural Information Processing
+  Systems}, vol.~16, p.~17, 2004.
 
 \bibitem{kang2012transfer}
-J.-H. Kang, J.~Ma, and Y.~Liu, ``Transfer topic modeling with ease and
-  scalability.'' in \emph{SDM}.\hskip 1em plus 0.5em minus 0.4em\relax SIAM,
+J.-H. Kang, J.~Ma, and Y.~Liu, ``{Transfer Topic Modeling with Ease and
+  Scalability.}'' in \emph{SDM}.\hskip 1em plus 0.5em minus 0.4em\relax SIAM,
   2012, pp. 564--575.
 
 \end{thebibliography}

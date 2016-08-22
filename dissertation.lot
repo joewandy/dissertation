@@ -7,22 +7,22 @@
 \contentsline {table}{\numberline {4.2}{\ignorespaces No. of features in the full metabolomic dataset}}{62}{table.4.2}
 \contentsline {table}{\numberline {4.3}{\ignorespaces List of common adduct types in positive ionisation mode for ESI.}}{63}{table.4.3}
 \contentsline {table}{\numberline {4.4}{\ignorespaces No. of features in the full glycomic dataset from \cite {Tsai2013a}}}{64}{table.4.4}
-\contentsline {table}{\numberline {4.5}{\ignorespaces F$_1$ scores for the single-fraction experiment results on the P1 dataset. The tool with the highest F$_1$ score for each fraction is highlighted in bold. The results for `All' show the average F$_1$ scores of individual fractions.}}{68}{table.4.5}
-\contentsline {table}{\numberline {4.6}{\ignorespaces F$_1$ scores for the single-fraction experiment results on the P2 dataset. The tool with the highest F$_1$ score for each fraction is highlighted in bold. The results for `All' show the average F$_1$ scores of individual fractions.}}{68}{table.4.6}
-\contentsline {table}{\numberline {4.7}{\ignorespaces Multiple-fractions experiment results for the P1 dataset. For each training fraction, the reported testing performance is the average of individual F$_1$ scores from the testing fractions. The top-performing method (highest F$_1$ score) is highlighted in bold.}}{70}{table.4.7}
-\contentsline {table}{\numberline {4.8}{\ignorespaces Multiple-fractions experiment results for the P2 dataset. For each training fraction, the reported testing performance is the average of individual F$_1$ scores from the testing fractions. The top-performing method (highest F$_1$ score) is highlighted in bold.}}{70}{table.4.8}
+\contentsline {table}{\numberline {4.5}{\ignorespaces F$_1$ scores for the single-fraction experiment results on the P1 dataset.}}{68}{table.4.5}
+\contentsline {table}{\numberline {4.6}{\ignorespaces F$_1$ scores for the single-fraction experiment results on the P2 dataset.}}{68}{table.4.6}
+\contentsline {table}{\numberline {4.7}{\ignorespaces Multiple-fractions experiment results for the P1 dataset.}}{70}{table.4.7}
+\contentsline {table}{\numberline {4.8}{\ignorespaces Multiple-fractions experiment results for the P2 dataset.}}{70}{table.4.8}
 \contentsline {table}{\numberline {4.9}{\ignorespaces Example measured execution time in seconds on fractions of the P1 dataset}}{74}{table.4.9}
 \addvspace {10\p@ }
 \contentsline {table}{\numberline {5.1}{\ignorespaces List of common adduct transformations in positive mode used for the precursor clustering of the Standard and Beer runs.}}{88}{table.5.1}
-\contentsline {table}{\numberline {5.2}{\ignorespaces The number of peak features and the counts of singleton and non-singleton IP clusters in each run of the Standard and Beer datasets. A singleton cluster is defined to be an IP cluster having only one member peak after MAP assignments, while a non-singleton IP cluster has more than one member peaks. The last column in the Table shows the counts of non-singleton IP clusters and also the percentage of non-singleton IP clusters from the total IP clusters in that run. }}{93}{table.5.2}
-\contentsline {table}{\numberline {5.3}{\ignorespaces Precision, recall and $F_{1}$ values from Cluster-Cluster for randomly selected sets of 2, 3 and 4 Standard runs (averaged) and the Beer runs for various $l$ and thresholding levels $th=\{0.30, 0.60, 0.90\}$. Best results from Cluster-Match and the result of running Cluster-Cluster without the adduct fingerprint term are shown for comparison. Note that for Cluster-Cluster, the results come from using one set of potentially sub-optimal parameters for the second-stage clustering.}}{99}{table.5.3}
+\contentsline {table}{\numberline {5.2}{\ignorespaces The number of peak features and the counts of singleton and non-singleton IP clusters in each run of the Standard and Beer datasets.}}{93}{table.5.2}
+\contentsline {table}{\numberline {5.3}{\ignorespaces Precision, recall and $F_{1}$ values from Cluster-Cluster for randomly selected sets of 2, 3 and 4 Standard runs (averaged) and the Beer runs.}}{99}{table.5.3}
 \addvspace {10\p@ }
 \contentsline {table}{\numberline {6.1}{\ignorespaces Total number of runs and features of the selected evaluation datasets. }}{112}{table.6.1}
-\contentsline {table}{\numberline {6.2}{\ignorespaces Parameters used for HDP-Align}}{113}{table.6.2}
+\contentsline {table}{\numberline {6.2}{\ignorespaces Parameters used for HDP-Align}}{114}{table.6.2}
 \contentsline {table}{\numberline {6.3}{\ignorespaces Parameters used for the benchmark methods (SIMA, Join).}}{114}{table.6.3}
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {7.1}{\ignorespaces Beer samples used for evaluation dataset.}}{132}{table.7.1}
-\contentsline {table}{\numberline {7.2}{\ignorespaces Mass2Motif coverage of MS1 peaks by percentage of MS1 peaks that can be explained by at least one structurally annotated Mass2Motif for the files acquired in positive ionization mode.}}{137}{table.7.2}
-\contentsline {table}{\numberline {7.3}{\ignorespaces Annotations of the Mass2Motifs associated to the fragmentation spectra of the peaks generated by the standard molecules shown in Figure\nobreakspace {}\ref {fig:m2lda-standards}. The degree of a Mass2Motif indicates the number of MS2 fragmentation spectra in Beer3 positive ionization mode data having the fragment or loss features that can be explained by the Mass2Motif. }}{140}{table.7.3}
-\contentsline {table}{\numberline {7.4}{\ignorespaces Five global Mass2Motifs inferred from multi-file LDA. For each Mass2Motif, the top features above threshold are listed. Features characterised as key to the substructure from the previous individual LDA analyses are shown in bold.}}{148}{table.7.4}
+\contentsline {table}{\numberline {7.1}{\ignorespaces A list of the Beer samples used for evaluation.}}{133}{table.7.1}
+\contentsline {table}{\numberline {7.2}{\ignorespaces Mass2Motif coverage of MS1 peaks by percentage of MS1 peaks that can be explained by at least one structurally annotated Mass2Motif for the files acquired in positive ionization mode.}}{138}{table.7.2}
+\contentsline {table}{\numberline {7.3}{\ignorespaces Annotations of the Mass2Motifs associated to the fragmentation spectra of the peaks generated by the standard molecules shown in Figure\nobreakspace {}\ref {fig:m2lda-standards}.}}{141}{table.7.3}
+\contentsline {table}{\numberline {7.4}{\ignorespaces Five global Mass2Motifs inferred from multi-file LDA.}}{150}{table.7.4}
 \addvspace {10\p@ }

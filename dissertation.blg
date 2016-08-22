@@ -7,61 +7,63 @@ Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
-Reallocated field_info (elt_size=4) to 11435 items from 5000.
+Reallocated field_info (elt_size=4) to 11390 items from 5000.
 Database file #1: bibliography/dissertation.bib
+Warning--I didn't find a database entry for "teh2005hierarchical"
 Warning--I didn't find a database entry for "Teh2006"
 -- IEEEtran.bst version 1.12 (2007/01/11) by Michael Shell.
 -- http://www.michaelshell.org/tex/ieeetran/bibtex/
 -- See the "IEEEtran_bst_HOWTO.pdf" manual for usage information.
-Warning--empty author in Pedrioli2004
 Warning--empty author in Gieger2008
 Warning--empty author in Gibney2005
 Warning--empty author in Podwojski2009
 Warning--missing publisher in Hoffmann2007
-Warning--empty journal in teh2005hierarchical
+Warning--empty author in Silva2014
+Warning--empty journal in teh2012hierarchical
+Warning--missing institution in carpenter2010integrating
 Warning--missing publisher in Gusfield1989
 Warning--empty journal in Scott1994
 
 Done.
-You've used 142 entries,
+You've used 140 entries,
             4024 wiz_defined-function locations,
-            1716 strings with 39702 characters,
-and the built_in function-call counts, 122425 in all, are:
-= -- 10457
-> -- 3170
-< -- 1110
-+ -- 1716
-- -- 577
-* -- 6105
-:= -- 18480
-add.period$ -- 288
-call.type$ -- 142
-change.case$ -- 139
-chr.to.int$ -- 2373
-cite$ -- 150
-duplicate$ -- 8656
-empty$ -- 8781
-format.name$ -- 686
-if$ -- 28139
+            1638 strings with 35593 characters,
+and the built_in function-call counts, 119343 in all, are:
+= -- 10057
+> -- 3116
+< -- 1130
++ -- 1701
+- -- 563
+* -- 5764
+:= -- 17548
+add.period$ -- 284
+call.type$ -- 140
+change.case$ -- 137
+chr.to.int$ -- 2430
+cite$ -- 149
+duplicate$ -- 8527
+empty$ -- 8685
+format.name$ -- 667
+if$ -- 27613
 int.to.chr$ -- 0
-int.to.str$ -- 142
-missing$ -- 1475
-newline$ -- 567
-num.names$ -- 140
-pop$ -- 3061
+int.to.str$ -- 140
+missing$ -- 1453
+newline$ -- 445
+num.names$ -- 138
+pop$ -- 3101
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 2
-skip$ -- 9592
+skip$ -- 9396
 stack$ -- 0
-substring$ -- 5960
-swap$ -- 7686
-text.length$ -- 319
+substring$ -- 6070
+swap$ -- 7450
+text.length$ -- 320
 text.prefix$ -- 0
 top$ -- 5
-type$ -- 142
-warning$ -- 8
-while$ -- 567
-width$ -- 145
-write$ -- 1644
-(There were 9 warnings)
+type$ -- 140
+warning$ -- 9
+while$ -- 565
+width$ -- 143
+write$ -- 1454
+(There were 11 warnings)
