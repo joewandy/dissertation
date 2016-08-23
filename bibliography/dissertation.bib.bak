@@ -20,13 +20,14 @@
 }
 
 @article{Stanstrup2015,
-author = {Stanstrup, Jan and Neumann, Steffen and Vrhov??ek, Ur??ka},
-journal = {Analytical Chemistry},
-number = {18},
-pages = {9421--9428},
-title = {{PredRet: Prediction of Retention Time by Direct Mapping between Multiple Chromatographic Systems}},
-volume = {87},
-year = {2015}
+  title={PredRet: Prediction of retention time by direct mapping between multiple chromatographic systems},
+  author={Stanstrup, Jan and Neumann, Steffen and Vrhovsek, Urska},
+  journal={Analytical chemistry},
+  volume={87},
+  number={18},
+  pages={9421--9428},
+  year={2015},
+  publisher={ACS Publications}
 }
 
 @article{Silva2014,

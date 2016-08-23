@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2016.3.1)  23 AUG 2016 14:31
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2016.3.1)  23 AUG 2016 15:44
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1754,13 +1754,8 @@ ne 34.
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [87]
-[88] [89] [90] [91]
-
-LaTeX Warning: Reference `sub:running-time' on page 92 undefined on input line 
-204.
-
-[92]
-<05-precursor-cluster/figures/metabolites.pdf, id=2564, 3550.26375pt x 1517.67p
+[88] [89] [90] [91] [92]
+<05-precursor-cluster/figures/metabolites.pdf, id=2565, 3550.26375pt x 1517.67p
 t>
 File: 05-precursor-cluster/figures/metabolites.pdf Graphic file (type pdf)
  <use 05-precursor-cluster/figures/metabolites.pdf>
@@ -1768,14 +1763,14 @@ Package pdftex.def Info: 05-precursor-cluster/figures/metabolites.pdf used on i
 nput line 210.
 (pdftex.def)             Requested size: 441.01772pt x 188.50407pt.
  [93 <./05-precursor-cluster/figures/metabolites.pdf>]
-<05-precursor-cluster/figures/counts_cluster.pdf, id=2598, 867.24pt x 867.24pt>
+<05-precursor-cluster/figures/counts_cluster.pdf, id=2599, 867.24pt x 867.24pt>
 File: 05-precursor-cluster/figures/counts_cluster.pdf Graphic file (type pdf)
 <use 05-precursor-cluster/figures/counts_cluster.pdf>
 Package pdftex.def Info: 05-precursor-cluster/figures/counts_cluster.pdf used o
 n input line 257.
 (pdftex.def)             Requested size: 220.50885pt x 220.50148pt.
 
-<05-precursor-cluster/figures/transformation_counts.pdf, id=2602, 1445.4pt x 13
+<05-precursor-cluster/figures/transformation_counts.pdf, id=2603, 1445.4pt x 13
 73.13pt>
 File: 05-precursor-cluster/figures/transformation_counts.pdf Graphic file (type
  pdf)
@@ -1789,7 +1784,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
  [94]
 [95 <./05-precursor-cluster/figures/counts_cluster.pdf> <./05-precursor-cluster
 /figures/transformation_counts.pdf>]
-<05-precursor-cluster/figures/fig2.pdf, id=2641, 1300.86pt x 867.24pt>
+<05-precursor-cluster/figures/fig2.pdf, id=2642, 1300.86pt x 867.24pt>
 File: 05-precursor-cluster/figures/fig2.pdf Graphic file (type pdf)
 
 <use 05-precursor-cluster/figures/fig2.pdf>
@@ -1797,7 +1792,7 @@ Package pdftex.def Info: 05-precursor-cluster/figures/fig2.pdf used on input li
 ne 277.
 (pdftex.def)             Requested size: 441.01772pt x 294.01079pt.
 
-<05-precursor-cluster/figures/fig3.pdf, id=2643, 1156.32pt x 397.485pt>
+<05-precursor-cluster/figures/fig3.pdf, id=2644, 1156.32pt x 397.485pt>
 File: 05-precursor-cluster/figures/fig3.pdf Graphic file (type pdf)
 
 <use 05-precursor-cluster/figures/fig3.pdf>
@@ -1806,7 +1801,7 @@ ne 284.
 (pdftex.def)             Requested size: 330.76328pt x 113.69682pt.
  [96] [97 <./05-precursor-cluster/figures/fig2.pdf> <./05-precursor-cluster/fig
 ures/fig3.pdf>]
-<05-precursor-cluster/figures/fig4.pdf, id=2667, 867.24pt x 433.62pt>
+<05-precursor-cluster/figures/fig4.pdf, id=2668, 867.24pt x 433.62pt>
 File: 05-precursor-cluster/figures/fig4.pdf Graphic file (type pdf)
 
 <use 05-precursor-cluster/figures/fig4.pdf>
@@ -1838,7 +1833,7 @@ s-converted-to.pdf 06-hdp/figures/figure_1.eps>
 (epstopdf)             \includegraphics on input line 11.
 Package epstopdf Info: Output file is already uptodate.
 
-<06-hdp/figures/figure_1-eps-converted-to.pdf, id=2704, 598.235pt x 845.1575pt>
+<06-hdp/figures/figure_1-eps-converted-to.pdf, id=2705, 598.235pt x 845.1575pt>
 File: 06-hdp/figures/figure_1-eps-converted-to.pdf Graphic file (type pdf)
 <use 06-hdp/figures/figure_1-eps-converted-to.pdf>
 Package pdftex.def Info: 06-hdp/figures/figure_1-eps-converted-to.pdf used on i
@@ -1847,7 +1842,7 @@ nput line 11.
  [103
 
 ] [104 <./06-hdp/figures/figure_1-eps-converted-to.pdf>]
-<06-hdp/figures/model_hdp.png, id=2726, 624.3325pt x 563.10374pt>
+<06-hdp/figures/model_hdp.png, id=2727, 624.3325pt x 563.10374pt>
 File: 06-hdp/figures/model_hdp.png Graphic file (type png)
 
 <use 06-hdp/figures/model_hdp.png>
@@ -1870,23 +1865,14 @@ s-converted-to.pdf 06-hdp/figures/figure_3.eps>
 (epstopdf)             \includegraphics on input line 157.
 Package epstopdf Info: Output file is already uptodate.
 
-<06-hdp/figures/figure_3-eps-converted-to.pdf, id=2787, 548.0475pt x 664.4825pt
+<06-hdp/figures/figure_3-eps-converted-to.pdf, id=2788, 548.0475pt x 664.4825pt
 >
 File: 06-hdp/figures/figure_3-eps-converted-to.pdf Graphic file (type pdf)
  <use 06-hdp/figures/figure_3-eps-converted-to.pdf>
 Package pdftex.def Info: 06-hdp/figures/figure_3-eps-converted-to.pdf used on i
 nput line 157.
 (pdftex.def)             Requested size: 220.50885pt x 267.35985pt.
-
-
-LaTeX Warning: Reference `glycomic-dataset' on page 112 undefined on input line
- 167.
-
-
-LaTeX Warning: Reference `metabolomic-dataset' on page 112 undefined on input l
-ine 167.
-
-[112]
+ [112]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [113 <./06-hdp/figures/figure_3-eps-converted-to.pdf>] [114]
@@ -1905,7 +1891,7 @@ s-converted-to.pdf 06-hdp/figures/figure_4.eps>
 (epstopdf)             \includegraphics on input line 280.
 Package epstopdf Info: Output file is already uptodate.
 
-<06-hdp/figures/figure_4-eps-converted-to.pdf, id=2831, 578.16pt x 433.62pt>
+<06-hdp/figures/figure_4-eps-converted-to.pdf, id=2835, 578.16pt x 433.62pt>
 File: 06-hdp/figures/figure_4-eps-converted-to.pdf Graphic file (type pdf)
 
 <use 06-hdp/figures/figure_4-eps-converted-to.pdf>
@@ -1913,7 +1899,7 @@ Package pdftex.def Info: 06-hdp/figures/figure_4-eps-converted-to.pdf used on i
 nput line 280.
 (pdftex.def)             Requested size: 308.71104pt x 231.53117pt.
  [116 <./06-hdp/figures/figure_4-eps-converted-to.pdf>]
-<06-hdp/figures/traceplot_p1_000.pdf, id=2841, 867.24pt x 433.62pt>
+<06-hdp/figures/traceplot_p1_000.pdf, id=2845, 867.24pt x 433.62pt>
 File: 06-hdp/figures/traceplot_p1_000.pdf Graphic file (type pdf)
 
 <use 06-hdp/figures/traceplot_p1_000.pdf>
@@ -1921,7 +1907,7 @@ Package pdftex.def Info: 06-hdp/figures/traceplot_p1_000.pdf used on input line
  289.
 (pdftex.def)             Requested size: 308.71104pt x 154.35632pt.
  [117 <./06-hdp/figures/traceplot_p1_000.pdf>] <06-hdp/figures/traceplot_p1_100
-.pdf, id=2892, 867.24pt x 433.62pt>
+.pdf, id=2896, 867.24pt x 433.62pt>
 File: 06-hdp/figures/traceplot_p1_100.pdf Graphic file (type pdf)
 
 <use 06-hdp/figures/traceplot_p1_100.pdf>
@@ -1941,7 +1927,7 @@ s-converted-to.pdf 06-hdp/figures/figure_5.eps>
 (epstopdf)             \includegraphics on input line 314.
 Package epstopdf Info: Output file is already uptodate.
 
-<06-hdp/figures/figure_5-eps-converted-to.pdf, id=2949, 578.16pt x 433.62pt>
+<06-hdp/figures/figure_5-eps-converted-to.pdf, id=2953, 578.16pt x 433.62pt>
 File: 06-hdp/figures/figure_5-eps-converted-to.pdf Graphic file (type pdf)
 
 <use 06-hdp/figures/figure_5-eps-converted-to.pdf>
@@ -1960,7 +1946,7 @@ s-converted-to.pdf 06-hdp/figures/figure_6.eps>
 (epstopdf)             \includegraphics on input line 319.
 Package epstopdf Info: Output file is already uptodate.
 
-<06-hdp/figures/figure_6-eps-converted-to.pdf, id=2952, 578.16pt x 433.62pt>
+<06-hdp/figures/figure_6-eps-converted-to.pdf, id=2956, 578.16pt x 433.62pt>
 File: 06-hdp/figures/figure_6-eps-converted-to.pdf Graphic file (type pdf)
 
 <use 06-hdp/figures/figure_6-eps-converted-to.pdf>
@@ -1979,7 +1965,7 @@ s-converted-to.pdf 06-hdp/figures/figure_7.eps>
 (epstopdf)             \includegraphics on input line 324.
 Package epstopdf Info: Output file is already uptodate.
 
-<06-hdp/figures/figure_7-eps-converted-to.pdf, id=2953, 688.5725pt x 723.70375p
+<06-hdp/figures/figure_7-eps-converted-to.pdf, id=2957, 688.5725pt x 723.70375p
 t>
 File: 06-hdp/figures/figure_7-eps-converted-to.pdf Graphic file (type pdf)
  <use 06-hdp/figures/figure_7-eps-converted-to.pdf>
@@ -2000,7 +1986,7 @@ Overfull \hbox (9.4503pt too wide) in paragraph at lines 10--11
  []
 
 
-<07-lda/figures/927px-Carboxylic-acid.png, id=3009, 930.47626pt x 745.78625pt>
+<07-lda/figures/927px-Carboxylic-acid.png, id=3013, 930.47626pt x 745.78625pt>
 File: 07-lda/figures/927px-Carboxylic-acid.png Graphic file (type png)
 
 <use 07-lda/figures/927px-Carboxylic-acid.png>
@@ -2028,7 +2014,7 @@ Missing character: There is no ˜ in font ptmr7t!
 Missing character: There is no â in font ptmr7t!
 Missing character: There is no € in font ptmr7t!
 Missing character: There is no ™ in font ptmr7t!
- <07-lda/figures/text2frags_new.pdf, id=3058, 1407.2575pt x 1508.63625pt>
+ <07-lda/figures/text2frags_new.pdf, id=3062, 1407.2575pt x 1508.63625pt>
 File: 07-lda/figures/text2frags_new.pdf Graphic file (type pdf)
 
 <use 07-lda/figures/text2frags_new.pdf>
@@ -2043,7 +2029,7 @@ Package Fancyhdr Warning: \headheight is too small (15.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [130 <./07-lda/figures/text2frags_new.pdf>]
-<07-lda/figures/matrix.pdf, id=3154, 939.51pt x 505.89pt>
+<07-lda/figures/matrix.pdf, id=3158, 939.51pt x 505.89pt>
 File: 07-lda/figures/matrix.pdf Graphic file (type pdf)
 
 <use 07-lda/figures/matrix.pdf>
@@ -2056,7 +2042,7 @@ Missing character: There is no â in font ptmr7t!
 Missing character: There is no € in font ptmr7t!
 Missing character: There is no “ in font ptmr7t!
  [131 <./07-lda/figures/matrix.pdf>]
-<07-lda/figures/figure_s3.pdf, id=3184, 1725.44624pt x 1084.05pt>
+<07-lda/figures/figure_s3.pdf, id=3188, 1725.44624pt x 1084.05pt>
 File: 07-lda/figures/figure_s3.pdf Graphic file (type pdf)
 
 <use 07-lda/figures/figure_s3.pdf>
@@ -2136,7 +2122,7 @@ Package Fancyhdr Warning: \headheight is too small (15.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[138] <07-lda/figures/perplexity.png, id=3299, 722.7pt x 722.7pt>
+[138] <07-lda/figures/perplexity.png, id=3303, 722.7pt x 722.7pt>
 File: 07-lda/figures/perplexity.png Graphic file (type png)
 
 <use 07-lda/figures/perplexity.png>
@@ -2157,14 +2143,14 @@ Package Fancyhdr Warning: \headheight is too small (15.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[140] <07-lda/figures/figure3.pdf, id=3317, 3976.8575pt x 1958.31625pt>
+[140] <07-lda/figures/figure3.pdf, id=3322, 3976.8575pt x 1958.31625pt>
 File: 07-lda/figures/figure3.pdf Graphic file (type pdf)
 
 <use 07-lda/figures/figure3.pdf>
 Package pdftex.def Info: 07-lda/figures/figure3.pdf used on input line 189.
 (pdftex.def)             Requested size: 352.8155pt x 173.73082pt.
  [141]
-<07-lda/figures/standards.pdf, id=3330, 2715.14375pt x 1626.075pt>
+<07-lda/figures/standards.pdf, id=3334, 2715.14375pt x 1626.075pt>
 File: 07-lda/figures/standards.pdf Graphic file (type pdf)
 
 <use 07-lda/figures/standards.pdf>
@@ -2312,7 +2298,7 @@ Package Fancyhdr Warning: \headheight is too small (15.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [142 <./07-lda/figures/figure3.pdf>] [143]
-<07-lda/figures/combinedm2m.pdf, id=3384, 2806.86435pt x 2357.47646pt>
+<07-lda/figures/combinedm2m.pdf, id=3388, 2806.86435pt x 2357.47646pt>
 File: 07-lda/figures/combinedm2m.pdf Graphic file (type pdf)
 
 <use 07-lda/figures/combinedm2m.pdf>
@@ -2327,7 +2313,7 @@ Package Fancyhdr Warning: \headheight is too small (15.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [144 <./07-lda/figures/standards.pdf>] [145 <./07-lda/figures/combinedm2m.pdf>]
-<07-lda/figures/figure10.pdf, id=3587, 1108.14pt x 771.88374pt>
+<07-lda/figures/figure10.pdf, id=3591, 1108.14pt x 771.88374pt>
 File: 07-lda/figures/figure10.pdf Graphic file (type pdf)
 
 <use 07-lda/figures/figure10.pdf>
@@ -2346,7 +2332,7 @@ Package Fancyhdr Warning: \headheight is too small (15.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [146 <./07-lda/figures/figure10.pdf>]
-<07-lda/figures/heatmaps.png, id=3626, 1806.5091pt x 866.9991pt>
+<07-lda/figures/heatmaps.png, id=3630, 1806.5091pt x 866.9991pt>
 File: 07-lda/figures/heatmaps.png Graphic file (type png)
 
 <use 07-lda/figures/heatmaps.png>
@@ -2363,7 +2349,7 @@ Package Fancyhdr Warning: \headheight is too small (15.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [148 <./07-lda/figures/heatmaps.png>]
-<07-lda/figures/multifile_lda.pdf, id=3639, 650.43pt x 758.835pt>
+<07-lda/figures/multifile_lda.pdf, id=3643, 650.43pt x 758.835pt>
 File: 07-lda/figures/multifile_lda.pdf Graphic file (type pdf)
 
 <use 07-lda/figures/multifile_lda.pdf>
@@ -2505,14 +2491,14 @@ Package Fancyhdr Warning: \headheight is too small (15.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[152] <07-lda/figures/multifile.pdf, id=3710, 1446.40375pt x 984.67876pt>
+[152] <07-lda/figures/multifile.pdf, id=3714, 1446.40375pt x 984.67876pt>
 File: 07-lda/figures/multifile.pdf Graphic file (type pdf)
 
 <use 07-lda/figures/multifile.pdf>
 Package pdftex.def Info: 07-lda/figures/multifile.pdf used on input line 380.
 (pdftex.def)             Requested size: 441.01772pt x 300.22891pt.
 
-<07-lda/figures/multifile_alpha.pdf, id=3713, 1734.48pt x 433.62pt>
+<07-lda/figures/multifile_alpha.pdf, id=3717, 1734.48pt x 433.62pt>
 File: 07-lda/figures/multifile_alpha.pdf Graphic file (type pdf)
 
 <use 07-lda/figures/multifile_alpha.pdf>
@@ -2597,10 +2583,10 @@ LaTeX Warning: There were multiply-defined labels.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 7.
  ) ) 
 Here is how much of TeX's memory you used:
- 29197 strings out of 493089
- 569446 string characters out of 6134843
- 650060 words of memory out of 5000000
- 31422 multiletter control sequences out of 15000+600000
+ 29196 strings out of 493089
+ 569445 string characters out of 6134843
+ 650107 words of memory out of 5000000
+ 31421 multiletter control sequences out of 15000+600000
  51619 words of font info for 99 fonts, out of 8000000 for 9000
  1145 hyphenation exceptions out of 8191
  64i,21n,92p,10429b,570s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -2629,10 +2615,10 @@ fonts/type1/urw/helvetic/uhvb8a.pfb></usr/local/texlive/2015/texmf-dist/fonts/t
 ype1/urw/times/utmb8a.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/urw/t
 imes/utmr8a.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/urw/times/utmr8
 a.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on dissertation.pdf (191 pages, 12913573 bytes).
+Output written on dissertation.pdf (191 pages, 12913659 bytes).
 PDF statistics:
- 4124 PDF objects out of 4296 (max. 8388607)
- 3243 compressed objects within 33 object streams
+ 4128 PDF objects out of 4296 (max. 8388607)
+ 3247 compressed objects within 33 object streams
  643 named destinations out of 1000 (max. 500000)
  1131 words of extra memory for PDF output out of 10000 (max. 10000000)
 
