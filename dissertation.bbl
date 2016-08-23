@@ -65,10 +65,34 @@ A.~Alonso, S.~Marsal, and A.~Juli{\`a}, ``Analytical methods in untargeted
   metabolomics: state of the art in 2015,'' \emph{Frontiers in Bioengineering
   and Biotechnology}, vol.~3, p.~23, 2015.
 
+\bibitem{Ulrich01012008}
+E.~L. Ulrich, H.~Akutsu, J.~F. Doreleijers, Y.~Harano, Y.~E. Ioannidis, J.~Lin,
+  M.~Livny, S.~Mading, D.~Maziuk, Z.~Miller, E.~Nakatani, C.~F. Schulte, D.~E.
+  Tolmie, R.~Kent~Wenger, H.~Yao, and J.~L. Markley, ``Biomagresbank,''
+  \emph{Nucleic Acids Research}, vol.~36, no. suppl 1, pp. D402--D408, 2008.
+
+\bibitem{cui2008metabolite}
+Q.~Cui, I.~A. Lewis, A.~D. Hegeman, M.~E. Anderson, J.~Li, C.~F. Schulte, W.~M.
+  Westler, H.~R. Eghbalnia, M.~R. Sussman, and J.~L. Markley, ``Metabolite
+  identification via the madison metabolomics consortium database,''
+  \emph{Nature biotechnology}, vol.~26, no.~2, pp. 162--164, 2008.
+
 \bibitem{Pan2007}
 Z.~Pan and D.~Raftery, ``{Comparing and combining NMR spectroscopy and mass
   spectrometry in metabolomics},'' \emph{Analytical and Bioanalytical
   chemistry}, vol. 387, no.~2, pp. 525--527, 2007.
+
+\bibitem{hao2012batman}
+J.~Hao, W.~Astle, M.~De~Iorio, and T.~M. Ebbels, ``{BATMAN—an R package for
+  the automated quantification of metabolites from nuclear magnetic resonance
+  spectra using a Bayesian model},'' \emph{Bioinformatics}, vol.~28, no.~15,
+  pp. 2088--2090, 2012.
+
+\bibitem{song2011iqmnmr}
+X.~Song, B.-L. Zhang, H.-M. Liu, B.-Y. Yu, X.-M. Gao, and L.-Y. Kang,
+  ``{IQMNMR: Open source software using time-domain NMR data for automated
+  identification and quantification of metabolites in batches},'' \emph{BMC
+  Bioinformatics}, vol.~12, no.~1, p.~1, 2011.
 
 \bibitem{Smith2014}
 R.~Smith, A.~D. Mathis, D.~Ventura, and J.~T. Prince, ``Proteomics, lipidomics,
@@ -514,7 +538,8 @@ S.~Rogers, M.~Girolami, C.~Campbell, and R.~Breitling, ``The latent process
 
 \bibitem{weinshall2013lda}
 D.~Weinshall, G.~Levi, and D.~Hanukaev, ``{LDA Topic Model with Soft Assignment
-  of Descriptors to Words},'' in \emph{ICML (3)}, 2013, pp. 711--719.
+  of Descriptors to Words},'' in \emph{Proceedings of the 30th Annual
+  International Conference on Machine Learning}, vol.~28.
 
 \bibitem{das2015gaussian}
 R.~Das, M.~Zaheer, and C.~Dyer, ``{Gaussian LDA for Topic Models with Word
