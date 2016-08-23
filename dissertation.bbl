@@ -152,6 +152,13 @@ K.~Podwojski, A.~Fritsch, D.~C. Chamrad, W.~Paul, B.~Sitek, P.~Mutzel,
   time alignment algorithms for lc/ms data must consider nonlinear shifts,''
   \emph{Bioinformatics}, p. btp052, 2009.
 
+\bibitem{Christin2008}
+C.~Christin, A.~K. Smilde, H.~C. Hoefsloot, F.~Suits, R.~Bischoff, and P.~L.
+  Horvatovich, ``Optimized time alignment algorithm for lc- ms data:
+  correlation optimized warping using component detection algorithm-selected
+  mass chromatograms,'' \emph{Analytical Chemistry}, vol.~80, no.~18, pp.
+  7012--7021, 2008.
+
 \bibitem{Sakoe1978}
 H.~Sakoe and S.~Chiba, ``Dynamic programming algorithm optimization for spoken
   word recognition,'' \emph{IEEE transactions on acoustics, speech, and signal
@@ -162,13 +169,6 @@ N.-P.~V. Nielsen, J.~M. Carstensen, and J.~Smedsgaard, ``Aligning of single and
   multiple wavelength chromatographic profiles for chemometric data analysis
   using correlation optimised warping,'' \emph{Journal of Chromatography A},
   vol. 805, no.~1, pp. 17--35, 1998.
-
-\bibitem{Christin2008}
-C.~Christin, A.~K. Smilde, H.~C. Hoefsloot, F.~Suits, R.~Bischoff, and P.~L.
-  Horvatovich, ``Optimized time alignment algorithm for lc- ms data:
-  correlation optimized warping using component detection algorithm-selected
-  mass chromatograms,'' \emph{Analytical Chemistry}, vol.~80, no.~18, pp.
-  7012--7021, 2008.
 
 \bibitem{Windig2007}
 W.~Windig and W.~F. Smith, ``{Chemometric analysis of complex hyphenated data.
@@ -240,6 +240,26 @@ H.~Lin, L.~He, and B.~Ma, ``{A Combinatorial Approach to the Peptide Feature
   Matching Problem for Label-Free Quantification.}'' \emph{Bioinformatics}, pp.
   1--7, 2013.
 
+\bibitem{Smith2015}
+R.~Smith, J.~T. Prince, and D.~Ventura, ``{A coherent mathematical
+  characterization of isotope trace extraction , isotopic envelope extraction ,
+  and {LC}-{MS} correspondence},'' \emph{BMC Bioinformatics}, vol.~16, no.
+  Suppl 7, p.~S1, 2015.
+
+\bibitem{Smith2013a}
+R.~Smith, D.~Ventura, and J.~T. Prince, ``{Novel algorithms and the benefits of
+  comparative validation.}'' \emph{Bioinformatics}, vol.~29, no.~12, pp.
+  1583--5, 2013.
+
+\bibitem{Smith2013}
+------, ``{LC-MS alignment in theory and practice: a comprehensive algorithmic
+  review},'' \emph{Briefings in Bioinformatics}, 2013.
+
+\bibitem{benton2010correction}
+H.~P. Benton, E.~J. Want, and T.~M. Ebbels, ``Correction of mass calibration
+  gaps in liquid chromatography--mass spectrometry metabolomics data,''
+  \emph{Bioinformatics}, vol.~26, no.~19, pp. 2488--2489, 2010.
+
 \bibitem{Snider2007}
 R.~K. Snider, ``{Efficient calculation of exact mass isotopic distributions.}''
   \emph{Journal of the American Society for Mass Spectrometry}, vol.~18, no.~8,
@@ -254,6 +274,12 @@ B.~O. Keller, J.~Sui, A.~B. Young, and R.~M. Whittal, ``{Interferences and
 R.~Scheltema, S.~Decuypere, and J.~Dujardin, ``{Simple data-reduction method
   for high-resolution LC-MS data in metabolomics},'' \emph{Bioanalysis}, 2009.
 
+\bibitem{Kuhl2012}
+C.~Kuhl, R.~Tautenhahn, C.~B{\"{o}}ttcher, T.~R. Larson, and S.~Neumann,
+  ``{CAMERA: an integrated strategy for compound spectra extraction and
+  annotation of liquid chromatography/mass spectrometry data sets.}''
+  \emph{Analytical Chemistry}, vol.~84, no.~1, pp. 283--9, 2012.
+
 \bibitem{Scheltema2011}
 R.~a. Scheltema, A.~Jankevics, R.~C. Jansen, M.~a. Swertz, and R.~Breitling,
   ``{PeakML/mzMatch: a file format, Java library, R library, and tool-chain for
@@ -265,12 +291,6 @@ S.~Rogers, R.~Daly, and R.~Breitling, ``{Mixture model clustering for peak
   filtering in metabolomics},'' in \emph{Ninth International Workshop on
   Computational Systems Biology, WCSB 2012, June 4-6, Ulm, Germany}, 2012,
   p.~71.
-
-\bibitem{Kuhl2012}
-C.~Kuhl, R.~Tautenhahn, C.~B{\"{o}}ttcher, T.~R. Larson, and S.~Neumann,
-  ``{CAMERA: an integrated strategy for compound spectra extraction and
-  annotation of liquid chromatography/mass spectrometry data sets.}''
-  \emph{Analytical Chemistry}, vol.~84, no.~1, pp. 283--9, 2012.
 
 \bibitem{Sumner2007}
 L.~W. Sumner, A.~Amberg, D.~Barrett, M.~H. Beale, R.~Beger, C.~A. Daykin,
@@ -411,10 +431,6 @@ A.~Chawade, M.~Sandin, J.~Teleman, J.~Malmstr{\"{o}}m, and F.~Levander, ``{Data
   analysis.}'' \emph{Journal of Proteome Research}, vol.~14, no.~2, pp.
   676--87, 2015.
 
-\bibitem{Podwojski2009}
-``{Retention time alignment algorithms for LC/MS data must consider non-linear
-  shifts.}'' \emph{Bioinformatics}, vol.~25, no.~6, pp. 758--64, 2009.
-
 \bibitem{Hoffmann2007}
 E.~de~Hoffmann and V.~Stroobant, \emph{{Mass spectrometry: Principles and
   applications}}, 3rd~ed., L.~{John Wiley {\&} Sons}, Ed., West Sussex,
@@ -554,10 +570,9 @@ B.~Carpenter, ``{Integrating out multinomial parameters in Latent Dirichlet
   \url{https://lingpipe.files.wordpress.com/2010/07/lda3.pdf}
 \BIBentrySTDinterwordspacing
 
-\bibitem{Smith2013}
-R.~Smith, D.~Ventura, and J.~T. Prince, ``{LC-MS alignment in theory and
-  practice: a comprehensive algorithmic review},'' \emph{Briefings in
-  Bioinformatics}, 2013.
+\bibitem{Podwojski2009}
+``{Retention time alignment algorithms for LC/MS data must consider non-linear
+  shifts.}'' \emph{Bioinformatics}, vol.~25, no.~6, pp. 758--64, 2009.
 
 \bibitem{wandy2015incorporating}
 J.~Wandy, R.~Daly, R.~Breitling, and S.~Rogers, ``Incorporating peak grouping
@@ -576,17 +591,6 @@ H.~Kuhn, ``{The Hungarian method for the assignment problem},'' \emph{Naval
 R.~Duan, S.~Pettie, and H.~Su, ``{Scaling algorithms for approximate and exact
   maximum weight matching},'' \emph{arXiv preprint arXiv:1112.0790}, pp. 1--36,
   2011.
-
-\bibitem{Smith2013a}
-R.~Smith, D.~Ventura, and J.~T. Prince, ``{Novel algorithms and the benefits of
-  comparative validation.}'' \emph{Bioinformatics}, vol.~29, no.~12, pp.
-  1583--5, 2013.
-
-\bibitem{Smith2015}
-R.~Smith, J.~T. Prince, and D.~Ventura, ``{A coherent mathematical
-  characterization of isotope trace extraction , isotopic envelope extraction ,
-  and {LC}-{MS} correspondence},'' \emph{BMC Bioinformatics}, vol.~16, no.
-  Suppl 7, p.~S1, 2015.
 
 \bibitem{Melamud2010}
 E.~Melamud, L.~Vastag, and J.~D. Rabinowitz, ``{Metabolomic analysis and

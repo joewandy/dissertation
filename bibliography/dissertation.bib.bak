@@ -372,6 +372,17 @@ volume = {8},
 year = {2008}
 }
 
+@article{benton2010correction,
+  title={Correction of mass calibration gaps in liquid chromatography--mass spectrometry metabolomics data},
+  author={Benton, H Paul and Want, Elizabeth J and Ebbels, Timothy MD},
+  journal={Bioinformatics},
+  volume={26},
+  number={19},
+  pages={2488--2489},
+  year={2010},
+  publisher={Oxford Univ Press}
+}
+
 @article{podwojski2009retention,
   title={Retention time alignment algorithms for LC/MS data must consider nonlinear shifts},
   author={Podwojski, Katharina and Fritsch, Arno and Chamrad, Daniel C and Paul, Wolfgang and Sitek, Barbara and Mutzel, Petra and Stephan, Christian and Meyer, Helmut E and Urfer, Wolfgang and Ickstadt, Katja and others},
