@@ -67,7 +67,7 @@ A.~Alonso, S.~Marsal, and A.~Juli{\`a}, ``Analytical methods in untargeted
 
 \bibitem{Pan2007}
 Z.~Pan and D.~Raftery, ``{Comparing and combining NMR spectroscopy and mass
-  spectrometry in metabolomics},'' \emph{Analytical and bioanalytical
+  spectrometry in metabolomics},'' \emph{Analytical and Bioanalytical
   chemistry}, vol. 387, no.~2, pp. 525--527, 2007.
 
 \bibitem{Smith2014}
@@ -322,7 +322,7 @@ J.~Xia and D.~S. Wishart, ``{MetPA: a web-based metabolomics tool for pathway
 \bibitem{Krumsiek2011a}
 J.~Krumsiek, K.~Suhre, T.~Illig, J.~Adamski, and F.~J. Theis, ``Gaussian
   graphical modeling reconstructs pathway reactions from high-throughput
-  metabolomics data,'' \emph{BMC systems biology}, vol.~5, no.~1, p.~1, 2011.
+  metabolomics data,'' \emph{BMC Systems Biology}, vol.~5, no.~1, p.~1, 2011.
 
 \bibitem{Krumsiek2012}
 J.~Krumsiek, K.~Suhre, A.~M. Evans, M.~W. Mitchell, R.~P. Mohney, M.~V.
@@ -345,7 +345,7 @@ R.~C.~H. {De Vos}, S.~Moco, A.~Lommen, J.~J.~B. Keurentjes, R.~J. Bino, and
 \bibitem{mamas2011role}
 M.~Mamas, W.~B. Dunn, L.~Neyses, and R.~Goodacre, ``The role of metabolites and
   metabolomics in clinically applicable biomarkers of disease,'' \emph{Archives
-  of toxicology}, vol.~85, no.~1, pp. 5--17, 2011.
+  of Toxicology}, vol.~85, no.~1, pp. 5--17, 2011.
 
 \bibitem{Gibney2005}
 ``{Metabolomics in human nutrition: opportunities and challenges.}'' \emph{The
@@ -353,7 +353,7 @@ M.~Mamas, W.~B. Dunn, L.~Neyses, and R.~Goodacre, ``The role of metabolites and
 
 \bibitem{Kell2006}
 D.~B. Kell, ``{Systems biology, metabolic modelling and metabolomics in drug
-  discovery and development.}'' \emph{Drug discovery today}, vol.~11, no.
+  discovery and development.}'' \emph{Drug Discovery Today}, vol.~11, no.
   23-24, pp. 1085--92, 2006.
 
 \bibitem{Kanehisa2010}
@@ -397,7 +397,7 @@ E.~de~Hoffmann and V.~Stroobant, \emph{{Mass spectrometry: Principles and
   England, 2007.
 
 \bibitem{gross2006mass}
-J.~H. Gross, \emph{Mass spectrometry: a textbook}.\hskip 1em plus 0.5em minus
+J.~H. Gross, \emph{Mass Spectrometry: A Textbook}.\hskip 1em plus 0.5em minus
   0.4em\relax Springer Science \& Business Media, 2006.
 
 \bibitem{Gika2014}
@@ -413,7 +413,7 @@ D.~A. Megger, T.~Bracht, H.~E. Meyer, and B.~Sitek, ``{Label-free
 
 \bibitem{xu2005survey}
 R.~Xu and D.~Wunsch, ``{Survey of Clustering Algorithms},'' \emph{IEEE
-  Transactions on neural networks}, vol.~16, no.~3, pp. 645--678, 2005.
+  Transactions on Neural Networks}, vol.~16, no.~3, pp. 645--678, 2005.
 
 \bibitem{Jain2010}
 A.~K. Jain, ``Data clustering: 50 years beyond k-means,'' \emph{Pattern
@@ -441,33 +441,32 @@ F.~Allen, R.~Greiner, and D.~Wishart, ``{Competitive fragmentation modeling of
 \bibitem{Allen2016}
 F.~Allen, A.~Pon, R.~Greiner, and D.~S. Wishart, ``{Computational prediction of
   electron ionization mass spectra to assist in GC-MS compound
-  identification},'' \emph{Analytical Chemistry}, p. acs.analchem.6b01622,
+  identification},'' \emph{Analytical Chemistry}, vol.~88, pp. 7689--7697,
   2016.
 
 \bibitem{Heinonen2012a}
-M.~Heinonen, H.~Shen, N.~Zamboni, and J.~Rousu, ``{Metabolite identification
-  and molecular fingerprint prediction via machine learning},''
-  \emph{cs.helsinki.fi}, pp. 1--8, 2012.
+M.~Heinonen, H.~Shen, N.~Zamboni, and J.~Rousu, ``Metabolite identification and
+  molecular fingerprint prediction through machine learning,''
+  \emph{Bioinformatics}, vol.~28, no.~18, pp. 2333--2341, 2012.
 
 \bibitem{Duhrkop2015}
-K.~D{\"{u}}hrkop, H.~Shen, M.~Meusel, J.~Rousu, and S.~B{\"{o}}cker,
-  ``{Searching molecular structure databases with tandem mass spectra using
-  CSI:FingerID},'' \emph{Proceedings of the National Academy of Sciences}, p.
-  201509788, 2015.
+K.~D{\"u}hrkop, H.~Shen, M.~Meusel, J.~Rousu, and S.~B{\"o}cker, ``Searching
+  molecular structure databases with tandem mass spectra using csi: Fingerid,''
+  \emph{Proceedings of the National Academy of Sciences}, vol. 112, no.~41, pp.
+  12\,580--12\,585, 2015.
 
 \bibitem{Rasmussen2000}
-C.~Rasmussen, ``{The infinite Gaussian mixture model},'' in \emph{Advances in
-  Neural Information Processing Systems 12}.\hskip 1em plus 0.5em minus
-  0.4em\relax MIT Press, 2000, pp. 554--560.
+C.~E. Rasmussen, ``{The infinite Gaussian mixture model},'' vol.~12, 2000, pp.
+  554--560.
 
 \bibitem{gelman2014bayesian}
 A.~Gelman, J.~B. Carlin, H.~S. Stern, and D.~B. Rubin, \emph{{Bayesian Data
-  Analysis}}.\hskip 1em plus 0.5em minus 0.4em\relax Chapman \& Hall/CRC Boca
-  Raton, FL, USA, 2014, vol.~2.
+  Analysis}}.\hskip 1em plus 0.5em minus 0.4em\relax Chapman \& Hall, 2014,
+  vol.~2.
 
 \bibitem{murphy2012machine}
-K.~P. Murphy, \emph{{Machine Learning: a Probabilistic Perspective}}.\hskip 1em
-  plus 0.5em minus 0.4em\relax MIT press, 2012.
+K.~P. Murphy, \emph{{Machine Learning: A Probabilistic Perspective}}.\hskip 1em
+  plus 0.5em minus 0.4em\relax MIT Press, 2012.
 
 \bibitem{hjort2010bayesian}
 N.~L. Hjort, C.~Holmes, P.~M{\"u}ller, and S.~G. Walker, \emph{{Bayesian
@@ -494,7 +493,8 @@ D.~J. Aldous, ``Exchangeability and related topics,'' in \emph{{\'E}cole
 
 \bibitem{teh2012hierarchical}
 Y.~W. Teh, M.~I. Jordan, M.~J. Beal, and D.~M. Blei, ``Hierarchical dirichlet
-  processes,'' 2012.
+  processes,'' \emph{Journal of the American Statistical Association}, vol.
+  101, no. 476, pp. 1566--1581, 2006.
 
 \bibitem{kim2006hierarchical}
 S.~Kim and P.~Smyth, ``Hierarchical dirichlet processes with random effects,''
@@ -503,7 +503,7 @@ S.~Kim and P.~Smyth, ``Hierarchical dirichlet processes with random effects,''
 
 \bibitem{Blei2003}
 D.~M. Blei, A.~Y. Ng, and M.~I. Jordan, ``Latent {D}irichlet {A}llocation,''
-  \emph{Journal of Machine Learning research}, vol.~3, no. Jan, pp. 993--1022,
+  \emph{Journal of Machine Learning Research}, vol.~3, no. Jan, pp. 993--1022,
   2003.
 
 \bibitem{rogers2005latent}
@@ -517,8 +517,8 @@ D.~Weinshall, G.~Levi, and D.~Hanukaev, ``{LDA Topic Model with Soft Assignment
   of Descriptors to Words},'' in \emph{ICML (3)}, 2013, pp. 711--719.
 
 \bibitem{das2015gaussian}
-R.~Das, M.~Zaheer, and C.~Dyer, ``Gaussian lda for topic models with word
-  embeddings,'' in \emph{Proceedings of the 53nd Annual Meeting of the
+R.~Das, M.~Zaheer, and C.~Dyer, ``{Gaussian LDA for Topic Models with Word
+  Embeddings},'' in \emph{Proceedings of the 53nd Annual Meeting of the
   Association for Computational Linguistics}, 2015.
 
 \bibitem{carpenter2010integrating}
@@ -530,9 +530,9 @@ B.~Carpenter, ``{Integrating out multinomial parameters in Latent Dirichlet
 \BIBentrySTDinterwordspacing
 
 \bibitem{Smith2013}
-R.~Smith, D.~Ventura, and J.~T. Prince, ``{{\{}LC{\}}-{\{}MS{\}} alignment in
-  theory and practice: a comprehensive algorithmic review},'' \emph{Briefings
-  in Bioinformatics}, 2013.
+R.~Smith, D.~Ventura, and J.~T. Prince, ``{LC-MS alignment in theory and
+  practice: a comprehensive algorithmic review},'' \emph{Briefings in
+  Bioinformatics}, 2013.
 
 \bibitem{wandy2015incorporating}
 J.~Wandy, R.~Daly, R.~Breitling, and S.~Rogers, ``Incorporating peak grouping
@@ -581,26 +581,27 @@ G.~Landan and D.~Graur, ``{Characterization of pairwise and multiple sequence
 J.~D. Thompson, D.~G. Higgins, and T.~J. Gibson, ``{CLUSTAL W: improving the
   sensitivity of progressive multiple sequence alignment through sequence
   weighting, position-specific gap penalties and weight matrix choice.}''
-  \emph{Nucleic Acids Res.}, vol.~22, no.~22, pp. 4673--80, 1994.
+  \emph{Nucleic Acids Research}, vol.~22, no.~22, pp. 4673--80, 1994.
 
 \bibitem{Notredame2000}
 C.~Notredame, D.~G. Higgins, and J.~Heringa, ``{T-Coffee: A novel method for
-  fast and accurate multiple sequence alignment.}'' \emph{J. Mol. Biol.}, vol.
-  302, no.~1, pp. 205--17, 2000.
+  fast and accurate multiple sequence alignment.}'' \emph{Journal of Molecular
+  Biology}, vol. 302, no.~1, pp. 205--17, 2000.
 
 \bibitem{Penn2010}
 O.~Penn, E.~Privman, G.~Landan, D.~Graur, and T.~Pupko, ``{An alignment
   confidence score capturing robustness to guide tree uncertainty.}''
-  \emph{Mol. Biol. Evol.}, vol.~27, no.~8, pp. 1759--67, 2010.
+  \emph{Molecular Biology and Evolution}, vol.~27, no.~8, pp. 1759--67, 2010.
 
 \bibitem{Redelings2005}
 B.~D. Redelings and M.~a. Suchard, ``{Joint Bayesian estimation of alignment
-  and phylogeny.}'' \emph{Syst. Biol.}, vol.~54, no.~3, pp. 401--18, 2005.
+  and phylogeny.}'' \emph{Systematic Biology}, vol.~54, no.~3, pp. 401--18,
+  2005.
 
 \bibitem{Bradley2009}
 R.~K. Bradley, A.~Roberts, M.~Smoot, S.~Juvekar, J.~Do, C.~Dewey, I.~Holmes,
-  and L.~Pachter, ``{Fast statistical alignment.}'' \emph{PLoS Comput. Biol.},
-  vol.~5, no.~5, p. e1000392, 2009.
+  and L.~Pachter, ``{Fast statistical alignment.}'' \emph{PLoS Computational
+  Biology}, vol.~5, no.~5, p. e1000392, 2009.
 
 \bibitem{Jeong2012}
 J.~Jeong, X.~Shi, X.~Zhang, S.~Kim, and C.~Shen, ``{Model-based peak alignment
@@ -616,7 +617,7 @@ M.~{Ghanat Bari}, X.~Ma, and J.~Zhang, ``{PeakLink: a new peptide peak linking
 \bibitem{Sandin2013}
 M.~Sandin, A.~Ali, K.~Hansson, O.~M{\aa}nsson, and E.~Andreasson, ``{An
   Adaptive Alignment Algorithm for Quality-controlled Label-free {LC}-{MS}},''
-  \emph{Mol Cell Proteomics}, pp. 1407--1420, 2013.
+  \emph{Molecular \& Cellular Proteomics}, pp. 1407--1420, 2013.
 
 \bibitem{Tibshirani2004}
 R.~Tibshirani, T.~Hastie, B.~Narasimhan, S.~Soltys, G.~Shi, A.~Koong, and Q.-T.
@@ -646,7 +647,7 @@ T.~Kind and O.~Fiehn, ``{Seven Golden Rules for heuristic filtering of
 \bibitem{Smith2005}
 C.~a. Smith, G.~O'Maille, E.~J. Want, C.~Qin, S.~a. Trauger, T.~R. Brandon,
   D.~E. Custodio, R.~Abagyan, and G.~Siuzdak, ``{METLIN: a metabolite mass
-  spectral database.}'' \emph{Therapeutic drug monitoring}, vol.~27, no.~6, pp.
+  spectral database.}'' \emph{Therapeutic Drug Monitoring}, vol.~27, no.~6, pp.
   747--51, 2005.
 
 \bibitem{Varmuza1996}
@@ -667,8 +668,8 @@ J.~Y. Yang, L.~M. Sanchez, C.~M. Rath, X.~Liu, P.~D. Boudreau, N.~Bruns,
 
 \bibitem{nguyen2013ms}
 D.~D. Nguyen, C.-H. Wu, W.~J. Moree, A.~Lamsa, M.~H. Medema, X.~Zhao, R.~G.
-  Gavilan, M.~Aparicio, L.~Atencio, C.~Jackson \emph{et~al.}, ``Ms/ms
-  networking guided analysis of molecule and gene cluster families,''
+  Gavilan, M.~Aparicio, L.~Atencio, C.~Jackson \emph{et~al.}, ``{MS/MS
+  networking guided analysis of molecule and gene cluster families},''
   \emph{Proceedings of the National Academy of Sciences}, vol. 110, no.~28, pp.
   E2611--E2620, 2013.
 
@@ -689,8 +690,9 @@ D.~L. Sweeney, ``{A Data Structure for Rapid Mass Spectral Searching},''
   S0035--S0035, 2014.
 
 \bibitem{Scott1994}
-D.~R. Scott, ``{Pattern recognition/ expert system for identification of toxic
-  compounds from low resolution mass spectra *},'' vol.~23, pp. 351--364, 1994.
+D.~R. Scott, ``{Pattern recognition/expert system for identification of toxic
+  compounds from low resolution mass spectra},'' \emph{Chemometrics and
+  intelligent laboratory systems}, vol.~23, no.~2, pp. 351--364, 1994.
 
 \bibitem{chen2010probabilistic}
 X.~Chen, X.~Hu, X.~Shen, and G.~Rosen, ``Probabilistic topic modeling for
@@ -742,7 +744,7 @@ J.~Tomfohr, J.~Lu, and T.~B. Kepler, ``Pathway level analysis of gene
 \bibitem{tarca2013comparison}
 A.~L. Tarca, G.~Bhatti, and R.~Romero, ``A comparison of gene set analysis
   methods in terms of sensitivity, prioritization and specificity,'' \emph{PloS
-  one}, vol.~8, no.~11, p. e79217, 2013.
+  One}, vol.~8, no.~11, p. e79217, 2013.
 
 \bibitem{Minka2003}
 T.~P. Minka, ``{Estimating a Dirichlet distribution},'' \emph{Annals of
@@ -754,8 +756,7 @@ D.~Griffiths and M.~Tenenbaum, ``Hierarchical topic models and the nested
   Systems}, vol.~16, p.~17, 2004.
 
 \bibitem{kang2012transfer}
-J.-H. Kang, J.~Ma, and Y.~Liu, ``{Transfer Topic Modeling with Ease and
-  Scalability.}'' in \emph{SDM}.\hskip 1em plus 0.5em minus 0.4em\relax SIAM,
-  2012, pp. 564--575.
+J.-H. Kang, J.~Ma, and Y.~Liu, \emph{Transfer Topic Modeling with Ease and
+  Scalability}, ch.~48, pp. 564--575.
 
 \end{thebibliography}

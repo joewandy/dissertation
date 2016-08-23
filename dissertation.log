@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2016.3.1)  22 AUG 2016 18:14
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2016.3.1)  23 AUG 2016 11:10
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2314,11 +2314,11 @@ s spectrometry-based
 Missing character: There is no â in font ptmr7t!
 Missing character: There is no € in font ptmr7t!
 Missing character: There is no ” in font ptmr7t!
- [162] [163] [164] [165] [166]
+ [162] [163] [164] [165] [166] [167]
 Missing character: There is no â in font ptmri7t!
 Missing character: There is no € in font ptmri7t!
 Missing character: There is no ” in font ptmri7t!
- [167] [168] [169]
+ [168] [169]
 Missing character: There is no â in font ptmr7t!
 Missing character: There is no € in font ptmr7t!
 Missing character: There is no ˜ in font ptmr7t!
@@ -2376,7 +2376,7 @@ fonts/type1/urw/helvetic/uhvb8a.pfb></usr/local/texlive/2015/texmf-dist/fonts/t
 ype1/urw/times/utmb8a.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/urw/t
 imes/utmr8a.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/urw/times/utmr8
 a.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on dissertation.pdf (186 pages, 12898910 bytes).
+Output written on dissertation.pdf (186 pages, 12899012 bytes).
 PDF statistics:
  4081 PDF objects out of 4296 (max. 8388607)
  3205 compressed objects within 33 object streams
