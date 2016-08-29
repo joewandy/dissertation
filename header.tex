@@ -15,6 +15,7 @@
 \usepackage[colorinlistoftodos]{todonotes}
 \usepackage{hyperref}
 \usepackage{tabularx} % in the preamble
+\usepackage[numbers]{natbib}
 
 \usepackage{amsmath}
 \usepackage{breqn} 			% line break long equations
@@ -100,6 +101,7 @@
 
 \newcommand{\note}[1]{\emph{\textbf{Note:}[#1]}}
 
+
 % =============================================================================
 \begin{document}
 
@@ -163,3 +165,5 @@
 \pagestyle{fancy}
 \pagenumbering{arabic}
 \setcounter{page}{1}
+
+\let\cleardoublepage\clearpage

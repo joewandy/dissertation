@@ -1,7 +1,7 @@
 This is BibTeX, Version 0.99d (TeX Live 2015)
 Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: dissertation.aux
-The style file: IEEEtran.bst
+The style file: IEEEtranSN.bst
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
@@ -9,59 +9,60 @@ Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated field_info (elt_size=4) to 11435 items from 5000.
 Database file #1: bibliography/dissertation.bib
--- IEEEtran.bst version 1.12 (2007/01/11) by Michael Shell.
+Warning--I didn't find a database entry for "podwojski2009retention"
+-- IEEEtranSN.bst version 1.13 (2008/09/30) by Michael Shell.
 -- http://www.michaelshell.org/tex/ieeetran/bibtex/
 -- See the "IEEEtran_bst_HOWTO.pdf" manual for usage information.
-Warning--empty author in Gieger2008
-Warning--empty author in Gibney2005
+** Sorting Natbib version - not for normal IEEE work.
+Reallocated glb_str_ptr (elt_size=4) to 20 items from 10.
+Reallocated global_strs (elt_size=20001) to 20 items from 10.
+Reallocated glb_str_end (elt_size=4) to 20 items from 10.
+Warning--missing institution in carpenter2010integrating
 Warning--missing publisher in Hoffmann2007
-Warning--empty author in Silva2014
+Warning--missing publisher in Gusfield1989
 Warning--empty booktitle in Rasmussen2000
 Warning--empty year in weinshall2013lda
-Warning--missing institution in carpenter2010integrating
-Warning--empty author in Podwojski2009
-Warning--missing publisher in Gusfield1989
 
 Done.
-You've used 143 entries,
-            4024 wiz_defined-function locations,
-            1643 strings with 36901 characters,
-and the built_in function-call counts, 124553 in all, are:
-= -- 10434
-> -- 3349
-< -- 1203
-+ -- 1837
-- -- 613
-* -- 6085
-:= -- 18255
-add.period$ -- 288
-call.type$ -- 143
-change.case$ -- 140
-chr.to.int$ -- 2586
-cite$ -- 152
-duplicate$ -- 8822
-empty$ -- 8980
-format.name$ -- 716
-if$ -- 28792
-int.to.chr$ -- 0
-int.to.str$ -- 143
-missing$ -- 1524
-newline$ -- 454
-num.names$ -- 141
-pop$ -- 3237
+You've used 142 entries,
+            5174 wiz_defined-function locations,
+            1835 strings with 38862 characters,
+and the built_in function-call counts, 168854 in all, are:
+= -- 15888
+> -- 7268
+< -- 1250
++ -- 3122
+- -- 1870
+* -- 9839
+:= -- 24740
+add.period$ -- 286
+call.type$ -- 142
+change.case$ -- 888
+chr.to.int$ -- 2745
+cite$ -- 289
+duplicate$ -- 9801
+empty$ -- 9960
+format.name$ -- 2166
+if$ -- 37692
+int.to.chr$ -- 2
+int.to.str$ -- 1
+missing$ -- 1547
+newline$ -- 452
+num.names$ -- 570
+pop$ -- 4378
 preamble$ -- 1
-purify$ -- 0
+purify$ -- 749
 quote$ -- 2
-skip$ -- 9745
+skip$ -- 12222
 stack$ -- 0
-substring$ -- 6397
-swap$ -- 7790
-text.length$ -- 341
+substring$ -- 6707
+swap$ -- 7847
+text.length$ -- 343
 text.prefix$ -- 0
-top$ -- 5
-type$ -- 143
-warning$ -- 9
-while$ -- 581
-width$ -- 146
-write$ -- 1499
-(There were 9 warnings)
+top$ -- 6
+type$ -- 3427
+warning$ -- 5
+while$ -- 867
+width$ -- 0
+write$ -- 1782
+(There were 6 warnings)

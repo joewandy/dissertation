@@ -15,6 +15,7 @@
 \usepackage[colorinlistoftodos]{todonotes}
 \usepackage{hyperref}
 \usepackage{tabularx} % in the preamble
+\usepackage[numbers]{natbib}
 
 \usepackage{amsmath}
 \usepackage{breqn} 			% line break long equations
@@ -100,8 +101,13 @@
 
 \newcommand{\note}[1]{\emph{\textbf{Note:}[#1]}}
 
+@IEEEtranBSTCTL{IEEEexample:BSTcontrol,
+  CTLdash_repeated_names = "no"
+}
+
 % =============================================================================
 \begin{document}
+\bstctlcite{IEEEexample:BSTcontrol}
 
 \pagestyle{empty}
 \pagenumbering{gobble}

@@ -56,7 +56,7 @@
 \contentsline {section}{\numberline {4.5}Results and Discussions}{68}{section.4.5}
 \contentsline {subsection}{\numberline {4.5.1}Proteomics Experiments}{68}{subsection.4.5.1}
 \contentsline {subsubsection}{Single-fraction Experiment}{68}{section*.13}
-\contentsline {subsubsection}{Multiple-fractions Experiment}{70}{section*.14}
+\contentsline {subsubsection}{Multiple-fractions Experiment}{69}{section*.14}
 \contentsline {subsection}{\numberline {4.5.2}Metabolomic and Glycomic Datasets}{71}{subsection.4.5.2}
 \contentsline {subsection}{\numberline {4.5.3}Running Time}{74}{subsection.4.5.3}
 \contentsline {section}{\numberline {4.6}Conclusion}{75}{section.4.6}
@@ -97,35 +97,35 @@
 \contentsline {subsection}{\numberline {6.6.1}Proteomic (P1) Results}{116}{subsection.6.6.1}
 \contentsline {subsection}{\numberline {6.6.2}Glycomic and Metabolomic Results}{118}{subsection.6.6.2}
 \contentsline {section}{\numberline {6.7}Conclusion}{119}{section.6.7}
-\contentsline {chapter}{\numberline {7}Substructure Discovery in Tandem Mass Spectometry Data}{125}{chapter.7}
-\contentsline {section}{\numberline {7.1}Introduction}{125}{section.7.1}
-\contentsline {section}{\numberline {7.2}Related Work}{127}{section.7.2}
-\contentsline {section}{\numberline {7.3}Statement of Original Work}{128}{section.7.3}
-\contentsline {section}{\numberline {7.4}A Workflow for Substructure Discoveries and Annotations}{129}{section.7.4}
-\contentsline {subsubsection}{MS2LDAVis}{132}{section*.19}
-\contentsline {section}{\numberline {7.5}Evaluation Study}{135}{section.7.5}
-\contentsline {subsection}{\numberline {7.5.1}Evaluation Dataset}{135}{subsection.7.5.1}
-\contentsline {subsection}{\numberline {7.5.2}Model Comparison}{136}{subsection.7.5.2}
-\contentsline {subsection}{\numberline {7.5.3}Biochemical Analysis}{137}{subsection.7.5.3}
-\contentsline {subsubsection}{Validation to Reference Standard Molecules}{137}{section*.20}
-\contentsline {subsubsection}{Comparison to Spectral Clustering}{137}{section*.21}
-\contentsline {subsubsection}{Differential Analysis of Mass2Motifs}{138}{section*.22}
-\contentsline {section}{\numberline {7.6}Results \& Discussions}{138}{section.7.6}
-\contentsline {subsection}{\numberline {7.6.1}Model Comparison}{138}{subsection.7.6.1}
-\contentsline {subsection}{\numberline {7.6.2}Biochemical Analysis }{139}{subsection.7.6.2}
-\contentsline {subsubsection}{Validation to Reference Standard Molecules}{141}{section*.23}
-\contentsline {subsubsection}{Comparison to Spectral Clustering}{142}{section*.24}
-\contentsline {subsubsection}{Differential Analysis of Mass2Motifs}{146}{section*.25}
-\contentsline {section}{\numberline {7.7}Substructure Discoveries Across Many Fragmentation Files}{147}{section.7.7}
-\contentsline {subsection}{\numberline {7.7.1}Multi-file LDA Model}{149}{subsection.7.7.1}
-\contentsline {subsection}{\numberline {7.7.2}Results \& Discussion}{151}{subsection.7.7.2}
-\contentsline {section}{\numberline {7.8}Conclusion}{154}{section.7.8}
-\contentsline {chapter}{\numberline {8}Conclusion}{157}{chapter.8}
-\contentsline {section}{\numberline {8.1}Summary of Contributions}{157}{section.8.1}
-\contentsline {section}{\numberline {8.2}Future Work}{158}{section.8.2}
-\contentsline {subsection}{\numberline {8.2.1}Improved Generative Models to Cluster Related Peaks}{159}{subsection.8.2.1}
-\contentsline {subsection}{\numberline {8.2.2}Using the Generative Models for Identification}{159}{subsection.8.2.2}
-\contentsline {subsection}{\numberline {8.2.3}Data Visualisation and Interpretation}{160}{subsection.8.2.3}
-\contentsline {subsection}{\numberline {8.2.4}Topic Modelling of Fragmentation Data}{160}{subsection.8.2.4}
-\contentsline {section}{\numberline {8.3}Summary and Conclusions}{161}{section.8.3}
-\contentsline {chapter}{Bibliography}{163}{section.8.3}
+\contentsline {chapter}{\numberline {7}Substructure Discovery in Tandem Mass Spectometry Data}{124}{chapter.7}
+\contentsline {section}{\numberline {7.1}Introduction}{124}{section.7.1}
+\contentsline {section}{\numberline {7.2}Related Work}{126}{section.7.2}
+\contentsline {section}{\numberline {7.3}Statement of Original Work}{127}{section.7.3}
+\contentsline {section}{\numberline {7.4}A Workflow for Substructure Discoveries and Annotations}{128}{section.7.4}
+\contentsline {subsubsection}{MS2LDAVis}{131}{section*.19}
+\contentsline {section}{\numberline {7.5}Evaluation Study}{134}{section.7.5}
+\contentsline {subsection}{\numberline {7.5.1}Evaluation Dataset}{134}{subsection.7.5.1}
+\contentsline {subsection}{\numberline {7.5.2}Model Comparison}{135}{subsection.7.5.2}
+\contentsline {subsection}{\numberline {7.5.3}Biochemical Analysis}{135}{subsection.7.5.3}
+\contentsline {subsubsection}{Validation to Reference Standard Molecules}{136}{section*.20}
+\contentsline {subsubsection}{Comparison to Spectral Clustering}{136}{section*.21}
+\contentsline {subsubsection}{Differential Analysis of Mass2Motifs}{137}{section*.22}
+\contentsline {section}{\numberline {7.6}Results \& Discussions}{137}{section.7.6}
+\contentsline {subsection}{\numberline {7.6.1}Model Comparison}{137}{subsection.7.6.1}
+\contentsline {subsection}{\numberline {7.6.2}Biochemical Analysis }{138}{subsection.7.6.2}
+\contentsline {subsubsection}{Validation to Reference Standard Molecules}{140}{section*.23}
+\contentsline {subsubsection}{Comparison to Spectral Clustering}{141}{section*.24}
+\contentsline {subsubsection}{Differential Analysis of Mass2Motifs}{145}{section*.25}
+\contentsline {section}{\numberline {7.7}Substructure Discoveries Across Many Fragmentation Files}{146}{section.7.7}
+\contentsline {subsection}{\numberline {7.7.1}Multi-file LDA Model}{148}{subsection.7.7.1}
+\contentsline {subsection}{\numberline {7.7.2}Results \& Discussion}{150}{subsection.7.7.2}
+\contentsline {section}{\numberline {7.8}Conclusion}{153}{section.7.8}
+\contentsline {chapter}{\numberline {8}Conclusion}{155}{chapter.8}
+\contentsline {section}{\numberline {8.1}Summary of Contributions}{155}{section.8.1}
+\contentsline {section}{\numberline {8.2}Future Work}{156}{section.8.2}
+\contentsline {subsection}{\numberline {8.2.1}Improved Generative Models to Cluster Related Peaks}{157}{subsection.8.2.1}
+\contentsline {subsection}{\numberline {8.2.2}Using the Generative Models for Identification}{157}{subsection.8.2.2}
+\contentsline {subsection}{\numberline {8.2.3}Data Visualisation and Interpretation}{158}{subsection.8.2.3}
+\contentsline {subsection}{\numberline {8.2.4}Topic Modelling of Fragmentation Data}{158}{subsection.8.2.4}
+\contentsline {section}{\numberline {8.3}Summary and Conclusions}{159}{section.8.3}
+\contentsline {chapter}{Bibliography}{161}{section.8.3}

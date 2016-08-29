@@ -12,9 +12,9 @@
 \contentsline {figure}{\numberline {3.5}{\ignorespaces Graphical model of the Latent Dirichlet Allocation model.}}{51}{figure.3.5}
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {4.1}{\ignorespaces Illustrative example of the incorporation of grouping information into the similarity score.}}{56}{figure.4.1}
-\contentsline {figure}{\numberline {4.2}{\ignorespaces Precision and recall training performance for all parameters (m/z, RT tolerance, $\alpha $ and $g_{tol}$) varied in the experiment for the fractions containing the most (a) and the least (b) number of features in the P1 dataset.}}{69}{figure.4.2}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {P1 Fraction 000}}}{69}{subfigure.2.1}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {P1 Fraction 100}}}{69}{subfigure.2.2}
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Precision and recall training performance for all parameters (m/z, RT tolerance, $\alpha $ and $g_{tol}$) varied in the experiment for the fractions containing the most (a) and the least (b) number of features in the P1 dataset.}}{70}{figure.4.2}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {P1 Fraction 000}}}{70}{subfigure.2.1}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {P1 Fraction 100}}}{70}{subfigure.2.2}
 \contentsline {figure}{\numberline {4.3}{\ignorespaces Precision and recall training performance for all parameters (m/z, RT tolerance, $\alpha $ and $g_{tol}$) varied in the experiment for the fractions containing the most (a) and the least (b) number of features in the P2 dataset.}}{70}{figure.4.3}
 \contentsline {subfigure}{\numberline {(a)}{\ignorespaces {P2 Fraction 000}}}{70}{subfigure.3.1}
 \contentsline {subfigure}{\numberline {(b)}{\ignorespaces {P2 Fraction 100}}}{70}{subfigure.3.2}
@@ -40,17 +40,17 @@
 \contentsline {figure}{\numberline {6.8}{\ignorespaces Precision-recall values on the alignment of 6 runs from the Metabolomic dataset. The parameter values $(T_{m/z}, T_{rt})$ that produce the best and worst performance in SIMA are also annotated in the Figure (red boxes).}}{120}{figure.6.8}
 \contentsline {figure}{\numberline {6.9}{\ignorespaces Example analysis that can be performed on the clustering objects inferred in a Gibbs sample from HDP-Align.}}{121}{figure.6.9}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {7.1}{\ignorespaces The carboxylic acid substructure. In the diagram, R refers to the residue, which is the rest of the metabolite attached to this substructure.}}{126}{figure.7.1}
-\contentsline {figure}{\numberline {7.2}{\ignorespaces A comparison between classical LDA for text and MS2LDA for fragmentation spectra.}}{130}{figure.7.2}
-\contentsline {figure}{\numberline {7.3}{\ignorespaces The matrix of co-occurrences of fragment and loss features (rows) in each fragmentation spectrum linked to a parent MS1 peak (columns). }}{131}{figure.7.3}
-\contentsline {figure}{\numberline {7.4}{\ignorespaces Screenshot of MS2LDAVis. See text for explanations of the different panels.}}{133}{figure.7.4}
-\contentsline {figure}{\numberline {7.5}{\ignorespaces Results of model comparisons of LDA and multinomial mixture model on the Beer3 data.}}{139}{figure.7.5}
-\contentsline {figure}{\numberline {7.6}{\ignorespaces Three spectra, from the beer3 positive ionization mode file, each of which includes Mass2Motif 19, annotated as the plant derived ferulic acid substructure.}}{142}{figure.7.6}
-\contentsline {figure}{\numberline {7.7}{\ignorespaces Mass2Motif spectra of identified standard molecules A) L-histidine, B) L-phenylalanine, C) L-tryptophan, and D) adenosine, with their characterized motifs (see Table\nobreakspace {}\ref {tab:ms2lda-standards}) indicated by colours.}}{144}{figure.7.7}
-\contentsline {figure}{\numberline {7.8}{\ignorespaces Mass2Motifs 19 and 58 were found to be representative of ferulic acid and ethylphenol, respectively. }}{145}{figure.7.8}
-\contentsline {figure}{\numberline {7.9}{\ignorespaces Cosine clustering results of spectra drawn from the ferulic acid based cluster and the ethylphenol based cluster (similar to M2M{\_}19 and M2M{\_}58). }}{146}{figure.7.9}
-\contentsline {figure}{\numberline {7.10}{\ignorespaces Log fold change heat-maps for the A) guanine and B) pentose loss Mass2Motifs. }}{148}{figure.7.10}
-\contentsline {figure}{\numberline {7.11}{\ignorespaces Graphical model of the multi-file LDA model.}}{149}{figure.7.11}
-\contentsline {figure}{\numberline {7.12}{\ignorespaces Fragmentation spectra from different Beer extracts found by multi-file LDA to contain the same Mass2Motif 17 characterised as the ferulic acid substructure.}}{153}{figure.7.12}
-\contentsline {figure}{\numberline {7.13}{\ignorespaces Posterior alpha values for the \textbf {A)} ferulic acid, \textbf {B)} histidine and \textbf {C)} leucine Mass2Motifs across the different beer files. }}{154}{figure.7.13}
+\contentsline {figure}{\numberline {7.1}{\ignorespaces The carboxylic acid substructure. In the diagram, R refers to the residue, which is the rest of the metabolite attached to this substructure.}}{125}{figure.7.1}
+\contentsline {figure}{\numberline {7.2}{\ignorespaces A comparison between classical LDA for text and MS2LDA for fragmentation spectra.}}{129}{figure.7.2}
+\contentsline {figure}{\numberline {7.3}{\ignorespaces The matrix of co-occurrences of fragment and loss features (rows) in each fragmentation spectrum linked to a parent MS1 peak (columns). }}{130}{figure.7.3}
+\contentsline {figure}{\numberline {7.4}{\ignorespaces Screenshot of MS2LDAVis. See text for explanations of the different panels.}}{132}{figure.7.4}
+\contentsline {figure}{\numberline {7.5}{\ignorespaces Results of model comparisons of LDA and multinomial mixture model on the Beer3 data.}}{138}{figure.7.5}
+\contentsline {figure}{\numberline {7.6}{\ignorespaces Three spectra, from the beer3 positive ionization mode file, each of which includes Mass2Motif 19, annotated as the plant derived ferulic acid substructure.}}{141}{figure.7.6}
+\contentsline {figure}{\numberline {7.7}{\ignorespaces Mass2Motif spectra of identified standard molecules A) L-histidine, B) L-phenylalanine, C) L-tryptophan, and D) adenosine, with their characterized motifs (see Table\nobreakspace {}\ref {tab:ms2lda-standards}) indicated by colours.}}{143}{figure.7.7}
+\contentsline {figure}{\numberline {7.8}{\ignorespaces Mass2Motifs 19 and 58 were found to be representative of ferulic acid and ethylphenol, respectively. }}{144}{figure.7.8}
+\contentsline {figure}{\numberline {7.9}{\ignorespaces Cosine clustering results of spectra drawn from the ferulic acid based cluster and the ethylphenol based cluster (similar to M2M{\_}19 and M2M{\_}58). }}{145}{figure.7.9}
+\contentsline {figure}{\numberline {7.10}{\ignorespaces Log fold change heat-maps for the A) guanine and B) pentose loss Mass2Motifs. }}{147}{figure.7.10}
+\contentsline {figure}{\numberline {7.11}{\ignorespaces Graphical model of the multi-file LDA model.}}{148}{figure.7.11}
+\contentsline {figure}{\numberline {7.12}{\ignorespaces Fragmentation spectra from different Beer extracts found by multi-file LDA to contain the same Mass2Motif 17 characterised as the ferulic acid substructure.}}{152}{figure.7.12}
+\contentsline {figure}{\numberline {7.13}{\ignorespaces Posterior alpha values for the \textbf {A)} ferulic acid, \textbf {B)} histidine and \textbf {C)} leucine Mass2Motifs across the different beer files. }}{153}{figure.7.13}
 \addvspace {10\p@ }
