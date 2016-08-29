@@ -768,6 +768,17 @@ volume = {9},
 year = {2008}
 }
 
+@article{tsugawa2015ms,
+  title={{MS-DIAL: data-independent MS/MS deconvolution for comprehensive metabolome analysis}},
+  author={Tsugawa, Hiroshi and Cajka, Tomas and Kind, Tobias and Ma, Yan and Higgins, Brendan and Ikeda, Kazutaka and Kanazawa, Mitsuhiro and VanderGheynst, Jean and Fiehn, Oliver and Arita, Masanori},
+  journal={Nature methods},
+  volume={12},
+  number={6},
+  pages={523--526},
+  year={2015},
+  publisher={Nature Publishing Group}
+}
+
 @article{Smith2013,
 annote = {DOI:10.1093/bib/bbt080},
 author = {Smith, Rob and Ventura, Dan and Prince, John T},

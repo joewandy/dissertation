@@ -56,9 +56,10 @@ M.~Y. Hirai, M.~Yano, D.~B. Goodenowe, S.~Kanaya, T.~Kimura, M.~Awazuhara,
 O.~Fiehn, ``Metabolomics--the link between genotypes and phenotypes,''
   \emph{Plant Molecular Biology}, vol.~48, no. 1-2, pp. 155--171, 2002.
 
-\bibitem{metzker2010sequencing}
-M.~L. Metzker, ``Sequencing technologies—the next generation,'' \emph{Nature
-  Reviews Genetics}, vol.~11, no.~1, pp. 31--46, 2010.
+\bibitem{Pan2007}
+Z.~Pan and D.~Raftery, ``{Comparing and combining NMR spectroscopy and mass
+  spectrometry in metabolomics},'' \emph{Analytical and Bioanalytical
+  chemistry}, vol. 387, no.~2, pp. 525--527, 2007.
 
 \bibitem{Alonso2015}
 A.~Alonso, S.~Marsal, and A.~Juli{\`a}, ``Analytical methods in untargeted
@@ -76,11 +77,6 @@ Q.~Cui, I.~A. Lewis, A.~D. Hegeman, M.~E. Anderson, J.~Li, C.~F. Schulte, W.~M.
   Westler, H.~R. Eghbalnia, M.~R. Sussman, and J.~L. Markley, ``Metabolite
   identification via the madison metabolomics consortium database,''
   \emph{Nature biotechnology}, vol.~26, no.~2, pp. 162--164, 2008.
-
-\bibitem{Pan2007}
-Z.~Pan and D.~Raftery, ``{Comparing and combining NMR spectroscopy and mass
-  spectrometry in metabolomics},'' \emph{Analytical and Bioanalytical
-  chemistry}, vol. 387, no.~2, pp. 525--527, 2007.
 
 \bibitem{hao2012batman}
 J.~Hao, W.~Astle, M.~De~Iorio, and T.~M. Ebbels, ``{BATMAN—an R package for
@@ -240,6 +236,11 @@ H.~Lin, L.~He, and B.~Ma, ``{A Combinatorial Approach to the Peptide Feature
   Matching Problem for Label-Free Quantification.}'' \emph{Bioinformatics}, pp.
   1--7, 2013.
 
+\bibitem{Smith2013}
+R.~Smith, D.~Ventura, and J.~T. Prince, ``{LC-MS alignment in theory and
+  practice: a comprehensive algorithmic review},'' \emph{Briefings in
+  Bioinformatics}, 2013.
+
 \bibitem{Smith2015}
 R.~Smith, J.~T. Prince, and D.~Ventura, ``{A coherent mathematical
   characterization of isotope trace extraction , isotopic envelope extraction ,
@@ -251,24 +252,20 @@ R.~Smith, D.~Ventura, and J.~T. Prince, ``{Novel algorithms and the benefits of
   comparative validation.}'' \emph{Bioinformatics}, vol.~29, no.~12, pp.
   1583--5, 2013.
 
-\bibitem{Smith2013}
-------, ``{LC-MS alignment in theory and practice: a comprehensive algorithmic
-  review},'' \emph{Briefings in Bioinformatics}, 2013.
-
 \bibitem{benton2010correction}
 H.~P. Benton, E.~J. Want, and T.~M. Ebbels, ``Correction of mass calibration
   gaps in liquid chromatography--mass spectrometry metabolomics data,''
   \emph{Bioinformatics}, vol.~26, no.~19, pp. 2488--2489, 2010.
 
-\bibitem{Snider2007}
-R.~K. Snider, ``{Efficient calculation of exact mass isotopic distributions.}''
-  \emph{Journal of the American Society for Mass Spectrometry}, vol.~18, no.~8,
-  pp. 1511--5, 2007.
-
 \bibitem{Keller2008}
 B.~O. Keller, J.~Sui, A.~B. Young, and R.~M. Whittal, ``{Interferences and
   contaminants encountered in modern mass spectrometry.}'' \emph{Analytica
   chimica acta}, vol. 627, no.~1, pp. 71--81, 2008.
+
+\bibitem{Snider2007}
+R.~K. Snider, ``{Efficient calculation of exact mass isotopic distributions.}''
+  \emph{Journal of the American Society for Mass Spectrometry}, vol.~18, no.~8,
+  pp. 1511--5, 2007.
 
 \bibitem{Scheltema2009a}
 R.~Scheltema, S.~Decuypere, and J.~Dujardin, ``{Simple data-reduction method
@@ -335,6 +332,12 @@ R.~Daly, S.~Rogers, J.~Wandy, A.~Jankevics, K.~E.~V. Burgess, and R.~Breitling,
   ``{MetAssign: probabilistic annotation of metabolites from LC-MS data using a
   Bayesian clustering approach.}'' \emph{Bioinformatics}, vol.~30, no.~19, pp.
   2764--2771, 2014.
+
+\bibitem{tsugawa2015ms}
+H.~Tsugawa, T.~Cajka, T.~Kind, Y.~Ma, B.~Higgins, K.~Ikeda, M.~Kanazawa,
+  J.~VanderGheynst, O.~Fiehn, and M.~Arita, ``{MS-DIAL: data-independent MS/MS
+  deconvolution for comprehensive metabolome analysis},'' \emph{Nature
+  methods}, vol.~12, no.~6, pp. 523--526, 2015.
 
 \bibitem{Hufsky2014}
 F.~Hufsky, K.~Scheubert, and S.~B{\"{o}}cker, ``{Computational mass
@@ -425,12 +428,6 @@ M.~Sandin, J.~Teleman, J.~Malmstr{\"{o}}m, and F.~Levander, ``{Data processing
   quantification.}'' \emph{Biochimica et biophysica acta}, vol. 1844, no. 1 Pt
   A, pp. 29--41, 2014.
 
-\bibitem{Chawade2015}
-A.~Chawade, M.~Sandin, J.~Teleman, J.~Malmstr{\"{o}}m, and F.~Levander, ``{Data
-  processing has major impact on the outcome of quantitative label-free LC-MS
-  analysis.}'' \emph{Journal of Proteome Research}, vol.~14, no.~2, pp.
-  676--87, 2015.
-
 \bibitem{Hoffmann2007}
 E.~de~Hoffmann and V.~Stroobant, \emph{{Mass spectrometry: Principles and
   applications}}, 3rd~ed., L.~{John Wiley {\&} Sons}, Ed., West Sussex,
@@ -451,13 +448,15 @@ D.~A. Megger, T.~Bracht, H.~E. Meyer, and B.~Sitek, ``{Label-free
   quantification in clinical proteomics},'' \emph{Biochimica et Biophysica Acta
   - Proteins and Proteomics}, vol. 1834, no.~8, pp. 1581--1590, 2013.
 
+\bibitem{Chawade2015}
+A.~Chawade, M.~Sandin, J.~Teleman, J.~Malmstr{\"{o}}m, and F.~Levander, ``{Data
+  processing has major impact on the outcome of quantitative label-free LC-MS
+  analysis.}'' \emph{Journal of Proteome Research}, vol.~14, no.~2, pp.
+  676--87, 2015.
+
 \bibitem{xu2005survey}
 R.~Xu and D.~Wunsch, ``{Survey of Clustering Algorithms},'' \emph{IEEE
   Transactions on Neural Networks}, vol.~16, no.~3, pp. 645--678, 2005.
-
-\bibitem{Jain2010}
-A.~K. Jain, ``Data clustering: 50 years beyond k-means,'' \emph{Pattern
-  recognition letters}, vol.~31, no.~8, pp. 651--666, 2010.
 
 \bibitem{DeSouza2006}
 D.~P. {De Souza}, E.~C. Saunders, M.~J. McConville, and V.~a. Liki\'{c},
@@ -783,9 +782,5 @@ T.~P. Minka, ``{Estimating a Dirichlet distribution},'' \emph{Annals of
 D.~Griffiths and M.~Tenenbaum, ``Hierarchical topic models and the nested
   chinese restaurant process,'' \emph{Advances in Neural Information Processing
   Systems}, vol.~16, p.~17, 2004.
-
-\bibitem{kang2012transfer}
-J.-H. Kang, J.~Ma, and Y.~Liu, \emph{Transfer Topic Modeling with Ease and
-  Scalability}, ch.~48, pp. 564--575.
 
 \end{thebibliography}

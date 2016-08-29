@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2016.3.1)  23 AUG 2016 15:44
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2016.3.1)  29 AUG 2016 03:43
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1184,31 +1184,32 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.28 ...ocess Mixture Model}{46}{subsection.3.4.1}
+l.29 ...ve Modelling of LC-MS Data}{29}{chapter.3}
                                                    [5
 
 ]pdfTeX warning (ext4): destination with the same identifier (name{page.}) has 
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.60 ...on product clusters}{84}{subsection.5.3.2}
+l.63 ...f Ionisation Product Peaks}{77}{chapter.5}
                                                    [6]pdfTeX warning (ext4): de
 stination with the same identifier (name{page.}) has been already used, duplica
 te ignored
 <to be read again> 
                    \relax 
-l.88 ...eomic (P1) Results}{116}{subsection.6.6.1}
-                                                   [7])
+l.94 ...ods for Evaluation}{114}{subsection.6.5.2}
+                                                   [7]pdfTeX warning (ext4): de
+stination with the same identifier (name{page.}) has been already used, duplica
+te ignored
+<to be read again> 
+                   \relax 
+l.130 ...ummary and Conclusions}{161}{section.8.3}
+                                                   [8])
 \tf@toc=\write8
 \openout8 = `dissertation.toc'.
 
 pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
 een already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.157 \listoftables
-                    [8]pdfTeX warning (ext4): destination with the same identif
-ier (name{page.}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.157 \listoftables
@@ -1223,7 +1224,7 @@ l.157 \listoftables
 r (name{page.}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.27 ...red from multi-file LDA.}}{152}{table.7.4}
+l.26 ...red from multi-file LDA.}}{152}{table.7.4}
                                                    [11])
 \tf@lot=\write9
 \openout9 = `dissertation.lot'.
@@ -1290,107 +1291,101 @@ LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <12> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 42.
  [3]) (./02-background/chapter_02.tex [4]
 Chapter 2.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <14.4> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 10.
+LaTeX Font Info:    Font shape `OT1/phv/bx/n' in size <14.4> not available
+(Font)              Font shape `OT1/phv/b/n' tried instead on input line 10.
 [5
 
 ]
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10.95> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 23.
- <02-background/figures/omics.pdf, id=845, 794.97pt x 433.62pt>
+Overfull \hbox (0.78049pt too wide) in paragraph at lines 18--19
+[]\OT1/ptm/m/n/12 After the tran-scrip-tion pro-cess, a class of RNA molecules 
+known as mes-sen-ger RNA (mRNA)
+ []
+
+[6] <02-background/figures/omics.pdf, id=876, 794.97pt x 433.62pt>
 File: 02-background/figures/omics.pdf Graphic file (type pdf)
 
 <use 02-background/figures/omics.pdf>
-Package pdftex.def Info: 02-background/figures/omics.pdf used on input line 45.
+Package pdftex.def Info: 02-background/figures/omics.pdf used on input line 32.
 
 (pdftex.def)             Requested size: 441.01772pt x 240.5627pt.
 
-Overfull \hbox (2.28003pt too wide) in paragraph at lines 44--46
+Overfull \hbox (2.28003pt too wide) in paragraph at lines 31--33
   [] 
  []
 
-[6] [7 <./02-background/figures/omics.pdf>]
-Underfull \vbox (badness 10000) has occurred while \output is active []
+[7 <./02-background/figures/omics.pdf>] [8]
+Underfull \vbox (badness 3108) has occurred while \output is active []
 
- [8]
-[9] [10] <02-background/figures/LCMS.pdf, id=929, 1300.86pt x 361.35pt>
+ [9]
+<02-background/figures/LCMS.pdf, id=947, 1300.86pt x 361.35pt>
 File: 02-background/figures/LCMS.pdf Graphic file (type pdf)
 
 <use 02-background/figures/LCMS.pdf>
-Package pdftex.def Info: 02-background/figures/LCMS.pdf used on input line 72.
+Package pdftex.def Info: 02-background/figures/LCMS.pdf used on input line 65.
 (pdftex.def)             Requested size: 441.01772pt x 122.50449pt.
 
-Overfull \hbox (2.28003pt too wide) in paragraph at lines 71--73
+Overfull \hbox (2.28003pt too wide) in paragraph at lines 64--66
   [] 
  []
 
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [11 <./02-background/figures/LCMS.pdf>]
-<02-background/figures/spectra.pdf, id=961, 2827.56375pt x 3179.88pt>
+[10] <02-background/figures/spectra.pdf, id=961, 2827.56375pt x 3179.88pt>
 File: 02-background/figures/spectra.pdf Graphic file (type pdf)
 
 <use 02-background/figures/spectra.pdf>
 Package pdftex.def Info: 02-background/figures/spectra.pdf used on input line 8
-5.
+0.
 (pdftex.def)             Requested size: 441.01772pt x 495.93314pt.
 
-Overfull \hbox (2.28003pt too wide) in paragraph at lines 84--86
+Overfull \hbox (2.28003pt too wide) in paragraph at lines 79--81
   [] 
  []
 
-<02-background/figures/pipeline.pdf, id=966, 722.7pt x 650.43pt>
+[11 <./02-background/figures/LCMS.pdf>] [12 <./02-background/figures/spectra.pd
+f>] <02-background/figures/pipeline.pdf, id=1087, 722.7pt x 650.43pt>
 File: 02-background/figures/pipeline.pdf Graphic file (type pdf)
 
 <use 02-background/figures/pipeline.pdf>
 Package pdftex.def Info: 02-background/figures/pipeline.pdf used on input line 
-93.
+88.
 (pdftex.def)             Requested size: 441.01772pt x 396.92052pt.
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <14.4> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 96.
-LaTeX Font Info:    Font shape `OT1/phv/bx/n' in size <14.4> not available
-(Font)              Font shape `OT1/phv/b/n' tried instead on input line 96.
- [12] [13 <./02-background/figures/spectra.pdf>] [14 <./02-background/figures/p
-ipeline.pdf>] [15]
+ [13 <./02-background/figures/pipeline.pdf>] [14] [15]
 LaTeX Font Info:    Font shape `OT1/phv/bx/n' in size <12> not available
-(Font)              Font shape `OT1/phv/b/n' tried instead on input line 110.
+(Font)              Font shape `OT1/phv/b/n' tried instead on input line 111.
 
-Overfull \hbox (0.85396pt too wide) in paragraph at lines 112--113
+Overfull \hbox (0.85396pt too wide) in paragraph at lines 113--114
 \OT1/ptm/m/n/12 Warping-based meth-ods seek to model the RT drifts be-tween run
 s. In the past, many warping-
  []
 
-[16] [17] [18] [19] [20] [21]
-Underfull \vbox (badness 10000) has occurred while \output is active []
+[16] [17] [18] [19] [20] [21] [22]
+Underfull \vbox (badness 3482) has occurred while \output is active []
 
- [22]
-[23] [24]
-Overfull \hbox (3.80518pt too wide) in paragraph at lines 180--181
-[]\OT1/ptm/m/n/12 A frag-men-ta-tion spec-trum of in-ter-est can be iden-ti-fie
-d through match-ing against \OT1/ptm/b/n/12 (1) \OT1/ptm/m/n/12 a database
+ [23]
+Overfull \hbox (2.0779pt too wide) in paragraph at lines 189--190
+[]\OT1/ptm/m/n/12 To aid in metabo-lite an-no-ta-tion, a frag-men-ta-tion spec-
+trum of in-ter-est can be iden-ti-fied through
  []
 
-[25] [26] [27]) (./03-machine-learning/chapter_03.tex [28]
+[24] [25] [26] [27]) (./03-machine-learning/chapter_03.tex [28]
 Chapter 3.
 [29
 
 ] [30]
-<03-machine-learning/figures/mixture_model.pdf, id=1439, 867.24pt x 722.7pt>
+<03-machine-learning/figures/mixture_model.pdf, id=1464, 867.24pt x 722.7pt>
 File: 03-machine-learning/figures/mixture_model.pdf Graphic file (type pdf)
 
 <use 03-machine-learning/figures/mixture_model.pdf>
 Package pdftex.def Info: 03-machine-learning/figures/mixture_model.pdf used on 
 input line 56.
 (pdftex.def)             Requested size: 352.8155pt x 294.0152pt.
- [31] [32 <./03-machine-learning/figures/mixture_model.pdf>]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [33]
-[34] [35]
+ [31] [32 <./03-machine-learning/figures/mixture_model.pdf>] [33] [34] [35]
 Underfull \vbox (badness 1102) has occurred while \output is active []
 
  [36]
 [37] [38] [39]
-<03-machine-learning/figures/dp_samples_stick.pdf, id=1588, 722.7pt x 361.35pt>
+<03-machine-learning/figures/dp_samples_stick.pdf, id=1614, 722.7pt x 361.35pt>
 File: 03-machine-learning/figures/dp_samples_stick.pdf Graphic file (type pdf)
 <use 03-machine-learning/figures/dp_samples_stick.pdf>
 Package pdftex.def Info: 03-machine-learning/figures/dp_samples_stick.pdf used 
@@ -1402,7 +1397,7 @@ Overfull \hbox (2.28003pt too wide) in paragraph at lines 267--269
  []
 
 [40 <./03-machine-learning/figures/dp_samples_stick.pdf>]
-<03-machine-learning/figures/dp_samples.pdf, id=1650, 867.24pt x 867.24pt>
+<03-machine-learning/figures/dp_samples.pdf, id=1676, 867.24pt x 867.24pt>
 File: 03-machine-learning/figures/dp_samples.pdf Graphic file (type pdf)
 
 <use 03-machine-learning/figures/dp_samples.pdf>
@@ -1424,7 +1419,7 @@ Overfull \hbox (7.42772pt too wide) in paragraph at lines 318--318
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [44]
-<03-machine-learning/figures/hdp_samples.pdf, id=1766, 903.375pt x 903.375pt>
+<03-machine-learning/figures/hdp_samples.pdf, id=1792, 903.375pt x 903.375pt>
 File: 03-machine-learning/figures/hdp_samples.pdf Graphic file (type pdf)
 
 <use 03-machine-learning/figures/hdp_samples.pdf>
@@ -1447,7 +1442,7 @@ Underfull \vbox (badness 5077) has occurred while \output is active []
 LaTeX Warning: Citation `teh2005hierarchical' on page 48 undefined on input lin
 e 408.
 
-[48] [49] <03-machine-learning/figures/lda.pdf, id=1856, 505.89pt x 722.7pt>
+[48] [49] <03-machine-learning/figures/lda.pdf, id=1882, 505.89pt x 722.7pt>
 File: 03-machine-learning/figures/lda.pdf Graphic file (type pdf)
 
 <use 03-machine-learning/figures/lda.pdf>
@@ -1455,22 +1450,14 @@ Package pdftex.def Info: 03-machine-learning/figures/lda.pdf used on input line
  437.
 (pdftex.def)             Requested size: 220.50885pt x 315.01155pt.
 
-Overfull \hbox (59.10635pt too wide) detected at line 449
-[][] []
- []
-
-
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [50]
-Overfull \hbox (0.73659pt too wide) detected at line 461
+Overfull \hbox (0.73659pt too wide) detected at line 462
 [][] []
  []
 
-
-Underfull \vbox (badness 5008) has occurred while \output is active []
-
- [51 <./03-machine-learning/figures/lda.pdf>]
+[51 <./03-machine-learning/figures/lda.pdf>]
 Underfull \vbox (badness 1810) has occurred while \output is active []
 
  [52])
@@ -1491,7 +1478,7 @@ _1-eps-converted-to.pdf 04-matching/figures/figure_1.eps>
 (epstopdf)             \includegraphics on input line 15.
 Package epstopdf Info: Output file is already uptodate.
 
-<04-matching/figures/figure_1-eps-converted-to.pdf, id=1949, 733.74126pt x 218.
+<04-matching/figures/figure_1-eps-converted-to.pdf, id=1976, 733.74126pt x 218.
 8175pt>
 File: 04-matching/figures/figure_1-eps-converted-to.pdf Graphic file (type pdf)
 
@@ -1582,11 +1569,7 @@ n/12 85\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 0\OML/cmm/m/it/12 :\OT1/cmr/m/n/12 90
 sy/m/n/12 g$\OT1/ptm/m/n/12 . 
  []
 
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [67]
-<04-matching/figures/P1_000_new.pdf, id=2111, 1445.4pt x 361.35pt>
+[67] <04-matching/figures/P1_000_new.pdf, id=2141, 1445.4pt x 361.35pt>
 File: 04-matching/figures/P1_000_new.pdf Graphic file (type pdf)
 
 <use 04-matching/figures/P1_000_new.pdf>
@@ -1594,7 +1577,7 @@ Package pdftex.def Info: 04-matching/figures/P1_000_new.pdf used on input line
 358.
 (pdftex.def)             Requested size: 441.01772pt x 110.25294pt.
 
-<04-matching/figures/P1_100_new.pdf, id=2113, 1445.4pt x 361.35pt>
+<04-matching/figures/P1_100_new.pdf, id=2143, 1445.4pt x 361.35pt>
 File: 04-matching/figures/P1_100_new.pdf Graphic file (type pdf)
 
 <use 04-matching/figures/P1_100_new.pdf>
@@ -1611,7 +1594,7 @@ Overfull \hbox (3.0pt too wide) in paragraph at lines 358--364
  [][] 
  []
 
-<04-matching/figures/P2_000_new.pdf, id=2115, 1445.4pt x 361.35pt>
+<04-matching/figures/P2_000_new.pdf, id=2145, 1445.4pt x 361.35pt>
 File: 04-matching/figures/P2_000_new.pdf Graphic file (type pdf)
 
 <use 04-matching/figures/P2_000_new.pdf>
@@ -1619,7 +1602,7 @@ Package pdftex.def Info: 04-matching/figures/P2_000_new.pdf used on input line
 372.
 (pdftex.def)             Requested size: 441.01772pt x 110.25294pt.
 
-<04-matching/figures/P2_100_new.pdf, id=2117, 1445.4pt x 361.35pt>
+<04-matching/figures/P2_100_new.pdf, id=2147, 1445.4pt x 361.35pt>
 File: 04-matching/figures/P2_100_new.pdf Graphic file (type pdf)
 
 <use 04-matching/figures/P2_100_new.pdf>
@@ -1664,7 +1647,7 @@ _3-eps-converted-to.pdf 04-matching/figures/figure_3.eps>
 (epstopdf)             \includegraphics on input line 457.
 Package epstopdf Info: Output file is already uptodate.
 
-<04-matching/figures/figure_3-eps-converted-to.pdf, id=2271, 463.7325pt x 366.3
+<04-matching/figures/figure_3-eps-converted-to.pdf, id=2302, 463.7325pt x 366.3
 6874pt>
 File: 04-matching/figures/figure_3-eps-converted-to.pdf Graphic file (type pdf)
 
@@ -1684,7 +1667,7 @@ _4-eps-converted-to.pdf 04-matching/figures/figure_4.eps>
 (epstopdf)             \includegraphics on input line 462.
 Package epstopdf Info: Output file is already uptodate.
 
-<04-matching/figures/figure_4-eps-converted-to.pdf, id=2272, 463.7325pt x 366.3
+<04-matching/figures/figure_4-eps-converted-to.pdf, id=2303, 463.7325pt x 366.3
 6874pt>
 File: 04-matching/figures/figure_4-eps-converted-to.pdf Graphic file (type pdf)
 
@@ -1692,6 +1675,15 @@ File: 04-matching/figures/figure_4-eps-converted-to.pdf Graphic file (type pdf)
 Package pdftex.def Info: 04-matching/figures/figure_4-eps-converted-to.pdf used
  on input line 462.
 (pdftex.def)             Requested size: 286.65881pt x 226.47543pt.
+
+
+Package Fancyhdr Warning: \headheight is too small (15.0pt): 
+ Make it at least 27.03389pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[72] [73 <./04-matching/figures/figure_3-eps-converted-to.pdf> <./04-matching/f
+igures/figure_4-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <04-matching/figures/supp_figure_3.eps>
 (epstopdf)                    date: 2014-11-28 15:09:56
 (epstopdf)                    size: 11185 bytes
@@ -1704,7 +1696,7 @@ igure_3-eps-converted-to.pdf 04-matching/figures/supp_figure_3.eps>
 (epstopdf)             \includegraphics on input line 470.
 Package epstopdf Info: Output file is already uptodate.
 
-<04-matching/figures/supp_figure_3-eps-converted-to.pdf, id=2274, 469.755pt x 3
+<04-matching/figures/supp_figure_3-eps-converted-to.pdf, id=2325, 469.755pt x 3
 56.33125pt>
 File: 04-matching/figures/supp_figure_3-eps-converted-to.pdf Graphic file (type
  pdf)
@@ -1713,14 +1705,9 @@ Package pdftex.def Info: 04-matching/figures/supp_figure_3-eps-converted-to.pdf
  used on input line 470.
 (pdftex.def)             Requested size: 264.61331pt x 200.71855pt.
 
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-Package Fancyhdr Warning: \headheight is too small (15.0pt): 
- Make it at least 27.03389pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
 
-[72] [73 <./04-matching/figures/figure_3-eps-converted-to.pdf> <./04-matching/f
-igures/figure_4-eps-converted-to.pdf>]
 
 Package Fancyhdr Warning: \headheight is too small (15.0pt): 
  Make it at least 27.03389pt.
@@ -1743,7 +1730,7 @@ Chapter 5.
 [77
 
 ] [78] [79]
-<05-precursor-cluster/figures/fig1.pdf, id=2365, 1195.46625pt x 1517.67pt>
+<05-precursor-cluster/figures/fig1.pdf, id=2395, 1195.46625pt x 1517.67pt>
 File: 05-precursor-cluster/figures/fig1.pdf Graphic file (type pdf)
 
 <use 05-precursor-cluster/figures/fig1.pdf>
@@ -1755,7 +1742,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [87]
 [88] [89] [90] [91] [92]
-<05-precursor-cluster/figures/metabolites.pdf, id=2565, 3550.26375pt x 1517.67p
+<05-precursor-cluster/figures/metabolites.pdf, id=2595, 3550.26375pt x 1517.67p
 t>
 File: 05-precursor-cluster/figures/metabolites.pdf Graphic file (type pdf)
  <use 05-precursor-cluster/figures/metabolites.pdf>
@@ -1763,14 +1750,14 @@ Package pdftex.def Info: 05-precursor-cluster/figures/metabolites.pdf used on i
 nput line 210.
 (pdftex.def)             Requested size: 441.01772pt x 188.50407pt.
  [93 <./05-precursor-cluster/figures/metabolites.pdf>]
-<05-precursor-cluster/figures/counts_cluster.pdf, id=2599, 867.24pt x 867.24pt>
+<05-precursor-cluster/figures/counts_cluster.pdf, id=2629, 867.24pt x 867.24pt>
 File: 05-precursor-cluster/figures/counts_cluster.pdf Graphic file (type pdf)
 <use 05-precursor-cluster/figures/counts_cluster.pdf>
 Package pdftex.def Info: 05-precursor-cluster/figures/counts_cluster.pdf used o
 n input line 257.
 (pdftex.def)             Requested size: 220.50885pt x 220.50148pt.
 
-<05-precursor-cluster/figures/transformation_counts.pdf, id=2603, 1445.4pt x 13
+<05-precursor-cluster/figures/transformation_counts.pdf, id=2633, 1445.4pt x 13
 73.13pt>
 File: 05-precursor-cluster/figures/transformation_counts.pdf Graphic file (type
  pdf)
@@ -1784,7 +1771,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
  [94]
 [95 <./05-precursor-cluster/figures/counts_cluster.pdf> <./05-precursor-cluster
 /figures/transformation_counts.pdf>]
-<05-precursor-cluster/figures/fig2.pdf, id=2642, 1300.86pt x 867.24pt>
+<05-precursor-cluster/figures/fig2.pdf, id=2672, 1300.86pt x 867.24pt>
 File: 05-precursor-cluster/figures/fig2.pdf Graphic file (type pdf)
 
 <use 05-precursor-cluster/figures/fig2.pdf>
@@ -1792,7 +1779,7 @@ Package pdftex.def Info: 05-precursor-cluster/figures/fig2.pdf used on input li
 ne 277.
 (pdftex.def)             Requested size: 441.01772pt x 294.01079pt.
 
-<05-precursor-cluster/figures/fig3.pdf, id=2644, 1156.32pt x 397.485pt>
+<05-precursor-cluster/figures/fig3.pdf, id=2674, 1156.32pt x 397.485pt>
 File: 05-precursor-cluster/figures/fig3.pdf Graphic file (type pdf)
 
 <use 05-precursor-cluster/figures/fig3.pdf>
@@ -1801,7 +1788,7 @@ ne 284.
 (pdftex.def)             Requested size: 330.76328pt x 113.69682pt.
  [96] [97 <./05-precursor-cluster/figures/fig2.pdf> <./05-precursor-cluster/fig
 ures/fig3.pdf>]
-<05-precursor-cluster/figures/fig4.pdf, id=2668, 867.24pt x 433.62pt>
+<05-precursor-cluster/figures/fig4.pdf, id=2698, 867.24pt x 433.62pt>
 File: 05-precursor-cluster/figures/fig4.pdf Graphic file (type pdf)
 
 <use 05-precursor-cluster/figures/fig4.pdf>
@@ -1833,7 +1820,7 @@ s-converted-to.pdf 06-hdp/figures/figure_1.eps>
 (epstopdf)             \includegraphics on input line 11.
 Package epstopdf Info: Output file is already uptodate.
 
-<06-hdp/figures/figure_1-eps-converted-to.pdf, id=2705, 598.235pt x 845.1575pt>
+<06-hdp/figures/figure_1-eps-converted-to.pdf, id=2735, 598.235pt x 845.1575pt>
 File: 06-hdp/figures/figure_1-eps-converted-to.pdf Graphic file (type pdf)
 <use 06-hdp/figures/figure_1-eps-converted-to.pdf>
 Package pdftex.def Info: 06-hdp/figures/figure_1-eps-converted-to.pdf used on i
@@ -1842,7 +1829,7 @@ nput line 11.
  [103
 
 ] [104 <./06-hdp/figures/figure_1-eps-converted-to.pdf>]
-<06-hdp/figures/model_hdp.png, id=2727, 624.3325pt x 563.10374pt>
+<06-hdp/figures/model_hdp.png, id=2757, 624.3325pt x 563.10374pt>
 File: 06-hdp/figures/model_hdp.png Graphic file (type png)
 
 <use 06-hdp/figures/model_hdp.png>
@@ -1865,7 +1852,7 @@ s-converted-to.pdf 06-hdp/figures/figure_3.eps>
 (epstopdf)             \includegraphics on input line 157.
 Package epstopdf Info: Output file is already uptodate.
 
-<06-hdp/figures/figure_3-eps-converted-to.pdf, id=2788, 548.0475pt x 664.4825pt
+<06-hdp/figures/figure_3-eps-converted-to.pdf, id=2818, 548.0475pt x 664.4825pt
 >
 File: 06-hdp/figures/figure_3-eps-converted-to.pdf Graphic file (type pdf)
  <use 06-hdp/figures/figure_3-eps-converted-to.pdf>
@@ -1891,7 +1878,7 @@ s-converted-to.pdf 06-hdp/figures/figure_4.eps>
 (epstopdf)             \includegraphics on input line 280.
 Package epstopdf Info: Output file is already uptodate.
 
-<06-hdp/figures/figure_4-eps-converted-to.pdf, id=2835, 578.16pt x 433.62pt>
+<06-hdp/figures/figure_4-eps-converted-to.pdf, id=2866, 578.16pt x 433.62pt>
 File: 06-hdp/figures/figure_4-eps-converted-to.pdf Graphic file (type pdf)
 
 <use 06-hdp/figures/figure_4-eps-converted-to.pdf>
@@ -1899,7 +1886,7 @@ Package pdftex.def Info: 06-hdp/figures/figure_4-eps-converted-to.pdf used on i
 nput line 280.
 (pdftex.def)             Requested size: 308.71104pt x 231.53117pt.
  [116 <./06-hdp/figures/figure_4-eps-converted-to.pdf>]
-<06-hdp/figures/traceplot_p1_000.pdf, id=2845, 867.24pt x 433.62pt>
+<06-hdp/figures/traceplot_p1_000.pdf, id=2876, 867.24pt x 433.62pt>
 File: 06-hdp/figures/traceplot_p1_000.pdf Graphic file (type pdf)
 
 <use 06-hdp/figures/traceplot_p1_000.pdf>
@@ -1907,7 +1894,7 @@ Package pdftex.def Info: 06-hdp/figures/traceplot_p1_000.pdf used on input line
  289.
 (pdftex.def)             Requested size: 308.71104pt x 154.35632pt.
  [117 <./06-hdp/figures/traceplot_p1_000.pdf>] <06-hdp/figures/traceplot_p1_100
-.pdf, id=2896, 867.24pt x 433.62pt>
+.pdf, id=2926, 867.24pt x 433.62pt>
 File: 06-hdp/figures/traceplot_p1_100.pdf Graphic file (type pdf)
 
 <use 06-hdp/figures/traceplot_p1_100.pdf>
@@ -1927,7 +1914,7 @@ s-converted-to.pdf 06-hdp/figures/figure_5.eps>
 (epstopdf)             \includegraphics on input line 314.
 Package epstopdf Info: Output file is already uptodate.
 
-<06-hdp/figures/figure_5-eps-converted-to.pdf, id=2953, 578.16pt x 433.62pt>
+<06-hdp/figures/figure_5-eps-converted-to.pdf, id=2983, 578.16pt x 433.62pt>
 File: 06-hdp/figures/figure_5-eps-converted-to.pdf Graphic file (type pdf)
 
 <use 06-hdp/figures/figure_5-eps-converted-to.pdf>
@@ -1946,7 +1933,7 @@ s-converted-to.pdf 06-hdp/figures/figure_6.eps>
 (epstopdf)             \includegraphics on input line 319.
 Package epstopdf Info: Output file is already uptodate.
 
-<06-hdp/figures/figure_6-eps-converted-to.pdf, id=2956, 578.16pt x 433.62pt>
+<06-hdp/figures/figure_6-eps-converted-to.pdf, id=2986, 578.16pt x 433.62pt>
 File: 06-hdp/figures/figure_6-eps-converted-to.pdf Graphic file (type pdf)
 
 <use 06-hdp/figures/figure_6-eps-converted-to.pdf>
@@ -1965,7 +1952,7 @@ s-converted-to.pdf 06-hdp/figures/figure_7.eps>
 (epstopdf)             \includegraphics on input line 324.
 Package epstopdf Info: Output file is already uptodate.
 
-<06-hdp/figures/figure_7-eps-converted-to.pdf, id=2957, 688.5725pt x 723.70375p
+<06-hdp/figures/figure_7-eps-converted-to.pdf, id=2987, 688.5725pt x 723.70375p
 t>
 File: 06-hdp/figures/figure_7-eps-converted-to.pdf Graphic file (type pdf)
  <use 06-hdp/figures/figure_7-eps-converted-to.pdf>
@@ -1986,7 +1973,7 @@ Overfull \hbox (9.4503pt too wide) in paragraph at lines 10--11
  []
 
 
-<07-lda/figures/927px-Carboxylic-acid.png, id=3013, 930.47626pt x 745.78625pt>
+<07-lda/figures/927px-Carboxylic-acid.png, id=3043, 930.47626pt x 745.78625pt>
 File: 07-lda/figures/927px-Carboxylic-acid.png Graphic file (type png)
 
 <use 07-lda/figures/927px-Carboxylic-acid.png>
@@ -2014,7 +2001,7 @@ Missing character: There is no ˜ in font ptmr7t!
 Missing character: There is no â in font ptmr7t!
 Missing character: There is no € in font ptmr7t!
 Missing character: There is no ™ in font ptmr7t!
- <07-lda/figures/text2frags_new.pdf, id=3062, 1407.2575pt x 1508.63625pt>
+ <07-lda/figures/text2frags_new.pdf, id=3092, 1407.2575pt x 1508.63625pt>
 File: 07-lda/figures/text2frags_new.pdf Graphic file (type pdf)
 
 <use 07-lda/figures/text2frags_new.pdf>
@@ -2029,7 +2016,7 @@ Package Fancyhdr Warning: \headheight is too small (15.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [130 <./07-lda/figures/text2frags_new.pdf>]
-<07-lda/figures/matrix.pdf, id=3158, 939.51pt x 505.89pt>
+<07-lda/figures/matrix.pdf, id=3188, 939.51pt x 505.89pt>
 File: 07-lda/figures/matrix.pdf Graphic file (type pdf)
 
 <use 07-lda/figures/matrix.pdf>
@@ -2042,7 +2029,7 @@ Missing character: There is no â in font ptmr7t!
 Missing character: There is no € in font ptmr7t!
 Missing character: There is no “ in font ptmr7t!
  [131 <./07-lda/figures/matrix.pdf>]
-<07-lda/figures/figure_s3.pdf, id=3188, 1725.44624pt x 1084.05pt>
+<07-lda/figures/figure_s3.pdf, id=3219, 1725.44624pt x 1084.05pt>
 File: 07-lda/figures/figure_s3.pdf Graphic file (type pdf)
 
 <use 07-lda/figures/figure_s3.pdf>
@@ -2082,6 +2069,8 @@ Package Fancyhdr Warning: \headheight is too small (15.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [134]
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10.95> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 105.
 Missing character: There is no â in font ptmr7t!
 Missing character: There is no € in font ptmr7t!
 Missing character: There is no ™ in font ptmr7t!
@@ -2122,7 +2111,7 @@ Package Fancyhdr Warning: \headheight is too small (15.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[138] <07-lda/figures/perplexity.png, id=3303, 722.7pt x 722.7pt>
+[138] <07-lda/figures/perplexity.png, id=3334, 722.7pt x 722.7pt>
 File: 07-lda/figures/perplexity.png Graphic file (type png)
 
 <use 07-lda/figures/perplexity.png>
@@ -2143,14 +2132,14 @@ Package Fancyhdr Warning: \headheight is too small (15.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[140] <07-lda/figures/figure3.pdf, id=3322, 3976.8575pt x 1958.31625pt>
+[140] <07-lda/figures/figure3.pdf, id=3352, 3976.8575pt x 1958.31625pt>
 File: 07-lda/figures/figure3.pdf Graphic file (type pdf)
 
 <use 07-lda/figures/figure3.pdf>
 Package pdftex.def Info: 07-lda/figures/figure3.pdf used on input line 189.
 (pdftex.def)             Requested size: 352.8155pt x 173.73082pt.
  [141]
-<07-lda/figures/standards.pdf, id=3334, 2715.14375pt x 1626.075pt>
+<07-lda/figures/standards.pdf, id=3364, 2715.14375pt x 1626.075pt>
 File: 07-lda/figures/standards.pdf Graphic file (type pdf)
 
 <use 07-lda/figures/standards.pdf>
@@ -2298,7 +2287,7 @@ Package Fancyhdr Warning: \headheight is too small (15.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [142 <./07-lda/figures/figure3.pdf>] [143]
-<07-lda/figures/combinedm2m.pdf, id=3388, 2806.86435pt x 2357.47646pt>
+<07-lda/figures/combinedm2m.pdf, id=3418, 2806.86435pt x 2357.47646pt>
 File: 07-lda/figures/combinedm2m.pdf Graphic file (type pdf)
 
 <use 07-lda/figures/combinedm2m.pdf>
@@ -2313,7 +2302,7 @@ Package Fancyhdr Warning: \headheight is too small (15.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [144 <./07-lda/figures/standards.pdf>] [145 <./07-lda/figures/combinedm2m.pdf>]
-<07-lda/figures/figure10.pdf, id=3591, 1108.14pt x 771.88374pt>
+<07-lda/figures/figure10.pdf, id=3622, 1108.14pt x 771.88374pt>
 File: 07-lda/figures/figure10.pdf Graphic file (type pdf)
 
 <use 07-lda/figures/figure10.pdf>
@@ -2332,7 +2321,7 @@ Package Fancyhdr Warning: \headheight is too small (15.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [146 <./07-lda/figures/figure10.pdf>]
-<07-lda/figures/heatmaps.png, id=3630, 1806.5091pt x 866.9991pt>
+<07-lda/figures/heatmaps.png, id=3660, 1806.5091pt x 866.9991pt>
 File: 07-lda/figures/heatmaps.png Graphic file (type png)
 
 <use 07-lda/figures/heatmaps.png>
@@ -2349,7 +2338,7 @@ Package Fancyhdr Warning: \headheight is too small (15.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [148 <./07-lda/figures/heatmaps.png>]
-<07-lda/figures/multifile_lda.pdf, id=3643, 650.43pt x 758.835pt>
+<07-lda/figures/multifile_lda.pdf, id=3673, 650.43pt x 758.835pt>
 File: 07-lda/figures/multifile_lda.pdf Graphic file (type pdf)
 
 <use 07-lda/figures/multifile_lda.pdf>
@@ -2491,14 +2480,14 @@ Package Fancyhdr Warning: \headheight is too small (15.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[152] <07-lda/figures/multifile.pdf, id=3714, 1446.40375pt x 984.67876pt>
+[152] <07-lda/figures/multifile.pdf, id=3745, 1446.40375pt x 984.67876pt>
 File: 07-lda/figures/multifile.pdf Graphic file (type pdf)
 
 <use 07-lda/figures/multifile.pdf>
 Package pdftex.def Info: 07-lda/figures/multifile.pdf used on input line 380.
 (pdftex.def)             Requested size: 441.01772pt x 300.22891pt.
 
-<07-lda/figures/multifile_alpha.pdf, id=3717, 1734.48pt x 433.62pt>
+<07-lda/figures/multifile_alpha.pdf, id=3748, 1734.48pt x 433.62pt>
 File: 07-lda/figures/multifile_alpha.pdf Graphic file (type pdf)
 
 <use 07-lda/figures/multifile_alpha.pdf>
@@ -2532,11 +2521,7 @@ Package Fancyhdr Warning: \headheight is too small (15.0pt):
 
 ]
 Chapter 8.
-[157] [158] [159] [160] [161]) [162] (./footer.tex (./dissertation.bbl
-Missing character: There is no â in font ptmr7t!
-Missing character: There is no € in font ptmr7t!
-Missing character: There is no ” in font ptmr7t!
- [163
+[157] [158] [159] [160] [161]) [162] (./footer.tex (./dissertation.bbl [163
 
 ]
 Missing character: There is no â in font ptmr7t!
@@ -2544,7 +2529,7 @@ Missing character: There is no € in font ptmr7t!
 Missing character: There is no ” in font ptmr7t!
 
 [164]
-Underfull \hbox (badness 1442) in paragraph at lines 133--136
+Underfull \hbox (badness 1442) in paragraph at lines 129--132
 []\OT1/ptm/m/n/12 M. Kata-ja-maa and M. Ore[]si[]c, ``Data pro-cess-ing for mas
 s spectrometry-based
  []
@@ -2564,7 +2549,7 @@ Missing character: There is no ˜ in font ptmr7t!
 Missing character: There is no â in font ptmr7t!
 Missing character: There is no € in font ptmr7t!
 Missing character: There is no ™ in font ptmr7t!
- [173] [174] [175]) [176]
+ [173] [174]) [175]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 7.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 7.
 
@@ -2572,7 +2557,7 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 7.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 7.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 7.
 Package rerunfilecheck Info: File `dissertation.out' has not changed.
-(rerunfilecheck)             Checksum: C1F9353F20049159029E0EBCE62E9BE2;8378.
+(rerunfilecheck)             Checksum: F60957DF797BFA268C74F1981B679EA5;8912.
 
 
 LaTeX Warning: There were undefined references.
@@ -2583,10 +2568,10 @@ LaTeX Warning: There were multiply-defined labels.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 7.
  ) ) 
 Here is how much of TeX's memory you used:
- 29196 strings out of 493089
- 569445 string characters out of 6134843
- 650107 words of memory out of 5000000
- 31421 multiletter control sequences out of 15000+600000
+ 29200 strings out of 493089
+ 569522 string characters out of 6134843
+ 649888 words of memory out of 5000000
+ 31420 multiletter control sequences out of 15000+600000
  51619 words of font info for 99 fonts, out of 8000000 for 9000
  1145 hyphenation exceptions out of 8191
  64i,21n,92p,10429b,570s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -2615,10 +2600,10 @@ fonts/type1/urw/helvetic/uhvb8a.pfb></usr/local/texlive/2015/texmf-dist/fonts/t
 ype1/urw/times/utmb8a.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/urw/t
 imes/utmr8a.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/urw/times/utmr8
 a.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on dissertation.pdf (191 pages, 12913659 bytes).
+Output written on dissertation.pdf (190 pages, 12916243 bytes).
 PDF statistics:
- 4128 PDF objects out of 4296 (max. 8388607)
- 3247 compressed objects within 33 object streams
- 643 named destinations out of 1000 (max. 500000)
- 1131 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 4151 PDF objects out of 4296 (max. 8388607)
+ 3271 compressed objects within 33 object streams
+ 648 named destinations out of 1000 (max. 500000)
+ 1187 words of extra memory for PDF output out of 10000 (max. 10000000)
 
