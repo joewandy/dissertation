@@ -73,7 +73,7 @@ We can also group IP peaks together by their RT values using a mixture model. Ou
 \mu_{k}|\mu_{0},\tau_{0} & \sim & \mathcal{N}(\mu_{k}|\mu_{0},\tau_{0}^{-1})\\
 y_{n}|\boldsymbol{z}_{nk}=1,\mu_{k} & \sim & \mathcal{N}(\mu_{k},\delta^{-1})
 \end{eqnarray}
-where $\boldsymbol{\pi}$ is the mixing proportions, distributed according to the GEM (Griffiths, Engen and McCloskey) distribution. The GEM distribution over $\boldsymbol{\pi}$ is parameterised by the concentration parameter $\gamma$ and is described through the stick-breaking construction:
+where $\boldsymbol{\pi}$ is the mixing proportions, distributed according to the $GEM$ (Griffiths, Engen and McCloskey) distribution (details in Chapter~\ref{c:ml-background}). The $GEM$ distribution over $\boldsymbol{\pi}$ is parameterised by the concentration parameter $\gamma$ and is described through the stick-breaking construction:
 \begin{eqnarray}
 \beta_{k} & \sim & Beta(1,\gamma)\\
 \boldsymbol{\pi}_{k} & = & \beta_{k}\prod_{l=1}^{k-1}(1-\beta_{l})

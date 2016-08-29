@@ -104,7 +104,7 @@ Then:
 \boldsymbol{\bar{z}}_{jk}\vert\boldsymbol{\pi} &\sim Multinomial(\boldsymbol{\pi}) \\
 \boldsymbol{c}_{jk}\vert\bar{z}_{jki}=1,... &\sim p(\boldsymbol{c}_{jk}\vert\bar{z}_{jki}=1,...)
 \end{align}
-where $\boldsymbol{\pi}$ are the mixing proportions, distributed according to the GEM (Griffiths, Engen and McCloskey) distribution (details in Chapter~\ref{c:ml-background}). The likelihood of $\boldsymbol{c}_{jk}$, the $k$-th IP cluster from run $j$, to be placed in a top-level cluster $i$ is assumed to be factorized into independent factors of its mass, RT and adduct signature terms:
+where $\boldsymbol{\pi}$ are the mixing proportions, distributed according to the $GEM$ (Griffiths, Engen and McCloskey) distribution (details in Chapter~\ref{c:ml-background}). The likelihood of $\boldsymbol{c}_{jk}$, the $k$-th IP cluster from run $j$, to be placed in a top-level cluster $i$ is assumed to be factorized into independent factors of its mass, RT and adduct signature terms:
 \begin{equation}\label{eq:second-stage-likelihood}
 \begin{split}
 p(\boldsymbol{c}_{jk}\vert\bar{z}_{jki}=1,...) = p({\bar{q}}_{jk}\vert\bar{z}_{jki}=1,...) \cdot p({\bar{r}}_{jk}\vert\bar{z}_{jki}=1,...) \cdot \\

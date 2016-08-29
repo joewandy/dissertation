@@ -7,9 +7,8 @@ Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
-Reallocated field_info (elt_size=4) to 11480 items from 5000.
+Reallocated field_info (elt_size=4) to 11435 items from 5000.
 Database file #1: bibliography/dissertation.bib
-Warning--I didn't find a database entry for "teh2005hierarchical"
 -- IEEEtran.bst version 1.12 (2007/01/11) by Michael Shell.
 -- http://www.michaelshell.org/tex/ieeetran/bibtex/
 -- See the "IEEEtran_bst_HOWTO.pdf" manual for usage information.
@@ -26,7 +25,7 @@ Warning--missing publisher in Gusfield1989
 Done.
 You've used 143 entries,
             4024 wiz_defined-function locations,
-            1644 strings with 36920 characters,
+            1643 strings with 36901 characters,
 and the built_in function-call counts, 124553 in all, are:
 = -- 10434
 > -- 3349
@@ -65,4 +64,4 @@ warning$ -- 9
 while$ -- 581
 width$ -- 146
 write$ -- 1499
-(There were 10 warnings)
+(There were 9 warnings)
