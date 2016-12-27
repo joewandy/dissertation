@@ -22,39 +22,40 @@ The proposed model for HDP-Align is framed as a Hierarchical Dirichlet Process (
 
 \begin{figure}[!htbp]
 \centering\includegraphics[width=0.9\linewidth]{06-hdp/figures/model_hdp.png}
-\centering\caption{Graphical model for HDP-Align. $x_{jn}$ is the observed RT value of peak $n$ in file $j$, while $y_{jn}$ is the observed m/z value.\label{fig-platediagram}}
+\centering\caption{Graphical model for HDP-Align. $j$ indexes over the input files (LC-MS runs), while $n$ indexes over the peaks in that file. $k$ indexes over within-file local clusters, while $i$ indexes over across-file global clusters. In a global clusters, peaks are separated by their m/z values into mass clusters, indexed by $a$. $x_{jn}$ is the observed RT value of peak $n$ in file $j$, while $y_{jn}$ is the observed m/z value. The indicator variables $z_{jnk}$, $v_{jni}$ and $v_{jnia}$ are used to denote the assignment of peak $n$ in file $j$ to local cluster $k$, to global cluster $i$ and to mass cluster $a$ in global cluster $i$ respectively. Next, $t_{jk}$ and $t_{i}$ are the RT values of the local cluster $k$ in file $j$ and the global cluster $i$ respectively, while $\mu_{ia}$ is the mass cluster mean. In addition, $\gamma$, $\delta$ and $\rho$ as the precision parameters on the Gaussian components for the local RT clusters, global RT clusters and mass clusters respectively. Next, $\mu_{0}$ and $\sigma_{0}$ are the mean and precision of the base Gaussian distribution for the global mixture component RT values, while $\psi_{0}$ and $\rho_{0}$ are the mean and precision of the base Gaussian distribution for the mass cluster means. Finally, $\alpha'$, $\alpha_{t}$ and $\alpha_{m}$ are the Dirichlet Process concentration parameters.
+\label{fig-platediagram}}
 \end{figure}
 
 Our input consists of $J$ input files, indexed by $j=1,...,J$, corresponding to the $J$ LC-MS runs to be aligned. Each $j$-th input file contains $N_j$ peaks in total, which can be separated into $K_j$ local clusters of related-peaks. In a $j$-th file, peaks are indexed by $n=1,...,N_j$ and local clusters are indexed by $k=1,...,K_j$. Across all files, we assign each local cluster $k$ in file $j$ to a global cluster $i=1,...,I$, where $I$ is the total number of global clusters, using the indicator variable $v$, as described in the following paragraph. A global cluster corresponds to the compound of interest during LC-MS analysis, e.g. metabolite or peptide fragment, that is present across runs, while local clusters are realisations of the global clusters in a specific run. Finally, within each global cluster $i$, we can further group peaks by their m/z values into $A$ mass clusters (indexed by $a=1,...,A$). Each mass cluster therefore corresponds to the ionization product peaks coming from the different runs that are produced by a global compound during mass spectrometry.
 
 We use the indicator variable $z_{jnk}=1$ to denote the assignment of peak $n$ in file $j$ to local cluster $k$ in that file. Similarly, $v_{jni}=1$ if peak $n$ in file $j$ is assigned to global cluster $i$, and $v_{jnia}=1$ if peak $n$ in file $j$ is assigned to mass cluster $a$ linked to metabolite $i$. Let $d_{j}$ be the list of observed data of peaks in file $j$, $d_{j}=(\mathbf{d}_{j1},\mathbf{d}_{j2},...,\mathbf{d}_{jn})$ where $\mathbf{d}_{jn}=(x_{jn},y_{jn})$ with $x_{jn}$ the RT value and $y_{jn}$ the log m/z value of the peak feature. The log of m/z value is here used as the m/z error is assumed to increase linearly with the observed m/z value \cite{Perera2011}. $\boldsymbol{\theta}$ denotes the global mixing proportions and $\pi_{j}$ the local mixing proportions for file $j$. The global mixing proportions $\boldsymbol{\theta}$ are distributed according to the Griffiths, Engen and McCloskey ($GEM$) distribution (details in Chapter~\ref{c:ml-background}):
 \begin{equation}
-    \boldsymbol{\theta} \vert \alpha'\sim GEM(\alpha')
+    \boldsymbol{\theta} \vert \alpha'\sim GEM(\alpha'),
 \end{equation}
 where the $GEM$ distribution over $\boldsymbol{\theta}$ is described through the stick-breaking construction: 
 \begin{eqnarray}
 	\beta_{i} & \sim & Beta(1,\alpha')\\
-	\theta_{i} & = & \beta_{i}\prod_{l=1}^{i-1}(1-\beta_{l})
+	\theta_{i} & = & \beta_{i}\prod_{l=1}^{i-1}(1-\beta_{l}).
 \end{eqnarray}
 The local mixing proportions $\pi_{j}$ are distributed according to a Dirichlet Process (DP) prior with the base measure $\boldsymbol{\theta}$ and concentration parameter $\alpha_{t}$. 
 \begin{equation}
-	\pi_{j} \vert \alpha_{t},\boldsymbol{\theta}\sim DP(\alpha_{t},\boldsymbol{\theta})
+	\pi_{j} \vert \alpha_{t},\boldsymbol{\theta}\sim DP(\alpha_{t},\boldsymbol{\theta}).
 \end{equation}
 Within each file $j$, the indicator variable $z_{jnk}=1$ denotes the assignment of peak $n$ in file $j$ to local RT cluster $k$ in that file. This follows the local mixing proportions for that file.
 \begin{equation}
-	z_{jnk}=1 \vert \pi_{j}\sim\pi_{j}
+	z_{jnk}=1 \vert \pi_{j}\sim\pi_{j}.
 \end{equation}
 The RT value $t_{i}$ of a global mixture component is drawn from a base Gaussian distribution with mean $\mu_{0}$ and precision (inverse variance) $\sigma_{0}$. 
 \begin{equation}
-	t_{i} \vert \mu_{0},\sigma_{0}\sim\mathcal{N}(\mu_{0},\sigma_{0}^{-1})\label{eq:draw_ti}
+	t_{i} \vert \mu_{0},\sigma_{0}\sim\mathcal{N}(\mu_{0},\sigma_{0}^{-1}).\label{eq:draw_ti}
 \end{equation}
 The RT value $t_{ij}$ of a local mixture component in file $j$ is normally distributed with mean $t_{i}$ and precision $\delta$. The precision controls how much RT values of related-peak groups across runs are allowed to deviate from the parent global compound's RT. 
 \begin{equation}
-	t_{jk} \vert t_{i},\delta\sim\mathcal{N}(t_{i},\delta^{-1})\label{eq:draw_tik}
+	t_{jk} \vert t_{i},\delta\sim\mathcal{N}(t_{i},\delta^{-1}).\label{eq:draw_tik}
 \end{equation}
 Finally, the observed peak RT value is normally distributed with mean $t_{jk}$ and precision $\gamma$. The precision controls how much RT values of peaks can deviate from their related-peak group. 
 \begin{equation}
-	x_{jn} \vert z_{jnk}=1,t_{jk},\gamma\sim\mathcal{N}(t_{jk},\gamma^{-1})\label{eq:peakdist}
+	x_{jn} \vert z_{jnk}=1,t_{jk},\gamma\sim\mathcal{N}(t_{jk},\gamma^{-1}).\label{eq:peakdist}
 \end{equation}
 The m/z value produced through high-precision MS instrument is highly accurate, and its correspondence is often preserved across runs. Once peaks have been assigned to their respective global clusters, we need to further separate peaks within each global cluster into mass clusters to obtain the actual alignment. These mass cluster corresponds to ionisation products. We do this by incorporating an internal DP mixture model on the m/z values ($y_{jn}$) within each global cluster $i$. Let the
 indicator $v_{jnia}=1$ denotes the assignment of peak $n$ in file $j$ to mass cluster $a$ in the $i$-th global cluster. Then: 
@@ -62,7 +63,7 @@ indicator $v_{jnia}=1$ denotes the assignment of peak $n$ in file $j$ to mass cl
 	\boldsymbol{\lambda}_{i} \vert \alpha_{m} & \sim & GEM(\alpha_{m})\\
 	v_{jnia}=1 \vert \boldsymbol{\lambda}_{i} & \sim & \boldsymbol{\lambda}_{i}\\
 	\mu_{ia} \vert \psi_{0},\rho_{0} & \sim & \mathcal{N}(\mu_{ia} \vert \psi_{0},\rho_{0}^{-1})\\
-	y_{jn} \vert v_{jnia}=1,\mu_{ia} & \sim & \mathcal{N}(\mu_{ia},\rho^{-1})\cdot I(\mathbf{d}_{jn})
+	y_{jn} \vert v_{jnia}=1,\mu_{ia} & \sim & \mathcal{N}(\mu_{ia},\rho^{-1})\cdot I(\mathbf{d}_{jn}),
 \end{eqnarray}
 where the index $ia$ refers to the $a$-th mass cluster of the $i$-th global cluster. $\boldsymbol{\lambda}_{i}$ is the mixing proportions of the $i$-th internal DP mixture for the masses, with $\alpha_{m}$ the concentration parameter. $\mu_{ia}$ is the mass cluster mean, drawn from the Gaussian base distribution with mean $\psi_{0}$ and precision $\rho_{0}$. The observed mass value is drawn from a Gaussian distribution with the component mean $\mu_{ia}$ and precision $\rho$, for which the value is set based on the MS instrument's resolution. Additionally, we add an additional constraint on the likelihood of $y_{jn}$ using the indicator function $I(\cdot)$ such that $I(\mathbf{d}_{jn})=1$ if there are no other peaks inside the mass cluster that come from the same file as the current $\mathbf{d}_{jn}$ peak, and $0$ otherwise. This constraint captures the restriction that a peak feature can only be matched to other peaks from different files, reflecting the assumption that within each LC-MS run, compounds produce ionisation products with distinct mass-to-charge fingerprints that can be used for matching to other runs.
 
@@ -78,45 +79,45 @@ P(z_{jnk}=1 \vert \mathbf{d}_{jn},...)\propto\begin{cases}
 \begin{array}{c}
 c_{jk}\cdot p(\mathbf{d}_{jn} \vert z_{jnk}=1,...)\\
 \alpha_{t}\cdot p(\mathbf{d}_{jn} \vert z_{jnk^{*}}=1,...)
-\end{array}\end{cases}\label{eq:table_likelihood}
+\end{array}\end{cases}.\label{eq:table_likelihood}
 \end{dmath}
 We consider the top and bottom terms of eq. (\ref{eq:table_likelihood}) separately in the following.
 \begin{enumerate}
 \item The likelihood of the peak $\mathbf{d}_{jn}$ to be in an existing local RT cluster $k$, $p(\mathbf{d}_{jn} \vert z_{jnk}=1,...)$ is proportional to $c_{jk}$. This is assumed to factorise across the RT ($x_{jn}$) and mass ($y_{jn}$) terms
 \begin{dmath}
-p(\mathbf{d}_{jn} \vert z_{jnk}=1,...)=p(x_{jn} \vert z_{jnk}=1,...)\cdot p(y_{jn} \vert z_{jnk}=1,...)
+p(\mathbf{d}_{jn} \vert z_{jnk}=1,...)=p(x_{jn} \vert z_{jnk}=1,...)\cdot p(y_{jn} \vert z_{jnk}=1,...).
 \label{eq:likelihood-existing-cluster}
 \end{dmath}
 The RT term $p(x_{jn} \vert z_{jnk}=1,...)$ in eq. (\ref{eq:likelihood-existing-cluster}) is normally distributed with mean $t_{jk}$ and precision $\gamma$, while the mass term $p(y_{jn} \vert z_{jnk}=1,...)$ is an internal DP mixture of mass components linked to the parent global cluster $i$ of an existing local cluster $k$. We then marginalise over all mass clusters in $i$ to get $p(y_{jn} \vert z_{jnk}=1,v_{jni}=1...)$
 \begin{dmath}
-p(y_{jn} \vert z_{jnk}=1,v_{jni}=1...)=\sum_{a}\frac{c_{ia}}{\alpha_{m}+\sum_{a}c_{ia}}p(y_{jn} \vert v_{jnia}=1,...)+\frac{\alpha_{m}}{\alpha_{m}+\sum_{a}c_{ia}}p(y_{jn} \vert \boldsymbol{v}_{jnia^{*}}=1,...)
+p(y_{jn} \vert z_{jnk}=1,v_{jni}=1...)=\sum_{a}\frac{c_{ia}}{\alpha_{m}+\sum_{a}c_{ia}}p(y_{jn} \vert v_{jnia}=1,...)+\frac{\alpha_{m}}{\alpha_{m}+\sum_{a}c_{ia}}p(y_{jn} \vert \boldsymbol{v}_{jnia^{*}}=1,...).
 \label{eq:mass_cluster_marg}
 \end{dmath}
 To compute the terms in eq. (\ref{eq:mass_cluster_marg}), first we consider the case for an existing mass cluster $a$ in the global RT cluster $i$. Then,
 \begin{dmath}
-p(y_{jn} \vert v_{jnia}=1,...)=\mathcal{N}(\mu_{ia},\rho^{-1})
+p(y_{jn} \vert v_{jnia}=1,...)=\mathcal{N}(\mu_{ia},\rho^{-1}).
 \end{dmath}
 For a new mass cluster $a^{*}$ in the global RT cluster $i$, we marginalise out $\mu_{ia}$ to obtain
 \begin{dmath}
-p(y_{jn} \vert \boldsymbol{v}_{jnia^{*}}=1,...)=\mathcal{N}(\psi_{0},\rho^{-1}+\rho_{0}^{-1})
+p(y_{jn} \vert \boldsymbol{v}_{jnia^{*}}=1,...)=\mathcal{N}(\psi_{0},\rho^{-1}+\rho_{0}^{-1}).
 \end{dmath}
 \item The likelihood of the peak $\mathbf{d}_{jn}$ to be in a new local cluster $k^{*}$ is proportional to $\alpha_{t}$. Marginalising over all global clusters in the top-level DP, we get
 \begin{dmath}
-p(\mathbf{d}_{jn} \vert z_{jnk^{*}}=1,...)=\sum_{i}\left[\frac{c_{i}}{\alpha^{'}+\sum_{i}c_{i}}p(\mathbf{d}_{jn} \vert v_{jni}=1,...)\right]+\frac{\alpha'}{\alpha^{'}+\sum_{i}c_{i}}p(\mathbf{d}_{jn} \vert \boldsymbol{v}_{jni^{*}}=1,...)
+p(\mathbf{d}_{jn} \vert z_{jnk^{*}}=1,...)=\sum_{i}\left[\frac{c_{i}}{\alpha^{'}+\sum_{i}c_{i}}p(\mathbf{d}_{jn} \vert v_{jni}=1,...)\right]+\frac{\alpha'}{\alpha^{'}+\sum_{i}c_{i}}p(\mathbf{d}_{jn} \vert \boldsymbol{v}_{jni^{*}}=1,...).
 \label{eq:global_cluster_marg}
 \end{dmath}
 There are two terms to compute in eq. (\ref{eq:global_cluster_marg}): whether peak $\mathbf{d}_{jn}$ is in an existing global cluster $i$ or a new global cluster $i^{*}$. For an existing global RT cluster $i$ in eq. (\ref{eq:global_cluster_marg}), $p(\mathbf{d}_{jn} \vert v_{jni}=1,...)$ is assumed to factorise into its RT and mass terms, so $p(\mathbf{d}_{jn} \vert v_{jni}=1,...) = p(x_{jn} \vert v_{jni}=1,...)\cdot p(y_{jn} \vert v_{jni}=1,...)$. We marginalise over all local RT clusters to obtain
 \begin{dmath}
-p(x_{jn} \vert v_{jni}=1,...)=\mathcal{N}(x_{jn} \vert t_{i},\gamma^{-1}+\delta^{-1})
+p(x_{jn} \vert v_{jni}=1,...)=\mathcal{N}(x_{jn} \vert t_{i},\gamma^{-1}+\delta^{-1}),
 \label{eq:existing_global_factors}
 \end{dmath}
 and marginalise over all possible mass clusters in the internal DP linked to global cluster $i$ to obtain $p(y_{jn} \vert v_{jni}=1,...)$. This is defined in eq. (\ref{eq:mass_cluster_marg}). Finally, for a new global RT cluster $i^{*}$ in eq. (\ref{eq:global_cluster_marg}), $p(\mathbf{d}_{jn} \vert \boldsymbol{v}_{jni^{*}}=1,...)$ is also assumed to factorise into its RT and mass terms. Then, we marginalise over $t_{jk}$ and $t_{i}$ to obtain
 \begin{dmath}
-p(x_{jn} \vert \boldsymbol{v}_{jni^{*}}=1,...)=\mathcal{N}(x_{jn} \vert \mu_{0},\sigma_{0}^{-1}+\gamma^{-1}+\delta^{-1})
+p(x_{jn} \vert \boldsymbol{v}_{jni^{*}}=1,...)=\mathcal{N}(x_{jn} \vert \mu_{0},\sigma_{0}^{-1}+\gamma^{-1}+\delta^{-1}),
 \end{dmath}
 and marginalise over $\mu_{ia}$ to get 
 \begin{dmath}
-p(y_{jn} \vert \boldsymbol{v}_{jni^{*}}=1,...)=\mathcal{N}(y_{jn} \vert \psi_{0},\rho^{-1}+\rho_{0}^{-1})
+p(y_{jn} \vert \boldsymbol{v}_{jni^{*}}=1,...)=\mathcal{N}(y_{jn} \vert \psi_{0},\rho^{-1}+\rho_{0}^{-1}).
 \end{dmath}
 
 \end{enumerate}
@@ -127,13 +128,13 @@ The following expressions are used to update the instantiated mixture component 
 \begin{enumerate}
 \item Updating global cluster's RT $t_{i}$: here, $t_{jk\in i}$ refers only to local RT clusters currently assigned to the global cluster $i$, and $c_{i}$ is the count of such peaks. Then
 \begin{dmath}
-p(t_{i} \vert ...)\propto p(t_{i} \vert \mu_{0},\sigma_{0}^{-1})\prod_{j}^{J}\prod_{k}^{K}p(t_{jk\in i} \vert t_{i},\delta)=\mathcal{N}(\mu_{i},\gamma_{i}^{-1})
+p(t_{i} \vert ...)\propto p(t_{i} \vert \mu_{0},\sigma_{0}^{-1})\prod_{j}^{J}\prod_{k}^{K}p(t_{jk\in i} \vert t_{i},\delta)=\mathcal{N}(\mu_{i},\gamma_{i}^{-1}),
 \end{dmath}
 where $\mu_{i}=\frac{1}{\gamma_{i}}\left[\mu_{0}\sigma_{0}+\delta\sum_{j}\sum_{k}t_{jk\in i}\right]$ and $\gamma_{i}=\sigma_{0}+\delta c_{i}$. 
 \item Updating local cluster's RT $t_{jk}$: here, $x_{jn\in k}$ refers only to peaks currently assigned to the local RT cluster $k$, and
 $c_{jk}$ is the count of such peaks.
 \begin{dmath}
-p(t_{jk} \vert ...)\propto p(t_{jk} \vert t_{i},\delta^{-1})\prod_{j}^{J}\prod_{n}^{N}p(x_{jn\in k} \vert t_{jk},\gamma)=\mathcal{N}(\mu_{k},\gamma_{k}^{-1})
+p(t_{jk} \vert ...)\propto p(t_{jk} \vert t_{i},\delta^{-1})\prod_{j}^{J}\prod_{n}^{N}p(x_{jn\in k} \vert t_{jk},\gamma)=\mathcal{N}(\mu_{k},\gamma_{k}^{-1}),
 \end{dmath}
 where $\mu_{k}=\frac{1}{\gamma_{k}}\left[t_{i}\delta+\gamma\sum_{j}\sum_{n}x_{jn\in k}\right]$ and $\gamma_{k}=\delta+\gamma c_{jk}$. 
 \end{enumerate}
@@ -204,7 +205,9 @@ Following Chapter~\ref{c:matching}, we benchmark HDP-Align against two establish
 \subsection{Parameter Optimisations}
 \label{sub:parameter-optimisations}
 
-Tables~\ref{tab:hdp-parameters-hdpalign} and ~\ref{tab:hdp-parameters-benchmark} describe the parameter ranges of each method during performance evaluation. For HDP-Align (Table~\ref{tab:hdp-parameters-hdpalign}), we perform the experiments based on our initial choices on the appropriate parameter values. These are almost certainly less than optimal and can be optimised further. The mass cluster standard deviation $\sqrt{\rho^{-1}}$ for HDP-ALign is set to the equivalent value in parts-per-million (ppm). These are 500 ppm for the Proteomic dataset and 3 ppm for the Glycomic and Metabolomic datasets. The local (within-run) cluster \ac{RT} standard deviation $\sqrt{\gamma^{-1}}$ is assumed to be fairly constant and set to 2 seconds for all datasets, while the global cluster standard deviation $\sqrt{\delta^{-1}}$ is set in the following dataset-specific manner: 50 seconds for the Proteomic dataset and 20 seconds for the remaining datasets. The larger standard deviation value is required for the Proteomic dataset to accomodate for greater \ac{RT} drifts across runs. Other hyperparameters in HDP-Align are fixed to the following values: $\alpha'=10$, $\alpha_t=10$, $\alpha_m=100$. The values of the precision hyperparameters for global cluster RT ($\sigma_0$) and mass cluster ($\rho_0$) are set to a broad value of 1/5E6. No significant changes were found to the results when these hyperparameters for the DP concentrations and cluster precisions were varied. The mean hyperparameters $\mu_0$ and $\psi_0$ are set to the means of the RT and m/z values of the input data respectively. During inference, 10000 posterior samples were obtained with the first 5000 used as burn-in, and taking every 10-th sample after burn-in for the posterior probabilities of peaks to be matched.
+HDP-Align is a complex model, with many model hyperparameters that can be tuned for optimal performance. For HDP-Align (Table~\ref{tab:hdp-parameters-hdpalign}), we perform the experiments based on our initial choices on the appropriate parameter values. These are almost certainly less than optimal and can be optimised further. Nevertheless we found that the most important parameters can be set based on empirical knowledge of mass spectrometry, while others can be left at their default. The most important hyper-parameters are $\sqrt{\rho^{-1}}$ set to the equivalent value in parts-per-million (ppm), which is the standard deviation when separating ionisation product peaks in the same global cluster into mass clusters, and $\sqrt{\delta^{-1}}$, which is the standard deviation when assigning local to global clusters. These two values can be seen as equivalent to the tolerances when matching peaks across runs based on their m/z and RT values, and can generally be estimated from the settings of the MS instruments. For the Proteomic dataset, $\sqrt{\rho^{-1}}$ is set to 500 ppm while for the Glycomic and Metabolomic datasets, $\sqrt{\rho^{-1}}$ is set to 3 ppm. The local (within-run) cluster \ac{RT} standard deviation $\sqrt{\gamma^{-1}}$ is assumed to be fairly constant and set to 2 seconds for all datasets, while the global cluster standard deviation $\sqrt{\delta^{-1}}$ is set in the following dataset-specific manner: 50 seconds for the Proteomic dataset and 20 seconds for the remaining datasets. The larger tolerance values are required for the Proteomic dataset to accommodate for greater m/z error and \ac{RT} drifts across runs. 
+
+Other hyperparameters in HDP-Align are fixed to the following values and we expect that they can be left mostly unchanged on different datasets: $\alpha'=10$, $\alpha_t=10$, $\alpha_m=100$. The values of the precision hyperparameters for global cluster RT ($\sigma_0$) and mass cluster ($\rho_0$) are set to a broad value of 1/5E6. No significant changes were found to the results when these hyperparameters for the DP concentrations and cluster precisions were varied. The mean hyperparameters $\mu_0$ and $\psi_0$ are set to the means of the RT and m/z values of the input data respectively. During inference, 10000 posterior samples were obtained with the first 5000 used as burn-in, and taking every 10-th sample after burn-in for the posterior probabilities of peaks to be matched.
 
 \begin{table}[!htbp]
 \begin{centering}
@@ -277,7 +280,7 @@ The performance of the evaluated methods methods on the different datasets are p
 Figure~\ref{fig:proteomic_results} shows the results from performance evaluation on the Proteomic (P1) dataset. We see that both benchmark methods (SIMA and Join) produce a wide range of performance depending on the parameter values for $(T_{(m/z)}, T_{rt})$ chosen. Sensitivity to parameter values is expected on this dataset due to the low mass accuracy in the MS instrument that produces the data and the high \ac{RT} drifts present across runs (further details in \cite{Lange2008}). HDP-Align performs well on several fractions (particularly fractions 040, 060, 080, 100) with precision-recall performance close to the optimal performance attainable by the benchmark methods. On all fractions, HDP-Align is also able to produce higher-precision results compared to the benchmark methods by reducing recall through setting the appropriate values for the threshold $t$. The primary benefits of quantifying alignment uncertainties is realised here as the well-calibrated probability scores on the matching confidence of aligned peaks produced by HDP-Align allows the user to choose which point along the PR curve to operate on. It is less obvious how this can be accomplished in the benchmark methods by varying the \ac{RT} ($T_{rt}$) and m/z ($T_{m/z}$) thresholding parameters, if at all possible.
 
 \begin{figure}[!htbp]
-\centering\includegraphics[width=0.7\linewidth]{06-hdp/figures/figure_4.eps}
+\centering\includegraphics[width=1.0\linewidth]{06-hdp/figures/figure_4.eps}
 \centering\caption{\label{fig:proteomic_results}Precision-recall values on the different fractions of the Proteomic (P1) dataset.}
 \end{figure}
 
@@ -286,16 +289,18 @@ The P1 datasets also represent the most challenging alignment scenario as they h
 Figure~\ref{fig:traceplot_000} (left) shows the traceplots of the number of global clusters from three randomly initialised MCMC chains when running HDP-Align on the largest P1 Fraction 000 dataset containing 10606 features. From the jumps in the number of global clusters in the traceplots, we see some evidence of bad mixing in the chains. This is explained by the fact that in our sampler, we do not allow for the block reassignment of a group of peaks (that are together placed in a local cluster) into a new global cluster. Consequently, a global cluster can only be deleted when all its individual peaks have completely moved elsewhere. This leads to the slow convergence and poor mixing of the model. An inspection of the distributions of global clusters after burn-in from the three chains, shown in Figure~\ref{fig:traceplot_000} (right), also suggests that the chains have not fully converged yet. 
 
 \begin{figure}[!htbp]
-\centering\includegraphics[width=0.7\linewidth]{06-hdp/figures/traceplot_p1_000.pdf}
+\centering\includegraphics[width=1.0\linewidth]{06-hdp/figures/traceplot_p1_000.pdf}
 \centering\caption{\label{fig:traceplot_000}Traceplots from three randomly initialised MCMC chains for the number of global clusters across all posterior samples for the largest fraction (000) from the Proteomic (P1) dataset.}
 \end{figure}
 
-Running HDP-Align on the P1 Fraction 000 data and collecting 10000 posterior samples requires several days of walltime. The main factor affecting the running time of HDP-Align is the total number of peaks across all runs to be processed and the number of samples produced during Gibbs sampling. In each iteration of Gibbs sampling, HDP-Align removes a peak from the model, updates parameters of the model conditioned on every other parameters, and reassigns a peak into RT and mass clusters. In practice, additional time will also be spent on various necessary book-keeping operations, such as deleting empty local and global clusters that are no longer required, updating internal data structures, etc. Running a longer chain may not be not entirely practical in actual analytical situation --- particularly in comparison to the speed of the baseline methods that completes in minutes. Despite this poor mixing, as the results show in Figure~\ref{fig:proteomic_results}, we still see some evidence that by reducing recall, it is still possible to extract from HDP-Align alignment results having a higher precision than what the baseline methods can achieve.
+Running HDP-Align on the P1 Fraction 000 data and collecting 10000 posterior samples requires several days of walltime. The main factor affecting the running time of HDP-Align is the total number of peaks across all runs to be processed and the number of samples produced during Gibbs sampling. In each iteration of Gibbs sampling, HDP-Align removes a peak from the model, updates parameters of the model conditioned on every other parameters, and reassigns a peak into RT and mass clusters. In practice, additional time will also be spent on various necessary book-keeping operations, such as deleting empty local and global clusters that are no longer required, updating internal data structures, etc. 
 
+We see from the results here that by reducing recall, it is possible to extract from HDP-Align alignment results that have a higher precision than what the baseline methods can achieve. However, care must be taken when using the HDP-Align model in actual analytical situations as the reliability of MCMC inference on such a complex model can be difficult to assess. As discussed in Section~\ref{sub:parameter-optimisations}, the choices of user-defined model parameters play an important part in influencing the results. The most important are the Gaussian precisions of the local RT clusters ($\gamma$), global RT clusters ($\delta$) and mass clusters ($\rho$). It is important for these parameters to be set sensibly based on expert knowledge on the settings of mass spectrometry instruments that generate the data. A portion of the full dataset can be used at this point to test the initial choices of parameters. Figure~\ref{fig:proteomic_results} also shows that some poor mixing behaviours can be observed during inference, so during actual usages, further convergence diagnostics of the model can be performed by inspecting the trace plots from running a very long MCMC chain or from multiple parallel chains. All important variables of the model are already exported to text format for further diagnostics, and an option is also provided to initialise the sampler with the same user-defined random seed each time to facilitate debugging. 
+ 
 Inspecting the diagnostic plots Figure~\ref{fig:traceplot_100} for the smaller P1 Fraction 100 dataset, we observe a better mixing behaviour. The traceplots that are less jumpy and the distributions of the number of global clusters that are more consistent across the three chains. This may be due to the smaller (1326) number of features in this dataset. On this dataset, HDP-Align took two hours to process. This is a reasonable time a user can tolerate for a data analysis pipeline to complete (although still significantly longer than the baseline methods that require seconds to complete). Again from Figure~\ref{fig:proteomic_results}, the results for this P1 Fraction 100 dataset show that by trading off recall, we can obtain a higher precision than the baseline methods.
 
 \begin{figure}[!htbp]
-\centering\includegraphics[width=0.7\linewidth]{06-hdp/figures/traceplot_p1_100.pdf}
+\centering\includegraphics[width=1.0\linewidth]{06-hdp/figures/traceplot_p1_100.pdf}
 \centering\caption{\label{fig:traceplot_100}Traceplots from three randomly initialised MCMC chains for the number of global clusters across all posterior samples for the smallest fraction (100) from the Proteomic (P1) dataset.}
 \end{figure}
 
@@ -308,20 +313,20 @@ Figures~\ref{fig:glycomic_results} and ~\ref{fig:metabolomic_results_alignment} 
 
 The results for the Glycomic dataset (Figure~\ref{fig:glycomic_results}) also show some additional results on how the measured precision-recall values might change depending on the strictness of what constitutes an alignment item during performance evaluation. This is accomplished by gradually increasing the value for $l$ that determines the size of the feature combinations enumerated from a method's output. For example, $l$=2 considers all pairwise combinations of features from the method's output during performance evaluation, while $l=4$ considers all combinations of size 4, and so on. Figure~\ref{fig:glycomic_results} shows that as $l$ is increased, parameter sensitivity seems to become more of an issue for the benchmark methods, with more parameter sets having lower precisions in the results. Across all $l$s evaluated, parameter pairs that produce the best alignment performance (points with high precision and recall values) are generally small $T_{(m/z)}$ and large $T_{rt}$ values. Examples of parameter pairs that produce the best and worse performance for SIMA are shown in Figure~\ref{fig:metabolomic_results_alignment}. The results here appear to suggest the importance of having high mass precision during matching. Importantly, we see from Figure~\ref{fig:glycomic_results} that the performance of HDP-Align remains fairly consistent as $l$ is increased.
 
-The Metabolomic dataset also provides us with additional results in form of annotations of putative adduct type and metabolite identities. A thorough evaluation on the quality of such annotations, in comparison to e.g. the workflow proposed in \cite{Lee2013}, is beyond the scope of this chapter and would likely necessitate using a different and more appropriate evaluation dataset. Instead, we present an example of the further analysis performed by HDP-Align (as proposed in Section~\ref{subsub:isotopic-product-annotations}) on the resulting clustering objects after inference. Figure~\ref{fig:metabolomic_results_annotations} shows a global \ac{RT} cluster where peaks across runs have been grouped by their \ac{RT} and m/z values. Within this global cluster, peaks are further separated into 6 mass clusters -- corresponding to ionisation products produced by the global cluster during mass spectometry. In Figure~\ref{fig:metabolomic_results_annotations}, mass cluster $A$ and $B$ contain features aligned from several runs but they do not have any other mass cluster sharing a possible precursor mass. Mass cluster $C$ and $D$ share a common precursor mass (292.12696) and can thus be annotated by the adduct type that produce the transformation. Similarly, mass cluster $E$ and $F$ share a common precursor mass at 383.14278. Queries to a local KEGG database are issued based on the precursor mass values, producing several compound identities that can be putatively assigned to the global \ac{RT} cluster. It is a strength of the HDP-Align approach that this putative identification step appears very naturally from the alignment results.
+The Metabolomic dataset also provides us with additional results in form of annotations of putative adduct type and metabolite identities. A thorough evaluation on the quality of such annotations, in comparison to e.g. the workflow proposed in \cite{Lee2013}, is beyond the scope of this chapter and would likely necessitate using a different and more appropriate evaluation dataset. Instead, we present an example of the further analysis performed by HDP-Align (as proposed in Section~\ref{subsub:isotopic-product-annotations}) on the resulting clustering objects after inference. Figure~\ref{fig:metabolomic_results_annotations} shows a global \ac{RT} cluster where peaks across runs have been grouped by their \ac{RT} and m/z values. Within this global cluster, peaks are further separated into 6 mass clusters -- corresponding to ionisation products produced by the global cluster during mass spectrometry. In Figure~\ref{fig:metabolomic_results_annotations}, mass cluster $A$ and $B$ contain features aligned from several runs but they do not have any other mass cluster sharing a possible precursor mass. Mass cluster $C$ and $D$ share a common precursor mass (292.12696) and can thus be annotated by the adduct type that produce the transformation. Similarly, mass cluster $E$ and $F$ share a common precursor mass at 383.14278. Queries to a local KEGG database are issued based on the precursor mass values, producing several compound identities that can be putatively assigned to the global \ac{RT} cluster. It is a strength of the HDP-Align approach that this putative identification step appears very naturally from the alignment results.
 
 \begin{figure}[!htbp]
-\centering\includegraphics[width=0.7\linewidth]{06-hdp/figures/figure_5.eps}
+\centering\includegraphics[width=1.0\linewidth]{06-hdp/figures/figure_5.eps}
 \centering\caption{\label{fig:glycomic_results}Precision-recall values on the alignment of 10 runs from the Glycomic dataset when $q$ (the strictness of performance evaluation as described in Section~\ref{sub:Performance-Measures}) is gradually increased.}
 \end{figure}
 
 \begin{figure}[!htbp]
-\centering\includegraphics[width=0.7\linewidth]{06-hdp/figures/figure_6.eps}
+\centering\includegraphics[width=1.0\linewidth]{06-hdp/figures/figure_6.eps}
 \centering\caption{\label{fig:metabolomic_results_alignment}Precision-recall values on the alignment of 6 runs from the Metabolomic dataset. The parameter values $(T_{m/z}, T_{rt})$ that produce the best and worst performance in SIMA are also annotated in the Figure (red boxes).}
 \end{figure}
 
 \begin{figure}[!htbp]
-\centering\includegraphics[width=0.7\linewidth]{06-hdp/figures/figure_7.eps}
+\centering\includegraphics[width=1.0\linewidth]{06-hdp/figures/figure_7.eps}
 \centering\caption[Example analysis that can be performed on the clustering objects inferred in a Gibbs sample from HDP-Align.]{\label{fig:metabolomic_results_annotations}Example analysis that can be performed on the clustering objects inferred in a Gibbs sample from HDP-Align. The outer black oval denotes a global RT cluster (generally corresponding to a metabolite compound), while the smaller dotted ovals within denote mass clusters (labelled as mass cluster $A,B,C,D,E,F$). peaks are denoted by the filled circle, with the fill colour indicating the originating run of a peak. Green colours denote additional analysis steps that can be performed on the mass cluster objects.}
 \end{figure}
 

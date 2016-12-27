@@ -11,11 +11,7 @@ Numerous methods exist to perform data clustering in an unsupervised manner \cit
 
 Generative modelling has been applied to LC-MS data. Mixture models are the building blocks of more complex generative models. In mixture models, it is assumed that the observed data can be explained by the presence of some latent variables. These variables are `latent' as they are not directly observed, rather their presence is inferred from the observed data. In \cite{Rogers2012}, mixture model clustering is used to cluster LC-MS peaks in the same run by their chromatographic profiles. The assumption made in \cite{Rogers2012} is that ionisation product peaks that are related share similar chromatographic profiles. Given $N$ peaks in the data, the method computes the pairwise Pearson correlation values for the chromatographic profiles of all peaks, resulting in an $N$-by-$N$ matrix of Pearson correlation values. The likelihood of an entry in this matrix is described by a mixture of two components: an exponential-type distribution to describe the correlation values of peaks in the same cluster and a Gaussian distribution to describe the correlation values of peaks in different clusters. Along a similar line, mixture model clustering is also used in MetAssign \cite{Daly2014} to perform the probabilistic annotations of ionisation product types and formulae to peak data. It is assumed in MetAssign that a prior knowledge of the form of known formulae is provided. Theoretical peaks are then generated using the provided formulae. The likelihood of an observed peak is computed based on how well the observed m/z, RT and intensity values fit the theoretical peaks. 
 
-Other applications of generative modelling on mass spectrometry data include modelling the assignment of formulae to peaks \cite{Rogers2009a, Silva2014}, modelling the fragmentation events of tandem mass spectrometry data, where the separation is performed using liquid chromatography (CMF-ESI, \cite{Allen2014}) or gas chromatography (CFM-EI, \cite{Allen2016}). Machine learning techniques in general have also been applied to mass spectrometry data, e.g. for the predictions of retention time \cite{Creek2011, Cao2015, Stanstrup2015} and the characteristic fingerprints of compounds from fragmentation data \cite{Heinonen2012a, Duhrkop2015}. 
-
-% A general survey of computational problems in the processing of mass spectrometry data can be found in \cite{Smith2014}.
-
-% The pre-processing of LC-MS data in a pipeline involves many sequential steps. At each step, often the `true answer' (the ground truth) as to the correctness of the step is unknown or known only for a small number of peaks. In particular for the peak grouping step, this means that in many cases, we do not know for certain what the true grouping is. 
+Other applications of generative modelling on mass spectrometry data include modelling the assignment of formulae to peaks \cite{Rogers2009a, Silva2014}, modelling the fragmentation events of tandem mass spectrometry data, where the separation is performed using liquid chromatography (CMF-ESI, \cite{Allen2014}) or gas chromatography (CFM-EI, \cite{Allen2016}). However, generative modelling also have some drawbacks. During generative modelling, we seek to model the joint distribution of the random variables of interest. This requires making certain assumptions on the process that generate the observed data, and it may be that our assumptions are poor approximations of the true underlying process. In this case, discriminative models (which seek to model the decision boundary between classes for prediction tasks) may perform better while requiring fewer training data \cite{jordan2002discriminative} and having fewer parameters to tune. Discriminative models, such as logistic regressions and Support Vector Machines, have have also been applied to mass spectrometry data for the predictions of retention time \cite{Creek2011, Cao2015, Stanstrup2015} and the characteristic fingerprints of compounds from fragmentation data \cite{Heinonen2012a, Duhrkop2015}. 
 
 \section{Mixture Model Clustering}
 \label{sub:background-mixture-model-clustering}
@@ -24,14 +20,14 @@ As an example of generative modelling, we see that during liquid chromatography,
 
 A principled way to model a generative process is through Bayesian inference. Suppose $\theta$ is the parameter of interest to the generative process that produces the data $\mathbf{y}$. In Bayesian inference, we begin by specifying a prior distribution over the model parameter $\theta$. Through the application of Bayes rule, this prior distribution is updated by the likelihood of seeing the observed data given our prior hypothesis on $\theta$, resulting in a posterior distribution:
 \begin{equation}
-p(\theta \vert \mathbf{y})=\frac{p(\mathbf{y},\theta)}{p(\mathbf{y})}=\frac{p(\mathbf{y} \vert \theta)p(\theta)}{p(\mathbf{y})}=\frac{p(\mathbf{y} \vert \theta)p(\theta)}{\int_{\theta} p(\mathbf{y} \vert \theta)p(\theta) \enspace d\theta}
+p(\theta \vert \mathbf{y})=\frac{p(\mathbf{y},\theta)}{p(\mathbf{y})}=\frac{p(\mathbf{y} \vert \theta)p(\theta)}{p(\mathbf{y})}=\frac{p(\mathbf{y} \vert \theta)p(\theta)}{\int_{\theta} p(\mathbf{y} \vert \theta)p(\theta) \enspace d\theta}.
 \label{eq:background-bayesian}
 \end{equation}
 In eq. (\ref{eq:background-bayesian}), $p(\mathbf{y},\theta)$ is the joint distribution between the data $\mathbf{y}$ and the model parameter $\theta$. This can be factorised into a product of $p(\mathbf{y} \vert \theta)$, which is the likelihood of observing the data $\mathbf{y}$ given the model parameter $\theta$, and $p(\theta)$, which is the prior distribution on the model parameter $\theta$. Normalising the joint distribution by the marginal likelihood or evidence $p(\mathbf{y})$ produces the posterior distribution $p(\theta \vert \mathbf{y})$, which is the probability of model parameter $\theta$ given the data. Inferring model parameters given the observed data is usually what we are interested in.
 
 Using the posterior distribution, we can make a prediction on a new peak, $y_{new}$ by averaging over all values of $\theta$. This results in the posterior predictive distribution:
 \begin{equation}
-p(y_{new} \vert \mathbf{y})=\int_{\theta} p(y_{new} \vert \theta) p(\theta \vert \mathbf{y}) \enspace d\theta
+p(y_{new} \vert \mathbf{y})=\int_{\theta} p(y_{new} \vert \theta) p(\theta \vert \mathbf{y}) \enspace d\theta.
 \label{eq:background-posterior-predictive}
 \end{equation}
 % It is also possible to sequentially update the posterior distribution $p(\theta \vert \mathbf{y})$ given $y_{new}$. This makes Bayesian inference suitable for online learning.
@@ -40,7 +36,7 @@ p(y_{new} \vert \mathbf{y})=\int_{\theta} p(y_{new} \vert \theta) p(\theta \vert
 % \end{equation}
 In many cases, the integrals in eqs. (\ref{eq:background-bayesian}) and (\ref{eq:background-posterior-predictive}) cannot be solved analytically and have to be approximated through maximum likelihood or sampling-based approaches.
 
-We now introduce mixture modelling for this example peak data. A probabilistic mixture model represents each cluster by a probability distribution, with a distribution being a component in the mixture model. Our resulting Gaussian mixture model for the peak data follows from \cite{Rasmussen2000}: it starts with a finite number of components (denoted by $K$) and is later extended in Section~\ref{background-dp-clustering} to an infinite mixture model, where the number of components is unbounded. The generative process for this finite mixture model can be written as the following. The conditional dependencies of random variables in the finite mixture model is also shown in Figure~\ref{fig:background-mixture-plate-diagram}A. 
+We now introduce mixture modelling for this example peak data. Note that this chapter does not introduce any original work. Instead, the materials introduced in this chapter serve as the building blocks for the subsequent chapters in this thesis, where novel models to group related peaks together will be introduced. A probabilistic mixture model represents each cluster by a probability distribution, with a distribution being a component in the mixture model. Our resulting Gaussian mixture model for the peak data follows from \cite{Rasmussen2000}: it starts with a finite number of components (denoted by $K$) and is later extended in Section~\ref{background-dp-clustering} to an infinite mixture model, where the number of components is unbounded. An infinite mixture model introduces the flexibility to add and remove components as needed, depending on the data. This is useful when we assume that a component corresponds to a chemical compound, and the number of compounds present in the sample is not known in advance and can be inferred from the data. The generative process for this finite mixture model can be written as the following. The conditional dependencies of random variables in the finite mixture model is also shown in Figure~\ref{fig:background-mixture-plate-diagram}A. 
 \begin{equation}
 \begin{aligned}
 \boldsymbol{\pi} \vert \boldsymbol{\alpha} &\sim Dir(\boldsymbol{\alpha}) \\
@@ -55,28 +51,28 @@ y_n \vert z_{nk}=1, \mu_k                         &\sim \mathcal{N}(y_n \vert \m
 \noindent \begin{centering}
 \includegraphics[width=0.8\textwidth]{03-machine-learning/figures/mixture_model.pdf}
 \par\end{centering}
-\caption[Graphical models of (1) a finite mixture model, which is extended into (2) an infinite mixture model, to cluster peaks by their retention time (RT) values.]{\label{fig:background-mixture-plate-diagram}Graphical models of (1) a finite mixture model, which is extended into (2) an infinite mixture model, to cluster peaks by their retention time (RT) values. Circles denotes random variables, squares denote fixed parameters, while the shaded node denotes an observed peak's RT.}
+\caption[Graphical models of (A) a finite mixture model, which is extended into (B) an infinite mixture model, to cluster peaks by their retention time (RT) values.]{\label{fig:background-mixture-plate-diagram}Graphical models of (1) a finite mixture model, which is extended into (2) an infinite mixture model, to cluster peaks by their retention time (RT) values. Circles denotes random variables, squares denote fixed parameters, while the shaded node denotes an observed peak's RT.}
 \end{figure}
 
 We now explain the model specification in eq. (\ref{eq:background-finite-mixture}). First we assume that peaks that are related are generated by the same component in the mixture model. Let the variable $k=1,...,K$ index the mixture components. The choice of which probability distribution to use for a component is usually determined by the type of observed data. Each observed data point $y_n$ can be considered to a random variable drawn from the generating probability distribution. Assuming that each data point is generated by a univariate Gaussian distribution, we denote by $y_n \vert \mu, \sigma^2 \sim \mathcal{N}(\mu, \sigma^2)$ that $y_n$ is distributed as a Gaussian distribution having mean $\mu$ and variance $\sigma^2$ (as an alternative parameterisation, precision, i.e. the inverse variance ($\frac{1}{\sigma^2}$) can also be used, with a higher precision implying a narrower distribution). The probability density function for this univariate Gaussian distribution is given by:
 \begin{equation}
-\mathcal{N}(y_n \vert \mu, \sigma^2) = \frac{1}{\sqrt{2\pi\sigma^2}}e^{-\frac{1}{2\sigma^2}(y_n-\mu)^2}
+\mathcal{N}(y_n \vert \mu, \sigma^2) = \frac{1}{\sqrt{2\pi\sigma^2}}e^{-\frac{1}{2\sigma^2}(y_n-\mu)^2}.
 \end{equation}
 For a single peak, its mixture model likelihood is therefore given by:
 \begin{equation}
-p(y_n \vert \boldsymbol{\mu},\boldsymbol{\pi}) = \sum_{k=1}^{K} \pi_k \mathcal{N}(y_n \vert \mu_k,\sigma^2)
+p(y_n \vert \boldsymbol{\mu},\boldsymbol{\pi}) = \sum_{k=1}^{K} \pi_k \mathcal{N}(y_n \vert \mu_k,\sigma^2),
 \end{equation}
-where $\pi_k$ is the mixture proportion (the positive weight for each component) and $\mu_k$ is mean for that component. Here $\boldsymbol{\pi}=\{\pi_{1},...,\pi_{k}\}$ denotes the vector over all mixture proportions that sums to one ($\sum_{k=1}^{K}\pi_{k}=1$). 
+where $\pi_k$ is the mixture proportion (the positive weight for each component) and $\mu_k$ is mean for that component. Here $\boldsymbol{\pi}=\{\pi_{1},...,\pi_{k}\}$ denotes the vector over all mixture proportions that sums to one $\left(\sum_{k=1}^{K}\pi_{k}=1\right)$. 
 
 In this model, each mixture component is set to have an unknown mean $\mu_{k}$ but a known variance $\sigma^2$. The choice of setting an unknown $\mu_k$ but a fixed variance for $\sigma^2$ is motivated by the following reasonable modelling assumptions: \textbf{(1)} the retention time drift of observed peaks is broadly similar across the compounds being measured, and \textbf{(2)} this parameter can be set by the user based on his knowledge on the characteristic RT drifts of the LC instrument. Each cluster mean $\mu_k$ is assumed to be generated independently by a prior Gaussian distribution, parameterised by the mean $\mu_0$ and the variance $\sigma^2_0$. Let $\boldsymbol{\mu}=\{\mu_{1},...,\mu_{k}\}$ be the vector over all component means. This results in:
 \begin{equation}
-p(\boldsymbol{\mu} \vert \mu_0, \sigma^2_0) = \prod_{k=1}^K \mathcal{N}(\mu_k \vert \mu_0, \sigma^2_0)
+p(\boldsymbol{\mu} \vert \mu_0, \sigma^2_0) = \prod_{k=1}^K \mathcal{N}(\mu_k \vert \mu_0, \sigma^2_0).
 \label{eq:background-prior-gaussian}
 \end{equation}
 We also require another random variable $z_{nk}$ to store the assignment of peak $n$ to cluster $k$, i.e. $z_{nk}=1$ if peak $n$ is assigned to cluster $k$ and 0 otherwise. Each peak is assumed to be generated independently by exactly one mixture component ($\sum_{k} z_{nk} = 1$). For a peak, its entire cluster assignments can be stored in a vector $\boldsymbol{z}_{n}$ of length $K$, where only the $k$-th entry has a value of 1 (at $z_{nk}=1$). $\boldsymbol{z}_{n}$ is assumed to be generated from a multinomial distribution having the parameter vector $\boldsymbol{\pi}$. This multinomial distribution has the probability mass function given by:
 \begin{equation}
 \begin{aligned}
-p(\boldsymbol{z}_n \vert \boldsymbol{\pi}) &= C \prod_{k=1}^{K} \pi_k^{z_{nk}}
+p(\boldsymbol{z}_n \vert \boldsymbol{\pi}) &= C \prod_{k=1}^{K} \pi_k^{z_{nk}},
 \end{aligned}
 \label{eq:background-zn_pmf}
 \end{equation}
@@ -84,13 +80,13 @@ where $C$ is the multinomial coefficient, given by $\frac{(\sum_k z_{nk})!}{\pro
 \begin{equation}
 \begin{aligned}
 p(\boldsymbol{Z} \vert \boldsymbol{\pi}) &= \prod_{n=1}^N \prod_{k=1}^{K} \pi_k^{z_{nk}} \\
-                                                              &= \prod_{k=1}^{K} \pi_k^{c_{k}}
+                                                              &= \prod_{k=1}^{K} \pi_k^{c_{k}},
 \end{aligned}
 \label{eq:background-z-given-pi}
 \end{equation}
 where $c_{k} = \sum_n z_{nk}$ is the count of peaks assigned to the $k$-th cluster. Collectively for all peaks, the joint likelihood of the observed data and the cluster assignments is:
 \begin{equation}
-p(\boldsymbol{y},\boldsymbol{Z}  \vert \boldsymbol{\mu},\boldsymbol{\pi}) = \prod_{n=1}^{N} \prod_{k=1}^{K} \big[ \pi_k \enspace \mathcal{N}(y_n \vert \mu_k,\sigma^2) \big]^{\boldsymbol{z}_{nk}}
+p(\boldsymbol{y},\boldsymbol{Z}  \vert \boldsymbol{\mu},\boldsymbol{\pi}) = \prod_{n=1}^{N} \prod_{k=1}^{K} \big[ \pi_k \enspace \mathcal{N}(y_n \vert \mu_k,\sigma^2) \big]^{\boldsymbol{z}_{nk}}.
 \label{eq:background-mixture-likelihood}
 \end{equation}
 
@@ -98,14 +94,14 @@ In our generative model, a prior distribution is also placed on $\boldsymbol{\pi
 \begin{equation}
 \begin{aligned}
 p(\boldsymbol{\pi} \vert \boldsymbol{\alpha}) &= \frac{\Gamma(\sum_{k} \alpha_{k})}{\prod_{k} \Gamma(\alpha_k)}  \prod_{k=1}^{K} \pi_k^{\alpha_{k}-1} \\
-                                                                      &\propto \prod_{k=1}^{K} \pi_k^{\alpha_{k}-1}
+                                                                      &\propto \prod_{k=1}^{K} \pi_k^{\alpha_{k}-1}.
 \end{aligned}
 \label{eq:background-pi-given-alpha}
 \end{equation}
 
 We can now state the complete joint likelihood of the model. Putting together the individual terms in eqs. (\ref{eq:background-prior-gaussian})-(\ref{eq:background-pi-given-alpha}) and their respective independence assumptions, we obtain the joint probability distribution of the model parameters and data $p(\boldsymbol{y}, \boldsymbol{Z}, \boldsymbol{\mu}, \boldsymbol{\pi} \vert \boldsymbol{\alpha}, \allowbreak \mu_0,\sigma_0^2)$, which can be factorised into: 
 \begin{equation}
-p(\boldsymbol{y}, \boldsymbol{Z}, \boldsymbol{\mu}, \boldsymbol{\pi} \vert \boldsymbol{\alpha},\mu_0,\sigma_0^2) = p(\boldsymbol{y} \vert \boldsymbol{Z}, \boldsymbol{\mu},\boldsymbol{\pi}) p(\boldsymbol{Z} \vert \boldsymbol{\pi}) p(\boldsymbol{\pi} \vert \boldsymbol{\alpha}) p(\boldsymbol{\mu} \vert \mu_0, \sigma_0^2)
+p(\boldsymbol{y}, \boldsymbol{Z}, \boldsymbol{\mu}, \boldsymbol{\pi} \vert \boldsymbol{\alpha},\mu_0,\sigma_0^2) = p(\boldsymbol{y} \vert \boldsymbol{Z}, \boldsymbol{\mu},\boldsymbol{\pi}) p(\boldsymbol{Z} \vert \boldsymbol{\pi}) p(\boldsymbol{\pi} \vert \boldsymbol{\alpha}) p(\boldsymbol{\mu} \vert \mu_0, \sigma_0^2).
 \label{eq:example-full-joint-dist}
 \end{equation}
 
@@ -113,12 +109,12 @@ p(\boldsymbol{y}, \boldsymbol{Z}, \boldsymbol{\mu}, \boldsymbol{\pi} \vert \bold
 
 Given the joint distribution in eq. (\ref{eq:example-full-joint-dist}), we can infer the posterior distribution on the assignments $\boldsymbol{Z}$, the mixture proportions $\boldsymbol{\pi}$ and the cluster means $\boldsymbol{\mu}$. This is given by:
 \begin{equation}
-p(\boldsymbol{Z},\boldsymbol{\pi},\boldsymbol{\mu} \vert \boldsymbol{y}, \boldsymbol{\alpha},\mu_0,\sigma_0^2) = \frac{p(\boldsymbol{y}, \boldsymbol{Z}, \boldsymbol{\mu},\boldsymbol{\pi} \vert \boldsymbol{\alpha},\mu_0,\sigma_0^2)}{p(\boldsymbol{y} \vert \alpha,\mu_0,\sigma_0^2)}
+p(\boldsymbol{Z},\boldsymbol{\pi},\boldsymbol{\mu} \vert \boldsymbol{y}, \boldsymbol{\alpha},\mu_0,\sigma_0^2) = \frac{p(\boldsymbol{y}, \boldsymbol{Z}, \boldsymbol{\mu},\boldsymbol{\pi} \vert \boldsymbol{\alpha},\mu_0,\sigma_0^2)}{p(\boldsymbol{y} \vert \alpha,\mu_0,\sigma_0^2)}.
 \label{eq:background-mixture-posterior}
 \end{equation}
 Substituting eq. (\ref{eq:example-full-joint-dist}) into the numerator of eq. (\ref{eq:background-mixture-posterior}) results in the following posterior distribution over the parameters that we want to infer:
 \begin{equation}
-p(\boldsymbol{Z},\boldsymbol{\pi},\boldsymbol{\mu} \vert \boldsymbol{y},\alpha,\mu_0,s_0) \propto p(\boldsymbol{y} \vert \boldsymbol{Z}, \boldsymbol{\mu},\boldsymbol{\pi}) p(\boldsymbol{Z} \vert \boldsymbol{\pi}) p(\boldsymbol{\pi} \vert \boldsymbol{\alpha}) p(\boldsymbol{\mu} \vert \mu_0, s_0)
+p(\boldsymbol{Z},\boldsymbol{\pi},\boldsymbol{\mu} \vert \boldsymbol{y},\alpha,\mu_0,s_0) \propto p(\boldsymbol{y} \vert \boldsymbol{Z}, \boldsymbol{\mu},\boldsymbol{\pi}) p(\boldsymbol{Z} \vert \boldsymbol{\pi}) p(\boldsymbol{\pi} \vert \boldsymbol{\alpha}) p(\boldsymbol{\mu} \vert \mu_0, s_0).
 \label{eq:background-mixture-expanded-posterior}
 \end{equation}
 
@@ -130,7 +126,7 @@ As the initial step in our Gibbs sampler, we initialise the cluster means $\mu_1
 
 \item We can update $\boldsymbol{z}_n$, the membership vector for peak $n$, by updating its $k$-th entry, i.e. $z_{nk}$. Simplifying eq. (\ref{eq:background-mixture-likelihood}) to consider just one $n$-th peak, we obtain the following after normalisation:
 \begin{equation}
-P(z_{nk}=1 \vert \boldsymbol{\pi}, y_n, \mu_k) = \frac{\pi_k \enspace \mathcal{N}(y_n \vert \mu_k, \sigma^2)}{\sum_{k=1}^K \pi_k \enspace \mathcal{N}(y_n \vert \mu_k, \sigma_2)}
+P(z_{nk}=1 \vert \boldsymbol{\pi}, y_n, \mu_k) = \frac{\pi_k \enspace \mathcal{N}(y_n \vert \mu_k, \sigma^2)}{\sum_{k=1}^K \pi_k \enspace \mathcal{N}(y_n \vert \mu_k, \sigma_2)}.
 \label{eq:background-mixture-conditional-z}
 \end{equation}
 
@@ -139,13 +135,13 @@ P(z_{nk}=1 \vert \boldsymbol{\pi}, y_n, \mu_k) = \frac{\pi_k \enspace \mathcal{N
 \begin{aligned}
 p(\mu_k \vert \boldsymbol{x}_k, \mu_0) &\propto p(\boldsymbol{x}_k \vert \mu_k) \cdot p(\mu_k \vert \mu_0) \\
                                                               &= \prod_{m=1}^{M_k} \mathcal{N}(x_m \vert \mu_k, \sigma^2) \cdot \mathcal{N}(\mu_k \vert \mu_0, \sigma_0) \\
-                                                           &= \prod_{m=1}^{M_k} \frac{1}{\sqrt{2\sigma^2\pi}} exp\bigg(\frac{-(x_n-\mu_k)^2}{2\sigma^2} \bigg) \cdot \frac{1}{\sqrt{2\sigma_0^2\pi}} exp\bigg(\frac{-(\mu_k-\mu_0)^2}{2\sigma_0^2} \bigg)
+                                                           &= \prod_{m=1}^{M_k} \frac{1}{\sqrt{2\sigma^2\pi}} \exp\bigg(\frac{-(x_n-\mu_k)^2}{2\sigma^2} \bigg) \cdot \frac{1}{\sqrt{2\sigma_0^2\pi}} \exp\bigg(\frac{-(\mu_k-\mu_0)^2}{2\sigma_0^2} \bigg)
 \end{aligned}                                                           
 \label{eq:background-posterior_mu_k}
 \end{equation}
 Since $p(\mu_k \vert \boldsymbol{x}_k, \mu_0)$ is a product of Gaussians, the posterior is proportional to another Gaussian, parameterised by say $\mathcal{N}(\tilde{\mu}, \tilde{\sigma}^2)$. Combining this with eq. (\ref{eq:background-posterior_mu_k}) results in:
 \begin{equation}
-exp\bigg(\frac{-(\mu_k-\tilde{\mu})^2}{2\tilde{\sigma}^2} \bigg) \propto exp\bigg(\frac{-\sum_{m=1}^{M} (x_m-\mu_k)^2}{2\sigma^2} + \frac{-(\mu_k-\mu_0)^2}{2\sigma_0^2}\bigg)
+\exp\bigg(\frac{-(\mu_k-\tilde{\mu})^2}{2\tilde{\sigma}^2} \bigg) \propto \exp\bigg(\frac{-\sum_{m=1}^{M} (x_m-\mu_k)^2}{2\sigma^2} + \frac{-(\mu_k-\mu_0)^2}{2\sigma_0^2}\bigg)
 \label{eq:background-solving-posterior-mu_k}
 \end{equation}
 Simplifying eq. (\ref{eq:background-solving-posterior-mu_k}) and completing the squares, we obtain the following parameters for $\mathcal{N}(\mu_k \vert \tilde{\mu}, \tilde{\sigma}^2)$:
@@ -218,7 +214,7 @@ A derivation for the integral in eq. (\ref{eq:background-integrated-pi}) can be 
 Eq. (\ref{eq:background-integrated-pi}) reveals the clustering property of the Dirichlet-multinomial mixture model. The larger a $k$-th cluster is, the greater the prior probability for the currently sampled peak to be placed into that cluster. This is balanced by the prior hyperparameter $\alpha_k$. In the absence of any prior knowledge, often $\alpha_k$ is set to be symmetric ($\alpha_k=\frac{\alpha}{K})$, and in this case, small values for $\alpha_k$ will result in fewer, larger clusters as $c_k$ dominates, while large values for $\alpha_k$ will smooth the prior probabilities, reducing the influence of $c_k$ and producing more uniform clusters. In this manner, $\alpha_k$ plays the role of the pseudo-count that controls how strong the influence of $c_k$ is. 
 \end{enumerate}
 
-Having derived the terms in the conditional distribution for $z_{nk}$, we can now describe our CGS for this mixture model. We loop over each peak in a random order and remove the information of that peak from the model. We then resample the assignment of peak $n$ to each of the $K$ clusters using eq. (\ref{eq:background-collapsed-gibbs}), normalised to form a probability distribution. Upon sampling a new cluster ($z_{nk}=1$), we assign peak $n$ to cluster $k$ and add the information of that peak back into the model. This consists of one iteration in our CGS. Each iteration generates a sample, and the collection of samples can be used to approximate our posterior model parameters.
+Having derived the terms in the conditional distribution for $z_{nk}$, we can now describe our CGS for this mixture model. We loop over each peak in a random order and remove the information of that peak from the model. We then resample the assignment of peak $n$ to each of the $K$ clusters using eq. (\ref{eq:background-collapsed-gibbs}), normalised to form a probability distribution. Upon sampling a new cluster $\left(z_{nk}=1\right)$, we assign peak $n$ to cluster $k$ and add the information of that peak back into the model. This consists of one iteration in our CGS. Each iteration generates a sample, and the collection of samples can be used to approximate our posterior model parameters.
 
 \section{Dirichlet Process Mixture Model Clustering\label{background-dp-clustering}}
 
@@ -237,7 +233,7 @@ Eq. (\ref{eq:background-dp-definition}) may seem rather abstract. A constructive
 \begin{equation}
 \begin{aligned}
 \beta_k &\sim Beta(1, \alpha) \\
-\pi_k     &= \beta_k \prod_{l=1}^{k-1} (1-\beta_l) 
+\pi_k     &= \beta_k \prod_{l=1}^{k-1} (1-\beta_l),
 \end{aligned}
 \label{eq:background-stick-breaking-construction}
 \end{equation}
@@ -250,7 +246,7 @@ To use eq. (\ref{eq:background-stick-breaking-construction}), first we see that 
          &= \beta_3(1-\beta_1-\beta_2(1-\beta_1)) \\
          &= \beta_3(1-\pi_1-\pi_2) \\
 ... \\
-\pi_k &= \beta_k(1-\sum_{l=1}^{k-1} \pi_l)
+\pi_k &= \beta_k(1-\sum_{l=1}^{k-1} \pi_l).
 \end{aligned}
 \label{eq:background-pi-gem}
 \end{equation}
@@ -258,7 +254,7 @@ To start the stick-breaking process, we begin with a hypothetical unit stick (of
 
 In the mixture setting, the vector $\boldsymbol{\pi}$ generated in this manner can be used as the mixture proportions in an infinite mixture model. Instead of sampling a finite-length vector from the Dirichlet distribution in eq. (\ref{eq:background-finite-mixture}), we generate $\boldsymbol{\pi}$ from the stick-breaking process. This lets us formulate the generative process for our data as a mixture model having infinitely-many mixture components using the stick-breaking construction as the prior over $\boldsymbol{\pi}$, resulting in the graphical model shown in Figure~\ref{fig:background-mixture-plate-diagram}B. This also lets us specify an infinite mixture model in term of samples from the Dirichlet Process. Given $\boldsymbol{\pi}$ generated as before and a base distribution $H$ from which we can sample, let $\phi_k$ be a value sampled from $H$ (this can be, for instance, the mean $\mu_k$ of a mixture component). Then $G$ is a discrete distribution that is also an infinite mixture model:
 \begin{equation}
-G=\sum_{k=1}^{\infty} \pi_k \delta_{\phi_k}
+G=\sum_{k=1}^{\infty} \pi_k \delta_{\phi_k},
 \end{equation}
 where $\delta_{\phi_k}$ is the delta function that has its entire probability distribution concentrated at $\phi_k$. We use the notation $G \sim DP(\alpha, H)$ to denote that $G$ is a sample from the Dirichlet Process parameterised by the concentration parameter $\alpha$ and the base distribution $H$ \cite{teh2011dirichlet}. In this manner, $H$ is the expected value of the DP, and the DP is a distribution over distributions. A sample from the DP is a discrete probability distribution, even if the base distribution $H$ is continuous. The level of this discretisation is controlled by $\alpha$. Small $\alpha$ results in a distribution concentrated at fewer discrete values, while large $\alpha$ produces a distribution with support over many discrete values.
 
@@ -267,7 +263,7 @@ An alternative formulation of an infinite mixture model can be given using a DP 
 \begin{aligned}
 G \vert \alpha, H  &\sim DP(\alpha, H) \\
 \mu_k \vert G     &\sim G \\
-y_n \vert \mu_k  &\sim \mathcal{N}(y \vert \mu_k, \sigma^2)
+y_n \vert \mu_k  &\sim \mathcal{N}(y \vert \mu_k, \sigma^2).
 \end{aligned}
 \label{eq:background-infinite-mixture-dp}
 \end{equation}
@@ -286,14 +282,14 @@ In Figure~\ref{fig:g-from-dp}, we illustrate the generative process in eq. (\ref
 \noindent \begin{centering}
 \includegraphics[width=0.6\textwidth]{03-machine-learning/figures/dp_samples.pdf}
 \par\end{centering}
-\caption[An illustration of the generative process for the DP mixture model in eq. (\ref{eq:background-infinite-mixture-dp}).]{\label{fig:g-from-dp}An illustration of the generative process for the DP mixture model in eq. (\ref{eq:background-infinite-mixture-dp}). First, we require a base distribution to sample for discrete values, shown in \textbf{(A)}. Given $H$ and some concentration parameter $\alpha$, we generate a discrete distribution $G$. In \textbf{(B)}, we see that $G$ contains two unique discrete values sampled from $H$, represented by the red and green crosses. Each discrete value in G $\phi_k$ is also a cluster mean $\mu_k$. \textbf{(C)} The noisy observed values is generated by sampling for $\mu_k$ from $G$, and sampling for $y_n$ conditioned on the $\mu_k$.}
+\caption[An illustration of the generative process for the DP mixture model in eq. (\ref{eq:background-infinite-mixture-dp}).]{\label{fig:g-from-dp}An illustration of the generative process for the DP mixture model in eq. (\ref{eq:background-infinite-mixture-dp}). First, we require a base distribution to sample for discrete values, shown in \textbf{(A)}. Given $H$ and some concentration parameter $\alpha$, we generate a discrete distribution $G$. In \textbf{(B)}, we see that $G$ contains two unique discrete values sampled from $H$, represented by the red and green crosses. Each discrete value in G $\phi_k$ is also a cluster mean $\mu_k$. \textbf{(C)} The noisy observed values are generated by sampling for $\mu_k$ from $G$, and sampling for $y_n$ conditioned on the $\mu_k$.}
 \end{figure}
 
 \subsection{Collapsed Gibbs Sampling for a Dirichlet Process Mixture Model \label{background-cgs-dpmixture}}
 
 Having defined the generative process for an infinite mixture model, we now perform inference on the model parameters. In particular for Gibbs sampling, we require the probability of the current $n$-th data point that is being sampled to be in a cluster ($P(z_{nk})=1$), conditioned on the assignments of other data points ($\boldsymbol{Z}^{-}$). We show how we derive this by modifying the original collapsed Gibbs sampler as the number of components $K$ tends to infinity. Assuming a symmetric prior on the Dirichlet hyperparameter, $\alpha_k=\frac{\alpha}{K}$, the conditional probability on the assignment of peak $n$ to cluster $k$ from eq. (\ref{eq:background-integrated-pi}) becomes:
 \begin{equation}
-P(z_{nk}=1 \vert \boldsymbol{Z}^{-}, \boldsymbol{\alpha}) = \frac{c_k + \frac{\alpha}{K}}{\alpha+N-1}
+P(z_{nk}=1 \vert \boldsymbol{Z}^{-}, \boldsymbol{\alpha}) = \frac{c_k + \frac{\alpha}{K}}{\alpha+N-1}.
 \label{eq:background-integrated-pi-symmetric}
 \end{equation}
 As before, $c_k$ in eq. (\ref{eq:background-integrated-pi-symmetric}) refers to the number of peaks assigned to cluster $k$, excluding the current one being sampled. Note that the denumerator of eq. (\ref{eq:background-integrated-pi-symmetric}) is $\alpha+N-1$ (instead of just $\alpha+N$) to exclude the current data point being sampled in this iteration of Gibbs sampling. Taking the limit of eq. (\ref{eq:background-integrated-pi-symmetric}) as $K$ tends to infinity results in the following conditional probability for $z_{nk}=1$:
@@ -302,7 +298,7 @@ P(z_{nk}=1 \vert \boldsymbol{Z}^{-}, \boldsymbol{\alpha}) =
 \begin{cases}
     \frac{c_k}{\alpha+N-1}, & \text{for existing clusters} \\
     \frac{\alpha}{\alpha+N-1}, & \text{for a new cluster}
-\end{cases}
+\end{cases}.
 \label{eq:background-crp}
 \end{equation}
 The conditional probability in eq. (\ref{eq:background-crp}) is often formulated as the Chinese Restaurant Process (CRP). In this process, an analogy is proposed based on a Chinese restaurant having an infinite number of tables. Tables correspond to clusters while customers correspond to the observed data points. The CRP is a random process that defines the probability of a customer to sit at a particular table, conditioned on the seating arrangements of other customers. For a non-empty table, this probability is proportional to $c_k$, the number of other customers seated at a table, while for an empty table, the probability is proportional to $\alpha$. Under exchangeablity, the joint posterior distribution in the CRP is invariant to the ordering of the items \cite{aldous1985exchangeability}. This means we can assume that the $n$-th data point is the last customer to arrive in the CRP, and the conditional probability for $P(z_{nk}=1)$ is thus proportional to eq. (\ref{eq:background-crp}). Coupled with a likelihood for a customer to be assigned to a table, we can use this to modify our conditional probability for Gibbs sampling, resulting in:
@@ -311,14 +307,14 @@ P(z_{nk}=1 \vert \boldsymbol{Z}^{-}, \boldsymbol{\alpha}) \propto
 \begin{cases}
     c_k \cdot p(y_n \vert \boldsymbol{Z}^{-},  \boldsymbol{y}^{-}, \mu_0) \\
     \alpha \cdot p(y_n \vert \mu_0)
-\end{cases}
+\end{cases}.
 \label{eq:background-infinite-mixture-model-sampling}
 \end{equation}
-The top term in eq. (\ref{eq:background-infinite-mixture-model-sampling}) corresponds to the probability of being assigned to existing non-empty clusters. As in the finite mixture model case, this prior probability is proportional to $c_k$, the number of data points (peaks) currently assigned to cluster $k$ excluding the $n$-th peak that is being sampled, while the likelihood $p(y_n \vert \boldsymbol{Z}^{-},  \boldsymbol{y}^{-}, \mu_0)$ is defined in eq. (\ref{eq:background-tilde-mu-sigma-variance}) or equivalently in eq. (\ref{eq:background-tilde-mu-sigma-precision}) when precision is used. The lower term in eq. (\ref{eq:background-infinite-mixture-model-sampling}) corresponds to the probability of creating a new cluster with the prior probability proportional the product of $\alpha$ and the data likelihood. In this particular case due to conjugacy, we can derive $p(y_n \vert \mu_0)$, the likelihood of $y_n$ conditioned on the hyperparameter mean $\mu_0$ directly by marginalising over all empty components, resulting in:
+The top term in eq. (\ref{eq:background-infinite-mixture-model-sampling}) corresponds to the probability of being assigned to existing non-empty clusters. As in the finite mixture model case, this prior probability is proportional to $c_k$, the number of data points (peaks) currently assigned to cluster $k$ excluding the $n$-th peak that is being sampled, while the likelihood $p(y_n \vert \boldsymbol{Z}^{-},  \boldsymbol{y}^{-}, \mu_0)$ is defined in eq. (\ref{eq:background-tilde-mu-sigma-variance}) or equivalently in eq. (\ref{eq:background-tilde-mu-sigma-precision}) when precision is used. The lower term in eq. (\ref{eq:background-infinite-mixture-model-sampling}) corresponds to the probability of creating a new cluster with the prior probability proportional the product of $\alpha$ and the data likelihood. In this particular case, due to conjugacy, we can derive $p(y_n \vert \mu_0)$, the likelihood of $y_n$ conditioned on the hyperparameter mean $\mu_0$ directly by marginalising over all empty components, resulting in:
 \begin{equation}
 \begin{aligned}
 p(y_n \vert \mu_0) &= \int p(y_n \vert \mu_k) p(\mu_k \vert \mu_0) \enspace d_{\mu_k}
-                               &= \mathcal{N}(y_n \vert \mu_0, \sigma^2 + \sigma_0^2)
+                               &= \mathcal{N}(y_n \vert \mu_0, \sigma^2 + \sigma_0^2).
 \end{aligned}
 \label{eq:background-new-table-likelihood}
 \end{equation}
@@ -334,11 +330,11 @@ To understand the HDP mixture model, first we need to define the hierarchical Di
 \begin{equation}
 \begin{aligned}
 G_0 \vert \alpha_0, H &\sim DP(\alpha_0, H) \\
-G_j \vert \alpha_j, G_0 &\sim DP(\alpha_j, G_0)
+G_j \vert \alpha_j, G_0 &\sim DP(\alpha_j, G_0).
 \end{aligned}
 \label{eq:background-hdp-process}
 \end{equation}
-As a property of the DP, $G_0$ is a discrete distribution with probabilities that sums to 1 (regardless of whether $H$ is continuous or discrete). This means $G_0$ has a support over the discrete values ${\phi_1, \phi_2, ... }$ drawn from its base distribution $H$. We use $G_0$ to represent the prior distribution over the global clusters. Each $G_j$ is a prior distribution over the file-specific local clusters, and since $G_j$ is drawn from a DP with $G_0$ as its base distribution, each $G_j$ is discrete and has a support over the same discrete values as $G_0$. This is where the sharing property of the HDP comes about. The set of discrete values in $G_0$, which represent the prior values on the global clusters, are inherited (copied) as the discrete values in $G_j$, which represents represent the prior values on the local clusters.
+As a property of the DP, $G_0$ is a discrete distribution with probabilities that sum to 1 (regardless of whether $H$ is continuous or discrete). This means $G_0$ has a support over the discrete values ${\phi_1, \phi_2, ... }$ drawn from its base distribution $H$. We use $G_0$ to represent the prior distribution over the global clusters. Each $G_j$ is a prior distribution over the file-specific local clusters, and since $G_j$ is drawn from a DP with $G_0$ as its base distribution, each $G_j$ is discrete and has a support over the same discrete values as $G_0$. This is where the sharing property of the HDP comes about. The set of discrete values in $G_0$, which represent the prior values on the global clusters, are inherited (copied) as the discrete values in $G_j$, which represents represent the prior values on the local clusters.
 
 To define an HDP mixture model, we complete the hierarchical prior defined in eq. (\ref{eq:background-hdp-process}) with a data-generating distribution. Continuing with our example of clustering peaks by their RT values, the data now comes in $J$ input files, each corresponding to an LC-MS run. Let $j=1,...,J$ indexes over the input files and $n=1,...,N$ indexes over the peaks in a particular $j$-th file. Within the $j$-th file, the observed data is $\boldsymbol{y}_j=\{y_{j1}, y_{j2}, ..., y_{jn}\}$. We assume that within a file, the noise on the observed RT values is generated by a Gaussian with mean $\mu_{jk}$ and a fixed variance $\sigma^2$. As the base distribution, we set $H=\mathcal{N}(\mu_0, \sigma_0^2)$. Together with the prior in eq. (\ref{eq:background-hdp-process}), we obtain the following HDP mixture model that explains how the RT values of peaks in multiple files can be generated:
 \begin{equation}
@@ -346,17 +342,17 @@ To define an HDP mixture model, we complete the hierarchical prior defined in eq
 G_0 \vert \alpha_0, H &\sim DP(\alpha_0, H) \\
 G_j \vert \alpha_j, G_0 &\sim DP(\alpha_j, G_0) \\
 \mu_{jk} \vert G_j               &\sim G_j \\
-y_{jn} \vert \mu_{jk}           &\sim \mathcal{N}(y_{jn} \vert \mu_{jk}, \sigma^2)
+y_{jn} \vert \mu_{jk}           &\sim \mathcal{N}(y_{jn} \vert \mu_{jk}, \sigma^2).
 \end{aligned}
 \label{eq:background-infinite-mixture-hdp}
 \end{equation}
-This generative process from the HDP mixture model in eq. (\ref{eq:background-infinite-mixture-hdp}) is also illustrated in Figure~\ref{fig:g-from-hdp}. Note the key difference between HDP mixture (Figure~\ref{fig:g-from-hdp}) and the DP mixture (Figure~\ref{fig:g-from-dp}). In particular note the addition of another level of hierarchy to the HDP mixture model. Within file $j$, the discrete values $\mu_{jk}$ in $G_{j}$ are drawn from another DP having $G_{0}$ as its base. This makes it possible for clustering parameters to be shared. 
+This generative process from the HDP mixture model in eq. (\ref{eq:background-infinite-mixture-hdp}) is also illustrated in Figure~\ref{fig:g-from-hdp}. Note the key difference between the HDP mixture (Figure~\ref{fig:g-from-hdp}) and the DP mixture (Figure~\ref{fig:g-from-dp}). In particular note the addition of another level of hierarchy to the HDP mixture model. Within file $j$, the discrete values $\mu_{jk}$ in $G_{j}$ are drawn from another DP having $G_{0}$ as its base. This makes it possible for clustering parameters to be shared. 
 
 \begin{figure}
 \noindent \begin{centering}
 \includegraphics[width=0.6\textwidth]{03-machine-learning/figures/hdp_samples.pdf}
 \par\end{centering}
-\caption[An illustration of the generative process for the HDP mixture model defined in eq. (\ref{eq:background-infinite-mixture-hdp}).]{\label{fig:g-from-hdp}An illustration of the generative process for the HDP mixture model defined in eq. (\ref{eq:background-infinite-mixture-hdp}). Similar to the DP mixture, we have a base distribution shown in \textbf{(A)}. Given $H$ and some concentration parameter $\alpha$, we generate a global distribution $G_0$. In \textbf{(B)}, we see that $G_0$ contains three unique discrete values. We then generate a file-specific distribution $G_j$ by sampling from a DP with $G_0$ as the base distribution. As a consequence, $G_j$ contains only discrete values copied from $G_0$. In \textbf{(C)}, the noisy observed values within each file is generated by sampling for $\mu_k$ from $G_j$, and sampling for $y_n$ conditioned on the $\mu_k$.}
+\caption[An illustration of the generative process for the HDP mixture model defined in eq. (\ref{eq:background-infinite-mixture-hdp}).]{\label{fig:g-from-hdp}An illustration of the generative process for the HDP mixture model defined in eq. (\ref{eq:background-infinite-mixture-hdp}). Similar to the DP mixture, we have a base distribution shown in \textbf{(A)}. Given $H$ and some concentration parameter $\alpha$, we generate a global distribution $G_0$. In \textbf{(B)}, we see that $G_0$ contains three unique discrete values. We then generate a file-specific distribution $G_j$ by sampling from a DP with $G_0$ as the base distribution. As a consequence, $G_j$ contains only discrete values copied from $G_0$. In \textbf{(C)}, the noisy observed values within each file are generated by sampling for $\mu_k$ from $G_j$, and sampling for $y_n$ conditioned on the $\mu_k$.}
 \end{figure}
 
 \subsection{Gibbs Sampling for a Hierarchical Dirichlet Process Mixture Model}
@@ -379,7 +375,7 @@ P(z_{jnk}=1 \vert y_{jn}, ...)\propto\begin{cases}
 \begin{array}{c}
 c_{jk}\cdot p(y_{jn} \vert z_{jnk}=1,...)\\
 \alpha_{j}\cdot p(y_{jn} \vert z_{jnk^{*}}=1,...)
-\end{array}\end{cases}\label{eq:background-hdp-conditional}
+\end{array}\end{cases}.\label{eq:background-hdp-conditional}
 \end{dmath}
 
 The conditional prior in eq. (\ref{eq:background-hdp-conditional}) is also known as the Chinese Restaurant Franchise (CRF), which can be seen as an extension of the CRP (described in Section~\ref{background-cgs-dpmixture}) that accommodates multiple files. In the CRF, a file now corresponds to a restaurant, each with an infinite number of tables. A new customer arrives at a restaurant and is assigned to an existing table with probability proportional to $c_{jk}$ (the number of other customers already sitting at the table $k$ in file $j$) or to a new table with probability proportional to $\alpha_j$ (the concentration parameter of the lower-level DP in file $j$). Across all restaurants, a global menu of dishes is maintained. The first customer who sits at a new table orders a dish from the global menu, which is shared by any subsequent customers who join that table. Existing dishes are served to the table with probability proportional to $c_i$ (the number of tables across the entire franchise already served the $i$-th dish), while a new dish is created with probability proportional to $\alpha_0$ (the concentration parameter of the top-level DP).
@@ -398,7 +394,7 @@ P(v_{jki}=1 \vert \boldsymbol{x}_{jk}, ...)\propto\begin{cases}
 \begin{array}{c}
 c_{i}\cdot p(\boldsymbol{x}_{jk} \vert v_{jki}=1,...)\\
 \alpha_{0}\cdot p(\boldsymbol{x}_{jk} \vert v_{jki^{*}}=1,...)
-\end{array}\end{cases}\label{eq:background-hdp-conditional-top-level}
+\end{array}\end{cases}.\label{eq:background-hdp-conditional-top-level}
 \end{dmath}
 In eq. (\ref{eq:background-hdp-conditional-top-level}), $p(\boldsymbol{x}_{jk} \vert v_{jki}=1,...)$ is given by the likelihood of the member peaks $\boldsymbol{x}_{jk}$ of local cluster $k$ in file $j$ to be placed under a global cluster $i$ with parameter $\phi_{i}$, therefore $p(\boldsymbol{x}_{jk} \vert v_{jki}=1,...) = \prod_{m=1}^{M_{jk}} \mathcal{N}(x_{jm} \vert \phi_{i}, \sigma^2)$ following the assumed independence assumption of $x_{jm}$ conditioned on $\phi_{i}$. Similarly, to evaluate $p(\boldsymbol{x}_{jk} \vert v_{jki^{*}}=1,...)$, first we sample for a new $\phi_{i^{*}}$ from the base distribution $\mathcal{N}(\mu_0, \sigma_0^2)$ then evaluate the data likelihood of $\boldsymbol{x}_{jk}$ under $\phi_{i^{*}}$. 
 
@@ -406,13 +402,13 @@ In eq. (\ref{eq:background-hdp-conditional-top-level}), $p(\boldsymbol{x}_{jk} \
 
 As the last step of our Gibbs sampler, we update each global cluster parameter $\phi_i$ (and its instantiated copies in each of the $j$-th file). For a particular $i$-th global cluster, this depends on the observations currently associated to it via any of the local clusters. We denote by $\boldsymbol{x}_{i}$ the set of RT values of peaks currently assigned to the $i$-th global cluster from across all the files, and there are $M_i$ such peaks. The posterior density for $\phi_i$ is given by:
 \begin{equation}
-p(\phi_i \vert \boldsymbol{x}_i, \mu_0, ..) \propto \mathcal{N}(\phi_i \vert \mu_0, \sigma_0^2) \prod_{m=1}^{M_i} \mathcal{N}(x_i \vert \phi_i, \sigma^2)
+p(\phi_i \vert \boldsymbol{x}_i, \mu_0, ..) \propto \mathcal{N}(\phi_i \vert \mu_0, \sigma_0^2) \prod_{m=1}^{M_i} \mathcal{N}(x_i \vert \phi_i, \sigma^2).
 \label{eq:background-tilde-hdp-parameters-update}
 \end{equation}
 As in eq. (\ref{eq:background-tilde-mu-sigma}) for the single-file DP mixture case, this posterior can be simplified into another Gaussian $\mathcal{N}(\phi_i \vert \tilde{\mu}, \tilde{\sigma}^2)$ parameterised by:
 \begin{equation}
 \tilde{\mu} = \tilde{\sigma}^2 \bigg( \frac{\sum_{m=1}^{M_i} x_m}{\sigma^2} + \frac{\mu_0}{\sigma_0^2} \bigg), \enspace
-\tilde{\sigma}^2 = \frac{1}{\frac{M}{\sigma^2} + \frac{1}{\sigma^2_0}} 
+\tilde{\sigma}^2 = \frac{1}{\frac{M}{\sigma^2} + \frac{1}{\sigma^2_0}}.
 \label{eq:background-tilde-hdp-posterior}
 \end{equation}
 Appendix A in \cite{teh2012hierarchical} also describes how the DP concentration parameters for each $\alpha_j$ and $\alpha_0$ can be updated..
@@ -429,9 +425,11 @@ In Section~\ref{background-lda}, we provide a brief description to the LDA model
 
 \section{Latent Dirichet Allocation\label{background-lda}}
 
-In the standard mixture setting, a set of related data points that can be grouped together are said to be explained by a cluster (a probability distribution). For instance, a set of peaks are related through having close RT values. They can be grouped together under one cluster, and following the generative process, we assume that all observations in the same group are produced by a single probability distribution. In this section, we relaxes that assumption and introduces Latent Dirichlet Allocation (LDA) \cite{Blei2003}, another generative model that allows for related data points in the same group to be produced by a mixture of distributions instead.
+In the standard mixture setting, a set of related data points that can be grouped together are said to be explained by a cluster (a probability distribution). For instance, a set of peaks are related through having close RT values. They can be grouped together under one cluster, and following the generative process, we assume that all observations in the same group are produced by a single probability distribution. In this section, we relax that assumption and introduce Latent Dirichlet Allocation (LDA) \cite{Blei2003}, another generative model that allows for related data points in the same group to be produced by a mixture of distributions instead.
 
-The classical application of LDA is for topic discovery in the text domain, although LDA-like models have been applied to continuous data \cite{rogers2005latent,weinshall2013lda,das2015gaussian}. In the text application, data points are individual words, which can be grouped, forming a document. In a document, certain words tend to co-occur --- for instance, `bayesian' and `probability' are two such words -- and ignoring word orders, we can represent this pattern of co-occurrences by a multinomial distribution on the counts of words in a document. In the standard mixture model construction, we would have a document assigned to a cluster, and all words from the same document generated by sampling from the same multinomial distribution linked to the cluster. LDA relaxes that assumption by allowing for a document to contain words generated by a mixture of different \emph{topics}. A topic in this case corresponds to a multinomial distribution over the entire vocabulary space.
+The classical application of LDA is for topic discovery in the text domain, although LDA-like models have been applied to continuous data \cite{rogers2005latent,weinshall2013lda,das2015gaussian}. In the text application, data points are individual words, which can be grouped, forming a document. In a document, certain words tend to co-occur --- for instance, `Bayesian' and `probability' are two such words -- and ignoring word orders, we can represent this pattern of co-occurrences by a multinomial distribution on the counts of words in a document. In the standard mixture model construction, a document is assigned to a cluster, and all words from the same document are generated by sampling from the same multinomial distribution linked to the cluster. Following its generative assumption, the multinomial mixture therefore model provides a `hard' clustering result where documents belongs to one cluster and all words in the document are generated by that cluster alone. 
+
+An alternative to the multinomial mixture is the probabilistic Latent Semantic Analysis (pLSA) \cite{hofmann1999probabilistic}, which extends the generative process by allowing for a document to contain words drawn by a mixture of different \emph{topics}. A topic in this case corresponds to a multinomial distribution over the entire vocabulary space and serves the same purpose as a cluster in the multinomial mixture model. However, in pLSA, the document-to-topic proportion is a point estimate that is inferred from the document collection. The resulting pLSA model trained on a particular document collection may over-fit and have problems generalising to new and unseen documents from a different collection (having different topic proportions). LDA extends upon pLSA by placing a Dirichlet prior on the document-to-topic proportions, allowing for unseen documents to be account by the model in a principled way. Particularly for smaller data, the choice of document-to-topic prior distribution in LDA is also shown to be important and may lead to better modelling performance \cite{wallach2009rethinking}.
 
 We now describe the LDA model for text. Let $n=1,...,N$ index the unique words (vocabularies) and $d=1,...,D$ index the documents in our collection. We denote by $w_{dn}$ to the $n$-th unique word in the $d$-th document. We also require the index $k=1,...,K$ over the topics, and let $z_{dn}$ refer to the assignment of $w_{dn}$ to any of the $k$-th topic. The generative process for LDA is given as follows. For a $d$-th document, a multinomial $\boldsymbol{\theta}_{d}$ over the $K$ topics, which is the document-to-topic distribution for that document, is sampled. This document-to-topic distribution provides the mixture proportions of topics that explain the words in the document. Each document is also associated to a $\boldsymbol{z}_d$, the vector of assignment of words to topics. For each word in the document, $z_{dn}$, the assignment of the $n$-th word in the $d$-th document to a particular $k$-th topic, is sampled. Given $z_{dn}=k$, the actual word is generated by sampling from the $k$-th topic-to-word distribution $\boldsymbol{\phi}_{z_{dn}}$. A prior Dirichlet distribution parameterised by $\boldsymbol{\alpha}$ is placed on the document-to-topic multinomials, and similarly, another prior Dirichlet parameterised by $\boldsymbol{\beta}$ is placed on the topic-to-word multinomials. 
 
@@ -450,7 +448,7 @@ z_{dn} \vert \boldsymbol{\theta}_{d}      &\sim Multinomial(\boldsymbol{\theta}_
 \noindent \begin{centering}
 \includegraphics[width=0.5\textwidth]{03-machine-learning/figures/lda.pdf}
 \par\end{centering}
-\caption[Graphical model of the Latent Dirichlet Allocation model.]{\label{fig:background-lda}Graphical model of the Latent Dirichlet Allocation model. Circles denotes random variables, while the shaded node denotes the observed word value.}
+\caption[Graphical model of the Latent Dirichlet Allocation model.]{\label{fig:background-lda}Graphical model of the Latent Dirichlet Allocation model. Circles denote random variables, while the shaded node denotes the observed word value.}
 \end{figure}
 
 To state the joint distribution of the model, we need to define more notation. Let $\boldsymbol{W}=\{\boldsymbol{w}_1, \boldsymbol{w}_2, ..., \boldsymbol{w}_d\}$ denote the entire collection of documents and $\boldsymbol{Z}$ the entire set of assignment variables for all documents, $\boldsymbol{Z} = \{\boldsymbol{z}_1, \boldsymbol{z}_2, ..., \boldsymbol{z}_d\}$. The multinomial parameter sets for all the document-to-topic distributions are $\boldsymbol{\Theta}=\{\boldsymbol{\theta}_{1}, \boldsymbol{\theta}_{2}, ..., \boldsymbol{\theta}_{d}\}$. Similarly, the multinomial parameter sets for all topic-to-word distributions are $\boldsymbol{\Phi}=\{\boldsymbol{\phi}_1, \boldsymbol{\phi}_2, ..., \boldsymbol{\phi}_k\}$. Then the joint probability distribution is given by:
@@ -458,10 +456,12 @@ To state the joint distribution of the model, we need to define more notation. L
 \begin{aligned}
 p(\boldsymbol{W}, \boldsymbol{Z}, \boldsymbol{\Theta}, \boldsymbol{\Phi} \vert \boldsymbol{\alpha}, \boldsymbol{\beta}) &= p(\boldsymbol{\Phi} \vert \boldsymbol{\beta}) \cdot p(\boldsymbol{\Theta} \vert \boldsymbol{\alpha}) \cdot p(\boldsymbol{Z} \vert \boldsymbol{\Theta}) \cdot  p(\boldsymbol{W} \vert \boldsymbol{\Phi}, \boldsymbol{Z}) \\
                                                                                                                                                                                           &= \Bigg[\prod_{k=1}^{K} p(\boldsymbol{\phi}_k \vert \boldsymbol{\beta})\Bigg] \cdot \Bigg[\prod_{d=1}^{D} p(\boldsymbol{\theta}_d \vert \boldsymbol{\alpha})\Bigg] \cdot \Bigg[\prod_{d=1}^{D} \prod_{n=1}^{N} p(z_{dn} \vert \boldsymbol{\theta}_d)\Bigg] \cdot \\
-                                                                                                                                                                                           &\quad \Bigg[\prod_{d=1}^{D} \prod_{n=1}^{N} p(w_{dn} \vert \boldsymbol{\phi}_{z_{dn}})\Bigg]
+                                                                                                                                                                                           &\quad \Bigg[\prod_{d=1}^{D} \prod_{n=1}^{N} p(w_{dn} \vert \boldsymbol{\phi}_{z_{dn}})\Bigg].
 \end{aligned}
 \label{eq:background-lda-full-joint}
 \end{equation}
+
+Since its introduction in \cite{Blei2003}, numerous extensions have been proposed to the standard LDA model. Here we highlight some interesting extensions that address the shortcomings of the standard LDA model. In the LDA model, the number of topics ($K$) has to be chosen in advance or estimated via some model comparison procedure, such as cross-validation. To address this, the Hierarchical Dirichlet Process model, introduced in Section~\ref{background-hdp-clustering}, can also be used to perform topic modelling, while allowing for topics to be created and deleted as necessary based on the data. Correlations among topics are also absent from the original LDA model. This is introduced in the Correlated Topic Model \cite{blei2006correlated}. Topics are also flat in the original LDA model, which is addressed in the hierarchical Latent Dirichlet Allocation (hLDA) model \cite{griffiths2004hierarchical}. In the hLDA model, a tree hierarchy of topics are introduced using a nested Chinese Restaurant Process. Higher level topics in the tree corresponds to more general concepts, while low-level topics are more specific. Lastly, topics in LDA are defined over a set of finite words that cannot change over time,. An infinite vocabulary model \cite{zhai2013online} extends upon this by drawing topics from a Dirichlet Process with a base distribution over all possible words. This allows topics to contain words that change and evolve over time as the model is continuously trained on new data in a streaming context.
 
 \subsection{Collapsed Gibbs Sampling for Latent Dirichlet Allocation}
 
@@ -470,7 +470,7 @@ Similar to the mixture model case, inference in LDA can be performed via a colla
 \begin{aligned}
 P({z}_{dn}=k \vert \boldsymbol{Z}^{-}, \boldsymbol{W}, \boldsymbol{\alpha}, \boldsymbol{\beta}) &\propto \int_{\boldsymbol{\Theta}} \int_{\boldsymbol{\Phi}} p(\boldsymbol{W}, \boldsymbol{Z}, \boldsymbol{\Theta}, \boldsymbol{\Phi} \vert \boldsymbol{\alpha}, \boldsymbol{\beta}) \enspace d\boldsymbol{\Theta} \enspace d\boldsymbol{\Phi} \\
                                                                                                                                                     &\propto \int_{\boldsymbol{\Theta}} \int_{\boldsymbol{\Phi}} p(\boldsymbol{\Phi} \vert \boldsymbol{\beta}) \cdot p(\boldsymbol{\Theta} \vert \boldsymbol{\alpha}) \cdot p(\boldsymbol{Z} \vert \boldsymbol{\Theta}) \cdot  p(\boldsymbol{W} \vert \boldsymbol{\Phi}, \boldsymbol{Z}) \enspace d\boldsymbol{\Theta} \enspace d\boldsymbol{\Phi} \\
-                                                                                                                                                    &\propto \Bigg[ \int_{\boldsymbol{\Theta}}  p(\boldsymbol{Z} \vert \boldsymbol{\Theta}) \cdot p(\boldsymbol{\Theta} \vert \boldsymbol{\alpha}) \enspace d\boldsymbol{\Theta} \Bigg] \Bigg[\int_{\boldsymbol{\Phi}} p(\boldsymbol{W} \vert \boldsymbol{\Phi}, \boldsymbol{Z}) \cdot p(\boldsymbol{\Phi} \vert \boldsymbol{\beta}) \enspace d\boldsymbol{\Phi} \Bigg] \\ 
+                                                                                                                                                    &\propto \Bigg[ \int_{\boldsymbol{\Theta}}  p(\boldsymbol{Z} \vert \boldsymbol{\Theta}) \cdot p(\boldsymbol{\Theta} \vert \boldsymbol{\alpha}) \enspace d\boldsymbol{\Theta} \Bigg] \Bigg[\int_{\boldsymbol{\Phi}} p(\boldsymbol{W} \vert \boldsymbol{\Phi}, \boldsymbol{Z}) \cdot p(\boldsymbol{\Phi} \vert \boldsymbol{\beta}) \enspace d\boldsymbol{\Phi} \Bigg]. \\ 
 \label{eq:lda-gibbs}
 \end{aligned}
 \end{equation}
@@ -481,33 +481,33 @@ For the prior term $p({z}_{dn}=k \vert ...)$, marginalising over all $\boldsymbo
 \begin{equation}
 \begin{aligned}
 P({z}_{dn}=k \vert ...) &= \int_{\boldsymbol{\Theta}}  p(\boldsymbol{Z} \vert \boldsymbol{\Theta}) \cdot p(\boldsymbol{\Theta} \vert \boldsymbol{\alpha}) \enspace d\boldsymbol{\Theta} \\
-                                  &= \prod_{d=1}^{D} \int_{\boldsymbol{\theta}_d} \Bigg[ p(\boldsymbol{z}_{d} \vert \boldsymbol{\theta}_d) \cdot p(\boldsymbol{\theta}_d \vert \boldsymbol{\alpha}) \Bigg] d\boldsymbol{\theta}_d \\
+                                  &= \prod_{d=1}^{D} \int_{\boldsymbol{\theta}_d} \Bigg[ p(\boldsymbol{z}_{d} \vert \boldsymbol{\theta}_d) \cdot p(\boldsymbol{\theta}_d \vert \boldsymbol{\alpha}) \Bigg] d\boldsymbol{\theta}_d. \\
 \end{aligned}                                  
 \label{eq:lda-gibbs-prior}
 \end{equation}
 After integrating the Dirichlet-Multinomial distribution from $p(\boldsymbol{z}_{d} \vert \boldsymbol{\theta}_d) \cdot p(\boldsymbol{\theta}_d \vert \boldsymbol{\alpha})$ in eq. (\ref{eq:lda-gibbs-prior}) and simplifying the resulting expression that contains gamma functions, it can be shown in \cite{carpenter2010integrating} that eq. (\ref{eq:lda-gibbs-prior}) reduces to this simple expression:
 \begin{equation}
-P({z}_{dn}=k \vert ...) \propto  c_{dk} + {\alpha}_k
+P({z}_{dn}=k \vert ...) \propto  c_{dk} + {\alpha}_k,
 \label{eq:lda-gibbs-prior-simple}
 \end{equation}
 with $c_{dk}$ the number of words from document $n$ currently assigned to topic $k$, excluding the current word being sampled. Similarly for the likelihood term of $P({w}_{dn} \vert {z}_{dn}=k, ...)$, marginalising over all $\boldsymbol{\phi}_k$ parameters produces:
 \begin{equation}
 \begin{aligned}
 P({w}_{dn} \vert {z}_{dn}=k, ...) &= \int_{\boldsymbol{\Phi}} p(\boldsymbol{W} \vert \boldsymbol{\Phi}, \boldsymbol{Z}) \cdot p(\boldsymbol{\Phi} \vert \boldsymbol{\beta}) \enspace d\boldsymbol{\Phi} \\
-                                                 &= \prod_{k=1}^{K} \int_{\boldsymbol{\phi}_k} \Bigg[ p(\boldsymbol{\phi}_k \vert \boldsymbol{\beta}) \cdot \prod_{d=1}^{D} \prod_{n=1}^{N} p(w_{dn} \vert \boldsymbol{\phi}_{z_{dn}}) \Bigg]\enspace d\boldsymbol{\phi}_k
+                                                 &= \prod_{k=1}^{K} \int_{\boldsymbol{\phi}_k} \Bigg[ p(\boldsymbol{\phi}_k \vert \boldsymbol{\beta}) \cdot \prod_{d=1}^{D} \prod_{n=1}^{N} p(w_{dn} \vert \boldsymbol{\phi}_{z_{dn}}) \Bigg]\enspace d\boldsymbol{\phi}_k,
 \end{aligned}
 \label{eq:lda-gibbs-likelihood}
 \end{equation}
 which reduces to:
 \begin{equation}
-P({w}_{dn} \vert {z}_{dn}=k, ...) \propto \frac{c_{kn} + {\beta}_n}{\sum_{n} c_{kn} + {\beta}_n}
+P({w}_{dn} \vert {z}_{dn}=k, ...) \propto \frac{c_{kn} + {\beta}_n}{\sum_{n} c_{kn} + {\beta}_n},
 \label{eq:lda-gibbs-likelihood-simple}
 \end{equation}
 where $c_{kn}$ is the total number of the $n$-th word currently assigned to topic $k$, excluding the current word being sampled.  
 
 Combining the prior and likelihood terms, the following conditional distribution is obtained for the assignment of word $n$ in document $d$ to topic $k$:
 \begin{equation}
-P({z}_{dn}=k \vert \boldsymbol{Z}^{-}, \boldsymbol{W}, \boldsymbol{\alpha}, \boldsymbol{\beta}) \propto (c_{dk} + {\alpha}_k) \cdot \frac{ c_{kn} + {\beta}_n}{\sum_{n} c_{kn} + {\beta}_n}
+P({z}_{dn}=k \vert \boldsymbol{Z}^{-}, \boldsymbol{W}, \boldsymbol{\alpha}, \boldsymbol{\beta}) \propto (c_{dk} + {\alpha}_k) \cdot \frac{ c_{kn} + {\beta}_n}{\sum_{n} c_{kn} + {\beta}_n}.
 \label{eq:lda-gibbs-combined}
 \end{equation}
 
@@ -515,7 +515,7 @@ For each sample, we can update the multinomial parameter sets $\boldsymbol{\Thet
 
 Using the expectation of the Dirichlet distribution, we obtain the updated value for $\theta_{dk}$ (the $k$-th entry in ${\boldsymbol{\theta}_{d}}$) and also ${\phi}_{kn}$ (the $n$-th entry in $\boldsymbol{\phi}_{k}$) as:
 \begin{align}
-{\theta}_{dk} = \frac{c_{dk}+{\alpha}_k}{\sum_{k} c_{dk}+{\alpha}_k}, \enspace {\phi}_{kn} = \frac{c_{kn}+{\beta}_n}{\sum_{n} c_{kn}+{\beta}_n}
+{\theta}_{dk} = \frac{c_{dk}+{\alpha}_k}{\sum_{k} c_{dk}+{\alpha}_k}, \enspace {\phi}_{kn} = \frac{c_{kn}+{\beta}_n}{\sum_{n} c_{kn}+{\beta}_n},
 \label{eq:background-lda-updated-theta-phi}
 \end{align}
 where $c_{dk}$ is the count of words from document $d$ assigned to topic $k$ and $c_{kn}$ is the count of the $n$-th words assigned to topic $k$. 

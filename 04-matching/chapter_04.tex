@@ -32,7 +32,7 @@ Our proposed alignment method combines a novel similarity score with maximum wei
 
 A peak feature refers to a tuple of $(m/z,RT)$ produced as output after the initial peak detection stage of LC-MS data. Here, m/z is the mass-to-charge value and RT the retention time value of a peak feature. Suppose we wish to align run A containing $N_A$ peaks with run B containing $N_B$ peaks.  Alignment between two runs can be represented as a matching problem on a bipartite graph $G$, where nodes in the graph are the features, edges are the potential correspondence between features and the weights on the edges are the similarity scores (entries in $S$) between features. In SIMA \cite{Voss2011a}, the Gale-Shapley algorithm \cite{Gusfield1989} is used to find a stable matching in $G$. A matching is stable if there are no two features in different runs that would prefer to be matched to each other than to their currently matched partners. Since the stable matching is computed based on ranked preference, valuable information could be discarded as distances between features are converted to ranks. As such, we prefer to use a method that maximises the total sum of similarity scores of matched features (maximum weighted matching).
 
-The benefit of maximum weighted bipartite matching in solving the peak correspondence problem has been studied in \cite{Wang2013} in their LWBMatch tool. LWBMatch shows that such matching method, coupled to a local regression method, is able to align runs having large and systematic drifts in RT values. The well-known Hungarian algorithm \cite{Kuhn1955} attributed to Kuhn and Munkres is used in LWBMatch to solve this problem. The time complexity of the Hungarian algorithm is $O(n^{3})$, where $n$ is the number of peaks in the larger set. While the Hungarian algorithm's implementation can be improved to $O(n^{2}log\, n)$ by using Fibonacci heaps for the shortest path computation, the polynomial time complexity required in this scheme is often too slow to be practical for alignments of the large number of runs produced in large-scale untargeted LC-MS studies. Consequently, we compute an approximation of the maximum weighted matching using a simple greedy algorithm that runs in $O(m\, log\, n)$ time, where $n$ and $m$ denote the number of vertices and edges in the bipartite graph $G$ to be solved. The greedy algorithm is straightforward to describe: pick the heaviest edge $e$ in $G$, where $e$ represents a potential match between nodes (features). Add $e$ to the matching solution $M$ and remove all other edges adjacent to $e$ from $G$. Repeat until all edges in $G$ have been exhausted. This simple greedy algorithm is known to provide a lower bound of at least 1/2 of the maximum weight in the matching \cite{Maximum2011}. From the direct matching of peaks across two runs, we obtain a list of aligned peaksets, defined as the sets of correspondent peaks that have been matched across runs. In the case of two runs, an aligned peakset has a size of at most 2.
+The benefit of maximum weighted bipartite matching in solving the peak correspondence problem has been studied in \cite{Wang2013} in their LWBMatch tool. LWBMatch shows that such matching method, coupled to a local regression method, is able to align runs having large and systematic drifts in RT values. The well-known Hungarian algorithm \cite{Kuhn1955} attributed to Kuhn and Munkres is used in LWBMatch to solve this problem. The time complexity of the Hungarian algorithm is $O(n^{3})$, where $n$ is the number of peaks in the larger set. While the Hungarian algorithm's implementation can be improved to $O(n^{2}\log\, n)$ by using Fibonacci heaps for the shortest path computation, the polynomial time complexity required in this scheme is often too slow to be practical for alignments of the large number of runs produced in large-scale untargeted LC-MS studies. Consequently, we compute an approximation of the maximum weighted matching using a simple greedy algorithm that runs in $O(m\, \log\, n)$ time, where $n$ and $m$ denote the number of vertices and edges in the bipartite graph $G$ to be solved. The greedy algorithm is straightforward to describe: pick the heaviest edge $e$ in $G$, where $e$ represents a potential match between nodes (features). Add $e$ to the matching solution $M$ and remove all other edges adjacent to $e$ from $G$. Repeat until all edges in $G$ have been exhausted. This simple greedy algorithm is known to provide a lower bound of at least 1/2 of the maximum weight in the matching \cite{Maximum2011}. From the direct matching of peaks across two runs, we obtain a list of aligned peaksets, defined as the sets of correspondent peaks that have been matched across runs. In the case of two runs, an aligned peakset has a size of at most 2.
 
 \subsection{Feature Similarity}
 
@@ -50,9 +50,9 @@ where $D_{max}$ is the maximum computed distance between peaks in the two runs b
 
 The similarity score matrix $\mathbf{W}$ can now be combined with related peak information to obtain a final score, $\mathbf{S}$:
 \begin{equation}\label{eq:combining-eq}
-\boldsymbol{S}=\alpha \boldsymbol{W}+(1-\alpha)\boldsymbol{L}
+\boldsymbol{S}=\alpha \boldsymbol{W}+(1-\alpha)\boldsymbol{L},
 \end{equation}
-where $\boldsymbol{L}$ is the cluster similarity score between the two peaks in a single run (described below), and $\alpha$ ($0\leq\alpha\leq1$) is a parameter controlling the relative influence of the two components. To compute $\boldsymbol{L}$, we require related peak groupings from the two runs being aligned. This takes the form of an $N_A\times N_A$ matrix $\mathbf{C}^A$ for run A and an $N_B\times N_B$ matrix $\mathbf{C}^B$ for run B. Entries in $\boldsymbol{C}^A$ and $\boldsymbol{C}^B$ can be either binary (0, 1) or probability values, depending on the peak grouping algorithm used. For example, if a greedy clustering approach is applied to the features in run A, the $ij$-th element of $\mathbf{C}^A$ will be either 1 or 0, depending on whether the $i$-th and $j$-th features (peaks) in A are clustered together (1) or not (0). Note that in the following, we define the diagonal components of both matrices to be zero to avoid double counting. We then compute $\mathbf{L}$ as follows:
+where $\boldsymbol{L}$ is the cluster similarity score between the two peaks in a single run (described below), and $\alpha \left(0\leq\alpha\leq1\right)$ is a parameter controlling the relative influence of the two components. To compute $\boldsymbol{L}$, we require related peak groupings from the two runs being aligned. This takes the form of an $N_A\times N_A$ matrix $\mathbf{C}^A$ for run A and an $N_B\times N_B$ matrix $\mathbf{C}^B$ for run B. Entries in $\boldsymbol{C}^A$ and $\boldsymbol{C}^B$ can be either binary (0, 1) or probability values, depending on the peak grouping algorithm used. For example, if a greedy clustering approach is applied to the features in run A, the $ij$-th element of $\mathbf{C}^A$ will be either 1 or 0, depending on whether the $i$-th and $j$-th features (peaks) in A are clustered together (1) or not (0). Note that in the following, we define the diagonal components of both matrices to be zero to avoid double counting. We then compute $\mathbf{L}$ as follows:
 \begin{equation}\label{eq:L-multiply}
 \boldsymbol{L}=\boldsymbol{C}^A \cdot \boldsymbol{W} \cdot \boldsymbol{C}^B.
 \end{equation}
@@ -76,7 +76,7 @@ y_{n}|\boldsymbol{z}_{nk}=1,\mu_{k} & \sim & \mathcal{N}(\mu_{k},\delta^{-1})
 where $\boldsymbol{\pi}$ is the mixing proportions, distributed according to the $GEM$ (Griffiths, Engen and McCloskey) distribution (details in Chapter~\ref{c:ml-background}). The $GEM$ distribution over $\boldsymbol{\pi}$ is parameterised by the concentration parameter $\gamma$ and is described through the stick-breaking construction:
 \begin{eqnarray}
 \beta_{k} & \sim & Beta(1,\gamma)\\
-\boldsymbol{\pi}_{k} & = & \beta_{k}\prod_{l=1}^{k-1}(1-\beta_{l})
+\boldsymbol{\pi}_{k} & = & \beta_{k}\prod_{l=1}^{k-1}(1-\beta_{l}).
 \end{eqnarray}
 The mixture component mean $\mu_{k}$ is drawn from a base Gaussian distribution with mean $\mu_{0}$ and precision $\tau_{0}$. We set $\mu_{0}$ to the mean of the observed data, while $\tau_{0}$ is set to a broad value of 5E-3. Analytical inference is not tractable here, so we use the Gibbs sampling scheme for inference. To do this, we need the conditional probability of $p(\boldsymbol{z}_{nk}=1,...)$ of peak $n$ to be in an existing cluster $k$ (or $k^{*}$ if a new cluster is to be created), given any other parameters in the model. This conditional probability is given by:
 \begin{equation}
@@ -84,16 +84,16 @@ P(\boldsymbol{z}_{nk}=1|\mathbf{y}_{n},\ldots)\propto\begin{cases}
 \begin{array}{c}
 c_{k}\cdot p(\mathbf{y}_{n}|\boldsymbol{z}_{nk}=1,...)\\
 \gamma\cdot p(\mathbf{y}_{n}|\boldsymbol{z}_{nk^{*}}=1,...)
-\end{array}\end{cases}\label{eq:table_likelihood}
+\end{array}\end{cases}\label{eq:table_likelihood},
 \end{equation}
 where $c_{k}$ is the current number of members (peaks) in an existing cluster $k$. $p(\mathbf{y}_{n}|\boldsymbol{z}_{nk}=1,...)$ is the likelihood of peak $\mathbf{y}_{n}$ in an existing cluster $k$. We can marginalise over all mixture components and get: 
 \begin{eqnarray}
-p(\mathbf{y}_{n}|\boldsymbol{z}_{nk}=1...) & = & \mathcal{N}(\mathbf{y}_{n}|\mu_{k},\lambda_{k}^{-1})\label{eq:15}
+p(\mathbf{y}_{n}|\boldsymbol{z}_{nk}=1...) & = & \mathcal{N}(\mathbf{y}_{n}|\mu_{k},\lambda_{k}^{-1})\label{eq:15},
 \end{eqnarray}
 where $\lambda_{k}=((\tau_{0}+\sigma c_{k})^{-1}+\delta^{-1})^{-1}$ and $\mu_{k}=\frac{1}{\lambda_{k}}\left[(\mu_{0}\tau_{0})+(\delta\sum_{n}\mathbf{y}_{n\in k})\right]$. Here, $\mathbf{y}_{n\in k}$ denotes the RT values of any peak $n$ currently assigned to cluster $k$, and $c_{k}$ the count of such peaks. The conditional probability of peak $n$ to be in a new cluster
 $k^{*}$ is:
 \begin{eqnarray}
-p(\mathbf{y}_{n}|\boldsymbol{z}_{nk^{*}}=1...) & = & \mathcal{N}(\mathbf{y}_{n}|\mu_{0},\lambda_{k^{*}}^{-1})\label{eq:15-1}
+p(\mathbf{y}_{n}|\boldsymbol{z}_{nk^{*}}=1...) & = & \mathcal{N}(\mathbf{y}_{n}|\mu_{0},\lambda_{k^{*}}^{-1})\label{eq:15-1},
 \end{eqnarray}
 where $\lambda_{k^{*}}=(\tau_{0}^{-1}+\sigma^{-1})^{-1}$.
 In a step of the Gibbs sampling procedure, we perform the assignment of peak $n$ to cluster $k$, creating new cluster $k^{*}$ if necessary. Using the posterior summaries across all samples drawn $S^{*}=\frac{1}{R}\sum_{r=1}^{R}s{}_{r}$, where $s{}_{r}$ is the $r$-th posterior sample collected after a suitable burn-in period and $R$ is the total number of samples taken (excluding burn-in samples), we can obtain the marginal posterior of the probability of two features (peaks) to be in the same cluster $k$ averaged across all samples. These probabilities comprise the elements of $\mathbf{C}^A$ and $\mathbf{C}^B$ (i.e.\ the $ij$-th element of $\mathbf{C}^A$ is the proportion of samples from run A in which peaks $i$ and $j$ were in the same cluster), which can be used in eq. \ref{eq:L-multiply}.
@@ -174,7 +174,7 @@ We use a metabolomic dataset generated from a mixture of 104 standard metabolite
 \end{tabular}
 \par\end{centering}
 
-\caption{No. of features in the full metabolomic dataset\label{tab:No.-of-features-metabolomic}}
+\caption{No. of features in the full metabolomic dataset.\label{tab:No.-of-features-metabolomic}}
 \end{table}
 
 Alignment ground truth was constructed from the putative identification of peaks in each of the 11 runs separately at 3 ppm using mzMatch's Identify module, taking as additional input a database of 104 compounds known to be present and a list of common adducts in positive ionisation mode (Table \ref{tab:adducts}). This is followed by matching of features that share same annotations across runs to construct the alignment ground truth. Only peaks unambiguously identified with exactly one annotation are used for this purpose, as peaks with more than one annotations per run are discarded from the ground truth construction. The results from this process is an alignment ground truth for a smaller subset of peaks in the runs that can be reliably identified at high mass precision. Note that constructing alignment ground truth in this manner does not introduce bias to the ground truth as the identification information is not used during the alignment stage.
@@ -234,7 +234,7 @@ Alignment ground truth was constructed from the putative identification of peaks
 \end{tabular}
 \par\end{centering}
 
-\caption{No. of features in the full glycomic dataset from \cite{Tsai2013a}\label{tab:No.-of-features-glycomic}}
+\caption{No. of features in the full glycomic dataset from \cite{Tsai2013a}.\label{tab:No.-of-features-glycomic}}
 \end{table}
 
 \subsection{Experimental setup\label{sub:experimental-setup}}
@@ -500,7 +500,7 @@ Computational times of the proposed methods are primarily affected by the number
 \hline 
 \end{tabular}
 \par\end{centering}
-\caption{\label{tab:Running-Time-P1}Example measured execution time in seconds on fractions of the P1 dataset}
+\caption{\label{tab:Running-Time-P1}Example measured execution time in seconds on fractions of the P1 dataset.}
 \end{table}
 
 \section{Conclusion}

@@ -3,7 +3,7 @@
 
 Liquid chromatography combined with mass spectrometry (LC-MS) has emerged as one of the most popular methods of measurements in the untargeted study of proteins (proteomics) and metabolites (metabolomics). Proteins and metabolites serve as crucial building blocks in the body and play a vital role in the cellular maintenance of any organism. The observable physical changes to the physical traits of an organism (phenotype) is often expressed in the metabolome, and in this manner, metabolomics is often regarded as the -omics closest to the phenotype. Understanding and characterising the proteome and metabolome provide important insights into the working of any biological system.
 
-Before the raw LC-MS data can be used for further analysis, it has to be processed in a data pre-processing pipeline. This starts with peak detection, where observed peaks having mass-to-charge (m/z), retention time (RT) and intensity values are extracted from the raw data. The two important steps that follow after peak detection are the alignment and identification steps. In most studies, multiple samples are obtained and measured (producing \emph{biological replicates}) or alternatively a sample is run through the LC-MS instruments multiple times (producing \emph{technical replicates}). Alignment refers to the matching of these peaks across multiple LC-MS runs. In identification, we seek to associate the information on which compounds generate the observed peaks. Fragmentation data are produced when parent peaks, produced from the first-stage mass spectrometry of compounds, are further fragmented in a tandem mass spectrometry set-up. This results in characteristic patterns of fragment peaks that can be used to aid in the annotations of compound identity through the matching against spectral databases. 
+The processing of the raw LC-MS data in a pipeline is often necessary before biological conclusions can be drawn from the studies. The pipeline begins with peak detection, where observed peaks having mass-to-charge (m/z), retention time (RT) and intensity values are extracted from the raw data. In most studies, multiple samples are obtained and measured (producing \emph{biological replicates}) or alternatively a sample is run through the LC-MS instruments multiple times (producing \emph{technical replicates}). Correspondent peaks that are the same across multiple LC-MS runs are matched in the peak alignment step of the pipeline. During identification, the identities of compounds that generate the observed peaks are deduced. At this stage, fragmentation data, produced when parent peaks are further fragmented in a tandem mass spectrometry process, can also be used to aid in the annotations of compound identity through matching against spectral databases. 
 
 In many cases, LC-MS data pre-processing is challenging. The lack of knowledge in the complete composition of compounds in a sample means that we do not know for certain which compounds are present in the sample. Compounds ionise differently during mass spectrometry, while a single compound can produce multiple observed peaks, making data interpretation difficult as there is no one-to-one correspondence between the observed peaks and the compounds that generate them. While the m/z information of a peak is generally preserved across runs, retention time drift means the observed RT values can vary among peaks produced on different instruments or even peaks produced on the same instrument but measured at a different time period. This makes alignment difficult. Identification using fragmentation data is also hampered by the limited coverage of spectral databases when comparing the observed fragmentation patterns. 
 
@@ -15,24 +15,24 @@ Untargeted liquid chromatography mass spectrometry data pre-processing is a chal
 
 \section{List of Contributing Papers}
 
-The work described in this thesis has led to the following publication:
+The work described in this thesis has led to the following publications \cite{wandy2015incorporating, vanderHooft29112016}:
 
 \begin{enumerate}
-\item Wandy, J., Daly, R., Breitling, R., Rogers, S. (2015). "Incorporating peak grouping information for alignment of multiple liquid chromatography-mass spectrometry datasets". \textit{Bioinformatics}, 31(12), 1999-2006.
+\item J. Wandy, R. Daly, R. Breitling, and S. Rogers, ``Incorporating peak grouping infor- mation for alignment of multiple liquid chromatography-mass spectrometry datasets,'' \textit{Bioinformatics}, vol. 31, no. 12, pp. 1999-2006, 2015.
+\item J. J. J. van der Hooft, J. Wandy, M. P. Barrett, K. E. V. Burgess, and S. Rogers, ``Topic modeling for untargeted substructure exploration in metabolomics,'' \textit{Proceedings of the National Academy of Sciences}, vol. 113, no. 48, pp. 13738-13743, 2016.
 \end{enumerate}
 
-Additionally the following manuscripts are still under review:
+Additionally the following manuscript is still under review:
 
-\begin{enumerate}
-\item Wandy, J., van der Hooft, J. J. J., Rogers, S. (2016). "Ionization Product Clustering to Improve Peak Alignment in LC-MS-based Metabolomics" submitted to \textit{Bioinformatics}.
-\item van der Hooft, J. J. J., Wandy, J., Barrett, M., Burgess, K. V., Rogers, S. (2016). "Topic Modeling for Untargeted Substructure Exploration in Metabolomics" submitted to \textit{Proceedings of the National Academy of Sciences} (PNAS).
-\end{enumerate}
+\begin{itemize}
+\item J. Wandy, J. J. J. van der Hooft, and S. Rogers, ``Ionization Product Clustering to Improve Peak Alignment in LC-MS-based Metabolomics' submitted to \textit{BMC Bioinformatics}.
+\end{itemize}
 
-Chapter~\ref{c:matching} of this thesis is based on the first published paper, Chapters~\ref{c:precursor-clustering} and \ref{c:lda} are based on the two manuscripts that are under review. Finally, the author also contributed to the following work but it is not a part of this thesis:
+Chapter~\ref{c:matching} of this thesis is based on the first published paper \cite{wandy2015incorporating}, while Chapter~\ref{c:lda} is based on the second published paper \cite{vanderHooft29112016}. Chapter~\ref{c:precursor-clustering} is based on the manuscript that is under review. Finally, the author also contributed to the following work \cite{Daly2014} but it is not a part of this thesis:
 
-\begin{enumerate}
-\item Daly, R., Rogers, S., Wandy, J., Jankevics, A., Burgess, K. E., Breitling, R. (2014). MetAssign: probabilistic annotation of metabolites from LC–MS data using a Bayesian clustering approach. \textit{Bioinformatics}, 30(19), 2764-2771.
-\end{enumerate}
+\begin{itemize}
+\item R. Daly, S. Rogers, J. Wandy, A. Jankevics, K. E. V. Burgess, and R. Breitling, ``MetAssign: probabilistic annotation of metabolites from LC-MS data using a Bayesian clustering approach.'' \textit{Bioinformatics}, vol. 30, no. 19, pp. 2764-2771, 2014
+\end{itemize}
 
 \section{Overview of Thesis and Research Contributions}
 
@@ -48,7 +48,7 @@ The contributions of this thesis are:
 The remainder of this thesis is structured as follows:
 
 \begin{itemize}
-\item \textbf{Chapter~\ref{c:background}} contains a discussion of background relevant to computational mass spectrometry techniques. In particular, the chapter provides a brief context of how mass spectometry based -omics fit in the broader picture of computational biology, the nature of explains the nature of liquid chromatography mass spectometry data and the necessary pre-processing steps before the data can be used for further analysis.
+\item \textbf{Chapter~\ref{c:background}} contains a discussion of background relevant to computational mass spectrometry techniques. In particular, the chapter provides a brief context of how mass spectrometry based -omics fit in the broader picture of computational biology. In addition, the chapter also explains the nature of liquid chromatography mass spectrometry data and what necessary pre-processing steps have to be performed before the data can be used for further analysis.
 \item \textbf{Chapter~\ref{c:ml-background}} introduces probabilistic modelling, with a particular focus on the construction of mixture models and other related generative models that are used in the rest of the thesis.
 \item \textbf{Chapter~\ref{c:matching}} presents an approach that combines matching and clustering information to produce a better alignment result.
 \item \textbf{Chapter~\ref{c:precursor-clustering}} presents the PrecursorCluster model to group related ionisation product peaks into IP clusters. This chapter also introduces ways these IP clusters can be used to produce an improved alignment performance.

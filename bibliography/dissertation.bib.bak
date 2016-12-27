@@ -31,10 +31,14 @@
 }
 
 @article{Silva2014,
-journal = {Bioinformatics},
-pages = {1--2},
-title = {{ProbMetab: an R package for Bayesian probabilistic annotation of LC-MS-based metabolomics.}},
-year = {2014}
+  title={{ProbMetab: an R package for Bayesian probabilistic annotation of LC--MS-based metabolomics}},
+  author={Silva, Ricardo R and Jourdan, Fabien and Salvanha, Diego M and Letisse, Fabien and Jamin, Emilien L and Guidetti-Gonzalez, Simone and Labate, Carlos A and V{\^e}ncio, Ricardo ZN},
+  journal={Bioinformatics},
+  volume={30},
+  number={9},
+  pages={1336--1337},
+  year={2014},
+  publisher={Oxford Univ Press}
 }
 
 @book{gelman2014bayesian,
@@ -70,20 +74,24 @@ year = {2014}
 }
 
 @article{ferguson1973bayesian,
-  title={{A Bayesian Analysis of Some Nonparametric Problems}},
-  author={Ferguson, Thomas S},
-  journal={The Annals of Statistics},
-  pages={209--230},
-  year={1973},
-  publisher={JSTOR}
+ author = {Thomas S. Ferguson},
+ journal = {The Annals of Statistics},
+ number = {2},
+ pages = {209-230},
+ publisher = {Institute of Mathematical Statistics},
+ title = {A {B}ayesian Analysis of Some Nonparametric Problems},
+ volume = {1},
+ year = {1973}
 }
 
 @article{ishwaran2011gibbs,
-  title={Gibbs sampling methods for stick-breaking priors},
-  author={Ishwaran, Hemant and James, Lancelot F},
-  journal={Journal of the American Statistical Association},
-  year={2011},
-  publisher={Taylor \& Francis}
+author = {Hemant Ishwaran and Lancelot F James},
+title = {Gibbs Sampling Methods for Stick-Breaking Priors},
+journal = {Journal of the American Statistical Association},
+volume = {96},
+number = {453},
+pages = {161-173},
+year = {2001},
 }
 
 @incollection{aldous1985exchangeability,
@@ -335,14 +343,14 @@ year = {2007}
 }
 
 @article{Wang2012,
-  title={A split-merge MCMC algorithm for the hierarchical Dirichlet process},
+  title={A split-merge {MCMC} algorithm for the hierarchical {D}irichlet process},
   author={Wang, Chong and Blei, David M},
   journal={arXiv preprint arXiv:1201.1657},
   year={2012}
 }
 
 @article{Perera2011,
-  title={Aligning extracted LC-MS peak lists via density maximization},
+  title={Aligning extracted {LC}-{MS} peak lists via density maximization},
   author={Perera, Venura and Zabala, Marta De Torres and Florance, Hannah and Smirnoff, Nicholas and Grant, Murray and Yang, Zheng Rong},
   journal={Metabolomics},
   volume={8},
@@ -402,14 +410,14 @@ year = {2009}
 }
 
 @article{wandy2015incorporating,
-  title={Incorporating peak grouping information for alignment of multiple liquid chromatography-mass spectrometry datasets},
-  author={Wandy, Joe and Daly, R{\'o}n{\'a}n and Breitling, Rainer and Rogers, Simon},
-  journal={Bioinformatics},
-  volume={31},
-  number={12},
-  pages={1999--2006},
-  year={2015},
-  publisher={Oxford Univ Press}
+author = {Wandy, Joe and Daly, Rónán and Breitling, Rainer and Rogers, Simon}, 
+title = {Incorporating peak grouping information for alignment of multiple liquid chromatography-mass spectrometry datasets},
+volume = {31}, 
+number = {12}, 
+pages = {1999-2006}, 
+year = {2015}, 
+doi = {10.1093/bioinformatics/btv072}, 
+journal = {Bioinformatics} 
 }
 
 @article{dunn2011procedures,
@@ -615,11 +623,13 @@ year = {2006}
 }
 
 @article{Scheltema2009a,
-author = {Scheltema, RA and Decuypere, S and Dujardin, JC},
-file = {:Users/joewandy/Documents/Mendeley Desktop/Scheltema, Decuypere, Dujardin/Bioanalysis/Scheltema, Decuypere, Dujardin - 2009 - Simple data-reduction method for high-resolution LC-MS data in metabolomics.pdf:pdf},
+author = {Scheltema, R a and Decuypere, S and Dujardin, Jc and Watson, Dg and Jansen, Rc and Breitling, R},
 journal = {Bioanalysis},
-mendeley-groups = {Metabolomics - Alignment},
-title = {{Simple data-reduction method for high-resolution LC-MS data in metabolomics}},
+number = {9},
+pages = {1551--7},
+pmid = {21083103},
+title = {{Simple data-reduction method for high-resolution LC-MS data in metabolomics.}},
+volume = {1},
 year = {2009}
 }
 
@@ -722,11 +732,12 @@ year = {2007}
 }
 
 @inproceedings{Rasmussen2000,
-  title={{The infinite Gaussian mixture model}},
+  title={The infinite {G}aussian mixture model.},
   author={Rasmussen, Carl Edward},
+  booktitle={NIPS},
   volume={12},
   pages={554--560},
-  year={2000}
+  year={1999}
 }
 
 @article{Annesley2003,
@@ -845,11 +856,14 @@ year = {2012}
 }
 
 @article{Dunn2012,
-author = {Dunn, WB and Erban, A and Weber, RJM and Creek, DJ},
-journal = {Metabolomics},
-mendeley-groups = {Metabolomics - Identification,Metabolomics - Review Papers},
-title = {{Mass appeal: metabolite identification in mass spectrometry-focused untargeted metabolomics}},
-year = {2012}
+  title={Mass appeal: metabolite identification in mass spectrometry-focused untargeted metabolomics},
+  author={Dunn, Warwick B and Erban, Alexander and Weber, Ralf JM and Creek, Darren J and Brown, Marie and Breitling, Rainer and Hankemeier, Thomas and Goodacre, Royston and Neumann, Steffen and Kopka, Joachim and others},
+  journal={Metabolomics},
+  volume={9},
+  number={1},
+  pages={44--66},
+  year={2013},
+  publisher={Springer}
 }
 
 @article{Zhang2009,
@@ -937,7 +951,7 @@ year = {2015}
 
 @article{Kind2007,
   title={Seven golden rules for heuristic filtering of molecular formulas obtained by accurate mass spectrometry},
-  author = {Kind, Tobias and Fiehn, Oliver},
+  author = {Kind, Tobias and \vspace{0mm}Fiehn, Oliver},
   journal={BMC Bioinformatics},
   volume={8},
   number={1},
@@ -1382,14 +1396,15 @@ volume = {8},
 year = {2012}
 }
 
-@article{Kuhn1955,
-author = {Kuhn, HW},
-file = {:Users/joewandy/Library/Application Support/Mendeley Desktop/Downloaded/Kuhn - 1955 - The Hungarian method for the assignment problem.pdf:pdf},
-isbn = {9783540682745},
-journal = {Naval research logistics quarterly},
-mendeley-groups = {New papers (ML)},
-title = {{The Hungarian method for the assignment problem}},
-year = {1955}
+@article {Kuhn1955,
+author = {Kuhn, H. W.},
+title = {The Hungarian method for the assignment problem},
+journal = {Naval Research Logistics Quarterly},
+volume = {2},
+number = {1-2},
+publisher = {Wiley Subscription Services, Inc., A Wiley Company},
+pages = {83--97},
+year = {1955},
 }
 
 @article{Maximum2011,
@@ -1406,12 +1421,13 @@ year = {2011}
 }
 
 @book{Gusfield1989,
-author = {Gusfield, D and Irving, RW},
-file = {:Users/joewandy/Library/Application Support/Mendeley Desktop/Downloaded/Gusfield, Irving - 1989 - The stable marriage problem structure and algorithms.pdf:pdf},
-mendeley-groups = {Metabolomics - Matching},
-title = {{The stable marriage problem: structure and algorithms}},
-year = {1989}
-}
+ author = {Gusfield, Dan and Irving, Robert W.},
+ title = {The Stable Marriage Problem: Structure and Algorithms},
+ year = {1989},
+ isbn = {0-262-07118-5},
+ publisher = {MIT Press},
+ address = {Cambridge, MA, USA},
+} 
 
 @article{Smith2013a,
 author = {Smith, Robert and Ventura, Dan and Prince, John T},
@@ -1430,7 +1446,7 @@ year = {2013}
 }
 
 @article{Tsai2013a,
-  title={Multi-profile Bayesian alignment model for {LC}-{MS} data analysis with integration of internal standards},
+  title={Multi-profile {B}ayesian alignment model for {LC}-{MS} data analysis with integration of internal standards},
   author={Tsai, Tsung-Heng and Tadesse, Mahlet G and Di Poto, Cristina and Pannell, Lewis K and Mechref, Yehia and Wang, Yue and Ressom, Habtom W},
   journal={Bioinformatics},
   volume={29},
@@ -1674,7 +1690,7 @@ year = {2014}
 }
 
 @inproceedings{kim2006hierarchical,
-  title={Hierarchical Dirichlet processes with random effects},
+  title={Hierarchical {D}irichlet {P}rocesses with random effects},
   author={Kim, Seyoung and Smyth, Padhraic},
   booktitle={Advances in Neural Information Processing Systems},
   pages={697--704},
@@ -1683,7 +1699,7 @@ year = {2014}
 
 @article{teh2012hierarchical,
 author = {Yee Whye Teh and Michael I Jordan and Matthew J Beal and David M Blei},
-title = {Hierarchical Dirichlet Processes},
+title = {Hierarchical {D}irichlet {P}rocesses},
 journal = {Journal of the American Statistical Association},
 volume = {101},
 number = {476},
@@ -1816,7 +1832,10 @@ year = {2013}
   author={Van Der Hooft, Justin JJ and Padmanabhan, Sandosh and Burgess, Karl EV and Barrett, Michael P},
   journal={Metabolomics},
   year={2016},
-  publisher={Springer-Verlag}
+  publisher={Springer-Verlag},
+  volume={12},
+  number={7},
+  pages={125},
 }
 
 @inproceedings{chen2010probabilistic,
@@ -1938,4 +1957,78 @@ pmid = {14872004},
 title = {{Finding scientific topics.}},
 volume = {101 Suppl },
 year = {2004}
+}
+
+@article{vanderHooft29112016,
+author = {van der Hooft, Justin Johan Jozias and Wandy, Joe and Barrett, Michael P. and Burgess, Karl E. V. and Rogers, Simon}, 
+title = {Topic modeling for untargeted substructure exploration in metabolomics},
+volume = {113}, 
+number = {48}, 
+pages = {13738-13743}, 
+year = {2016}, 
+doi = {10.1073/pnas.1608041113}, 
+journal = {Proceedings of the National Academy of Sciences} 
+}
+
+@article{jordan2002discriminative,
+  title={On discriminative vs. generative classifiers: A comparison of logistic regression and naive bayes},
+  author={Jordan, A},
+  journal={Advances in neural information processing systems},
+  volume={14},
+  pages={841},
+  year={2002}
+}
+
+@inproceedings{hofmann1999probabilistic,
+  title={Probabilistic latent semantic indexing},
+  author={Hofmann, Thomas},
+  booktitle = {Proceedings of the 22Nd Annual International ACM SIGIR Conference on Research and Development in Information Retrieval},
+  series = {SIGIR '99},
+  year = {1999},
+  location = {Berkeley, California, USA},
+  pages = {50--57},
+  year={1999},
+  organization={ACM},
+  publisher = {ACM},
+  address = {New York, NY, USA},
+}
+
+@incollection{wallach2009rethinking,
+title = {Rethinking LDA: Why Priors Matter},
+author = {Hanna M. Wallach and David M. Mimno and Andrew McCallum},
+booktitle = {Advances in Neural Information Processing Systems 22},
+editor = {Y. Bengio and D. Schuurmans and J. D. Lafferty and C. K. I. Williams and A. Culotta},
+pages = {1973--1981},
+year = {2009},
+publisher = {Curran Associates, Inc.},
+}
+
+@incollection{blei2006correlated,
+title = {Correlated Topic Models},
+author = {John D. Lafferty and David M. Blei},
+booktitle = {Advances in Neural Information Processing Systems 18},
+editor = {Y. Weiss and P. B. Sch\"{o}lkopf and J. C. Platt},
+pages = {147--154},
+year = {2006},
+publisher = {MIT Press},
+}
+
+@article{zhai2013online,
+  title={Online Latent Dirichlet Allocation with Infinite Vocabulary},
+  author={Zhai, Ke and Boyd-Graber, Jordan L},
+  journal={ICML (1)},
+  volume={28},
+  pages={561--569},
+  year={2013}
+}
+
+@article{mclean2005ion,
+  title={Ion mobility--mass spectrometry: a new paradigm for proteomics},
+  author={McLean, John A and Ruotolo, Brandon T and Gillig, Kent J and Russell, David H},
+  journal={International Journal of Mass Spectrometry},
+  volume={240},
+  number={3},
+  pages={301--315},
+  year={2005},
+  publisher={Elsevier}
 }

@@ -88,7 +88,7 @@
 \BOOKMARK [2][-]{subsection.6.6.1}{Proteomic \(P1\) Results}{section.6.6}% 88
 \BOOKMARK [2][-]{subsection.6.6.2}{Glycomic and Metabolomic Results}{section.6.6}% 89
 \BOOKMARK [1][-]{section.6.7}{Conclusion}{chapter.6}% 90
-\BOOKMARK [0][-]{chapter.7}{Substructure Discovery in Tandem Mass Spectometry Data}{}% 91
+\BOOKMARK [0][-]{chapter.7}{Substructure Discovery in Tandem Mass Spectrometry Data}{}% 91
 \BOOKMARK [1][-]{section.7.1}{Introduction}{chapter.7}% 92
 \BOOKMARK [1][-]{section.7.2}{Related Work}{chapter.7}% 93
 \BOOKMARK [1][-]{section.7.3}{Statement of Original Work}{chapter.7}% 94
@@ -111,5 +111,6 @@
 \BOOKMARK [2][-]{subsection.8.2.2}{Using the Generative Models for Identification}{section.8.2}% 111
 \BOOKMARK [2][-]{subsection.8.2.3}{Data Visualisation and Interpretation}{section.8.2}% 112
 \BOOKMARK [2][-]{subsection.8.2.4}{Topic Modelling of Fragmentation Data}{section.8.2}% 113
-\BOOKMARK [1][-]{section.8.3}{Summary and Conclusions}{chapter.8}% 114
-\BOOKMARK [0][-]{section.8.3}{Bibliography}{}% 115
+\BOOKMARK [2][-]{subsection.8.2.5}{Applications to Other Areas of Spectral Analysis}{section.8.2}% 114
+\BOOKMARK [1][-]{section.8.3}{Summary and Conclusions}{chapter.8}% 115
+\BOOKMARK [0][-]{section.8.3}{Bibliography}{}% 116

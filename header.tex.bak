@@ -17,6 +17,12 @@
 \usepackage{tabularx} % in the preamble
 \usepackage[numbers]{natbib}
 
+\hypersetup{%
+  colorlinks=false,% hyperlinks will be black
+  linkbordercolor=red,% hyperlink borders will be red
+  pdfborderstyle={/S/U/W 1}% border style will be underline of width 1pt
+}
+
 \usepackage{amsmath}
 \usepackage{breqn} 			% line break long equations
 \usepackage{tikz}			% to draw graphical model
@@ -101,20 +107,18 @@
 
 \newcommand{\note}[1]{\emph{\textbf{Note:}[#1]}}
 
-@IEEEtranBSTCTL{IEEEexample:BSTcontrol,
-  CTLdash_repeated_names = "no"
-}
 
 % =============================================================================
 \begin{document}
-\bstctlcite{IEEEexample:BSTcontrol}
 
 \pagestyle{empty}
 \pagenumbering{gobble}
 
-\title{Probabilistic Methods for Liquid Chromatography Mass Spectrometry Data Pre-processing}
+% \title{Probabilistic Methods for Liquid Chromatography Mass Spectrometry Data Pre-processing}
+% \title{Unsupervised Bayesian Explorations of Mass Spectrometry Data}
+\title{\fontsize{22}{35}\selectfont Unsupervised Bayesian Explorations of Mass Spectrometry Data}
 \author{Joe Wandy}
-\date{August 2016}
+\date{December 2016}
 
 \maketitle
 
@@ -169,3 +173,5 @@
 \pagestyle{fancy}
 \pagenumbering{arabic}
 \setcounter{page}{1}
+
+\let\cleardoublepage\clearpage
